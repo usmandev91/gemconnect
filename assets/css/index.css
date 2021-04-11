@@ -32,23 +32,6 @@ body {
 }
 
 /* containers */
-.outer__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.grid__container {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  grid-gap: 40px;
-  grid-template-rows: auto;
-  width: 1300px;
-}
 
 .content__banner {
   display: flex;
@@ -64,8 +47,53 @@ body {
 }
 
 .content__banner h3 {
+  text-align: center;
   text-transform: capitalize;
   font-weight: 400;
+}
+
+.flexy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boxes2:hover {
+  background-color: #222;
+}
+
+.boxes {
+  background-color: rgba(0, 0, 0, 0.144);
+  border: black 1px solid;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 100px;
+  min-width: 300px;
+  min-height: 200px;
+  text-align: center;
+  max-width: 300px;
+  max-height: 400px;
+}
+
+.boxes2 {
+  background-color: rgba(0, 0, 0, 0.144);
+  border: black 1px solid;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 10px;
+  min-width: 300px;
+  min-height: 200px;
+  max-width: 415px;
+  max-height: 300px;
+  text-align: center;
 }
 
 .content__banner::after {
@@ -93,27 +121,6 @@ body {
   align-items: center;
   min-height: 300px;
   min-width: 300px;
-}
-
-.grid__container2 {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  place-items: center;
-  grid-template-rows: auto;
-  background-color: var(--clr-gray);
-  width: 1400px;
-}
-
-.boxes2 {
-  display: flex;
-  flex-direction: column;
-  min-height: 200px;
-  min-width: 380px;
-  background-color: var(--clr-primarycolor);
-  margin-top: 3em;
-  box-shadow: var(--boxshadow);
-  border-radius: 5px;
-  z-index: 1;
 }
 
 /* logo */
@@ -434,20 +441,20 @@ form.search button:hover {
 }
 
 /* about */
-.about__steps {
-  background-color: rgba(0, 0, 0, 0.829);
+.step {
+  background-color: rgba(0, 0, 0, 0.733);
   padding: 10px;
   color: white;
   max-width: 20%;
+  width: 100%;
+  align-self: flex-start;
 }
 
 .about_step {
   margin-top: 30px;
   padding: 20px 10px;
-
   text-align: center;
 }
-
 .listing {
   align-self: center;
   margin-top: auto;
@@ -456,7 +463,9 @@ form.search button:hover {
 
 .terms__cond {
   padding: 1.5em;
-  font-size: 18px;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 0;
 }
 
 /* hero2 */
@@ -503,7 +512,7 @@ footer {
   padding: 1em 8em;
   margin-top: 0;
 }
-
+/* 
 @media (max-width: 800px) {
   .next__button {
     display: none;
@@ -517,4 +526,4 @@ footer {
   .nav_bar_list {
     flex-direction: column;
   }
-}
+} */
