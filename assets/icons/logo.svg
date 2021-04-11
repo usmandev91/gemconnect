@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="194" height="43" viewBox="0 0 194 43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+        font-size: 32px;
+        font-family: PlayfairDisplay-BlackItalic, Playfair Display;
+        font-weight: 800;
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <text id="GemConnect" class="cls-1" transform="translate(0 35)"><tspan x="0" y="0">GemConnect</tspan></text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.28" height="13.28" viewBox="0 0 13.28 13.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #606060;
+      }
+    </style>
+  </defs>
+  <g id="user-avatar-filled-alt" transform="translate(-2.25 -2.25)">
+    <path id="Path_13277" data-name="Path 13277" class="cls-1" d="M8.89,2.25a6.64,6.64,0,1,0,6.64,6.64A6.64,6.64,0,0,0,8.89,2.25Zm3.794,10.87v-.288a2.471,2.471,0,0,0-2.371-2.519H7.467A2.466,2.466,0,0,0,5.1,12.831c0,.005,0,.011,0,.016v.277a5.694,5.694,0,1,1,7.589,0Z"/>
+    <path id="Path_13278" data-name="Path 13278" class="cls-1" d="M14.746,7.875a2.371,2.371,0,1,0,2.371,2.371A2.371,2.371,0,0,0,14.746,7.875Z" transform="translate(-5.856 -3.254)"/>
+  </g>
+</svg>

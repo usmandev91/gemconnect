@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <title>GemConnect-home</title>
+  </head>
+  <body>
+    <header>
+      <!-- header with navigation -->
+      <div class="banner">
+        <div class="logo">
+          <img src="assets/icons/logo.svg" alt="GemConnect logo" />
+        </div>
+        <!-- cart -->
+        <div class="carty">
+          <img src="assets/icons/cart.svg" alt="" />
+          <a class="cart" href="#">Cart</a>
+            <span id="cart-counter" class="cart-counter">0</span></span
+          >
+          <!-- top main menu -->
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img src="assets/icons/main menu/menu.svg" alt="main menu icon" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#">
+                <img
+                  class="svg"
+                  src="assets/icons/main menu/user.svg"
+                  alt=""
+                />Profile</a
+              >
+              <a href="#">
+                <img
+                  class="svg"
+                  src="assets/icons/main menu/heart.svg"
+                  alt="Wishlist icon"
+                />Wishlist</a
+              >
+              <a href="#">
+                <img
+                  class="svg"
+                  src="assets/icons/main menu/settings.svg"
+                  alt=""
+                />Settings</a
+              >
+              <a href="#">
+                <img
+                  class="svg"
+                  src="assets/icons/main menu/logout.svg"
+                  alt=""
+                />Logout</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- navigation -->
+      <nav class="navbar">
+        <ul class="nav_bar_list">
+          <li>
+            <div class="dropdown">
+              <button class="browsedropbtn">Browse</button>
+              <div class="browse-content">
+                <a href="">Chains</a> 
+                <a href="">Rings</a>
+                <a href="">Grills</a>
+                <a href="">Bracelets</a>
+                <a href="">Watches</a>
+              </div>
+            </div>
+          </li>
+          <li><a class="navbtn" href="#">Buy</a></li>
+          <li><a class="navbtn" href="#">Sell</a></li>
+          <li><a class="navbtn"href="#">Blog</a></li>
+          <li><a class="navbtn"href="#">Auction</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- hero-image -->
+      <section class="hero">
+        <div class="wrapper">
+          <h1>Find only the finest jewelry</h1>
+          <!-- The form -->
+          <form class="search" action="">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit">
+              <img src="assets/icons/search.svg" alt="search-button" />
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Sellers -->
+      <div class="outer__container">
+      <section class="sellers">
+        <header class="content__banner">
+          <h3>Our top sellers</h3>
+        </header>
+        <!-- <div class="next__slide">
+        </div> -->
+        <div class="grid__container" id="sellerbox">
+          <div class="boxes" id="sellerboxes">
+            <header class="seller__info"><img class="seller__avatar" src="./assets/icons/users.svg" height="200px" alt="seller avatar"></header>
+            <p class="seller__name">Gold&Chains<span class="verified"><img src="./assets/icons/verified.svg" alt=""></span></p>
+            <p class="seller_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolore.</p>
+          </div>
+          <div class="boxes" id="sellerboxes">
+            <header class="seller__info"><img class="seller__avatar" src="./assets/icons/users.svg" height="200px" alt="seller avatar"></header>
+            <p class="seller__name">JewelStore<span class="verified"><img src="./assets/icons/verified.svg" alt=""></span></p>
+            <p class="seller_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolore.</p>
+          </div>
+          <div class="boxes" id="sellerboxes">
+            <header class="seller__info"><img class="seller__avatar" src="./assets/icons/users.svg" height="200px" alt="seller avatar"></header>
+            <p class="seller__name">GemHub<span class="verified"><img src="./assets/icons/verified.svg" alt=""></span></p>
+            <p class="seller_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolore.</p>
+          </div>
+          <div class="boxes" id="sellerboxes">
+            <header class="seller__info"><img class="seller__avatar" src="./assets/icons/users.svg" height="200px" alt="seller avatar"></header>
+            <p class="seller__name">BlingBlingBros<span class="verified"><img src="./assets/icons/verified.svg" alt=""></span></p>
+            <p class="seller_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolore.</p>
+            </div>
+            <button type="menu" class="next__button">
+            </button>
+      </section>
+      <!-- categories -->
+      <section class="categories">
+        <header class="content__banner">
+          <h3>browse by categories</h3>
+        </header>
+        <div class="grid__container">
+          <div class="boxes category__Rings" id="category__boxes">
+          <a href="#" class="category__name rings">Rings</a>
+          </div>
+          <div href="#"  class="boxes category__chains" id="category__boxes">
+            <a href="#"  class="category__name chains">Chains</a>
+            </div>
+            <div class="boxes category__watches" id="categoryboxes">
+              <a href="#"  class="category__name watches">Watches</a>
+              </div>
+              <div class="boxes category__pendants" id="categoryboxes">
+                <a href="#" class="category__name pendants">Pendants</a>
+                </div>
+        </div>
+      </section>
+      </div>
+      <!-- about -->
+      <section class="">
+        <header class="content__banner">
+          <h3>how it works</h3>
+          
+        </header>
+        <div class="grid__container2">
+          <div class="boxes2">
+            <div class="step"><p>step 1</p></div>
+            <div class="about_step"><p>List a product for selling</p></div>
+            <div  class="listing"><img src="./assets/icons/how it works/pricetag-outline.svg" height="40px" width="40px" alt="listing"></div>
+          </div>
+          <div class="boxes2">
+            <div class="step"><p>step 2</p></div>
+            <div class="about_step"><p>Sell it to the highest bidder</p></div>
+            <div class="listing"><img src="./assets/icons/how it works/checkers.svg" height="40px" width="40px" alt="listing"></div>
+          </div>
+          <div class="boxes2">
+            <div class="step"><p>step 3</p></div>
+            <div class="about_step"><p>Ship your item within 2 days</p></div>
+            <div class="listing"><img src="./assets/icons/how it works/truck.svg" height="40px" width="40px" alt="listing"></div>
+          </div>
+          <div class="boxes2">
+            <div class="step"><p>step 4</p></div>
+            <div class="about_step"><p>We authenticate the item</p></div>
+            <div class="listing"><img src="./assets/icons/how it works/authenticate.svg" height="50px" width="50px" alt="listing"></div>
+          </div>
+
+          <div class="boxes2">
+            <div class="step"><p>step 5</p></div>
+            <div class="about_step"><p>Then we ship it to the buyer</p></div>
+            <div class="listing"><img  src="./assets/icons/how it works/truck.svg" height="40px" width="40px" alt="listing"></div>
+          </div>
+
+          <div class="boxes2">
+            <div class="step"><p>step 6</p></div>
+            <div class="about_step"><p>We release funds to you</p></div>
+            <div class="listing"><img src="./assets/icons/how it works/moneybag.svg" height="40px" width="40px" alt="listing"></div>
+          </div>
+          <h4 class="terms__cond">See more info in our <a href="#"> <i>Terms And Conditions</i></a></h4>
+        </div>
+      </section>
+      <!-- lorem -->
+      <section class="hero hero2">
+        <h2>Sell your jewelry with ease</h2>
+        <p class="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          distinctio atque ipsa error voluptas sed nesciunt sunt exercitationem
+          sapiente quis nobis sit, dolorum obcaecati alias, aliquid molestias
+          deserunt quisquam magnam.
+        </p>
+        <button class="calltoaction">Call to action</button>
+      </section>
+    </div>
+      <!-- footer -->
+      <footer>
+
+        <ul class="contact">
+          <li><h6>contact us</h6></li>
+          <li><a href="#">Email@asd.com</a></li>
+          <li><a href="#">Find a store</a></li>
+        </ul>
+        <ul class="customerservice">
+          <li><h6>customer service</h6></li>
+          <li><a href="#">Ordering and payment</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul class="links">
+          <li><h6>Links</h6></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </footer>
+    </div>
+    </main>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
