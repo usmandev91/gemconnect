@@ -19,47 +19,30 @@ body {
   padding-top: 1em;
   text-transform: capitalize;
 }
-ul.navbar-nav:nth-child(3) {
-  margin-left: auto;
-}
-button.btn-info:nth-child(1) {
+
+.modal-button {
   background-color: $theme_color;
-  padding: 0.3rem 2rem;
+  margin-bottom: 1em;
+  padding: 0.4em 1em;
 }
-
+.signup_top {
+  margin-bottom: 1em;
+  padding: 0.4em 0.5em;
+}
 .modal-content {
-  padding: 1rem;
-  border-radius: 5%;
-  margin-left: 4em;
-
-  .form-control {
-    background-color: $form_input_background;
-    border-radius: 8px;
-    padding: 1em;
+  border-radius: 2rem;
+}
+.modal-body {
+  padding: 2rem;
+  .modal-logo {
+    padding: 2rem;
+  }
+  .modal-text {
+    padding: 2rem;
   }
   .form-group {
-    margin-top: 1em;
+    margin: 1rem 0;
   }
-}
-
-.modal_text {
-  padding: 0;
-  position: relative;
-
-  margin-bottom: 0.2rem;
-  position: relative;
-  &::after {
-    @include line;
-  }
-}
-.button.btn:nth-child(2) {
-  margin: 0;
-  background-color: $theme_color;
-}
-
-.signup {
-  background-color: $light_dark;
-  padding: 0.3rem 2rem;
 }
 
 .form-check {
@@ -67,12 +50,3 @@ button.btn-info:nth-child(1) {
   margin-top: 0.2em;
   margin-bottom: 4em;
 }
-
-@media (min-width: 576px) {
-  .modal-content {
-    max-width: 400px;
-    padding: 1rem;
-    border-radius: 5%;
-    margin-left: 0em;
-  }
-} ;
