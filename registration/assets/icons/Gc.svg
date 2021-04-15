@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="231.751" height="37.739" viewBox="0 0 231.751 37.739">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3bc0cb;
+        font-size: 30px;
+        font-family: Raleway-Bold, Raleway;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3bc0cb"/>
+      <stop offset="0" stop-color="#1eabb7"/>
+      <stop offset="0" stop-color="#34b8c3"/>
+      <stop offset="0" stop-color="#17bdcb"/>
+      <stop offset="1" stop-color="#9ff8ff"/>
+      <stop offset="1" stop-color="#1e6066"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_12685" data-name="Group 12685" transform="translate(-819.249 -31.63)">
+    <text id="GemConnect_Logo" data-name="GemConnect/Logo" class="cls-1" transform="translate(861 62.369)"><tspan x="0" y="0">GemConnect</tspan></text>
+    <path id="Path_13296" data-name="Path 13296" class="cls-2" d="M170.6,322.861h20.2l-1.443,2.5-1.44,2.5-1.445,2.5-1.441,2.5-1.445,2.5-1.44,2.5-1.443,2.5-1.443,2.5-2.885,5v0l-1.443,2.5-1.44-2.5-1.445-2.5-1.443-2.5-1.44-2.5-1.445-2.5-1.44-2.5-1.445-2.5-1.44-2.5-2.885-5-1.443-2.5-1.443-2.5-1.443-2.5,1.443-2.5v0l1.443-2.5h31.735l1.443,2.5,0,0,1.44,2.5h-28.85l-1.443,2.5h0v0l1.443,2.5,1.443,2.5v0l1.44,2.5h0v0l1.443,2.5,0,0,1.438,2.5h0l1.443,2.5v0l1.44,2.5,1.445,2.5,1.445-2.5h0l1.443-2.5v0h0l1.44-2.5v0l1.443-2.5,1.443-2.5v0h-5.771v0l-1.443,2.5-1.44-2.5h0v0l-1.443-2.5v0l-1.443-2.493Z" transform="translate(663.076 -281.236)"/>
+  </g>
+</svg>

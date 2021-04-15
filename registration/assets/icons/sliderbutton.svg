@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #606060;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: #606060;
+      }
+    </style>
+  </defs>
+  <g id="Group_12674" data-name="Group 12674" transform="translate(-1656 -987)">
+    <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" class="cls-1" d="M17.05,11.435a.653.653,0,0,0,0,.92L20.083,15.4H8.52a.65.65,0,0,0,0,1.3H20.078L17.04,19.741a.658.658,0,0,0,0,.92.647.647,0,0,0,.915,0l4.118-4.148h0a.73.73,0,0,0,.135-.2.62.62,0,0,0,.05-.25.651.651,0,0,0-.185-.455L17.96,11.45A.637.637,0,0,0,17.05,11.435Z" transform="translate(1657.931 986.451)"/>
+    <g id="Path_13290" data-name="Path 13290" class="cls-2" transform="translate(1656 987)">
+      <path class="cls-3" d="M5,0H35L30,30H0Z"/>
+      <path class="cls-4" d="M 5.847124099731445 1 L 1.180458068847656 29 L 29.15287780761719 29 L 33.81954193115234 1 L 5.847124099731445 1 M 5 0 L 35 0 L 30 30 L 0 30 L 5 0 Z"/>
+    </g>
+  </g>
+</svg>
