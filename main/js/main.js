@@ -25,3 +25,6 @@ $(window).on("load resize", function () {
     $dropdown.off("mouseenter mouseleave");
   }
 });
+
+// active
+$('.nav-tabs a[href="#signup"]').tab("show");
