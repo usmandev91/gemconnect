@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GemConnect | Registration</title>
     <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="container-fluid d-flex justify-content-center mt-3">
-      <div class="brand-logo"><img src="./assets/icons/Gc.svg" alt="" /></div>
+      <div class="brand-logo"><img src="./assets/icons/Gc.svg" width="300" alt="" /></div>
     </div>
     <div class="container">
+      <h1 class="display-5 text-center mt-5 mb-5">Welcome to GemConnect</h1>
       <ul class="nav nav-tabs d-flex justify-content-center">
-        <li class="active mr-5">
+       
+        <li class="active mr-5 main__btn 1 mt-3">
           <a class="btn btn-block" data-toggle="tab" href="#signup">Sign up</a>
         </li>
-        <li>
-          <a class="btn btn-block" data-toggle="tab" href="#login">Sign in</a>
+        <li class="active ml-5 main__btn1 mt-3">
+          <a class="btn " data-toggle="tab" href="#login">Log in</a>
         </li>
       </ul>
 
-      <div class="tab-content d-flex justify-content-center">
-        <div id="signup" class="tab-pane fade in active">
+      <div class="tab-content d-flex justify-content-center mt-2">
+        <div id="signup" class="tab-pane fade in active ">
           <form action="" method="">
             <div class="form-group mt-5">
               <input
@@ -61,8 +63,8 @@
                 placeholder="Confirm Password"
               />
             </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block btn-lg">
+            <div class="form-group d-flex justify-content-center align-items-center">
+              <button type="submit" class="btn btn-default m-3 pl-3 pr-3">
                 Sign Up
               </button>
             </div>
@@ -83,6 +85,7 @@
                 id="email"
                 placeholder="Enter email"
                 name="email"
+                required
               />
             </div>
             <div class="form-group">
@@ -92,14 +95,17 @@
                 id="pwd"
                 placeholder="Enter password"
                 name="pwd"
+                required
               />
-            </div>
+            </div class="form-group">
             <div class="checkbox">
               <label
                 ><input type="checkbox" name="remember" /> Remember me</label
               >
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-group d-flex justify-content-center align-items-center">
+            <button type="submit" class="btn btn-default m-3 pl-3 pr-3">Login</button>
+          </div>
           </form>
       </div>
     </div>

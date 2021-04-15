@@ -1,23 +1,35 @@
-.nav-tabs {
-  margin-bottom: 15px;
-}
-.sign-with {
-  margin-top: 25px;
-  padding: 20px;
-}
-div#OR {
-  height: 30px;
-  width: 30px;
-  border: 1px solid #c2c2c2;
-  border-radius: 50%;
-  font-weight: bold;
-  line-height: 28px;
+.form-control:focus {
+  border-color: #3bc0cb !important;
+  box-shadow: 0 0 5px #3bc0cb !important; }
+
+body {
+  font-family: "raleway";
+  text-transform: capitalize; }
+
+.container .btn {
+  padding-bottom: 0; }
+
+.container .btn:focus {
+  box-shadow: 0 6px 0px -2px #3bc0cb; }
+
+.tab-pane {
+  min-width: 400px; }
+
+.form-control {
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  padding: 1rem; }
+  .form-control::placeholder {
+    font-size: 16;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+.form-control:focus {
+  border-color: #3bc0cb !important;
+  box-shadow: 0 0 5px #3bc0cb !important; }
+
+.btn-default {
+  background-color: #3bc0cb !important;
+  display: inline-block;
+  border-radius: 12px;
   text-align: center;
-  font-size: 12px;
-  float: right;
-  position: absolute;
-  right: -16px;
-  top: 40%;
-  z-index: 1;
-  background: #dfdfdf;
-}
+  color: white; }
