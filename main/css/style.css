@@ -56,9 +56,10 @@ body {
 .bg-light {
   background-color: #f8f9fa !important; }
 
-.modal-sm {
+.modal-xs {
   max-width: 523px;
-  border: none; }
+  border: none;
+  max-height: 700; }
 
 .modal-content {
   border-radius: 48px;
@@ -68,8 +69,9 @@ body {
   padding: 2rem; }
 
 .modal_text {
+  max-width: 100px;
   font-size: 35px;
-  border-bottom: #3bc0cb 1px solid;
+  border-bottom: #3bc0cb 2px solid;
   margin-bottom: 0; }
 
 .btn-info {
@@ -88,28 +90,19 @@ body {
   border-color: #3bc0cb !important;
   box-shadow: 0 0 5px #3bc0cb !important; }
 
-.gc_showcase {
-  background: url(); }
-
-.container .btn {
-  padding-bottom: 0; }
-
-.container .btn:focus {
-  box-shadow: 0 6px 0px -2px #3bc0cb; }
-
-.form_design {
-  margin: 1em 0; }
-
 .form-control {
+  border: none;
   height: 39px;
-  max-width: 403px;
-  border-radius: 0px;
+  padding: 0px 1rem;
+  min-width: 20rem;
+  width: 100%;
   border-radius: 8px;
   background-color: #f5f5f5;
   padding: 1rem; }
   .form-control::placeholder {
     font-size: 16;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #b4b4b4; }
 
 .form-control:focus {
   border-color: #3bc0cb !important;
@@ -122,8 +115,34 @@ body {
   text-align: center;
   color: white; }
 
-.nav-tabs {
-  border: none; }
+.gc_showcase {
+  background: url(); }
+
+.banner {
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
+
+.tab_btn {
+  margin: 0;
+  padding-bottom: 0; }
+
+.tab_btn:focus {
+  box-shadow: 0 6px 0px -2px #3bc0cb; }
+
+.active {
+  box-shadow: 0 6px 0px -2px #3bc0cb; }
+
+.form_design {
+  margin: 1em 0; }
+
+#signup,
+#login {
+  max-width: 420px; }
+
+.reg-form {
+  border: none;
+  height: 39px;
+  padding: 0px 1rem;
+  min-width: 20rem; }
 
 @media (max-width: 600px) {
   .nav-item {

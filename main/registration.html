@@ -9,55 +9,55 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <div class="container-fluid d-flex justify-content-center mt-3">
+    <div class="container-fluid d-flex justify-content-center mt-3 pb-2 banner">
       <div class="brand-logo"><img src="./assets/icons/Gc.svg" width="300" alt="" /></div>
     </div>
     <div class="container">
       <h1 class="display-5 text-center mt-5 mb-5">Welcome to GemConnect</h1>
-      <ul class="nav nav-tabs d-flex justify-content-center">
+      <ul class="nav nav-tabs d-flex justify-content-center banner">
        
-        <li class="active mr-5 main__btn 1 mt-3">
-          <a class=" btn btn-block" data-toggle="tab" href="#signup">Sign up</a>
+        <li class="nav-item mr-5">
+          <a class="active btn btn-block tab_btn" data-toggle="tab" href="#signup">Sign up</a>
         </li>
-        <li class="ml-5 main__btn1 mt-3">
-          <a class="btn " data-toggle="tab" href="#login">Log in</a>
+        <li class="ml-5 nav-item">
+          <a class="btn btn-block tab_btn" data-toggle="tab" href="#login">Log in</a>
         </li>
       </ul>
 
       <div class="tab-content d-flex justify-content-center mt-2">
-        <div id="signup" class="active tab-pane fade in">
-          <form action="" method="">
-            <div class="form-group mt-5">
+        <div id="signup" class="container tab-pane active">
+          <form action="" method="" class="reg-from">
+            <div class="form-group mt-5 container-fluid d-flex flex-column text-center justify-content-center">
               <input
                 type="text"
-                class="form-control"
+                class="form-control reg-form"
                 name="username"
                 placeholder="Username"
                 required="required"
               />
             </div>
-            <div class="form-group">
+            <div class="form-group container-fluid d-flex flex-column text-center justify-content-center">
               <input
                 type="email"
-                class="form-control"
+                class="form-control reg-form"
                 name="email"
                 required="required"
                 placeholder="Email Address"
               />
             </div>
-            <div class="form-group">
+            <div class="form-group container-fluid d-flex flex-column text-center justify-content-center">
               <input
                 type="password"
-                class="form-control"
+                class="form-control reg-form"
                 name="password"
                 required="required"
                 placeholder="Password"
               />
             </div>
-            <div class="form-group">
+            <div class="form-group container-fluid d-flex flex-column text-center justify-content-center">
               <input
                 type="password"
-                class="form-control"
+                class="form-control reg-form"
                 name="confirm_password"
                 required="required"
                 placeholder="Confirm Password"
@@ -75,33 +75,36 @@
             </p>
           </form>
         </div>
-
-        <div id="login" class="tab-pane fade">
+        <div id="login" class="container tab-pane fade">
           <form action="">
-            <div class="">
+            <div class="form-group mt-5 container-fluid d-flex flex-column text-center justify-content-center">
               <input
                 type="email"
-                class="form-control mt-5"
+                class="form-control reg-form"
                 id="email"
                 placeholder="Enter email"
                 name="email"
                 required
               />
             </div>
-            <div class="form-group">
+            <div class="form-group ">
+              <div class="form-group mt-3 container-fluid d-flex flex-column text-center justify-content-center">
               <input
                 type="password"
-                class="form-control mt-4"
+                class="form-control reg-form"
                 id="pwd"
                 placeholder="Enter password"
                 name="pwd"
                 required
               />
+            </div>
             </div class="form-group">
+            <div class="form-group mt-3 container-fluid d-flex flex-column text-center justify-content-center">
             <div class="checkbox">
               <label
                 ><input type="checkbox" name="remember" /> Remember me</label
               >
+              </div>
             </div>
             <div class="form-group d-flex justify-content-center align-items-center">
             <button type="submit" class="btn btn-default m-3 pb-1">Login</button>
@@ -109,6 +112,8 @@
           </form>
       </div>
     </div>
+    </div>
+
     <script
       src="./js/jquery.min.js"
     ></script>
