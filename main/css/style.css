@@ -131,7 +131,8 @@ body {
   margin-bottom: 5rem;
   padding: 4em;
   background-color: #f6f6f6;
-  max-width: 1200px;
+  max-width: 1460px;
+  min-height: 600px;
   border-radius: 3rem !important;
   left: 0px;
   top: 0px; }
@@ -142,16 +143,24 @@ body {
     .about .termcond:hover {
       color: #002f33; }
   .about .card {
-    border-radius: 1.6rem;
-    border: none; }
+    border-radius: 2.125rem;
+    border: none;
+    margin: 0.5rem;
+    max-width: 375px;
+    max-height: 184px; }
+    .about .card h4 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0em; }
   .about .step {
-    margin-top: 5px;
-    justify-self: center;
-    padding: 2px 12px;
     color: #b4b4b4;
-    max-width: 20%;
-    width: 100%;
-    align-self: flex-start;
-    margin-bottom: 1em;
-    white-space: nowrap;
-    flex-grow: 1; }
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    line-height: 21px;
+    padding: 1em 2em; }
