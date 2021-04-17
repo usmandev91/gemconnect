@@ -153,6 +153,91 @@ body {
     max-height: 200;
     min-width: 420px; } }
 
+.categories {
+  margin-top: 5rem; }
+
+.category-title {
+  padding-bottom: 0;
+  border-bottom: 2px solid #3bc0cb;
+  max-width: 310px; }
+
+#category_container {
+  background-color: white; }
+
+#category_container a {
+  text-decoration: none;
+  outline: none; }
+
+#category_container .card-flyer {
+  border-radius: 51px; }
+
+#category_container .card-flyer {
+  background: #f6f6f6;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 51px; }
+
+#category_container .card-flyer .image-box img {
+  transition: all 0.9s ease;
+  height: 140px;
+  width: 115px;
+  margin-top: 1em; }
+
+#category_container .card-flyer:hover .image-box img {
+  opacity: 0.7;
+  transform: scale(1.15); }
+
+#category_container .card-flyer .text-box {
+  text-align: center; }
+
+#category_container .card-flyer .text-box .text-container {
+  padding: 30px 18px; }
+
+#category_container .card-flyer {
+  background: #f6f6f6;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4); }
+
+#category_container .card-flyer:hover {
+  background: #f6f6f6;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px; }
+
+#category_container .card-flyer .text-box p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000; }
+
+#category_container .card-flyer .text-box h6 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "raleway", sans-serif;
+  letter-spacing: 1px;
+  color: #002f33; }
+
+.viewall_cat {
+  display: inline-block;
+  color: #002f33;
+  padding: 1rem;
+  padding-bottom: 0;
+  font-size: 20px; }
+
 .about {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -169,13 +254,13 @@ body {
     font-weight: 400; }
     .about .termcond:hover {
       color: #002f33; }
-  .about .card {
+  .about .card_about {
     border-radius: 2.125rem;
     border: none;
     margin: 0.5rem;
     max-width: 375px;
     max-height: 184px; }
-    .about .card h4 {
+    .about .card_about h4 {
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
