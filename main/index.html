@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GemConnect</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
-
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
   </head>
   <body>
     <header class="container-fluid gc_sticky">
@@ -21,10 +22,10 @@
 
       <div class="col-sm">
         <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-info login_Modal pl-4 pr-4 m-2 mr-5 " data-toggle="modal" data-target="#loginModal">
+          <button type="button" class="btn btn-top pl-4 pr-4 m-2 mr-5 " data-toggle="modal" data-target="#loginModal">
           Login
         </button>
-          <a class="btn btn-info login_Modal btn-top  pl-3 pr-3 m-2 " href="./registration.html" >Sign up</a></div>
+          <a class="btn  btn-top  pl-3 pr-3 m-2 " href="./registration.html" >Sign up</a></div>
           </div>
         </div>
         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -123,7 +124,7 @@
         </ul>
         <form class="navbar-form form-inline">
           <div class="input-group search-box d-none">								
-            <input type="text" id="search" class="form-control" placeholder="Search by Name">
+            <input type="text" id="search" class="form-control form_search" placeholder="Search by Name">
             <span class="input-group-addon"><button type="submit" class="search-btn btn border-left"><img src="./assets/icons/search.svg" alt=""></button></span>
           </div>
         </form>
@@ -134,11 +135,68 @@
     </nav>
 </header>
 <!-- JUMBO SECTION -->
+<div class="jumbotron jumbotron-fluid hero d-flex justify-content-center align-items-center flex-column">
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <h1 class="hero-text">Find only the finest jewelry</h1>  
+  </div>
+
+  <form class="form d-flex justify-content-center align-items-center hero-search">								
+      <input type="text" id="search" class="form-control hero-search" placeholder="Search Diamond Rolex">
+      <span class="input-group-addon"><button type="submit" class="search-btn-hero btn border-left"><img src="./assets/icons/search.svg" alt=""></button></span>
+  </form>
+</div>
+
+<!-- top sellers -->
+<section class="categories">
+  <div class="title-wrap d-flex justify-content-center my-5">
+    <h2 class="section-title-center category-title">
+        Our Top Sellers
+    </h2>
+</div>
+<div class="container">
+  <div class="owl-carousel owl-theme">
+    <div class="card card_about">
+      <div class="step">
+        <p>step-2</p></div>
+      <h4>sell it to the highest bidder</h4>
+      <div class="my-4">
+    <img src="./assets/icons/Done Icon.svg" height="40px" width="40px" alt="done">
+    </div>
+  </div>
+  <div class="card card_about">
+    <div class="step">
+      <p>step-2</p></div>
+    <h4>sell it to the highest bidder</h4>
+    <div class="my-4">
+      <img src="./assets/icons/Done Icon.svg" height="40px" width="40px" alt="done">
+  </div>
+</div>
+<div class="card card_about">
+  <div class="step">
+    <p>step-2</p></div>
+  <h4>sell it to the highest bidder</h4>
+  <div class="my-4">
+    <img src="./assets/icons/Done Icon.svg" height="40px" width="40px" alt="done">
+</div>
+</div>
+<div class="card card_about">
+  <div class="step">
+    <p>step-2</p></div>
+  <h4>sell it to the highest bidder</h4>
+  <div class="my-4">
+    <img src="./assets/icons/Done Icon.svg" height="40px" width="40px" alt="done">
+</div>
+</div>
+    
+    </div>
+  </div>
+</div>
+
 
 
 <!-- Categories -->
 <section class="categories">
-  <div class="title-wrap d-flex justify-content-center">
+  <div class="title-wrap d-flex justify-content-center my-5">
     <h2 class="section-title-center category-title">
         Browse by category
     </h2>
@@ -278,8 +336,55 @@
         </div>
     </div>
     <div class="container mt-5">
-    <p class="text-right"><a href="categories.html" class="nav-link navbtn viewall_cat">viewall</a></p></div></div>
+    <p class="text-right"><a href="categories.html" class="btn viewall_cat">view all</a></p></div></div>
   </section>
+<!-- Brands -->
+<section class="Brands">
+  <div class="title-wrap d-flex justify-content-center my-5">
+    <h2 class="section-title-center category-title">
+        Browse by Brands
+    </h2>
+</div>
+<div class="container">
+  <div class="owl-carousel owl-theme">
+    <div class="card card_about">
+      <div class="step">
+        <p>step-2</p></div>
+      <h4>sell it to the highest bidder</h4>
+      <div class="my-4">
+    <img src="./assets/icons/Done Icon.svg" height="40px" width="40px" alt="done">
+    </div>
+  </div>
+  <div class="card card_about">
+    <div class="step">
+      <p>step-2</p></div>
+    <h4>sell it to the highest bidder</h4>
+    <div class="my-4">
+      <img src="./assets/icons/Done Icon.svg" height="40px" width="40px" alt="done">
+  </div>
+</div>
+<div class="card card_about">
+  <div class="step">
+    <p>step-2</p></div>
+  <h4>sell it to the highest bidder</h4>
+  <div class="my-4">
+    <img src="./assets/icons/Done Icon.svg" height="40px" width="40px" alt="done">
+</div>
+</div>
+<div class="card card_about">
+  <div class="step">
+    <p>step-2</p></div>
+  <h4>sell it to the highest bidder</h4>
+  <div class="my-4">
+    <img src="./assets/icons/Done Icon.svg" height="40px" width="40px" alt="done">
+</div>
+</div>
+    
+    </div>
+  </div>
+</div>
+
+</section>
 <!-- about -->
 <div class="container about">
 
@@ -364,9 +469,64 @@
 </div>
 </section>
 
+<footer class="footer">
+  <div class="container">
+  <div class="row">
+  <div class="col-md mb-4 mb-md-0">
+  <h3>Contact us</h3>
+  <ul class="list-unstyled nav-links">
+  <li><p>+44 345 687 902</p></li>
+  <li><a href="#">GemConnectgmail.com</a></li>
+  <li><a href="#"> find a store</li>
+  </ul>
+  </div>
+  <div class="col-md mb-4 mb-md-0">
+    <h3>About us</h3> 
+  <ul class="list-unstyled nav-links">
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Best sellers</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Contact</a></li>
+  </ul>
+  </div>
+  <div class="col-md mb-4 mb-md-0">
+  <h3>Legal</h3>
+  <ul class="list-unstyled nav-links">
+  <li><a href="#">Terms &amp; Conditions</a></li>
+  <li><a href="#">Privacy Policy</a></li>
+  </ul>
+  </div>
+  <div class="col-md-4 mb-4 mb-md-0">
+  <h3>Subscribe</h3>
+  <p class="mb-4">Lorem ipsum dolor sit amet consectetur</p>
+  <form action="#" class="subscribe">
+   <input type="text" class="form-control" placeholder="Enter your e-mail">
+  <input type="submit" class="btn btn-submit" value="Send">
+  </form>
+  </div>
+  </div>
+  <div class="row align-items-center">
+  <div class="col-12">
+  <div class="border-top my-5"></div>
+  </div>
+  <div class="col-md-6">
+  <p><small>© 2021 All Rights Reserved.</small></p>
+  </div>
+  <div class="col-md-6 text-md-right">
+  <ul class="social list-unstyled">
+  <li><a href="#"><span class="icon-facebook"></span></a></li>
+  <li><a href="#"><span class="icon-twitter"></span></a></li>
+  <li><a href="#"><span class="icon-instagram"></span></a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </footer>
+
 <script
 src="./js/jquery.min.js"
 ></script>
+<script src="./js/owl.carousel.min.js"></script>
 <script
 src="./js/popper.min.js"
 ></script>

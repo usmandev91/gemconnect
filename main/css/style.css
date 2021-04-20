@@ -12,6 +12,38 @@ body {
   color: #002f33 !important;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
 
+.btn-top {
+  white-space: nowrap; }
+
+.hero {
+  background-image: url(/assets/images/hero.jpg);
+  background-position: center;
+  height: 771px;
+  object-fit: contain; }
+
+.hero-text {
+  font-size: 82px !important;
+  color: #ffffff;
+  margin-bottom: 0.21em; }
+
+.hero-search {
+  height: 71px;
+  width: 74%;
+  border-radius: 22px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none; }
+  .hero-search::placeholder {
+    font-size: 18px;
+    font-family: "raleway", sans-serif; }
+  .hero-search .search-btn-hero {
+    height: 71px;
+    width: 71px;
+    border-radius: 22px;
+    background-color: white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+
 .button_container {
   overflow: hidden;
   padding: 0; }
@@ -86,11 +118,12 @@ body {
   background-color: #f5f5f5;
   border: 1px solid #ced4da; }
 
-.search-btn:focus {
+.search-btn,
+.search-btn-hero:focus {
   border-color: #3bc0cb !important;
   box-shadow: 0 0 5px #3bc0cb !important; }
 
-.form-control {
+.form_design {
   border: none;
   height: 39px;
   padding: 0px 1rem;
@@ -99,7 +132,7 @@ body {
   border-radius: 8px;
   background-color: #f5f5f5;
   padding: 1rem; }
-  .form-control::placeholder {
+  .form_design::placeholder {
     font-size: 16;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     color: #b4b4b4; }
@@ -174,11 +207,10 @@ body {
 #category_container .card-flyer {
   background: #f6f6f6;
   overflow: hidden;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
   border-radius: 51px; }
 
 #category_container .card-flyer .image-box img {
-  transition: all 0.9s ease;
+  transition: all 0.3s ease;
   height: 140px;
   width: 115px;
   margin-top: 1em; }
@@ -196,21 +228,11 @@ body {
 #category_container .card-flyer {
   background: #f6f6f6;
   margin-top: 50px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4); }
+  transition: all 0.3s ease-in; }
 
 #category_container .card-flyer:hover {
   background: #f6f6f6;
-  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
   margin-top: 50px; }
 
 #category_container .card-flyer .text-box p {
@@ -219,7 +241,8 @@ body {
   padding-bottom: 0px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #000000; }
+  color: #002f33;
+  text-align: left; }
 
 #category_container .card-flyer .text-box h6 {
   margin-top: 0px;
@@ -229,14 +252,23 @@ body {
   text-transform: uppercase;
   font-family: "raleway", sans-serif;
   letter-spacing: 1px;
-  color: #002f33; }
+  color: #002f33;
+  text-align: left; }
 
 .viewall_cat {
+  position: relative;
   display: inline-block;
   color: #002f33;
-  padding: 1rem;
-  padding-bottom: 0;
+  padding: 0;
   font-size: 20px; }
+  .viewall_cat::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 0.1rem;
+    width: 4rem;
+    background-color: #3bc0cb; }
 
 .about {
   margin-top: 5rem;
@@ -276,3 +308,27 @@ body {
     text-align: left;
     line-height: 21px;
     padding: 1em 2em; }
+
+.footer {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  background-color: #f6f6f6; }
+  .footer a {
+    color: #002f33; }
+    .footer a:hover {
+      text-decoration: underline #3bc0cb; }
+
+.owl-prev {
+  left: -30px; }
+
+.owl-next {
+  right: -30px; }
+
+.owl-nav .owl-prev.disabled,
+.owl-nav .owl-next.disabled {
+  display: none !important; }
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 90px; }

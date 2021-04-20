@@ -28,3 +28,13 @@ $(window).on("load resize", function () {
 
 // active
 $('.nav-tabs a[href="#signup"]').tab("show");
+
+// carousel
+$(".owl-carousel").owlCarousel({
+  items: 3,
+  nav: true,
+  dots: false,
+  loop: false,
+  navRewind: false,
+  navText: ["<img src='myprevimage.png'>", "<img src='mynextimage.png'>"],
+});
