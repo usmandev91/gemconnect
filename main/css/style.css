@@ -97,6 +97,9 @@ body {
   border-radius: 48px;
   padding: 2rem 2rem; }
 
+.modal_form {
+  margin: 1em 0; }
+
 .modal-logo {
   padding: 2rem; }
 
@@ -150,41 +153,6 @@ body {
 
 .gc_showcase {
   background: url(); }
-
-.banner {
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
-
-.tab_btn {
-  margin: 0;
-  padding-bottom: 0; }
-
-.tab_btn:focus {
-  box-shadow: 0 6px 0px -2px #3bc0cb; }
-
-.active {
-  box-shadow: 0 6px 0px -2px #3bc0cb; }
-
-.form_design {
-  margin: 1em 0; }
-
-#signup,
-#login {
-  max-width: 420px; }
-
-.reg-form {
-  border: none;
-  height: 39px;
-  padding: 0px 1rem;
-  min-width: 20rem; }
-
-@media (max-width: 600px) {
-  .nav-item {
-    padding: 0 1em; }
-  .tab-pane {
-    min-width: 400px; }
-  .modal-sm {
-    max-height: 200;
-    min-width: 420px; } }
 
 .categories {
   margin-top: 5rem; }
@@ -332,3 +300,42 @@ body {
 .owl-next {
   position: absolute;
   top: 90px; }
+
+.banner {
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
+
+.tab_btn {
+  margin: 0;
+  padding-bottom: 0; }
+
+.tab_btn:focus {
+  box-shadow: 0 6px 0px -2px #3bc0cb; }
+
+.active {
+  box-shadow: 0 6px 0px -2px #3bc0cb; }
+
+#signup,
+#login {
+  max-width: 420px; }
+
+.reg-form {
+  border: none;
+  height: 39px;
+  padding: 0px 1rem;
+  min-width: 20rem;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  padding: 1rem; }
+  .reg-form::placeholder {
+    font-size: 16;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #b4b4b4; }
+  @media (max-width: 600px) {
+    .reg-form .nav-item {
+      padding: 0 1em; }
+    .reg-form .tab-pane {
+      min-width: 400px; }
+    .reg-form .modal-sm {
+      max-height: 200;
+      min-width: 420px; } }
