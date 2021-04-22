@@ -31,10 +31,30 @@ $('.nav-tabs a[href="#signup"]').tab("show");
 
 // carousel
 $(".owl-carousel").owlCarousel({
-  items: 3,
+  items: 5,
   nav: true,
   dots: false,
+
   loop: false,
   navRewind: false,
-  navText: ["<img src='myprevimage.png'>", "<img src='mynextimage.png'>"],
+  navText: ["<img src='prev.svg'>", "<img src='next.svg'>"],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      loop: false,
+    },
+    600: {
+      items: 3,
+      nav: false,
+      loop: false,
+    },
+    1000: {
+      items: 5,
+      nav: true,
+      loop: false,
+      navRewind: false,
+    },
+  },
 });
