@@ -29,12 +29,12 @@ $(window).on("load resize", function () {
 // active
 $('.nav-tabs a[href="#signup"]').tab("show");
 
-// carousel
-$(".owl-carousel").owlCarousel({
+//seller carousel
+$(".seller-carousel").owlCarousel({
   items: 5,
   nav: true,
   dots: false,
-
+  touchDrag: true,
   loop: false,
   navRewind: false,
   navText: ["<img src='prev.svg'>", "<img src='next.svg'>"],
@@ -44,14 +44,47 @@ $(".owl-carousel").owlCarousel({
       items: 1,
       nav: false,
       loop: false,
+      touchDrag: true,
     },
     600: {
       items: 3,
       nav: false,
       loop: false,
+      touchDrag: true,
     },
     1000: {
       items: 5,
+      nav: true,
+      loop: false,
+      navRewind: false,
+    },
+  },
+});
+// brand carousel
+$(".brand_carousel").owlCarousel({
+  items: 4,
+  nav: true,
+  dots: false,
+  touchDrag: true,
+  loop: false,
+  navRewind: false,
+  navText: ["<img src='prev.svg'>", "<img src='next.svg'>"],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      loop: false,
+      touchDrag: true,
+    },
+    600: {
+      items: 3,
+      nav: false,
+      loop: false,
+      touchDrag: true,
+    },
+    1000: {
+      items: 4,
       nav: true,
       loop: false,
       navRewind: false,

@@ -196,7 +196,7 @@ body {
     color: #002f33; }
 
 @media screen and (max-width: 450px) {
-  .caousel_container {
+  .seller_container {
     padding-left: 6.4rem; } }
 
 .categories {
@@ -282,6 +282,28 @@ body {
     height: 0.1rem;
     width: 4rem;
     background-color: #3bc0cb; }
+
+.brand_card {
+  width: 16.875rem;
+  height: 16.875rem;
+  padding: 1em;
+  border: none; }
+
+.brand_img_box {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 3.188rem; }
+  .brand_img_box:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4); }
+
+#brand_pic {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 3.188rem; }
+
+@media screen and (max-width: 450px) {
+  .brand_container {
+    padding-left: 46px; } }
 
 .about {
   margin-top: 5rem;
