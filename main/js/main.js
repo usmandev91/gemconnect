@@ -91,3 +91,4 @@ $(".brand_carousel").owlCarousel({
     },
   },
 });
+

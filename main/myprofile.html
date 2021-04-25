@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemConnect | My Profile</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- default navbar -->
+    <!-- userprofile -->
+    <section class="user-profile">
+        <div class="container user_container">
+            <div class="container d-flex align-items-center justify-content-end btn-group dropleft">
+                <button type="button" class="user_setting_btn" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <img src="./assets/userprofile/Options Icon button.svg" width="35px" height="35px" alt="">
+                </button>
+                <div class="dropdown-menu user_setting_menu text-center">
+                    <a class="dropdown-item user_setting" href="#">Edit Profile</a>
+                    <a class="dropdown-item user_setting" href="#">action</a>
+                    <a class="dropdown-item user_setting" href="#">action</a>
+                    <a class="dropdown-item user_setting" href="#">action</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <div class="user_img_box  d-flex justify-content-center align-items-center">
+                        <img id="user_pic" src="./assets/images/seller/handmade.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="text-container text-center">
+                        <h6 class="d-flex justify-content-center" id="user_name">HandMade jewelry<span
+                                class="badge pb-0 pl-2" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg"
+                                    width="23px" height="20px" alt=""></span></h6>
+                        <div id="user_rating"> <span id="user_reviews">(127 reviews)</span></div>
+                        <p class="mt-5" id="user_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                            dolor laudantium repudiandae nemo temporibus dicta, praesentium asperiores illum ipsum
+                            dignissimos!</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 d-flex justify-content-center ">
+                    <div id="user_attributes">
+                        <div id="verified_host">
+                            <p class="mb-1 d-flex align-items-center" id="verified_host_text"><span class="badge pb-0"
+                                    id="verified_host_badge"><img src="./assets/userprofile/shield Icon.svg"
+                                        width="16px" height="16px" alt=""></span>Verified Host</p>
+                        </div>
+                        <div id="verified_email ">
+                            <p class="my-1 d-flex align-items-center" id="verified_email_text"><span class="badge pb-0"
+                                    id="verifed_email_badge"><img src="./assets/userprofile/email Icon.svg" width="4px"
+                                        height="10px" alt=""></span>E-mail verified</p>
+                        </div>
+                        <div id="duration_at_gc">
+                            <p class="my-1 d-flex align-items-center" id="duration_at_gc_text"><span class="badge pb-0"
+                                    id="duration_badge"><img src="./assets/userprofile/badge Icon.svg" width="18px"
+                                        height="18px" alt=""></span>2 years with gemconnect</p>
+                        </div>
+                        <div id="user_followers">
+                            <p class="mb-y d-flex align-items-center" id="user_follower_count"><span class="badge pb-0"
+                                    id="follower_badge"><img src="./assets/userprofile/profile.svg" width="16px"
+                                        height="16px" alt=""></span>1007 followers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- listing boxes -->
+    <section class="listings my-5">
+        <div class="title-wrap container">
+            <h2 class="section-title-start text-start your-listing-title">
+                Your Listings
+            </h2>
+        </div>
+        <div id="category_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/Ring Image.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0">Golden Ring with little stones</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/2rings.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0">Engangememt golden rounds</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/goldenwatch.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0 text-center"> PIET HEIN EEK Golden Watch</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/rado.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0">Rado watch</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- favorites boxes -->
+    <section class="favorite_listings my-5">
+        <div class="title-wrap container">
+            <h2 class="section-title-start text-start favorites-title">
+                Favorites
+            </h2>
+        </div>
+        <div id="category_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/Ring Image.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0">Golden Ring with little stones</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/2rings.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0">Engangememt golden rounds</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/goldenwatch.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0 text-center"> PIET HEIN EEK Golden Watch</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/rado.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0">Rado watch</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- sold boxes -->
+    <section class="sold_listings my-5">
+        <div class="title-wrap container">
+            <h2 class="section-title-start text-start sold-title">
+                Sold Items
+            </h2>
+        </div>
+        <div id="category_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/Ring Image.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0">Golden Ring with little stones</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/2rings.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0">Engangememt golden rounds</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/goldenwatch.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0 text-center"> PIET HEIN EEK Golden Watch</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="listing-image-box">
+                                        <img src="./assets/userprofile/rado.png" alt="" />
+                                    </div>
+                                    <div class="text-container mt-0 py-3">
+                                        <p class="listing_name mt-0 pt-0">Rado watch</p>
+                                        <p class="listing_price mt-0 pt-0">$550</p>
+                                        <div class="listing_rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- reviews -->
+    <section class="listings my-5">
+        <div class="title-wrap container">
+            <h2 class="section-title-start text-start rewiews-title">
+                Reviews
+            </h2>
+        </div>
+        <!-- footer -->
+
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
