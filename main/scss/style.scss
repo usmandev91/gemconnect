@@ -38,7 +38,6 @@ img{
 
 // Home page
 .gc_sticky {
-  margin-top: 1em;
   padding-top: 1em;
   background-color: $theme_bgcolor;
   color: $text-color !important;
@@ -48,8 +47,11 @@ img{
   }
 }
 .gc_logo{
-  width: 240px;
+  width: 230px;
+  height: 37.74px;
+  margin-top: 1em 0;
 }
+
 .btn-top:focus{
   border-color: #3bc0cb !important;
   box-shadow: 0 0 4px 0px $theme_color !important;
@@ -59,6 +61,7 @@ img{
 .btn-top {
   white-space: nowrap;
 }
+
 .carty{
   width: 18px;
   height: 18px;
@@ -96,6 +99,11 @@ img{
   border-color: #3bc0cb !important;
   box-shadow: 0 0 1px 0px $theme_color !important;
 }
+@media screen and (max-width: 990px) {  
+  #main_menu {
+    margin-top: 2rem;
+  }
+}
 
 // jumbo
 
@@ -107,14 +115,15 @@ img{
 }
 
 .hero-text {
-  font-size: 82px !important;
+  font-size: 5.12em !important;
   color: #ffffff;
   margin-bottom: 0.21em;
 }
 
 .hero-search {
   height: 71px;
-  width: 74%;
+  max-width: 72%;
+  min-width: 72%;
   border-radius: 22px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -123,24 +132,32 @@ img{
   &::placeholder {
     font-size: 18px;
     font-family: "raleway", sans-serif;
+    text-overflow: ellipsis;
   }
   .search-btn-hero {
     height: 71px;
     width: 100px;
+    margin-right: 3rem;
     border-radius: 22px;
     background-color: white;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-
+    &:hover{
+      .search-btn-img{
+        filter: none;
+       }
+    }
+    &:focus{
+      box-shadow  : none;
+    }
   }
 }
 .search-btn-img{
-  width: 80%;
+  max-width: 60%;
+
   filter: grayscale(100%);
  }
- .search-btn-img:hover{
-  filter: none;
- }
+
 
 .button_container {
   overflow: hidden;
@@ -256,8 +273,8 @@ img{
   background-color: $form_input_background;
   border: $form-border;
 }
-.search-btn,
-.search-btn-hero:focus {
+.search-btn
+:focus {
   border-color: #3bc0cb !important;
   box-shadow: 0 0 5px $theme_color !important;
 }
@@ -327,7 +344,10 @@ img{
   width: 12rem;
   height: 23rem;
   border: none;
-
+  .verifiedseller{
+    width: 16px;
+    height: 16px;
+  }
   a {
     text-decoration: none;
   }
@@ -384,22 +404,22 @@ img{
 }
 #category_container .card-flyer {
   border-radius: 51px;
-}
-#category_container .card-flyer {
   background: #f6f6f6;
   overflow: hidden;
   border-radius: 51px;
+  margin-top: 50px;
+  transition: all 0.3s ease-in;
 }
 
 
-#category_container .card-flyer .image-box img {
+#category_container .image-box img {
   transition: all 0.3s ease;
   height: 140px;
   width: 115px;
   margin-top: 1em;
 }
 
-#category_container .card-flyer .image-box .category_img{
+#category_container .image-box .category_img{
   width: 175px;
   }
 
@@ -407,7 +427,7 @@ img{
   opacity: 0.7;
   transform: scale(1.15);
 }
-#category_container .card-flyer .text-box {
+#category_container .text-box {
   text-align: center;
 }
 
@@ -421,17 +441,12 @@ img{
   padding: 20px 10px;
 }
 
-#category_container .card-flyer {
-  background: #f6f6f6;
-  margin-top: 50px;
-  transition: all 0.3s ease-in;
-}
 #category_container .card-flyer:hover {
   background: #f6f6f6;
   transition: all 0.3s ease-in;
   margin-top: 50px;
 }
-#category_container .card-flyer .text-box p {
+#category_container .text-box p {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -440,7 +455,7 @@ img{
   color: $text-color;
   text-align: left;
 }
-#category_container .card-flyer .text-box h6 {
+#category_container .text-box h6 {
   margin-top: 0px;
   margin-bottom: 4px;
   font-size: 18px;
@@ -579,7 +594,7 @@ img{
     left: -60px;
   }
   .owl-next {
-    right: -40px;
+    right: -65px;
   }
   .owl-prev , .owl-next
   :hover{
@@ -590,40 +605,23 @@ img{
 
   
 .brand_card {
-  width: 16.875rem;
-  height: 16.875rem;
-  padding: 1em;
+  padding: 3rem;
   border: none;
 }
 
 .brand_img_box {
-  width: 14rem;
-  height: 14rem;
+  min-width: 14rem;
+  min-height: 14rem;
+  max-width: 22rem;
+  max-width: 22rem;
   border-radius: 3.188rem;
   &:hover {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   }
 }
-
-#brand_pic {
-  width: 14rem;
-  height: 14rem;
+#brand_pic{
   border-radius: 3.188rem;
 }
-@media screen and (max-width: 500px) {
-  .bran_container {
-    padding-left: 120px;
-    padding-right: 110px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .brand_container {
-    padding-left: 82px;
-    padding-right: 80px;
-  }
-}
-
 // about-section
 
 .about {
@@ -671,7 +669,10 @@ img{
     padding: 1em 2em;
   }
 }
-
+.howitworksimg{
+  width: 30px;
+  height: 30px;
+}
 // footer
 
 .footer {
@@ -690,17 +691,23 @@ img{
 .banner {
   box-shadow: $div-shadow;
 }
-
+.nav-tabs{
+  border: none !important;
+}
 .tab_btn {
   margin: 0;
   padding-bottom: 0;
 }
 
 .tab_btn:focus {
-  box-shadow: 0 6px 0px -2px $theme_color;
+  box-shadow: 0 6px 0px -4px $theme_color;
 }
-.active {
-  box-shadow: 0 6px 0px -2px $theme_color;
+.active{
+  box-shadow: 0 6px 0px -4px $theme_color;
+}
+
+.tab-pane{
+  box-shadow: 0 0 0 white;
 }
 
 #signup,

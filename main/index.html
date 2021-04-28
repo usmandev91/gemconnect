@@ -12,18 +12,18 @@
   </head>
   <body>
     <!-- sticky top header including logo and navbar -->
-    <header class="container-fluid gc_sticky">
+    <header class="container-fluid sticky-top gc_sticky">
     <div class="row">
-      <div class="col-sm"></div>
-      <div class="col-sm">
+      <div class="col-sm-3 col-lg-4 col-md-1"></div>
+      <div class="col-sm-6 col-lg-4 col-md-10">
     <!-- logo -->
-      <div class="container d-flex justify-content-center logo "><a href="#">
+      <div class="container d-flex justify-content-center"><a href="#">
         <img class="gc_logo" src="./assets/icons/Gc.svg" alt="logo"
       /></a></div>
     </div>
     <!-- login/signup buttons -->
 
-      <div class="col-sm d-none" id="gc_buttons">
+      <div class="col-sm-6 col-lg-4 col-md-1 d-none " id="gc_buttons">
         <div class="container d-flex justify-content-center">
           <button type="button" class="btn btn-top pl-4 pr-4 m-2 mr-5 " data-toggle="modal" data-target="#loginModal">
           Login
@@ -34,7 +34,7 @@
     <!-- main menu in header/user logged in menu -->
 
 
-          <div class="col-sm" id="main_menu">
+          <div class="col-sm-12 col-lg-3 col-md-12 " id="main_menu">
             <div class="container d-flex justify-content-center">
               <button type="button" class="btn mr-5 main_menu_btn" data-toggle="carty" data-target="#">
               <img class="carty" src="./assets/icons/cart.svg" ><span class="badge carty_text " id="cart_items">Cart 0</span>
@@ -103,7 +103,7 @@
     </div>
   </div>
 
- <!-- Nav-bar -->
+ <!--Homepage Nav-bar -->
 
     <nav class="navbar navbar-expand-lg">
       <button
@@ -168,8 +168,8 @@
 </header>
 <!-- JUMBO SECTION -->
 <div class="jumbotron jumbotron-fluid hero d-flex justify-content-center align-items-center flex-column">
-  <div class="container d-flex flex-column justify-content-center align-items-center">
-    <h1 class="hero-text">Find only the finest jewelry</h1>  
+  <div class="container text-center">
+    <h1 class="hero-text">Find only the finest jewelry</h1>
   </div>
 
   <form class="form d-flex justify-content-center align-items-center hero-search">								
@@ -193,7 +193,7 @@
                     <img id="seller_pic" src="./assets/images/seller/handmade.jpg" alt="" />
                 </div>
                 <div class="text-container text-center">
-                    <h6 id="seller_name">HandMade<span class="badge pb-0" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg" width="16px" height="16px" alt=""></span></h6>
+                    <h6 id="seller_name">HandMade<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
                     <p id="seller_about">Lorem ipsum dolor sit.</p>
                 </div>
         
@@ -206,7 +206,7 @@
                   <img id="seller_pic" src="./assets/images/seller/Davechappel.jpg" alt="" />
               </div>
               <div class="text-container text-center">
-                  <h6 id="seller_name">Dave Chappel<span class="badge pb-0" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg" width="16px" height="16px" alt=""></span></h6>
+                  <h6 id="seller_name">Dave Chappel<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
                   <p id="seller_about">Lorem ipsum dolor sit amet consectetur adipisicing</p>
               </div>
       
@@ -219,7 +219,7 @@
                 <img id="seller_pic" src="./assets/images/seller/EWJewellery.jpg" alt="" />
             </div>
             <div class="text-container text-center">
-                <h6 id="seller_name">EW Jewellery<span class="badge pb-0" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg" width="16px" height="16px" alt=""></span></h6>
+                <h6 id="seller_name">EW Jewellery<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
                 <p id="seller_about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
     
@@ -232,7 +232,7 @@
                 <img id="seller_pic" src="./assets/images/seller/Howard Jr.jpg" alt="" />
             </div>
             <div class="text-container text-center">
-                <h6 id="seller_name">Howard JR<span class="badge pb-0" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg" width="16px" height="16px" alt=""></span></h6>
+                <h6 id="seller_name">Howard JR<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
                 <p id="seller_about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
     
@@ -245,7 +245,7 @@
                 <img id="seller_pic" src="./assets/images/seller/Kenshawn.jpg" alt="" />
             </div>
             <div class="text-container text-center">
-                <h6 id="seller_name">Ken Shawn<span class="badge pb-0" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg" width="16px" height="16px" alt=""></span></h6>
+                <h6 id="seller_name">Ken Shawn<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
                 <p id="seller_about">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
    
@@ -258,7 +258,7 @@
                 <img id="seller_pic" src="./assets/images/seller/BigDawg.jpg" alt="" />
             </div>
             <div class="text-container text-center">
-                <h6 id="seller_name">Big Shaq<span class="badge pb-0" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg" width="16px" height="16px" alt=""></span></h6>
+                <h6 id="seller_name">Big Shaq<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
                 <p id="seller_about">Lorem ipsum dolor sit.</p>
             </div>
     
@@ -414,7 +414,7 @@
 
   </section>
 <!-- Brands -->
-<section class="Brands">
+<section class="brands">
   <div class="title-wrap d-flex justify-content-center align-items-center">
     <h2 class="section-title-center brands-title mb-5 mt-5">
         Browse by Brands
@@ -433,7 +433,7 @@
 
     <div class="card brand_card">
       <a href="">
-                <div class="brand_img_box mb-3">
+                <div class="brand_img_box d-flex justify-content-center mb-3">
                     <img id="brand_pic" src="./assets/images/brands/cartier.png" alt="cartier logo" />
                 </div>
     </a>
@@ -493,7 +493,7 @@
                         <p>step-1</p></div>
                       <h4>Easy to Customize</h4>
                       <div class="my-4">
-                        <img src="./assets/icons/pricetag Icon.svg" width="30px" height="30px" alt="pricing">
+                        <img class="howitworksimg" src="./assets/icons/pricetag Icon.svg" alt="pricing">
                     </div>
                   </div>
                 </div>
@@ -504,7 +504,7 @@
                         <p>step-2</p></div>
                       <h4>sell it to the highest bidder</h4>
                       <div class="my-4">
-                    <img src="./assets/icons/Done Icon.svg" width="30px" height="30px" alt="done">
+                    <img class="howitworksimg" src="./assets/icons/Done Icon.svg" alt="done">
                     </div>
                   </div>
                 </div>
@@ -514,7 +514,7 @@
                       <p>step-3</p></div>
                     <h4>ship item within two days</h4>
                     <div class="my-4">
-                      <img src="./assets/icons/truck icon.svg" width="30px" height="30px" alt="shiping">
+                      <img class="howitworksimg" src="./assets/icons/truck icon.svg" alt="shiping">
                     </div>
                   </div>
                   </div>
@@ -525,7 +525,7 @@
                       <p>step-4</p></div>
                     <h4>We authenticate the item</h4>
                     <div class="my-4">
-                      <img src="./assets/icons/Authentic icon.svg" width="30px" height="30px"  alt="Authentic">
+                      <img class="howitworksimg" src="./assets/icons/Authentic icon.svg" alt="Authentic">
                   </div>
                   </div>
                 </div>
@@ -536,7 +536,7 @@
                       <p>step-5</p></div>
                     <h4>We ship it to the buyer</h4>
                     <div class="my-4">
-                      <img src="./assets/icons/truck icon.svg" width="30px" height="30px" alt="shiping">
+                      <img class="howitworksimg" src="./assets/icons/truck icon.svg" alt="shiping">
                   </div>
                   </div>
                 </div>
@@ -547,7 +547,7 @@
                       <p>step-6</p></div>
                     <h4>We relase the funds to you</h4>
                     <div class="my-4">
-                      <img src="./assets/icons/moneybag Icon.svg" width="30px" height="30px" alt="funds">
+                      <img class="howitworksimg" src="./assets/icons/moneybag Icon.svg" alt="funds">
                     </div>
                   </div>
                   </div>
