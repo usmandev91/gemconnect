@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3bc0cb;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Menu_Icon" data-name="Menu Icon" transform="translate(-1661.047 -45)">
+    <line id="Line_400" data-name="Line 400" class="cls-1" x2="16" transform="translate(1666.047 46)"/>
+    <line id="Line_401" data-name="Line 401" class="cls-1" x2="16" transform="translate(1664.047 52)"/>
+    <line id="Line_402" data-name="Line 402" class="cls-1" x2="16" transform="translate(1662.047 58)"/>
+  </g>
+</svg>

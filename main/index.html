@@ -11,23 +11,53 @@
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
   </head>
   <body>
+    <!-- sticky top header including logo and navbar -->
     <header class="container-fluid gc_sticky">
     <div class="row">
       <div class="col-sm"></div>
       <div class="col-sm">
-      <div class="d-flex justify-content-center logo "><a href="#">
-        <img src="./assets/icons/Gc.svg" width="240px" alt="logo"
+    <!-- logo -->
+      <div class="container d-flex justify-content-center logo "><a href="#">
+        <img class="gc_logo" src="./assets/icons/Gc.svg" alt="logo"
       /></a></div>
     </div>
+    <!-- login/signup buttons -->
 
-      <div class="col-sm">
-        <div class="d-flex justify-content-center">
+      <div class="col-sm d-none" id="gc_buttons">
+        <div class="container d-flex justify-content-center">
           <button type="button" class="btn btn-top pl-4 pr-4 m-2 mr-5 " data-toggle="modal" data-target="#loginModal">
           Login
         </button>
           <a class="btn  btn-top  pl-3 pr-3 m-2 " href="./registration.html" >Sign up</a></div>
           </div>
+
+    <!-- main menu in header/user logged in menu -->
+
+
+          <div class="col-sm" id="main_menu">
+            <div class="container d-flex justify-content-center">
+              <button type="button" class="btn mr-5 main_menu_btn" data-toggle="carty" data-target="#">
+              <img class="carty" src="./assets/icons/cart.svg" ><span class="badge carty_text " id="cart_items">Cart 0</span>
+            </button>
+
+            <div class="dropdown">
+              <button class="btn dropdown-toggle main_menu_btn" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="./assets/icons/menuIcons/Menu Icon.svg" alt="">
+              </button>
+              <div class="dropdown-menu dropdown-menu-right mainmenu" aria-labelledby="dropdownMenu">
+                <a class="dropdown-item menu_link" href="myprofile.html"><img class="main_menu_icons" src="./assets/icons/menuIcons/profile.svg" alt="user profile icon"><span class="ml-3">profile</span></a>
+                <a class="dropdown-item menu_link" href="mylistings.html"><img class="main_menu_icons" src="./assets/icons/menuIcons/wishlist.svg" alt="wishlist icon"><span class="ml-3">wishlist</span></a>
+                <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons" src="./assets/icons/menuIcons/settings.svg" alt="settings icon"><span class="ml-3">settings</span></a>
+                <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons" src="./assets/icons/menuIcons/logout.svg" alt="logout icon"><span class="ml-3">Logout</span></a> 
+              </div>
+            </div>
+          </div>
+            </div>
         </div>
+
+
+    <!--Modal design-->
+
         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-xs modal-dialog modal-dialog-centered " role="document">
             <div class="modal-content">
@@ -72,6 +102,7 @@
         </div>
     </div>
   </div>
+
  <!-- Nav-bar -->
 
     <nav class="navbar navbar-expand-lg">
@@ -89,6 +120,7 @@
 
       <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
         <ul class="navbar-nav mr-5">
+          
           <li class="nav-item dropdown  mx-2">
             <a
               class="nav-link  navbtn"
@@ -101,12 +133,12 @@
             >
               Browse
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Chains</a>
-              <a class="dropdown-item" href="#">Rings</a>
-              <a class="dropdown-item" href="#">Grills</a>
-              <a class="dropdown-item" href="#">Bracelets</a>
-              <a class="dropdown-item" href="#">Watches</a>
+            <div class="dropdown-menu browse_dropdown" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item browse_item" href="chains.html">Chains <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+              <a class="dropdown-item browse_item" href="rings.html">Rings <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+              <a class="dropdown-item browse_item" href="grills.html">Grills <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+              <a class="dropdown-item browse_item" href="braceletes.html">Bracelets <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+              <a class="dropdown-item browse_item" href="watches.html">Watches <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
             </div>
           </li>
           <li class="nav-item mx-2">
@@ -122,13 +154,13 @@
             <a class="nav-link navbtn" href="#">auction</a>
           </li>
         </ul>
-        <form class="navbar-form form-inline">
+        <!-- <form class="navbar-form form-inline">
           <div class="input-group search-box d-none">								
             <input type="text" id="search" class="form-control form_search" placeholder="Search by Name">
             <span class="input-group-addon"><button type="submit" class="search-btn btn border-left"><img src="./assets/icons/search.svg" alt=""></button></span>
           </div>
         </form>
-        
+         -->
       </div>
     
 </div>
@@ -142,7 +174,7 @@
 
   <form class="form d-flex justify-content-center align-items-center hero-search">								
       <input type="text" id="search" class="form-control hero-search" placeholder="Search Diamond Rolex">
-      <span class="input-group-addon"><button type="submit" class="search-btn-hero btn border-left"><img src="./assets/icons/search.svg" alt=""></button></span>
+      <span class="input-group-addon"><button type="submit" class="search-btn-hero btn"><img class="search-btn-img" src="./assets/icons/search.svg" alt=""></button></span>
   </form>
 </div>
 
@@ -156,7 +188,7 @@
 <div class="container mt-1 seller_container">
   <div class="seller-carousel owl-carousel owl-theme">
     <div class=" seller_card">
-      <a href="userprofile.html">
+      <a class="d-flex flex-column align-items-center justify-content-center" href="userprofile.html">
                 <div class="seller_img_box mb-3">
                     <img id="seller_pic" src="./assets/images/seller/handmade.jpg" alt="" />
                 </div>
@@ -169,7 +201,7 @@
   </div>
 
   <div class="seller_card">
-    <a href="">
+    <a class="d-flex flex-column align-items-center justify-content-center" href="">
               <div class="seller_img_box mb-3">
                   <img id="seller_pic" src="./assets/images/seller/Davechappel.jpg" alt="" />
               </div>
@@ -182,7 +214,7 @@
 </div>
 
 <div class="seller_card">
-  <a href="">
+  <a class="d-flex flex-column align-items-center justify-content-center" href="">
             <div class="seller_img_box mb-3">
                 <img id="seller_pic" src="./assets/images/seller/EWJewellery.jpg" alt="" />
             </div>
@@ -195,7 +227,7 @@
 </div>
 
 <div class="card seller_card">
-  <a href="">
+  <a class="d-flex flex-column align-items-center justify-content-center" href="">
             <div class="seller_img_box mb-3">
                 <img id="seller_pic" src="./assets/images/seller/Howard Jr.jpg" alt="" />
             </div>
@@ -208,7 +240,7 @@
 </div>
 
 <div class="seller_card">
-  <a href="">
+  <a class="d-flex flex-column align-items-center justify-content-center" href="">
             <div class="seller_img_box mb-3">
                 <img id="seller_pic" src="./assets/images/seller/Kenshawn.jpg" alt="" />
             </div>
@@ -221,7 +253,7 @@
 </div>
 
 <div class="seller_card">
-  <a href="">
+  <a class="d-flex flex-column align-items-center justify-content-center" href="">
             <div class="seller_img_box mb-3">
                 <img id="seller_pic" src="./assets/images/seller/BigDawg.jpg" alt="" />
             </div>
@@ -249,7 +281,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
+                    <a href="rings.html">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
@@ -264,7 +296,7 @@
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
+                    <a href="chains.html">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
@@ -279,7 +311,7 @@
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
+                    <a href="pendants.html">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
@@ -295,7 +327,7 @@
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
+                    <a href="watches.html">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
@@ -316,7 +348,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
+                    <a href="bracelets.html">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
@@ -331,7 +363,7 @@
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
+                    <a href="grills.html">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
@@ -346,7 +378,7 @@
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
+                    <a href="earings.html">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
@@ -362,11 +394,11 @@
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
+                    <a href="misc.html">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
-                                    <img src="" alt="" />
+                                    <img class="category_img" src="./assets/images/categories/misc.png" alt="" />
                                 </div>
                                 <div class="text-container">
                                     <h6>Misc..</h6>
@@ -390,7 +422,7 @@
 </div>
 <div class="container"><p class="text-right mt-5 ml-auto"><a href="brands.html" class="btn viewall_brand">view all</a></p></div>
 <div class="container mt-1 brand_container">
-  <div class="brand_carousel owl-carousel owl-theme brand_carousel">
+  <div class="brand_carousel owl-carousel owl-theme">
     <div class="card brand_card">
       <a href="">
                 <div class="brand_img_box mb-3">
