@@ -23,19 +23,21 @@ $cards-bg-color: #f6f6f6;
 body {
   background-color: $theme_bgcolor;
   font-family: "raleway", sans-serif;
-
   text-transform: capitalize;
   color: $text-color !important;
 }
-img{
-  width: 100%;
-}
+
 .dropdown-item:hover, .dropdown-item:focus {
   // color: $theme_color !important;
 	text-decoration: none;
   background-color: #F5F5F5 !important;
   }
-
+  .dropdown-toggle:after {
+    display: none !important;
+}
+  img{
+    width: 100%;
+  }
 // Home page
 .gc_sticky {
   padding-top: 1em;
@@ -136,8 +138,9 @@ img{
   }
   .search-btn-hero {
     height: 71px;
-    width: 100px;
-    margin-right: 3rem;
+    width: 80px;
+    padding-right: 1.4rem;
+    margin-right: 2rem;
     border-radius: 22px;
     background-color: white;
     border-top-left-radius: 0;
@@ -152,18 +155,19 @@ img{
     }
   }
 }
-.search-btn-img{
-  max-width: 60%;
 
+.search-btn-img{
+  width: 100%;
   filter: grayscale(100%);
  }
-
 
 .button_container {
   overflow: hidden;
   padding: 0;
 }
-// navbar
+
+
+// navbars
 .drop-item {
   color: $text-color !important;
 }
@@ -177,7 +181,7 @@ img{
 .nav-item {
   padding: 0 1rem;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   color: $text-color !important;
 }
 .nav-link {
@@ -210,6 +214,51 @@ img{
   }
 }
 
+// navbar default
+.default_nav{
+  background-color: $theme_bgcolor !important;
+  padding: 0.5rem 0;
+  box-shadow: $div-shadow;
+}
+
+.nav_logo{
+  border: black 1px solid;
+}
+.search-box{
+display: flex;
+flex-direction: row;
+}
+.inline-search {
+  height: 43px;
+  border-radius: 11px;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  &::placeholder {
+    font-size: 16px;
+    font-family: "raleway", sans-serif;
+    text-overflow: ellipsis;
+  }
+  .search-btn-inline {
+    height: 43px;
+    width: 52px;
+    border-radius: 11px;
+    background-color: white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    &:hover{
+      .search-btn-img{
+        filter: none;
+       }
+    }
+    &:focus{
+      box-shadow  : none;
+    }
+  }
+}
+
+.menu-icon{
+  width: 23px;
+}
 // transitions
 
 .navbtn::after {
@@ -686,7 +735,12 @@ img{
     }
   }
 }
-
+.btn_footer_send{
+  background-color: #002f33;
+  color: white;
+  margin: 1em 0;
+  padding: .4rem 3.5rem;
+}
 // registration page
 .banner {
   box-shadow: $div-shadow;

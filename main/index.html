@@ -1,626 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GemConnect</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-  </head>
-  <body>
-    <!-- sticky top header including logo and navbar -->
-    <header class="container-fluid sticky-top gc_sticky">
-    <div class="row">
-      <div class="col-sm-3 col-lg-4 col-md-1"></div>
-      <div class="col-sm-6 col-lg-4 col-md-10">
-    <!-- logo -->
-      <div class="container d-flex justify-content-center"><a href="#">
-        <img class="gc_logo" src="./assets/icons/Gc.svg" alt="logo"
-      /></a></div>
-    </div>
-    <!-- login/signup buttons -->
-
-      <div class="col-sm-6 col-lg-4 col-md-1 d-none " id="gc_buttons">
-        <div class="container d-flex justify-content-center">
-          <button type="button" class="btn btn-top pl-4 pr-4 m-2 mr-5 " data-toggle="modal" data-target="#loginModal">
-          Login
-        </button>
-          <a class="btn  btn-top  pl-3 pr-3 m-2 " href="./registration.html" >Sign up</a></div>
-          </div>
-
-    <!-- main menu in header/user logged in menu -->
-
-
-          <div class="col-sm-12 col-lg-3 col-md-12 " id="main_menu">
-            <div class="container d-flex justify-content-center">
-              <button type="button" class="btn mr-5 main_menu_btn" data-toggle="carty" data-target="#">
-              <img class="carty" src="./assets/icons/cart.svg" ><span class="badge carty_text " id="cart_items">Cart 0</span>
-            </button>
-
-            <div class="dropdown">
-              <button class="btn dropdown-toggle main_menu_btn" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="./assets/icons/menuIcons/Menu Icon.svg" alt="">
-              </button>
-              <div class="dropdown-menu dropdown-menu-right mainmenu" aria-labelledby="dropdownMenu">
-                <a class="dropdown-item menu_link" href="myprofile.html"><img class="main_menu_icons" src="./assets/icons/menuIcons/profile.svg" alt="user profile icon"><span class="ml-3">profile</span></a>
-                <a class="dropdown-item menu_link" href="mylistings.html"><img class="main_menu_icons" src="./assets/icons/menuIcons/wishlist.svg" alt="wishlist icon"><span class="ml-3">wishlist</span></a>
-                <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons" src="./assets/icons/menuIcons/settings.svg" alt="settings icon"><span class="ml-3">settings</span></a>
-                <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons" src="./assets/icons/menuIcons/logout.svg" alt="logout icon"><span class="ml-3">Logout</span></a> 
-              </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>GemConnect</title>
+      <link rel="stylesheet" href="./css/bootstrap.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/owl.carousel.min.css">
+      <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+   </head>
+   <body>
+      <!-- sticky top header including logo and navbar -->
+      <header class="container-fluid sticky-top gc_sticky">
+         <div class="row">
+            <div class="col-sm-3 col-lg-4 col-md-1"></div>
+            <div class="col-sm-6 col-lg-4 col-md-10">
+               <!-- logo -->
+               <div class="container d-flex justify-content-center"><a href="#">
+                  <img class="gc_logo" src="./assets/icons/Gc.svg" alt="logo"
+                     /></a>
+               </div>
             </div>
-          </div>
+            <!-- login/signup buttons -->
+            <div class="col-sm-6 col-lg-4 col-md-1 d-none " id="gc_buttons">
+               <div class="container d-flex justify-content-center">
+                  <button type="button" class="btn btn-top pl-4 pr-4 m-2 mr-5 " data-toggle="modal" data-target="#loginModal">
+                  Login
+                  </button>
+                  <a class="btn  btn-top  pl-3 pr-3 m-2 " href="./registration.html" >Sign up</a>
+               </div>
             </div>
-        </div>
-
-
-    <!--Modal design-->
-
-        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-xs modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content">
-              
-              <div class="modal-body">
-                <div class="form-title text-center">
-                  <img class="modal-logo" src="./assets/icons/Logo.svg" alt="logo">
-                  <div class="container-fluid d-flex justify-content-center">
-                    <h4 class="modal_text">Login</h4></div>
-                </div>
-                <div class="container-fluid d-flex flex-column text-center justify-content-center">
-                  <form>
-                    <div class="form-group modal_form">
-                      <div class="col-xs-2">
-                      <input type="email" class="form-control form_design" id="email"placeholder="Email" required aria-required="true">
-                    
+            <!-- main menu in header/user logged in menu -->
+            <div class="col-sm-12 col-lg-3 col-md-12 " id="main_menu">
+               <div class="container d-flex justify-content-center">
+                  <button type="button" class="btn mr-5 main_menu_btn" data-toggle="carty" data-target="#">
+                  <img class="carty" src="./assets/icons/cart.svg" ><span class="badge carty_text " id="cart_items">Cart 0</span>
+                  </button>
+                  <div class="dropdown">
+                     <button class="btn dropdown-toggle main_menu_btn" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <img src="./assets/icons/menuIcons/Menu Icon.svg" alt="">
+                     </button>
+                     <div class="dropdown-menu dropdown-menu-right mainmenu" aria-labelledby="dropdownMenu">
+                        <a class="dropdown-item menu_link" href="myprofile.html"><img class="main_menu_icons" src="./assets/icons/menuIcons/profile.svg" alt="user profile icon"><span class="ml-3">profile</span></a>
+                        <a class="dropdown-item menu_link" href="mylistings.html"><img class="main_menu_icons" src="./assets/icons/menuIcons/wishlist.svg" alt="wishlist icon"><span class="ml-3">wishlist</span></a>
+                        <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons" src="./assets/icons/menuIcons/settings.svg" alt="settings icon"><span class="ml-3">settings</span></a>
+                        <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons" src="./assets/icons/menuIcons/logout.svg" alt="logout icon"><span class="ml-3">Logout</span></a> 
+                     </div>
                   </div>
-
-                    <div class="form-group modal_form">
-                      <input type="password" class="form-control form_design" id="password" placeholder="Password" required aria-required="true">
-                    </div>
-                    <div class="form-group modal_form">
-
-                        <div class="form-check">
-                          <input type="checkbox" class="form-check-input" id="Check1">
-                          <label class="form-check-label" for="exampleCheck1">keep me logged in</label>
+               </div>
+            </div>
+         </div>
+         <!--Modal design-->
+         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-xs modal-dialog modal-dialog-centered " role="document">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <div class="form-title text-center">
+                        <img class="modal-logo" src="./assets/icons/Logo.svg" alt="logo">
+                        <div class="container-fluid d-flex justify-content-center">
+                           <h4 class="modal_text">Login</h4>
                         </div>
-                        <div class="form-group modal_login">
-                    <button type="submit" class="btn btn-info login_Modal ">Login</button>
+                     </div>
+                     <div class="container-fluid d-flex flex-column text-center justify-content-center">
+                        <form>
+                           <div class="form-group modal_form">
+                              <div class="col-xs-2">
+                                 <input type="email" class="form-control form_design" id="email"placeholder="Email" required aria-required="true">
+                              </div>
+                              <div class="form-group modal_form">
+                                 <input type="password" class="form-control form_design" id="password" placeholder="Password" required aria-required="true">
+                              </div>
+                              <div class="form-group modal_form">
+                                 <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="Check1">
+                                    <label class="form-check-label" for="exampleCheck1">keep me logged in</label>
+                                 </div>
+                                 <div class="form-group modal_login">
+                                    <button type="submit" class="btn btn-info login_Modal ">Login</button>
+                                 </div>
+                        </form>
+                        </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                           <div class="signup-section">Don't have an account? <a href="./registration.html" target="_blank" class="text-info">Sign Up</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Homepage Nav-bar -->
+         <nav class="navbar navbar-expand-lg navbar-expand-md">
+            <div class="container-fluid">
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-toggle="collapse"
+               data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+               >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+               <ul class="navbar-nav mr-5">
+                  <li class="nav-item dropdown  mx-2">
+                     <a
+                        class="nav-link  navbtn"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >
+                     Browse
+                     </a>
+                     <div class="dropdown-menu browse_dropdown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item browse_item" href="chains.html">Chains <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                        <a class="dropdown-item browse_item" href="rings.html">Rings <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                        <a class="dropdown-item browse_item" href="grills.html">Grills <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                        <a class="dropdown-item browse_item" href="braceletes.html">Bracelets <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                        <a class="dropdown-item browse_item" href="watches.html">Watches <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                     </div>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a class="nav-link navbtn" href="#">Buy</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a class="nav-link navbtn" href="#">Sell</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a class="nav-link navbtn" href="#">blog</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a class="nav-link navbtn" href="#">auction</a>
+                  </li>
+               </ul>
+               <!-- <form class="navbar-form form-inline">
+                  <div class="input-group search-box d-none">								
+                    <input type="text" id="search" class="form-control form_search" placeholder="Search by Name">
+                    <span class="input-group-addon"><button type="submit" class="search-btn btn border-left"><img src="./assets/icons/search.svg" alt=""></button></span>
                   </div>
                   </form>
-                  
-   
-              </div>
+                  -->
             </div>
-              <div class="modal-footer d-flex justify-content-center">
-                <div class="signup-section">Don't have an account? <a href="./registration.html" target="_blank" class="text-info">Sign Up</a></div>
-              </div>
-            
-          </div>
-        </div>
-        </div>
-    </div>
-  </div>
-
- <!--Homepage Nav-bar -->
-
-    <nav class="navbar navbar-expand-lg">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
-        <ul class="navbar-nav mr-5">
-          
-          <li class="nav-item dropdown  mx-2">
-            <a
-              class="nav-link  navbtn"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Browse
-            </a>
-            <div class="dropdown-menu browse_dropdown" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item browse_item" href="chains.html">Chains <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-              <a class="dropdown-item browse_item" href="rings.html">Rings <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-              <a class="dropdown-item browse_item" href="grills.html">Grills <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-              <a class="dropdown-item browse_item" href="braceletes.html">Bracelets <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-              <a class="dropdown-item browse_item" href="watches.html">Watches <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
             </div>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link navbtn" href="#">Buy</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link navbtn" href="#">Sell</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link navbtn" href="#">blog</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link navbtn" href="#">auction</a>
-          </li>
-        </ul>
-        <!-- <form class="navbar-form form-inline">
-          <div class="input-group search-box d-none">								
-            <input type="text" id="search" class="form-control form_search" placeholder="Search by Name">
-            <span class="input-group-addon"><button type="submit" class="search-btn btn border-left"><img src="./assets/icons/search.svg" alt=""></button></span>
-          </div>
-        </form>
-         -->
+         </div>
+         </nav>
+      </header>
+      <!-- JUMBO SECTION -->
+      <div class="jumbotron jumbotron-fluid hero d-flex justify-content-center align-items-center flex-column">
+         <div class="container text-center">
+            <h1 class="hero-text">Find only the finest jewelry</h1>
+         </div>
+         <form class="form d-flex justify-content-center align-items-center hero-search">								
+            <input type="text" id="search" class="form-control hero-search" placeholder="Search Diamond Rolex">
+            <span class="input-group-addon"><button type="submit" class="search-btn-hero btn"><img class="search-btn-img" src="./assets/icons/search.svg" alt=""></button></span>
+         </form>
       </div>
-    
-</div>
-    </nav>
-</header>
-<!-- JUMBO SECTION -->
-<div class="jumbotron jumbotron-fluid hero d-flex justify-content-center align-items-center flex-column">
-  <div class="container text-center">
-    <h1 class="hero-text">Find only the finest jewelry</h1>
-  </div>
-
-  <form class="form d-flex justify-content-center align-items-center hero-search">								
-      <input type="text" id="search" class="form-control hero-search" placeholder="Search Diamond Rolex">
-      <span class="input-group-addon"><button type="submit" class="search-btn-hero btn"><img class="search-btn-img" src="./assets/icons/search.svg" alt=""></button></span>
-  </form>
-</div>
-
-<!-- top sellers -->
-<section class="top_seller my-5">
-  <div class="title-wrap d-flex justify-content-center">
-    <h2 class="section-title-center top-seller-title mb-5">
-        Our Top Sellers
-    </h2>
-</div>
-<div class="container mt-1 seller_container">
-  <div class="seller-carousel owl-carousel owl-theme">
-    <div class=" seller_card">
-      <a class="d-flex flex-column align-items-center justify-content-center" href="userprofile.html">
-                <div class="seller_img_box mb-3">
-                    <img id="seller_pic" src="./assets/images/seller/handmade.jpg" alt="" />
-                </div>
-                <div class="text-container text-center">
-                    <h6 id="seller_name">HandMade<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
-                    <p id="seller_about">Lorem ipsum dolor sit.</p>
-                </div>
-        
-    </a>
-  </div>
-
-  <div class="seller_card">
-    <a class="d-flex flex-column align-items-center justify-content-center" href="">
-              <div class="seller_img_box mb-3">
-                  <img id="seller_pic" src="./assets/images/seller/Davechappel.jpg" alt="" />
-              </div>
-              <div class="text-container text-center">
-                  <h6 id="seller_name">Dave Chappel<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
-                  <p id="seller_about">Lorem ipsum dolor sit amet consectetur adipisicing</p>
-              </div>
-      
-  </a>
-</div>
-
-<div class="seller_card">
-  <a class="d-flex flex-column align-items-center justify-content-center" href="">
-            <div class="seller_img_box mb-3">
-                <img id="seller_pic" src="./assets/images/seller/EWJewellery.jpg" alt="" />
+      <!-- top sellers -->
+      <section class="top_seller my-5">
+         <div class="title-wrap d-flex justify-content-center">
+            <h2 class="section-title-center top-seller-title mb-5">
+               Our Top Sellers
+            </h2>
+         </div>
+         <div class="container mt-1 seller_container">
+            <div class="seller-carousel owl-carousel owl-theme">
+               <div class=" seller_card">
+                  <a class="d-flex flex-column align-items-center justify-content-center" href="userprofile.html">
+                     <div class="seller_img_box mb-3">
+                        <img id="seller_pic" src="./assets/images/seller/handmade.jpg" alt="" />
+                     </div>
+                     <div class="text-container text-center">
+                        <h6 id="seller_name">HandMade<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
+                        <p id="seller_about">Lorem ipsum dolor sit.</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="seller_card">
+                  <a class="d-flex flex-column align-items-center justify-content-center" href="">
+                     <div class="seller_img_box mb-3">
+                        <img id="seller_pic" src="./assets/images/seller/Davechappel.jpg" alt="" />
+                     </div>
+                     <div class="text-container text-center">
+                        <h6 id="seller_name">Dave Chappel<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
+                        <p id="seller_about">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="seller_card">
+                  <a class="d-flex flex-column align-items-center justify-content-center" href="">
+                     <div class="seller_img_box mb-3">
+                        <img id="seller_pic" src="./assets/images/seller/EWJewellery.jpg" alt="" />
+                     </div>
+                     <div class="text-container text-center">
+                        <h6 id="seller_name">EW Jewellery<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
+                        <p id="seller_about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="card seller_card">
+                  <a class="d-flex flex-column align-items-center justify-content-center" href="">
+                     <div class="seller_img_box mb-3">
+                        <img id="seller_pic" src="./assets/images/seller/Howard Jr.jpg" alt="" />
+                     </div>
+                     <div class="text-container text-center">
+                        <h6 id="seller_name">Howard JR<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
+                        <p id="seller_about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="seller_card">
+                  <a class="d-flex flex-column align-items-center justify-content-center" href="">
+                     <div class="seller_img_box mb-3">
+                        <img id="seller_pic" src="./assets/images/seller/Kenshawn.jpg" alt="" />
+                     </div>
+                     <div class="text-container text-center">
+                        <h6 id="seller_name">Ken Shawn<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
+                        <p id="seller_about">Lorem ipsum dolor sit amet consectetur.</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="seller_card">
+                  <a class="d-flex flex-column align-items-center justify-content-center" href="">
+                     <div class="seller_img_box mb-3">
+                        <img id="seller_pic" src="./assets/images/seller/BigDawg.jpg" alt="" />
+                     </div>
+                     <div class="text-container text-center">
+                        <h6 id="seller_name">Big Shaq<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
+                        <p id="seller_about">Lorem ipsum dolor sit.</p>
+                     </div>
+                  </a>
+               </div>
             </div>
-            <div class="text-container text-center">
-                <h6 id="seller_name">EW Jewellery<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
-                <p id="seller_about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </div>
+         </div>
+         <!-- Categories -->
+         <section class="categories">
+            <div class="title-wrap d-flex justify-content-center">
+               <h2 class="section-title-center category-title">
+                  Browse by category
+               </h2>
             </div>
-    
-</a>
-</div>
-
-<div class="card seller_card">
-  <a class="d-flex flex-column align-items-center justify-content-center" href="">
-            <div class="seller_img_box mb-3">
-                <img id="seller_pic" src="./assets/images/seller/Howard Jr.jpg" alt="" />
-            </div>
-            <div class="text-container text-center">
-                <h6 id="seller_name">Howard JR<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
-                <p id="seller_about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-    
-</a>
-</div>
-
-<div class="seller_card">
-  <a class="d-flex flex-column align-items-center justify-content-center" href="">
-            <div class="seller_img_box mb-3">
-                <img id="seller_pic" src="./assets/images/seller/Kenshawn.jpg" alt="" />
-            </div>
-            <div class="text-container text-center">
-                <h6 id="seller_name">Ken Shawn<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
-                <p id="seller_about">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-   
-</a>
-</div>
-
-<div class="seller_card">
-  <a class="d-flex flex-column align-items-center justify-content-center" href="">
-            <div class="seller_img_box mb-3">
-                <img id="seller_pic" src="./assets/images/seller/BigDawg.jpg" alt="" />
-            </div>
-            <div class="text-container text-center">
-                <h6 id="seller_name">Big Shaq<span class="badge pb-0" id="verifed_seller"><img class="verifiedseller" src="./assets/icons/Verifiedseller.svg" alt=""></span></h6>
-                <p id="seller_about">Lorem ipsum dolor sit.</p>
-            </div>
-    
-</a>
-</div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Categories -->
-<section class="categories">
-  <div class="title-wrap d-flex justify-content-center">
-    <h2 class="section-title-center category-title">
-        Browse by category
-    </h2>
-</div>
-       <div id="category_container">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="rings.html">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
+            <div id="category_container">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="rings.html">
+                           <div class="card-flyer">
+                              <div class="text-box">
+                                 <div class="image-box">
                                     <img src="./assets/images/categories/rings.jpg" alt="" />
-                                </div>
-                                <div class="text-container">
+                                 </div>
+                                 <div class="text-container">
                                     <h6>rings</h6>
                                     <p class="listings" id="categ_listing">200+ lisings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="chains.html">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="chains.html">
+                           <div class="card-flyer">
+                              <div class="text-box">
+                                 <div class="image-box">
                                     <img src="./assets/images/categories/chains.jpg" alt="chains" />
-                                </div>
-                                <div class="text-container">                                    
+                                 </div>
+                                 <div class="text-container">
                                     <h6>Chains</h6>
                                     <p class="listings" id="categ_listing">150+ lisings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="pendants.html">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="pendants.html">
+                           <div class="card-flyer">
+                              <div class="text-box">
+                                 <div class="image-box">
                                     <img src="./assets/images/categories/pendants.jpg" alt="pendants" />
-                                </div>
-
-                                <div class="text-container">
+                                 </div>
+                                 <div class="text-container">
                                     <h6>Pendants</h6>
                                     <p class="listings" id="categ_listing">300+ lisings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="watches.html">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="watches.html">
+                           <div class="card-flyer">
+                              <div class="text-box">
+                                 <div class="image-box">
                                     <img src="./assets/images/categories/watches.jpg" alt="watches" />
-                                </div>
-                                <div class="text-container">
+                                 </div>
+                                 <div class="text-container">
                                     <h6>Watches</h6>
                                     <p class="listings" id="categ_listing">500+ lisings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-       <div id="category_container">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="bracelets.html">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
+            <div id="category_container">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="bracelets.html">
+                           <div class="card-flyer">
+                              <div class="text-box">
+                                 <div class="image-box">
                                     <img class="category_img" src="./assets/images/categories/bracelets.jpg" alt="bracelets" />
-                                </div>
-                                <div class="text-container">
+                                 </div>
+                                 <div class="text-container">
                                     <h6>Bracelets</h6>
                                     <p class="listings" id="categ_listing">450+ lisings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="grills.html">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="grills.html">
+                           <div class="card-flyer">
+                              <div class="text-box">
+                                 <div class="image-box">
                                     <img class="category_img" src="./assets/images/categories/grills.jpg" alt="grills" />
-                                </div>
-                                <div class="text-container">                                    
+                                 </div>
+                                 <div class="text-container">
                                     <h6>Grills</h6>
-                                    <p class="listings" id="categ_listing">100+ lisings</p>                               
-                                   </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="earings.html">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
+                                    <p class="listings" id="categ_listing">100+ lisings</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="earings.html">
+                           <div class="card-flyer">
+                              <div class="text-box">
+                                 <div class="image-box">
                                     <img src="./assets/images/categories/earings.jpg" alt="earings" />
-                                </div>
-
-                                <div class="text-container">
+                                 </div>
+                                 <div class="text-container">
                                     <h6>earings</h6>
                                     <p class="listings" id="categ_listing">250+ lisings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="misc.html">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <a href="misc.html">
+                           <div class="card-flyer">
+                              <div class="text-box">
+                                 <div class="image-box">
                                     <img class="category_img" src="./assets/images/categories/misc.png" alt="" />
-                                </div>
-                                <div class="text-container">
+                                 </div>
+                                 <div class="text-container">
                                     <h6>Misc..</h6>
                                     <p class="listings" id="categ_listing">1000+ lisings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-
-  </section>
-<!-- Brands -->
-<section class="brands">
-  <div class="title-wrap d-flex justify-content-center align-items-center">
-    <h2 class="section-title-center brands-title mb-5 mt-5">
-        Browse by Brands
-    </h2>
-</div>
-<div class="container"><p class="text-right mt-5 ml-auto"><a href="brands.html" class="btn viewall_brand">view all</a></p></div>
-<div class="container mt-1 brand_container">
-  <div class="brand_carousel owl-carousel owl-theme">
-    <div class="card brand_card">
-      <a href="">
-                <div class="brand_img_box mb-3">
-                    <img id="brand_pic" src="./assets/images/brands/rolex.png" alt="rolex logo" />
-                </div>
-    </a>
-    </div>
-
-    <div class="card brand_card">
-      <a href="">
-                <div class="brand_img_box d-flex justify-content-center mb-3">
-                    <img id="brand_pic" src="./assets/images/brands/cartier.png" alt="cartier logo" />
-                </div>
-    </a>
-    </div>
-    
-    <div class="card brand_card">
-      <a href="">
-                <div class="brand_img_box mb-3">
-                    <img id="brand_pic" src="./assets/images/brands/tiffany.png" alt="tiffand and co. logo" />
-                </div>
-    </a>
-    </div>
-    
-    <div class="card brand_card">
-      <a href="">
-                <div class="brand_img_box mb-3">
-                    <img id="brand_pic" src="./assets/images/brands/bvlgari.png" alt="bvlgari logo" />
-                </div>
-    </a>
-    </div>
-    
-    <div class="card brand_card">
-      <a href="">
-                <div class="brand_img_box mb-3">
-                    <img id="brand_pic" src="./assets/images/brands/chrome.png" alt="chrome hearts logo" />
-                </div>
-    </a>
-    </div>
-
-    <div class="card brand_card">
-      <a href="">
-                <div class="brand_img_box mb-3">
-                    <img id="brand_pic" src="./assets/images/brands/hermes.png" alt="hermes logo" />
-                </div>
-    </a>
-    </div>
-
-  </div>
-</div>
-
-</section>
-<!-- about -->
-<div class="container about">
-
-      <div class="title-wrap">
-          <h2 class="section-title">
-              How It Works
-          </h2>
-          <p class="section-sub-title">See more info in our <a href="#" class="termcond">terms and conditions</a></p>
-      </div>
-      <div class="row">
-          <div class="col-md-12 features-holder">
-              <div class="row">
-                  <div class="col-md-4 col-sm-6 feature-item item mb-3 mb-3 text-center">
-                    <div class="card card_about">
-                      <div class="step">
-                        <p>step-1</p></div>
-                      <h4>Easy to Customize</h4>
-                      <div class="my-4">
-                        <img class="howitworksimg" src="./assets/icons/pricetag Icon.svg" alt="pricing">
-                    </div>
+         </section>
+         <!-- Brands -->
+         <section class="brands">
+            <div class="title-wrap d-flex justify-content-center align-items-center">
+               <h2 class="section-title-center brands-title mb-5 mt-5">
+                  Browse by Brands
+               </h2>
+            </div>
+            <div class="container">
+               <p class="text-right mt-5 ml-auto"><a href="brands.html" class="btn viewall_brand">view all</a></p>
+            </div>
+            <div class="container mt-1 brand_container">
+               <div class="brand_carousel owl-carousel owl-theme">
+                  <div class="card brand_card">
+                     <a href="">
+                        <div class="brand_img_box mb-3">
+                           <img id="brand_pic" src="./assets/images/brands/rolex.png" alt="rolex logo" />
+                        </div>
+                     </a>
                   </div>
-                </div>
-
-                  <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                    <div class="card card_about">
-                      <div class="step">
-                        <p>step-2</p></div>
-                      <h4>sell it to the highest bidder</h4>
-                      <div class="my-4">
-                    <img class="howitworksimg" src="./assets/icons/Done Icon.svg" alt="done">
-                    </div>
+                  <div class="card brand_card">
+                     <a href="">
+                        <div class="brand_img_box d-flex justify-content-center mb-3">
+                           <img id="brand_pic" src="./assets/images/brands/cartier.png" alt="cartier logo" />
+                        </div>
+                     </a>
                   </div>
-                </div>
-                  <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                    <div class="card card_about">
-                    <div class="step">
-                      <p>step-3</p></div>
-                    <h4>ship item within two days</h4>
-                    <div class="my-4">
-                      <img class="howitworksimg" src="./assets/icons/truck icon.svg" alt="shiping">
-                    </div>
+                  <div class="card brand_card">
+                     <a href="">
+                        <div class="brand_img_box mb-3">
+                           <img id="brand_pic" src="./assets/images/brands/tiffany.png" alt="tiffand and co. logo" />
+                        </div>
+                     </a>
                   </div>
+                  <div class="card brand_card">
+                     <a href="">
+                        <div class="brand_img_box mb-3">
+                           <img id="brand_pic" src="./assets/images/brands/bvlgari.png" alt="bvlgari logo" />
+                        </div>
+                     </a>
                   </div>
-                
-                  <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                    <div class="card card_about">
-                    <div class="step">
-                      <p>step-4</p></div>
-                    <h4>We authenticate the item</h4>
-                    <div class="my-4">
-                      <img class="howitworksimg" src="./assets/icons/Authentic icon.svg" alt="Authentic">
+                  <div class="card brand_card">
+                     <a href="">
+                        <div class="brand_img_box mb-3">
+                           <img id="brand_pic" src="./assets/images/brands/chrome.png" alt="chrome hearts logo" />
+                        </div>
+                     </a>
                   </div>
+                  <div class="card brand_card">
+                     <a href="">
+                        <div class="brand_img_box mb-3">
+                           <img id="brand_pic" src="./assets/images/brands/hermes.png" alt="hermes logo" />
+                        </div>
+                     </a>
                   </div>
-                </div>
-
-                  <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                    <div class="card card_about">
-                    <div class="step">
-                      <p>step-5</p></div>
-                    <h4>We ship it to the buyer</h4>
-                    <div class="my-4">
-                      <img class="howitworksimg" src="./assets/icons/truck icon.svg" alt="shiping">
+               </div>
+            </div>
+         </section>
+         <!-- about -->
+         <div class="container about">
+            <div class="title-wrap">
+               <h2 class="section-title">
+                  How It Works
+               </h2>
+               <p class="section-sub-title">See more info in our <a href="#" class="termcond">terms and conditions</a></p>
+            </div>
+            <div class="row">
+               <div class="col-md-12 features-holder">
+                  <div class="row">
+                     <div class="col-md-4 col-sm-6 feature-item item mb-3 mb-3 text-center">
+                        <div class="card card_about">
+                           <div class="step">
+                              <p>step-1</p>
+                           </div>
+                           <h4>Easy to Customize</h4>
+                           <div class="my-4">
+                              <img class="howitworksimg" src="./assets/icons/pricetagicon.svg" alt="pricing">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
+                        <div class="card card_about">
+                           <div class="step">
+                              <p>step-2</p>
+                           </div>
+                           <h4>sell it to the highest bidder</h4>
+                           <div class="my-4">
+                              <img class="howitworksimg" src="./assets/icons/doneicon.svg" alt="done">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
+                        <div class="card card_about">
+                           <div class="step">
+                              <p>step-3</p>
+                           </div>
+                           <h4>ship item within two days</h4>
+                           <div class="my-4">
+                              <img class="howitworksimg" src="./assets/icons/truckicon.svg" alt="shiping">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
+                        <div class="card card_about">
+                           <div class="step">
+                              <p>step-4</p>
+                           </div>
+                           <h4>We authenticate the item</h4>
+                           <div class="my-4">
+                              <img class="howitworksimg" src="./assets/icons/authenticicon.svg" alt="Authentic">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
+                        <div class="card card_about">
+                           <div class="step">
+                              <p>step-5</p>
+                           </div>
+                           <h4>We ship it to the buyer</h4>
+                           <div class="my-4">
+                              <img class="howitworksimg" src="./assets/icons/truckicon.svg" alt="shiping">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
+                        <div class="card card_about">
+                           <div class="step">
+                              <p>step-6</p>
+                           </div>
+                           <h4>We relase the funds to you</h4>
+                           <div class="my-4">
+                              <img class="howitworksimg" src="./assets/icons/moneybagicon.svg" alt="funds">
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  </div>
-                </div>
-
-                  <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                    <div class="card card_about">
-                    <div class="step">
-                      <p>step-6</p></div>
-                    <h4>We relase the funds to you</h4>
-                    <div class="my-4">
-                      <img class="howitworksimg" src="./assets/icons/moneybag Icon.svg" alt="funds">
-                    </div>
-                  </div>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-  </div>
-</div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-  <div class="row">
-  <div class="col-md mb-4 mb-md-0">
-  <h3>Contact us</h3>
-  <ul class="list-unstyled nav-links">
-  <li><p>+44 345 687 902</p></li>
-  <li><a href="#">GemConnectgmail.com</a></li>
-  <li><a href="#"> find a store</li>
-  </ul>
-  </div>
-  <div class="col-md mb-4 mb-md-0">
-    <h3>About us</h3> 
-  <ul class="list-unstyled nav-links">
-  <li><a href="#">Services</a></li>
-  <li><a href="#">Best sellers</a></li>
-  <li><a href="#">Blog</a></li>
-  <li><a href="#">Contact</a></li>
-  </ul>
-  </div>
-  <div class="col-md mb-4 mb-md-0">
-  <h3>Legal</h3>
-  <ul class="list-unstyled nav-links">
-  <li><a href="#">Terms &amp; Conditions</a></li>
-  <li><a href="#">Privacy Policy</a></li>
-  </ul>
-  </div>
-  <div class="col-md-4 mb-4 mb-md-0">
-  <h3>Subscribe</h3>
-  <p class="mb-4">Lorem ipsum dolor sit amet consectetur</p>
-  <form action="#" class="subscribe">
-   <input type="text" class="form-control" placeholder="Enter your e-mail">
-  <input type="submit" class="btn btn-submit" value="Send">
-  </form>
-  </div>
-  </div>
-  <div class="row align-items-center">
-  <div class="col-12">
-  <div class="border-top my-5"></div>
-  </div>
-  <div class="col-md-6">
-  <p><small>© 2021 All Rights Reserved.</small></p>
-  </div>
-  <div class="col-md-6 text-md-right">
-  <ul class="social list-unstyled">
-  <li><a href="#"><span class="icon-facebook"></span></a></li>
-  <li><a href="#"><span class="icon-twitter"></span></a></li>
-  <li><a href="#"><span class="icon-instagram"></span></a></li>
-  </ul>
-  </div>
-  </div>
-  </div>
-  </footer>
-
-<script
-src="./js/jquery.min.js"
-></script>
-<script src="./js/owl.carousel.min.js"></script>
-<script
-src="./js/popper.min.js"
-></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/main.js"></script>
-  </body>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- footer -->
+      <footer class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md mb-4 mb-md-0">
+                  <h3>Contact us</h3>
+                  <ul class="list-unstyled nav-links">
+                     <li>
+                        <p>+44 345 687 902</p>
+                     </li>
+                     <li><a href="#">GemConnectgmail.com</a></li>
+                     <li>
+                        <a href="#">
+                           find a store
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-md mb-4 mb-md-0">
+               <h3>About us</h3> 
+               <ul class="list-unstyled nav-links">
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Best sellers</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Contact</a></li>
+               </ul>
+               </div>
+               <div class="col-md mb-4 mb-md-0">
+                  <h3>Legal</h3>
+                  <ul class="list-unstyled nav-links">
+                     <li><a href="#">Terms &amp; Conditions</a></li>
+                     <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-4 mb-4 mb-md-0">
+                  <h3>Subscribe</h3>
+                  <p class="mb-4">Lorem ipsum dolor sit amet consectetur</p>
+                  <form action="#" class="subscribe">
+                     <input type="text" class="form-control" placeholder="Enter your e-mail">
+                     <input type="submit" class="btn btn-submit btn_footer_send" value="Send">
+                  </form>
+               </div>
+            </div>
+            <div class="row align-items-center">
+               <div class="col-12">
+                  <div class="border-top my-5"></div>
+               </div>
+               <div class="col-md-6">
+                  <p><small>© 2021 All Rights Reserved.</small></p>
+               </div>
+               <div class="col-md-6 text-md-right">
+                  <ul class="social list-unstyled">
+                     <li><a href="#"><span class="icon-facebook"></span></a></li>
+                     <li><a href="#"><span class="icon-twitter"></span></a></li>
+                     <li><a href="#"><span class="icon-instagram"></span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script
+         src="./js/jquery.min.js"
+         ></script>
+      <script src="./js/owl.carousel.min.js"></script>
+      <script
+         src="./js/popper.min.js"
+         ></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/main.js"></script>
+   </body>
 </html>
+
