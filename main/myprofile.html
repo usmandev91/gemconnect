@@ -1,457 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>GemConnect | My Profile</title>
-      <link rel="stylesheet" href="./css/bootstrap.css" />
-      <link rel="stylesheet" href="./css/style.css">
-   </head>
-   <body>
-      <!-- default navbar -->
-      <nav class="navbar navbar-expand-lg sticky-top default_nav">
-         <div class="container-fluid">
-            <a class="navbar-brand align-self-sm-center mx-lg-5" href="index.html">
-               <img class="gc_nav_logo" src="./assets/icons/gc_nav_logo.svg" alt="logo"
-                  /></a>
-            <button
-               class="navbar-toggler"
-               type="button"
-               data-toggle="collapse"
-               data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-               >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-               <ul class="navbar-nav mr-5">
-                  <li class="nav-item dropdown  mx-lg-4">
-                     <a
-                        class="nav-link  navbtn"
-                        href="#"
-                        id="navbarDropdown"
-                        role="button"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >
-                     Browse
-                     </a>
-                     <div class="dropdown-menu browse_dropdown" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item browse_item" href="chains.html">Chains <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-                        <a class="dropdown-item browse_item" href="rings.html">Rings <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-                        <a class="dropdown-item browse_item" href="grills.html">Grills <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-                        <a class="dropdown-item browse_item" href="braceletes.html">Bracelets <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-                        <a class="dropdown-item browse_item" href="watches.html">Watches <img class="pointer" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-                     </div>
-                  </li>
-                  <li class="nav-item mx-lg-4">
-                     <a class="nav-link navbtn" href="#">Buy</a>
-                  </li>
-                  <li class="nav-item mx-lg-4">
-                     <a class="nav-link navbtn" href="#">Sell</a>
-                  </li>
-                  <li class="nav-item mx-lg-4">
-                     <a class="nav-link navbtn" href="#">blog</a>
-                  </li>
-                  <li class="nav-item mx-lg-4">
-                     <a class="nav-link navbtn" href="#">auction</a>
-                  </li>
-
-                     <form class="navbar-form form-inline inline-search">
-                        <div class="input-group search-box ">								
-                           <input type="text" id="search" class="form-control inline-search" placeholder="Search">
-                           <span class="input-group-addon"><button type="submit" class="search-btn-inline btn"><img class="search-btn-img" src="./assets/icons/search.svg" alt=""></button></span>
-                        </div>
-                     </form>
-
-                  <li class="nav-item mx-lg-4 d-none">
-
-                           <button type="button" class="btn btn-top" data-toggle="modal" data-target="#loginModal">
-                           Login
-                           </button>
-                           </li>
-                <li class="nav-item mx-lg-4 d-none">
-                           <a class="btn  btn-top" href="./registration.html" >Sign up</a>
-                </li>
-                  <!-- main menu in header/user logged in menu -->
-                  <li class="nav-item mx-lg-5 mt-1">
-                        <button type="button" class="btn main_menu_btn" data-toggle="carty" data-target="#">
-                        <img class="carty" src="./assets/icons/cart.svg" ><span class="badge carty_text " id="cart_items">Cart 0</span>
-                        </button>
-                    </li>
-                    <li class="nav-item mx-lg-4">
-                        <div class="dropdown">
-                           <button class="btn dropdown-toggle main_menu_btn" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <img class="menu-icon" src="./assets/icons/menuIcons/Menu Icon.svg" alt="">
-                           </button>
-                           <div class="dropdown-menu dropdown-menu-right mainmenu" aria-labelledby="dropdownMenu">
-                              <a class="dropdown-item menu_link" href="myprofile.html"><img class="main_menu_icons" src="./assets/icons/menuIcons/profile.svg" alt="user profile icon"><span class="ml-3">profile</span></a>
-                              <a class="dropdown-item menu_link" href="mylistings.html"><img class="main_menu_icons" src="./assets/icons/menuIcons/wishlist.svg" alt="wishlist icon"><span class="ml-3">wishlist</span></a>
-                              <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons" src="./assets/icons/menuIcons/settings.svg" alt="settings icon"><span class="ml-3">settings</span></a>
-                              <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons" src="./assets/icons/menuIcons/logout.svg" alt="logout icon"><span class="ml-3">Logout</span></a> 
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  </ul>
-               </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemConnect | My Profile</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <!-- default navbar -->
+    <header class="container-fluid sticky-top default_nav align-items-center">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-expand-xl">
+          <a class="navbar-brand" href="index.html">
+          <img class="gc_nav_logo" src="./assets/icons/gc_nav_logo.svg" alt="logo"
+            /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+            <ul class="navbar-nav pl-lg-5 ml-lg-4 justify-content-center align-items-center">
+              <li class="nav-item dropdown ">
+                <a
+                  class="nav-link navbtn"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >
+                Browse
+                </a>
+                <div class="dropdown-menu browse_dropdown" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item browse_item" href="chains.html">Chains <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                  <a class="dropdown-item browse_item" href="rings.html">Rings <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                  <a class="dropdown-item browse_item" href="grills.html">Grills <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                  <a class="dropdown-item browse_item" href="braceletes.html">Bracelets <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                  <a class="dropdown-item browse_item" href="watches.html">Watches <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                </div>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link navbtn" href="#">Buy</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link navbtn" href="#">Sell</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link navbtn" href="#">blog</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link navbtn" href="#">auction</a>
+              </li>
+            </ul>
+            <div class="container justify-content-center align-items-center">
+              <div class="row form_row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <form class="navbar-form form-inline">
+                    <input type="text" id="search" class="form-control-lg inline-search pl-3 pr-5" placeholder="Search...">
+                    <span class="input-group-addon"><button type="submit" class="btn search-btn-inline"><img class="inline-search-btn-img" src="./assets/icons/search.svg" alt=""></button></span>
+                  </form>
+                </div>
+              </div>
             </div>
-         </div>
-         </div>
+            <!--login buttons display set to none -->
+            <div class="container-sm p-0 d-none justify-content-center align-items-center">
+              <div class="row ml-lg-5">
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-top" data-toggle="modal" data-target="#loginModal">
+                  Login
+                  </button>
+                </div>
+                <div class="col-sm-6">
+                  <a class="btn btn-top" href="./registration.html" >Sign up</a>
+                </div>
+              </div>
+            </div>
+            <!-- main menu in header/user logged in menu -->
+            <div class="container-sm p-0 justify-content-center-sm align-items-center">
+              <div class="row">
+                <div class="col-sm-6">
+                  <button type="button" class="btn main_menu_btn d-flex justify-content-center align-items-center pr-5 mt-1" data-toggle="carty" data-target="#">
+                  <img class="carty" src="./assets/icons/cart.svg" ><span class="badge carty_text " id="cart_items">Cart 0</span>
+                  </button>
+                </div>
+                <div class="col-sm-6">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle main_menu_btn" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/icons/menuIcons/Menu Icon.svg" alt="">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right mainmenu" aria-labelledby="dropdownMenu">
+                      <a class="dropdown-item menu_link" href="myprofile.html"><img class="main_menu_icons img-fluid" src="./assets/icons/menuIcons/profile.svg" alt="user profile icon"><span class="ml-3">profile</span></a>
+                      <a class="dropdown-item menu_link" href="mylistings.html"><img class="main_menu_icons img-fluid" src="./assets/icons/menuIcons/wishlist.svg" alt="wishlist icon"><span class="ml-3">wishlist</span></a>
+                      <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons img-fluid" src="./assets/icons/menuIcons/settings.svg" alt="settings icon"><span class="ml-3">settings</span></a>
+                      <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons img-fluid" src="./assets/icons/menuIcons/logout.svg" alt="logout icon"><span class="ml-3">Logout</span></a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
       </nav>
-      <!--Modal design-->
-      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-xs modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content">
-               <div class="modal-body">
-                  <div class="form-title text-center">
-                     <img class="modal-logo" src="./assets/icons/Logo.svg" alt="logo">
-                     <div class="container-fluid d-flex justify-content-center">
-                        <h4 class="modal_text">Login</h4>
-                     </div>
-                  </div>
-                  <div class="container-fluid d-flex flex-column text-center justify-content-center">
-                     <form>
-                        <div class="form-group modal_form">
-                           <div class="col-xs-2">
-                              <input type="email" class="form-control form_design" id="email"placeholder="Email" required aria-required="true">
-                           </div>
-                           <div class="form-group modal_form">
-                              <input type="password" class="form-control form_design" id="password" placeholder="Password" required aria-required="true">
-                           </div>
-                           <div class="form-group modal_form">
-                              <div class="form-check">
-                                 <input type="checkbox" class="form-check-input" id="Check1">
-                                 <label class="form-check-label" for="exampleCheck1">keep me logged in</label>
-                              </div>
-                              <div class="form-group modal_login">
-                                 <button type="submit" class="btn btn-info login_Modal ">Login</button>
-                              </div>
-                     </form>
-                     </div>
-                     </div>
-                     <div class="modal-footer d-flex justify-content-center">
-                        <div class="signup-section">Don't have an account? <a href="./registration.html" target="_blank" class="text-info">Sign Up</a></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
       </div>
-      <!-- userprofile -->
-      <section class="user-profile">
-         <div class="container user_container">
-            <div class="container d-flex align-items-center justify-content-end btn-group dropleft">
-               <button type="button" class="user_setting_btn" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-               <img src="./assets/userprofile/Options Icon button.svg" width="35px" height="35px" alt="">
-               </button>
-               <div class="dropdown-menu user_setting_menu text-center">
-                  <a class="dropdown-item user_setting" href="#">Edit Profile</a>
-                  <a class="dropdown-item user_setting" href="#">action</a>
-                  <a class="dropdown-item user_setting" href="#">action</a>
-                  <a class="dropdown-item user_setting" href="#">action</a>
-               </div>
+    </header>
+    <!--Modal design-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-xs modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="form-title text-center">
+              <img class="modal-logo img-fluid" src="./assets/icons/Logo.svg" alt="logo">
+              <div class="container-fluid d-flex justify-content-center">
+                <h4 class="modal_text">Login</h4>
+              </div>
             </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
-                     <div class="user_img_box  d-flex justify-content-center align-items-center">
-                        <img id="user_pic" src="./assets/images/seller/handmade.jpg" alt="" />
-                     </div>
+            <div class="container-fluid d-flex flex-column text-center justify-content-center">
+              <form>
+                <div class="form-group modal_form">
+                  <div class="col-xs-2">
+                    <input type="email" class="form-control form_design" id="email"placeholder="Email" required aria-required="true">
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                     <div class="text-container">
-                        <h6 class="d-flex justify-content-center" id="user_name">HandMade jewelry<span
-                           class="badge pb-0 pl-2" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg"
-                           width="23px" height="20px" alt=""></span></h6>
-                        <div id="user_rating"> <span id="user_reviews">(127 reviews)</span></div>
-                        <p class="mt-5 text-start" id="user_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                           dolor laudantium repudiandae nemo temporibus dicta, praesentium asperiores illum ipsum
-                           dignissimos!
-                        </p>
-                     </div>
+                  <div class="form-group modal_form">
+                    <input type="password" class="form-control form_design" id="password" placeholder="Password" required aria-required="true">
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
-                     <div class="container user_attributes_container" id="user_attributes">
-                        <div id="verified_host">
-                           <p class="mb-2 d-flex align-items-center" id="verified_host_text"><span class="badge pb-0"
-                              id="verified_host_badge"><img src="./assets/userprofile/shield Icon.svg"
-                              width="16px" height="16px" alt=""></span>Verified Host</p>
-                        </div>
-                        <div id="verified_email ">
-                           <p class="my-2 d-flex align-items-center" id="verified_email_text"><span class="badge pb-0"
-                              id="verifed_email_badge"><img src="./assets/userprofile/email Icon.svg" width="4px"
-                              height="10px" alt=""></span>E-mail verified</p>
-                        </div>
-                        <div id="duration_at_gc">
-                           <p class="my-2 d-flex align-items-center" id="duration_at_gc_text"><span class="badge pb-0"
-                              id="duration_badge"><img src="./assets/userprofile/badge Icon.svg" width="18px"
-                              height="18px" alt=""></span>2 years with gemconnect</p>
-                        </div>
-                        <div id="user_followers">
-                           <p class="mb-2 d-flex align-items-center" id="user_follower_count"><span class="badge pb-0"
-                              id="follower_badge"><img src="./assets/userprofile/profile.svg" width="16px"
-                              height="16px" alt=""></span>1007 followers</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                  <div class="form-group modal_form">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="Check1">
+                      <label class="form-check-label" for="exampleCheck1">keep me logged in</label>
+                    </div>
+                    <div class="form-group modal_login">
+                      <button type="submit" class="btn btn-info login_Modal ">Login</button>
+                    </div>
+              </form>
+              </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <div class="signup-section">Don't have an account? <a href="./registration.html" target="_blank" class="text-info">Sign Up</a></div>
+              </div>
             </div>
-         </div>
-         </div>
-      </section>
-      <!-- listing boxes -->
-      <section class="listings my-5">
-         <div class="title-wrap container">
-            <h2 class="section-title-start text-start your-listing-title">
-               Your Listings
-            </h2>
-         </div>
-         <div id="category_container">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/Ring Image.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0">Golden Ring with little stones</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/2rings.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0">Engangememt golden rounds</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/goldenwatch.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0 text-center"> PIET HEIN EEK Golden Watch</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/rado.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0">Rado watch</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- favorites boxes -->
-      <section class="favorite_listings my-5">
-         <div class="title-wrap container">
-            <h2 class="section-title-start text-start favorites-title">
-               Favorites
-            </h2>
-         </div>
-         <div id="category_container">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/Ring Image.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0">Golden Ring with little stones</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/2rings.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0">Engangememt golden rounds</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/goldenwatch.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0 text-center"> PIET HEIN EEK Golden Watch</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/rado.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0">Rado watch</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- sold boxes -->
-      <section class="sold_listings my-5">
-         <div class="title-wrap container">
-            <h2 class="section-title-start text-start sold-title">
-               Sold Items
-            </h2>
-         </div>
-         <div id="category_container">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/Ring Image.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0">Golden Ring with little stones</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/2rings.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0">Engangememt golden rounds</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/goldenwatch.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0 text-center"> PIET HEIN EEK Golden Watch</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <a href="">
-                        <div class="card-flyer">
-                           <div class="text-box">
-                              <div class="listing-image-box">
-                                 <img src="./assets/userprofile/rado.png" alt="" />
-                              </div>
-                              <div class="text-container mt-0 py-3">
-                                 <p class="listing_name mt-0 pt-0">Rado watch</p>
-                                 <p class="listing_price mt-0 pt-0">$550</p>
-                                 <div class="listing_rating"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- reviews -->
-      <section class="listings my-5">
-      <div class="title-wrap container">
-         <h2 class="section-title-start text-start rewiews-title">
-            Reviews
-         </h2>
+          </div>
+        </div>
       </div>
-      <!-- footer -->
-      <script src="./js/jquery.min.js"></script>
-      <script src="js/star-rating.js" type="text/javascript"></script>
-      <script src="./js/popper.min.js"></script>
-      <script src="./js/bootstrap.min.js"></script>
-      <script src="./js/main.js"></script>
-   </body>
+    </div>
+    <!-- userprofile -->
+    <section class="user-profile">
+      <div class="container user_container">
+        <div class="container container-width d-flex align-items-center justify-content-end btn-group dropleft container-width">
+          <button type="button" class="user_setting_btn" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          <img class="img-fluid" src="./assets/userprofile/optionicon.svg"alt="">
+          </button>
+          <div class="dropdown-menu user_setting_menu text-center">
+            <a class="dropdown-item user_setting" href="#">Edit Profile</a>
+            <a class="dropdown-item user_setting" href="#">action</a>
+          </div>
+        </div>
+        <div class="container container-width">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+              <div class="user_img_box  d-flex justify-content-center align-items-center">
+                <img class="user_pic img-fluid" src="./assets/images/seller/handmade.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="text-container">
+                <h6 class="user_name justify-content-center-sm align-items-center-sm pl-sm-2">HandMade jewelry<span
+                  class="badge pb-0 pl-2" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg"alt=""></span></h6>
+                <div id="user_rating"> <span id="user_reviews">(127 reviews)</span></div>
+                <p class="mt-5 text-start user_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                  dolor laudantium repudiandae nemo temporibus dicta, praesentium asperiores illum ipsum
+                  dignissimos!
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="container user_attributes_container mt-md-4" id="user_attributes">
+                <div id="verified_host">
+                  <p class="mb-2 d-flex align-items-center" id="verified_host_text"><span class="badge pb-0"
+                    id="verified_host_badge"><img class="atbt-badge img-fluid" src="./assets/userprofile/shieldicon.svg"
+                    alt=""></span>Verified Host</p>
+                </div>
+                <div id="verified_email">
+                  <p class="my-2 d-flex align-items-center" id="verified_email_text"><span class="badge pb-0"
+                    id="verifed_email_badge"><img class="atbt-badge img-fluid" src="./assets/userprofile/emailicon.svg"
+                    alt=""></span>e-mail verified</p>
+                </div>
+                <div id="duration_at_gc">
+                  <p class="my-2 d-flex align-items-center" id="duration_at_gc_text"><span class="badge pb-0"
+                    id="duration_badge"><img class="atbt-badge img-fluid" src="./assets/userprofile/badgeicon.svg"alt=""></span>2 years with GemConnect</p>
+                </div>
+                <div id="user_followers">
+                  <p class="mb-2 d-flex align-items-center" id="user_follower_count"><span class="badge pb-0"
+                    id="follower_badge"><img class="atbt-badge img-fluid" src="./assets/userprofile/profile.svg" alt=""></span>1007 followers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- listing boxes -->
+    <section class="listings my-5">
+      <div class="title-wrap container container-width">
+        <h2 class="section-title-start text-start your-listing-title">
+          Your Listings
+        </h2>
+      </div>
+      <div class="container listing_container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="card-flyer">
+              <a href="">
+                <div class="listing-image-box">
+                  <img class="img-fluid" src="./assets/images/userprofile/ringimage.png" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-container m-0 py-3">
+                    <p class="listing_name m-0 pt-0">Golden Ring with little stones available exclusively on gc</p>
+                    <p class="listing_price m-0 pt-0">$550</p>
+                    <div class="listing_rating"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="card-flyer">
+              <a href="">
+                <div class="listing-image-box">
+                  <img class="img-fluid" src="./assets/images/userprofile/2rings.png" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-container m-0 py-3">
+                    <p class="listing_name m-0 pt-0">Engangememt golden rounds available exclusively on gc</p>
+                    <p class="listing_price m-0 pt-0">$550</p>
+                    <div class="listing_rating"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="card-flyer">
+              <a href="">
+                <div class="listing-image-box">
+                  <img class="img-fluid" src="./assets/images/userprofile/goldenwatch.png" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-container m-0 py-3">
+                    <p class="listing_name m-0 pt-0 "> PIET HEIN EEK Golden Watch available exclusively on gc</p>
+                    <p class="listing_price m-0 pt-0">$550</p>
+                    <div class="listing_rating"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="card-flyer">
+              <a href="">
+                <div class="listing-image-box">
+                  <img class="img-fluid" src="./assets/images/userprofile/rado.png" alt="" />
+                </div>
+                <div class="text-box">
+                  <div class="text-container mt-0 py-3">
+                    <p class="listing_name m-0 pt-0">Rado watch available exclusively on gc</p>
+                    <p class="listing_price m-0 pt-0">$550</p>
+                    <div class="listing_rating"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- favorites boxes -->
+    <section class="favorite_listings my-5">
+      <div class="title-wrap container container-width">
+        <h2 class="section-title-start text-start favorites-title">
+          Favorites
+        </h2>
+      </div>
+    </section>
+    <!-- sold boxes -->
+    <section class="sold_listings my-5">
+    <div class="title-wrap container container-width">
+      <h2 class="section-title-start text-start sold-title">
+        Sold Items
+      </h2>
+    </div>
+    <!-- reviews -->
+    <section class="listings my-5">
+    <div class="title-wrap container container-width">
+      <h2 class="section-title-start text-start rewiews-title">
+        Reviews
+      </h2>
+    </div>
+    <!-- footer -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="js/star-rating.js" type="text/javascript"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
-

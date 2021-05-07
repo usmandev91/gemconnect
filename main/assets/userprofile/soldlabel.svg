@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.003" height="73.999" viewBox="0 0 30.003 73.999">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #002f33;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 18px;
+        font-family: Raleway-Bold, Raleway;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Sold_Label" data-name="Sold Label" transform="translate(-283.998 -683.001)">
+    <path id="Subtraction_8" data-name="Subtraction 8" class="cls-1" d="M5520,11127v-74h30v74l-15-15-15,15Z" transform="translate(-5236 -10370)"/>
+    <text id="Sold" class="cls-2" transform="translate(305.5 711.5) rotate(-90)"><tspan x="-19.629" y="0">Sold</tspan></text>
+  </g>
+</svg>
