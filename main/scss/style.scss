@@ -26,9 +26,9 @@ body {
   text-transform: capitalize;
   color: $text-color !important;
 }
-.container_outer {
-  overflow: hidden !important;
-}
+// .container_outer {
+//   overflow: hidden !important;
+// }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
@@ -214,7 +214,6 @@ body {
 
 // navbar default
 .default_nav {
-  padding: 0.3rem 0;
   background-color: $theme_bgcolor !important;
   box-shadow: $div-shadow;
 }
@@ -702,6 +701,7 @@ input[type="text"] {
 // about-section
 .section-title {
   font-weight: bold;
+  white-space: nowrap;
 }
 .about {
   margin-top: 5rem;
@@ -847,16 +847,8 @@ input[type="text"] {
 }
 
 // user-profile page
-.listings {
-  position: relative !important;
-}
-@media (min-width: 1800px) {
-  .side_button_container {
-    position: absolute !important;
-    top: 180px;
-    right: 10%;
-    white-space: nowrap;
-  }
+.section-title-start {
+  white-space: nowrap;
 }
 
 .user_container {
@@ -921,6 +913,7 @@ input[type="text"] {
 .reviews_counter {
   font-size: 16px;
   font-family: "raleway";
+  white-space: wrap;
 }
 .user_info {
   padding-left: 0 !important;
@@ -998,5 +991,13 @@ input[type="text"] {
   max-width: 280px !important;
   .listing_rating {
     font-size: 0.7rem;
+  }
+}
+@media (min-width: 1800px) {
+  .side_button_container {
+    position: absolute !important;
+    top: 180px;
+    right: 20%;
+    white-space: nowrap;
   }
 }

@@ -7,17 +7,19 @@
     <title>GemConnect | My Profile</title>
     <link rel="stylesheet" href="./jquery.raty.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="container-fluid-xl container_outer">
-    <!-- default navbar -->
-    <header class="container-fluid sticky-top default_nav align-items-center">
-      <div class="container-fluid">
+      <!-- default navbar -->
+      <header class="container-fluid sticky-top default_nav pt-1">
         <nav class="navbar navbar-expand-lg navbar-expand-xl">
           <a class="navbar-brand" href="index.html">
-          <img class="gc_nav_logo" src="./assets/icons/gc_nav_logo.svg" alt="logo"
-            /></a>
+            <img
+              class="gc_nav_logo"
+              src="./assets/icons/gc_nav_logo.svg"
+              alt="logo"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -26,12 +28,14 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            >
-          <span class="navbar-toggler-icon"></span>
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
-            <ul class="navbar-nav pl-lg-5 ml-lg-4 justify-content-center align-items-center">
-              <li class="nav-item dropdown ">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav d-flex justify-content-center align-items-center"
+            >
+              <li class="nav-item dropdown pl-lg-5 ml-lg-5">
                 <a
                   class="nav-link navbtn"
                   href="#"
@@ -40,574 +44,924 @@
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  >
-                Browse
+                >
+                  Browse
                 </a>
-                <div class="dropdown-menu browse_dropdown" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item browse_item" href="chains.html">Chains <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-                  <a class="dropdown-item browse_item" href="rings.html">Rings <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-                  <a class="dropdown-item browse_item" href="grills.html">Grills <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-                  <a class="dropdown-item browse_item" href="braceletes.html">Bracelets <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
-                  <a class="dropdown-item browse_item" href="watches.html">Watches <img class="pointer img-fluid" src="./assets/icons/menuIcons/pointer.svg" alt="menu pointer"></a>
+                <div
+                  class="dropdown-menu browse_dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item browse_item" href="chains.html"
+                    >Chains
+                    <img
+                      class="pointer img-fluid"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                  <a class="dropdown-item browse_item" href="rings.html"
+                    >Rings
+                    <img
+                      class="pointer img-fluid"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                  <a class="dropdown-item browse_item" href="grills.html"
+                    >Grills
+                    <img
+                      class="pointer img-fluid"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                  <a class="dropdown-item browse_item" href="braceletes.html"
+                    >Bracelets
+                    <img
+                      class="pointer img-fluid"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                  <a class="dropdown-item browse_item" href="watches.html"
+                    >Watches
+                    <img
+                      class="pointer img-fluid"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
                 </div>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link navbtn" href="#">Buy</a>
-              </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link navbtn" href="#">Sell</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link navbtn" href="#">blog</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link navbtn" href="#">auction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbtn" href="#">About</a>
               </li>
             </ul>
             <div class="container justify-content-center align-items-center">
-              <div class="row form_row">
+              <div class="row form_row mb-1">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <form class="navbar-form form-inline">
-                    <input type="text" id="search" class="form-control-lg inline-search pl-3 pr-5" placeholder="Search...">
-                    <span class="input-group-addon"><button type="submit" class="btn search-btn-inline"><img class="inline-search-btn-img" src="./assets/icons/search.svg" alt=""></button></span>
+                    <input
+                      type="text"
+                      id="search"
+                      class="form-control-lg inline-search pl-3 pr-5"
+                      placeholder="Search..."
+                    />
+                    <span class="input-group-addon"
+                      ><button type="submit" class="btn search-btn-inline">
+                        <img
+                          class="inline-search-btn-img"
+                          src="./assets/icons/search.svg"
+                          alt=""
+                        /></button
+                    ></span>
                   </form>
                 </div>
               </div>
             </div>
             <!--login buttons display set to none -->
-            <div class="container-sm p-0 d-none justify-content-center align-items-center">
+            <div
+              class="container-sm p-0 d-none justify-content-center align-items-center"
+            >
               <div class="row ml-lg-5">
                 <div class="col-sm-6">
-                  <button type="button" class="btn btn-top" data-toggle="modal" data-target="#loginModal">
-                  Login
+                  <button
+                    type="button"
+                    class="btn btn-top"
+                    data-toggle="modal"
+                    data-target="#loginModal"
+                  >
+                    Login
                   </button>
                 </div>
                 <div class="col-sm-6">
-                  <a class="btn btn-top" href="./registration.html" >Sign up</a>
+                  <a class="btn btn-top" href="./registration.html">Sign up</a>
                 </div>
               </div>
             </div>
             <!-- main menu in header/user logged in menu -->
-            <div class="container-sm p-0 justify-content-center-sm align-items-center">
+            <div
+              class="container-sm p-0 justify-content-center-sm align-items-center"
+            >
               <div class="row">
                 <div class="col-sm-6">
-                  <button type="button" class="btn main_menu_btn d-flex justify-content-center align-items-center pr-5 mt-1" data-toggle="carty" data-target="#">
-                  <img class="carty" src="./assets/icons/cart.svg" ><span class="badge carty_text " id="cart_items">Cart 0</span>
+                  <button
+                    type="button"
+                    class="btn main_menu_btn d-flex justify-content-center align-items-center mt-1"
+                    data-toggle="carty"
+                    data-target="#"
+                  >
+                    <img class="carty" src="./assets/icons/cart.svg" /><span
+                      class="badge carty_text"
+                      id="cart_items"
+                      >Cart 0</span
+                    >
                   </button>
                 </div>
                 <div class="col-sm-6">
                   <div class="dropdown">
-                    <button class="btn dropdown-toggle main_menu_btn" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="./assets/icons/menuIcons/Menu Icon.svg" alt="">
+                    <button
+                      class="btn dropdown-toggle main_menu_btn"
+                      type="button"
+                      id="dropdownMenu"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="./assets/icons/menuIcons/Menu Icon.svg"
+                        alt=""
+                      />
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right mainmenu" aria-labelledby="dropdownMenu">
-                      <a class="dropdown-item menu_link" href="myprofile.html"><img class="main_menu_icons img-fluid" src="./assets/icons/menuIcons/profile.svg" alt="user profile icon"><span class="ml-3">profile</span></a>
-                      <a class="dropdown-item menu_link" href="mylistings.html"><img class="main_menu_icons img-fluid" src="./assets/icons/menuIcons/wishlist.svg" alt="wishlist icon"><span class="ml-3">wishlist</span></a>
-                      <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons img-fluid" src="./assets/icons/menuIcons/settings.svg" alt="settings icon"><span class="ml-3">settings</span></a>
-                      <a class="dropdown-item menu_link" href="#"><img class="main_menu_icons img-fluid" src="./assets/icons/menuIcons/logout.svg" alt="logout icon"><span class="ml-3">Logout</span></a> 
+                    <div
+                      class="dropdown-menu dropdown-menu-right mainmenu"
+                      aria-labelledby="dropdownMenu"
+                    >
+                      <a class="dropdown-item menu_link" href="myprofile.html"
+                        ><img
+                          class="main_menu_icons img-fluid"
+                          src="./assets/icons/menuIcons/profile.svg"
+                          alt="user profile icon"
+                        /><span class="ml-3">profile</span></a
+                      >
+                      <a class="dropdown-item menu_link" href="mylistings.html"
+                        ><img
+                          class="main_menu_icons img-fluid"
+                          src="./assets/icons/menuIcons/wishlist.svg"
+                          alt="wishlist icon"
+                        /><span class="ml-3">wishlist</span></a
+                      >
+                      <a class="dropdown-item menu_link" href="#"
+                        ><img
+                          class="main_menu_icons img-fluid"
+                          src="./assets/icons/menuIcons/settings.svg"
+                          alt="settings icon"
+                        /><span class="ml-3">settings</span></a
+                      >
+                      <a class="dropdown-item menu_link" href="#"
+                        ><img
+                          class="main_menu_icons img-fluid"
+                          src="./assets/icons/menuIcons/logout.svg"
+                          alt="logout icon"
+                        /><span class="ml-3">Logout</span></a
+                      >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      </div>
-      </nav>
-    </header>
-    <!--Modal design-->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-xs modal-dialog modal-dialog-centered " role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="form-title text-center">
-              <img class="modal-logo img-fluid" src="./assets/icons/Logo.svg" alt="logo">
-              <div class="container-fluid d-flex justify-content-center">
-                <h4 class="modal_text">Login</h4>
+        </nav>
+      </header>
+      <!--Modal design-->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-xs modal-dialog modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="form-title text-center">
+                <img
+                  class="modal-logo img-fluid"
+                  src="./assets/icons/Logo.svg"
+                  alt="logo"
+                />
+                <div class="container-fluid d-flex justify-content-center">
+                  <h4 class="modal_text">Login</h4>
+                </div>
               </div>
-            </div>
-            <div class="container-fluid d-flex flex-column text-center justify-content-center">
-              <form>
+              <div
+                class="container-fluid d-flex flex-column text-center justify-content-center"
+              >
                 <div class="form-group modal_form">
                   <div class="col-xs-2">
-                    <input type="email" class="form-control form_design" id="email"placeholder="Email" required aria-required="true">
+                    <input
+                      type="email"
+                      class="form-control form_design"
+                      id="email"
+                      placeholder="Email"
+                      required
+                      aria-required="true"
+                    />
                   </div>
                   <div class="form-group modal_form">
-                    <input type="password" class="form-control form_design" id="password" placeholder="Password" required aria-required="true">
+                    <input
+                      type="password"
+                      class="form-control form_design"
+                      id="password"
+                      placeholder="Password"
+                      required
+                      aria-required="true"
+                    />
                   </div>
                   <div class="form-group modal_form">
                     <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="Check1">
-                      <label class="form-check-label" for="exampleCheck1">keep me logged in</label>
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="Check1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >keep me logged in</label
+                      >
                     </div>
                     <div class="form-group modal_login">
-                      <button type="submit" class="btn btn-info login_Modal ">Login</button>
+                      <button type="submit" class="btn btn-info login_Modal">
+                        Login
+                      </button>
                     </div>
-              </form>
-              </div>
-              </div>
-              <div class="modal-footer d-flex justify-content-center">
-                <div class="signup-section">Don't have an account? <a href="./registration.html" target="_blank" class="text-info">Sign Up</a></div>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <div class="signup-section">
+                    Don't have an account?
+                    <a
+                      href="./registration.html"
+                      target="_blank"
+                      class="text-info"
+                      >Sign Up</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- userprofile -->
-    <section class="user-profile">
-      <div class="container user_container container-width">
-        <div class="container container-width d-flex align-items-center justify-content-end btn-group dropleft container-width">
-          <button type="button" class="user_setting_btn" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-          <img class="img-fluid" src="./assets/userprofile/optionicon.svg"alt="">
-          </button>
-          <div class="dropdown-menu user_setting_menu text-center">
-            <a class="dropdown-item user_setting" href="#">Edit Profile</a>
-            <a class="dropdown-item user_setting" href="#">action</a>
+      <!-- userprofile -->
+      <section class="user-profile">
+        <div class="container user_container container-width">
+          <div
+            class="container container-width d-flex align-items-center justify-content-end btn-group dropleft container-width"
+          >
+            <button
+              type="button"
+              class="user_setting_btn"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/userprofile/optionicon.svg"
+                alt=""
+              />
+            </button>
+            <div class="dropdown-menu user_setting_menu text-center">
+              <a class="dropdown-item user_setting" href="#">Edit Profile</a>
+              <a class="dropdown-item user_setting" href="#">action</a>
+            </div>
           </div>
-        </div>
-        <div class="container container-width">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
-              <div class="user_img_box">
-                <img class="user_pic img-fluid" src="./assets/images/seller/handmade.jpg" alt="" />
+          <div class="container container-width">
+            <div class="row">
+              <div
+                class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+              >
+                <div class="user_img_box">
+                  <img
+                    class="user_pic img-fluid"
+                    src="./assets/images/seller/handmade.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="text-container">
+                  <!-- User's name -->
+                  <h6
+                    class="user_name justify-content-center-sm align-items-center-sm pl-sm-2"
+                  >
+                    HandMade jewelry<span
+                      class="badge pb-0 pl-2"
+                      id="verifed_seller"
+                      ><img src="./assets/icons/Verifiedseller.svg" alt=""
+                    /></span>
+                  </h6>
+                  <!-- User's Average Rating Based On Number of Reviews (readOnly=true,) this is a dummy rating-->
+                  <div
+                    class="container rating_container d-flex justify-content-start align-items-center pl-lg-0 pt-1"
+                  >
+                    <div class="HandMade_jewelry_rating pl-1"></div>
+                    <!-- targeted using raty -->
+                    <div class="rating_score px-3 pb-2" id="hint"></div>
+                    <span class="reviews_counter pb-1" id="user_reviews"
+                      >(127 reviews)</span
+                    >
+                  </div>
+                  <!-- end of rating -->
+                  <!--To azhar: watch this tutorial https://www.youtube.com/watch?v=AMai9EZesXY&t=166s on how to build review system using rails and bootstrap and raty plugin -->
+                  <!-- User's info -->
+                  <p class="mt-5 text-start user_info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore dolor laudantium repudiandae nemo temporibus dicta,
+                    praesentium asperiores illum ipsum dignissimos!
+                  </p>
+                </div>
+              </div>
+              <!-- user's badges based on different things he has done registering account = verified host , verifying email = verified email etc -->
+              <div
+                class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center"
+              >
+                <div
+                  class="container user_attributes_container mt-md-4"
+                  id="user_attributes"
+                >
+                  <div id="verified_host">
+                    <p
+                      class="mb-2 d-flex align-items-center"
+                      id="verified_host_text"
+                    >
+                      <span class="badge pb-0" id="verified_host_badge"
+                        ><img
+                          class="atbt-badge img-fluid"
+                          src="./assets/userprofile/shieldicon.svg"
+                          alt="" /></span
+                      >Verified Host
+                    </p>
+                  </div>
+                  <div id="verified_email">
+                    <p
+                      class="my-2 d-flex align-items-center"
+                      id="verified_email_text"
+                    >
+                      <span class="badge pb-0" id="verifed_email_badge"
+                        ><img
+                          class="atbt-badge img-fluid"
+                          src="./assets/userprofile/emailicon.svg"
+                          alt="" /></span
+                      >e-mail verified
+                    </p>
+                  </div>
+                  <div id="duration_at_gc">
+                    <p
+                      class="my-2 d-flex align-items-center"
+                      id="duration_at_gc_text"
+                    >
+                      <span class="badge pb-0" id="duration_badge"
+                        ><img
+                          class="atbt-badge img-fluid"
+                          src="./assets/userprofile/badgeicon.svg"
+                          alt="" /></span
+                      >2 years with GemConnect
+                    </p>
+                  </div>
+                  <div id="user_followers">
+                    <p
+                      class="mb-2 d-flex align-items-center"
+                      id="user_follower_count"
+                    >
+                      <span class="badge pb-0" id="follower_badge"
+                        ><img
+                          class="atbt-badge img-fluid"
+                          src="./assets/userprofile/profile.svg"
+                          alt="" /></span
+                      >1007 followers
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-              <div class="text-container">
-                <!-- User's name -->
-                <h6 class="user_name justify-content-center-sm align-items-center-sm pl-sm-2">HandMade jewelry<span
-                  class="badge pb-0 pl-2" id="verifed_seller"><img src="./assets/icons/Verifiedseller.svg"alt=""></span></h6>
-                <!-- User's Average Rating Based On Number of Reviews (readOnly=true,) this is a dummy rating-->
-                <div class="container rating_container d-flex justify-content-start align-items-center pl-lg-0 pt-1">
-                  <div class="HandMade_jewelry_rating pl-1"></div>
-                  <!-- targeted using raty -->
-                  <div class="rating_score px-3 pb-2" id="hint"></div>
-                  <span class="reviews_counter pb-1" id="user_reviews">(127 reviews)</span>
+          </div>
+        </div>
+      </section>
+      <!-- listing boxes -->
+      <!-- 4 recently added items to be shown -->
+      <!-- section for giving margin and holding headings outside the grid container -->
+      <section class="listings mb-1 container-fluid">
+        <div
+          class="container container-width d-flex justify-content-lg-start justify-content-center align-items-center p-0"
+        >
+          <h2 class="section-title-start text-start your-listing-title">
+            Your Listings
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 p-0"></div>
+          <div class="col-lg-8 p-0">
+            <div
+              class="container d-flex justify-content-lg-end justify-content-center align-items-center px-lg-0 mx-lg-0 ml-lg-auto"
+            >
+              <a href="./mylistings.html" class="btn btn_listing"
+                >Post a new listing</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+            <div
+              class="cotnainer d-xl-none d-lg-block mt-3 d-flex justify-content-center align-items-center"
+            >
+              <a href="./mylistings.html" class="btn flexible_button"
+                >view all</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-1">
+            <div
+              class="container side_button_container d-none d-xl-flex justify-content-center align-items-center"
+            >
+              <a href="./solditem.html" class="btn flexible_button">view all</a>
+            </div>
+          </div>
+        </div>
+        <!-- items container and grid layout -->
+        <div class="container listing_container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <!-- start of item card give each product unique id to target-->
+              <div class="card-flyer">
+                <!-- anchor for clicking the whole box except rating -->
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/ringimage.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        Golden Ring with little stones available on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$550</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- end of anchor -->
+                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="4.5"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    4.5
+                  </div>
                 </div>
                 <!-- end of rating -->
-                <!--To azhar: watch this tutorial https://www.youtube.com/watch?v=AMai9EZesXY&t=166s on how to build review system using rails and bootstrap and raty plugin -->
-                <!-- User's info -->
-                <p class="mt-5 text-start user_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                  dolor laudantium repudiandae nemo temporibus dicta, praesentium asperiores illum ipsum
-                  dignissimos!
-                </p>
+              </div>
+              <!-- end of card -->
+            </div>
+            <!-- end of container -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-flyer">
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/2rings.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        Engangememt golden rounds available exclusively on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$650</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="4"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    4.0
+                  </div>
+                </div>
+                <!-- rating end -->
               </div>
             </div>
-            <!-- user's badges based on different things he has done registering account = verified host , verifying email = verified email etc -->
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
-              <div class="container user_attributes_container mt-md-4" id="user_attributes">
-                <div id="verified_host">
-                  <p class="mb-2 d-flex align-items-center" id="verified_host_text"><span class="badge pb-0"
-                    id="verified_host_badge"><img class="atbt-badge img-fluid" src="./assets/userprofile/shieldicon.svg"
-                    alt=""></span>Verified Host</p>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-flyer">
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/goldenwatch.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        PIET HEIN EEK Golden Watch available exclusively on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$1550</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="3.5"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    3.5
+                  </div>
                 </div>
-                <div id="verified_email">
-                  <p class="my-2 d-flex align-items-center" id="verified_email_text"><span class="badge pb-0"
-                    id="verifed_email_badge"><img class="atbt-badge img-fluid" src="./assets/userprofile/emailicon.svg"
-                    alt=""></span>e-mail verified</p>
+                <!-- rating end -->
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-flyer">
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/rado.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container mt-0">
+                      <p class="listing_name m-0 pt-2">
+                        Rado watch available exclusively on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$550</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="5"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    5.0
+                  </div>
                 </div>
-                <div id="duration_at_gc">
-                  <p class="my-2 d-flex align-items-center" id="duration_at_gc_text"><span class="badge pb-0"
-                    id="duration_badge"><img class="atbt-badge img-fluid" src="./assets/userprofile/badgeicon.svg"alt=""></span>2 years with GemConnect</p>
-                </div>
-                <div id="user_followers">
-                  <p class="mb-2 d-flex align-items-center" id="user_follower_count"><span class="badge pb-0"
-                    id="follower_badge"><img class="atbt-badge img-fluid" src="./assets/userprofile/profile.svg" alt=""></span>1007 followers</p>
-                </div>
+                <!-- rating end -->
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- listing boxes -->
-    <!-- 4 recently added items to be shown -->
-    <!-- section for giving margin and holding headings outside the grid container -->
-    <section class="listings mb-1 container-fluid">
-      <div class="row">
-        <div class="col-lg-9 ">
-          <div class="container mr-5 mb-5 mb-lg-0 mb-xl-0">
-            <h2 class="section-title-start text-start your-listing-title">
-              Your Listings
-            </h2>
-                </div>
-              </div>
-              <div class="col-lg-1">
-                <div class="container">
-                  <a href="./mylistings.html" class="btn btn_listing m-0">Post a new listing</a>
-                </div>
-              </div>
-            <div class="col-xl-1 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-              <div class="cotnainer d-xl-none d-lg-block  mt-3 d-flex justify-content-center align-items-center">
-                 <a href="./mylistings.html" class="btn flexible_button">view all</a>
-             </div>
+        <!-- end of listing_container -->
+      </section>
+      <!-- end of listing section -->
+      <!-- Wishlist boxes -->
+      <section class="favorite_listings mb-1 container-fluid">
+        <div
+          class="container container-width d-flex justify-content-lg-start justify-content-center align-items-center p-0"
+        >
+          <h2 class="section-title-start text-start wishlist-title">
+            Wishlist
+          </h2>
         </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 col-xs-12 col-sm-12 col-md-12">
+            <div
+              class="cotnainer d-lg-none d-flex justify-content-center align-items-center"
+            >
+              <a href="./wishlist.html" class="btn flexible_button">view all</a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div
+              class="container side_button_container d-none d-xl-flex justify-content-end align-items-center"
+            >
+              <a href="./wishlist.html" class="btn flexible_button">view all</a>
+            </div>
+          </div>
+        </div>
+        <!-- items container and grid layout -->
+        <div class="container listing_container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <!-- start of item card give each product unique id to target-->
+              <div class="card-flyer">
+                <!-- anchor for clicking the whole box except rating -->
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/ringimage.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        Golden Ring with little stones available on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$550</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- end of anchor -->
+                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="4.5"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    4.5
+                  </div>
+                </div>
+                <!-- end of rating -->
+              </div>
+              <!-- end of card -->
+            </div>
+            <!-- end of container -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-flyer">
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/2rings.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        Engangememt golden rounds available exclusively on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$650</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="4"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    4.0
+                  </div>
+                </div>
+                <!-- rating end -->
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-flyer">
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/goldenwatch.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        PIET HEIN EEK Golden Watch available exclusively on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$1550</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="3.5"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    3.5
+                  </div>
+                </div>
+                <!-- rating end -->
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-flyer">
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/rado.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container mt-0">
+                      <p class="listing_name m-0 pt-2">
+                        Rado watch available exclusively on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$550</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="5"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    5.0
+                  </div>
+                </div>
+                <!-- rating end -->
+              </div>
+              <!-- end of card -->
+            </div>
+            <!-- end of container -->
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end of listing_container -->
+      </section>
+      <!-- sold boxes -->
+      <section class="sold_listings mb-1 container-fluid">
+        <div
+          class="container container-width d-flex justify-content-lg-start justify-content-center align-items-center p-0"
+        >
+          <h2 class="section-title-start sold-title">Sold Items</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 col-xs-12 col-sm-12 col-md-12">
+            <div
+              class="cotnainer d-lg-none d-flex justify-content-center align-items-center"
+            >
+              <a href="./solditems.html" class="btn flexible_button"
+                >view all</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div
+              class="container side_button_container d-none d-xl-flex justify-content-end align-items-center"
+            >
+              <a href="./solditem.html" class="btn flexible_button">view all</a>
+            </div>
+          </div>
+        </div>
+        <!-- items container and grid layout -->
+        <div class="container listing_container px-sm-4 p-xs-5">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <!-- start of item card give each product unique id to target-->
+              <div class="card-flyer">
+                <!-- anchor for clicking the whole box except rating -->
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/ringimage.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        Golden Ring with little stones available on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$550</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- end of anchor -->
+                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="4.5"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    4.5
+                  </div>
+                </div>
+                <!-- end of rating -->
+              </div>
+              <!-- end of card -->
+            </div>
+            <!-- end of container -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-flyer">
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/2rings.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        Engangememt golden rounds available exclusively on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$650</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="4"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    4.0
+                  </div>
+                </div>
+                <!-- rating end -->
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-flyer">
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/goldenwatch.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        PIET HEIN EEK Golden Watch available exclusively on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$1550</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="3.5"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    3.5
+                  </div>
+                </div>
+                <!-- rating end -->
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-flyer">
+                <a href="">
+                  <div class="listing-image-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/userprofile/rado.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container mt-0">
+                      <p class="listing_name m-0 pt-2">
+                        Rado watch available exclusively on gc
+                      </p>
+                      <p class="listing_price m-0 pt-0">$550</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                <div
+                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                >
+                  <div class="listing_rating" data-score="5"></div>
+                  <!-- target this div via raty for score dont write anything inside -->
+                  <div class="rating_score px-3 mb-1" id="listing_score">
+                    5.0
+                  </div>
+                </div>
+                <!-- rating end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- reviews -->
+      <section class="listings my-5">
+        <div class="title-wrap container container-width">
+          <h2 class="section-title-start text-start rewiews-title">Reviews</h2>
+        </div>
+      </section>
 
-    <div class="col-xl-1">
-      <div class="container side_button_container d-none d-xl-block">
-        <a href="./solditem.html" class="btn flexible_button">view all</a>
-      </div>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/rating.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/userprofile.js"></script>
     </div>
-    </div>
-      <!-- items container and grid layout -->
-      <div class="container listing_container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <!-- start of item card give each product unique id to target-->
-            <div class="card-flyer">
-              <!-- anchor for clicking the whole box except rating -->
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/ringimage.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container m-0">
-                    <p class="listing_name m-0 pt-2">Golden Ring with little stones available on gc</p>
-                    <p class="listing_price m-0 pt-0">$550</p>
-                  </div>
-                </div>
-              </a>
-              <!-- end of anchor -->
-              <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="4.5"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">4.5</div>
-              </div>
-              <!-- end of rating -->
-            </div>
-            <!-- end of card -->
-          </div>
-          <!-- end of container -->
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card-flyer">
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/2rings.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container m-0">
-                    <p class="listing_name m-0 pt-2">Engangememt golden rounds available exclusively on gc</p>
-                    <p class="listing_price m-0 pt-0">$650</p>
-                  </div>
-                </div>
-              </a>
-              <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="4"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">4.0</div>
-              </div>
-              <!-- rating end -->
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card-flyer">
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/goldenwatch.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container m-0">
-                    <p class="listing_name m-0 pt-2 "> PIET HEIN EEK Golden Watch available exclusively on gc</p>
-                    <p class="listing_price m-0 pt-0">$1550</p>
-                  </div>
-                </div>
-              </a>
-              <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="3.5"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">3.5</div>
-              </div>
-              <!-- rating end -->
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card-flyer">
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/rado.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container mt-0">
-                    <p class="listing_name m-0 pt-2">Rado watch available exclusively on gc</p>
-                    <p class="listing_price m-0 pt-0">$550</p>
-                  </div>
-                </div>
-              </a>
-              <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="5"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">5.0</div>
-              </div>
-              <!-- rating end -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end of listing_container -->
-    </section>
-    <!-- end of listing section -->
-    <!-- Wishlist boxes -->
-    <section class="favorite_listings mb-1 container-fluid">
-      <div class="row">
-        <div class="col-lg-10">
-          <div class="container">
-      <h2 class="section-title-start text-start wishlist-title">
-        Wishlist
-      </h2>
-    </div>
-    </div>
-    <div class="col-xl-1 col-lg-12 col-xs-12 col-sm-12 col-md-12">
-      <div class="cotnainer container-width d-lg-none d-flex justify-content-center align-items-center">
-        <a href="./wishlist.html" class="btn flexible_button">view all</a>
-      </div>
-    </div>
-    <div class="col-xl-1">
-      <div class="container side_button_container d-none d-lg-block">
-        <a href="./wishlist.html" class="btn flexible_button">view all</a>
-      </div>
-    </div>
-    </div>
-      <!-- items container and grid layout -->
-      <div class="container listing_container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <!-- start of item card give each product unique id to target-->
-            <div class="card-flyer">
-              <!-- anchor for clicking the whole box except rating -->
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/ringimage.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container m-0">
-                    <p class="listing_name m-0 pt-2">Golden Ring with little stones available on gc</p>
-                    <p class="listing_price m-0 pt-0">$550</p>
-                  </div>
-                </div>
-              </a>
-              <!-- end of anchor -->
-              <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="4.5"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">4.5</div>
-              </div>
-              <!-- end of rating -->
-            </div>
-            <!-- end of card -->
-          </div>
-          <!-- end of container -->
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card-flyer">
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/2rings.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container m-0">
-                    <p class="listing_name m-0 pt-2">Engangememt golden rounds available exclusively on gc</p>
-                    <p class="listing_price m-0 pt-0">$650</p>
-                  </div>
-                </div>
-              </a>
-              <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="4"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">4.0</div>
-              </div>
-              <!-- rating end -->
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card-flyer">
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/goldenwatch.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container m-0">
-                    <p class="listing_name m-0 pt-2 "> PIET HEIN EEK Golden Watch available exclusively on gc</p>
-                    <p class="listing_price m-0 pt-0">$1550</p>
-                  </div>
-                </div>
-              </a>
-              <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="3.5"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">3.5</div>
-              </div>
-              <!-- rating end -->
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card-flyer">
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/rado.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container mt-0">
-                    <p class="listing_name m-0 pt-2">Rado watch available exclusively on gc</p>
-                    <p class="listing_price m-0 pt-0">$550</p>
-                  </div>
-                </div>
-              </a>
-              <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="5"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">5.0</div>
-              </div>
-              <!-- rating end -->
-            </div>
-            <!-- end of card -->
-          </div>
-          <!-- end of container -->
-        </div>
-        <!-- end of row -->
-      </div>
-      <!-- end of listing_container -->
-    </section>
-    <!-- sold boxes -->
-    <section class="sold_listings mb-1 container-fluid">
-      <div class="row">
-        <div class="col-lg-10 ">
-          <div class="container">
-            <h2 class="section-title-start sold-title">
-              Sold Items
-            </h2>
-    </div>
-    </div>
-    <div class="col-xl-1 col-lg-12 col-xs-12 col-sm-12 col-md-12">
-      <div class="cotnainer container-width d-lg-none d-flex justify-content-center align-items-center">
-        <a href="./solditems.html" class="btn flexible_button">view all</a>
-      </div>
-    </div>
-    <div class="col-xl-1">
-      <div class="container side_button_container d-none d-lg-block">
-        <a href="./solditem.html" class="btn flexible_button">view all</a>
-      </div>
-    </div>
-    </div>
-      <!-- items container and grid layout -->
-      <div class="container listing_container px-sm-4 p-xs-5">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <!-- start of item card give each product unique id to target-->
-            <div class="card-flyer">
-              <!-- anchor for clicking the whole box except rating -->
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/ringimage.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container m-0">
-                    <p class="listing_name m-0 pt-2">Golden Ring with little stones available on gc</p>
-                    <p class="listing_price m-0 pt-0">$550</p>
-                  </div>
-                </div>
-              </a>
-              <!-- end of anchor -->
-              <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="4.5"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">4.5</div>
-              </div>
-              <!-- end of rating -->
-            </div>
-            <!-- end of card -->
-          </div>
-          <!-- end of container -->
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card-flyer">
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/2rings.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container m-0">
-                    <p class="listing_name m-0 pt-2">Engangememt golden rounds available exclusively on gc</p>
-                    <p class="listing_price m-0 pt-0">$650</p>
-                  </div>
-                </div>
-              </a>
-              <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="4"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">4.0</div>
-              </div>
-              <!-- rating end -->
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card-flyer">
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/goldenwatch.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container m-0">
-                    <p class="listing_name m-0 pt-2 "> PIET HEIN EEK Golden Watch available exclusively on gc</p>
-                    <p class="listing_price m-0 pt-0">$1550</p>
-                  </div>
-                </div>
-              </a>
-              <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="3.5"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">3.5</div>
-              </div>
-              <!-- rating end -->
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card-flyer">
-              <a href="">
-                <div class="listing-image-box">
-                  <img class="img-fluid" src="./assets/images/userprofile/rado.png" alt="" />
-                </div>
-                <div class="text-box">
-                  <div class="text-container mt-0">
-                    <p class="listing_name m-0 pt-2">Rado watch available exclusively on gc</p>
-                    <p class="listing_price m-0 pt-0">$550</p>
-                  </div>
-                </div>
-              </a>
-              <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-              <div class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0">
-                <div class="listing_rating" data-score="5"></div>
-                <!-- target this div via raty for score dont write anything inside -->
-                <div class="rating_score px-3 mb-1" id="listing_score">5.0</div>
-              </div>
-              <!-- rating end -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- reviews -->
-    <section class="listings my-5">
-    <div class="title-wrap container container-width">
-      <h2 class="section-title-start text-start rewiews-title">
-        Reviews
-      </h2>
-    </div>
-  </div>
-    <!-- footer -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/rating.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/userprofile.js"></script>
   </body>
 </html>

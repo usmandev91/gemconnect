@@ -1,15 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="53.275" viewBox="0 0 70 53.275">
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="53.275" viewBox="0 0 75 53.275">
   <defs>
     <style>
       .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
         fill: #3bc0cb;
+      }
+
+      .cls-2, .cls-5 {
         font-size: 11px;
         font-family: Raleway-Bold, Raleway;
         font-weight: 700;
       }
 
-      .cls-2 {
+      .cls-3 {
         fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        fill: #81d9e1;
       }
     </style>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
@@ -20,9 +36,13 @@
       <stop offset="1" stop-color="#9ff8ff"/>
       <stop offset="1" stop-color="#1e6066"/>
     </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3214" data-name="Rectangle 3214" class="cls-1" width="74.999" height="4.007" transform="translate(0.401 0)"/>
+    </clipPath>
   </defs>
-  <g id="Group_12694" data-name="Group 12694" transform="translate(-79.135 -25.362)">
-    <text id="GemConnect_Logo" data-name="GemConnect/Logo" class="cls-1" transform="translate(79.135 75.637)"><tspan x="0" y="0">GemConnect</tspan></text>
-    <path id="Path_13296" data-name="Path 13296" class="cls-2" d="M171.674,323.606h21.7l-1.55,2.684-1.548,2.684-1.553,2.684-1.548,2.687-1.553,2.684-1.548,2.684-1.55,2.687-1.55,2.684-3.1,5.369v0l-1.55,2.684-1.548-2.684-1.553-2.687-1.55-2.684-1.548-2.684-1.553-2.687-1.548-2.684-1.553-2.684-1.548-2.687-3.1-5.369-1.55-2.684-1.55-2.684-1.55-2.687,1.55-2.682v0l1.55-2.684h34.1l1.55,2.684,0,0,1.548,2.682h-31l-1.55,2.687h0v0l1.55,2.682,1.55,2.684v0l1.548,2.682h0v0l1.55,2.684,0,0,1.546,2.682h0l1.55,2.684v0l1.548,2.682,1.553,2.689,1.553-2.689h0l1.55-2.682v0h0l1.548-2.684v0l1.55-2.682,1.55-2.684v0h-6.2v0l-1.55,2.682-1.548-2.682h0v0l-1.55-2.684v0l-1.55-2.68Z" transform="translate(-62.325 -287.505)"/>
+  <text id="GemConnect_Logo" data-name="GemConnect/Logo" class="cls-2" transform="translate(0 50.275)"><tspan x="0" y="0">GemConnects</tspan></text>
+  <path id="Path_13296" data-name="Path 13296" class="cls-3" d="M171.674,323.606h21.7l-1.55,2.684-1.548,2.684-1.553,2.684-1.548,2.687-1.553,2.684-1.548,2.684-1.55,2.687-1.55,2.684-3.1,5.369v0l-1.55,2.684-1.548-2.684-1.553-2.687-1.55-2.684-1.548-2.684-1.553-2.687-1.548-2.684-1.553-2.684-1.548-2.687-3.1-5.369-1.55-2.684-1.55-2.684-1.55-2.687,1.55-2.682v0l1.55-2.684h34.1l1.55,2.684,0,0,1.548,2.682h-31l-1.55,2.687h0v0l1.55,2.682,1.55,2.684v0l1.548,2.682h0v0l1.55,2.684,0,0,1.546,2.682h0l1.55,2.684v0l1.548,2.682,1.553,2.689,1.553-2.689h0l1.55-2.682v0h0l1.548-2.684v0l1.55-2.682,1.55-2.684v0h-6.2v0l-1.55,2.682-1.548-2.682h0v0l-1.55-2.684v0l-1.55-2.68Z" transform="translate(-138.826 -312.867)"/>
+  <g id="Mask_Group_145" data-name="Mask Group 145" class="cls-4" transform="translate(-0.401 48.3)">
+    <text id="GemConnect_Logo-2" data-name="GemConnect/Logo" class="cls-5" transform="translate(0.401 1.986)"><tspan x="0" y="0">GemConnects</tspan></text>
   </g>
 </svg>
