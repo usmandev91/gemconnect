@@ -1,5 +1,5 @@
 // drop down hover on fullscreen
-
+//
 const $dropdown = $(".dropdown");
 const $dropdownToggle = $(".dropdown-toggle");
 const $dropdownMenu = $(".dropdown-menu");

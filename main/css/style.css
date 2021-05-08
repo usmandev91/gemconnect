@@ -5,6 +5,9 @@ body {
   text-transform: capitalize;
   color: #002f33 !important; }
 
+.container_outer {
+  overflow: hidden !important; }
+
 .dropdown-item:hover,
 .dropdown-item:focus {
   text-decoration: none;
@@ -414,13 +417,13 @@ input[type="text"] {
   color: #002f33;
   text-align: left; }
 
-.viewall_brand {
+.flexible_button {
+  white-space: nowrap;
   position: relative;
-  display: inline-block;
   color: #002f33;
   padding: 0;
   font-size: 20px; }
-  .viewall_brand::after {
+  .flexible_button::after {
     content: "";
     position: absolute;
     display: block;
@@ -433,7 +436,7 @@ input[type="text"] {
 .top-seller-title,
 .brands-title,
 .your-listing-title,
-.favorites-title,
+.wishlist-title,
 .sold-title,
 .rewiews-title,
 .about-title {
@@ -494,13 +497,13 @@ input[type="text"] {
   background-color: #3bc0cb;
   border-radius: 10px; }
 
-.favorites-title::after {
+.wishlist-title::after {
   content: "";
   position: absolute;
   display: block;
   bottom: 0;
   left: 0px;
-  height: 0.15rem;
+  height: 0.2rem;
   width: 6.5rem;
   background-color: #3bc0cb;
   border-radius: 10px; }
@@ -522,7 +525,7 @@ input[type="text"] {
   display: block;
   bottom: 0;
   left: 0px;
-  height: 0.15rem;
+  height: 0.2rem;
   width: 6rem;
   background-color: #3bc0cb;
   border-radius: 10px; }
@@ -616,6 +619,7 @@ input[type="text"] {
 .btn_listing {
   background-color: #002f33;
   color: white;
+  white-space: nowrap;
   margin: 1em 0;
   padding: 0.4rem 1rem;
   border-radius: 0.6rem;
@@ -687,6 +691,16 @@ input[type="text"] {
       max-height: 200;
       min-width: 420px; } }
 
+.listings {
+  position: relative !important; }
+
+@media (min-width: 1800px) {
+  .side_button_container {
+    position: absolute !important;
+    top: 180px;
+    right: 10%;
+    white-space: nowrap; } }
+
 .user_container {
   max-width: 1460px;
   margin-top: 5rem;
@@ -731,8 +745,17 @@ input[type="text"] {
   color: #002f33;
   padding: 0; }
 
+.rating_score {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "raleway"; }
+
+.reviews_counter {
+  font-size: 16px;
+  font-family: "raleway"; }
+
 .user_info {
-  padding: 0;
+  padding-left: 0 !important;
   color: #002f33;
   font-weight: 400;
   text-overflow: ellipsis;
@@ -755,7 +778,7 @@ input[type="text"] {
   text-transform: none; }
 
 .listing_container {
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
   background-color: white;
   max-width: 1460px; }
   .listing_container a {
@@ -767,7 +790,8 @@ input[type="text"] {
     overflow: hidden;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    max-width: 313px; }
+    max-width: 313px;
+    padding-bottom: 1.5rem; }
     .listing_container .card-flyer .listing-image-box {
       border-radius: 52px;
       max-height: 250px;
@@ -790,3 +814,9 @@ input[type="text"] {
       font-weight: 800;
       color: #002f33;
       padding: 0 1em; }
+
+.listing_rating_container {
+  max-height: 50px !important;
+  max-width: 280px !important; }
+  .listing_rating_container .listing_rating {
+    font-size: 0.7rem; }
