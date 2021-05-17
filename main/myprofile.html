@@ -12,7 +12,7 @@
   <body>
     <div class="container-fluid-xl container_outer">
       <!-- default navbar -->
-      <header class="container-fluid sticky-top default_nav pt-1">
+      <header class="container-fluid sticky-top default_nav">
         <nav class="navbar navbar-expand-lg navbar-expand-xl">
           <a class="navbar-brand" href="index.html">
             <img
@@ -31,104 +31,145 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav d-flex justify-content-center align-items-center"
-            >
-              <li class="nav-item dropdown pl-lg-5 ml-lg-5">
-                <a
-                  class="nav-link navbtn"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Browse
-                </a>
-                <div
-                  class="dropdown-menu browse_dropdown"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <a class="dropdown-item browse_item" href="chains.html"
-                    >Chains
-                    <img
-                      class="pointer img-fluid"
-                      src="./assets/icons/menuIcons/pointer.svg"
-                      alt="menu pointer"
-                  /></a>
-                  <a class="dropdown-item browse_item" href="rings.html"
-                    >Rings
-                    <img
-                      class="pointer img-fluid"
-                      src="./assets/icons/menuIcons/pointer.svg"
-                      alt="menu pointer"
-                  /></a>
-                  <a class="dropdown-item browse_item" href="grills.html"
-                    >Grills
-                    <img
-                      class="pointer img-fluid"
-                      src="./assets/icons/menuIcons/pointer.svg"
-                      alt="menu pointer"
-                  /></a>
-                  <a class="dropdown-item browse_item" href="braceletes.html"
-                    >Bracelets
-                    <img
-                      class="pointer img-fluid"
-                      src="./assets/icons/menuIcons/pointer.svg"
-                      alt="menu pointer"
-                  /></a>
-                  <a class="dropdown-item browse_item" href="watches.html"
-                    >Watches
-                    <img
-                      class="pointer img-fluid"
-                      src="./assets/icons/menuIcons/pointer.svg"
-                      alt="menu pointer"
-                  /></a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbtn" href="#">Sell</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbtn" href="#">blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbtn" href="#">auction</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbtn" href="#">About</a>
-              </li>
-            </ul>
-            <div class="container justify-content-center align-items-center">
-              <div class="row form_row mb-1">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <form class="navbar-form form-inline">
-                    <input
-                      type="text"
-                      id="search"
-                      class="form-control-lg inline-search pl-3 pr-5"
-                      placeholder="Search..."
-                    />
-                    <span class="input-group-addon"
-                      ><button type="submit" class="btn search-btn-inline">
-                        <img
-                          class="inline-search-btn-img"
-                          src="./assets/icons/search.svg"
-                          alt=""
-                        /></button
-                    ></span>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <!--login buttons display set to none -->
+          <div class="container-fluid py-2">
             <div
-              class="container-sm p-0 d-none justify-content-center align-items-center"
+              class="row collapse navbar-collapse"
+              id="navbarSupportedContent"
             >
-              <div class="row ml-lg-5">
-                <div class="col-sm-6">
+              <div class="col-xl-1 p-0"></div>
+              <div class="col-xl-4 p-0">
+                <ul
+                  class="
+                    navbar-nav
+                    justify-content-xl-evenly justify-content-center
+                    align-items-center
+                    pt-1
+                  "
+                >
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link navbtn pr-xl-3"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Browse
+                    </a>
+                    <div
+                      class="dropdown-menu browse_dropdown"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <a
+                        class="dropdown-item browse_item p-2 pt-0"
+                        href="rings.html"
+                        >Rings
+                        <img
+                          class="pointer"
+                          src="./assets/icons/menuIcons/pointer.svg"
+                          alt="menu pointer"
+                      /></a>
+                      <a
+                        class="dropdown-item browse_item p-2"
+                        href="chains.html"
+                        >Chains
+                        <img
+                          class="pointer"
+                          src="./assets/icons/menuIcons/pointer.svg"
+                          alt="menu pointer"
+                      /></a>
+                      <a
+                        class="dropdown-item browse_item p-2"
+                        href="pendants.html"
+                        >Pendants
+                        <img
+                          class="pointer"
+                          src="./assets/icons/menuIcons/pointer.svg"
+                          alt="menu pointer"
+                      /></a>
+                      <a
+                        class="dropdown-item browse_item p-2"
+                        href="watches.html"
+                        >Watches
+                        <img
+                          class="pointer"
+                          src="./assets/icons/menuIcons/pointer.svg"
+                          alt="menu pointer"
+                      /></a>
+                      <a
+                        class="dropdown-item browse_item p-2"
+                        href="braceletes.html"
+                        >Bracelets
+                        <img
+                          class="pointer"
+                          src="./assets/icons/menuIcons/pointer.svg"
+                          alt="menu pointer"
+                      /></a>
+                      <a
+                        class="dropdown-item browse_item p-2"
+                        href="grills.html"
+                        >Grills
+                        <img
+                          class="pointer"
+                          src="./assets/icons/menuIcons/pointer.svg"
+                          alt="menu pointer"
+                      /></a>
+                      <a
+                        class="dropdown-item browse_item p-2 pb-0"
+                        href="braceletes.html"
+                        >earings
+                        <img
+                          class="pointer"
+                          src="./assets/icons/menuIcons/pointer.svg"
+                          alt="menu pointer"
+                      /></a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbtn px-xl-3" href="#">Sell</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbtn px-xl-3" href="#">blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbtn px-xl-3" href="#">auction</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbtn px-xl-3" href="#">About</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-3 p-0">
+                <form
+                  class="navbar-form form-inline d-flex justify-content-center"
+                >
+                  <input
+                    type="text"
+                    id="search"
+                    class="form-control-lg nav-search-bar"
+                    placeholder="Search..."
+                  />
+                  <button type="submit" class="btn inline-search-btn">
+                    <img
+                      class="inline-search-btn-img"
+                      src="./assets/icons/search.svg"
+                      alt=""
+                    />
+                  </button>
+                </form>
+              </div>
+              <!--login buttons display set to none -->
+              <div class="col-xl-2 p-1 d-none">
+                <div
+                  class="
+                    container
+                    m-0
+                    justify-content-center
+                    align-items-center
+                  "
+                >
                   <button
                     type="button"
                     class="btn btn-top"
@@ -137,21 +178,29 @@
                   >
                     Login
                   </button>
-                </div>
-                <div class="col-sm-6">
                   <a class="btn btn-top" href="./registration.html">Sign up</a>
                 </div>
               </div>
-            </div>
-            <!-- main menu in header/user logged in menu -->
-            <div
-              class="container-sm p-0 justify-content-center-sm align-items-center"
-            >
-              <div class="row">
-                <div class="col-sm-6">
+              <!-- main menu in header/user logged in menu -->
+              <div class="col-xl-2">
+                <div
+                  class="
+                    container
+                    justify-content-xl-start
+                    align-items-center
+                    pt-1
+                  "
+                >
                   <button
                     type="button"
-                    class="btn main_menu_btn d-flex justify-content-center align-items-center mt-1"
+                    class="
+                      btn
+                      main_menu_btn
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      pr-5
+                    "
                     data-toggle="carty"
                     data-target="#"
                   >
@@ -161,8 +210,6 @@
                       >Cart 0</span
                     >
                   </button>
-                </div>
-                <div class="col-sm-6">
                   <div class="dropdown">
                     <button
                       class="btn dropdown-toggle main_menu_btn"
@@ -173,6 +220,7 @@
                       aria-expanded="false"
                     >
                       <img
+                        class="pb-1"
                         src="./assets/icons/menuIcons/Menu Icon.svg"
                         alt=""
                       />
@@ -242,7 +290,13 @@
                 </div>
               </div>
               <div
-                class="container-fluid d-flex flex-column text-center justify-content-center"
+                class="
+                  container-fluid
+                  d-flex
+                  flex-column
+                  text-center
+                  justify-content-center
+                "
               >
                 <div class="form-group modal_form">
                   <div class="col-xs-2">
@@ -303,7 +357,15 @@
       <section class="user-profile">
         <div class="container user_container container-width">
           <div
-            class="container container-width d-flex align-items-center justify-content-end btn-group dropleft container-width"
+            class="
+              container container-width
+              d-flex
+              align-items-center
+              justify-content-end
+              btn-group
+              dropleft
+              container-width
+            "
           >
             <button
               type="button"
@@ -326,7 +388,12 @@
           <div class="container container-width">
             <div class="row">
               <div
-                class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+                class="
+                  col-xs-12 col-sm-12 col-md-6 col-lg-4
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
               >
                 <div class="user_img_box">
                   <img
@@ -340,7 +407,12 @@
                 <div class="text-container">
                   <!-- User's name -->
                   <h6
-                    class="user_name justify-content-center-sm align-items-center-sm pl-sm-2"
+                    class="
+                      user_name
+                      justify-content-center-sm
+                      align-items-center-sm
+                      pl-sm-2
+                    "
                   >
                     HandMade jewelry<span
                       class="badge pb-0 pl-2"
@@ -350,7 +422,15 @@
                   </h6>
                   <!-- User's Average Rating Based On Number of Reviews (readOnly=true,) this is a dummy rating-->
                   <div
-                    class="container rating_container d-flex justify-content-start align-items-center pl-lg-0 pt-1"
+                    class="
+                      container
+                      rating_container
+                      d-flex
+                      justify-content-start
+                      align-items-center
+                      pl-lg-0
+                      pt-1
+                    "
                   >
                     <div class="HandMade_jewelry_rating pl-1"></div>
                     <!-- targeted using raty -->
@@ -371,7 +451,11 @@
               </div>
               <!-- user's badges based on different things he has done registering account = verified host , verifying email = verified email etc -->
               <div
-                class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center"
+                class="
+                  col-xs-12 col-sm-6 col-md-6 col-lg-3
+                  d-flex
+                  justify-content-center
+                "
               >
                 <div
                   class="container user_attributes_container mt-md-4"
@@ -440,7 +524,12 @@
       <!-- section for giving margin and holding headings outside the grid container -->
       <section class="listings mb-1 container-fluid">
         <div
-          class="container container-width d-flex justify-content-lg-start justify-content-center align-items-center"
+          class="
+            container container-width
+            d-flex
+            justify-content-lg-start justify-content-center
+            align-items-center
+          "
         >
           <h2 class="section-title-start text-start your-listing-title">
             Your Listings
@@ -455,7 +544,14 @@
           <div class="col-lg-2 p-0"></div>
           <div class="col-lg-8 p-0">
             <div
-              class="container d-lg-none d-md-block mt-3 d-flex justify-content-center align-items-center"
+              class="
+                container
+                d-lg-none
+                mt-3
+                d-flex
+                justify-content-center
+                align-items-center
+              "
             >
               <a href="./mylistings.html" class="btn btn_listing"
                 >Post a new listing</a
@@ -464,7 +560,14 @@
           </div>
           <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
             <div
-              class="cotnainer d-xl-none d-lg-block mt-3 d-flex justify-content-center align-items-center"
+              class="
+                cotnainer
+                d-xl-none d-lg-block
+                mt-3
+                d-flex
+                justify-content-center
+                align-items-center
+              "
             >
               <a href="./mylistings.html" class="btn flexible_button"
                 >view all</a
@@ -474,7 +577,13 @@
 
           <div class="col-lg-1">
             <div
-              class="container side_button_container d-none d-xl-flex justify-content-center align-items-center"
+              class="
+                container
+                side_button_container
+                d-none d-xl-flex
+                justify-content-center
+                align-items-center
+              "
             >
               <a href="./solditem.html" class="btn flexible_button">view all</a>
             </div>
@@ -507,7 +616,15 @@
                 <!-- end of anchor -->
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="4.5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -541,7 +658,15 @@
                 </a>
                 <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="4"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -573,7 +698,15 @@
                 </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="3.5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -605,7 +738,15 @@
                 </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -624,7 +765,13 @@
       <!-- Wishlist boxes -->
       <section class="favorite_listings mb-1 container-fluid">
         <div
-          class="container container-width d-flex justify-content-lg-start justify-content-center align-items-center p-0"
+          class="
+            container container-width
+            d-flex
+            justify-content-lg-start justify-content-center
+            align-items-center
+            p-0
+          "
         >
           <h2 class="section-title-start text-start wishlist-title">
             Wishlist
@@ -634,14 +781,25 @@
           <div class="col-lg-2"></div>
           <div class="col-lg-8 col-xs-12 col-sm-12 col-md-12">
             <div
-              class="cotnainer d-lg-none d-flex justify-content-center align-items-center"
+              class="
+                cotnainer
+                d-lg-none d-flex
+                justify-content-center
+                align-items-center
+              "
             >
               <a href="./wishlist.html" class="btn flexible_button">view all</a>
             </div>
           </div>
           <div class="col-lg-2">
             <div
-              class="container side_button_container d-none d-xl-flex justify-content-end align-items-center"
+              class="
+                container
+                side_button_container
+                d-none d-xl-flex
+                justify-content-end
+                align-items-center
+              "
             >
               <a href="./wishlist.html" class="btn flexible_button">view all</a>
             </div>
@@ -674,7 +832,16 @@
                 <!-- end of anchor -->
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    justify-content-xl-start
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="4.5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -708,7 +875,15 @@
                 </a>
                 <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="4"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -740,7 +915,15 @@
                 </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="3.5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -772,7 +955,15 @@
                 </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -793,7 +984,13 @@
       <!-- sold boxes -->
       <section class="sold_listings mb-1 container-fluid">
         <div
-          class="container container-width d-flex justify-content-lg-start justify-content-center align-items-center p-0"
+          class="
+            container container-width
+            d-flex
+            justify-content-lg-start justify-content-center
+            align-items-center
+            p-0
+          "
         >
           <h2 class="section-title-start sold-title">Sold Items</h2>
         </div>
@@ -801,7 +998,12 @@
           <div class="col-lg-2"></div>
           <div class="col-lg-8 col-xs-12 col-sm-12 col-md-12">
             <div
-              class="cotnainer d-lg-none d-flex justify-content-center align-items-center"
+              class="
+                cotnainer
+                d-lg-none d-flex
+                justify-content-center
+                align-items-center
+              "
             >
               <a href="./solditems.html" class="btn flexible_button"
                 >view all</a
@@ -810,14 +1012,20 @@
           </div>
           <div class="col-lg-2">
             <div
-              class="container side_button_container d-none d-xl-flex justify-content-end align-items-center"
+              class="
+                container
+                side_button_container
+                d-none d-xl-flex
+                justify-content-end
+                align-items-center
+              "
             >
               <a href="./solditem.html" class="btn flexible_button">view all</a>
             </div>
           </div>
         </div>
         <!-- items container and grid layout -->
-        <div class="container listing_container px-sm-4 p-xs-5">
+        <div class="container listing_container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
               <!-- start of item card give each product unique id to target-->
@@ -843,7 +1051,15 @@
                 <!-- end of anchor -->
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="4.5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -877,7 +1093,15 @@
                 </a>
                 <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="4"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -909,7 +1133,15 @@
                 </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="3.5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
@@ -941,7 +1173,15 @@
                 </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
-                  class="container listing_rating_container d-flex justify-content-start align-items-center pl-lg-0 p-lg-0"
+                  class="
+                    container
+                    listing_rating_container
+                    d-flex
+                    justify-content-xl-start justify-content-center
+                    align-items-center
+                    pl-lg-0
+                    p-lg-0
+                  "
                 >
                   <div class="listing_rating" data-score="5"></div>
                   <!-- target this div via raty for score dont write anything inside -->

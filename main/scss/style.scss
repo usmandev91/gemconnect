@@ -80,7 +80,7 @@ body {
   font-weight: 400;
 }
 .mainmenu {
-  padding: 0.7rem 0rem;
+  padding: 0.7rem 0.7rem;
   max-width: 210px;
   max-height: 210px;
   border-radius: 20px;
@@ -98,6 +98,7 @@ body {
 }
 
 .menu_link:hover {
+  border-radius: 8px;
   .main_menu_icons {
     filter: none;
   }
@@ -186,17 +187,15 @@ body {
 .nav-link {
   color: $text-color !important;
 }
-.navbtn {
-  position: relative;
-}
+
 .browse_dropdown {
-  padding: 1rem 0rem;
+  padding: 1rem 0.5rem;
   border-radius: 20px;
   border: none;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   .browse_item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between !important;
     align-items: center;
     .pointer {
       filter: grayscale(100%);
@@ -207,6 +206,7 @@ body {
   }
 }
 .browse_item:hover {
+  border-radius: 10px;
   .pointer {
     filter: none;
   }
@@ -221,18 +221,11 @@ body {
   width: 90px;
   height: 53px;
 }
-.default_navbtn {
-  font-size: 20px !important;
-}
-.form_row {
-  width: 100% !important;
-}
-
-.inline-search {
+.nav-search-bar {
   position: relative !important;
   height: 40px;
   border-radius: 11px;
-  width: 100%;
+  width: 80%;
   border: none;
   border-top-left-radius: 11px !important;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
@@ -243,9 +236,9 @@ body {
   }
 }
 
-.search-btn-inline {
+.inline-search-btn {
   position: absolute !important;
-  right: 15px;
+  right: 12%;
   top: 0;
   height: 40px;
   width: 49px;
@@ -266,7 +259,7 @@ body {
 
 .inline-search-btn-img {
   filter: grayscale(100%);
-  width: 100%;
+  width: 150%;
 }
 
 // transitions
@@ -507,7 +500,8 @@ input[type="text"] {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  font-size: 14px;
+  padding-left: 10px;
+  font-size: 16px;
   letter-spacing: 1px;
   color: $text-color;
   text-align: left;
@@ -515,7 +509,8 @@ input[type="text"] {
 #category_container .text-box h6 {
   margin-top: 0px;
   margin-bottom: 4px;
-  font-size: 18px;
+  padding-left: 10px;
+  font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "raleway", sans-serif;
@@ -942,7 +937,6 @@ input[type="text"] {
 
 // listing container and cards
 .listing_container {
-  padding: 1rem 2rem;
   background-color: $theme_bgcolor;
   max-width: 1460px;
   a {
@@ -956,7 +950,7 @@ input[type="text"] {
     margin-top: 2rem;
     margin-bottom: 2rem;
     max-width: 313px;
-    padding-bottom: 1.5rem;
+    padding-bottom: 16px;
     // border: black 1px solid;
     .listing-image-box {
       border-radius: 52px;
@@ -993,6 +987,12 @@ input[type="text"] {
     font-size: 0.7rem;
   }
 }
+@media (max-width: 768px) {
+  .listing_container {
+    padding: 2rem 2rem;
+  }
+}
+
 @media (min-width: 1800px) {
   .side_button_container {
     position: absolute !important;
