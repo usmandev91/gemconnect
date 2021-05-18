@@ -45,7 +45,7 @@ $(".seller-carousel").owlCarousel({
     0: {
       center: true,
       items: 1,
-      nav: true,
+      nav: false,
       loop: false,
       touchDrag: true,
       lazyLoad: true,
@@ -53,7 +53,7 @@ $(".seller-carousel").owlCarousel({
     },
     600: {
       items: 3,
-      nav: true,
+      nav: false,
       loop: false,
       lazyLoad: true,
       touchDrag: true,
@@ -61,7 +61,7 @@ $(".seller-carousel").owlCarousel({
     },
     1000: {
       items: 3,
-      nav: true,
+      nav: false,
       loop: false,
       navRewind: false,
     },
@@ -108,4 +108,17 @@ $(".brand_carousel").owlCarousel({
       lazyLoad: true,
     },
   },
+});
+// deal_carousel
+
+$(".deal_carousel").owlCarousel({
+  items: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  nav: false,
+  dots: true,
+  touchDrag: true,
+  lazyLoad: true,
+  loop: true,
+  navRewind: true,
 });

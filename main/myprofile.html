@@ -497,7 +497,7 @@
                           class="atbt-badge img-fluid"
                           src="./assets/userprofile/badgeicon.svg"
                           alt="" /></span
-                      >2 years with GemConnect
+                      >2 years with GemConnects
                     </p>
                   </div>
                   <div id="user_followers">
@@ -522,19 +522,20 @@
       <!-- listing boxes -->
       <!-- 4 recently added items to be shown -->
       <!-- section for giving margin and holding headings outside the grid container -->
-      <section class="listings mb-1 container-fluid">
+      <section class="listings my-5 container-fluid">
         <div
           class="
             container container-width
             d-flex
             justify-content-lg-start justify-content-center
             align-items-center
+            p-xl-0
           "
         >
           <h2 class="section-title-start text-start your-listing-title">
             Your Listings
           </h2>
-          <div class="container justify-content-end d-none d-xl-flex p-0">
+          <div class="container d-xl-flex justify-content-end d-none p-0">
             <a href="./mylistings.html" class="btn btn_listing"
               >Post a new listing</a
             >
@@ -604,16 +605,17 @@
                       alt=""
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="text-container m-0">
-                      <p class="listing_name m-0 pt-2">
-                        Golden Ring with little stones available on gc
-                      </p>
-                      <p class="listing_price m-0 pt-0">$550</p>
-                    </div>
-                  </div>
                 </a>
                 <!-- end of anchor -->
+                <div class="text-box">
+                  <div class="text-container m-0">
+                    <p class="listing_name m-0 pt-2">
+                      Golden Ring with little stones available on gc
+                    </p>
+                    <p class="listing_price m-0 pt-0">$550</p>
+                  </div>
+                </div>
+
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
                 <div
                   class="
@@ -647,15 +649,16 @@
                       alt=""
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="text-container m-0">
-                      <p class="listing_name m-0 pt-2">
-                        Engangememt golden rounds available exclusively on gc
-                      </p>
-                      <p class="listing_price m-0 pt-0">$650</p>
-                    </div>
-                  </div>
                 </a>
+                <div class="text-box">
+                  <div class="text-container m-0">
+                    <p class="listing_name m-0 pt-2">
+                      Engangememt golden rounds available exclusively on gc
+                    </p>
+                    <p class="listing_price m-0 pt-0">$650</p>
+                  </div>
+                </div>
+
                 <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
                 <div
                   class="
@@ -687,15 +690,16 @@
                       alt=""
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="text-container m-0">
-                      <p class="listing_name m-0 pt-2">
-                        PIET HEIN EEK Golden Watch available exclusively on gc
-                      </p>
-                      <p class="listing_price m-0 pt-0">$1550</p>
-                    </div>
-                  </div>
                 </a>
+                <div class="text-box">
+                  <div class="text-container m-0">
+                    <p class="listing_name m-0 pt-2">
+                      PIET HEIN EEK Golden Watch available exclusively on gc
+                    </p>
+                    <p class="listing_price m-0 pt-0">$1550</p>
+                  </div>
+                </div>
+
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
                   class="
@@ -727,15 +731,16 @@
                       alt=""
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="text-container mt-0">
-                      <p class="listing_name m-0 pt-2">
-                        Rado watch available exclusively on gc
-                      </p>
-                      <p class="listing_price m-0 pt-0">$550</p>
-                    </div>
-                  </div>
                 </a>
+                <div class="text-box">
+                  <div class="text-container mt-0">
+                    <p class="listing_name m-0 pt-2">
+                      Rado watch available exclusively on gc
+                    </p>
+                    <p class="listing_price m-0 pt-0">$550</p>
+                  </div>
+                </div>
+
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
                   class="
@@ -763,7 +768,7 @@
       </section>
       <!-- end of listing section -->
       <!-- Wishlist boxes -->
-      <section class="favorite_listings mb-1 container-fluid">
+      <section class="favorite_listings my-5 container-fluid">
         <div
           class="
             container container-width
@@ -814,22 +819,29 @@
                 <!-- anchor for clicking the whole box except rating -->
                 <a href="">
                   <div class="listing-image-box">
+                    <div class="wishlist_btn">
+                      <button class="btn">
+                        <img src="./assets/icons/addedtofavicon.svg" alt="" />
+                      </button>
+                    </div>
+
                     <img
                       class="img-fluid"
                       src="./assets/images/userprofile/ringimage.png"
                       alt=""
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="text-container m-0">
-                      <p class="listing_name m-0 pt-2">
-                        Golden Ring with little stones available on gc
-                      </p>
-                      <p class="listing_price m-0 pt-0">$550</p>
-                    </div>
-                  </div>
                 </a>
                 <!-- end of anchor -->
+                <div class="text-box">
+                  <div class="text-container m-0">
+                    <p class="listing_name m-0 pt-2">
+                      Golden Ring with little stones available on gc
+                    </p>
+                    <p class="listing_price m-0 pt-0">$550</p>
+                  </div>
+                </div>
+
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
                 <div
                   class="
@@ -858,21 +870,27 @@
               <div class="card-flyer">
                 <a href="">
                   <div class="listing-image-box">
+                    <div class="wishlist_btn">
+                      <button class="btn">
+                        <img src="./assets/icons/addedtofavicon.svg" alt="" />
+                      </button>
+                    </div>
                     <img
                       class="img-fluid"
                       src="./assets/images/userprofile/2rings.png"
                       alt=""
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="text-container m-0">
-                      <p class="listing_name m-0 pt-2">
-                        Engangememt golden rounds available exclusively on gc
-                      </p>
-                      <p class="listing_price m-0 pt-0">$650</p>
-                    </div>
-                  </div>
                 </a>
+                <!-- end of anchor -->
+                <div class="text-box">
+                  <div class="text-container m-0">
+                    <p class="listing_name m-0 pt-2">
+                      Engangememt golden rounds available exclusively on gc
+                    </p>
+                    <p class="listing_price m-0 pt-0">$650</p>
+                  </div>
+                </div>
                 <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
                 <div
                   class="
@@ -898,12 +916,19 @@
               <div class="card-flyer">
                 <a href="">
                   <div class="listing-image-box">
+                    <div class="wishlist_btn">
+                      <button class="btn">
+                        <img src="./assets/icons/addedtofavicon.svg" alt="" />
+                      </button>
+                    </div>
                     <img
                       class="img-fluid"
                       src="./assets/images/userprofile/goldenwatch.png"
                       alt=""
                     />
                   </div>
+                </a>
+                <!-- end of anchor -->
                   <div class="text-box">
                     <div class="text-container m-0">
                       <p class="listing_name m-0 pt-2">
@@ -912,7 +937,6 @@
                       <p class="listing_price m-0 pt-0">$1550</p>
                     </div>
                   </div>
-                </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
                   class="
@@ -938,12 +962,26 @@
               <div class="card-flyer">
                 <a href="">
                   <div class="listing-image-box">
+                    <div class="wishlist_btn">
+                      <button
+                        class="btn"
+                        data-toggle="button"
+                        aria-disabled="true"
+                      >
+                        <img
+                          src="./assets/icons/addedtofavicon.svg"
+                          alt="added to wishlist"
+                        />
+                      </button>
+                    </div>
                     <img
                       class="img-fluid"
                       src="./assets/images/userprofile/rado.png"
                       alt=""
                     />
                   </div>
+                </a>
+                <!-- end of anchor -->
                   <div class="text-box">
                     <div class="text-container mt-0">
                       <p class="listing_name m-0 pt-2">
@@ -952,7 +990,6 @@
                       <p class="listing_price m-0 pt-0">$550</p>
                     </div>
                   </div>
-                </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
                   class="
@@ -982,7 +1019,7 @@
         <!-- end of listing_container -->
       </section>
       <!-- sold boxes -->
-      <section class="sold_listings mb-1 container-fluid">
+      <section class="sold_listings my-5 container-fluid">
         <div
           class="
             container container-width
@@ -1033,12 +1070,17 @@
                 <!-- anchor for clicking the whole box except rating -->
                 <a href="">
                   <div class="listing-image-box">
+                    <div class="sold-label">
+                      <img src="./assets/icons/soldlabel.svg" alt="" />
+                    </div>
                     <img
                       class="img-fluid"
                       src="./assets/images/userprofile/ringimage.png"
                       alt=""
                     />
                   </div>
+                </a>
+                <!-- end of anchor -->
                   <div class="text-box">
                     <div class="text-container m-0">
                       <p class="listing_name m-0 pt-2">
@@ -1047,8 +1089,6 @@
                       <p class="listing_price m-0 pt-0">$550</p>
                     </div>
                   </div>
-                </a>
-                <!-- end of anchor -->
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
                 <div
                   class="
@@ -1076,12 +1116,17 @@
               <div class="card-flyer">
                 <a href="">
                   <div class="listing-image-box">
+                    <div class="sold-label">
+                      <img src="./assets/icons/soldlabel.svg" alt="" />
+                    </div>
                     <img
                       class="img-fluid"
                       src="./assets/images/userprofile/2rings.png"
                       alt=""
                     />
                   </div>
+                </a>
+                <!-- end of anchor -->
                   <div class="text-box">
                     <div class="text-container m-0">
                       <p class="listing_name m-0 pt-2">
@@ -1090,7 +1135,6 @@
                       <p class="listing_price m-0 pt-0">$650</p>
                     </div>
                   </div>
-                </a>
                 <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
                 <div
                   class="
@@ -1116,12 +1160,17 @@
               <div class="card-flyer">
                 <a href="">
                   <div class="listing-image-box">
+                    <div class="sold-label">
+                      <img src="./assets/icons/soldlabel.svg" alt="" />
+                    </div>
                     <img
                       class="img-fluid"
                       src="./assets/images/userprofile/goldenwatch.png"
                       alt=""
                     />
                   </div>
+                </a>
+                <!-- end of anchor -->
                   <div class="text-box">
                     <div class="text-container m-0">
                       <p class="listing_name m-0 pt-2">
@@ -1130,7 +1179,6 @@
                       <p class="listing_price m-0 pt-0">$1550</p>
                     </div>
                   </div>
-                </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
                   class="
@@ -1156,12 +1204,17 @@
               <div class="card-flyer">
                 <a href="">
                   <div class="listing-image-box">
+                    <div class="sold-label">
+                      <img src="./assets/icons/soldlabel.svg" alt="" />
+                    </div>
                     <img
                       class="img-fluid"
                       src="./assets/images/userprofile/rado.png"
                       alt=""
                     />
                   </div>
+                </a>
+                <!-- end of anchor -->
                   <div class="text-box">
                     <div class="text-container mt-0">
                       <p class="listing_name m-0 pt-2">
@@ -1170,7 +1223,6 @@
                       <p class="listing_price m-0 pt-0">$550</p>
                     </div>
                   </div>
-                </a>
                 <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
                 <div
                   class="

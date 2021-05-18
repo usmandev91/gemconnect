@@ -80,7 +80,7 @@ body {
   font-weight: 400;
 }
 .mainmenu {
-  padding: 0.7rem 0.7rem;
+  padding: 0.7rem 0.2rem;
   max-width: 210px;
   max-height: 210px;
   border-radius: 20px;
@@ -106,11 +106,6 @@ body {
 .main_menu_btn:focus {
   border-color: #3bc0cb !important;
   box-shadow: 0 0 1px 0px $theme_color !important;
-}
-@media screen and (max-width: 990px) {
-  #main_menu {
-    margin-top: 2rem;
-  }
 }
 
 // jumbo
@@ -445,16 +440,17 @@ input[type="text"] {
   margin-top: 5rem;
 }
 
-#category_container {
-  padding: 2rem;
+.category_container {
+  padding: 2rem 2rem;
   background-color: $theme_bgcolor;
+  max-width: 1400px;
   a {
     text-decoration: none;
     padding: 1rem;
     outline: none;
   }
   .card-flyer {
-    border-radius: 51px;
+    border-radius: 16%;
     background: #f6f6f6;
     overflow: hidden;
     margin-top: 50px;
@@ -468,15 +464,15 @@ input[type="text"] {
   }
 }
 
-#category_container .image-box .category_img {
+.category_container .image-box .category_img {
   width: 175px;
 }
 
-#category_container .card-flyer:hover .image-box img {
+.category_container .card-flyer:hover .image-box img {
   opacity: 0.7;
   transform: scale(1.15);
 }
-#category_container .text-box {
+.category_container .text-box {
   text-align: center;
 }
 
@@ -487,30 +483,28 @@ input[type="text"] {
   }
 }
 
-#category_container .card-flyer .text-box .text-container {
-  padding: 20px 10px;
+.category_container .card-flyer .text-box .text-container {
+  padding: 20px 20px;
 }
 
-#category_container .card-flyer:hover {
+.category_container .card-flyer:hover {
   background: #f6f6f6;
   transition: all 0.3s ease-in;
   margin-top: 50px;
 }
-#category_container .text-box p {
-  margin-top: 10px;
+.category_container .text-box p {
+  margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  padding-left: 10px;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   color: $text-color;
   text-align: left;
 }
-#category_container .text-box h6 {
+.category_container .text-box h6 {
   margin-top: 0px;
-  margin-bottom: 4px;
-  padding-left: 10px;
-  font-size: 22px;
+  margin-bottom: 0px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "raleway", sans-serif;
@@ -693,6 +687,136 @@ input[type="text"] {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   }
 }
+// deals carousel
+.deal_outer_container {
+  padding: 0;
+  max-width: 1480px;
+}
+.deal_container {
+  background-color: $cards-bg-color;
+  border-radius: 2rem;
+  min-height: 50%;
+  @media (min-width: 992px) {
+    .col-lg-2 {
+      flex: 0 0 18.66667%;
+      max-width: 18.66667%;
+    }
+  }
+  .deal-img-box {
+    width: 230px;
+    height: auto;
+  }
+  .card-flyer {
+    border-radius: 13%;
+    background: #f6f6f6;
+    overflow: hidden;
+    max-width: 313px;
+    padding-bottom: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+    .listing-image-box {
+      position: relative !important;
+      border-radius: 13%;
+      max-height: 250px;
+      max-width: 313px;
+      overflow: hidden;
+      text-align: center;
+      .staff-label {
+        position: absolute !important;
+        top: 8%;
+        left: 8%;
+        z-index: 1000;
+        .staff_label_img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .hot-label {
+        position: absolute !important;
+        top: 8%;
+        left: 8%;
+        z-index: 1000;
+        .hot_label_img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .discount-label {
+        position: absolute !important;
+        top: 0%;
+        left: 0%;
+        right: 0;
+        z-index: 1000;
+        .discount-badge {
+          background-color: #fd4e4e;
+          padding-top: 10px;
+          color: #fff;
+          text-align: center;
+          width: 90px;
+          height: 30px;
+        }
+      }
+    }
+    .listing_name {
+      font-size: 1rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding: 0 1em;
+      white-space: nowrap;
+      color: $text-color;
+      margin: 0;
+    }
+    .listing_price {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: $text-color;
+      padding: 0 1em;
+    }
+    .listing_price_full {
+      align-self: flex-start;
+      margin: 0;
+      font-size: 0.9rem;
+      color: $text-color;
+      padding-left: 0 !important;
+      padding-top: 40px;
+      text-decoration: line-through;
+    }
+    .listing_price_after {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: $text-color;
+      padding: 0 9px;
+    }
+    .listing_rating_container {
+      display: flex !important;
+      justify-content: start;
+      align-items: center;
+      max-height: 50px !important;
+      max-width: 202px !important;
+      .listing_rating {
+        font-size: 0.5rem;
+      }
+    }
+    .rating_score {
+      font-size: 0.9rem;
+    }
+  }
+  .deal_text_container {
+    color: $text-color;
+    font-size: 16px;
+    .heading_top {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+}
+.staff_verified {
+  height: 25px !important;
+  width: 25px !important;
+}
 // about-section
 .section-title {
   font-weight: bold;
@@ -855,10 +979,6 @@ input[type="text"] {
   border-radius: 3rem !important;
 }
 
-.container-width {
-  max-width: 1400px;
-}
-
 .user_setting_btn {
   border: none;
   background-color: inherit;
@@ -925,13 +1045,12 @@ input[type="text"] {
 .user_attributes_container {
   background-color: $theme_bgcolor;
   max-height: 200px;
-  max-width: 312px;
-  padding: 1.5rem 0rem 1.5rem 1.5rem;
+  max-width: 360px;
+  padding: 1.5rem;
   border-radius: 1.3rem;
   font-size: 18px;
   line-height: 1.6;
   color: $text-color;
-  white-space: nowrap;
   text-transform: none;
 }
 
@@ -944,7 +1063,7 @@ input[type="text"] {
     outline: none;
   }
   .card-flyer {
-    border-radius: 52px;
+    border-radius: 15%;
     background: #f6f6f6;
     overflow: hidden;
     margin-top: 2rem;
@@ -953,13 +1072,27 @@ input[type="text"] {
     padding-bottom: 16px;
     // border: black 1px solid;
     .listing-image-box {
-      border-radius: 52px;
+      position: relative !important;
+      border-radius: 10%;
       max-height: 250px;
       max-width: 313px;
       overflow: hidden;
       text-align: center;
-      img {
-        border-radius: 52px;
+      .wishlist_btn {
+        position: absolute !important;
+        top: 8%;
+        right: 5%;
+        z-index: 1000;
+      }
+      .sold-label {
+        position: absolute !important;
+        top: 0;
+        left: 16%;
+        z-index: 1000;
+        img {
+          width: 40px;
+          height: 80px;
+        }
       }
     }
     .listing_name {
@@ -980,6 +1113,7 @@ input[type="text"] {
     }
   }
 }
+
 .listing_rating_container {
   max-height: 50px !important;
   max-width: 280px !important;

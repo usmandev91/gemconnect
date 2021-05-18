@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GemConnect</title>
     <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./jquery.raty.css" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="container-fluid-xl container_outer">
@@ -40,7 +41,7 @@
           </div>
           <!-- main menu in header/user logged in menu -->
           <div class="col-sm-12 col-lg-3 col-md-12" id="main_menu">
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex justify-content-center p-0">
               <button
                 type="button"
                 class="btn mr-5 main_menu_btn"
@@ -547,216 +548,214 @@
             Browse by category
           </h2>
         </div>
-        <div id="category_container">
-          <div class="container container-width">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <div class="card-flyer">
-                  <a href="rings.html">
-                    <div
-                      class="
-                        image-box
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/images/categories/rings.jpg"
-                        alt=""
-                      />
+        <div class="container category_container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="card-flyer">
+                <a href="rings.html">
+                  <div
+                    class="
+                      image-box
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/categories/rings.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container">
+                      <h6>rings</h6>
+                      <p class="listings" id="categ_listing">200+ listings</p>
                     </div>
-                    <div class="text-box">
-                      <div class="text-container">
-                        <h6>rings</h6>
-                        <p class="listings" id="categ_listing">200+ lisings</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <div class="card-flyer">
-                  <a href="chains.html">
-                    <div
-                      class="
-                        image-box
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/images/categories/chains.jpg"
-                        alt="chains"
-                      />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="card-flyer">
+                <a href="chains.html">
+                  <div
+                    class="
+                      image-box
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/categories/chains.jpg"
+                      alt="chains"
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container">
+                      <h6>Chains</h6>
+                      <p class="listings" id="categ_listing">150+ listings</p>
                     </div>
-                    <div class="text-box">
-                      <div class="text-container">
-                        <h6>Chains</h6>
-                        <p class="listings" id="categ_listing">150+ lisings</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <div class="card-flyer">
-                  <a href="pendants.html">
-                    <div
-                      class="
-                        image-box
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/images/categories/pendants.jpg"
-                        alt="pendants"
-                      />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="card-flyer">
+                <a href="pendants.html">
+                  <div
+                    class="
+                      image-box
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/categories/pendants.jpg"
+                      alt="pendants"
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container">
+                      <h6>Pendants</h6>
+                      <p class="listings" id="categ_listing">300+ listings</p>
                     </div>
-                    <div class="text-box">
-                      <div class="text-container">
-                        <h6>Pendants</h6>
-                        <p class="listings" id="categ_listing">300+ lisings</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <div class="card-flyer">
-                  <a href="watches.html">
-                    <div
-                      class="
-                        image-box
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/images/categories/watches.jpg"
-                        alt="watches"
-                      />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="card-flyer">
+                <a href="watches.html">
+                  <div
+                    class="
+                      image-box
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/categories/watches.jpg"
+                      alt="watches"
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container">
+                      <h6>Watches</h6>
+                      <p class="listings" id="categ_listing">500+ listings</p>
                     </div>
-                    <div class="text-box">
-                      <div class="text-container">
-                        <h6>Watches</h6>
-                        <p class="listings" id="categ_listing">500+ lisings</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <div class="card-flyer">
-                  <a href="bracelets.html">
-                    <div
-                      class="
-                        image-box
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <img
-                        class="category_img img-fluid"
-                        src="./assets/images/categories/bracelets.jpg"
-                        alt="bracelets"
-                      />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="card-flyer">
+                <a href="bracelets.html">
+                  <div
+                    class="
+                      image-box
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <img
+                      class="category_img img-fluid"
+                      src="./assets/images/categories/bracelets.jpg"
+                      alt="bracelets"
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container">
+                      <h6>Bracelets</h6>
+                      <p class="listings" id="categ_listing">450+ listings</p>
                     </div>
-                    <div class="text-box">
-                      <div class="text-container">
-                        <h6>Bracelets</h6>
-                        <p class="listings" id="categ_listing">450+ lisings</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <div class="card-flyer">
-                  <a href="grills.html">
-                    <div
-                      class="
-                        image-box
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <img
-                        class="category_img img-fluid"
-                        src="./assets/images/categories/grills.jpg"
-                        alt="grills"
-                      />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="card-flyer">
+                <a href="grills.html">
+                  <div
+                    class="
+                      image-box
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <img
+                      class="category_img img-fluid"
+                      src="./assets/images/categories/grills.jpg"
+                      alt="grills"
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container">
+                      <h6>Grills</h6>
+                      <p class="listings" id="categ_listing">100+ listings</p>
                     </div>
-                    <div class="text-box">
-                      <div class="text-container">
-                        <h6>Grills</h6>
-                        <p class="listings" id="categ_listing">100+ lisings</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <div class="card-flyer">
-                  <a href="earings.html">
-                    <div
-                      class="
-                        image-box
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/images/categories/earings.jpg"
-                        alt="earings"
-                      />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="card-flyer">
+                <a href="earings.html">
+                  <div
+                    class="
+                      image-box
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/categories/earings.jpg"
+                      alt="earings"
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container">
+                      <h6>earings</h6>
+                      <p class="listings" id="categ_listing">250+ listings</p>
                     </div>
-                    <div class="text-box">
-                      <div class="text-container">
-                        <h6>earings</h6>
-                        <p class="listings" id="categ_listing">250+ lisings</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <div class="card-flyer">
-                  <a href="misc.html">
-                    <div
-                      class="
-                        image-box
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <img
-                        class="category_img img-fluid"
-                        src="./assets/images/categories/misc.png"
-                        alt=""
-                      />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="card-flyer">
+                <a href="misc.html">
+                  <div
+                    class="
+                      image-box
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <img
+                      class="category_img img-fluid"
+                      src="./assets/images/categories/misc.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-box">
+                    <div class="text-container">
+                      <h6>Misc..</h6>
+                      <p class="listings" id="categ_listing">1000+ listings</p>
                     </div>
-                    <div class="text-box">
-                      <div class="text-container">
-                        <h6>Misc..</h6>
-                        <p class="listings" id="categ_listing">1000+ lisings</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -883,6 +882,728 @@
                 />
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- deals carousel  -->
+      <section class="deal my-5 container-fluid">
+        <div class="container mt-1 deal_outer_container">
+          <div class="deal_carousel owl-carousel owl-theme">
+            <!-- item-1 -->
+            <div class="item px-5 container-fluid pt-3">
+              <div class="row deal_container">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                  Ring img
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                  <div class="deal_text_container">
+                    <p class="text-center pt-3 heading_top">Buy & Sell</p>
+                    <p class="text-center mb-0 py-1">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Pariatur ratione voluptate earum. Aliquid rerum corrupti
+                      nemo perferendis eius. Doloremque, esse.
+                    </p>
+                    <div
+                      class="
+                        container
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        py-2
+                      "
+                    >
+                      <a class="btn btn-submit btn_listing" href="#"
+                        >read more</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                  <div class="container deal-img-box">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/topdeals/topdeals.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item-2 staff picks -->
+            <div class="item px-5 container-fluid">
+              <div class="row deal_container">
+                <div
+                  class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pl-xl-5 pt-xl-2"
+                >
+                  <div class="deal_text_container pt-lg-3 pl-lg-2">
+                    <div
+                      class="
+                        d-flex
+                        justify-content-lg-start justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <p class="text-left pt-3 heading_top pr-2">Staff Picks</p>
+                      <span class="badge" class="staff_verified"
+                        ><img
+                          class="staff_verified"
+                          src="./assets/icons/Verifiedseller.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                    <p class="text-lg-left text-center mb-0 py-0">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Pariatur ratione voluptate earum. Aliquid rerum corrupti
+                    </p>
+                    <div
+                      class="
+                        container
+                        d-flex
+                        justify-content-lg-start justify-content-center
+                        align-items-center
+                        p-0
+                        pb-4
+                      "
+                    >
+                      <a class="btn btn-submit btn_listing" href="#"
+                        >View All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <!-- item container start -->
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                  <div
+                    class="
+                      container
+                      p-0
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <!-- 1st item -->
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="">
+                        <div class="listing-image-box">
+                          <div class="staff-label">
+                            <img
+                              class="staff_label_img"
+                              src="./assets/icons/Verifiedseller.svg"
+                              alt=""
+                            />
+                          </div>
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/topdeals/rolex2021.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Rolex New Model 2021 oyster
+                          </p>
+                          <p class="listing_price m-0 pt-0">$1450</p>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          pl-lg-0
+                          p-lg-0
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                  <div
+                    class="
+                      continer
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      p-0
+                    "
+                  >
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="">
+                        <div class="listing-image-box">
+                          <div class="staff-label">
+                            <img
+                              class="staff_label_img"
+                              src="./assets/icons/Verifiedseller.svg"
+                              alt=""
+                            />
+                          </div>
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/topdeals/redrubyring.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Pearl Ruby Earings
+                          </p>
+                          <p class="listing_price m-0 pt-0">$359</p>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          pl-lg-0
+                          p-lg-0
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                  <div
+                    class="
+                      container
+                      p-0
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="">
+                        <div class="listing-image-box">
+                          <div class="staff-label">
+                            <img
+                              class="staff_label_img"
+                              src="./assets/icons/Verifiedseller.svg"
+                              alt=""
+                            />
+                          </div>
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/topdeals/disneyring.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Wedding Golden Ring
+                          </p>
+                          <p class="listing_price m-0 pt-0">$420</p>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          pl-lg-0
+                          p-lg-0
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item-2 staff picks -->
+            <div class="item px-5 container-fluid">
+              <div class="row deal_container">
+                <div
+                  class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pl-xl-5 pt-xl-2"
+                >
+                  <div class="deal_text_container pt-lg-3 pl-lg-2">
+                    <div
+                      class="
+                        d-flex
+                        justify-content-lg-start justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <p class="text-left pt-3 heading_top pr-2">Hot Selling</p>
+                      <span class="badge" class="hot_selling"
+                        ><img
+                          class="hot_selling"
+                          src="./assets/images/topdeals/fire.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                    <p class="text-lg-left text-center mb-0 py-0">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Pariatur ratione voluptate earum. Aliquid rerum corrupti
+                    </p>
+                    <div
+                      class="
+                        container
+                        d-flex
+                        justify-content-lg-start justify-content-center
+                        align-items-center
+                        p-0
+                        pb-4
+                      "
+                    >
+                      <a class="btn btn-submit btn_listing" href="#"
+                        >View All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <!-- item container start -->
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                  <div
+                    class="
+                      container
+                      p-0
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <!-- 1st item -->
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="">
+                        <div class="listing-image-box">
+                          <div class="hot-label">
+                            <img
+                              class="hot_label_img"
+                              src="./assets/images/topdeals/fire.svg"
+                              alt=""
+                            />
+                          </div>
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/topdeals/rolex2021.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Rolex New Model 2021 oyster
+                          </p>
+                          <p class="listing_price m-0 pt-0">$1450</p>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          pl-lg-0
+                          p-lg-0
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                  <div
+                    class="
+                      continer
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      p-0
+                    "
+                  >
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="">
+                        <div class="listing-image-box">
+                          <div class="hot-label">
+                            <img
+                              class="hot_label_img"
+                              src="./assets/images/topdeals/fire.svg"
+                              alt=""
+                            />
+                          </div>
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/topdeals/redrubyring.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Pearl Ruby Earings
+                          </p>
+                          <p class="listing_price m-0 pt-0">$359</p>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          pl-lg-0
+                          p-lg-0
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                  <div
+                    class="
+                      container
+                      p-0
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="">
+                        <div class="listing-image-box">
+                          <div class="hot-label">
+                            <img
+                              class="hot_label_img"
+                              src="./assets/images/topdeals/fire.svg"
+                              alt=""
+                            />
+                          </div>
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/topdeals/disneyring.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Wedding Golden Ring
+                          </p>
+                          <p class="listing_price m-0 pt-0">$420</p>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          pl-lg-0
+                          p-lg-0
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item-2 staff picks -->
+            <div class="item px-5 container-fluid">
+              <div class="row deal_container">
+                <div
+                  class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pl-xl-5 pt-xl-2"
+                >
+                  <div class="deal_text_container pt-lg-3 pl-lg-2">
+                    <div
+                      class="
+                        d-flex
+                        justify-content-lg-start justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <p class="text-left pt-3 heading_top pr-2">Top Deals</p>
+                      <span class="badge" class="staff_verified"
+                        ><img
+                          class="staff_verified"
+                          src="./assets/images/topdeals/toprated.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                    <p class="text-lg-left text-center mb-0 py-0">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Pariatur ratione voluptate earum. Aliquid rerum corrupti
+                    </p>
+                    <div
+                      class="
+                        container
+                        d-flex
+                        justify-content-lg-start justify-content-center
+                        align-items-center
+                        p-0
+                        pb-4
+                      "
+                    >
+                      <a class="btn btn-submit btn_listing" href="#"
+                        >View All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <!-- item container start -->
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                  <div
+                    class="
+                      container
+                      p-0
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <!-- 1st item -->
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="">
+                        <div class="listing-image-box">
+                          <div class="discount-label">
+                            <span class="badge discount-badge">
+                              <p class="text-center">33% off</p></span
+                            >
+                          </div>
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/topdeals/rolex2021.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Rolex New Model 2021 oyster
+                          </p>
+                          <div
+                            class="
+                              container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <!-- full price of the product -->
+                            <p class="listing_price_full m-0 pt-1">$1450</p>
+                            <!-- after discount price -->
+                            <p class="listing_price_after m-0 pt-0">1299</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          pl-lg-0
+                          p-lg-0
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                  <div
+                    class="
+                      continer
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      p-0
+                    "
+                  >
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="">
+                        <div class="listing-image-box">
+                          <div class="discount-label">
+                            <span class="badge discount-badge">
+                              <p class="text-center">10% off</p></span
+                            >
+                          </div>
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/topdeals/redrubyring.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Pearl Ruby Earings
+                          </p>
+                          <div
+                            class="
+                              container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <p class="listing_price_full m-0 pt-1">359</p>
+                            <p class="listing_price_after m-0 pt-0">229</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          pl-lg-0
+                          p-lg-0
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                  <div
+                    class="
+                      container
+                      p-0
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="">
+                        <div class="listing-image-box">
+                          <div class="discount-label">
+                            <span class="badge discount-badge">
+                              <p class="text-center">12.2% off</p></span
+                            >
+                          </div>
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/topdeals/disneyring.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Wedding Golden Ring
+                          </p>
+                          <div
+                            class="
+                              container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <p class="listing_price_full m-0 pt-1">$420</p>
+                            <p class="listing_price_after m-0 pt-0">$399</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          pl-lg-0
+                          p-lg-0
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
           </div>
         </div>
       </section>
@@ -1102,8 +1823,10 @@
     </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/rating.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/userprofile.js"></script>
   </body>
 </html>
