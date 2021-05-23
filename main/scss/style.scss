@@ -184,7 +184,7 @@ body {
 }
 
 .browse_dropdown {
-  padding: 1rem 0.5rem;
+  padding: 0.1rem 0.3rem;
   border-radius: 20px;
   border: none;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -201,7 +201,6 @@ body {
   }
 }
 .browse_item:hover {
-  border-radius: 10px;
   .pointer {
     filter: none;
   }
@@ -657,7 +656,7 @@ input[type="text"] {
     left: -5%;
   }
   .owl-next {
-    right: -5%;
+    right: -2%;
   }
   .owl-prev,
   .owl-next :hover {
@@ -977,49 +976,46 @@ input[type="text"] {
   padding: 0rem 0 4rem 0;
   background-color: $cards-bg-color;
   border-radius: 3rem !important;
-}
+  .user_setting_btn {
+    border: none;
+    background-color: inherit;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
 
-.user_setting_btn {
-  border: none;
-  background-color: inherit;
-  margin-top: 2rem;
-  margin-right: 2rem;
-}
+  .user_setting_menu {
+    min-width: 1rem !important;
+    border-radius: 0.6rem !important;
+    border: none !important;
+    padding: 0;
+    box-shadow: 0 0 4px rgba(133, 130, 130, 0.3);
+    .user_setting:hover {
+      color: #3bc0cb;
+      background-color: transparent !important;
+    }
+  }
 
-.user_setting_menu {
-  min-width: 1rem !important;
-  border-radius: 0.6rem !important;
-  border: none !important;
-  padding: 0;
-  box-shadow: 0 0 4px rgba(133, 130, 130, 0.3);
-  .user_setting:hover {
-    color: #3bc0cb;
-    background-color: transparent !important;
+  .user_img_box {
+    border: $text-color 1px solid;
+    height: 259px;
+    width: 259px;
+    border-radius: 100%;
+    padding: 0.5rem;
+  }
+
+  .user_pic {
+    border-radius: 100%;
+    width: 100%;
+  }
+
+  .user_name {
+    font-size: 1.875rem;
+    font-weight: 800 !important;
+    color: $text-color;
+    padding: 0;
   }
 }
 
-.user_img_box {
-  border: $text-color 1px solid;
-  height: 259px;
-  width: 259px;
-  border-radius: 100%;
-  padding: 0.5rem;
-}
-
-.user_pic {
-  border-radius: 100%;
-  width: 100%;
-}
-
-.user_name {
-  font-size: 1.875rem;
-  font-weight: 800 !important;
-  color: $text-color;
-  padding: 0;
-}
-// .rating_container {
-//   border: black 1px solid !important;
-// }
 .rating_score {
   font-size: 18px;
   font-weight: 600;
@@ -1063,21 +1059,25 @@ input[type="text"] {
     outline: none;
   }
   .card-flyer {
-    border-radius: 15%;
+    border-radius: 13%;
     background: #f6f6f6;
     overflow: hidden;
     margin-top: 2rem;
     margin-bottom: 2rem;
     max-width: 313px;
     padding-bottom: 16px;
-    // border: black 1px solid;
     .listing-image-box {
       position: relative !important;
-      border-radius: 10%;
+      border-radius: 13%;
       max-height: 250px;
       max-width: 313px;
       overflow: hidden;
       text-align: center;
+      .listing-img {
+        max-height: 250px;
+        max-width: 313px;
+        border-radius: 13%;
+      }
       .wishlist_btn {
         position: absolute !important;
         top: 8%;
@@ -1133,5 +1133,79 @@ input[type="text"] {
     top: 180px;
     right: 20%;
     white-space: nowrap;
+  }
+}
+// review section
+.review_container {
+  max-width: 1460px;
+  .user_pic {
+    max-width: 65px;
+    max-height: 65px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+  .user_name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $text-color;
+  }
+  .listing_rating_container {
+    .listing_rating {
+      font-size: 0.5rem;
+      color: $text-color;
+    }
+  }
+  .review_date {
+    font-size: 1rem;
+    color: #b4b4b4;
+  }
+  .user_review {
+    font-size: 1rem;
+    color: $text-color;
+  }
+
+  // review section card
+  .card-flyer {
+    display: flex;
+    padding: 1.2rem;
+    background: #f6f6f6;
+    max-width: 460px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .listing-image-box {
+      max-width: 260px;
+      min-width: 125px;
+      max-height: 130px;
+      min-height: 117px;
+      border-radius: 20px;
+      overflow: hidden !important;
+    }
+    .text-box {
+      padding-left: 6px;
+      .text-container {
+        max-width: 250px !important;
+        max-height: 250px !important;
+        .listing_name {
+          font-size: 1rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          color: $text-color;
+          margin: 0;
+        }
+        .listing_price {
+          margin: 0;
+          font-size: 1.2rem;
+          font-weight: 800;
+          color: $text-color;
+          padding: 0 1em;
+        }
+      }
+    }
+    .listing_rating {
+      padding-left: 0.6rem;
+    }
   }
 }

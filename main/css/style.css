@@ -133,7 +133,7 @@ body {
   color: #002f33 !important; }
 
 .browse_dropdown {
-  padding: 1rem 0.5rem;
+  padding: 0.1rem 0.3rem;
   border-radius: 20px;
   border: none;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); }
@@ -147,10 +147,8 @@ body {
       height: 15px;
       margin-left: auto; }
 
-.browse_item:hover {
-  border-radius: 10px; }
-  .browse_item:hover .pointer {
-    filter: none; }
+.browse_item:hover .pointer {
+  filter: none; }
 
 .default_nav {
   background-color: white !important;
@@ -537,7 +535,7 @@ input[type="text"] {
   left: -5%; }
 
 .brand_carousel .owl-next {
-  right: -5%; }
+  right: -2%; }
 
 .brand_carousel .owl-prev,
 .brand_carousel .owl-next :hover {
@@ -799,39 +797,34 @@ input[type="text"] {
   padding: 0rem 0 4rem 0;
   background-color: #f6f6f6;
   border-radius: 3rem !important; }
-
-.user_setting_btn {
-  border: none;
-  background-color: inherit;
-  margin-top: 2rem;
-  margin-right: 2rem; }
-
-.user_setting_menu {
-  min-width: 1rem !important;
-  border-radius: 0.6rem !important;
-  border: none !important;
-  padding: 0;
-  box-shadow: 0 0 4px rgba(133, 130, 130, 0.3); }
-  .user_setting_menu .user_setting:hover {
-    color: #3bc0cb;
-    background-color: transparent !important; }
-
-.user_img_box {
-  border: #002f33 1px solid;
-  height: 259px;
-  width: 259px;
-  border-radius: 100%;
-  padding: 0.5rem; }
-
-.user_pic {
-  border-radius: 100%;
-  width: 100%; }
-
-.user_name {
-  font-size: 1.875rem;
-  font-weight: 800 !important;
-  color: #002f33;
-  padding: 0; }
+  .user_container .user_setting_btn {
+    border: none;
+    background-color: inherit;
+    margin-top: 2rem;
+    margin-right: 2rem; }
+  .user_container .user_setting_menu {
+    min-width: 1rem !important;
+    border-radius: 0.6rem !important;
+    border: none !important;
+    padding: 0;
+    box-shadow: 0 0 4px rgba(133, 130, 130, 0.3); }
+    .user_container .user_setting_menu .user_setting:hover {
+      color: #3bc0cb;
+      background-color: transparent !important; }
+  .user_container .user_img_box {
+    border: #002f33 1px solid;
+    height: 259px;
+    width: 259px;
+    border-radius: 100%;
+    padding: 0.5rem; }
+  .user_container .user_pic {
+    border-radius: 100%;
+    width: 100%; }
+  .user_container .user_name {
+    font-size: 1.875rem;
+    font-weight: 800 !important;
+    color: #002f33;
+    padding: 0; }
 
 .rating_score {
   font-size: 18px;
@@ -872,7 +865,7 @@ input[type="text"] {
     text-decoration: none;
     outline: none; }
   .listing_container .card-flyer {
-    border-radius: 15%;
+    border-radius: 13%;
     background: #f6f6f6;
     overflow: hidden;
     margin-top: 2rem;
@@ -881,11 +874,15 @@ input[type="text"] {
     padding-bottom: 16px; }
     .listing_container .card-flyer .listing-image-box {
       position: relative !important;
-      border-radius: 10%;
+      border-radius: 13%;
       max-height: 250px;
       max-width: 313px;
       overflow: hidden;
       text-align: center; }
+      .listing_container .card-flyer .listing-image-box .listing-img {
+        max-height: 250px;
+        max-width: 313px;
+        border-radius: 13%; }
       .listing_container .card-flyer .listing-image-box .wishlist_btn {
         position: absolute !important;
         top: 8%;
@@ -930,3 +927,60 @@ input[type="text"] {
     top: 180px;
     right: 20%;
     white-space: nowrap; } }
+
+.review_container {
+  max-width: 1460px; }
+  .review_container .user_pic {
+    max-width: 65px;
+    max-height: 65px;
+    border-radius: 100%;
+    overflow: hidden; }
+  .review_container .user_name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #002f33; }
+  .review_container .listing_rating_container .listing_rating {
+    font-size: 0.5rem;
+    color: #002f33; }
+  .review_container .review_date {
+    font-size: 1rem;
+    color: #b4b4b4; }
+  .review_container .user_review {
+    font-size: 1rem;
+    color: #002f33; }
+  .review_container .card-flyer {
+    display: flex;
+    padding: 1.2rem;
+    background: #f6f6f6;
+    max-width: 460px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+    .review_container .card-flyer .listing-image-box {
+      max-width: 260px;
+      min-width: 125px;
+      max-height: 130px;
+      min-height: 117px;
+      border-radius: 20px;
+      overflow: hidden !important; }
+    .review_container .card-flyer .text-box {
+      padding-left: 6px; }
+      .review_container .card-flyer .text-box .text-container {
+        max-width: 250px !important;
+        max-height: 250px !important; }
+        .review_container .card-flyer .text-box .text-container .listing_name {
+          font-size: 1rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          color: #002f33;
+          margin: 0; }
+        .review_container .card-flyer .text-box .text-container .listing_price {
+          margin: 0;
+          font-size: 1.2rem;
+          font-weight: 800;
+          color: #002f33;
+          padding: 0 1em; }
+    .review_container .card-flyer .listing_rating {
+      padding-left: 0.6rem; }
