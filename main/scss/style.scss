@@ -1166,19 +1166,12 @@ input[type="text"] {
 
   // review section card
   .card-flyer {
-    display: flex;
-    padding: 1.2rem;
     background: #f6f6f6;
     max-width: 460px;
     border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    padding: 1.2rem;
     .listing-image-box {
-      max-width: 260px;
-      min-width: 125px;
-      max-height: 130px;
-      min-height: 117px;
+      max-width: 280px;
       border-radius: 20px;
       overflow: hidden !important;
     }
