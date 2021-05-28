@@ -9,6 +9,7 @@ $form-border: 1px solid #ced4da;
 $div-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 $ligh-font: #b4b4b4;
 $cards-bg-color: #f6f6f6;
+$order_cancel: #ff7272;
 
 @mixin line {
   content: "";
@@ -29,7 +30,14 @@ body {
 // .container_outer {
 //   overflow: hidden !important;
 // }
-
+.dropdown-item-1:hover {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.dropdown-item-last {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
 .dropdown-item:hover,
 .dropdown-item:focus {
   // color: $theme_color !important;
@@ -215,6 +223,9 @@ body {
   width: 90px;
   height: 53px;
 }
+.form_row {
+  width: 100%;
+}
 .nav-search-bar {
   position: relative !important;
   height: 40px;
@@ -255,7 +266,9 @@ body {
   filter: grayscale(100%);
   width: 150%;
 }
-
+.main_menu_container {
+  width: 50%;
+}
 // transitions
 
 .navbtn::after {
@@ -527,6 +540,10 @@ input[type="text"] {
     width: 4rem;
     background-color: #3bc0cb;
   }
+  &:focus {
+    border-color: #3bc0cb !important;
+    box-shadow: 0 0 4px 0px $theme_color !important;
+  }
 }
 
 // section underline:
@@ -535,9 +552,11 @@ input[type="text"] {
 .brands-title,
 .your-listing-title,
 .wishlist-title,
+.order-title,
 .sold-title,
 .rewiews-title,
-.about-title {
+.about-title,
+.user-listing-title {
   position: relative;
   font-weight: 600;
 }
@@ -622,6 +641,17 @@ input[type="text"] {
   background-color: #3bc0cb;
   border-radius: 10px;
 }
+.order-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0px;
+  height: 0.2rem;
+  width: 5.2rem;
+  background-color: #3bc0cb;
+  border-radius: 10px;
+}
 
 .rewiews-title::after {
   content: "";
@@ -634,7 +664,17 @@ input[type="text"] {
   background-color: #3bc0cb;
   border-radius: 10px;
 }
-
+.user-listing-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0px;
+  height: 0.2rem;
+  width: 80%;
+  background-color: #3bc0cb;
+  border-radius: 10px;
+}
 // brand section
 .brand_carousel {
   .owl-nav .owl-prev.disabled,
@@ -819,7 +859,6 @@ input[type="text"] {
 // about-section
 .section-title {
   font-weight: bold;
-  white-space: nowrap;
 }
 .about {
   margin-top: 5rem;
@@ -868,7 +907,7 @@ input[type="text"] {
   width: 30px;
   height: 30px;
 }
-.btn_listing {
+.btn_default {
   background-color: #002f33;
   color: white;
   white-space: nowrap;
@@ -879,6 +918,10 @@ input[type="text"] {
   &:hover {
     color: $theme_color;
   }
+}
+.btn_default:focus {
+  border-color: #3bc0cb !important;
+  box-shadow: 0 0 4px 0px $theme_color !important;
 }
 // footer
 
@@ -891,18 +934,6 @@ input[type="text"] {
     &:hover {
       text-decoration: underline $theme_color;
     }
-  }
-}
-.btn_footer_send {
-  font-size: 12px;
-  background-color: #002f33;
-  color: white;
-  margin: 1em 0;
-  padding: 0.4rem 1rem;
-  border-radius: 0.6rem;
-  font-weight: bold;
-  &:hover {
-    color: $theme_color;
   }
 }
 
@@ -965,9 +996,6 @@ input[type="text"] {
 }
 
 // user-profile page
-.section-title-start {
-  white-space: nowrap;
-}
 
 .user_container {
   max-width: 1460px;
@@ -1049,7 +1077,29 @@ input[type="text"] {
   color: $text-color;
   text-transform: none;
 }
-
+// listing sorter select menu
+.selectbox {
+  border-radius: 1rem;
+  border: rgb(228, 227, 227) 1px solid;
+  padding: 0.2rem 1.5rem;
+  box-shadow: $div-shadow;
+  .sortlabel {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+.listing_sorter {
+  border-radius: 1rem;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem;
+  &:focus {
+    box-shadow: 0 0 4px 0px $theme_color !important;
+  }
+  &:active {
+    border: none;
+  }
+}
 // listing container and cards
 .listing_container {
   background-color: $theme_bgcolor;
@@ -1059,7 +1109,7 @@ input[type="text"] {
     outline: none;
   }
   .card-flyer {
-    border-radius: 13%;
+    border-radius: 48px;
     background: #f6f6f6;
     overflow: hidden;
     margin-top: 2rem;
@@ -1068,7 +1118,7 @@ input[type="text"] {
     padding-bottom: 16px;
     .listing-image-box {
       position: relative !important;
-      border-radius: 13%;
+      border-radius: 48px;
       max-height: 250px;
       max-width: 313px;
       overflow: hidden;
@@ -1078,11 +1128,59 @@ input[type="text"] {
         max-width: 313px;
         border-radius: 13%;
       }
-      .wishlist_btn {
+      .staff-label {
         position: absolute !important;
         top: 8%;
-        right: 5%;
+        left: 8%;
         z-index: 1000;
+        .staff_label_img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .hot-label {
+        position: absolute !important;
+        top: 8%;
+        left: 8%;
+        z-index: 1000;
+        .hot_label_img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .discount-label {
+        position: absolute !important;
+        top: 0%;
+        left: 0%;
+        right: 0;
+        z-index: 1000;
+        .discount-badge {
+          background-color: #fd4e4e;
+          padding-top: 10px;
+          color: #fff;
+          text-align: center;
+          width: 90px;
+          height: 30px;
+        }
+      }
+      .wishlist_btn_container {
+        position: absolute !important;
+        top: 8%;
+        right: 8%;
+        z-index: 1000;
+        .like-btn {
+          border-radius: 0.7rem;
+          display: block;
+          background-image: url(/assets/icons/addtofavicon.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 32px;
+          height: 32px;
+          border: none;
+        }
+        .like-btn.active {
+          background: url(/assets/icons/addedtofavicon.svg);
+        }
       }
       .sold-label {
         position: absolute !important;
@@ -1110,6 +1208,25 @@ input[type="text"] {
       font-weight: 800;
       color: $text-color;
       padding: 0 1em;
+    }
+    .order_success {
+      margin-top: 0.2rem;
+      margin-bottom: 0;
+      font-size: 1rem;
+      .order_badge_img {
+        width: 16px;
+        padding-bottom: 0.3rem;
+      }
+    }
+    .order_cancel {
+      margin-top: 0.2rem;
+      margin-bottom: 0;
+      font-size: 1rem;
+      color: $order_cancel;
+      .order_badge_cancel_img {
+        width: 16px;
+        padding-bottom: 0.3rem;
+      }
     }
   }
 }

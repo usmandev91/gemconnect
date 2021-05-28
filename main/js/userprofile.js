@@ -1,11 +1,9 @@
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(document.querySelectorAll("*"), function (el) {
-  if (el.offsetWidth > docWidth) {
-    console.log(el);
-  }
+// wishlist button toggle
+$(document).ready(function () {
+  $("button").on("click", function () {
+    $(this).toggleClass("active");
+  });
 });
-
 // raty plugin
 $(".HandMade_jewelry_rating").raty({
   starType: "i",
@@ -38,8 +36,3 @@ $(".listing_rating").raty({
   // round: { down: 0.25, full: 0.5 },
 });
 //
-
-// wishlist button toggle
-// $("i.button").click(function () {
-//   $(this).toggleClass("fa-heart fa-heart-o");
-// });

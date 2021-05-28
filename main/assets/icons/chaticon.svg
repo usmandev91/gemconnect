@@ -1,0 +1,19 @@
+<svg id="Chat_icon" data-name="Chat icon" xmlns="http://www.w3.org/2000/svg" width="20.36" height="19" viewBox="0 0 20.36 19">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="chat">
+    <path id="Path_13309" data-name="Path 13309" class="cls-1" d="M3.408,16.113a1.273,1.273,0,0,1,.365,1.019,13.96,13.96,0,0,1-.507,2.545,15.022,15.022,0,0,0,3.352-1.136,1.272,1.272,0,0,1,.9-.094,10.256,10.256,0,0,0,2.659.346c5.085,0,8.908-3.572,8.908-7.635S15.265,3.523,10.18,3.523,1.273,7.1,1.273,11.158a6.992,6.992,0,0,0,2.136,4.955Zm-.627,4.969q-.452.09-.907.164a.331.331,0,0,1-.347-.461q.169-.4.31-.81l0-.012a13.307,13.307,0,0,0,.667-2.951A8.264,8.264,0,0,1,0,11.158C0,6.238,4.558,2.25,10.18,2.25s10.18,3.988,10.18,8.908S15.8,20.065,10.18,20.065a11.529,11.529,0,0,1-2.987-.39A17.4,17.4,0,0,1,2.78,21.082Z" transform="translate(0 -2.25)"/>
+  </g>
+  <circle id="Ellipse_392" data-name="Ellipse 392" class="cls-2" cx="1.417" cy="1.417" r="1.417" transform="translate(4.513 7.518)"/>
+  <circle id="Ellipse_393" data-name="Ellipse 393" class="cls-2" cx="1.417" cy="1.417" r="1.417" transform="translate(8.763 7.518)"/>
+  <circle id="Ellipse_394" data-name="Ellipse 394" class="cls-2" cx="1.417" cy="1.417" r="1.417" transform="translate(13.014 7.518)"/>
+</svg>
