@@ -969,14 +969,14 @@ input[type="text"] {
         .listing_container .card-flyer .listing-image-box .wishlist_btn_container .like-btn {
           border-radius: 0.7rem;
           display: block;
-          background-image: url(/assets/icons/addtofavicon.svg);
+          background-image: url(../assets/icons/addtofavicon.svg);
           background-position: center;
           background-repeat: no-repeat;
           width: 32px;
           height: 32px;
           border: none; }
         .listing_container .card-flyer .listing-image-box .wishlist_btn_container .like-btn.active {
-          background: url(/assets/icons/addedtofavicon.svg); }
+          background-image: url(../assets/icons/addedtofavicon.svg); }
       .listing_container .card-flyer .listing-image-box .sold-label {
         position: absolute !important;
         top: 0;

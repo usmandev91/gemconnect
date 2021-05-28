@@ -1171,7 +1171,7 @@ input[type="text"] {
         .like-btn {
           border-radius: 0.7rem;
           display: block;
-          background-image: url(/assets/icons/addtofavicon.svg);
+          background-image: url(../assets/icons/addtofavicon.svg);
           background-position: center;
           background-repeat: no-repeat;
           width: 32px;
@@ -1179,7 +1179,7 @@ input[type="text"] {
           border: none;
         }
         .like-btn.active {
-          background: url(/assets/icons/addedtofavicon.svg);
+          background-image: url(../assets/icons/addedtofavicon.svg);
         }
       }
       .sold-label {
