@@ -40,7 +40,7 @@
             </div>
           </div>
           <!-- main menu in header/user logged in menu -->
-          <div class="col-sm-12 col-lg-3 col-md-12" id="main_menu">
+          <div class="col-sm-12 col-lg-3 col-md-12">
             <div class="container d-flex justify-content-center p-0">
               <button
                 type="button"
@@ -69,34 +69,102 @@
                   class="dropdown-menu dropdown-menu-right mainmenu"
                   aria-labelledby="dropdownMenu"
                 >
-                  <a class="dropdown-item menu_link" href="myprofile.html"
-                    ><img
-                      class="main_menu_icons"
-                      src="./assets/icons/menuIcons/profile.svg"
-                      alt="user profile icon"
-                    /><span class="ml-3">profile</span></a
+                  <a
+                    class="dropdown-item menu_link dropdown-item-1 pl-3 py-2"
+                    href="myprofile.html"
                   >
-                  <a class="dropdown-item menu_link" href="mylistings.html"
-                    ><img
-                      class="main_menu_icons"
-                      src="./assets/icons/menuIcons/wishlist.svg"
-                      alt="wishlist icon"
-                    /><span class="ml-3">wishlist</span></a
+                    <span>
+                      <img
+                        class="menu_icon"
+                        src="./assets/icons/menuIcons/profile.svg"
+                        alt="profile icon"
+                    /></span>
+                    Profile
+                  </a>
+                  <a
+                    class="dropdown-item menu_link pl-3 py-2"
+                    href="inbox.html"
                   >
-                  <a class="dropdown-item menu_link" href="#"
-                    ><img
-                      class="main_menu_icons"
-                      src="./assets/icons/menuIcons/settings.svg"
-                      alt="settings icon"
-                    /><span class="ml-3">settings</span></a
+                    <span>
+                      <img
+                        class="menu_icon"
+                        src="./assets/icons/menuIcons/mail.svg"
+                        alt="mail icon"
+                    /></span>
+                    messages
+                  </a>
+                  <a
+                    class="dropdown-item menu_link pl-3 py-2"
+                    href="wishlist.html"
                   >
-                  <a class="dropdown-item menu_link" href="#"
-                    ><img
-                      class="main_menu_icons"
-                      src="./assets/icons/menuIcons/logout.svg"
-                      alt="logout icon"
-                    /><span class="ml-3">Logout</span></a
+                    <span>
+                      <img
+                        class="menu_icon"
+                        src="./assets/icons/menuIcons/wishlist.svg"
+                        alt="wishlist icon"
+                    /></span>
+                    wishlist
+                  </a>
+                  <a
+                    class="dropdown-item menu_link pl-3 py-2"
+                    href="orders.html"
                   >
+                    <span>
+                      <img
+                        class="menu_icon"
+                        src="./assets/icons/menuIcons/order.svg"
+                        alt="orders icon"
+                    /></span>
+                    orders
+                  </a>
+                  <a
+                    class="dropdown-item menu_link pl-3 py-2"
+                    href="yourlistings.html"
+                  >
+                    <span>
+                      <img
+                        class="menu_icon"
+                        src="./assets/icons/menuIcons/list.svg"
+                        alt="list icon"
+                    /></span>
+                    your listings
+                  </a>
+                  <a
+                    class="dropdown-item menu_link pl-3 py-2"
+                    href="statistics.html"
+                  >
+                    <span>
+                      <img
+                        class="menu_icon"
+                        src="./assets/icons/menuIcons/statistics.svg"
+                        alt="stats icon"
+                    /></span>
+                    statistics
+                  </a>
+                  <a
+                    class="dropdown-item menu_link pl-3 py-2"
+                    href="settings.html"
+                  >
+                    <span>
+                      <img
+                        class="menu_icon"
+                        src="./assets/icons/menuIcons/settings.svg"
+                        alt="settings icon"
+                    /></span>
+                    Settings
+                  </a>
+                  <a
+                    class="dropdown-item menu_link dropdown-item-last pl-3 py-2"
+                    href="index.html"
+                  >
+                    <span>
+                      <img
+                        class="menu_icon"
+                        src="./assets/icons/menuIcons/logout.svg"
+                        alt="logout icon"
+                    /></span>
+                    logout
+                  </a>
                 </div>
               </div>
             </div>
@@ -104,7 +172,7 @@
         </div>
 
         <!--Homepage Nav-bar -->
-        <nav class="navbar navbar-expand-lg navbar-expand-md">
+        <nav class="navbar navbar-expand-lg navbar-expand-md home-nav">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -139,7 +207,13 @@
                     aria-labelledby="navbarDropdown"
                   >
                     <a
-                      class="dropdown-item browse_item p-2 pt-0"
+                      class="
+                        dropdown-item
+                        browse_item
+                        dropdown-item-1
+                        pl-3
+                        py-2
+                      "
                       href="rings.html"
                       >Rings
                       <img
@@ -147,7 +221,9 @@
                         src="./assets/icons/menuIcons/pointer.svg"
                         alt="menu pointer"
                     /></a>
-                    <a class="dropdown-item browse_item p-2" href="chains.html"
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="chains.html"
                       >Chains
                       <img
                         class="pointer"
@@ -155,7 +231,7 @@
                         alt="menu pointer"
                     /></a>
                     <a
-                      class="dropdown-item browse_item p-2"
+                      class="dropdown-item browse_item pl-3 py-2"
                       href="pendants.html"
                       >Pendants
                       <img
@@ -163,7 +239,9 @@
                         src="./assets/icons/menuIcons/pointer.svg"
                         alt="menu pointer"
                     /></a>
-                    <a class="dropdown-item browse_item p-2" href="watches.html"
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="watches.html"
                       >Watches
                       <img
                         class="pointer"
@@ -171,7 +249,7 @@
                         alt="menu pointer"
                     /></a>
                     <a
-                      class="dropdown-item browse_item p-2"
+                      class="dropdown-item browse_item pl-3 py-2"
                       href="braceletes.html"
                       >Bracelets
                       <img
@@ -179,7 +257,9 @@
                         src="./assets/icons/menuIcons/pointer.svg"
                         alt="menu pointer"
                     /></a>
-                    <a class="dropdown-item browse_item p-2" href="grills.html"
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="grills.html"
                       >Grills
                       <img
                         class="pointer"
@@ -190,8 +270,8 @@
                       class="
                         dropdown-item
                         browse_item
-                        p-2
-                        pb-0
+                        pl-3
+                        py-2
                         dropdown-item-last
                       "
                       href="braceletes.html"

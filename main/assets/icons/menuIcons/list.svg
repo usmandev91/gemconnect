@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.5" height="14" viewBox="0 0 13.5 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3bc0cb;
+      }
+    </style>
+  </defs>
+  <g id="list" transform="translate(-2.813 -2.25)">
+    <path id="Path_13331" data-name="Path 13331" class="cls-1" d="M14.625,5.625h8.25v1h-8.25Z" transform="translate(-6.562 -1.875)"/>
+    <path id="Path_13332" data-name="Path 13332" class="cls-1" d="M2.813,4.25a2,2,0,1,0,2-2A2,2,0,0,0,2.813,4.25Zm2-1a1,1,0,1,1-1,1,1,1,0,0,1,1-1Z"/>
+    <path id="Path_13333" data-name="Path 13333" class="cls-1" d="M14.625,16.875h8.25v1h-8.25Z" transform="translate(-6.562 -8.125)"/>
+    <path id="Path_13334" data-name="Path 13334" class="cls-1" d="M4.813,17.5a2,2,0,1,0-2-2,2,2,0,0,0,2,2Zm0-3a1,1,0,1,1-1,1,1,1,0,0,1,1-1Z" transform="translate(0 -6.25)"/>
+    <path id="Path_13335" data-name="Path 13335" class="cls-1" d="M14.625,28.125h8.25v1h-8.25Z" transform="translate(-6.562 -14.375)"/>
+    <path id="Path_13336" data-name="Path 13336" class="cls-1" d="M4.813,28.75a2,2,0,1,0-2-2,2,2,0,0,0,2,2Zm0-3a1,1,0,1,1-1,1,1,1,0,0,1,1-1Z" transform="translate(0 -12.5)"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.5" height="13.2" viewBox="0 0 13.5 13.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3bc0cb;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Order_Icon" data-name="Order Icon" transform="translate(-1524.465 -209)">
+    <g id="Cart_Icon" data-name="Cart Icon" transform="translate(1524.465 211.695)">
+      <path id="Path_13283" data-name="Path 13283" class="cls-1" d="M12.687,28.3a.8.8,0,1,1-.8-.8A.8.8,0,0,1,12.687,28.3Z" transform="translate(-8.088 -18.601)"/>
+      <path id="Path_13284" data-name="Path 13284" class="cls-1" d="M26.357,28.3a.8.8,0,1,1-.8-.8A.8.8,0,0,1,26.357,28.3Z" transform="translate(-16.878 -18.601)"/>
+      <path id="Path_13285" data-name="Path 13285" class="cls-1" d="M13.547,3.573a.357.357,0,0,0-.275-.132H5.839l.232.714H12.8l-.953,4.284H6.5L4.864,3.273a.357.357,0,0,0-.236-.232l-1.464-.45a.359.359,0,1,0-.211.685l1.282.393L5.874,8.847l-.586.478-.046.046a.95.95,0,0,0-.029,1.21.982.982,0,0,0,.807.357h5.959a.357.357,0,1,0,0-.714H5.964a.239.239,0,0,1-.2-.357l.86-.714h5.513a.357.357,0,0,0,.357-.278l1.132-5a.357.357,0,0,0-.079-.3Z" transform="translate(-2.7 -2.575)"/>
+    </g>
+    <circle id="Ellipse_412" data-name="Ellipse 412" class="cls-1" cx="3.801" cy="3.801" r="3.801" transform="translate(1530.363 209)"/>
+    <path id="Path_13271" data-name="Path 13271" class="cls-2" d="M116.422,32.088l-2.975,2.974-.952-.951a.289.289,0,0,0-.409.409l1.156,1.156a.289.289,0,0,0,.409,0l3.179-3.179a.289.289,0,1,0-.409-.409Zm0,0" transform="translate(1419.746 178.999)"/>
+  </g>
+</svg>

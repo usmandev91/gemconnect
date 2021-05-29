@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.5" height="13.5" viewBox="0 0 13.5 13.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #3bc0cb;
+      }
+
+      .cls-2 {
+        fill: #3bc0cb;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_12733" data-name="Group 12733" transform="translate(-1522 -311.75)">
+    <g id="Ellipse_413" data-name="Ellipse 413" class="cls-1" transform="translate(1522 311.75)">
+      <circle class="cls-3" cx="6.75" cy="6.75" r="6.75"/>
+      <circle class="cls-4" cx="6.75" cy="6.75" r="6.25"/>
+    </g>
+    <path id="Intersection_1" data-name="Intersection 1" class="cls-2" d="M7,6.737V0h.265l.039,0h.01l.048,0H7.38l.032,0h.02l.027,0,.024,0,.024,0,.025,0,.022,0,.026,0,.023,0,.025,0h.015L7.7.033l.017,0,.027,0,.021,0,.026,0,.021,0,.026,0,.019,0,.03,0,.013,0,.163.022h0l.039.006h.006L8.15.091h.006L8.2.1h0a7.049,7.049,0,0,1,4.321,2.494h0a6.681,6.681,0,0,1,.929,1.518l0,.009.01.022.019.044,0,.007.009.021v0l.005.013,0,.007h0l0,.007a6.468,6.468,0,0,1,.445,1.685l0,.011v.007c0,.006,0,.012,0,.018A6.524,6.524,0,0,1,13.6,8.992l0,0-.011.031-.008.022,0,.008A6.717,6.717,0,0,1,11.95,11.5Z" transform="translate(1521.5 311.75)"/>
+  </g>
+</svg>
