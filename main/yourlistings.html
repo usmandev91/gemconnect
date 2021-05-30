@@ -4,84 +4,1305 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GemConnect | Registration</title>
+    <title>GemConnect | My Profile</title>
+    <link rel="stylesheet" href="./jquery.raty.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md mb-4 mb-md-0">
-            <h3>Contact us</h3>
-            <ul class="list-unstyled nav-links">
-              <li>
-                <p>+44 345 687 902</p>
-              </li>
-              <li><a href="#">GemConnectgmail.com</a></li>
-              <li><a href="#">find a store</a></li>
-            </ul>
+    <div class="container-fluid-xl container_outer">
+      <!-- default navbar -->
+      <header class="container-fluid sticky-top default_nav">
+        <nav class="navbar navbar-expand-lg navbar-expand-xl">
+          <a class="navbar-brand mr-4" href="index.html">
+            <img
+              class="gc_nav_logo"
+              src="./assets/icons/gc_nav_logo.svg"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container-fluid py-2">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="
+                  navbar-nav
+                  justify-content-xl-evenly justify-content-center
+                  align-items-center
+                  pt-1
+                  pl-lg-5
+                "
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link navbtn pr-xl-3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Browse
+                  </a>
+                  <div
+                    class="dropdown-menu browse_dropdown"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a
+                      class="
+                        dropdown-item
+                        browse_item
+                        dropdown-item-1
+                        pl-3
+                        py-2
+                      "
+                      href="rings.html"
+                      >Rings
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="chains.html"
+                      >Chains
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="pendants.html"
+                      >Pendants
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="watches.html"
+                      >Watches
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="braceletes.html"
+                      >Bracelets
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="grills.html"
+                      >Grills
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="
+                        dropdown-item
+                        browse_item
+                        pl-3
+                        py-2
+                        dropdown-item-last
+                      "
+                      href="braceletes.html"
+                      >earings
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn px-xl-3" href="#">Sell</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn px-xl-3" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn px-xl-3" href="#">auction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn px-xl-3" href="#">About</a>
+                </li>
+              </ul>
+              <div
+                class="
+                  container-sm
+                  p-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="row form_row">
+                  <div class="col-md-12 p-0">
+                    <form
+                      class="
+                        navbar-form
+                        form-inline
+                        d-flex
+                        justify-content-center
+                      "
+                    >
+                      <input
+                        type="text"
+                        id="search"
+                        class="form-control-lg nav-search-bar"
+                        placeholder="Search..."
+                      />
+                      <button type="submit" class="btn inline-search-btn">
+                        <img
+                          class="inline-search-btn-img"
+                          src="./assets/icons/search.svg"
+                          alt=""
+                        />
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!--login buttons display set to none -->
+              <div class="container-sm d-none">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div
+                      class="
+                        container-sm
+                        m-0
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-top"
+                        data-toggle="modal"
+                        data-target="#loginModal"
+                      >
+                        Login
+                      </button>
+                      <a class="btn btn-top" href="./registration.html"
+                        >Sign up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- main menu in header/user logged in menu -->
+              <div
+                class="
+                  container-sm
+                  d-flex
+                  justify-content-center justify-content-lg-start
+                  align-items-center
+                "
+              >
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="container-sm d-flex pt-1">
+                      <button
+                        type="button"
+                        class="
+                          btn
+                          main_menu_btn
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          pr-5
+                        "
+                        data-toggle="carty"
+                        data-target="#"
+                      >
+                        <img class="carty" src="./assets/icons/cart.svg" /><span
+                          class="badge carty_text"
+                          id="cart_items"
+                          >Cart 0</span
+                        >
+                      </button>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle main_menu_btn"
+                          type="button"
+                          id="dropdownMenu"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            src="./assets/icons/menuIcons/Menu Icon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div
+                          class="dropdown-menu dropdown-menu-right mainmenu"
+                          aria-labelledby="dropdownMenu"
+                        >
+                          <a
+                            class="
+                              dropdown-item
+                              menu_link
+                              dropdown-item-1
+                              pl-3
+                              py-2
+                            "
+                            href="myprofile.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/profile.svg"
+                                alt="profile icon"
+                            /></span>
+                            Profile
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="inbox.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/mail.svg"
+                                alt="mail icon"
+                            /></span>
+                            messages
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="wishlist.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/wishlist.svg"
+                                alt="wishlist icon"
+                            /></span>
+                            wishlist
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="orders.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/order.svg"
+                                alt="orders icon"
+                            /></span>
+                            orders
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="yourlistings.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/list.svg"
+                                alt="list icon"
+                            /></span>
+                            your listings
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="statistics.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/statistics.svg"
+                                alt="stats icon"
+                            /></span>
+                            statistics
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="settings.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/settings.svg"
+                                alt="settings icon"
+                            /></span>
+                            Settings
+                          </a>
+                          <a
+                            class="
+                              dropdown-item
+                              menu_link
+                              dropdown-item-last
+                              pl-3
+                              py-2
+                            "
+                            href="index.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/logout.svg"
+                                alt="logout icon"
+                            /></span>
+                            logout
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md mb-4 mb-md-0">
-            <h3>About us</h3>
-            <ul class="list-unstyled nav-links">
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Best sellers</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md mb-4 mb-md-0">
-            <h3>Legal</h3>
-            <ul class="list-unstyled nav-links">
-              <li><a href="#">Terms &amp; Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 mb-4 mb-md-0">
-            <h3>Subscribe</h3>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur</p>
-            <form action="#" class="subscribe">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Enter your e-mail"
-              />
-              <input
-                type="submit"
-                class="btn btn-submit btn_footer_send"
-                value="Subscribe"
-              />
-            </form>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-12">
-            <div class="border-top my-5"></div>
-          </div>
-          <div class="col-md-6">
-            <p><small>© 2021 All Rights Reserved.</small></p>
-          </div>
-          <div class="col-md-6 text-md-right">
-            <ul class="social list-unstyled">
-              <li>
-                <a href="#"><span class="icon-facebook"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-twitter"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-instagram"></span></a>
-              </li>
-            </ul>
+        </nav>
+      </header>
+      <!-- end of navbar -->
+      <!--Modal design-->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-xs modal-dialog modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="form-title text-center">
+                <img
+                  class="modal-logo img-fluid"
+                  src="./assets/icons/Logo.svg"
+                  alt="logo"
+                />
+                <div class="container-fluid d-flex justify-content-center">
+                  <h4 class="modal_text">Login</h4>
+                </div>
+              </div>
+              <div
+                class="
+                  container-fluid
+                  d-flex
+                  flex-column
+                  text-center
+                  justify-content-center
+                "
+              >
+                <div class="form-group modal_form">
+                  <div class="col-xs-2">
+                    <input
+                      type="email"
+                      class="form-control form_design"
+                      id="email"
+                      placeholder="Email"
+                      required
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="form-group modal_form">
+                    <input
+                      type="password"
+                      class="form-control form_design"
+                      id="password"
+                      placeholder="Password"
+                      required
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="form-group modal_form">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="Check1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >keep me logged in</label
+                      >
+                    </div>
+                    <div class="form-group modal_login">
+                      <button type="submit" class="btn btn-info login_Modal">
+                        Login
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <div class="signup-section">
+                    Don't have an account?
+                    <a
+                      href="./registration.html"
+                      target="_blank"
+                      class="text-info"
+                      >Sign Up</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+      <section class="listings my-5 container-fluid">
+        <div
+          class="
+            container container-width
+            d-flex
+            justify-content-lg-start justify-content-center
+            align-items-center
+            p-xl-0
+          "
+        >
+          <h2 class="section-title-start text-start your-listing-title">
+            Your Listings
+          </h2>
+          <div
+            class="
+              container
+              d-none d-lg-flex
+              justify-content-end
+              align-items-center
+              p-0
+              mr-4
+            "
+          >
+            <a href="./mylistings.html" class="btn btn_default"
+              >Post a new listing</a
+            >
+          </div>
+        </div>
+        <div
+          class="
+            container
+            d-lg-none
+            mt-3
+            d-flex
+            justify-content-center
+            align-items-center
+          "
+        >
+          <a href="./mylistings.html" class="btn btn_default"
+            >Post a new listing</a
+          >
+        </div>
+        <div class="container-fluid container-width mt-5">
+          <table class="table listing_table" id="myTable">
+            <!-- table heads -->
+            <thead class="table-head-row">
+              <tr>
+                <th scope="col">Listing</th>
+                <th scope="col">status</th>
+                <th scope="col">Sold</th>
+                <th scope="col">In Stock</th>
+                <th scope="col">Settings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 1st product -->
+              <tr>
+                <!-- product data cell in td tag -->
+                <td class="review_container product_container">
+                  <!-- product card -->
+                  <div class="card-flyer">
+                    <!-- anchor for clicking the whole box except rating -->
+                    <a href="">
+                      <div class="listing-image-box">
+                        <img
+                          class="img-fluid"
+                          src="./assets/images/userprofile/ringimage.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <!-- end of anchor -->
+                    <div
+                      class="
+                        text-box
+                        container
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                        p-0
+                        m-0
+                      "
+                    >
+                      <div class="text-container container p-0">
+                        <p class="listing_name">
+                          Golden Ring with little stones available on gc
+                        </p>
+                        <p class="listing_price">$550</p>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </td>
+                <td class="product_status card-text pt-lg-5">
+                  <p class="live">live</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="sold">11pcs</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="instock">89pcs</p>
+                </td>
+                <td class="button_container">
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="user_setting_btn"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="./assets/userprofile/optionicon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="dropdown-menu user_setting_menu">
+                      <a
+                        class="dropdown-item user_setting dropdown-item-1"
+                        href="#"
+                        >Edit</a
+                      >
+                      <a class="dropdown-item user_setting" href="#">preview</a>
+                      <a class="dropdown-item user_setting" href="#"
+                        >Get your add promoted</a
+                      >
+                      <a class="dropdown-item user_setting" href="#"
+                        >deactivate</a
+                      >
+                      <a
+                        class="dropdown-item user_setting dropdown-item-last"
+                        href="#"
+                        >Delete</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!-- 2nd product data -->
+              <tr>
+                <!-- product data cell in td tag -->
+                <td class="review_container product_container">
+                  <div class="card-flyer">
+                    <!-- anchor for clicking the whole box except rating -->
+                    <a href="">
+                      <div class="listing-image-box">
+                        <img
+                          class="img-fluid"
+                          src="./assets/images/userprofile/2rings.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <!-- end of anchor -->
+                    <div
+                      class="
+                        text-box
+                        container
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                        p-0
+                        m-0
+                      "
+                    >
+                      <div class="text-container container p-0">
+                        <p class="listing_name">
+                          Engangememt golden rounds available exclusively on gc
+                        </p>
+                        <p class="listing_price">$650</p>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </td>
+                <td class="product_status card-text pt-lg-5">
+                  <p class="live">live</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="sold">5pcs</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="instock">45pcs</p>
+                </td>
+                <td class="button_container">
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="user_setting_btn"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="./assets/userprofile/optionicon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="dropdown-menu user_setting_menu">
+                      <a
+                        class="dropdown-item user_setting dropdown-item-1"
+                        href="#"
+                        >Edit</a
+                      >
+                      <a class="dropdown-item user_setting" href="#">preview</a>
+                      <a class="dropdown-item user_setting" href="#"
+                        >Get your add promoted</a
+                      >
+                      <a class="dropdown-item user_setting" href="#"
+                        >deactivate</a
+                      >
+                      <a
+                        class="dropdown-item user_setting dropdown-item-last"
+                        href="#"
+                        >Delete</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!-- 3rd product data -->
+              <tr>
+                <!-- product data cell in td tag -->
+                <td class="review_container product_container">
+                  <div class="card-flyer">
+                    <!-- anchor for clicking the whole box except rating -->
+                    <a href="">
+                      <div class="listing-image-box">
+                        <img
+                          class="img-fluid"
+                          src="./assets/images/userprofile/goldenwatch.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <!-- end of anchor -->
+                    <div
+                      class="
+                        text-box
+                        container
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                        p-0
+                        m-0
+                      "
+                    >
+                      <div class="text-container container p-0">
+                        <p class="listing_name">
+                          PIET HEIN EEK Golden Watch available exclusively on gc
+                        </p>
+                        <p class="listing_price">$1550</p>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </td>
+                <td class="product_status card-text pt-lg-5">
+                  <p class="live">live</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="sold">0pcs</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="instock">1pcs</p>
+                </td>
+                <td class="button_container">
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="user_setting_btn"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="./assets/userprofile/optionicon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="dropdown-menu user_setting_menu">
+                      <a
+                        class="dropdown-item user_setting dropdown-item-1"
+                        href="#"
+                        >Edit</a
+                      >
+                      <a class="dropdown-item user_setting" href="#">preview</a>
+                      <a class="dropdown-item user_setting" href="#"
+                        >Get your add promoted</a
+                      >
+                      <a class="dropdown-item user_setting" href="#"
+                        >deactivate</a
+                      >
+                      <a
+                        class="dropdown-item user_setting dropdown-item-last"
+                        href="#"
+                        >Delete</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!-- 4th product data -->
+              <tr>
+                <!-- product data cell in td tag -->
+                <td class="review_container product_container">
+                  <div class="card-flyer">
+                    <!-- anchor for clicking the whole box except rating -->
+                    <a href="">
+                      <div class="listing-image-box">
+                        <img
+                          class="img-fluid"
+                          src="./assets/images/userprofile/rado.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <!-- end of anchor -->
+                    <div
+                      class="
+                        text-box
+                        container
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                        p-0
+                        m-0
+                      "
+                    >
+                      <div class="text-container container p-0">
+                        <p class="listing_name">
+                          Rado watch available exclusively on gc
+                        </p>
+                        <p class="listing_price">$550</p>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </td>
+                <td class="product_status card-text pt-lg-5">
+                  <p class="live">live</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="sold">2pcs</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="instock">3pcs</p>
+                </td>
+                <td class="button_container">
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="user_setting_btn"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="./assets/userprofile/optionicon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="dropdown-menu user_setting_menu">
+                      <a
+                        class="dropdown-item user_setting dropdown-item-1"
+                        href="#"
+                        >Edit</a
+                      >
+                      <a class="dropdown-item user_setting" href="#">preview</a>
+                      <a class="dropdown-item user_setting" href="#"
+                        >Get your add promoted</a
+                      >
+                      <a class="dropdown-item user_setting" href="#"
+                        >deactivate</a
+                      >
+                      <a
+                        class="dropdown-item user_setting dropdown-item-last"
+                        href="#"
+                        >Delete</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!-- 5th product data -->
+              <tr>
+                <!-- product data cell in td tag -->
+                <td class="review_container product_container">
+                  <div class="card-flyer">
+                    <!-- anchor for clicking the whole box except rating -->
+                    <a href="">
+                      <div class="listing-image-box">
+                        <img
+                          class="img-fluid"
+                          src="./assets/images/userprofile/rado.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <!-- end of anchor -->
+                    <div
+                      class="
+                        text-box
+                        container
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                        p-0
+                        m-0
+                      "
+                    >
+                      <div class="text-container container p-0">
+                        <p class="listing_name">
+                          Rado watch available exclusively on gc
+                        </p>
+                        <p class="listing_price">$550</p>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </td>
+                <td class="product_status card-text pt-lg-5">
+                  <p class="soldout">soldout</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="sold">1pcs</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="instock">0pcs</p>
+                </td>
+                <td class="button_container">
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="user_setting_btn"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="./assets/userprofile/optionicon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="dropdown-menu user_setting_menu">
+                      <a
+                        class="dropdown-item user_setting dropdown-item-1"
+                        href="#"
+                        >Edit</a
+                      >
+                      <a class="dropdown-item user_setting" href="#">preview</a>
+                      <a class="dropdown-item user_setting" href="#"
+                        >Get your add promoted</a
+                      >
+                      <a class="dropdown-item user_setting" href="#"
+                        >deactivate</a
+                      >
+                      <a
+                        class="dropdown-item user_setting dropdown-item-last"
+                        href="#"
+                        >Delete</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!-- 6th product data -->
+              <tr>
+                <!-- product data cell in td tag -->
+                <td class="review_container product_container">
+                  <div class="card-flyer">
+                    <!-- anchor for clicking the whole box except rating -->
+                    <a href="">
+                      <div class="listing-image-box">
+                        <img
+                          class="img-fluid"
+                          src="./assets/images/userprofile/rado.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <!-- end of anchor -->
+                    <div
+                      class="
+                        text-box
+                        container
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                        p-0
+                        m-0
+                      "
+                    >
+                      <div class="text-container container p-0">
+                        <p class="listing_name">
+                          Rado watch available exclusively on gc
+                        </p>
+                        <p class="listing_price">$550</p>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </td>
+                <td class="product_status card-text pt-lg-5">
+                  <p class="deactivated">deactivated</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="sold">1pcs</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="instock">0pcs</p>
+                </td>
+                <td class="button_container">
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="user_setting_btn"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="./assets/userprofile/optionicon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="dropdown-menu user_setting_menu">
+                      <a
+                        class="dropdown-item user_setting dropdown-item-1"
+                        href="#"
+                        >Edit</a
+                      >
+                      <a class="dropdown-item user_setting" href="#">preview</a>
+                      <a class="dropdown-item user_setting" href="#"
+                        >Get your add promoted</a
+                      >
+                      <a class="dropdown-item user_setting" href="#"
+                        >deactivate</a
+                      >
+                      <a
+                        class="dropdown-item user_setting dropdown-item-last"
+                        href="#"
+                        >Delete</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!-- 7th product data -->
+              <tr>
+                <!-- product data cell in td tag -->
+                <td class="review_container product_container">
+                  <div class="card-flyer">
+                    <!-- anchor for clicking the whole box except rating -->
+                    <a href="">
+                      <div class="listing-image-box">
+                        <img
+                          class="img-fluid"
+                          src="./assets/images/userprofile/rado.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <!-- end of anchor -->
+                    <div
+                      class="
+                        text-box
+                        container
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                        p-0
+                        m-0
+                      "
+                    >
+                      <div class="text-container container p-0">
+                        <p class="listing_name">
+                          Rado watch available exclusively on gc
+                        </p>
+                        <p class="listing_price">$550</p>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </td>
+                <td class="product_status card-text pt-lg-5">
+                  <p class="deleted">deleted</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="sold">5pcs</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="instock">0pcs</p>
+                </td>
+                <td class="button_container">
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="user_setting_btn"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="./assets/userprofile/optionicon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="dropdown-menu user_setting_menu">
+                      <a
+                        class="dropdown-item user_setting dropdown-item-1"
+                        href="#"
+                        >Edit</a
+                      >
+                      <a class="dropdown-item user_setting" href="#">preview</a>
+                      <a class="dropdown-item user_setting" href="#"
+                        >Get your add promoted</a
+                      >
+                      <a class="dropdown-item user_setting" href="#"
+                        >deactivate</a
+                      >
+                      <a
+                        class="dropdown-item user_setting dropdown-item-last"
+                        href="#"
+                        >Delete</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="footer mt-5 pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md mb-4 mb-md-0">
+              <h3>Contact us</h3>
+              <ul class="list-unstyled nav-links">
+                <li>
+                  <p>+44 345 687 902</p>
+                </li>
+                <li><a href="#">GemConnectgmail.com</a></li>
+                <li><a href="#">find a store</a></li>
+              </ul>
+            </div>
+            <div class="col-md mb-4 mb-md-0">
+              <h3>About us</h3>
+              <ul class="list-unstyled nav-links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Best sellers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md mb-4 mb-md-0">
+              <h3>Legal</h3>
+              <ul class="list-unstyled nav-links">
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h3>Subscribe</h3>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur</p>
+              <form action="#" class="subscribe">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your e-mail"
+                />
+                <input
+                  type="submit"
+                  class="btn btn_default"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="border-top my-5"></div>
+            </div>
+            <div class="col-md-6">
+              <p><small>© 2021 All Rights Reserved.</small></p>
+            </div>
+            <div class="col-md-6 text-md-right">
+              <ul class="social list-unstyled">
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/rating.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/userprofile.js"></script>
+    </div>
   </body>
 </html>
