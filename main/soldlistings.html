@@ -228,6 +228,7 @@
                           d-flex
                           justify-content-center
                           align-items-center
+                          ml-5
                           mr-4
                         "
                         data-toggle="carty"
@@ -476,70 +477,131 @@
             pb-3
           "
         >
-          <h2 class="section-title-start text-start wishlist-title">
-            Wishlist
+          <h2 class="section-title-start text-start user-listing-title">
+            Sold listings
           </h2>
-          <div
-            class="
-              d-none
-              gc-custom-select
-              d-lg-flex
-              justify-content-center
-              align-items-center
-              mr-lg-5
-              mb-lg-2
-            "
-          >
-            <label class="select_label" for="custom-select"
-              >Sort by
-              <span class="px-2"
-                ><img src="./assets/icons/carret.svg" alt="carret icon" /></span
-            ></label>
-            <select class="rev-select-box custom-select">
-              <option value="0">Newest listings</option>
-              <option value="1">Low to high</option>
-              <option value="2">High to low</option>
-              <option value="3">Top Rated</option>
-            </select>
-          </div>
         </div>
-        <!-- select menu for mobile -->
-        <div
-          class="
-            container-sm
-            d-lg-none d-md-flex
-            justify-content-center
-            align-items-center
-            p-2
-          "
-        >
-          <div
-            class="
-              gc-custom-select
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-          >
-            <label class="select_label" for="custom-select"
-              >Sort by
-              <span class="px-2"
-                ><img src="./assets/icons/carret.svg" alt="" /></span
-            ></label>
-            <select class="rev-select-box custom-select">
-              <option value="0">Newest listings</option>
-              <option value="1">Low to high</option>
-              <option value="2">High to low</option>
-              <option value="3">Top Rated</option>
-            </select>
-          </div>
+        <div class="container-fluid container-width mt-5 p-0">
+          <table class="table listing_table" id="soldTable">
+            <!-- table heads -->
+            <thead class="table-head-row">
+              <tr>
+                <th scope="col" class="text-center">Listing</th>
+                <th scope="col">status</th>
+                <th scope="col">Sold</th>
+                <th scope="col">In Stock</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- product data cell in td tag -->
+                <td class="review_container table_product_container">
+                  <div class="card-flyer">
+                    <!-- anchor for clicking the whole box except rating -->
+                    <a href="">
+                      <div class="listing-image-box">
+                        <img
+                          class="img-fluid"
+                          src="./assets/images/userprofile/rado.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <!-- end of anchor -->
+                    <div
+                      class="
+                        text-box
+                        container
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                        p-0
+                        m-0
+                      "
+                    >
+                      <div class="text-container container p-0">
+                        <p class="listing_name">
+                          Rado watch available exclusively on gc
+                        </p>
+                        <p class="listing_price">$550</p>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="soldout">soldout</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="sold">1pcs</p>
+                </td>
+                <td class="product_status pt-lg-5">
+                  <p class="instock">0pcs</p>
+                </td>
+                <td class="button_container">
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="user_setting_btn"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="./assets/userprofile/optionicon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="dropdown-menu user_setting_menu">
+                      <a
+                        class="dropdown-item user_setting dropdown-item-1"
+                        href="#"
+                        >Edit</a
+                      >
+                      <a class="dropdown-item user_setting" href="#">preview</a>
+                      <a class="dropdown-item user_setting" href="#"
+                        >Get your add promoted</a
+                      >
+                      <a class="dropdown-item user_setting" href="#"
+                        >deactivate</a
+                      >
+                      <a
+                        class="dropdown-item user_setting dropdown-item-last"
+                        href="#"
+                        >Delete</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
       <!-- items container and grid layout -->
 
       <!-- footer -->
-      <footer class="footer">
-        <div class="container">
+      <footer class="footer mt-5">
+        <div class="container mt-5">
           <div class="row">
             <div class="col-md mb-4 mb-md-0">
               <h3>Contact us</h3>

@@ -1,5 +1,4 @@
 // drop down hover on fullscreen
-//
 const $dropdown = $(".dropdown");
 const $dropdownToggle = $(".dropdown-toggle");
 const $dropdownMenu = $(".dropdown-menu");
@@ -26,9 +25,11 @@ $(window).on("load resize", function () {
   }
 });
 
-// active
+// active for registration
 $('.nav-tabs a[href="#signup"]').tab("show");
 
+// active for general market tab
+$('.nav-tabs a[href="#gm"]').tab("show");
 //seller carousel
 $(".seller-carousel").owlCarousel({
   items: 5,
@@ -122,3 +123,5 @@ $(".deal_carousel").owlCarousel({
   loop: true,
   navRewind: true,
 });
+
+// message fram jquery

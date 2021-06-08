@@ -12,9 +12,9 @@
   <body>
     <div class="container-fluid-xl container_outer">
       <!-- default navbar -->
-      <header class="container-fluid sticky-top default_nav">
+      <header class="container-fluid sticky-top default_nav py-2">
         <nav class="navbar navbar-expand-lg navbar-expand-xl">
-          <a class="navbar-brand mr-4" href="index.html">
+          <a class="navbar-brand ml-lg-4 pl-lg-2" href="index.html">
             <img
               class="gc_nav_logo"
               src="./assets/icons/gc_nav_logo.svg"
@@ -31,18 +31,16 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="container-fluid py-2">
+          <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul
                 class="
                   navbar-nav
                   justify-content-xl-evenly justify-content-center
                   align-items-center
-                  pt-1
-                  pl-lg-5
                 "
               >
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown ml-lg-4">
                   <a
                     class="nav-link navbtn pr-xl-3"
                     href="#"
@@ -102,7 +100,7 @@
                     /></a>
                     <a
                       class="dropdown-item browse_item pl-3 py-2"
-                      href="braceletes.html"
+                      href="bracelets.html"
                       >Bracelets
                       <img
                         class="pointer"
@@ -126,7 +124,7 @@
                         py-2
                         dropdown-item-last
                       "
-                      href="braceletes.html"
+                      href="earings.html"
                       >earings
                       <img
                         class="pointer"
@@ -136,21 +134,19 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link navbtn px-xl-3" href="#">Sell</a>
+                  <a class="nav-link navbtn mx-xl-4" href="#">Sell</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link navbtn px-xl-3" href="#">blog</a>
+                  <a class="nav-link navbtn mx-xl-4" href="#">blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link navbtn px-xl-3" href="#">auction</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link navbtn px-xl-3" href="#">About</a>
+                  <a class="nav-link navbtn mx-xl-4" href="#">About</a>
                 </li>
               </ul>
               <div
                 class="
                   container-sm
+                  form_container
                   p-0
                   d-flex
                   justify-content-center
@@ -215,8 +211,9 @@
               <div
                 class="
                   container-sm
+                  menu-container
                   d-flex
-                  justify-content-center justify-content-lg-start
+                  justify-content-lg-start justify-content-center
                   align-items-center
                 "
               >
@@ -231,7 +228,8 @@
                           d-flex
                           justify-content-center
                           align-items-center
-                          pr-5
+                          ml-5
+                          mr-4
                         "
                         data-toggle="carty"
                         data-target="#"
@@ -244,7 +242,7 @@
                       </button>
                       <div class="dropdown">
                         <button
-                          class="btn dropdown-toggle main_menu_btn"
+                          class="btn dropdown-toggle main_menu_btn mr-5"
                           type="button"
                           id="dropdownMenu"
                           data-toggle="dropdown"
@@ -280,7 +278,7 @@
                           </a>
                           <a
                             class="dropdown-item menu_link pl-3 py-2"
-                            href="inbox.html"
+                            href="messages.html"
                           >
                             <span>
                               <img
@@ -468,18 +466,25 @@
         </div>
       </div>
       <section class="listings my-5 container-fluid">
-        <div
-          class="
-            container container-width
-            d-flex
-            justify-content-lg-start justify-content-center
-            align-items-center
-            p-xl-0
-          "
-        >
-          <h2 class="section-title-start text-start your-listing-title">
-            Your Listings
-          </h2>
+        <div class="container container-width d-flex p-0">
+          <ul
+            class="
+              nav nav-tabs
+              justify-content-center
+              flex-lg-row flex-column
+              align-items-center
+              p-xl-0
+            "
+          >
+            <li class="tab-active">
+              <a class="tab-text" data-toggle="tab" href="#gm"
+                >General Market</a
+              >
+            </li>
+            <li class="ml-lg-5">
+              <a class="tab-text" data-toggle="tab" href="#auction">Auction</a>
+            </li>
+          </ul>
           <div
             class="
               container
@@ -509,722 +514,1257 @@
             >Post a new listing</a
           >
         </div>
-        <div class="container-fluid container-width mt-5">
-          <table class="table listing_table" id="myTable">
-            <!-- table heads -->
-            <thead class="table-head-row">
-              <tr>
-                <th scope="col">Listing</th>
-                <th scope="col">status</th>
-                <th scope="col">Sold</th>
-                <th scope="col">In Stock</th>
-                <th scope="col">Settings</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- 1st product -->
-              <tr>
-                <!-- product data cell in td tag -->
-                <td class="review_container product_container">
-                  <!-- product card -->
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/userprofile/ringimage.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div
-                      class="
-                        text-box
-                        container
-                        d-flex
-                        flex-column
-                        justify-content-center
-                        align-items-center
-                        p-0
-                        m-0
-                      "
-                    >
-                      <div class="text-container container p-0">
-                        <p class="listing_name">
-                          Golden Ring with little stones available on gc
-                        </p>
-                        <p class="listing_price">$550</p>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-start
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+        <div class="tab-content">
+          <div id="gm" class="tab-pane fade in active">
+            <div class="container-fluid container-width mt-5 p-0">
+              <table class="table listing_table" id="gmTable">
+                <!-- table heads -->
+                <thead class="table-head-row">
+                  <tr>
+                    <th scope="col" class="text-center">Listing</th>
+                    <th scope="col">status</th>
+                    <th scope="col">Sold</th>
+                    <th scope="col">In Stock</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 1st product -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <!-- product card -->
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/ringimage.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Golden Ring with little stones available on gc
+                            </p>
+                            <p class="listing_price">$550</p>
+                          </div>
+                          <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                          <div
+                            class="
+                              container
+                              listing_rating_container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <div class="listing_rating" data-score="4.5"></div>
+                            <!-- target this div via raty for score dont write anything inside -->
+                            <div
+                              class="rating_score px-3 mb-1"
+                              id="listing_score"
+                            >
+                              4.5
+                            </div>
+                          </div>
+                          <!-- end of rating -->
                         </div>
                       </div>
-                      <!-- end of rating -->
-                    </div>
-                  </div>
-                </td>
-                <td class="product_status card-text pt-lg-5">
-                  <p class="live">live</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="sold">11pcs</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="instock">89pcs</p>
-                </td>
-                <td class="button_container">
-                  <div class="btn-group dropleft">
-                    <button
-                      type="button"
-                      class="user_setting_btn"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/userprofile/optionicon.svg"
-                        alt=""
-                      />
-                    </button>
-                    <div class="dropdown-menu user_setting_menu">
-                      <a
-                        class="dropdown-item user_setting dropdown-item-1"
-                        href="#"
-                        >Edit</a
-                      >
-                      <a class="dropdown-item user_setting" href="#">preview</a>
-                      <a class="dropdown-item user_setting" href="#"
-                        >Get your add promoted</a
-                      >
-                      <a class="dropdown-item user_setting" href="#"
-                        >deactivate</a
-                      >
-                      <a
-                        class="dropdown-item user_setting dropdown-item-last"
-                        href="#"
-                        >Delete</a
-                      >
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <!-- 2nd product data -->
-              <tr>
-                <!-- product data cell in td tag -->
-                <td class="review_container product_container">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/userprofile/2rings.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div
-                      class="
-                        text-box
-                        container
-                        d-flex
-                        flex-column
-                        justify-content-center
-                        align-items-center
-                        p-0
-                        m-0
-                      "
-                    >
-                      <div class="text-container container p-0">
-                        <p class="listing_name">
-                          Engangememt golden rounds available exclusively on gc
-                        </p>
-                        <p class="listing_price">$650</p>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-start
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="live">live</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="sold">11pcs</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="instock">89pcs</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
                         </div>
                       </div>
-                      <!-- end of rating -->
-                    </div>
-                  </div>
-                </td>
-                <td class="product_status card-text pt-lg-5">
-                  <p class="live">live</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="sold">5pcs</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="instock">45pcs</p>
-                </td>
-                <td class="button_container">
-                  <div class="btn-group dropleft">
-                    <button
-                      type="button"
-                      class="user_setting_btn"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/userprofile/optionicon.svg"
-                        alt=""
-                      />
-                    </button>
-                    <div class="dropdown-menu user_setting_menu">
-                      <a
-                        class="dropdown-item user_setting dropdown-item-1"
-                        href="#"
-                        >Edit</a
-                      >
-                      <a class="dropdown-item user_setting" href="#">preview</a>
-                      <a class="dropdown-item user_setting" href="#"
-                        >Get your add promoted</a
-                      >
-                      <a class="dropdown-item user_setting" href="#"
-                        >deactivate</a
-                      >
-                      <a
-                        class="dropdown-item user_setting dropdown-item-last"
-                        href="#"
-                        >Delete</a
-                      >
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <!-- 3rd product data -->
-              <tr>
-                <!-- product data cell in td tag -->
-                <td class="review_container product_container">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/userprofile/goldenwatch.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div
-                      class="
-                        text-box
-                        container
-                        d-flex
-                        flex-column
-                        justify-content-center
-                        align-items-center
-                        p-0
-                        m-0
-                      "
-                    >
-                      <div class="text-container container p-0">
-                        <p class="listing_name">
-                          PIET HEIN EEK Golden Watch available exclusively on gc
-                        </p>
-                        <p class="listing_price">$1550</p>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-start
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                    </td>
+                  </tr>
+                  <!-- 2nd product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/2rings.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Engangememt golden rounds available exclusively on
+                              gc
+                            </p>
+                            <p class="listing_price">$650</p>
+                          </div>
+                          <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                          <div
+                            class="
+                              container
+                              listing_rating_container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <div class="listing_rating" data-score="4.5"></div>
+                            <!-- target this div via raty for score dont write anything inside -->
+                            <div
+                              class="rating_score px-3 mb-1"
+                              id="listing_score"
+                            >
+                              4.5
+                            </div>
+                          </div>
+                          <!-- end of rating -->
                         </div>
                       </div>
-                      <!-- end of rating -->
-                    </div>
-                  </div>
-                </td>
-                <td class="product_status card-text pt-lg-5">
-                  <p class="live">live</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="sold">0pcs</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="instock">1pcs</p>
-                </td>
-                <td class="button_container">
-                  <div class="btn-group dropleft">
-                    <button
-                      type="button"
-                      class="user_setting_btn"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/userprofile/optionicon.svg"
-                        alt=""
-                      />
-                    </button>
-                    <div class="dropdown-menu user_setting_menu">
-                      <a
-                        class="dropdown-item user_setting dropdown-item-1"
-                        href="#"
-                        >Edit</a
-                      >
-                      <a class="dropdown-item user_setting" href="#">preview</a>
-                      <a class="dropdown-item user_setting" href="#"
-                        >Get your add promoted</a
-                      >
-                      <a class="dropdown-item user_setting" href="#"
-                        >deactivate</a
-                      >
-                      <a
-                        class="dropdown-item user_setting dropdown-item-last"
-                        href="#"
-                        >Delete</a
-                      >
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <!-- 4th product data -->
-              <tr>
-                <!-- product data cell in td tag -->
-                <td class="review_container product_container">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/userprofile/rado.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div
-                      class="
-                        text-box
-                        container
-                        d-flex
-                        flex-column
-                        justify-content-center
-                        align-items-center
-                        p-0
-                        m-0
-                      "
-                    >
-                      <div class="text-container container p-0">
-                        <p class="listing_name">
-                          Rado watch available exclusively on gc
-                        </p>
-                        <p class="listing_price">$550</p>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-start
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="live">live</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="sold">5pcs</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="instock">45pcs</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
                         </div>
                       </div>
-                      <!-- end of rating -->
-                    </div>
-                  </div>
-                </td>
-                <td class="product_status card-text pt-lg-5">
-                  <p class="live">live</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="sold">2pcs</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="instock">3pcs</p>
-                </td>
-                <td class="button_container">
-                  <div class="btn-group dropleft">
-                    <button
-                      type="button"
-                      class="user_setting_btn"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/userprofile/optionicon.svg"
-                        alt=""
-                      />
-                    </button>
-                    <div class="dropdown-menu user_setting_menu">
-                      <a
-                        class="dropdown-item user_setting dropdown-item-1"
-                        href="#"
-                        >Edit</a
-                      >
-                      <a class="dropdown-item user_setting" href="#">preview</a>
-                      <a class="dropdown-item user_setting" href="#"
-                        >Get your add promoted</a
-                      >
-                      <a class="dropdown-item user_setting" href="#"
-                        >deactivate</a
-                      >
-                      <a
-                        class="dropdown-item user_setting dropdown-item-last"
-                        href="#"
-                        >Delete</a
-                      >
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <!-- 5th product data -->
-              <tr>
-                <!-- product data cell in td tag -->
-                <td class="review_container product_container">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/userprofile/rado.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div
-                      class="
-                        text-box
-                        container
-                        d-flex
-                        flex-column
-                        justify-content-center
-                        align-items-center
-                        p-0
-                        m-0
-                      "
-                    >
-                      <div class="text-container container p-0">
-                        <p class="listing_name">
-                          Rado watch available exclusively on gc
-                        </p>
-                        <p class="listing_price">$550</p>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-start
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                    </td>
+                  </tr>
+                  <!-- 3rd product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/goldenwatch.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              PIET HEIN EEK Golden Watch available exclusively
+                              on gc
+                            </p>
+                            <p class="listing_price">$1550</p>
+                          </div>
+                          <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                          <div
+                            class="
+                              container
+                              listing_rating_container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <div class="listing_rating" data-score="4.5"></div>
+                            <!-- target this div via raty for score dont write anything inside -->
+                            <div
+                              class="rating_score px-3 mb-1"
+                              id="listing_score"
+                            >
+                              4.5
+                            </div>
+                          </div>
+                          <!-- end of rating -->
                         </div>
                       </div>
-                      <!-- end of rating -->
-                    </div>
-                  </div>
-                </td>
-                <td class="product_status card-text pt-lg-5">
-                  <p class="soldout">soldout</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="sold">1pcs</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="instock">0pcs</p>
-                </td>
-                <td class="button_container">
-                  <div class="btn-group dropleft">
-                    <button
-                      type="button"
-                      class="user_setting_btn"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/userprofile/optionicon.svg"
-                        alt=""
-                      />
-                    </button>
-                    <div class="dropdown-menu user_setting_menu">
-                      <a
-                        class="dropdown-item user_setting dropdown-item-1"
-                        href="#"
-                        >Edit</a
-                      >
-                      <a class="dropdown-item user_setting" href="#">preview</a>
-                      <a class="dropdown-item user_setting" href="#"
-                        >Get your add promoted</a
-                      >
-                      <a class="dropdown-item user_setting" href="#"
-                        >deactivate</a
-                      >
-                      <a
-                        class="dropdown-item user_setting dropdown-item-last"
-                        href="#"
-                        >Delete</a
-                      >
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <!-- 6th product data -->
-              <tr>
-                <!-- product data cell in td tag -->
-                <td class="review_container product_container">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/userprofile/rado.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div
-                      class="
-                        text-box
-                        container
-                        d-flex
-                        flex-column
-                        justify-content-center
-                        align-items-center
-                        p-0
-                        m-0
-                      "
-                    >
-                      <div class="text-container container p-0">
-                        <p class="listing_name">
-                          Rado watch available exclusively on gc
-                        </p>
-                        <p class="listing_price">$550</p>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-start
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="live">live</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="sold">0pcs</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="instock">1pcs</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
                         </div>
                       </div>
-                      <!-- end of rating -->
-                    </div>
-                  </div>
-                </td>
-                <td class="product_status card-text pt-lg-5">
-                  <p class="deactivated">deactivated</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="sold">1pcs</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="instock">0pcs</p>
-                </td>
-                <td class="button_container">
-                  <div class="btn-group dropleft">
-                    <button
-                      type="button"
-                      class="user_setting_btn"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/userprofile/optionicon.svg"
-                        alt=""
-                      />
-                    </button>
-                    <div class="dropdown-menu user_setting_menu">
-                      <a
-                        class="dropdown-item user_setting dropdown-item-1"
-                        href="#"
-                        >Edit</a
-                      >
-                      <a class="dropdown-item user_setting" href="#">preview</a>
-                      <a class="dropdown-item user_setting" href="#"
-                        >Get your add promoted</a
-                      >
-                      <a class="dropdown-item user_setting" href="#"
-                        >deactivate</a
-                      >
-                      <a
-                        class="dropdown-item user_setting dropdown-item-last"
-                        href="#"
-                        >Delete</a
-                      >
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <!-- 7th product data -->
-              <tr>
-                <!-- product data cell in td tag -->
-                <td class="review_container product_container">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/userprofile/rado.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div
-                      class="
-                        text-box
-                        container
-                        d-flex
-                        flex-column
-                        justify-content-center
-                        align-items-center
-                        p-0
-                        m-0
-                      "
-                    >
-                      <div class="text-container container p-0">
-                        <p class="listing_name">
-                          Rado watch available exclusively on gc
-                        </p>
-                        <p class="listing_price">$550</p>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-start
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                    </td>
+                  </tr>
+                  <!-- 4th product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/rado.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Rado watch available exclusively on gc
+                            </p>
+                            <p class="listing_price">$550</p>
+                          </div>
+                          <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                          <div
+                            class="
+                              container
+                              listing_rating_container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <div class="listing_rating" data-score="4.5"></div>
+                            <!-- target this div via raty for score dont write anything inside -->
+                            <div
+                              class="rating_score px-3 mb-1"
+                              id="listing_score"
+                            >
+                              4.5
+                            </div>
+                          </div>
+                          <!-- end of rating -->
                         </div>
                       </div>
-                      <!-- end of rating -->
-                    </div>
-                  </div>
-                </td>
-                <td class="product_status card-text pt-lg-5">
-                  <p class="deleted">deleted</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="sold">5pcs</p>
-                </td>
-                <td class="product_status pt-lg-5">
-                  <p class="instock">0pcs</p>
-                </td>
-                <td class="button_container">
-                  <div class="btn-group dropleft">
-                    <button
-                      type="button"
-                      class="user_setting_btn"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="./assets/userprofile/optionicon.svg"
-                        alt=""
-                      />
-                    </button>
-                    <div class="dropdown-menu user_setting_menu">
-                      <a
-                        class="dropdown-item user_setting dropdown-item-1"
-                        href="#"
-                        >Edit</a
-                      >
-                      <a class="dropdown-item user_setting" href="#">preview</a>
-                      <a class="dropdown-item user_setting" href="#"
-                        >Get your add promoted</a
-                      >
-                      <a class="dropdown-item user_setting" href="#"
-                        >deactivate</a
-                      >
-                      <a
-                        class="dropdown-item user_setting dropdown-item-last"
-                        href="#"
-                        >Delete</a
-                      >
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="live">live</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="sold">2pcs</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="instock">3pcs</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 5th product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/rado.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Rado watch available exclusively on gc
+                            </p>
+                            <p class="listing_price">$550</p>
+                          </div>
+                          <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                          <div
+                            class="
+                              container
+                              listing_rating_container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <div class="listing_rating" data-score="4.5"></div>
+                            <!-- target this div via raty for score dont write anything inside -->
+                            <div
+                              class="rating_score px-3 mb-1"
+                              id="listing_score"
+                            >
+                              4.5
+                            </div>
+                          </div>
+                          <!-- end of rating -->
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="soldout">soldout</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="sold">1pcs</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="instock">0pcs</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 6th product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/rado.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Rado watch available exclusively on gc
+                            </p>
+                            <p class="listing_price">$550</p>
+                          </div>
+                          <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                          <div
+                            class="
+                              container
+                              listing_rating_container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <div class="listing_rating" data-score="4.5"></div>
+                            <!-- target this div via raty for score dont write anything inside -->
+                            <div
+                              class="rating_score px-3 mb-1"
+                              id="listing_score"
+                            >
+                              4.5
+                            </div>
+                          </div>
+                          <!-- end of rating -->
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="deactivated">deactivated</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="sold">1pcs</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="instock">0pcs</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 7th product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/rado.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Rado watch available exclusively on gc
+                            </p>
+                            <p class="listing_price">$550</p>
+                          </div>
+                          <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                          <div
+                            class="
+                              container
+                              listing_rating_container
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <div class="listing_rating" data-score="4.5"></div>
+                            <!-- target this div via raty for score dont write anything inside -->
+                            <div
+                              class="rating_score px-3 mb-1"
+                              id="listing_score"
+                            >
+                              4.5
+                            </div>
+                          </div>
+                          <!-- end of rating -->
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="deleted">deleted</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="sold">5pcs</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="instock">0pcs</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div id="auction" class="tab-pane fade">
+            <div class="container-fluid container-width mt-5 p-0">
+              <table class="table listing_table" id="auctionTable">
+                <!-- table heads -->
+                <thead class="table-head-row">
+                  <tr>
+                    <th scope="col" class="text-center">Listing</th>
+                    <th scope="col">Time remaining</th>
+                    <th scope="col">Total bids</th>
+                    <th scope="col">Highest bids</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 1st product -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <!-- product card -->
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/ringimage.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Golden Ring with little stones available on gc
+                            </p>
+                            <p class="listing_price">Starting price: $550</p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="time_remaining">5 Days</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="total_bid">12</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="highest_bid">$570</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 2nd product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/2rings.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Engangememt golden rounds available exclusively on
+                              gc
+                            </p>
+                            <p class="listing_price">Starting price: $650</p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="time_remaining">7 Days</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="total_bid">2</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="highest_bid">$375</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 3rd product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/goldenwatch.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              PIET HEIN EEK Golden Watch available exclusively
+                              on gc
+                            </p>
+                            <p class="listing_price">Starting price: $1550</p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="time_remaining">3 Days</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="total_bid">0</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="no_bid">No bid yet</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 4th product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/rado.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Rado watch available exclusively on gc
+                            </p>
+                            <p class="listing_price">Starting price: $550</p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="time_remaining">4 days</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="total_bid">6</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="highest_bid">$1200</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 5th product data -->
+                  <tr>
+                    <!-- product data cell in td tag -->
+                    <td class="review_container table_product_container">
+                      <div class="card-flyer">
+                        <!-- anchor for clicking the whole box except rating -->
+                        <a href="">
+                          <div class="listing-image-box">
+                            <img
+                              class="img-fluid"
+                              src="./assets/images/userprofile/rado.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <!-- end of anchor -->
+                        <div
+                          class="
+                            text-box
+                            container
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            align-items-center
+                            p-0
+                            m-0
+                          "
+                        >
+                          <div class="text-container container p-0">
+                            <p class="listing_name">
+                              Rado watch available exclusively on gc
+                            </p>
+                            <p class="listing_price">Starting price: $550</p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="soldout">sold</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="total_bid">10</p>
+                    </td>
+                    <td class="product_status pt-lg-5">
+                      <p class="highest_bid">$900</p>
+                    </td>
+                    <td class="button_container">
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >preview</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >Get your add promoted</a
+                          >
+                          <a class="dropdown-item user_setting" href="#"
+                            >deactivate</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </section>
       <!-- footer -->

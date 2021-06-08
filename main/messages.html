@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemConnect | Inbox</title>
+    <link rel="stylesheet" href="./jquery.raty.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid-xl container_outer">
+      <!-- default navbar -->
+      <header class="container-fluid sticky-top default_nav py-2">
+        <nav class="navbar navbar-expand-lg navbar-expand-xl">
+          <a class="navbar-brand ml-lg-4 pl-lg-2" href="index.html">
+            <img
+              class="gc_nav_logo"
+              src="./assets/icons/gc_nav_logo.svg"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="
+                  navbar-nav
+                  justify-content-xl-evenly justify-content-center
+                  align-items-center
+                "
+              >
+                <li class="nav-item dropdown ml-lg-4">
+                  <a
+                    class="nav-link navbtn pr-xl-3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Browse
+                  </a>
+                  <div
+                    class="dropdown-menu browse_dropdown"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a
+                      class="
+                        dropdown-item
+                        browse_item
+                        dropdown-item-1
+                        pl-3
+                        py-2
+                      "
+                      href="rings.html"
+                      >Rings
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="chains.html"
+                      >Chains
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="pendants.html"
+                      >Pendants
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="watches.html"
+                      >Watches
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="bracelets.html"
+                      >Bracelets
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="dropdown-item browse_item pl-3 py-2"
+                      href="grills.html"
+                      >Grills
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="
+                        dropdown-item
+                        browse_item
+                        pl-3
+                        py-2
+                        dropdown-item-last
+                      "
+                      href="earings.html"
+                      >earings
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn mx-xl-4" href="#">Sell</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn mx-xl-4" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn mx-xl-4" href="#">About</a>
+                </li>
+              </ul>
+              <div
+                class="
+                  container-sm
+                  form_container
+                  p-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="row form_row">
+                  <div class="col-md-12 p-0">
+                    <form
+                      class="
+                        navbar-form
+                        form-inline
+                        d-flex
+                        justify-content-center
+                      "
+                    >
+                      <input
+                        type="text"
+                        id="search"
+                        class="form-control-lg nav-search-bar"
+                        placeholder="Search..."
+                      />
+                      <button type="submit" class="btn inline-search-btn">
+                        <img
+                          class="inline-search-btn-img"
+                          src="./assets/icons/search.svg"
+                          alt=""
+                        />
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!--login buttons display set to none -->
+              <div class="container-sm d-none">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div
+                      class="
+                        container-sm
+                        m-0
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-top"
+                        data-toggle="modal"
+                        data-target="#loginModal"
+                      >
+                        Login
+                      </button>
+                      <a class="btn btn-top" href="./registration.html"
+                        >Sign up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- main menu in header/user logged in menu -->
+              <div
+                class="
+                  container-sm
+                  menu-container
+                  d-flex
+                  justify-content-lg-start justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="container-sm d-flex pt-1">
+                      <button
+                        type="button"
+                        class="
+                          btn
+                          main_menu_btn
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          mr-4
+                        "
+                        data-toggle="carty"
+                        data-target="#"
+                      >
+                        <img class="carty" src="./assets/icons/cart.svg" /><span
+                          class="badge carty_text"
+                          id="cart_items"
+                          >Cart 0</span
+                        >
+                      </button>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle main_menu_btn mr-5"
+                          type="button"
+                          id="dropdownMenu"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            src="./assets/icons/menuIcons/Menu Icon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div
+                          class="dropdown-menu dropdown-menu-right mainmenu"
+                          aria-labelledby="dropdownMenu"
+                        >
+                          <a
+                            class="
+                              dropdown-item
+                              menu_link
+                              dropdown-item-1
+                              pl-3
+                              py-2
+                            "
+                            href="myprofile.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/profile.svg"
+                                alt="profile icon"
+                            /></span>
+                            Profile
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="messages.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/mail.svg"
+                                alt="mail icon"
+                            /></span>
+                            messages
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="wishlist.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/wishlist.svg"
+                                alt="wishlist icon"
+                            /></span>
+                            wishlist
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="orders.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/order.svg"
+                                alt="orders icon"
+                            /></span>
+                            orders
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="yourlistings.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/list.svg"
+                                alt="list icon"
+                            /></span>
+                            your listings
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="statistics.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/statistics.svg"
+                                alt="stats icon"
+                            /></span>
+                            statistics
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="settings.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/settings.svg"
+                                alt="settings icon"
+                            /></span>
+                            Settings
+                          </a>
+                          <a
+                            class="
+                              dropdown-item
+                              menu_link
+                              dropdown-item-last
+                              pl-3
+                              py-2
+                            "
+                            href="index.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/logout.svg"
+                                alt="logout icon"
+                            /></span>
+                            logout
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- end of navbar -->
+      <!--Modal design-->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-xs modal-dialog modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="form-title text-center">
+                <img
+                  class="modal-logo img-fluid"
+                  src="./assets/icons/Logo.svg"
+                  alt="logo"
+                />
+                <div class="container-fluid d-flex justify-content-center">
+                  <h4 class="modal_text">Login</h4>
+                </div>
+              </div>
+              <div
+                class="
+                  container-fluid
+                  d-flex
+                  flex-column
+                  text-center
+                  justify-content-center
+                "
+              >
+                <div class="form-group modal_form">
+                  <div class="col-xs-2">
+                    <input
+                      type="email"
+                      class="form-control form_design"
+                      id="email"
+                      placeholder="Email"
+                      required
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="form-group modal_form">
+                    <input
+                      type="password"
+                      class="form-control form_design"
+                      id="password"
+                      placeholder="Password"
+                      required
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="form-group modal_form">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="Check1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >keep me logged in</label
+                      >
+                    </div>
+                    <div class="form-group modal_login">
+                      <button type="submit" class="btn btn-info login_Modal">
+                        Login
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <div class="signup-section">
+                    Don't have an account?
+                    <a
+                      href="./registration.html"
+                      target="_blank"
+                      class="text-info"
+                      >Sign Up</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="favorite_listings my-2 container-fluid p-0">
+        <div
+          class="
+            d-none
+            container container-width
+            d-lg-flex
+            justify-content-lg-between
+            align-items-center
+            p-0
+            my-lg-4
+          "
+        >
+          <h2 class="section-title-start text-start wishlist-title">
+            messages
+          </h2>
+        </div>
+        <div class="container-fluid container-width p-0">
+          <div id="frame">
+            <div class="mr-lg-5" id="sidepanel">
+              <div id="profile">
+                <div class="wrap">
+                  <img
+                    id="profile-img"
+                    src="./assets/images/seller/handmade.jpg"
+                    class="online"
+                    alt=""
+                  />
+                  <p class="profile_name">Handmade Jewellery</p>
+                  <i
+                    class="fa fa-chevron-down expand-button"
+                    aria-hidden="true"
+                  ></i>
+                  <div id="status-options">
+                    <ul>
+                      <li id="status-online" class="active">
+                        <span class="status-circle"></span>
+                        <p>Online</p>
+                      </li>
+                      <li id="status-away">
+                        <span class="status-circle"></span>
+                        <p>Away</p>
+                      </li>
+                      <li id="status-busy">
+                        <span class="status-circle"></span>
+                        <p>Busy</p>
+                      </li>
+                      <li id="status-offline">
+                        <span class="status-circle"></span>
+                        <p>Offline</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="expanded">
+                    <label for="facebook"
+                      ><i class="fa fa-facebook fa-fw" aria-hidden="true"></i
+                    ></label>
+                    <input
+                      name="facebook"
+                      type="text"
+                      value="handmadejewelerystore81"
+                    />
+                    <label for="twitter"
+                      ><i class="fa fa-twitter fa-fw" aria-hidden="true"></i
+                    ></label>
+                    <input name="twitter" type="text" value="handmade.handle" />
+                    <label for="instagram"
+                      ><i class="fa fa-instagram fa-fw" aria-hidden="true"></i
+                    ></label>
+                    <input
+                      name="instagram"
+                      type="text"
+                      value="handmadejewels"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div id="contacts">
+                <ul>
+                  <li class="contact">
+                    <div class="wrap">
+                      <div class="contact_img">
+                        <span class="contact-status offline"></span>
+                        <img src="./assets/images/joey.png" alt="" />
+                      </div>
+                      <div class="meta">
+                        <p class="contact_name">Joey</p>
+                        <p class="contact_preview">Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >report</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >block</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact active">
+                    <div class="wrap">
+                      <div class="contact_img">
+                        <span class="contact-status active"></span>
+                        <img src="./assets/images/carla.png" alt="" />
+                      </div>
+                      <div class="meta">
+                        <p class="contact_name">Carla</p>
+                        <p class="contact_preview">Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >report</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >block</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact">
+                    <div class="wrap">
+                      <div class="contact_img">
+                        <span class="contact-status away"></span>
+                        <img src="./assets/images/ted.png" alt="" />
+                      </div>
+                      <div class="meta">
+                        <p class="contact_name">Ted</p>
+                        <p class="contact_preview">Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >report</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >block</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact">
+                    <div class="wrap">
+                      <div class="contact_img">
+                        <span class="contact-status active"></span>
+                        <img src="./assets/images/marie.png" alt="" />
+                      </div>
+                      <div class="meta">
+                        <p class="contact_name">marie johnson</p>
+                        <p class="contact_preview">Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >report</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >block</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact">
+                    <div class="wrap">
+                      <div class="contact_img">
+                        <span class="contact-status offline"></span>
+                        <img src="./assets/images/zoey.png" alt="" />
+                      </div>
+                      <div class="meta">
+                        <p class="contact_name">Zoey</p>
+                        <p class="contact_preview">Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >report</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >block</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact">
+                    <div class="wrap">
+                      <div class="contact_img">
+                        <span class="contact-status active"></span>
+                        <img src="./assets/images/maria.png" alt="" />
+                      </div>
+                      <div class="meta">
+                        <p class="contact_name">Maria stinson</p>
+                        <p class="contact_preview">Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >report</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >block</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact">
+                    <div class="wrap">
+                      <div class="contact_img">
+                        <span class="contact-status offline"></span>
+                        <img src="./assets/images/hehe boi.png" alt="" />
+                      </div>
+                      <div class="meta">
+                        <p class="contact_name">hehe boi</p>
+                        <p class="contact_preview">Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >report</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >block</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact">
+                    <div class="wrap">
+                      <div class="contact_img">
+                        <span class="contact-status offline"></span>
+                        <img src="./assets/images/brittany.png" alt="" />
+                      </div>
+                      <div class="meta">
+                        <p class="contact_name">brittany</p>
+                        <p class="contact_preview">Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >report</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >block</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact">
+                    <div class="wrap">
+                      <div class="contact_img">
+                        <span class="contact-status busy"></span>
+                        <img src="./assets/images/josh.png" alt="" />
+                      </div>
+                      <div class="meta">
+                        <p class="contact_name">josh</p>
+                        <p class="contact_preview">Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="btn-group dropleft">
+                        <button
+                          type="button"
+                          class="user_setting_btn"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./assets/userprofile/optionicon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div class="dropdown-menu user_setting_menu">
+                          <a
+                            class="dropdown-item user_setting dropdown-item-1"
+                            href="#"
+                            >report</a
+                          >
+                          <a
+                            class="
+                              dropdown-item
+                              user_setting
+                              dropdown-item-last
+                            "
+                            href="#"
+                            >block</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="content">
+              <div class="contact-profile">
+                <img src="./assets/images/carla.png" alt="" />
+                <p>Carla</p>
+                <div class="social-media">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="messages">
+                <ul>
+                  <li class="sent">
+                    <img
+                      src="http://emilcarlsson.se/assets/mikeross.png"
+                      alt=""
+                    />
+                    <p>
+                      How the hell am I supposed to get a jury to believe you
+                      when I am not even sure that I do?!
+                    </p>
+                  </li>
+                  <li class="replies">
+                    <img src="./assets/images/carla.png" alt="" />
+                    <p>
+                      When you're backed against the wall, break the god damn
+                      thing down.
+                    </p>
+                  </li>
+                  <li class="replies">
+                    <img src="./assets/images/carla.png" alt="" />
+                    <p>Excuses don't win championships.</p>
+                  </li>
+                  <li class="sent">
+                    <img
+                      src="http://emilcarlsson.se/assets/mikeross.png"
+                      alt=""
+                    />
+                    <p>Oh yeah, did Michael Jordan tell you that?</p>
+                  </li>
+                  <li class="replies">
+                    <img src="./assets/images/carla.png" alt="" />
+                    <p>No, I told him that.</p>
+                  </li>
+                  <li class="replies">
+                    <img src="./assets/images/carla.png" alt="" />
+                    <p>
+                      What are your choices when someone puts a gun to your
+                      head?
+                    </p>
+                  </li>
+                  <li class="sent">
+                    <img
+                      src="http://emilcarlsson.se/assets/mikeross.png"
+                      alt=""
+                    />
+                    <p>
+                      What are you talking about? You do what they say or they
+                      shoot you.
+                    </p>
+                  </li>
+                  <li class="replies">
+                    <img src="./assets/images/carla.png" alt="" />
+                    <p>
+                      Wrong. You take the gun, or you pull out a bigger one. Or,
+                      you call their bluff. Or, you do any one of a hundred and
+                      forty six other things.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="message-input">
+                <div class="wrap">
+                  <input type="text" placeholder="Write your message..." />
+                  <i class="fa fa-paperclip attachment" aria-hidden="true"></i>
+                  <button class="submit btn btn_default">send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/rating.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/userprofile.js"></script>
+      <script src="./js/messages.js"></script>
+    </div>
+  </body>
+</html>
