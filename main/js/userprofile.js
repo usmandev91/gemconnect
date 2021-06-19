@@ -5,7 +5,7 @@ $(document).ready(function () {
   });
 });
 // raty plugin
-$(".HandMade_jewelry_rating").raty({
+$(".user_rating").raty({
   starType: "i",
   half: true,
   readOnly: true,

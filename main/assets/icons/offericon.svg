@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.325" height="20" viewBox="0 0 16.325 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 10px;
+        font-family: Raleway-SemiBold, Raleway;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <g id="Offer_icon" data-name="Offer icon" transform="translate(-1825.276 -823)">
+    <path id="Path_13324" data-name="Path 13324" class="cls-1" d="M15.862,187.263a1.584,1.584,0,0,0-2.238,0L12.5,188.386v-.525H8.177a3.232,3.232,0,0,0-2.3.953l-2.337,2.337-.644-.644L0,193.4l4.688,4.688,2.9-2.9-.957-.957.634-.634H10.41a3.233,3.233,0,0,0,2.3-.953l3.151-3.152a1.582,1.582,0,0,0,0-2.238ZM4.688,196.619,1.473,193.4,2.9,191.981,6.111,195.2Zm10.437-7.854-3.152,3.152a2.2,2.2,0,0,1-1.564.648H6.83l-.939.939-1.615-1.615,2.337-2.337a2.2,2.2,0,0,1,1.564-.648H11.46v.121a.961.961,0,0,1-.96.96H8.345v1.042H10.5a2,2,0,0,0,1.415-.587l0,0L14.36,188a.541.541,0,0,1,.765.765Zm0,0" transform="translate(1825.276 644.908)"/>
+    <text id="_" data-name="$" class="cls-2" transform="translate(1831.493 832)"><tspan x="0" y="0">$</tspan></text>
+  </g>
+</svg>
