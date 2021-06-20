@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f6f6f6;
+      }
+
+      .cls-2 {
+        fill: #3bc0cb;
+      }
+
+      .cls-3 {
+        filter: url(#Rectangle_3184);
+      }
+    </style>
+    <filter id="Rectangle_3184" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_12758" data-name="Group 12758" transform="translate(4.5 4.5)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -4.5, -4.5)">
+      <rect id="Rectangle_3184-2" data-name="Rectangle 3184" class="cls-1" width="32" height="32" rx="10" transform="translate(4.5 4.5)"/>
+    </g>
+    <path id="share" class="cls-2" d="M14.434,12.688a2.9,2.9,0,0,0-2.259,1.1L7.928,11.131a2.591,2.591,0,0,0,0-1.533l4.246-2.654a2.9,2.9,0,1,0-.645-1.807,2.782,2.782,0,0,0,.116.767L7.4,8.558a2.9,2.9,0,1,0,0,3.613l4.246,2.654a2.782,2.782,0,0,0-.116.767,2.9,2.9,0,1,0,2.9-2.9Zm0-9.293a1.743,1.743,0,1,1-1.742,1.743,1.743,1.743,0,0,1,1.742-1.743ZM5.14,12.107a1.743,1.743,0,1,1,1.743-1.743A1.743,1.743,0,0,1,5.14,12.107Zm9.293,5.228a1.743,1.743,0,1,1,1.743-1.743A1.743,1.743,0,0,1,14.434,17.334Z" transform="translate(5.221 5.645)"/>
+  </g>
+</svg>

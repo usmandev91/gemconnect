@@ -1,3 +1,15 @@
+// modal switching fix
+$(function () {
+  $("[data-bm-close][data-bm-open]").on("click", function () {
+    var $this = $(this);
+    $($this.data("bm-close"))
+      .one("hidden.bs.modal", function () {
+        $($this.data("bm-open")).modal("show");
+      })
+      .modal("hide");
+  });
+});
+// check box
 $(document).ready(function () {
   $(".check").click(function () {
     $(".check").not(this).prop("checked", false);
@@ -133,7 +145,7 @@ $('.nav-tabs a[href="#signup"]').tab("show");
 // active for general market tab
 $('.nav-tabs a[href="#gm"]').tab("show");
 //seller carousel
-$(".seller-carousel").owlCarousel({
+$(".seller_carousel").owlCarousel({
   items: 5,
   nav: true,
   dots: false,
@@ -226,4 +238,39 @@ $(".deal_carousel").owlCarousel({
   navRewind: true,
 });
 
-// message fram jquery
+// Ring carousel
+$(".ring_carousel").owlCarousel({
+  items: 4,
+  nav: true,
+  dots: false,
+  touchDrag: true,
+  lazyLoad: true,
+  loop: false,
+  navRewind: false,
+  navText: ["<img src='prev.svg'>", "<img src='next.svg'>"],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      loop: false,
+      touchDrag: true,
+      pullDrag: true,
+      lazyLoad: true,
+    },
+    600: {
+      items: 2,
+      nav: false,
+      loop: false,
+      touchDrag: true,
+      lazyLoad: true,
+    },
+    1000: {
+      items: 4,
+      nav: true,
+      loop: false,
+      navRewind: false,
+      lazyLoad: true,
+    },
+  },
+});
