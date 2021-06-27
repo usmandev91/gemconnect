@@ -155,7 +155,7 @@
                       >
                         Login
                       </button>
-                      <a class="btn btn-top" href="./registration.html"
+                      <a class="btn btn-top btn-top2" href="./registration.html"
                         >Sign up</a
                       >
                     </div>
@@ -316,81 +316,84 @@
         </nav>
       </header>
       <!-- end of navbar -->
-      <!--Modal design-->
-      <div
-        class="modal fade"
-        id="loginModal"
-        tabindex="-1"
-        role="dialog"
-        aria-hidden="true"
-      >
+      <!--loginModal-->
+      <div class="container">
         <div
-          class="modal-xs modal-dialog modal-dialog-centered"
-          role="document"
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
         >
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="form-title text-center">
-                <img
-                  class="modal-logo img-fluid"
-                  src="./assets/icons/Logo.svg"
-                  alt="logo"
-                />
-                <div class="container-fluid d-flex justify-content-center">
-                  <h4 class="modal_text">Login</h4>
+          <div
+            class="modal-xs modal-dialog modal-dialog-centered"
+            role="document"
+          >
+            <div class="modal-content px-lg-4 py-lg-2">
+              <div class="modal-body">
+                <div class="form-title text-center">
+                  <img
+                    class="modal-logo img-fluid"
+                    src="./assets/icons/Logo.svg"
+                    alt="logo"
+                  />
+                  <div class="container-fluid d-flex justify-content-center">
+                    <h4 class="modal_text">Login</h4>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="
-                  container-fluid
-                  d-flex
-                  flex-column
-                  text-center
-                  justify-content-center
-                "
-              >
-                <div class="form-group modal_form">
-                  <div class="col-xs-2">
-                    <input
-                      type="email"
-                      class="form-control form_design"
-                      id="email"
-                      placeholder="Email"
-                      required
-                      aria-required="true"
-                    />
-                  </div>
+                <div
+                  class="
+                    container-fluid
+                    d-flex
+                    flex-column
+                    text-center
+                    justify-content-center
+                  "
+                >
                   <div class="form-group modal_form">
-                    <input
-                      type="password"
-                      class="form-control form_design"
-                      id="password"
-                      placeholder="Password"
-                      required
-                      aria-required="true"
-                    />
-                  </div>
-                  <div class="form-group modal_form">
-                    <div class="form-check">
+                    <div class="col-xs-2">
                       <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="Check1"
+                        type="email"
+                        class="form-control form_design"
+                        id="email"
+                        placeholder="Email"
+                        required
+                        aria-required="true"
                       />
-                      <label class="form-check-label" for="exampleCheck1"
-                        >keep me logged in</label
+                      <input
+                        type="password"
+                        class="form-control form_design"
+                        id="password"
+                        placeholder="Password"
+                        required
+                        aria-required="true"
+                      />
+                      <div class="d-flex justify-content-between">
+                        <div class="logged_in">
+                          <input type="checkbox" name="remember" />
+                          <label for="checkbox" class="logged_in" name=""
+                            >Keep me logged in</label
+                          >
+                        </div>
+                        <div>
+                          <a class="ft_pass" href="passwordreset.html"
+                            >Forgot Password ?</a
+                          >
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        data-bm-close="#loginModal"
+                        data-bm-open="#logsuccess"
+                        class="btn btn_form"
                       >
-                    </div>
-                    <div class="form-group modal_login">
-                      <button type="submit" class="btn btn-info login_Modal">
                         Login
                       </button>
                     </div>
                   </div>
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                  <div class="signup-section">
-                    Don't have an account?
+                  <div class="modal-footer d-flex justify-content-center">
+                    <p class="m-0">Dont have an account ?</p>
                     <a
                       href="./registration.html"
                       target="_blank"
@@ -398,6 +401,70 @@
                       >Sign Up</a
                     >
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- invalid Email or pass alert -->
+      <div class="container">
+        <div
+          id="invalidModal"
+          class="modal fade"
+          tabindex="-1"
+          role="alert"
+          aria-hidden="true"
+        >
+          <div class="modal-xs modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  <img src="./assets/icons/cross.svg" alt="close icon" />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img
+                    src="./assets/icons/invalidmark.svg"
+                    alt="warning icon"
+                    class="verified"
+                  />
+                </div>
+                <div>
+                  <p class="title">Invalid Email or Password</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sucessfully login alert design -->
+      <div class="container">
+        <div
+          id="logsuccess"
+          class="modal fade"
+          tabindex="-1"
+          role="alert"
+          aria-hidden="true"
+        >
+          <div class="modal-xs modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  <img src="./assets/icons/cross.svg" alt="close icon" />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img
+                    src="./assets/icons/Verifiedseller.svg"
+                    alt=""
+                    class="verified"
+                  />
+                </div>
+                <div>
+                  <p class="title">successfully Logged in!</p>
                 </div>
               </div>
             </div>

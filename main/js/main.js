@@ -1,4 +1,15 @@
+// // modal timeouts
+// setTimeout(function () {
+//   $("#widthdrawSuccess").modal("hide");
+// }, 3000);
+// setTimeout(function () {
+//   $("#addtoCart").modal("hide");
+// }, 3000);
+// setTimeout(function () {
+//   $("#submitModal").modal("hide");
+// }, 3000);
 // modal switching fix
+
 $(function () {
   $("[data-bm-close][data-bm-open]").on("click", function () {
     var $this = $(this);
@@ -38,6 +49,16 @@ jQuery(function ($) {
     e.preventDefault();
   });
 });
+// reset password page
+$("#after_reset").hide();
+// add email filled condition
+$(document).ready(function () {
+  $("#btn_reset").on("click", function () {
+    $("#before_reset").hide();
+    $("#after_reset").fadeIn(800);
+  });
+});
+
 // quantity buttons
 $(".btn-number").click(function (e) {
   e.preventDefault();
@@ -271,6 +292,43 @@ $(".ring_carousel").owlCarousel({
       loop: false,
       navRewind: false,
       lazyLoad: true,
+    },
+  },
+});
+var ctx = document.getElementById("myChart").getContext("2d");
+var myChart = new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(153, 102, 255, 1)",
+          "rgba(255, 159, 64, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
     },
   },
 });

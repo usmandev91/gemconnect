@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.758" height="15" viewBox="0 0 14.758 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e90f09;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-google" data-name="Icon awesome-google" class="cls-1" d="M14.758,8.238A6.965,6.965,0,0,1,7.5,15.563a7.5,7.5,0,0,1,0-15,7.212,7.212,0,0,1,5.029,1.963L10.488,4.488c-2.67-2.577-7.636-.641-7.636,3.575A4.7,4.7,0,0,0,7.5,12.8a4.056,4.056,0,0,0,4.258-3.233H7.5V6.986h7.14A6.575,6.575,0,0,1,14.758,8.238Z" transform="translate(0 -0.563)"/>
+</svg>

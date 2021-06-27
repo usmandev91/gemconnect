@@ -66,29 +66,25 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_12754" data-name="Group 12754" transform="translate(22.5 22.15)">
-    <g id="Group_10680" data-name="Group 10680" transform="translate(0 0.35)">
-      <g id="Group_10580" data-name="Group 10580" transform="translate(0 0)">
-        <g class="cls-8" transform="matrix(1, 0, 0, 1, -22.5, -22.5)">
-          <rect id="pexels-photo-1831111-2" data-name="pexels-photo-1831111" class="cls-1" width="80.263" height="50" rx="5" transform="translate(22.5 22.5)"/>
-        </g>
-        <g class="cls-7" transform="matrix(1, 0, 0, 1, -22.5, -22.5)">
-          <rect id="Dottod-World-Map_Transparent_Images-backgrounds-2" data-name="Dottod-World-Map_Transparent_Images-backgrounds" class="cls-2" width="80.263" height="50" rx="10" transform="translate(22.5 22.5)"/>
-        </g>
-      </g>
-      <path id="Icon_ionic-md-arrow-dropleft" data-name="Icon ionic-md-arrow-dropleft" class="cls-3" d="M14.763,9,13.5,10.263l1.263,1.263Z" transform="translate(-9.921 28.497)"/>
+  <g id="Group_12771" data-name="Group 12771" transform="translate(22.5 22.149)">
+    <g class="cls-8" transform="matrix(1, 0, 0, 1, -22.5, -22.15)">
+      <rect id="pexels-photo-1831111-2" data-name="pexels-photo-1831111" class="cls-1" width="80.263" height="50" rx="5" transform="translate(22.5 22.5)"/>
     </g>
-    <text id="_12_22" data-name="12/22" class="cls-4" transform="translate(5.144 32.806)"><tspan x="0" y="0">12/22</tspan></text>
-    <text id="Berkay_Erdinç" data-name="Berkay Erdinç" class="cls-4" transform="translate(5.047 41.98)"><tspan x="0" y="0">Berkay Erdinç</tspan></text>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, -22.5, -22.15)">
+      <rect id="Dottod-World-Map_Transparent_Images-backgrounds-2" data-name="Dottod-World-Map_Transparent_Images-backgrounds" class="cls-2" width="80.263" height="50" rx="10" transform="translate(22.5 22.5)"/>
+    </g>
+    <path id="Icon_ionic-md-arrow-dropleft" data-name="Icon ionic-md-arrow-dropleft" class="cls-3" d="M14.763,9,13.5,10.263l1.263,1.263Z" transform="translate(-9.921 28.848)"/>
+    <text id="_12_22" data-name="12/22" class="cls-4" transform="translate(5.144 32.807)"><tspan x="0" y="0">12/22</tspan></text>
+    <text id="Berkay_Erdinç" data-name="Berkay Erdinç" class="cls-4" transform="translate(5.048 41.98)"><tspan x="0" y="0">Berkay Erdinç</tspan></text>
     <text id="MONTH_YEAR" data-name="MONTH/YEAR" class="cls-5" transform="translate(5.144 27.26)"><tspan x="0" y="0">MONTH/YEAR</tspan></text>
     <text id="CVC2_CVV2" data-name="CVC2/CVV2" class="cls-5" transform="translate(59.963 27.26)"><tspan x="0" y="0">CVC2/CVV2</tspan></text>
     <text id="XXX" class="cls-4" transform="translate(60.068 32.489)"><tspan x="0" y="0">XXX</tspan></text>
-    <g id="Number" transform="translate(6.154 13.066)">
+    <g id="Number" transform="translate(6.154 13.065)">
       <text id="_2145" data-name="2145" class="cls-6" transform="translate(0 3)"><tspan x="0" y="0">2145</tspan></text>
       <text id="_0875" data-name="0875" class="cls-6" transform="translate(18.303 3)"><tspan x="0" y="0">0875</tspan></text>
       <text id="_5325" data-name="5325" class="cls-6" transform="translate(36.608 3)"><tspan x="0" y="0">5325</tspan></text>
       <text id="_2355" data-name="2355" class="cls-6" transform="translate(55.546 3)"><tspan x="0" y="0">2355</tspan></text>
     </g>
-    <image id="Logotype" width="7.895" height="4.934" transform="translate(5.263 4.298)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAABHNCSVQICAgIfAhkiAAAAx1JREFUSImVls+rVVUUxz9r733Oufd5fY+bpChYUdBDyrJEIhCstEERBInUoInQJEEsFIMi8i+QalCDgprk2ImCESrlJBPNQqTeJEtMVAzF++655569V4N97vO963v3Hr9wJnv9+H73OmvvveTvN19jEawBtgAvAs8CK6v1a8DvwAkCP8gyudLe3gLHSjxbgZeADcCqyv86cA44WX2Xh4lkSIAD3gJ2Ac8vpixGgfb1Z6x8/sD2ViGTsgfP5iX9I34BvgC+A/rzCQdoAAeA94BsZCoP0jDP2eXybf+aD1nbZQRQHRm1CfgKeAr4GOjMF5BUix+M2QUoaKE0p1Oy6STRXPH/BUzLjA2t+N6PWfgQ6A2idgD762RAwbYF3/HMnsuZ/a3H7Oke2lEklVopgD3A2wNFjwH7WPg7Fuf2ijhh4ukM23aEoqp5UHxXoaGIrfY3GpZYiVMOeBV4po5sMYJpWYqrAbnamyPSEMVNbGzgHjRof3SeCk8ArzvicRsPBQ1KutaSPuTQQu+xoaBlrWwDvOCAdbVcBYwV/A1P3gkQFppDqZjJwLKNKZLIPfYl8LgDVtRy9SBNIZt2mIZB/ZBdBRIQkTo9MEBrbOPNwUDwSm/Ggysj4ZBAM2HUtg0mEWFY4BJwwE3uXp1LQ0EQskccZtIQyoXblKCYpsGktcsPcMcBF6nTByZ2ej5TYKcs6ucJEAg9JVvrxK1ysSHrYcYBp4A36nhrGYVkjyaxAgMejUfUrhBU9X564EcHHAF2AuvHeYsFf1Ppni+QTOdKHXLFrXYkD2cItfn/AA474E/gIPA18YYaidANkBiaGxqxImVAUjBTsZ+13v8PwGfAxcFbcAj4dGyYgCRC/1/PnZ+65Bdy8pkSrMG27uv4fQl8A3fv/wL4hFiB3YyqhAEtFX/dk6zJQuPJNJimcSGvRazEmeAjIK/SzaFDfI7fBc6OSiFWwMivxaXyHZPKTkTP1Nj+eeKgsxe4NVgcvogK4tBwDHgZ2EocICYr+23gAnAcw9EwG/7RriLL5TjwCrCN+MhMAVL5xxEOvgf+Glb1P64REWSGQyadAAAAAElFTkSuQmCC"/>
+    <image id="Logotype" width="7.895" height="4.934" transform="translate(5.264 4.298)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAABHNCSVQICAgIfAhkiAAAAx1JREFUSImVls+rVVUUxz9r733Oufd5fY+bpChYUdBDyrJEIhCstEERBInUoInQJEEsFIMi8i+QalCDgprk2ImCESrlJBPNQqTeJEtMVAzF++655569V4N97vO963v3Hr9wJnv9+H73OmvvveTvN19jEawBtgAvAs8CK6v1a8DvwAkCP8gyudLe3gLHSjxbgZeADcCqyv86cA44WX2Xh4lkSIAD3gJ2Ac8vpixGgfb1Z6x8/sD2ViGTsgfP5iX9I34BvgC+A/rzCQdoAAeA94BsZCoP0jDP2eXybf+aD1nbZQRQHRm1CfgKeAr4GOjMF5BUix+M2QUoaKE0p1Oy6STRXPH/BUzLjA2t+N6PWfgQ6A2idgD762RAwbYF3/HMnsuZ/a3H7Oke2lEklVopgD3A2wNFjwH7WPg7Fuf2ijhh4ukM23aEoqp5UHxXoaGIrfY3GpZYiVMOeBV4po5sMYJpWYqrAbnamyPSEMVNbGzgHjRof3SeCk8ArzvicRsPBQ1KutaSPuTQQu+xoaBlrWwDvOCAdbVcBYwV/A1P3gkQFppDqZjJwLKNKZLIPfYl8LgDVtRy9SBNIZt2mIZB/ZBdBRIQkTo9MEBrbOPNwUDwSm/Ggysj4ZBAM2HUtg0mEWFY4BJwwE3uXp1LQ0EQskccZtIQyoXblKCYpsGktcsPcMcBF6nTByZ2ej5TYKcs6ucJEAg9JVvrxK1ysSHrYcYBp4A36nhrGYVkjyaxAgMejUfUrhBU9X564EcHHAF2AuvHeYsFf1Ppni+QTOdKHXLFrXYkD2cItfn/AA474E/gIPA18YYaidANkBiaGxqxImVAUjBTsZ+13v8PwGfAxcFbcAj4dGyYgCRC/1/PnZ+65Bdy8pkSrMG27uv4fQl8A3fv/wL4hFiB3YyqhAEtFX/dk6zJQuPJNJimcSGvRazEmeAjIK/SzaFDfI7fBc6OSiFWwMivxaXyHZPKTkTP1Nj+eeKgsxe4NVgcvogK4tBwDHgZ2EocICYr+23gAnAcw9EwG/7RriLL5TjwCrCN+MhMAVL5xxEOvgf+Glb1P64REWSGQyadAAAAAElFTkSuQmCC"/>
   </g>
 </svg>

@@ -9,125 +9,117 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container-fluid d-flex justify-content-center mt-3 pb-2 banner">
+    <div class="container-fluid d-flex justify-content-center py-4 banner">
       <div class="brand-logo">
         <a href="index.html">
           <img class="gc_logo" src="./assets/icons/gc.svg" alt="logo"
         /></a>
       </div>
     </div>
-    <div class="container">
-      <h1 class="display-5 text-center mt-5 mb-5">Welcome to GemConnect</h1>
-      <ul class="nav nav-tabs d-flex justify-content-center">
+    <div class="container container-width reg_container p-0">
+      <h1 class="welcome_head text-center">Welcome to GemConnects</h1>
+      <ul class="nav nav-tabs reg_tabs container">
         <li class="nav-item mr-5">
-          <a
-            class="active btn btn-block tab_btn"
-            data-toggle="tab"
-            href="#signup"
-            >Sign up</a
+          <a class="active btn tab_btn" data-toggle="tab" href="#signup"
+            >Signup</a
           >
         </li>
         <li class="ml-5 nav-item">
-          <a class="btn btn-block tab_btn" data-toggle="tab" href="#login"
-            >Log in</a
-          >
+          <a class="btn tab_btn" data-toggle="tab" href="#login">Login</a>
         </li>
       </ul>
 
-      <div class="tab-content d-flex justify-content-center mt-2">
-        <div id="signup" class="container tab-pane active">
-          <form action="" method="" class="reg-from">
-            <div
-              class="
-                form-group
-                mt-5
-                container-fluid
-                d-flex
-                flex-column
-                text-center
-                justify-content-center
-              "
-            >
-              <input
-                type="text"
-                class="form-control reg-form"
-                name="username"
-                placeholder="Username"
-                required="required"
-              />
+      <div class="tab-content">
+        <div id="signup" class="tab-pane active">
+          <div class="container-width">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4 p-0">
+                <form action="" method="" class="reg-from">
+                  <div
+                    class="
+                      form-group
+                      mt-5
+                      d-flex
+                      flex-column
+                      justify-content-center
+                      p-lg-1
+                      px-5
+                    "
+                  >
+                    <input
+                      type="text"
+                      class="form-control form_design"
+                      name=""
+                      placeholder="Full Name (Example:  John Doe)"
+                      required="required"
+                    />
+
+                    <input
+                      type="email"
+                      class="form-control form_design"
+                      name=""
+                      required="required"
+                      placeholder="Email (Example : johndoe@gmail.com)"
+                    />
+
+                    <input
+                      type="password"
+                      class="form-control form_design"
+                      name=""
+                      required="required"
+                      placeholder="Password"
+                    />
+                    <input
+                      type="password"
+                      class="form-control form_design"
+                      name="confirm_password"
+                      required="required"
+                      placeholder="Confirm Password"
+                    />
+                    <div class="check">
+                      <input type="checkbox" name="" />
+                      <label for="checkbox" name="" class="check_label"
+                        >Agree to
+                        <a href="#" class="txt">Terms and Conditions</a></label
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      form-group
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <button type="submit" class="btn btn_form mt-lg-5">
+                      Sign Up
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1 d-none d-lg-block px-5">
+                <div class="splitter mt-lg-5"></div>
+              </div>
+              <div class="col-md-3 p-lg-0 p-4">
+                <div class="social_login mt-lg-5">
+                  <button class="btn social_btn">
+                    <img
+                      class="pl-3"
+                      src="./assets/icons/facebookicon.svg"
+                      alt="facebookicon"
+                    />
+                    Signup with Facebook
+                  </button>
+                  <button class="btn social_btn">
+                    <img src="./assets/icons/googleicon.svg" alt="googleicon" />
+                    Signup with Google
+                  </button>
+                </div>
+              </div>
             </div>
-            <div
-              class="
-                form-group
-                container-fluid
-                d-flex
-                flex-column
-                text-center
-                justify-content-center
-              "
-            >
-              <input
-                type="email"
-                class="form-control reg-form"
-                name="email"
-                required="required"
-                placeholder="Email Address"
-              />
-            </div>
-            <div
-              class="
-                form-group
-                container-fluid
-                d-flex
-                flex-column
-                text-center
-                justify-content-center
-              "
-            >
-              <input
-                type="password"
-                class="form-control reg-form"
-                name="password"
-                required="required"
-                placeholder="Password"
-              />
-            </div>
-            <div
-              class="
-                form-group
-                container-fluid
-                d-flex
-                flex-column
-                text-center
-                justify-content-center
-              "
-            >
-              <input
-                type="password"
-                class="form-control reg-form"
-                name="confirm_password"
-                required="required"
-                placeholder="Confirm Password"
-              />
-            </div>
-            <div
-              class="
-                form-group
-                d-flex
-                justify-content-center
-                align-items-center
-              "
-            >
-              <button type="submit" class="btn btn-form m-3 pb-1">
-                Sign Up
-              </button>
-            </div>
-            <p class="small text-center">
-              By clicking the Sign Up button, you agree to our <br /><a href="#"
-                >Terms &amp; Conditions</a
-              >, and <a href="#">Privacy Policy</a>
-            </p>
-          </form>
+          </div>
         </div>
         <div id="login" class="container tab-pane fade">
           <form action="">
@@ -144,50 +136,33 @@
             >
               <input
                 type="email"
-                class="form-control reg-form"
+                class="form-control form_design"
                 id="email"
                 placeholder="Enter email"
                 name="email"
                 required
               />
-            </div>
-            <div class="form-group">
-              <div
-                class="
-                  form-group
-                  mt-3
-                  container-fluid
-                  d-flex
-                  flex-column
-                  text-center
-                  justify-content-center
-                "
-              >
-                <input
-                  type="password"
-                  class="form-control reg-form"
-                  id="pwd"
-                  placeholder="Enter password"
-                  name="pwd"
-                  required
-                />
-              </div>
-            </div>
-            <div
-              class="
-                form-group
-                mt-3
-                container-fluid
-                d-flex
-                flex-column
-                text-center
-                justify-content-center
-              "
-            >
-              <div class="checkbox">
-                <label
-                  ><input type="checkbox" name="remember" /> Remember me</label
-                >
+
+              <input
+                type="password"
+                class="form-control form_design"
+                id=""
+                placeholder="Enter password"
+                name=""
+                required
+              />
+              <div class="d-flex justify-content-between">
+                <div class="logged_in">
+                  <input type="checkbox" name="remember" />
+                  <label for="checkbox" class="logged_in" name=""
+                    >Keep me logged in</label
+                  >
+                </div>
+                <div>
+                  <a class="ft_pass" href="passwordreset.html"
+                    >Forgot Password ?</a
+                  >
+                </div>
               </div>
             </div>
             <div
@@ -198,13 +173,83 @@
                 align-items-center
               "
             >
-              <button type="submit" class="btn btn-form m-3 pb-1">Login</button>
+              <button
+                type="submit"
+                class="btn btn_form"
+                data-toggle="modal"
+                data-target="#invalidModal"
+              >
+                Login
+              </button>
             </div>
           </form>
         </div>
       </div>
     </div>
-
+    <!-- sucessfully login alert design -->
+    <div class="container">
+      <div
+        id="logsuccess"
+        class="modal fade"
+        tabindex="-1"
+        role="alert"
+        aria-hidden="true"
+      >
+        <div class="modal-xs modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <img src="./assets/icons/cross.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/icons/Verifiedseller.svg"
+                  alt=""
+                  class="verified"
+                />
+              </div>
+              <div>
+                <p class="title">successfully Logged in!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- invalid Email or pass alert -->
+    <div class="container">
+      <div
+        id="invalidModal"
+        class="modal fade"
+        tabindex="-1"
+        role="alert"
+        aria-hidden="true"
+      >
+        <div class="modal-xs modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <img src="./assets/icons/cross.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/icons/invalidmark.svg"
+                  alt="warning icon"
+                  class="verified"
+                />
+              </div>
+              <div>
+                <p class="title">Invalid Email or Password</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
