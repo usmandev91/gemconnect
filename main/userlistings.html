@@ -473,72 +473,89 @@
       </div>
 
       <section class="favorite_listings my-5 container-fluid">
-        <div
-          class="
-            container container-width
-            d-flex
-            justify-content-between
-            align-items-center
-            p-0
-            pb-3
-          "
-        >
-          <h2 class="section-title-start text-start std-title">
-            Handmade jewelry listings
-          </h2>
-          <div
-            class="
-              d-none
-              gc-custom-select
-              d-lg-flex
-              justify-content-center
-              align-items-center
-              mr-lg-5
-              mb-lg-2
-            "
-          >
-            <label class="select_label" for="custom-select"
-              >Sort by
-              <span class="px-2"
-                ><img src="./assets/icons/carret.svg" alt="carret icon" /></span
-            ></label>
-            <select class="rev-select-box custom-select">
-              <option value="0">Newest listings</option>
-              <option value="1">Low to high</option>
-              <option value="2">High to low</option>
-              <option value="3">Top Rated</option>
-            </select>
-          </div>
-        </div>
-        <!-- select menu for mobile -->
-        <div
-          class="
-            container-sm
-            d-lg-none d-md-flex
-            justify-content-center
-            align-items-center
-            p-2
-          "
-        >
-          <div
-            class="
-              gc-custom-select
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-          >
-            <label class="select_label" for="custom-select"
-              >Sort by
-              <span class="px-2"
-                ><img src="./assets/icons/carret.svg" alt="" /></span
-            ></label>
-            <select class="rev-select-box custom-select">
-              <option value="0">Newest listings</option>
-              <option value="1">Low to high</option>
-              <option value="2">High to low</option>
-              <option value="3">Top Rated</option>
-            </select>
+        <div class="container container-width p-lg-0">
+          <div class="row">
+            <div
+              class="
+                col-lg-6 col-md-12
+                d-flex
+                justify-content-lg-start justify-content-center
+              "
+            >
+              <h2 class="section-title-start text-start std-title">
+                Handmade jewelry listings
+              </h2>
+            </div>
+            <div
+              class="
+                col-lg-6 col-md-12
+                d-flex
+                justify-content-center justify-content-lg-end
+                pr-lg-5
+                m-lg-0
+                my-5
+              "
+            >
+              <div class="gc_custom_select">
+                <label class="select_label" for="sort_listing"
+                  >Sort by
+                  <span class="px-2"
+                    ><img
+                      src="./assets/icons/carret.svg"
+                      alt="carret icon" /></span
+                ></label>
+                <div class="dropdown">
+                  <button
+                    type="button"
+                    class="btn select_btn dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-labelledby="custom select"
+                  >
+                    <ins class="selcted_display">Newest listings</ins>
+                  </button>
+                  <div class="dropdown-menu select_menu">
+                    <label class="dropdown-item dropdown-item-1">
+                      <input
+                        class="jRadioDropdown"
+                        type="radio"
+                        value="0"
+                        name="sort_listing"
+                      />
+                      <i>Newest listings</i>
+                    </label>
+                    <label class="dropdown-item">
+                      <input
+                        class="jRadioDropdown"
+                        type="radio"
+                        value="1"
+                        name="sort_listing"
+                      />
+                      <i>Low to high</i>
+                    </label>
+
+                    <label class="dropdown-item">
+                      <input
+                        class="jRadioDropdown"
+                        type="radio"
+                        value="2"
+                        name="sort_listing"
+                      />
+                      <i>High to low</i>
+                    </label>
+
+                    <label class="dropdown-item dropdown-item-last mb-0">
+                      <input
+                        class="jRadioDropdown"
+                        type="radio"
+                        value="3"
+                        name="sort_listing"
+                      />
+                      <i>Top Rated</i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- items container and grid layout -->

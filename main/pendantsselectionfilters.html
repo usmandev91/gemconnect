@@ -1,0 +1,529 @@
+<div id="watch_deail" class="col-lg-10">
+  <div class="row">
+    <!-- 1st select menu -->
+    <div class="col-md-3">
+      <div>
+        <p class="head pl-2 mt-lg-0 mt-5">general details</p>
+      </div>
+      <div class="form-group">
+        <form>
+          <div class="gc_custom_select">
+            <label class="select_label" for="watch_gender"
+              >Gender
+              <span class="px-2"
+                ><img src="./assets/icons/carret.svg" alt="carret icon" /></span
+            ></label>
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn select_btn dropdown-toggle"
+                data-toggle="dropdown"
+                aria-labelledby="select menu"
+              >
+                <ins class="selcted_display">Ladies</ins>
+              </button>
+              <div class="dropdown-menu select_menu">
+                <label class="dropdown-item dropdown-item-1">
+                  <input
+                    class="jRadioDropdown"
+                    type="radio"
+                    value="ladies"
+                    name="watch_gender"
+                  />
+                  <i>Ladies</i>
+                </label>
+                <label class="dropdown-item">
+                  <input
+                    class="jRadioDropdown"
+                    type="radio"
+                    value="men"
+                    name="watch_gender"
+                  />
+                  <i>Men</i>
+                </label>
+
+                <label class="dropdown-item">
+                  <input
+                    class="jRadioDropdown"
+                    type="radio"
+                    value="unisex"
+                    name="watch_gender"
+                  />
+                  <i>Unisex</i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- 2nd select menu -->
+    <div class="col-md-3">
+      <div class="gc_custom_select gc_custom_select_no_head">
+        <label class="select_label" for="watch_brand"
+          >Brand
+          <span class="px-2"
+            ><img src="./assets/icons/carret.svg" alt="carret icon" /></span
+        ></label>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn select_btn dropdown-toggle"
+            data-toggle="dropdown"
+            aria-labelledby="select menu"
+          >
+            <ins class="selcted_display">citizen</ins>
+          </button>
+          <div class="dropdown-menu select_menu">
+            <label class="dropdown-item dropdown-item-1 pt-2">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="citizen"
+                name="watch_brand"
+              />
+              <i>citizen</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="Bulova"
+                name="watch_brand"
+              />
+              <i>Bulova</i>
+            </label>
+
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="casio"
+                name="watch_brand"
+              />
+              <i>casio</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="rado"
+                name="watch_brand"
+              />
+              <i>rado</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="hannahmartin"
+                name="watch_brand"
+              />
+              <i>Hannah Martin</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="movado"
+                name="watch_brand"
+              />
+              <i>movado</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="alpina"
+                name="watch_brand"
+              />
+              <i>alpina</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="mido"
+                name="watch_brand"
+              />
+              <i>mido</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="jamesmichael"
+                name="watch_brand"
+              />
+              <i>james michael</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="rolax"
+                name="watch_brand"
+              />
+              <i>rolax</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="hugo boss"
+                name="watch_brand"
+              />
+              <i>hugo boss</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="garmin"
+                name="watch_brand"
+              />
+              <i>garmin</i>
+            </label>
+            <label class="dropdown-item dropdown-item-last mb-0 pb-2">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="other"
+                name="watch_brand"
+              />
+              <i>Other</i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <!-- 3rd input if brand other is to be mentioned -->
+      <div>
+        <p class="head pl-2 mt-lg-0 mt-5">Incase you choose Other</p>
+      </div>
+      <div>
+        <input
+          type="text"
+          class="form-control form_design"
+          name="watch_brand"
+          placeholder="Brand Name"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- 2nd row of select menus for watch details -->
+  <div class="row mt-2">
+    <!-- 3rd select menu radio filters bar-->
+    <div class="col-md-3">
+      <div>
+        <p class="head pl-2 mt-lg-0 mt-5">watch details</p>
+      </div>
+      <div class="gc_custom_select">
+        <label class="select_label p-0 pl-1" for="watch_movement"
+          >watch movement
+          <span class="p-0"
+            ><img src="./assets/icons/carret.svg" alt="carret icon" /></span
+        ></label>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn select_btn dropdown-toggle"
+            data-toggle="dropdown"
+            aria-labelledby="select menu"
+          >
+            <ins class="selcted_display">automatic</ins>
+          </button>
+          <div class="dropdown-menu select_menu">
+            <label class="dropdown-item dropdown-item-1 pt-2">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="quartz"
+                name="watch_movement"
+              />
+
+              <i>quartz</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="automatic"
+                name="watch_movement"
+              />
+
+              <i>automatic</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="microcontroller"
+                name="watch_movement"
+              />
+
+              <i>microcontroller</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="digitalsmart"
+                name="watch_movement"
+              />
+
+              <i>digital smart</i>
+            </label>
+            <label class="dropdown-item dropdown-item-last mb-0">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="mechanical"
+                name="watch_movement"
+              />
+
+              <i>mechanical</i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4th select band material-->
+    <div class="col-md-3">
+      <div class="gc_custom_select gc_custom_select_no_head">
+        <label class="select_label p-0 pl-1" for="watch_band_material"
+          >Band Material
+          <span class="p-0"
+            ><img src="./assets/icons/carret.svg" alt="carret icon" /></span
+        ></label>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn select_btn dropdown-toggle"
+            data-toggle="dropdown"
+            aria-labelledby="select menu"
+          >
+            <ins class="selcted_display">stainless steel</ins>
+          </button>
+          <div class="dropdown-menu select_menu">
+            <label class="dropdown-item dropdown-item-1 pt-2">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="stainless_steel"
+                name="watch_band_material"
+              />
+
+              <i>stainless steel</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="leather"
+                name="watch_band_material"
+              />
+
+              <i>leather</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="resin"
+                name="watch_band_material"
+              />
+
+              <i>Resin(Plastic)</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="rubber"
+                name="watch_band_material"
+              />
+
+              <i>rubber</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="platinum"
+                name="watch_band_material"
+              />
+
+              <i>platinum</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="titanium"
+                name="watch_band_material"
+              />
+
+              <i>titanium</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="tungsten"
+                name="watch_band_material"
+              />
+
+              <i>tungsten</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="mesh"
+                name="watch_band_material"
+              />
+
+              <i>mesh</i>
+            </label>
+            <label class="dropdown-item">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="nylon"
+                name="watch_band_material"
+              />
+
+              <i>nylon</i>
+            </label>
+            <label class="dropdown-item dropdown-item-last mb-0">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="fabric"
+                name="watch_band_material"
+              />
+
+              <i>fabric</i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="gc_custom_select gc_custom_select_no_head">
+        <label class="select_label p-0 pl-1" for="watch_water_resistant"
+          >water resistance
+          <span class="p-0"
+            ><img src="./assets/icons/carret.svg" alt="carret icon" /></span
+        ></label>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn select_btn dropdown-toggle"
+            data-toggle="dropdown"
+            aria-labelledby="select menu"
+          >
+            <ins class="selcted_display">yes</ins>
+          </button>
+          <div class="dropdown-menu select_menu">
+            <label class="dropdown-item dropdown-item-1 pt-2">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="yes"
+                name="watch_water_resistant"
+              />
+
+              <i>yes</i>
+            </label>
+            <label class="dropdown-item dropdown-item-last mb-0">
+              <input
+                class="jRadioDropdown"
+                type="radio"
+                value="no"
+                name="watch_water_resistant"
+              />
+
+              <i>no</i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 6th input water resistance depth -->
+    <div class="col-md-3">
+      <div>
+        <label for="watch_water_depth"
+          ><p class="head pl-2 mt-lg-0 mt-5">Water resistance depth</p></label
+        >
+      </div>
+      <div>
+        <input
+          type="text"
+          class="form-control form_design"
+          name="watch_water_depth"
+          placeholder="for example 100 meters"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- 3rd row for watch inputs  -->
+  <div class="row mt-1 mb-lg-0 mb-5">
+    <div class="col-md-3">
+      <div>
+        <p class="head pl-2 mt-lg-0 mt-5 mb-0">Watch measurments</p>
+      </div>
+      <div>
+        <label for="watch_dial_diameter">
+          <p class="head pl-2 mt-lg-0 mt-1 mb-0">Dial diameter</p></label
+        >
+      </div>
+      <!-- 7th input dial meter -->
+      <div>
+        <input
+          type="text"
+          class="form-control form_design"
+          name="watch_dial_diameter"
+          placeholder="for example 36mm"
+        />
+      </div>
+    </div>
+    <!-- 8th input band width -->
+    <div class="col-md-3">
+      <div>
+        <label for="watch_band_width">
+          <p class="head pl-2 mt-lg-0 mt-1 mb-0">band width</p></label
+        >
+      </div>
+      <!-- 7th input dial meter -->
+      <div>
+        <input
+          type="text"
+          class="form-control form_design"
+          name="watch_band_width"
+          placeholder="for example 18mm"
+        />
+      </div>
+    </div>
+    <!-- 9th input case thickness -->
+    <div class="col-md-3">
+      <div>
+        <label for="watch_case_thickness">
+          <p class="head pl-2 mt-lg-0 mt-1 mb-0">Case thickness</p></label
+        >
+      </div>
+      <!-- 7th input dial meter -->
+      <div>
+        <input
+          type="text"
+          class="form-control form_design"
+          name="watch_case_thickness"
+          placeholder="for example 7mm"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- end of ring filters -->
+</div>

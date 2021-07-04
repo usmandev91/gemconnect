@@ -9,6 +9,11 @@
 //   $("#submitModal").modal("hide");
 // }, 3000);
 // modal switching fix
+$(document).ready(function () {
+  $("button").on("click", function () {
+    $(this).toggleClass("active");
+  });
+});
 
 $(function () {
   $("[data-bm-close][data-bm-open]").on("click", function () {
@@ -20,6 +25,31 @@ $(function () {
       .modal("hide");
   });
 });
+// Change the button text & add active class
+$(".jRadioDropdown").change(function () {
+  var dropdown = $(this).closest(".dropdown");
+  var thislabel = $(this).closest("label");
+
+  dropdown.find("label").removeClass("active");
+  if ($(this).is(":checked")) {
+    thislabel.addClass("active");
+    dropdown.find("ins").html(thislabel.text());
+  }
+});
+
+//Add tabindex on labels
+$("label.dropdown-item").each(function (index, value) {
+  $(this).attr("tabindex", 0);
+  $(this).find("input").attr("tabindex", -1);
+});
+
+//Add keyboard navigation
+$("label.dropdown-item").keypress(function (e) {
+  if ((e.keyCode ? e.keyCode : e.which) == 13) {
+    $(this).trigger("click");
+  }
+});
+
 // check box
 $(document).ready(function () {
   $(".check").click(function () {
@@ -163,8 +193,6 @@ $(window).on("load resize", function () {
 // active for registration
 $('.nav-tabs a[href="#signup"]').tab("show");
 
-// active for general market tab
-$('.nav-tabs a[href="#gm"]').tab("show");
 //seller carousel
 $(".seller_carousel").owlCarousel({
   items: 5,
@@ -292,43 +320,6 @@ $(".ring_carousel").owlCarousel({
       loop: false,
       navRewind: false,
       lazyLoad: true,
-    },
-  },
-});
-var ctx = document.getElementById("myChart").getContext("2d");
-var myChart = new Chart(ctx, {
-  type: "bar",
-  data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    datasets: [
-      {
-        label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
-        ],
-        borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
-        ],
-        borderWidth: 1,
-      },
-    ],
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
     },
   },
 });

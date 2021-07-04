@@ -30,7 +30,9 @@ body {
 // .container_outer {
 //   overflow: hidden !important;
 // }
-
+.form-group {
+  margin-bottom: 0;
+}
 .container-width {
   max-width: 1460px;
 }
@@ -219,11 +221,17 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+.dropdown-item.active {
+  background-color: transparent;
+  color: $theme_color;
+}
+
 .dropdown-item:hover,
 .dropdown-item:focus {
   // color: $theme_color !important;
   text-decoration: none;
-  background-color: #f5f5f5 !important;
+  background-color: $cards-bg-color;
+  color: $text-color;
 }
 .dropdown-toggle:after {
   display: none !important;
@@ -313,7 +321,7 @@ body {
 #invalidModal,
 #widthdrawSuccess {
   .modal-content {
-    border-radius: 50px;
+    border-radius: 36px;
     padding: 2rem 2rem;
     border: none;
   }
@@ -1527,98 +1535,90 @@ input[type="text"] {
   color: $text-color;
   text-transform: none;
 }
-// listing sorter select menu
-.select-hidden {
-  display: none;
-  visibility: hidden;
-  padding-right: 10px;
-}
-.rev-select {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  font-size: 16px;
-  color: $text-color;
-  width: 150px;
-  height: 40px;
-}
-.select-styled {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: $theme_bgcolor;
-  padding: 8px 15px;
-  border-radius: 12px;
-}
+// select menu
 
-.select-styled:hover {
-  background-color: $light_dark;
-}
-
-// .select-styled:active,
-// .select-styled.active {
-// }
-
-.select-options {
-  display: none;
-  position: absolute;
-  top: 85%;
-  right: 0;
-  left: -129px;
-  z-index: 999;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: $theme_bgcolor;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+.gc_custom_select {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   box-shadow: $search_shadow;
-  width: 295px;
+  padding: 0.3rem 0rem;
+  border-radius: 20px;
+  height: 59px;
+  width: 275px;
 }
-
-.select-options li {
-  margin: 0;
-  padding: 10px 0;
-  text-indent: 15px;
-}
-.select-options li:last-child:hover {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.select-options li:hover {
-  color: $theme_color;
-  background: $light_dark;
-}
-
-.select-options li[rel="hide"] {
-  display: none;
-}
-
-.gc-custom-select {
-  box-shadow: $search_shadow;
-  padding: 0.3rem 1rem;
-  border-radius: 14px;
+.gc_custom_select_no_head {
+  margin-top: 40px;
 }
 .select_label {
   white-space: nowrap;
   color: #002f33;
   font-weight: 700;
   margin-bottom: 0;
-  padding-left: 0.3rem;
-  padding-right: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 0.8rem;
 }
-.custom-select {
-  border: none;
-  background: none;
-  padding-right: 0.5rem;
+.wtr_select_btn {
+  width: 110px !important;
+}
+.select_btn {
+  text-align: center;
+  background-color: $cards-bg-color;
+  border-radius: 12px;
+  padding-top: 0.5rem;
+  width: 135px;
+  .selcted_display {
+    color: $text-color;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
   &:focus {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
+    border-color: #3bc0cb !important;
+    box-shadow: 0 0 2px 0px $theme_color !important;
   }
 }
+.text_input_head {
+  margin-top: 40px;
+}
+.select_menu {
+  position: absolute !important;
+  will-change: transform !important;
+  top: 0px !important;
+  left: 0px !important;
+  transform: translate3d(-132px, 60px, 0px) !important;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $theme_bgcolor;
+  border-radius: 20px;
+  border: none;
+  box-shadow: $search_shadow;
+  width: 278px;
+  input {
+    visibility: hidden;
+    position: absolute;
+    left: -30px;
+  }
+  i {
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+    text-decoration: none;
+  }
+  .i2 {
+    font-size: 14px;
+    color: #b4b4b4;
+  }
+  .dropdown-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+
 // listing container and cards
 .listing_container {
   background-color: $theme_bgcolor;
@@ -2462,8 +2462,6 @@ input[type="text"] {
     opacity: 0.5;
     cursor: pointer;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     outline: 0;
   }
 
@@ -2828,4 +2826,205 @@ input[type="text"] {
       font-size: 13px;
     }
   }
+}
+// post new listing page
+.post_new {
+  .side_nav {
+    min-height: 596px;
+    .circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: #002f33 3px solid;
+      margin-right: 34px;
+    }
+    .d-flex {
+      align-items: center;
+      .head1 {
+        font-size: 16px;
+        color: #b4b4b4;
+        margin-bottom: 0;
+      }
+      .head2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #b4b4b4;
+        margin-bottom: 0;
+      }
+    }
+    .split {
+      border-left: #002f33 2px solid !important;
+      height: 90px;
+      max-width: 2px;
+      margin-left: 4px;
+    }
+    .active {
+      .col-lg-12 {
+        padding-left: 10px;
+      }
+      .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: #002f33 3px solid;
+        margin-right: 34px;
+        background-color: #3bc0cb;
+      }
+      .d-flex {
+        .head1 {
+          font-size: 16px;
+          color: $text-color;
+          margin-bottom: 0;
+        }
+        .head2 {
+          font-size: 20px;
+          font-weight: 600;
+          color: $text-color;
+          margin-bottom: 0;
+        }
+      }
+      .split {
+        border-left: #002f33 2px solid !important;
+        height: 90px;
+        max-width: 2px;
+        margin-left: 4px;
+      }
+    }
+  }
+  .custom_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 596px;
+    background-color: $cards-bg-color;
+    border-radius: 51px;
+    padding: 1rem 1.8rem;
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    a {
+      color: #3bc0cb;
+      text-decoration: underline;
+      a:hover {
+        color: #3bc0cb;
+      }
+    }
+  }
+  .head {
+    font-size: 16px;
+    font-weight: 600;
+    color: #b4b4b4;
+  }
+  .form_design {
+    border-radius: 20px;
+  }
+}
+.custom_label {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  appearance: button;
+  background: white;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $text-color;
+  box-shadow: $search_shadow;
+  border-radius: 15px;
+  margin-top: 4rem;
+  padding: 8px;
+  width: 182px;
+  height: 39px;
+  text-align: center;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  input[type="radio"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 0 1.87rem;
+    transition: all 0.54s ease-in-out;
+  }
+  input[type="radio"]:checked {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/icons/radiocheckicon.svg);
+    background-color: #3bc0cb;
+  }
+}
+.radiobackground {
+  background-color: $theme_color;
+}
+.span1 {
+  color: #002f33;
+}
+.span2 {
+  color: white;
+}
+.customized_radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customized_radio label > input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+.customized_radio label > input[type="radio"] ~ span {
+  cursor: pointer;
+  width: 184px;
+  height: 184px;
+  display: inline-block;
+  background-size: 184px 184px;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.ring_check_img {
+  background-image: url("../assets/icons/ringsunchecked.svg");
+}
+
+.watches_check_img {
+  background-image: url("../assets/icons/watchesunchecked.svg");
+}
+.pendants_check_img {
+  background-image: url("../assets/icons/pendantsunchecked.svg");
+}
+.bracelets_check_img {
+  background-image: url("../assets/icons/braceletsunchecked.svg");
+}
+
+.earings_check_img {
+  background-image: url("../assets/icons/earingsunchecked.svg");
+}
+.chains_check_img {
+  background-image: url("../assets/icons/chainsunchecked.svg");
+}
+
+.customized_radio label > input[type="radio"]:checked ~ span.ring_check_img {
+  background-image: url("../assets/icons/ringschecked.svg");
+}
+.customized_radio label > input[type="radio"]:checked ~ span.watches_check_img {
+  background-image: url("../assets/icons/watcheschecked.svg");
+}
+.customized_radio
+  label
+  > input[type="radio"]:checked
+  ~ span.pendants_check_img {
+  background-image: url("../assets/icons/pendantschecked.svg");
+}
+.customized_radio
+  label
+  > input[type="radio"]:checked
+  ~ span.bracelets_check_img {
+  background-image: url("../assets/icons/braceletschecked.svg");
+}
+.customized_radio label > input[type="radio"]:checked ~ span.earings_check_img {
+  background-image: url("../assets/icons/earringschecked.svg");
+}
+.customized_radio label > input[type="radio"]:checked ~ span.chains_check_img {
+  background-image: url("../assets/icons/chainschecked.svg");
 }
