@@ -1548,7 +1548,7 @@ input[type="text"] {
   width: 275px;
 }
 .gc_custom_select_no_head {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 .select_label {
   white-space: nowrap;
@@ -1557,9 +1557,6 @@ input[type="text"] {
   margin-bottom: 0;
   padding-left: 1rem;
   padding-right: 0.8rem;
-}
-.wtr_select_btn {
-  width: 110px !important;
 }
 .select_btn {
   text-align: center;
@@ -2868,7 +2865,7 @@ input[type="text"] {
         border-radius: 50%;
         border: #002f33 3px solid;
         margin-right: 34px;
-        background-color: #3bc0cb;
+        background-color: white;
       }
       .d-flex {
         .head1 {
@@ -2888,6 +2885,38 @@ input[type="text"] {
         height: 90px;
         max-width: 2px;
         margin-left: 4px;
+      }
+    }
+    .completed {
+      .col-lg-12 {
+        padding-left: 10px;
+      }
+      .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: #002f33 3px solid;
+        margin-right: 34px;
+        background-color: #3bc0cb;
+      }
+      .d-flex {
+        .head1 {
+          font-size: 16px;
+          color: $text-color;
+          margin-bottom: 0;
+        }
+        .head2 {
+          font-size: 20px;
+          font-weight: 600;
+          color: $text-color;
+          margin-bottom: 0;
+        }
+      }
+      .split {
+        border-left: $theme_color 2px solid !important;
+        height: 90px;
+        max-width: 2px;
+        margin-left: 9px;
       }
     }
   }
@@ -2916,6 +2945,7 @@ input[type="text"] {
     font-size: 16px;
     font-weight: 600;
     color: #b4b4b4;
+    margin-bottom: 0;
   }
   .form_design {
     border-radius: 20px;
@@ -3027,4 +3057,62 @@ input[type="text"] {
 }
 .customized_radio label > input[type="radio"]:checked ~ span.chains_check_img {
   background-image: url("../assets/icons/chainschecked.svg");
+}
+.customized_upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customized_upload label > input[type="file"] {
+  visibility: hidden;
+  position: absolute;
+  max-width: 100px;
+}
+.customized_upload label > input[type="file"] ~ span {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+.upload_btn_img {
+  background-image: url(../assets/icons/fileuploadimg.svg);
+  margin-top: 40px;
+}
+.upload_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 184px;
+  height: 184px;
+  background-color: $cards-bg-color;
+  margin-bottom: 0;
+  cursor: pointer;
+  i {
+    color: #3bc0cb;
+    text-decoration: underline;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 40px;
+  }
+}
+.text_design {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 40px;
+  background-color: #f5f5f5;
+  border: none;
+  resize: none;
+  color: $text-color;
+  &::placeholder {
+    font-size: 16;
+    color: #b4b4b4;
+  }
+}
+.text_design:focus {
+  border-color: #3bc0cb !important;
+  box-shadow: 0 0 4px 1px $theme_color !important;
+  outline: none !important;
 }

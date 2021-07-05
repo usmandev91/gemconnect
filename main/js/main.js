@@ -163,6 +163,15 @@ $(".input-number").keydown(function (e) {
     e.preventDefault();
   }
 });
+//  custom label functions
+$(".custom_label").click(function () {
+  $(".span2").show();
+  $(".span1").hide();
+  $(".custom_label").click(function () {
+    $(".custom_label").removeClass("radiobackground");
+    $(this).addClass("radiobackground");
+  });
+});
 // // drop down hover on fullscreen
 // const $dropdown = $(".dropdown");
 // const $dropdownToggle = $(".dropdown-toggle");

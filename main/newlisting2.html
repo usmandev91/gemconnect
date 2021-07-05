@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemConnects | New Post</title>
+    <link rel="stylesheet" href="./jquery.raty.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid-xl container_outer">
+      <!-- default navbar -->
+      <header class="container-fluid sticky-top default_nav py-2">
+        <nav class="navbar navbar-expand-lg navbar-expand-xl">
+          <a class="navbar-brand ml-lg-4 pl-lg-2" href="index.html">
+            <img
+              class="gc_nav_logo"
+              src="./assets/icons/gc_nav_logo.svg"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="
+                  navbar-nav
+                  justify-content-xl-evenly justify-content-center
+                  align-items-center
+                "
+              >
+                <li class="nav-item dropdown ml-lg-4">
+                  <a
+                    class="nav-link navbtn pr-xl-3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Browse
+                  </a>
+                  <div
+                    class="dropdown-menu browse_dropdown"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a
+                      class="
+                        dropdown-item
+                        browse_item
+                        dropdown-item-1
+                        pl-3
+                        py-2
+                      "
+                      href="rings.html"
+                      >General market
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="
+                        dropdown-item
+                        browse_item
+                        pl-3
+                        py-2
+                        dropdown-item-last
+                      "
+                      href="earings.html"
+                      >Auction
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn mx-xl-4" href="#">Sell</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn mx-xl-4" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn mx-xl-4" href="#">About</a>
+                </li>
+              </ul>
+              <div
+                class="
+                  container-sm
+                  form_container
+                  p-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="row form_row">
+                  <div class="col-md-12 p-0">
+                    <form
+                      class="
+                        navbar-form
+                        form-inline
+                        d-flex
+                        justify-content-center
+                      "
+                    >
+                      <input
+                        type="text"
+                        id="search"
+                        class="form-control-lg nav-search-bar"
+                        placeholder="Search..."
+                      />
+                      <button type="submit" class="btn inline-search-btn">
+                        <img
+                          class="inline-search-btn-img"
+                          src="./assets/icons/search.svg"
+                          alt=""
+                        />
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!--login buttons display set to none -->
+              <div class="container-sm d-none">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div
+                      class="
+                        container-sm
+                        m-0
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-top"
+                        data-toggle="modal"
+                        data-target="#loginModal"
+                      >
+                        Login
+                      </button>
+                      <a class="btn btn-top btn-top2" href="./registration.html"
+                        >Sign up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- main menu in header/user logged in menu -->
+              <div
+                class="
+                  container-sm
+                  menu-container
+                  d-flex
+                  justify-content-lg-start justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="container-sm d-flex pt-1">
+                      <a href="cart.html" class="btn mr-5 main_menu_btn pb-1">
+                        <img
+                          class="carty"
+                          alt="cart image"
+                          src="./assets/icons/cart.svg"
+                        />
+                        Cart
+                        <span class="badge carty_text" id="">2</span>
+                      </a>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle main_menu_btn mr-5"
+                          type="button"
+                          id="dropdownMenu"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            src="./assets/icons/menuIcons/Menu Icon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div
+                          class="dropdown-menu dropdown-menu-right mainmenu"
+                          aria-labelledby="dropdownMenu"
+                        >
+                          <a
+                            class="
+                              dropdown-item
+                              menu_link
+                              dropdown-item-1
+                              pl-3
+                              py-2
+                            "
+                            href="myprofile.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/profile.svg"
+                                alt="profile icon"
+                            /></span>
+                            Profile
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="messages.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/mail.svg"
+                                alt="mail icon"
+                            /></span>
+                            messages
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="wishlist.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/wishlist.svg"
+                                alt="wishlist icon"
+                            /></span>
+                            wishlist
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="orders.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/order.svg"
+                                alt="orders icon"
+                            /></span>
+                            orders
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="yourlistings.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/list.svg"
+                                alt="list icon"
+                            /></span>
+                            your listings
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="statistics.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/statistics.svg"
+                                alt="stats icon"
+                            /></span>
+                            statistics
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="settings.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/settings.svg"
+                                alt="settings icon"
+                            /></span>
+                            Settings
+                          </a>
+                          <a
+                            class="
+                              dropdown-item
+                              menu_link
+                              dropdown-item-last
+                              pl-3
+                              py-2
+                            "
+                            href="index.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/logout.svg"
+                                alt="logout icon"
+                            /></span>
+                            logout
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- end of navbar -->
+      <section class="container-fluid">
+        <div
+          class="
+            container container-width
+            d-flex
+            justify-content-lg-between
+            align-items-center
+            justify-content-center
+            p-0
+          "
+        >
+          <h1 class="section-title-start text-start std-title mt-5">
+            Post new listing
+          </h1>
+        </div>
+        <!-- 2nd tab select category of listing -->
+        <div
+          class="container container-width mt-5 post_new"
+          id="select_category"
+        >
+          <div class="row">
+            <!-- side navigation -->
+            <div class="col-lg-2">
+              <div class="row side_nav">
+                <div class="completed">
+                  <div class="col-lg-12">
+                    <div class="d-flex">
+                      <div class="circle"></div>
+                      <div class="tab-name">
+                        <p class="head1">Select</p>
+                        <p class="head2">Market</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="split"></div>
+                  </div>
+                </div>
+                <div class="active">
+                  <div class="col-lg-12">
+                    <div class="d-flex">
+                      <div class="circle"></div>
+                      <div class="tab-name">
+                        <p class="head1">Select</p>
+                        <p class="head2">category</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12"><div class="split"></div></div>
+                <div class="col-lg-12">
+                  <div class="d-flex">
+                    <div class="circle"></div>
+                    <div class="tab-name">
+                      <p class="head1">Product</p>
+                      <p class="head2">details</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12"><div class="split"></div></div>
+                <div class="col-lg-12">
+                  <div class="d-flex">
+                    <div class="circle"></div>
+                    <div class="tab-name">
+                      <p class="head1">Listing</p>
+                      <p class="head2">Details</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12"><div class="split"></div></div>
+                <div class="col-lg-12">
+                  <div class="d-flex">
+                    <div class="circle"></div>
+                    <div class="tab-name">
+                      <p class="head2">PUBLISH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of side navigation -->
+            <div class="col-lg-10">
+              <div class="row m-lg-0 mt-5">
+                <div class="col-md-2 mr-lg-4 mb-lg-4">
+                  <div class="customized_radio">
+                    <label for="cat_ring">
+                      <input
+                        type="radio"
+                        name="listing_category"
+                        value="rings"
+                        id="cat_ring"
+                      />
+                      <span class="ring_check_img"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 mr-lg-4">
+                  <div class="customized_radio">
+                    <label for="cat_chain">
+                      <input
+                        type="radio"
+                        name="listing_category"
+                        value="chains"
+                        id="cat_chain"
+                      />
+                      <span class="chains_check_img"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 mr-lg-4">
+                  <div class="customized_radio">
+                    <label for="cat_pendant">
+                      <input
+                        type="radio"
+                        name="listing_category"
+                        value="pendants"
+                        id="cat_pendant"
+                      />
+                      <span class="pendants_check_img"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 mr-lg-4">
+                  <div class="customized_radio">
+                    <label for="cat_watches">
+                      <input
+                        type="radio"
+                        name="listing_category"
+                        value="watches"
+                        id="cat_watches"
+                      />
+                      <span class="watches_check_img"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 mr-lg-4">
+                  <div class="customized_radio">
+                    <label for="cat_bracelets">
+                      <input
+                        type="radio"
+                        name="listing_category"
+                        value="bracelets"
+                        id="cat_bracelets"
+                      />
+                      <span class="bracelets_check_img"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 mr-lg-4">
+                  <div class="customized_radio">
+                    <label for="cat_earings">
+                      <input
+                        type="radio"
+                        name="listing_category"
+                        value="earing"
+                        id="cat_earings"
+                      />
+                      <span class="earings_check_img"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              container container-width
+              d-flex
+              justify-content-lg-end justify-content-center
+            "
+          >
+            <a
+              type="submit"
+              id="tab2"
+              aria-label="tab-navigator"
+              class="btn btn_default mb-0 mt-4"
+              >Save and next</a
+            >
+          </div>
+          <!-- ajax call for next html content button -->
+        </div>
+      </section>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/rating.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/main.js"></script>
+    </div>
+  </body>
+</html>

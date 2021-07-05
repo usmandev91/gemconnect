@@ -17,7 +17,7 @@ $(document).ready(function () {
         $("#product_details").fadeIn(1300);
         $("#ring_detail").fadeIn(1300);
         $("#pendant_detail").hide();
-        $("#watch_deail").hide();
+        $("#watch_detail").hide();
         $("#chain_detail").hide();
         $("#bracelet_detail").hide();
         $("#earing_detail").hide();
@@ -27,7 +27,7 @@ $(document).ready(function () {
         $("#product_details").fadeIn(1300);
         $("#pendant_detail").fadeIn(1300);
         $("#ring_detail").hide();
-        $("#watch_deail").hide();
+        $("#watch_detail").hide();
         $("#chain_detail").hide();
         $("#bracelet_detail").hide();
         $("#earing_detail").hide();
@@ -37,7 +37,7 @@ $(document).ready(function () {
         $("#product_details").fadeIn(1300);
         $("#pendant_detail").hide();
         $("#ring_detail").hide();
-        $("#watch_deail").hide();
+        $("#watch_detail").hide();
         $("#chain_detail").fadeIn(1300);
         $("#bracelet_detail").hide();
         $("#earing_detail").hide();
@@ -47,7 +47,7 @@ $(document).ready(function () {
         $("#product_details").fadeIn(1300);
         $("#pendant_detail").hide();
         $("#ring_detail").hide();
-        $("#watch_deail").fadeIn(1300);
+        $("#watch_detail").fadeIn(1300);
         $("#chain_detail").hide();
         $("#bracelet_detail").hide();
         $("#earing_detail").hide();
@@ -57,7 +57,7 @@ $(document).ready(function () {
         $("#product_details").fadeIn(1300);
         $("#pendant_detail").hide();
         $("#ring_detail").hide();
-        $("#watch_deail").hide();
+        $("#watch_detail").hide();
         $("#chain_detail").hide();
         $("#bracelet_detail").fadeIn(1300);
         $("#earing_detail").hide();
@@ -68,7 +68,7 @@ $(document).ready(function () {
         $("#earing_detail").fadeIn(1300);
         $("#pendant_detail").hide();
         $("#ring_detail").hide();
-        $("#watch_deail").hide();
+        $("#watch_detail").hide();
         $("#chain_detail").hide();
         $("#bracelet_detail").hide();
       }
@@ -82,14 +82,5 @@ $(document).ready(function () {
   $("#tab4").click(function () {
     $("#listing_details").hide();
     $("#publish").fadeIn(1300);
-  });
-  //  custom label functions
-  $(".custom_label").click(function () {
-    $(".span2").show();
-    $(".span1").hide();
-    $(".custom_label").click(function () {
-      $(".custom_label").removeClass("radiobackground");
-      $(this).addClass("radiobackground");
-    });
   });
 });
