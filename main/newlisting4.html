@@ -405,7 +405,8 @@
               </div>
             </div>
             <!-- end of side navigation -->
-            <div class="col-lg-7">
+            <!-- image upload and product description message box -->
+            <div class="col-lg-7 pr-lg-5">
               <!-- product image upload buttons -->
               <div class="row">
                 <div class="col-md-3 m-lg-0 my-3">
@@ -478,7 +479,308 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 bg-primary"></div>
+            <!-- price/bid inputs -->
+            <!-- if radio general market was selected on 1st tab these inputs will be shown -->
+            <div class="col-lg-3">
+              <div class="row">
+                <div class="col-md-12 p-lg-0">
+                  <label class="label_bold" for="listing_price"
+                    >Set price
+                    <input
+                      type="number"
+                      id="listing_price"
+                      name="listing_price"
+                      min="0"
+                      max=""
+                      class="form-control form_design"
+                      placeholder="$"
+                    />
+                    <i class="fixed_placeholder">USD</i></label
+                  >
+                </div>
+
+                <div class="col-md-12 p-lg-0">
+                  <label class="label_bold" for="listing_stock"
+                    >Add Stock
+                    <input
+                      type="number"
+                      id="listing_stock"
+                      name="listing_stock"
+                      min="0"
+                      max=""
+                      class="form-control form_design"
+                      placeholder="1"
+                    />
+                  </label>
+                </div>
+                <!-- if radio auction market was selected on 1st tab these inputs will be shown -->
+                <div class="col-md-12 p-lg-0 d-none">
+                  <label class="label_bold" for="listing_minimum_bid"
+                    >Minimum Bid
+                    <input
+                      type="number"
+                      id="listing_minimum_bid"
+                      name="listing_minimum_bid"
+                      min="0"
+                      max=""
+                      class="form-control form_design"
+                      placeholder="$"
+                    />
+                    <i class="fixed_placeholder">USD</i></label
+                  >
+                </div>
+
+                <div class="col-md-12 p-lg-0 d-none">
+                  <label class="label_bold" for="listing_duration"
+                    >Listing Time
+                    <input
+                      type="number"
+                      id="listing_duration"
+                      name="listing_duration"
+                      min="3"
+                      max="7"
+                      class="form-control form_design"
+                      placeholder="3"
+                    />
+                    <i class="fixed_placeholder">Days</i>
+                  </label>
+                </div>
+                <!-- this is to be shown if radio rings was checked -->
+                <div class="col-md-12 my-2 p-lg-0">
+                  <label class="label_bold" for="ring-size"
+                    >Select Ring size</label
+                  >
+                  <div class="row ring_form">
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="3" name="ring-size">
+                        <img src="./assets/images/3checked.png" />
+                        <input type="checkbox" name="ring-size" value="3" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label
+                        class="image-checkbox"
+                        title="3.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/3.5checked.png" />
+                        <input type="checkbox" name="ring-size" value="3.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="4" name="ring-size">
+                        <img src="./assets/images/4checked.png" />
+                        <input type="checkbox" name="ring-size" value="4" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label
+                        class="image-checkbox"
+                        title="4.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/4.5checked.png" />
+                        <input type="checkbox" name="ring-size" value="4.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="5" name="ring-size">
+                        <img src="./assets/images/5checked.png" />
+                        <input type="checkbox" name="ring-size" value="5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label
+                        class="image-checkbox"
+                        title="5.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/5.5checked.png" />
+                        <input type="checkbox" name="ring-size" value="5.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="6" name="ring-size">
+                        <img src="./assets/images/6checked.png" />
+                        <input type="checkbox" name="ring-size" value="6" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="6.5
+                      name="ring-size"">
+                      <img src="./assets/images/6.5checked.png" />
+                      <input
+                        type="checkbox"
+                        name="ring-size"
+                        value="6.5"
+                        checked="checked"
+                      />
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="7" name="ring-size">
+                        <img src="./assets/images/7checked.png" />
+                        <input type="checkbox" name="ring-size" value="7" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label
+                        class="image-checkbox"
+                        title="7.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/7.5checked.png" />
+                        <input type="checkbox" name="ring-size" value="7.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="8" name="ring-size">
+                        <img src="./assets/images/8checked.png" />
+                        <input type="checkbox" name="ring-size" value="8" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label
+                        class="image-checkbox"
+                        title="8.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/8.5checked.png" />
+                        <input type="checkbox" name="ring-size" value="8.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="9" name="ring-size">
+                        <img src="./assets/images/9checked.png" />
+                        <input type="checkbox" name="ring-size" value="9" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label
+                        class="image-checkbox"
+                        title="9.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/9.5checked.png" />
+                        <input type="checkbox" name="ring-size" value="9.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="10" name="ring-size">
+                        <img src="./assets/images/10checked.png" />
+                        <input type="checkbox" name="ring-size" value="10" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label
+                        class="image-checkbox"
+                        title="10.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/10.5checked.png" />
+                        <input type="checkbox" name="ring-size" value="10.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="11" name="ring-size">
+                        <img src="./assets/images/11checked.png" />
+                        <input type="checkbox" name="ring-size" value="11" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label
+                        class="image-checkbox"
+                        title="11.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/11.5checked.png" />
+                        <input type="checkbox" name="ring-size" value="11.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="12" name="ring-size">
+                        <img src="./assets/images/12checked.png" />
+                        <input type="checkbox" name="ring-size" value="12" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label
+                        class="image-checkbox"
+                        title="12.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/12.5checked.png" />
+                        <input type="checkbox" name="ring-size" value="12.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="image-checkbox" title="13" name="ring-size">
+                        <img src="./assets/images/13checked.png" />
+                        <input type="checkbox" name="ring-size" value="13" />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 p-lg-0">
+                  <label class="label_bold" for="listing_condition"
+                    >Choose Condition</label
+                  >
+                  <div
+                    class="container d-lg-flex justify-content-between p-lg-0"
+                  >
+                    <div class="customized_radio">
+                      <label for="new_listing">
+                        <input
+                          type="radio"
+                          name="listing_condition"
+                          value="new"
+                          id="new_listing"
+                        />
+                        <span class="newbtn"></span>
+                      </label>
+                    </div>
+                    <div class="customized_radio">
+                      <label for="used_listing">
+                        <input
+                          type="radio"
+                          name="listing_condition"
+                          value="used"
+                          id="used_listing"
+                        />
+                        <span class="usedbtn"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div id="range_slider" class="col-md-12">
+                  <label for="used_listing_condition" class=""></label>
+                  <input
+                    type="range"
+                    class="gc_custom_range"
+                    min="0"
+                    max="4"
+                    step="1"
+                    id="used_listing_condition"
+                  />
+                </div>
+                <div id="range_label" class="row justify-content-between">
+                  <div class="col-md-2 range_label">
+                    <span>Rough condition</span>
+                  </div>
+                  <div class="col-2 range_label">
+                    <span class="range_label">Heavily Used</span>
+                  </div>
+                  <div class="col-2 range_label">
+                    <span class="range_label">Moderately used</span>
+                  </div>
+                  <div class="col-2 range_label">
+                    <span class="range_label">Slightly Used</span>
+                  </div>
+                  <div class="col-2 range_label">
+                    <span class="range_label">Perfect Condition</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             class="

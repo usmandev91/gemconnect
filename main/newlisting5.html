@@ -404,15 +404,84 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-10"></div>
+            <div class="col-lg-7">
+              <!-- product image upload buttons -->
+              <div class="row">
+                <div class="col-md-4 m-lg-0 my-3">
+                  <label class="label_bold" for="prod_warranty"
+                    >Provide Warranty</label
+                  >
+                  <input
+                    type="number"
+                    name="prod_warranty"
+                    id="prod_warranty"
+                    min="1"
+                    max="5"
+                    class="form-control form_design"
+                    placeholder="Years"
+                  />
+                </div>
+              </div>
+              <!-- product description -->
+              <div class="row mt-4">
+                <div class="col-md-12">
+                  <label class="label_bold" for="prod_return_policy"
+                    >Define Return Policy</label
+                  >
+                  <textarea
+                    name="prod_return_policy"
+                    class="text_design textarea-autosize"
+                    id="prod_return_policy"
+                    rows="15"
+                    placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate eum iusto porro maiores at vel deleniti optio dolores ipsum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate eum iusto porro maiores at vel deleniti optio dolores ipsum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate eum iusto porro maiores at vel deleniti optio dolores ipsum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate eum iusto porro maiores at vel deleniti optio dolores ipsum."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
             <!-- end of side navigation -->
           </div>
           <div class="container container-width d-flex justify-content-center">
-            <a type="submit" class="btn btn_default mb-0 mt-4">publish</a>
+            <a
+              type="button"
+              data-toggle="modal"
+              data-target="#publishModal"
+              class="btn btn_default mb-0 mt-4 px-5"
+              >publish</a
+            >
           </div>
           <!-- ajax call for next html content button -->
         </div>
       </section>
+      <!-- ordermodal -->
+      <div class="container">
+        <div
+          id="publishModal"
+          class="modal fade"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div class="modal-xs modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="">
+                  <img
+                    src="./assets/icons/Verifiedseller.svg"
+                    alt=""
+                    class="verified img-fluid"
+                  />
+                </div>
+                <div class="text-box">
+                  <p class="title">Your listing has been published</p>
+                  <p class="title2 mt-2">
+                    You'll be notified once it goes live.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <script src="./js/jquery.min.js"></script>
       <script src="./js/rating.js"></script>
       <script src="./js/popper.min.js"></script>

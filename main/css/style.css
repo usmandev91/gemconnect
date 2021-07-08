@@ -25,6 +25,14 @@ body {
   border-color: #3bc0cb !important;
   box-shadow: 0 0 4px 0px #3bc0cb !important; }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
 .menu-container {
   max-width: 450px; }
 
@@ -515,43 +523,54 @@ body {
   border: none;
   outline: none; }
 
+#publishModal .modal-xs,
 #orderModal .modal-xs {
   max-width: 800px;
   border: none; }
 
+#publishModal .modal-content,
 #orderModal .modal-content {
   border-radius: 50px;
-  padding: 5rem 1rem;
+  padding: 5rem 0rem;
   border: none; }
 
+#publishModal .modal-body,
 #orderModal .modal-body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0; }
+  #publishModal .modal-body .text-box,
   #orderModal .modal-body .text-box {
     padding-right: 20px; }
+  #publishModal .modal-body .verified,
   #orderModal .modal-body .verified {
-    width: 160px;
-    height: 160px; }
+    width: 110px;
+    height: 175px;
+    margin-bottom: 20px; }
+  #publishModal .modal-body .title,
   #orderModal .modal-body .title {
     text-align: center;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: bold;
     color: #002f33;
     margin-bottom: 0; }
+  #publishModal .modal-body .title2,
   #orderModal .modal-body .title2 {
     text-align: center;
     font-size: 1rem;
     color: #002f33;
     margin-bottom: 0; }
+    #publishModal .modal-body .title2 a,
     #orderModal .modal-body .title2 a {
       color: #3bc0cb;
       text-decoration: underline; }
 
+#publishModal .modal-footer,
 #orderModal .modal-footer {
   border: none;
   outline: none; }
+  #publishModal .modal-footer .btn_default,
   #orderModal .modal-footer .btn_default {
     padding: 0.4rem 2rem; }
 
@@ -590,6 +609,8 @@ body {
   height: 59px;
   border-radius: 10px;
   background-color: #f5f5f5;
+  color: #002f33;
+  font-size: 1.1rem;
   padding: 1rem;
   margin-bottom: 15px; }
   .form_design::placeholder {
@@ -2083,23 +2104,6 @@ input[type="text"] {
 .product_showcase .qty_stock_head {
   color: #b4b4b4; }
 
-@media (min-width: 768px) {
-  .product_showcase .ring_form .col-md-3 {
-    flex: 0 0 10%;
-    max-width: 10%; } }
-
-.product_showcase .image-checkbox {
-  opacity: 0.5;
-  cursor: pointer;
-  box-sizing: border-box;
-  outline: 0; }
-
-.product_showcase .image-checkbox input[type="checkbox"] {
-  display: none; }
-
-.product_showcase .image-checkbox-checked {
-  opacity: 1; }
-
 .product_showcase .auth_ver {
   font-weight: 600;
   color: #3bc0cb; }
@@ -2153,6 +2157,26 @@ input[type="text"] {
     opacity: 1; }
   .product_showcase .delivery_container .radio label input[type="radio"]:disabled + .cr {
     opacity: 0.5; }
+
+@media (min-width: 768px) {
+  .ring_form .col-md-3 {
+    flex: 0 0 10%;
+    max-width: 10%; }
+  .ring_form .col-md-2 {
+    flex: 0 0 16.66667%;
+    max-width: 13.66667%; } }
+
+.image-checkbox {
+  opacity: 0.5;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0; }
+
+.image-checkbox input[type="checkbox"] {
+  display: none; }
+
+.image-checkbox-checked {
+  opacity: 1; }
 
 .product_description .desc_container {
   max-width: 920px; }
@@ -2393,6 +2417,8 @@ input[type="text"] {
       font-size: 13px; }
 
 .post_new .side_nav {
+  display: flex;
+  flex-direction: column;
   min-height: 596px; }
   .post_new .side_nav .circle {
     width: 12px;
@@ -2463,6 +2489,19 @@ input[type="text"] {
     max-width: 2px;
     margin-left: 9px; }
 
+.post_new .label_bold {
+  width: 100%;
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap; }
+  .post_new .label_bold .fixed_placeholder {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    font-style: normal;
+    color: #b4b4b4; }
+
 .post_new .custom_card {
   display: flex;
   flex-direction: column;
@@ -2488,7 +2527,8 @@ input[type="text"] {
   margin-bottom: 0; }
 
 .post_new .form_design {
-  border-radius: 20px; }
+  border-radius: 20px;
+  margin-bottom: 0 !important; }
 
 .custom_label {
   display: flex;
@@ -2545,9 +2585,30 @@ input[type="text"] {
   width: 184px;
   height: 184px;
   display: inline-block;
-  background-size: 184px 184px;
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out; }
+
+.customized_radio label > input[type="radio"] ~ .newbtn {
+  cursor: pointer;
+  width: 170px;
+  height: 50px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out; }
+
+.customized_radio label > input[type="radio"] ~ .usedbtn {
+  cursor: pointer;
+  width: 170px;
+  height: 50px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out; }
+
+.newbtn {
+  background-image: url(../assets/images/newbtn.png); }
+
+.usedbtn {
+  background-image: url(../assets/images/usedbtn.png); }
 
 .ring_check_img {
   background-image: url("../assets/icons/ringsunchecked.svg"); }
@@ -2591,6 +2652,16 @@ label
 .customized_radio label > input[type="radio"]:checked ~ span.chains_check_img {
   background-image: url("../assets/icons/chainschecked.svg"); }
 
+.customized_radio label > input[type="radio"]:checked ~ span.newbtn {
+  background-image: url("../assets/images/newbtnchecked.png");
+  box-shadow: 0 0 5px 1px #3bc0cb !important;
+  border-radius: 12px; }
+
+.customized_radio label > input[type="radio"]:checked ~ span.usedbtn {
+  background-image: url("../assets/images/usedbtnchecked.png");
+  box-shadow: 0 0 5px 1px #3bc0cb !important;
+  border-radius: 12px; }
+
 .customized_upload {
   display: flex;
   justify-content: center;
@@ -2631,7 +2702,7 @@ label
 
 .text_design {
   width: 100%;
-  padding: 1rem;
+  padding: 1.7rem 2.1rem;
   border-radius: 40px;
   background-color: #f5f5f5;
   border: none;
@@ -2645,3 +2716,27 @@ label
   border-color: #3bc0cb !important;
   box-shadow: 0 0 4px 1px #3bc0cb !important;
   outline: none !important; }
+
+.gc_custom_range {
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  padding: 0;
+  background-color: #3bc0cb;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ff7272, #f1c161, #cce15b, #3fdf39, #3bc0cb); }
+  .gc_custom_range::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #002f33;
+    width: 30px;
+    height: 30px;
+    border: 4px white solid;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1); }
+
+.range_label {
+  text-align: center;
+  font-size: 12px;
+  color: #002f33;
+  max-width: 80px; }

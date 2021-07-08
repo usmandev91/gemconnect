@@ -2,6 +2,8 @@ $(document).ready(function () {
   $("#select_category").hide();
   $("#product_details").hide();
   $("#listing_details").hide();
+  $("#range_slider").hide();
+  $("#range_label").hide();
   $("#publish").hide();
   $(".span2").hide();
   //  ajax call button1 functions
@@ -74,10 +76,18 @@ $(document).ready(function () {
       }
     });
   });
-
   $("#tab3").click(function () {
     $("#product_details").hide();
     $("#listing_details").fadeIn(1300);
+  });
+  $('input[type="radio"]').click(function () {
+    if ($(this).attr("id") == "used_listing") {
+      $("#range_slider").fadeIn(1000);
+      $("#range_label").fadeIn(1000);
+    } else {
+      $("#range_slider").hide();
+      $("#range_label").hide();
+    }
   });
   $("#tab4").click(function () {
     $("#listing_details").hide();
