@@ -18,9 +18,9 @@
   <body>
     <div class="container-fluid-xl container_outer">
       <!-- default navbar -->
-      <header class="container-fluid sticky-top default_nav py-2">
+      <header class="container-fluid sticky-top default_nav py-2 px-0">
         <nav class="navbar navbar-expand-lg navbar-expand-xl">
-          <a class="navbar-brand ml-lg-4 pl-lg-2" href="index.html">
+          <a class="navbar-brand px-lg-5" href="index.html">
             <img
               class="gc_nav_logo"
               src="./assets/icons/gc_nav_logo.svg"
@@ -37,281 +37,253 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul
-                class="
-                  navbar-nav
-                  justify-content-xl-evenly justify-content-center
-                  align-items-center
-                "
-              >
-                <li class="nav-item dropdown ml-lg-4">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="
+                navbar-nav
+                justify-content-xl-evenly justify-content-center
+                align-items-center
+              "
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link navbtn pl-lg-3 pr-lg-3"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Browse
+                </a>
+                <div
+                  class="dropdown-menu browse_dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
                   <a
-                    class="nav-link navbtn pr-xl-3"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Browse
-                  </a>
+                    class="dropdown-item browse_item dropdown-item-1 pl-3 py-2"
+                    href="rings.html"
+                    >General market
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                  <a
+                    class="
+                      dropdown-item
+                      browse_item
+                      pl-3
+                      py-2
+                      dropdown-item-last
+                    "
+                    href="earings.html"
+                    >Auction
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbtn pl-lg-5 pr-lg-5" href="#">Sell</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbtn pl-lg-5 pr-lg-5" href="#">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbtn pl-lg-5 pr-lg-5" href="#">About</a>
+              </li>
+            </ul>
+            <div class="row form_row">
+              <div class="col-md-12 p-0">
+                <input
+                  type="text"
+                  id="search"
+                  class="form-control nav-search-bar"
+                  placeholder="Search..."
+                />
+                <button type="submit" class="btn inline-search-btn">
+                  <img
+                    class="inline-search-btn-img"
+                    src="./assets/icons/search.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+            <!--login buttons display set to none -->
+            <div class="container-sm d-none">
+              <div class="row">
+                <div class="col-xs-12">
                   <div
-                    class="dropdown-menu browse_dropdown"
-                    aria-labelledby="navbarDropdown"
+                    class="
+                      container-sm
+                      m-0
+                      justify-content-center
+                      align-items-center
+                    "
                   >
-                    <a
-                      class="
-                        dropdown-item
-                        browse_item
-                        dropdown-item-1
-                        pl-3
-                        py-2
-                      "
-                      href="rings.html"
-                      >General market
-                      <img
-                        class="pointer"
-                        src="./assets/icons/menuIcons/pointer.svg"
-                        alt="menu pointer"
-                    /></a>
-                    <a
-                      class="
-                        dropdown-item
-                        browse_item
-                        pl-3
-                        py-2
-                        dropdown-item-last
-                      "
-                      href="earings.html"
-                      >Auction
-                      <img
-                        class="pointer"
-                        src="./assets/icons/menuIcons/pointer.svg"
-                        alt="menu pointer"
-                    /></a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link navbtn mx-xl-4" href="#">Sell</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link navbtn mx-xl-4" href="#">blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link navbtn mx-xl-4" href="#">About</a>
-                </li>
-              </ul>
-              <div
-                class="
-                  container-sm
-                  form_container
-                  p-0
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <div class="row form_row">
-                  <div class="col-md-12 p-0">
-                    <form
-                      class="
-                        navbar-form
-                        form-inline
-                        d-flex
-                        justify-content-center
-                      "
+                    <button
+                      type="button"
+                      class="btn btn-top"
+                      data-toggle="modal"
+                      data-target="#loginModal"
                     >
-                      <input
-                        type="text"
-                        id="search"
-                        class="form-control-lg nav-search-bar"
-                        placeholder="Search..."
-                      />
-                      <button type="submit" class="btn inline-search-btn">
+                      Login
+                    </button>
+                    <a class="btn btn-top btn-top2" href="./registration.html"
+                      >Sign up</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- main menu in header/user logged in menu -->
+            <div
+              class="
+                container-sm
+                menu-container
+                d-flex
+                justify-content-lg-start justify-content-center
+                align-items-center
+              "
+            >
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="container-sm d-flex pt-1">
+                    <a href="cart.html" class="btn mr-5 main_menu_btn pb-1">
+                      <img class="carty" src="./assets/icons/cart.svg" /> Cart
+                      <span class="badge carty_text" id="">2</span>
+                    </a>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle main_menu_btn mr-5"
+                        type="button"
+                        id="dropdownMenu"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
                         <img
-                          class="inline-search-btn-img"
-                          src="./assets/icons/search.svg"
+                          src="./assets/icons/menuIcons/Menu Icon.svg"
                           alt=""
                         />
                       </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <!--login buttons display set to none -->
-              <div class="container-sm d-none">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div
-                      class="
-                        container-sm
-                        m-0
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <button
-                        type="button"
-                        class="btn btn-top"
-                        data-toggle="modal"
-                        data-target="#loginModal"
+                      <div
+                        class="dropdown-menu dropdown-menu-right mainmenu"
+                        aria-labelledby="dropdownMenu"
                       >
-                        Login
-                      </button>
-                      <a class="btn btn-top btn-top2" href="./registration.html"
-                        >Sign up</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- main menu in header/user logged in menu -->
-              <div
-                class="
-                  container-sm
-                  menu-container
-                  d-flex
-                  justify-content-lg-start justify-content-center
-                  align-items-center
-                "
-              >
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="container-sm d-flex pt-1">
-                      <a href="cart.html" class="btn mr-5 main_menu_btn pb-1">
-                        <img class="carty" src="./assets/icons/cart.svg" /> Cart
-                        <span class="badge carty_text" id="">2</span>
-                      </a>
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle main_menu_btn mr-5"
-                          type="button"
-                          id="dropdownMenu"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
+                        <a
+                          class="
+                            dropdown-item
+                            menu_link
+                            dropdown-item-1
+                            pl-3
+                            py-2
+                          "
+                          href="myprofile.html"
                         >
-                          <img
-                            src="./assets/icons/menuIcons/Menu Icon.svg"
-                            alt=""
-                          />
-                        </button>
-                        <div
-                          class="dropdown-menu dropdown-menu-right mainmenu"
-                          aria-labelledby="dropdownMenu"
+                          <span>
+                            <img
+                              class="menu_icon"
+                              src="./assets/icons/menuIcons/profile.svg"
+                              alt="profile icon"
+                          /></span>
+                          Profile
+                        </a>
+                        <a
+                          class="dropdown-item menu_link pl-3 py-2"
+                          href="messages.html"
                         >
-                          <a
-                            class="
-                              dropdown-item
-                              menu_link
-                              dropdown-item-1
-                              pl-3
-                              py-2
-                            "
-                            href="myprofile.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/profile.svg"
-                                alt="profile icon"
-                            /></span>
-                            Profile
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="messages.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/mail.svg"
-                                alt="mail icon"
-                            /></span>
-                            messages
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="wishlist.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/wishlist.svg"
-                                alt="wishlist icon"
-                            /></span>
-                            wishlist
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="orders.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/order.svg"
-                                alt="orders icon"
-                            /></span>
-                            orders
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="yourlistings.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/list.svg"
-                                alt="list icon"
-                            /></span>
-                            your listings
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="statistics.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/statistics.svg"
-                                alt="stats icon"
-                            /></span>
-                            statistics
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="settings.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/settings.svg"
-                                alt="settings icon"
-                            /></span>
-                            Settings
-                          </a>
-                          <a
-                            class="
-                              dropdown-item
-                              menu_link
-                              dropdown-item-last
-                              pl-3
-                              py-2
-                            "
-                            href="index.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/logout.svg"
-                                alt="logout icon"
-                            /></span>
-                            logout
-                          </a>
-                        </div>
+                          <span>
+                            <img
+                              class="menu_icon"
+                              src="./assets/icons/menuIcons/mail.svg"
+                              alt="mail icon"
+                          /></span>
+                          messages
+                        </a>
+                        <a
+                          class="dropdown-item menu_link pl-3 py-2"
+                          href="wishlist.html"
+                        >
+                          <span>
+                            <img
+                              class="menu_icon"
+                              src="./assets/icons/menuIcons/wishlist.svg"
+                              alt="wishlist icon"
+                          /></span>
+                          wishlist
+                        </a>
+                        <a
+                          class="dropdown-item menu_link pl-3 py-2"
+                          href="orders.html"
+                        >
+                          <span>
+                            <img
+                              class="menu_icon"
+                              src="./assets/icons/menuIcons/order.svg"
+                              alt="orders icon"
+                          /></span>
+                          orders
+                        </a>
+                        <a
+                          class="dropdown-item menu_link pl-3 py-2"
+                          href="yourlistings.html"
+                        >
+                          <span>
+                            <img
+                              class="menu_icon"
+                              src="./assets/icons/menuIcons/list.svg"
+                              alt="list icon"
+                          /></span>
+                          your listings
+                        </a>
+                        <a
+                          class="dropdown-item menu_link pl-3 py-2"
+                          href="statistics.html"
+                        >
+                          <span>
+                            <img
+                              class="menu_icon"
+                              src="./assets/icons/menuIcons/statistics.svg"
+                              alt="stats icon"
+                          /></span>
+                          statistics
+                        </a>
+                        <a
+                          class="dropdown-item menu_link pl-3 py-2"
+                          href="settings.html"
+                        >
+                          <span>
+                            <img
+                              class="menu_icon"
+                              src="./assets/icons/menuIcons/settings.svg"
+                              alt="settings icon"
+                          /></span>
+                          Settings
+                        </a>
+                        <a
+                          class="
+                            dropdown-item
+                            menu_link
+                            dropdown-item-last
+                            pl-3
+                            py-2
+                          "
+                          href="index.html"
+                        >
+                          <span>
+                            <img
+                              class="menu_icon"
+                              src="./assets/icons/menuIcons/logout.svg"
+                              alt="logout icon"
+                          /></span>
+                          logout
+                        </a>
                       </div>
                     </div>
                   </div>

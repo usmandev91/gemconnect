@@ -130,14 +130,14 @@ input[type="number"] {
   color: #ffffff;
   margin-bottom: 0.21em;
 }
-
-.hero-search {
+.hero_search_label {
+  position: relative !important;
+  height: 100%;
+  width: 100%;
+}
+.hero_search {
   height: 71px;
-  max-width: 72%;
-  min-width: 72%;
   border-radius: 22px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
   border: none;
   padding-left: 2rem;
   &::placeholder {
@@ -145,26 +145,23 @@ input[type="number"] {
     font-family: "raleway", sans-serif;
     text-overflow: ellipsis;
   }
-  .search-btn-hero {
-    height: 71px;
-    width: 80px;
-    padding-right: 1.4rem;
-    margin-right: 2rem;
-    border-radius: 22px;
-    background-color: white;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    &:hover {
-      .search-btn-img {
-        filter: none;
-      }
-    }
-    &:focus {
-      box-shadow: none;
+}
+.hero_search_btn {
+  position: absolute !important;
+  right: 1%;
+  top: 10%;
+  width: 80px;
+  height: 60px;
+  background-color: white;
+  &:hover {
+    .search-btn-img {
+      filter: none;
     }
   }
+  &:focus {
+    box-shadow: none;
+  }
 }
-
 .search-btn-img {
   width: 100%;
   filter: grayscale(100%);
@@ -173,8 +170,8 @@ input[type="number"] {
 // navbars
 
 .browse_dropdown {
-  width: 185px;
-  top: 85%;
+  width: 220px;
+  top: 90%;
   left: 15px;
   padding: 0;
   border-radius: 20px;
@@ -189,7 +186,7 @@ input[type="number"] {
   padding: 0;
   background-color: $theme_bgcolor !important;
   .navbar-brand {
-    margin-right: 1.5rem !important;
+    margin-right: 0 !important;
   }
   .navbar-toggler-icon {
     background-image: url(/assets/icons/sliderbutton.svg);
@@ -2541,21 +2538,22 @@ input[type="text"] {
       max-width: 13.66667%;
     }
   }
-}
-.image-checkbox {
-  opacity: 0.5;
-  cursor: pointer;
-  box-sizing: border-box;
-  outline: 0;
+  .image-checkbox {
+    opacity: 0.5;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: 0;
+  }
+
+  .image-checkbox input[type="checkbox"] {
+    display: none;
+  }
+
+  .image-checkbox-checked {
+    opacity: 1;
+  }
 }
 
-.image-checkbox input[type="checkbox"] {
-  display: none;
-}
-
-.image-checkbox-checked {
-  opacity: 1;
-}
 .product_description {
   .desc_container {
     max-width: 920px;
