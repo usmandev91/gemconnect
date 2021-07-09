@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemConnects | New Post</title>
+    <link rel="stylesheet" href="./jquery.raty.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid-xl container_outer">
+      <!-- default navbar -->
+      <header class="container-fluid sticky-top default_nav py-2">
+        <nav class="navbar navbar-expand-lg navbar-expand-xl">
+          <a class="navbar-brand ml-lg-4 pl-lg-2" href="index.html">
+            <img
+              class="gc_nav_logo"
+              src="./assets/icons/gc_nav_logo.svg"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="
+                  navbar-nav
+                  justify-content-xl-evenly justify-content-center
+                  align-items-center
+                "
+              >
+                <li class="nav-item dropdown ml-lg-4">
+                  <a
+                    class="nav-link navbtn pr-xl-3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Browse
+                  </a>
+                  <div
+                    class="dropdown-menu browse_dropdown"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a
+                      class="
+                        dropdown-item
+                        browse_item
+                        dropdown-item-1
+                        pl-3
+                        py-2
+                      "
+                      href="rings.html"
+                      >General market
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="
+                        dropdown-item
+                        browse_item
+                        pl-3
+                        py-2
+                        dropdown-item-last
+                      "
+                      href="earings.html"
+                      >Auction
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn mx-xl-4" href="#">Sell</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn mx-xl-4" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbtn mx-xl-4" href="#">About</a>
+                </li>
+              </ul>
+              <div
+                class="
+                  container-sm
+                  form_container
+                  p-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="row form_row">
+                  <div class="col-md-12 p-0">
+                    <form
+                      class="
+                        navbar-form
+                        form-inline
+                        d-flex
+                        justify-content-center
+                      "
+                    >
+                      <input
+                        type="text"
+                        id="search"
+                        class="form-control-lg nav-search-bar"
+                        placeholder="Search..."
+                      />
+                      <button type="submit" class="btn inline-search-btn">
+                        <img
+                          class="inline-search-btn-img"
+                          src="./assets/icons/search.svg"
+                          alt=""
+                        />
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!--login buttons display set to none -->
+              <div class="container-sm d-none">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div
+                      class="
+                        container-sm
+                        m-0
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-top"
+                        data-toggle="modal"
+                        data-target="#loginModal"
+                      >
+                        Login
+                      </button>
+                      <a class="btn btn-top btn-top2" href="./registration.html"
+                        >Sign up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- main menu in header/user logged in menu -->
+              <div
+                class="
+                  container-sm
+                  menu-container
+                  d-flex
+                  justify-content-lg-start justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="container-sm d-flex pt-1">
+                      <a href="cart.html" class="btn mr-5 main_menu_btn pb-1">
+                        <img
+                          class="carty"
+                          alt="cart image"
+                          src="./assets/icons/cart.svg"
+                        />
+                        Cart
+                        <span class="badge carty_text" id="">2</span>
+                      </a>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle main_menu_btn mr-5"
+                          type="button"
+                          id="dropdownMenu"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            src="./assets/icons/menuIcons/Menu Icon.svg"
+                            alt=""
+                          />
+                        </button>
+                        <div
+                          class="dropdown-menu dropdown-menu-right mainmenu"
+                          aria-labelledby="dropdownMenu"
+                        >
+                          <a
+                            class="
+                              dropdown-item
+                              menu_link
+                              dropdown-item-1
+                              pl-3
+                              py-2
+                            "
+                            href="myprofile.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/profile.svg"
+                                alt="profile icon"
+                            /></span>
+                            Profile
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="messages.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/mail.svg"
+                                alt="mail icon"
+                            /></span>
+                            messages
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="wishlist.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/wishlist.svg"
+                                alt="wishlist icon"
+                            /></span>
+                            wishlist
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="orders.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/order.svg"
+                                alt="orders icon"
+                            /></span>
+                            orders
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="yourlistings.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/list.svg"
+                                alt="list icon"
+                            /></span>
+                            your listings
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="statistics.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/statistics.svg"
+                                alt="stats icon"
+                            /></span>
+                            statistics
+                          </a>
+                          <a
+                            class="dropdown-item menu_link pl-3 py-2"
+                            href="settings.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/settings.svg"
+                                alt="settings icon"
+                            /></span>
+                            Settings
+                          </a>
+                          <a
+                            class="
+                              dropdown-item
+                              menu_link
+                              dropdown-item-last
+                              pl-3
+                              py-2
+                            "
+                            href="index.html"
+                          >
+                            <span>
+                              <img
+                                class="menu_icon"
+                                src="./assets/icons/menuIcons/logout.svg"
+                                alt="logout icon"
+                            /></span>
+                            logout
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="container-fluid">
+        <div
+          class="
+            container container-width
+            d-flex
+            justify-content-lg-between
+            align-items-center
+            justify-content-center
+            p-0
+          "
+        >
+          <h1 class="section-title-start text-start std-title mt-5">
+            Edit listing
+          </h1>
+        </div>
+        <div class="container container-width mt-5 post_new">
+          <div class="row">
+            <!-- image upload and product description message box -->
+            <div class="col-lg-7 pr-lg-2 pl-0">
+              <!-- product image upload buttons -->
+              <div class="row">
+                <div class="col-md-3 m-lg-0 my-3">
+                  <div class="customized_upload">
+                    <label class="upload_btn" for="prod_img_1">
+                      <input
+                        type="file"
+                        name="prod_img_1"
+                        id="prod_img_1"
+                        accept="image/png, image/jpeg"
+                      />
+                      <img
+                        src="./assets/images/disneyengangmentring.jpg"
+                        class="img-fluid"
+                        alt="disney ring"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-3 m-lg-0 my-3">
+                  <div class="customized_upload">
+                    <label class="upload_btn" for="prod_img_2">
+                      <input
+                        type="file"
+                        name="prod_img_2"
+                        id="prod_img_2"
+                        accept="image/png, image/jpeg"
+                      />
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/squarediamondring.jpg"
+                        alt="diamond ring"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-3 m-lg-0 my-3">
+                  <div class="customized_upload">
+                    <label class="upload_btn" for="prod_img_3">
+                      <input
+                        type="file"
+                        name="prod_img_3"
+                        id="prod_img_3"
+                        accept="image/png, image/jpeg"
+                      />
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/rolexexplorer2.png"
+                        alt="rolex"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-3 m-lg-0 my-3">
+                  <div class="customized_upload">
+                    <label class="upload_btn" for="prod_img_4">
+                      <input
+                        type="file"
+                        name="prod_img_4"
+                        id="prod_img_4"
+                        accept="image/png, image/jpeg"
+                      />
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/rolexexplorer1.png"
+                        alt="rolex"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- product description -->
+              <div class="row mt-4">
+                <div class="col-md-12">
+                  <textarea
+                    name="prod_desc"
+                    class="text_design textarea-autosize"
+                    id=""
+                    rows="15"
+                    placeholder="Add description"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <!-- price/bid inputs -->
+            <!-- if radio general market was selected on 1st tab these inputs will be shown -->
+            <div class="col-lg-5 pl-lg-5">
+              <div class="row">
+                <div
+                  class="
+                    col-md-12
+                    p-lg-0
+                    d-lg-flex
+                    justify-content-between
+                    my-lg-0 my-4
+                  "
+                >
+                  <label class="label_bold pr-lg-3" for="listing_price_new"
+                    >Edit price
+                    <input
+                      type="number"
+                      name="listing_price_new"
+                      min="0"
+                      max=""
+                      class="form-control form_design"
+                      placeholder="$"
+                    />
+                    <i class="fixed_placeholder">USD</i></label
+                  >
+                  <label class="label_bold pl-lg-3" for="listing_disc"
+                    >discount
+                    <input
+                      type="number"
+                      name="listing_disc"
+                      min="0"
+                      max=""
+                      class="form-control form_design"
+                      placeholder="10"
+                    />
+                    <i class="fixed_placeholder">%</i></label
+                  >
+                </div>
+
+                <div class="col-md-12 p-lg-0 my-3">
+                  <label class="label_bold" for="listing_stock_new"
+                    >Add more Stock
+                    <input
+                      type="number"
+                      name="listing_stock_new"
+                      min="0"
+                      max=""
+                      class="form-control form_design"
+                      placeholder="1"
+                    />
+                  </label>
+                </div>
+                <!-- if radio auction market was selected on 1st tab these inputs will be shown -->
+                <div class="col-md-12 p-lg-0 d-none">
+                  <label class="label_bold" for="listing_minimum_bid"
+                    >Minimum Bid
+                    <input
+                      type="number"
+                      id="listing_minimum_bid"
+                      name="listing_minimum_bid"
+                      min="0"
+                      max=""
+                      class="form-control form_design"
+                      placeholder="$"
+                    />
+                    <i class="fixed_placeholder">USD</i></label
+                  >
+                </div>
+
+                <div class="col-md-12 p-lg-0 d-none">
+                  <label class="label_bold" for="listing_duration"
+                    >Listing Time
+                    <input
+                      type="number"
+                      id="listing_duration"
+                      name="listing_duration"
+                      min="3"
+                      max="7"
+                      class="form-control form_design"
+                      placeholder="3"
+                    />
+                    <i class="fixed_placeholder">Days</i>
+                  </label>
+                </div>
+                <!-- this is to be shown only if product posted was a ring -->
+                <div class="col-md-12 my-2 p-lg-0">
+                  <label class="label_bold" for="ring-size"
+                    >Select Ring size</label
+                  >
+                  <div class="row ring_form">
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="3" name="ring-size">
+                        <img src="./assets/images/3checked.png" alt="3" />
+                        <input type="checkbox" name="ring-size" value="3" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label
+                        class="image-checkbox"
+                        title="3.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/3.5checked.png" alt="3.5" />
+                        <input type="checkbox" name="ring-size" value="3.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="4" name="ring-size">
+                        <img src="./assets/images/4checked.png" alt="4" />
+                        <input type="checkbox" name="ring-size" value="4" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label
+                        class="image-checkbox"
+                        title="4.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/4.5checked.png" alt="4.5" />
+                        <input type="checkbox" name="ring-size" value="4.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="5" name="ring-size">
+                        <img src="./assets/images/5checked.png" alt="5" />
+                        <input type="checkbox" name="ring-size" value="5" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label
+                        class="image-checkbox"
+                        title="5.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/5.5checked.png" alt="5.5" />
+                        <input type="checkbox" name="ring-size" value="5.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="6" name="ring-size">
+                        <img src="./assets/images/6checked.png" alt="6" />
+                        <input type="checkbox" name="ring-size" value="6" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="6.5"
+                      name="ring-size"">
+                      <img src="./assets/images/6.5checked.png" alt="6.5" />
+                      <input
+                        type="checkbox"
+                        name="ring-size"
+                        value="6.5"
+                        checked="checked"
+                      />
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="7" name="ring-size">
+                        <img src="./assets/images/7checked.png" alt="7" />
+                        <input type="checkbox" name="ring-size" value="7" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label
+                        class="image-checkbox"
+                        title="7.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/7.5checked.png" />
+                        <input
+                          type="checkbox"
+                          name="ring-size"
+                          value="7.5"
+                          alt="7.5"
+                        />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="8" name="ring-size">
+                        <img src="./assets/images/8checked.png" alt="8" />
+                        <input type="checkbox" name="ring-size" value="8" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label
+                        class="image-checkbox"
+                        title="8.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/8.5checked.png" alt="8.5" />
+                        <input type="checkbox" name="ring-size" value="8.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="9" name="ring-size">
+                        <img src="./assets/images/9checked.png" alt="9" />
+                        <input type="checkbox" name="ring-size" value="9" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label
+                        class="image-checkbox"
+                        title="9.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/9.5checked.png" alt="9.5" />
+                        <input type="checkbox" name="ring-size" value="9.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="10" name="ring-size">
+                        <img src="./assets/images/10checked.png" alt="10" />
+                        <input type="checkbox" name="ring-size" value="10" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label
+                        class="image-checkbox"
+                        title="10.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/10.5checked.png" alt="10.5" />
+                        <input type="checkbox" name="ring-size" value="10.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="11" name="ring-size">
+                        <img src="./assets/images/11checked.png" alt="11" />
+                        <input type="checkbox" name="ring-size" value="11" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label
+                        class="image-checkbox"
+                        title="11.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/11.5checked.png" alt="11.5" />
+                        <input type="checkbox" name="ring-size" value="11.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="12" name="ring-size">
+                        <img src="./assets/images/12checked.png" alt="12" />
+                        <input type="checkbox" name="ring-size" value="12" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label
+                        class="image-checkbox"
+                        title="12.5"
+                        name="ring-size"
+                      >
+                        <img src="./assets/images/12.5checked.png" alt="12.5" />
+                        <input type="checkbox" name="ring-size" value="12.5" />
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="image-checkbox" title="13" name="ring-size">
+                        <img src="./assets/images/13checked.png" alt="13" />
+                        <input type="checkbox" name="ring-size" value="13" />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 p-lg-0">
+                  <label class="label_bold" for="listing_condition"
+                    >Choose Condition</label
+                  >
+                  <div
+                    class="container d-lg-flex justify-content-between p-lg-0"
+                  >
+                    <div class="customized_radio">
+                      <label for="new_listing">
+                        <input
+                          type="radio"
+                          name="listing_condition"
+                          value="new"
+                          id="new_listing"
+                        />
+                        <span class="newbtn"></span>
+                      </label>
+                    </div>
+                    <div class="customized_radio">
+                      <label for="used_listing">
+                        <input
+                          type="radio"
+                          name="listing_condition"
+                          value="used"
+                          id="used_listing"
+                        />
+                        <span class="usedbtn"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div id="range_slider" class="col-md-8">
+                  <label for="used_listing_condition" class=""></label>
+                  <input
+                    type="range"
+                    class="gc_custom_range"
+                    min="0"
+                    max="4"
+                    step="1"
+                    id="used_listing_condition"
+                  />
+                </div>
+                <div
+                  id="range_label"
+                  class="row justify-content-lg-between justify-content-around"
+                >
+                  <div class="col-2 px-lg-3 range_label">
+                    <span>Rough condition</span>
+                  </div>
+                  <div class="col-2 px-lg-3 range_label">
+                    <span class="range_label">Heavily Used</span>
+                  </div>
+                  <div class="col-2 px-lg-3 range_label">
+                    <span class="range_label">Moderately used</span>
+                  </div>
+                  <div class="col-2 px-lg-3 range_label">
+                    <span class="range_label">Slightly Used</span>
+                  </div>
+                  <div class="col-2 px-lg-3 range_label">
+                    <span class="range_label">Perfect Condition</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container container-width d-flex justify-content-center">
+            <a type="submit" class="btn btn_default mb-0 mt-4 px-5">Save</a>
+          </div>
+        </div>
+      </section>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/rating.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/newlisting.js"></script>
+      <script src="./js/main.js"></script>
+    </div>
+  </body>
+</html>

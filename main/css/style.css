@@ -328,7 +328,7 @@ input[type="number"] {
 
 #biddingModal .modal-content {
   border-radius: 50px;
-  padding: 1rem 1rem;
+  padding: 1rem 2.5rem;
   border: none;
   outline: none;
   width: 100%; }
@@ -390,7 +390,7 @@ input[type="number"] {
 
 #paymentModal .modal-content {
   border-radius: 50px;
-  padding: 1rem 1rem;
+  padding: 1rem 2.5rem;
   border: none; }
 
 #paymentModal .modal-header {
@@ -483,12 +483,12 @@ input[type="number"] {
     text-transform: uppercase; }
 
 #submitModal .modal-content {
-  border-radius: 50px;
-  padding: 2rem 0.8rem;
+  border-radius: 42px;
+  padding: 3rem 2rem;
   border: none; }
 
 #submitModal .modal-header {
-  padding: 10px;
+  padding: 0px;
   border: none;
   outline: none; }
   #submitModal .modal-header .close {
@@ -1411,7 +1411,7 @@ input[type="text"] {
     text-decoration: none;
     outline: none; }
   .listing_container .card-flyer {
-    border-radius: 48px;
+    border-radius: 35px;
     background: #f6f6f6;
     overflow: hidden;
     margin-top: 2rem;
@@ -1420,7 +1420,7 @@ input[type="text"] {
     padding-bottom: 16px; }
     .listing_container .card-flyer .listing-image-box {
       position: relative !important;
-      border-radius: 48px;
+      border-radius: 35px;
       max-height: 250px;
       max-width: 313px;
       overflow: hidden;
@@ -1482,36 +1482,39 @@ input[type="text"] {
         .listing_container .card-flyer .listing-image-box .sold-label img {
           width: 40px;
           height: 80px; }
-    .listing_container .card-flyer .listing_name {
-      font-size: 1rem;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      padding: 0 1em;
-      white-space: nowrap;
-      color: #002f33;
-      margin: 0; }
-    .listing_container .card-flyer .listing_price {
-      margin: 0;
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: #002f33;
-      padding: 0 1em; }
-    .listing_container .card-flyer .order_success {
-      margin-top: 0.2rem;
-      margin-bottom: 0;
-      font-size: 1rem; }
-      .listing_container .card-flyer .order_success .order_badge_img {
-        width: 16px;
-        padding-bottom: 0.3rem; }
-    .listing_container .card-flyer .order_cancel {
-      margin-top: 0.2rem;
-      margin-bottom: 0;
-      font-size: 1rem;
-      color: #ff7272; }
-      .listing_container .card-flyer .order_cancel .order_badge_cancel_img {
-        width: 16px;
-        padding-bottom: 0.3rem; }
+    .listing_container .card-flyer .text-box {
+      padding: 0.2rem 1rem; }
+      .listing_container .card-flyer .text-box .listing_name {
+        font-size: 1rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 0 1em;
+        white-space: nowrap;
+        color: #002f33;
+        margin: 0; }
+      .listing_container .card-flyer .text-box .listing_price {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: #002f33;
+        padding: 0 1em; }
+      .listing_container .card-flyer .text-box .order_success {
+        margin-top: 0.2rem;
+        margin-bottom: 0;
+        font-size: 1rem; }
+        .listing_container .card-flyer .text-box .order_success .order_badge_img {
+          width: 16px;
+          padding-bottom: 0.3rem; }
+      .listing_container .card-flyer .text-box .order_cancel {
+        margin-top: 0.2rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        color: #ff7272; }
+        .listing_container .card-flyer .text-box .order_cancel .order_badge_cancel_img {
+          width: 16px;
+          padding-bottom: 0.3rem; }
     .listing_container .card-flyer .listing_rating_container {
+      padding-left: 15px;
       max-height: 50px;
       max-width: 280px; }
       .listing_container .card-flyer .listing_rating_container .listing_rating {
@@ -1601,11 +1604,15 @@ input[type="text"] {
 .table td {
   background-color: #f6f6f6; }
 
+.table th,
+.table td {
+  border-top: none; }
+
 .table_product_container {
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
   padding: 0;
-  width: 600px; }
+  width: 580px; }
   .table_product_container .card-flyer {
     padding: 0; }
     .table_product_container .card-flyer .listing_rating_container {
@@ -1751,7 +1758,9 @@ input[type="text"] {
 
 .order_table .product_status {
   width: 250px;
-  margin-top: 0.8px; }
+  margin-top: 0.8px;
+  padding-right: 90px;
+  padding-top: 20px; }
   .order_table .product_status .order_price {
     margin-top: 12px;
     margin-bottom: 0;
@@ -1775,7 +1784,8 @@ input[type="text"] {
 .order_table .order_date {
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
-  padding-right: 1.56rem; }
+  padding-right: 1.56rem;
+  padding-left: 1.8rem; }
   .order_table .order_date .date {
     color: #002f33;
     font-weight: 700;
@@ -2164,7 +2174,10 @@ input[type="text"] {
     max-width: 10%; }
   .ring_form .col-md-2 {
     flex: 0 0 16.66667%;
-    max-width: 13.66667%; } }
+    max-width: 13.66667%; }
+  .ring_form .col-md-1 {
+    flex: 0 0 8.6%;
+    max-width: 8.6%; } }
 
 .ring_form .image-checkbox {
   opacity: 0.5;
@@ -2530,47 +2543,6 @@ input[type="text"] {
   border-radius: 20px;
   margin-bottom: 0 !important; }
 
-.custom_label {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  appearance: button;
-  background: white;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #002f33;
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  margin-top: 4rem;
-  padding: 8px;
-  width: 182px;
-  height: 39px;
-  text-align: center;
-  transition: all 0.7s ease-in-out;
-  cursor: pointer; }
-  .custom_label input[type="radio"] {
-    -webkit-appearance: none;
-    border: none;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    padding: 0 1.87rem;
-    transition: all 0.54s ease-in-out; }
-  .custom_label input[type="radio"]:checked {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../assets/icons/radiocheckicon.svg);
-    background-color: #3bc0cb; }
-
-.radiobackground {
-  background-color: #3bc0cb; }
-
-.span1 {
-  color: #002f33; }
-
-.span2 {
-  color: white; }
-
 .customized_radio {
   display: flex;
   justify-content: center;
@@ -2604,6 +2576,14 @@ input[type="text"] {
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out; }
 
+.customized_radio label > input[type="radio"] ~ .market_uncheck {
+  cursor: pointer;
+  width: 195px;
+  height: 55px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out; }
+
 .newbtn {
   background-image: url(../assets/images/newbtn.png); }
 
@@ -2627,6 +2607,9 @@ input[type="text"] {
 
 .chains_check_img {
   background-image: url("../assets/icons/chainsunchecked.svg"); }
+
+.market_uncheck {
+  background-image: url("../assets/images/marketunchecked.png"); }
 
 .customized_radio label > input[type="radio"]:checked ~ span.ring_check_img {
   background-image: url("../assets/icons/ringschecked.svg"); }
@@ -2667,6 +2650,9 @@ label
   justify-content: center;
   align-items: center; }
 
+.customized_radio label > input[type="radio"]:checked ~ span.market_uncheck {
+  background-image: url("../assets/images/marketchecked.png"); }
+
 .customized_upload label > input[type="file"] {
   visibility: hidden;
   position: absolute;
@@ -2688,8 +2674,8 @@ label
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  width: 184px;
-  height: 184px;
+  width: 195px;
+  height: 170px;
   background-color: #f6f6f6;
   margin-bottom: 0;
   cursor: pointer; }
@@ -2699,6 +2685,10 @@ label
     font-size: 16px;
     font-style: normal;
     margin-top: 40px; }
+  .upload_btn img {
+    width: 100%;
+    height: 170px;
+    border-radius: 30px; }
 
 .text_design {
   width: 100%;

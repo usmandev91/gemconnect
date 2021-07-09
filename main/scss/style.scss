@@ -378,7 +378,7 @@ input[type="number"] {
 #biddingModal {
   .modal-content {
     border-radius: 50px;
-    padding: 1rem 1rem;
+    padding: 1rem 2.5rem;
     border: none;
     outline: none;
     width: 100%;
@@ -449,7 +449,7 @@ input[type="number"] {
 #paymentModal {
   .modal-content {
     border-radius: 50px;
-    padding: 1rem 1rem;
+    padding: 1rem 2.5rem;
     border: none;
   }
   .modal-header {
@@ -565,12 +565,12 @@ input[type="number"] {
 // submit Modal
 #submitModal {
   .modal-content {
-    border-radius: 50px;
-    padding: 2rem 0.8rem;
+    border-radius: 42px;
+    padding: 3rem 2rem;
     border: none;
   }
   .modal-header {
-    padding: 10px;
+    padding: 0px;
     border: none;
     outline: none;
     .close {
@@ -1634,7 +1634,7 @@ input[type="text"] {
     outline: none;
   }
   .card-flyer {
-    border-radius: 48px;
+    border-radius: 35px;
     background: #f6f6f6;
     overflow: hidden;
     margin-top: 2rem;
@@ -1643,7 +1643,7 @@ input[type="text"] {
     padding-bottom: 16px;
     .listing-image-box {
       position: relative !important;
-      border-radius: 48px;
+      border-radius: 35px;
       max-height: 250px;
       max-width: 313px;
       overflow: hidden;
@@ -1718,42 +1718,46 @@ input[type="text"] {
         }
       }
     }
-    .listing_name {
-      font-size: 1rem;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      padding: 0 1em;
-      white-space: nowrap;
-      color: $text-color;
-      margin: 0;
-    }
-    .listing_price {
-      margin: 0;
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: $text-color;
-      padding: 0 1em;
-    }
-    .order_success {
-      margin-top: 0.2rem;
-      margin-bottom: 0;
-      font-size: 1rem;
-      .order_badge_img {
-        width: 16px;
-        padding-bottom: 0.3rem;
+    .text-box {
+      padding: 0.2rem 1rem;
+      .listing_name {
+        font-size: 1rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 0 1em;
+        white-space: nowrap;
+        color: $text-color;
+        margin: 0;
       }
-    }
-    .order_cancel {
-      margin-top: 0.2rem;
-      margin-bottom: 0;
-      font-size: 1rem;
-      color: $order_cancel;
-      .order_badge_cancel_img {
-        width: 16px;
-        padding-bottom: 0.3rem;
+      .listing_price {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: $text-color;
+        padding: 0 1em;
+      }
+      .order_success {
+        margin-top: 0.2rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        .order_badge_img {
+          width: 16px;
+          padding-bottom: 0.3rem;
+        }
+      }
+      .order_cancel {
+        margin-top: 0.2rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        color: $order_cancel;
+        .order_badge_cancel_img {
+          width: 16px;
+          padding-bottom: 0.3rem;
+        }
       }
     }
     .listing_rating_container {
+      padding-left: 15px;
       max-height: 50px;
       max-width: 280px;
       .listing_rating {
@@ -1868,12 +1872,15 @@ input[type="text"] {
 .table td {
   background-color: $cards-bg-color;
 }
-
+.table th,
+.table td {
+  border-top: none;
+}
 .table_product_container {
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
   padding: 0;
-  width: 600px;
+  width: 580px;
   .card-flyer {
     padding: 0;
     .listing_rating_container {
@@ -2037,6 +2044,8 @@ input[type="text"] {
   .product_status {
     width: 250px;
     margin-top: 0.8px;
+    padding-right: 90px;
+    padding-top: 20px;
     .order_price {
       margin-top: 12px;
       margin-bottom: 0;
@@ -2065,6 +2074,8 @@ input[type="text"] {
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
     padding-right: 1.56rem;
+    padding-left: 1.8rem;
+
     .date {
       color: #002f33;
       font-weight: 700;
@@ -2537,6 +2548,10 @@ input[type="text"] {
       flex: 0 0 16.66667%;
       max-width: 13.66667%;
     }
+    .col-md-1 {
+      flex: 0 0 8.6%;
+      max-width: 8.6%;
+    }
   }
   .image-checkbox {
     opacity: 0.5;
@@ -2982,49 +2997,7 @@ input[type="text"] {
     margin-bottom: 0 !important;
   }
 }
-.custom_label {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  appearance: button;
-  background: white;
-  font-size: 1rem;
-  font-weight: bold;
-  color: $text-color;
-  box-shadow: $search_shadow;
-  border-radius: 15px;
-  margin-top: 4rem;
-  padding: 8px;
-  width: 182px;
-  height: 39px;
-  text-align: center;
-  transition: all 0.7s ease-in-out;
-  cursor: pointer;
-  input[type="radio"] {
-    -webkit-appearance: none;
-    border: none;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    padding: 0 1.87rem;
-    transition: all 0.54s ease-in-out;
-  }
-  input[type="radio"]:checked {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../assets/icons/radiocheckicon.svg);
-    background-color: #3bc0cb;
-  }
-}
-.radiobackground {
-  background-color: $theme_color;
-}
-.span1 {
-  color: #002f33;
-}
-.span2 {
-  color: white;
-}
+
 .customized_radio {
   display: flex;
   justify-content: center;
@@ -3059,6 +3032,14 @@ input[type="text"] {
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out;
 }
+.customized_radio label > input[type="radio"] ~ .market_uncheck {
+  cursor: pointer;
+  width: 195px;
+  height: 55px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
 .newbtn {
   background-image: url(../assets/images/newbtn.png);
 }
@@ -3085,7 +3066,9 @@ input[type="text"] {
 .chains_check_img {
   background-image: url("../assets/icons/chainsunchecked.svg");
 }
-
+.market_uncheck {
+  background-image: url("../assets/images/marketunchecked.png");
+}
 .customized_radio label > input[type="radio"]:checked ~ span.ring_check_img {
   background-image: url("../assets/icons/ringschecked.svg");
 }
@@ -3125,7 +3108,9 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
 }
-
+.customized_radio label > input[type="radio"]:checked ~ span.market_uncheck {
+  background-image: url("../assets/images/marketchecked.png");
+}
 .customized_upload label > input[type="file"] {
   visibility: hidden;
   position: absolute;
@@ -3147,8 +3132,8 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  width: 184px;
-  height: 184px;
+  width: 195px;
+  height: 170px;
   background-color: $cards-bg-color;
   margin-bottom: 0;
   cursor: pointer;
@@ -3158,6 +3143,11 @@ input[type="text"] {
     font-size: 16px;
     font-style: normal;
     margin-top: 40px;
+  }
+  img {
+    width: 100%;
+    height: 170px;
+    border-radius: 30px;
   }
 }
 .text_design {
