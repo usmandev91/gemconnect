@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GemConnect | My Profile</title>
+    <title>GemConnect | Settings</title>
     <link rel="stylesheet" href="./jquery.raty.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -12,9 +11,9 @@
   <body>
     <div class="container-fluid-xl container_outer">
       <!-- default navbar -->
-      <header class="container-fluid sticky-top default_nav py-2">
+      <header class="container-fluid sticky-top default_nav pt-2 px-0">
         <nav class="navbar navbar-expand-lg navbar-expand-xl">
-          <a class="navbar-brand ml-lg-4 pl-lg-2" href="index.html">
+          <a class="navbar-brand pl-lg-5" href="index.html">
             <img
               class="gc_nav_logo"
               src="./assets/icons/gc_nav_logo.svg"
@@ -31,255 +30,232 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul
-                class="
-                  navbar-nav
-                  justify-content-xl-evenly justify-content-center
-                  align-items-center
-                "
-              >
-                <li class="nav-item dropdown ml-lg-4">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="row nav_row pl-lg-2">
+              <div class="col-lg-1 col-md-12 d-flex justify-content-center">
+                <a
+                  class="nav-link navbtn"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Browse
+                </a>
+                <div
+                  class="dropdown-menu browse_dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
                   <a
-                    class="nav-link navbtn pr-xl-3"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Browse
-                  </a>
-                  <div
-                    class="dropdown-menu browse_dropdown"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <a
-                      class="
-                        dropdown-item
-                        browse_item
-                        dropdown-item-1
-                        pl-3
-                        py-2
-                      "
-                      href="rings.html"
-                      >General market
-                      <img
-                        class="pointer"
-                        src="./assets/icons/menuIcons/pointer.svg"
-                        alt="menu pointer"
-                    /></a>
-                    <a
-                      class="
-                        dropdown-item
-                        browse_item
-                        pl-3
-                        py-2
-                        dropdown-item-last
-                      "
-                      href="earings.html"
-                      >Auction
-                      <img
-                        class="pointer"
-                        src="./assets/icons/menuIcons/pointer.svg"
-                        alt="menu pointer"
-                    /></a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link navbtn mx-xl-4" href="#">Sell</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link navbtn mx-xl-4" href="#">blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link navbtn mx-xl-4" href="#">About</a>
-                </li>
-              </ul>
-              <div
-                class="
-                  container-sm
-                  form_container
-                  p-0
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <div class="row form_row">
-                  <div class="col-md-12 p-0">
-                    <form
-                      class="
-                        navbar-form
-                        form-inline
-                        d-flex
-                        justify-content-center
-                      "
-                    >
-                      <input
-                        type="text"
-                        id="search"
-                        class="form-control-lg nav-search-bar"
-                        placeholder="Search..."
-                      />
-                      <button type="submit" class="btn inline-search-btn">
-                        <img
-                          class="inline-search-btn-img"
-                          src="./assets/icons/search.svg"
-                          alt=""
-                        />
-                      </button>
-                    </form>
-                  </div>
+                    class="dropdown-item browse_item dropdown-item-1 pl-3 py-2"
+                    href="./generalmarket.html"
+                    >General market
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                  <a
+                    class="
+                      dropdown-item
+                      browse_item
+                      pl-3
+                      py-2
+                      dropdown-item-last
+                    "
+                    href="./auctionmarket.html"
+                    >Auction
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
                 </div>
               </div>
+              <div class="col-lg-1 d-flex justify-content-center col-md-12">
+                <a class="nav-link navbtn" href="#">Sell</a>
+              </div>
+              <div class="col-lg-1 d-flex justify-content-center">
+                <a class="nav-link navbtn" href="#">blog</a>
+              </div>
+              <div class="col-lg-1 col-md-12 d-flex justify-content-center">
+                <a class="nav-link navbtn" href="#">About</a>
+              </div>
+              <div class="col-lg-5 px-lg-5 col-md-12">
+                <label class="nav_search_label" for="search_bar">
+                  <input
+                    type="text"
+                    id="nav_search_bar"
+                    name="search_bar"
+                    class="form-control nav-search-bar"
+                    placeholder="Search..."
+                  />
+                  <button
+                    type="submit"
+                    class="btn inline-search-btn"
+                    title="search button"
+                  >
+                    <img
+                      class="inline-search-btn-img"
+                      src="./assets/icons/search.svg"
+                      alt=""
+                    />
+                  </button>
+                </label>
+              </div>
               <!-- main menu in header/user logged in menu -->
-              <div
-                class="
-                  container-sm
-                  menu-container
-                  d-flex
-                  justify-content-lg-start justify-content-center
-                  align-items-center
-                "
-              >
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="container-sm d-flex pt-1">
-                      <a href="cart.html" class="btn mr-5 main_menu_btn pb-1">
-                        <img class="carty" src="./assets/icons/cart.svg" /> Cart
-                        <span class="badge carty_text" id="">2</span>
-                      </a>
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle main_menu_btn mr-5"
-                          type="button"
-                          id="dropdownMenu"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
+              <div class="col-lg-2 col-md-12 pl-lg-0">
+                <div class="container d-flex">
+                  <div>
+                    <a
+                      href="cart.html"
+                      class="
+                        btn
+                        main_menu_btn
+                        pb-1
+                        d-flex
+                        justify-content-evenly
+                      "
+                      title="cart button"
+                    >
+                      <img
+                        class="carty mr-1"
+                        src="./assets/icons/cart.svg"
+                        alt="cart"
+                      />
+                      Cart
+                      <span class="badge carty_text" id="">2</span>
+                    </a>
+                  </div>
+                  <div class="dropdown pr-5">
+                    <button
+                      class="btn dropdown-toggle main_menu_btn"
+                      type="button"
+                      id="dropdownMenu"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      title="drop down button"
+                    >
+                      <img
+                        src="./assets/icons/menuIcons/Menu Icon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div
+                      class="dropdown-menu dropdown-menu-right mainmenu"
+                      aria-labelledby="dropdownMenu"
+                    >
+                      <a
+                        class="
+                          dropdown-item
+                          menu_link
+                          dropdown-item-1
+                          pl-3
+                          py-2
+                        "
+                        href="myprofile.html"
+                      >
+                        <span>
                           <img
-                            src="./assets/icons/menuIcons/Menu Icon.svg"
-                            alt=""
-                          />
-                        </button>
-                        <div
-                          class="dropdown-menu dropdown-menu-right mainmenu"
-                          aria-labelledby="dropdownMenu"
-                        >
-                          <a
-                            class="
-                              dropdown-item
-                              menu_link
-                              dropdown-item-1
-                              pl-3
-                              py-2
-                            "
-                            href="myprofile.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/profile.svg"
-                                alt="profile icon"
-                            /></span>
-                            Profile
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="messages.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/mail.svg"
-                                alt="mail icon"
-                            /></span>
-                            messages
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="wishlist.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/wishlist.svg"
-                                alt="wishlist icon"
-                            /></span>
-                            wishlist
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="orders.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/order.svg"
-                                alt="orders icon"
-                            /></span>
-                            orders
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="yourlistings.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/list.svg"
-                                alt="list icon"
-                            /></span>
-                            your listings
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="statistics.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/statistics.svg"
-                                alt="stats icon"
-                            /></span>
-                            statistics
-                          </a>
-                          <a
-                            class="dropdown-item menu_link pl-3 py-2"
-                            href="settings.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/settings.svg"
-                                alt="settings icon"
-                            /></span>
-                            Settings
-                          </a>
-                          <a
-                            class="
-                              dropdown-item
-                              menu_link
-                              dropdown-item-last
-                              pl-3
-                              py-2
-                            "
-                            href="index.html"
-                          >
-                            <span>
-                              <img
-                                class="menu_icon"
-                                src="./assets/icons/menuIcons/logout.svg"
-                                alt="logout icon"
-                            /></span>
-                            logout
-                          </a>
-                        </div>
-                      </div>
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/profile.svg"
+                            alt="profile icon"
+                        /></span>
+                        Profile
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="messages.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/mail.svg"
+                            alt="mail icon"
+                        /></span>
+                        messages
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="wishlist.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/wishlist.svg"
+                            alt="wishlist icon"
+                        /></span>
+                        wishlist
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="orders.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/order.svg"
+                            alt="orders icon"
+                        /></span>
+                        orders
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="yourlistings.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/list.svg"
+                            alt="list icon"
+                        /></span>
+                        your listings
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="statistics.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/statistics.svg"
+                            alt="stats icon"
+                        /></span>
+                        statistics
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="settings.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/settings.svg"
+                            alt="settings icon"
+                        /></span>
+                        Settings
+                      </a>
+                      <a
+                        class="
+                          dropdown-item
+                          menu_link
+                          dropdown-item-last
+                          pl-3
+                          py-2
+                        "
+                        href="index.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/logout.svg"
+                            alt="logout icon"
+                        /></span>
+                        logout
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -302,142 +278,371 @@
           "
         >
           <h2 class="section-title-start text-start wishlist-title">
-            Wishlist
+            settings
           </h2>
-          <div
-            class="
-              d-none
-              gc-custom-select
-              d-lg-flex
-              justify-content-center
-              align-items-center
-              mr-lg-5
-              mb-lg-2
-            "
-          >
-            <label class="select_label" for="custom-select"
-              >Sort by
-              <span class="px-2"
-                ><img src="./assets/icons/carret.svg" alt="carret icon" /></span
-            ></label>
-            <select class="rev-select-box custom-select">
-              <option value="0">Newest listings</option>
-              <option value="1">Low to high</option>
-              <option value="2">High to low</option>
-              <option value="3">Top Rated</option>
-            </select>
+        </div>
+        <div class="container-fluid container-width mt-3 settings">
+          <div class="row">
+            <!-- tab buttons -->
+            <div class="col-md-2 p-0">
+              <ul
+                class="
+                  nav nav-tabs
+                  d-flex
+                  flex-column
+                  justify-content-between
+                  settings_tab
+                "
+                role="tablist"
+              >
+                <li class="tab-active" role="presentation">
+                  <!-- 1st button -->
+                  <a data-toggle="tab" role="tab" href="#profile">
+                    <img
+                      class="mb-1"
+                      src="./assets/icons/userpofileblack.svg"
+                      alt="user icon"
+                    />
+                    Profile
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#address" role="tab" data-toggle="tab">
+                    <img src="./assets/icons/home.svg" alt="Address icon" />
+                    Shipping Address
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a
+                    href="#security"
+                    aria-labelledby="tab-navigator"
+                    title="tab-navigator"
+                    data-toggle="tab"
+                  >
+                    <img
+                      src="./assets/icons/security.svg"
+                      alt="security icon"
+                    />
+                    Security
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a
+                    href="#payment"
+                    aria-labelledby="tab-navigator"
+                    role="tab"
+                    data-toggle="tab"
+                  >
+                    <img
+                      src="./assets/icons/credicardpayment.svg"
+                      alt="credicard icon"
+                    />
+                    Payment Method
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- tab content -->
+            <div class="col-md-1 p-0"></div>
+            <div class="col-md-9">
+              <div class="tab-content">
+                <!-- tab 1 -->
+                <div
+                  id="profile"
+                  class="tab-pane fade in active"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="row">
+                    <div class="col-md-7">
+                      <div>
+                        <label for="user_name" class="label_soft"
+                          ><span class="label_text">user name</span>
+                          <input
+                            type="text"
+                            name="user_name"
+                            class="form-control form_design"
+                            placeholder="handmade jewellery"
+                          />
+                          <i class="fixed_placeholder" aria-placeholder="fixed placeholder">
+                            <span class="px-1"
+                              ><img
+                                class="pb-1"
+                                src="./assets/icons/editicon.svg"
+                                alt="editicon"
+                            /></span>
+                            edit</i
+                          ></label
+                        >
+                      </div>
+                      <div>
+                        <label for="user_desc" class="label_soft"
+                          ><span class="label_text">description</span></label
+                        >
+                        <textarea
+                          name="user_desc"
+                          class="text_design textarea-autosize"
+                          id=""
+                          rows="15"
+                          placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate eum iusto porro maiores at vel deleniti optio dolores ipsum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate eum iusto porro maiores at vel deleniti optio dolores ipsum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate eum iusto porro maiores at vel deleniti optio dolores ipsum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate eum iusto porro maiores at vel deleniti optio dolores ipsum."
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        col-md-5
+                        d-flex
+                        justify-content-lg-between justify-content-center
+                        align-items-center
+                        mt-lg-0 mt-5
+                        flex-column
+                      "
+                    >
+                      <div>
+                        <span class="label_text pl-0"
+                          >change profile picture</span
+                        >
+                      </div>
+                      <div class="user_img_box">
+                        <img
+                          class="user_pic img-fluid img-circle"
+                          src="./assets/images/seller/handmade.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="customized_upload">
+                        <label class="upload_btn" for="prod_img_1">
+                          <input
+                            type="file"
+                            name="prod_img_1"
+                            id="prod_img_1"
+                            accept="image/png, image/jpeg"
+                          />
+                          <span class="upload_btn_img"></span>
+                          <i>upload image</i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab 2 -->
+                <div
+                  id="address"
+                  class="tab-pane fade"
+                  role="tabpanel"
+                  aria-labelledby="address-tab"
+                >
+                  <div class="col-md-12 px-lg-3 p-0">
+                    <div class="container mb-5 pl-lg-0">
+                      <span class="label_text p-0">Your Shipping Address</span>
+                    </div>
+                    <div class="container add_container py-4 px-lg-5">
+                      <!-- 1st input user house / appartment number -->
+                      <div>
+                        <label
+                          for="user_address"
+                          class="
+                            d-flex
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <span class="label_soft">House/Apartment/suite:</span>
+                          <input
+                            type="text"
+                            name="user_address"
+                            class="form-control form_design"
+                            placeholder="XYZ"
+                        /></label>
+                      </div>
+                      <!-- 2nd input user street -->
+                      <div>
+                        <label
+                          for="user_street"
+                          class="
+                            d-flex
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <span class="label_soft">Street:</span>
+                          <input
+                            type="text"
+                            name="user_street"
+                            class="form-control form_design"
+                            placeholder="4542  Sherman Street"
+                        /></label>
+                      </div>
+                      <!-- 3rd input user city -->
+                      <div>
+                        <label
+                          for="user_city"
+                          class="
+                            d-flex
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <span class="label_soft">City:</span>
+                          <input
+                            type="text"
+                            name="user_city"
+                            class="form-control form_design"
+                            placeholder="Hiawatha"
+                        /></label>
+                      </div>
+                      <!-- 4th input user state -->
+                      <div>
+                        <label
+                          for="user_state"
+                          class="
+                            d-flex
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <span class="label_soft">State:</span>
+                          <input
+                            type="text"
+                            name="user_state"
+                            class="form-control form_design"
+                            placeholder="Kansas"
+                        /></label>
+                      </div>
+                      <!-- 5th input user zip code -->
+                      <div>
+                        <label
+                          for="user_zip_code"
+                          class="
+                            d-flex
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <span class="label_soft">Zip Code:</span>
+                          <input
+                            type="number"
+                            name="user_zip_code"
+                            class="form-control form_design"
+                            placeholder="66434"
+                        /></label>
+                      </div>
+                    </div>
+                    <div class="container mt-5 pl-lg-0">
+                      <span class="label_text_dec"
+                        >Add new Shipping Address<img
+                          class="pl-1 pb-1"
+                          src="./assets/icons/addnewicon.svg"
+                          alt="+ icon"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab 3 -->
+                <div id="security" class="tab-pane fade role="tabpanel"
+                aria-labelledby="security-tab"">
+                <div class="col-md-5">
+                  <div>
+                    <label
+                      class="label_soft"
+                      for="user_email"
+                      class="label_soft"
+                    >
+                      <span class="label_text">Your email address</span>
+                      <input
+                        type="email"
+                        class="form-control form_design"
+                        name="user_email"
+                        placeholder="user1@gmail.com"
+                      />
+                    </label>
+                  </div>
+                  <div>
+                    <label class="label_soft" for="user_password">
+                      <div class="text_container">
+                        <span class="label_text">Password</span>
+                        <span class="label_text_dec">Change Password</span>
+                      </div>
+                      <input
+                        type="password"
+                        class="form-control form_design"
+                        name="user_password"
+                        placeholder=". . . . . ."
+                      />
+                    </label>
+                  </div>
+                  <div>
+                    <label class="label_soft" for="user_phone">
+                      <div class="text_container">
+                        <span class="label_text">Phone Number</span>
+                      </div>
+                      <input
+                        type="tel"
+                        id=""
+                        class="form-control form_design"
+                        name="user_phone"
+                        pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="+1 785-851-7483"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- tab 4 -->
+              <div
+                id="payment"
+                class="tab-pane fade"
+                role="tabpanel"
+                aria-labelledby="payment-tab"
+              >
+                <div
+                  class="col-md-6 d-flex justify-content-between m-lg-0 my-5"
+                >
+                  <span class="label_text p-0">Added Payment Method</span>
+                  <a href="#" class="label_text_dec pr-2"
+                    >add new card
+                    <img src="./assets/icons/addnewicon.svg" alt="+ icon"
+                  /></a>
+                </div>
+                <div class="col-md-4">
+                  <div class="container-sm cred_card">
+                    <div class="img-box">
+                      <img src="./assets/icons/visaicon.svg" alt="visa logo" />
+                    </div>
+                    <div>
+                      <span class="user_cred_nmbr"
+                        >VISA **** **** **** 2391</span
+                      >
+                    </div>
+                    <div class="kill_card">
+                      <a href="#">remove</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- select menu for mobile -->
         <div
           class="
-            container-sm
-            d-lg-none d-md-flex
+            container
+            d-flex
             justify-content-center
             align-items-center
-            p-2
+            mt-5
           "
         >
-          <div
-            class="
-              gc-custom-select
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-          >
-            <label class="select_label" for="custom-select"
-              >Sort by
-              <span class="px-2"
-                ><img src="./assets/icons/carret.svg" alt="" /></span
-            ></label>
-            <select class="rev-select-box custom-select">
-              <option value="0">Newest listings</option>
-              <option value="1">Low to high</option>
-              <option value="2">High to low</option>
-              <option value="3">Top Rated</option>
-            </select>
-          </div>
+          <button type="submit" role="form-submit" class="btn btn_default">
+            Save changes
+          </button>
         </div>
       </section>
-      <!-- items container and grid layout -->
 
-      <!-- footer -->
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md mb-4 mb-md-0">
-              <h3>Contact us</h3>
-              <ul class="list-unstyled nav-links">
-                <li>
-                  <p>+44 345 687 902</p>
-                </li>
-                <li><a href="#">GemConnectgmail.com</a></li>
-                <li><a href="#">find a store</a></li>
-              </ul>
-            </div>
-            <div class="col-md mb-4 mb-md-0">
-              <h3>About us</h3>
-              <ul class="list-unstyled nav-links">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Best sellers</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div class="col-md mb-4 mb-md-0">
-              <h3>Legal</h3>
-              <ul class="list-unstyled nav-links">
-                <li><a href="#">Terms &amp; Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h3>Subscribe</h3>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur</p>
-              <form action="#" class="subscribe">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter your e-mail"
-                />
-                <input
-                  type="submit"
-                  class="btn btn_default"
-                  value="Subscribe"
-                />
-              </form>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-12">
-              <div class="border-top my-5"></div>
-            </div>
-            <div class="col-md-6">
-              <p><small>© 2021 All Rights Reserved.</small></p>
-            </div>
-            <div class="col-md-6 text-md-right">
-              <ul class="social list-unstyled">
-                <li>
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
       <script src="./js/jquery.min.js"></script>
       <script src="./js/rating.js"></script>
       <script src="./js/popper.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
       <script src="./js/main.js"></script>
-      <script src="./js/userprofile.js"></script>
     </div>
   </body>
 </html>

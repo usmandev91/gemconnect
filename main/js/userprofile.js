@@ -36,6 +36,7 @@ $(".listing_rating").raty({
 
 // active for general market tab
 $('.nav-tabs a[href="#gm"]').tab("show");
+
 // table into card on mobile
 if (!String.prototype.format) {
   String.prototype.format = function () {

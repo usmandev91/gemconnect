@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(this).toggleClass("active");
   });
 });
-
+// for switching modals
 $(function () {
   $("[data-bm-close][data-bm-open]").on("click", function () {
     var $this = $(this);
@@ -25,7 +25,7 @@ $(function () {
       .modal("hide");
   });
 });
-// Change the button text & add active class
+// Change the button text & add active class on input radio
 $(".jRadioDropdown").change(function () {
   var dropdown = $(this).closest(".dropdown");
   var thislabel = $(this).closest("label");
@@ -201,7 +201,7 @@ $(".custom_label").click(function () {
 
 // active for registration
 $('.nav-tabs a[href="#signup"]').tab("show");
-
+$('.nav-tabs a[href="#profile"]').tab("show");
 //seller carousel
 $(".seller_carousel").owlCarousel({
   items: 5,
@@ -299,13 +299,12 @@ $(".deal_carousel").owlCarousel({
 // Ring carousel
 $(".ring_carousel").owlCarousel({
   items: 4,
-  nav: true,
-  dots: false,
+  nav: false,
+  dots: true,
   touchDrag: true,
   lazyLoad: true,
   loop: false,
   navRewind: false,
-  navText: ["<img src='prev.svg'>", "<img src='next.svg'>"],
   responsiveClass: true,
   responsive: {
     0: {
