@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f6f6f6;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.667" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="0" stop-color="#ff5151"/>
+      <stop offset="1" stop-color="#ffb74a"/>
+    </linearGradient>
+  </defs>
+  <g id="Hot_selling_Icon" data-name="Hot selling Icon" transform="translate(22304 11243)">
+    <g id="Group_12784" data-name="Group 12784">
+      <rect id="Rectangle_3237" data-name="Rectangle 3237" class="cls-1" width="32" height="32" rx="10" transform="translate(-22304 -11243)"/>
+      <path id="fire" class="cls-2" d="M7.873,20.852c-4.272-2.408-5.4-4.687-4.754-7.8.475-2.3,2.029-4.169,2.178-6.462A7.126,7.126,0,0,1,6.314,9.932,16.535,16.535,0,0,0,9.9,0s5.5,3.232,5.862,8.114A4.862,4.862,0,0,0,16,4.474c1.421,1.036,9.736,10.232-1.127,16.378a9.66,9.66,0,0,0-3.019-11.82c.237,1.066-.178,5.04-1.747,6.785.434-2.917-.414-4.152-.414-4.152a9.4,9.4,0,0,1-1.421,3.285c-1.032,1.508-1.746,3.107-.4,5.9Z" transform="translate(-22299.668 -11237.426)"/>
+    </g>
+  </g>
+</svg>

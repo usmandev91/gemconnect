@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemConnects | New Post</title>
+    <link rel="stylesheet" href="./jquery.raty.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid-xl container_outer">
+      <!-- default navbar -->
+      <header class="container-fluid sticky-top default_nav pt-2 px-0">
+        <nav class="navbar navbar-expand-lg navbar-expand-xl">
+          <a class="navbar-brand pl-lg-5" href="index.html">
+            <img
+              class="gc_nav_logo"
+              src="./assets/icons/gc_nav_logo.svg"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="row nav_row pl-lg-2">
+              <div class="col-lg-1 col-md-12 d-flex justify-content-center">
+                <a
+                  class="nav-link navbtn"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Browse
+                </a>
+                <div
+                  class="dropdown-menu browse_dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a
+                    class="dropdown-item browse_item dropdown-item-1 pl-3 py-2"
+                    href="./generalmarket.html"
+                    >General market
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                  <a
+                    class="
+                      dropdown-item
+                      browse_item
+                      pl-3
+                      py-2
+                      dropdown-item-last
+                    "
+                    href="./auctionmarket.html"
+                    >Auction
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-lg-1 d-flex justify-content-center col-md-12">
+                <a class="nav-link navbtn" href="#">Sell</a>
+              </div>
+              <div class="col-lg-1 d-flex justify-content-center">
+                <a class="nav-link navbtn" href="./blog.html">blog</a>
+              </div>
+              <div class="col-lg-1 col-md-12 d-flex justify-content-center">
+                <a class="nav-link navbtn" href="#">About</a>
+              </div>
+              <div class="col-lg-5 px-lg-5 col-md-12">
+                <label class="nav_search_label" for="search_bar">
+                  <input
+                    type="text"
+                    id="nav_search_bar"
+                    name="search_bar"
+                    class="form-control nav-search-bar"
+                    placeholder="Search..."
+                  />
+                  <button
+                    type="submit"
+                    class="btn inline-search-btn"
+                    title="search button"
+                  >
+                    <img
+                      class="inline-search-btn-img"
+                      src="./assets/icons/search.svg"
+                      alt=""
+                    />
+                  </button>
+                </label>
+              </div>
+              <!-- main menu in header/user logged in menu -->
+              <div class="col-lg-2 col-md-12 pl-lg-0">
+                <div class="container d-flex">
+                  <div>
+                    <a
+                      href="cart.html"
+                      class="
+                        btn
+                        main_menu_btn
+                        pb-1
+                        d-flex
+                        justify-content-evenly
+                      "
+                      title="cart button"
+                    >
+                      <img class="carty mr-1" src="./assets/icons/cart.svg" />
+                      Cart
+                      <span class="badge carty_text" id="">2</span>
+                    </a>
+                  </div>
+                  <div class="dropdown pr-5">
+                    <button
+                      class="btn dropdown-toggle main_menu_btn"
+                      type="button"
+                      id="dropdownMenu"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      title="drop down button"
+                    >
+                      <img
+                        src="./assets/icons/menuIcons/Menu Icon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div
+                      class="dropdown-menu dropdown-menu-right mainmenu"
+                      aria-labelledby="dropdownMenu"
+                    >
+                      <a
+                        class="
+                          dropdown-item
+                          menu_link
+                          dropdown-item-1
+                          pl-3
+                          py-2
+                        "
+                        href="myprofile.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/profile.svg"
+                            alt="profile icon"
+                        /></span>
+                        Profile
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="messages.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/mail.svg"
+                            alt="mail icon"
+                        /></span>
+                        messages
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="wishlist.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/wishlist.svg"
+                            alt="wishlist icon"
+                        /></span>
+                        wishlist
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="orders.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/order.svg"
+                            alt="orders icon"
+                        /></span>
+                        orders
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="yourlistings.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/list.svg"
+                            alt="list icon"
+                        /></span>
+                        your listings
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="statistics.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/statistics.svg"
+                            alt="stats icon"
+                        /></span>
+                        statistics
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="settings.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/settings.svg"
+                            alt="settings icon"
+                        /></span>
+                        Settings
+                      </a>
+                      <a
+                        class="
+                          dropdown-item
+                          menu_link
+                          dropdown-item-last
+                          pl-3
+                          py-2
+                        "
+                        href="index.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/logout.svg"
+                            alt="logout icon"
+                        /></span>
+                        logout
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- end of navbar -->
+      <section class="container-fluid my-5 gm_market_listings">
+        <div class="container container-width p-lg-0">
+          <div class="row">
+            <!-- general market heading with counter of listings on gm -->
+            <div
+              class="
+                col-lg-8 col-md-12
+                d-flex
+                justify-content-lg-start justify-content-center
+              "
+            >
+              <!-- read only nav which shows which category is selected with listing counter i.e
+              (how many listing are posted in that category) of that category -->
+              <div>
+                <div
+                  class="
+                    nav
+                    justify-content-lg-start justify-content-center
+                    flex-lg-row flex-column
+                    align-items-center
+                    p-xl-0
+                    gm-tabs
+                  "
+                >
+                  <div data-li="all">
+                    <span id="gm_counter" class="tab-text std-title"
+                      >General Market</span
+                    >
+                    <span id="gm_count" class="listing_count pl-2"
+                      >(20000+ Listings)</span
+                    >
+                  </div>
+                  <div class="ml-4 item cat_rings" id="rings_counter">
+                    <span class="tab-text std-title">rings</span>
+                    <span class="listing_count pl-2"
+                      >(<span id="cat_rings_count">1337+</span> Listings)</span
+                    >
+                  </div>
+                  <div class="ml-4 item cat_chains" id="chains_counter">
+                    <span class="tab-text std-title">chains</span>
+                    <span class="listing_count pl-2"
+                      >(<span id="cat_chains_count">1697+</span> Listings)</span
+                    >
+                  </div>
+                  <div class="ml-4 item cat_pendants" id="pendants_counter">
+                    <span class="tab-text std-title">pendants</span>
+                    <span class="listing_count pl-2"
+                      >(<span id="cat_pendants_count">1697+</span>
+                      Listings)</span
+                    >
+                  </div>
+                  <div class="ml-4 item cat_watches" id="watches_counter">
+                    <span class="tab-text std-title">watches</span>
+                    <span class="listing_count pl-2"
+                      >(<span id="cat_watches_count">1697+</span>
+                      Listings)</span
+                    >
+                  </div>
+                  <div class="ml-4 item cat_bracelets" id="bracelets_counter">
+                    <span class="tab-text std-title">bracelets</span>
+                    <span class="listing_count pl-2"
+                      >(<span id="cat_bracelets_count">1697+</span>
+                      Listings)</span
+                    >
+                  </div>
+                  <div class="ml-lg-4 item cat_earings" id="earings_counter">
+                    <span class="tab-text std-title">earings</span>
+                    <span class="listing_count pl-2"
+                      >(<span id="cat_earings_count">1697+</span>
+                      Listings)</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sort by drop down -->
+            <div
+              class="
+                col-lg-4 col-md-12
+                d-flex
+                justify-content-center justify-content-lg-end
+                m-lg-0
+                my-5
+              "
+            >
+              <div class="gc_custom_select">
+                <label class="select_label" for="sort_listing"
+                  >Sort by
+                  <span class="px-2"
+                    ><img
+                      src="./assets/icons/carret.svg"
+                      alt="carret icon" /></span
+                ></label>
+                <div class="dropdown">
+                  <button
+                    type="button"
+                    class="btn select_btn dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-labelledby="custom select"
+                  >
+                    <ins class="selcted_display">Newest listings</ins>
+                  </button>
+                  <div class="dropdown-menu select_menu">
+                    <label class="dropdown-item dropdown-item-1">
+                      <input
+                        class="jRadioDropdown"
+                        type="radio"
+                        value="0"
+                        name="sort_listing"
+                      />
+                      <i>Newest listings</i>
+                    </label>
+                    <label class="dropdown-item">
+                      <input
+                        class="jRadioDropdown"
+                        type="radio"
+                        value="1"
+                        name="sort_listing"
+                      />
+                      <i>Low to high</i>
+                    </label>
+
+                    <label class="dropdown-item">
+                      <input
+                        class="jRadioDropdown"
+                        type="radio"
+                        value="2"
+                        name="sort_listing"
+                      />
+                      <i>High to low</i>
+                    </label>
+
+                    <label class="dropdown-item dropdown-item-last mb-0">
+                      <input
+                        class="jRadioDropdown"
+                        type="radio"
+                        value="3"
+                        name="sort_listing"
+                      />
+                      <i>Top Rated</i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- category tabs buttons -->
+          <div class="mt-4 mb-4 btn_grp">
+            <ul
+              class="
+                nav
+                justify-content-lg-between justify-content-center
+                flex-lg-row flex-column
+                align-items-center
+                p-xl-0
+                cat_tabs
+              "
+            >
+              <li data-li="cat_rings" class="m-lg-0 mb-4 filter_btn">rings</li>
+              <li data-li="cat_chains" class="m-lg-0 mb-4 filter_btn">
+                chains
+              </li>
+              <li data-li="cat_pendants" class="m-lg-0 mb-4 filter_btn">
+                pendants
+              </li>
+              <li data-li="cat_watches" class="m-lg-0 mb-4 filter_btn">
+                watches
+              </li>
+              <li data-li="cat_bracelets" class="m-lg-0 mb-4 filter_btn">
+                bracelets
+              </li>
+              <li data-li="cat_earings" class="m-lg-0 mb-4 filter_btn">
+                earings
+              </li>
+            </ul>
+          </div>
+          <!-- general market content -->
+          <div class="">
+            <!-- <div class="item cat_rings">cat_rings</div>
+            <div class="item cat_chains">cat_chains</div>
+            <div class="item cat_pendants">cat_pendants</div>
+            <div class="item cat_watches">cat_watches</div>
+            <div class="item cat_bracelets">cat_bracelets</div>
+            <div class="item cat_earings">cat_earings</div> -->
+          </div>
+          <!-- items container and grid layout -->
+          <div class="container listing_container p-lg-0">
+            <div class="row">
+              <!-- filter bar grid -->
+              <div class="col-lg-3 filbar_grid">
+                <!-- general filter bar -->
+                <div class="container filter_bar item">
+                  <div class="d-flex justify-content-between mt-4">
+                    <span class="title">Refine Search</span>
+                    <button class="refine_btn">Refine</button>
+                  </div>
+                  <div class="mt-4">
+                    <span class="title">Price</span>
+                    <input
+                      class="form-control form_design"
+                      type="number"
+                      name="lisitng_price_low"
+                      id=""
+                      placeholder="Low"
+                    />
+                    <input
+                      class="form-control form_design"
+                      type="number"
+                      name="lisitng_price_high"
+                      id=""
+                      placeholder="High"
+                    />
+                  </div>
+                </div>
+                <!-- rings filter bar -->
+                <div
+                  class="container filter_bar item cat_rings bg-danger"
+                  id="rings_bar"
+                >
+                  rings
+                </div>
+                <!-- chains filter bar -->
+                <div
+                  class="container filter_bar item cat_chains bg-danger"
+                  id="chains_bar"
+                >
+                  chains
+                </div>
+                <!-- pendants filter bar -->
+                <div
+                  class="container filter_bar item cat_pendants bg-danger"
+                  id="pendants_bar"
+                >
+                  pendants
+                </div>
+                <!-- watches filter bar -->
+                <div
+                  class="container filter_bar item cat_watches bg-primary"
+                  id="watches_bar"
+                >
+                  watches
+                </div>
+                <!-- bracelets filter bar -->
+                <div
+                  class="container filter_bar item cat_bracelets bg-primary"
+                  id="bracelets_bar"
+                >
+                  bracelets
+                </div>
+                <!-- earings filter bar -->
+                <div
+                  class="container filter_bar item cat_earings bg-primary"
+                  id="earings_bar"
+                >
+                  earings
+                </div>
+              </div>
+              <!-- cards grid -->
+              <div class="col-lg-9 cards_grid">
+                <div class="row cards_row">
+                  <!-- start of item card give each product unique id to target for rating-->
+                  <!-- ring card -->
+                  <div
+                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_rings"
+                  >
+                    <div class="card-flyer">
+                      <div class="listing-image-box">
+                        <div class="prod_labels">
+                          <!-- top rated item label -->
+                          <div class="top_rated_label">
+                            <img
+                              class="top_rated_img"
+                              src="./assets/icons/toprated.svg"
+                              alt="top rated icon"
+                            />
+                          </div>
+                          <!-- hot item label -->
+                          <div class="hot-label">
+                            <img
+                              class="hot_label_img"
+                              src="./assets/icons/hot.svg"
+                              alt="fire icon"
+                            />
+                          </div>
+                        </div>
+                        <div class="discount-label">
+                          <span class="badge discount-badge">
+                            <p class="text-center">33% off</p></span
+                          >
+                        </div>
+                        <!-- wishlist radio button -->
+                        <div class="wishlist_btn_container">
+                          <div class="customized_radio">
+                            <label for="wishlist_btn">
+                              <input type="radio" name="" value="" id="" />
+                              <span class="wishlist_check"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- anchor for clicking the img box except rating -->
+                        <a href="">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/stonering.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <!-- end of anchor -->
+                      </div>
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Stone Ring with accent stone...
+                          </p>
+                          <div class="container price_container">
+                            <!-- full price of the product -->
+                            <p class="listing_price_full m-0 pt-1">$180</p>
+                            <!-- after discount price -->
+                            <p class="listing_price_after m-0 pt-0">$125</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          justify-content-xl-start
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                  <!-- end of card -->
+                  <!-- chain card -->
+                  <div
+                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_chains"
+                  >
+                    <div class="card-flyer">
+                      <div class="listing-image-box">
+                        <div class="prod_labels">
+                          <!-- top rated item label -->
+                          <div class="top_rated_label">
+                            <img
+                              class="top_rated_img"
+                              src="./assets/icons/toprated.svg"
+                              alt="top rated icon"
+                            />
+                          </div>
+                        </div>
+                        <!-- wishlist radio button -->
+                        <div class="wishlist_btn_container">
+                          <div class="customized_radio">
+                            <label for="wishlist_btn">
+                              <input type="radio" name="" value="" id="" />
+                              <span class="wishlist_check"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <a href="">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/dollarsignchain.png"
+                            alt="chain image"
+                          />
+                        </a>
+                      </div>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            $ sign golden chain with diamonds
+                          </p>
+                          <div class="container price_container">
+                            <p class="listing_price_after m-0 pt-0">$340</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-xl-start justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.2"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.2
+                        </div>
+                      </div>
+                      <!-- rating end -->
+                    </div>
+                  </div>
+                  <!-- pendant card -->
+                  <div
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      item
+                      cat_pendants
+                    "
+                  >
+                    <div class="card-flyer">
+                      <div class="listing-image-box">
+                        <div class="prod_labels">
+                          <div class="top_rated_label">
+                            <img
+                              class="top_rated_img"
+                              src="./assets/icons/toprated.svg"
+                              alt="top rated icon"
+                            />
+                          </div>
+                        </div>
+                        <!-- wishlist radio button -->
+                        <div class="wishlist_btn_container">
+                          <div class="customized_radio">
+                            <label for="wishlist_btn">
+                              <input type="radio" name="" value="" id="" />
+                              <span class="wishlist_check"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <a href="">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/lockchain.png"
+                            alt=""
+                          />
+                        </a>
+                        <!-- end of anchor -->
+                      </div>
+
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Trendy Men pendant locket available on gc
+                          </p>
+                          <div class="container price_container">
+                            <!-- no discount prices has same class as listing_price_after -->
+                            <p class="listing_price_after m-0 pt-0">$559</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-xl-start justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="3.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          3.5
+                        </div>
+                      </div>
+                      <!-- rating end -->
+                    </div>
+                  </div>
+                  <!-- watch card -->
+                  <div
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      item
+                      cat_watches
+                    "
+                  >
+                    <div class="card-flyer">
+                      <div class="listing-image-box">
+                        <div class="prod_labels">
+                          <div class="top_rated_label">
+                            <img
+                              class="top_rated_img"
+                              src="./assets/icons/toprated.svg"
+                              alt="top rated icon"
+                            />
+                          </div>
+                        </div>
+                        <!-- wishlist radio button -->
+                        <div class="wishlist_btn_container">
+                          <div class="customized_radio">
+                            <label for="wishlist_btn">
+                              <input type="radio" name="" value="" id="" />
+                              <span class="wishlist_check"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <a href="">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/hamiltongentlemenwatch.png"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container mt-0">
+                          <p class="listing_name m-0 pt-2">
+                            Hamilton Gentlemen Watch...
+                          </p>
+                          <div class="container price_container">
+                            <!-- full price of the product -->
+                            <p class="listing_price_full m-0 pt-1">$790</p>
+                            <!-- after discount price -->
+                            <p class="listing_price_after m-0 pt-0">$545</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-xl-start justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          5.0
+                        </div>
+                      </div>
+                      <!-- rating end -->
+                    </div>
+                    <!-- end of card -->
+                  </div>
+                  <!-- bracelet card -->
+                  <div
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      item
+                      cat_bracelets
+                    "
+                  >
+                    <div class="card-flyer">
+                      <div class="listing-image-box">
+                        <div class="prod_labels">
+                          <!-- top rated item label -->
+                          <div class="top_rated_label">
+                            <img
+                              class="top_rated_img"
+                              src="./assets/icons/toprated.svg"
+                              alt="top rated icon"
+                            />
+                          </div>
+                          <!-- staffpicked label -->
+                          <div class="staff_picked">
+                            <img
+                              src="./assets/icons/staffpicked.svg"
+                              alt="staff icon"
+                            />
+                          </div>
+                        </div>
+                        <div class="discount-label">
+                          <span class="badge discount-badge">
+                            <p class="text-center">31% off</p></span
+                          >
+                        </div>
+                        <!-- wishlist radio button -->
+                        <div class="wishlist_btn_container">
+                          <div class="customized_radio">
+                            <label for="wishlist_btn">
+                              <input type="radio" name="" value="" id="" />
+                              <span class="wishlist_check"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- anchor for clicking the img box except rating -->
+                        <a href="">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/goldenbracelet.png"
+                            alt=""
+                          />
+                        </a>
+                        <!-- end of anchor -->
+                      </div>
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Golden plain round bracelet...
+                          </p>
+                          <div class="container price_container">
+                            <!-- full price of the product -->
+                            <p class="listing_price_full m-0 pt-1">$200</p>
+                            <!-- after discount price -->
+                            <p class="listing_price_after m-0 pt-0">$180</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          justify-content-xl-start
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.8"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.8
+                        </div>
+                      </div>
+                      <!-- end of rating -->
+                    </div>
+                  </div>
+                  <!-- earing card -->
+                  <div
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      item
+                      cat_earings
+                    "
+                  >
+                    <div class="card-flyer">
+                      <div class="listing-image-box">
+                        <!-- wishlist radio button -->
+                        <div class="wishlist_btn_container">
+                          <div class="customized_radio">
+                            <label for="wishlist_btn">
+                              <input type="radio" name="" value="" id="" />
+                              <span class="wishlist_check"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <a href="">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/earings1.png"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <!-- end of anchor -->
+                      <div class="text-box">
+                        <div class="text-container m-0">
+                          <p class="listing_name m-0 pt-2">
+                            Silver Earrings with opal available on gc
+                          </p>
+                          <div class="container price_container">
+                            <p class="listing_price_after m-0 pt-0">$68</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                      <div
+                        class="
+                          container
+                          listing_rating_container
+                          d-flex
+                          justify-content-xl-start justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="listing_rating" data-score="4.4"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.4
+                        </div>
+                      </div>
+                      <!-- rating end -->
+                    </div>
+                  </div>
+                  <!-- end of card row -->
+                </div>
+              </div>
+              <!-- end of container -->
+            </div>
+            <!-- end of row -->
+          </div>
+          <!-- end of listing_container -->
+        </div>
+      </section>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/rating.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/gm.js"></script>
+      <script src="./js/userprofile.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #002f33;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Icon_feather-share-2" data-name="Icon feather-share-2" transform="translate(-3.5 -2)">
+    <path id="Path_13518" data-name="Path 13518" class="cls-1" d="M28.5,6a3,3,0,1,1-3-3A3,3,0,0,1,28.5,6Z" transform="translate(-6 0)"/>
+    <path id="Path_13519" data-name="Path 13519" class="cls-1" d="M10.5,16.5a3,3,0,1,1-3-3A3,3,0,0,1,10.5,16.5Z" transform="translate(0 -3.5)"/>
+    <path id="Path_13520" data-name="Path 13520" class="cls-1" d="M28.5,27a3,3,0,1,1-3-3A3,3,0,0,1,28.5,27Z" transform="translate(-6 -7)"/>
+    <path id="Path_13521" data-name="Path 13521" class="cls-1" d="M12.885,20.265l6.83,3.98" transform="translate(-2.795 -5.755)"/>
+    <path id="Path_13522" data-name="Path 13522" class="cls-1" d="M19.7,9.765l-6.82,3.98" transform="translate(-2.795 -2.255)"/>
+  </g>
+</svg>
