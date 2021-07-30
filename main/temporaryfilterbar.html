@@ -1,0 +1,3898 @@
+<!-- rings filter bar -->
+<div class="container filter_bar item cat_rings" id="rings_bar">
+  <div class="d-flex justify-content-between mt-4">
+    <span class="title">Refine Search</span>
+    <button class="refine_btn">Refine</button>
+  </div>
+  <div
+    class="panel-group wrap"
+    id="ringAccordion"
+    role="tablist"
+    aria-multiselectable="true"
+  >
+    <button
+      type="button"
+      class="btn_collapse"
+      id="ringExpand"
+    >
+      Expand All
+    </button>
+    <button
+      type="button"
+      class="btn_collapse"
+      id="ringCollapse"
+    >
+      Collapse All
+    </button>
+    <!-- gender panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            role="button"
+            data-toggle="collapse"
+            data-parent="#ringAccordion"
+            href="#ring_gender"
+            aria-expanded="false"
+            aria-controls="ring_gender"
+          >
+            gender
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="ring_gender"
+        class="panel-collapse collapse ring_collapse in"
+        role="tabpanel"
+        aria-labelledby="ring_gender"
+      >
+        <div class="panel-body">
+          <label for="ring_gender">
+            <input type="checkbox" value="ladies" name="ring_gender" />
+            <i>Ladies</i>
+          </label>
+          <label for="ring_gender">
+            <input type="checkbox" value="men" name="ring_gender" />
+            <i>Men</i>
+          </label>
+          <label for="ring_gender">
+            <input type="checkbox" value="unisex" name="ring_gender" />
+            <i>Unisex</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- starting price panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#ringAccordion"
+            href="#ringprice"
+            aria-expanded="false"
+            aria-controls="ringprice"
+          >
+            starting price
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="ringprice"
+        class="panel-collapse collapse ring_collapse"
+        role="tabpanel"
+        aria-labelledby="ring_price"
+      >
+        <div class="panel-body">
+          <input
+            class="form-control form_design"
+            type="number"
+            name="ring_price_low"
+            id=""
+            placeholder="Low"
+          />
+          <input
+            class="form-control form_design"
+            type="number"
+            name="ring_price_high"
+            id=""
+            placeholder="High"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#ringAccordion"
+            href="#ringstonetype"
+            aria-expanded="false"
+            aria-controls="ringstonetype"
+          >
+            stone type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="ringstonetype"
+        class="panel-collapse collapse ring_collapse"
+        role="tabpanel"
+        aria-labelledby="ring_stone_type"
+      >
+        <div class="panel-body">
+          <label for="ring_stone_type">
+            <input type="checkbox" value="diamond" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="diamond icon" /></span
+              >Diamond</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="morganite" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemorganite.png"
+                  alt="Morganite icon" /></span
+              >Morganite</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="emrald" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="Emrald icon" /></span
+              >Emrald</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="sapphire" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="Sapphire icon" /></span
+              >Sapphire</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="amethyst" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="Sapphire icon" /></span
+              >Amethyst</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="ruby" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="Ruby icon" /></span
+              >Ruby</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="aquamarine" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneaquamarine.png"
+                  alt="aquamarine icon" /></span
+              >aquamarine</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="peridot" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneperidot.png"
+                  alt="peridot icon" /></span
+              >peridot</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="garnet" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="garnet icon" /></span
+              >garnet</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" name="ring_stone_type" value="citrine" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="citrine icon" /></span
+              >citrine</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="alexandrite" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonealexandrite.png"
+                  alt="alexandrite icon" /></span
+              >alexandrite</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="opal" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneopal.png"
+                  alt="opal icon" /></span
+              >opal</i
+            >
+          </label>
+          <label for="ring_stone_type">
+            <input type="checkbox" value="quartz" name="ring_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonequartz.png"
+                  alt="quartz icon" /></span
+              >quartz</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#ringAccordion"
+            href="#ringstonecolor"
+            aria-expanded="false"
+            aria-controls="ringstonecolor"
+          >
+            stone color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="ringstonecolor"
+        class="panel-collapse collapse ring_collapse"
+        role="tabpanel"
+        aria-labelledby="ring_stone_color"
+      >
+        <div class="panel-body">
+          <label for="ring_stone_color">
+            <input type="checkbox" value="white" name="ring_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="ring_stone_color">
+            <input type="checkbox" value="blue" name="ring_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="blue icon" /></span
+              >blue</i
+            >
+          </label>
+          <label for="ring_stone_color">
+            <input type="checkbox" value="green" name="ring_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="green icon" /></span
+              >green</i
+            >
+          </label>
+          <label for="ring_stone_color">
+            <input type="checkbox" value="red" name="ring_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="red icon" /></span
+              >red</i
+            >
+          </label>
+          <label for="ring_stone_color">
+            <input type="checkbox" value="purple" name="ring_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="purple icon" /></span
+              >purple</i
+            >
+          </label>
+          <label for="ring_stone_color">
+            <input type="checkbox" value="black" name="ring_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneblackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="ring_stone_color">
+            <input type="checkbox" value="yellow" name="ring_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneyellow.png"
+                  alt="yellow icon" /></span
+              >yellow</i
+            >
+          </label>
+          <label for="ring_stone_color">
+            <input type="checkbox" value="brown" name="ring_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="Ruby icon" /></span
+              >brown</i
+            >
+          </label>
+          <label for="ring_stone_color">
+            <input type="checkbox" value="orange" name="ring_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="Ruby icon" /></span
+              >orange</i
+            >
+          </label>
+          <label for="ring_stone_color">
+            <input type="checkbox" value="multicolor" name="ring_stone_color" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemulticolor.png"
+                  alt="multicolor icon" /></span
+              >multicolor</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone shape panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#ringAccordion"
+            href="#ringstoneshape"
+            aria-expanded="false"
+            aria-controls="ringstoneshape"
+          >
+            stone shape
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="ringstoneshape"
+        class="panel-collapse collapse ring_collapse"
+        role="tabpanel"
+        aria-labelledby="ring_stone_shape"
+      >
+        <div class="panel-body">
+          <label for="ring_stone_shape">
+            <input type="checkbox" value="round" name="ring_stone_shape" />
+            <i>round</i>
+          </label>
+          <label for="ring_stone_shape">
+            <input type="checkbox" value="square" name="ring_stone_shape" />
+            <i>square</i>
+          </label>
+
+          <label for="ring_stone_shape">
+            <input type="checkbox" value="oval" name="ring_stone_shape" />
+            <i>oval</i>
+          </label>
+          <label for="ring_stone_shape">
+            <input type="checkbox" value="cushion" name="ring_stone_shape" />
+            <i>cushion</i>
+          </label>
+          <label for="ring_stone_shape">
+            <input type="checkbox" value="baguette" name="ring_stone_shape" />
+            <i>baguette</i>
+          </label>
+          <label for="ring_stone_shape">
+            <input type="checkbox" value="emerald" name="ring_stone_shape" />
+            <i>emerald</i>
+          </label>
+          <label for="ring_stone_shape">
+            <input type="checkbox" value="pear" name="ring_stone_shape" />
+            <i>pear</i>
+          </label>
+          <label for="ring_stone_shape">
+            <input type="checkbox" value="rectangle" name="ring_stone_shape" />
+            <i>Rectangle</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#ringAccordion"
+            href="#ringmetaltype"
+            aria-expanded="false"
+            aria-controls="ringmetaltype"
+          >
+            metal type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="ringmetaltype"
+        class="panel-collapse collapse ring_collapse"
+        role="tabpanel"
+        aria-labelledby="ring_metal_type"
+      >
+        <div class="panel-body">
+          <label for="ring_metal_type">
+            <input type="checkbox" value="gold" name="ring_metal_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="ring_metal_type">
+            <input
+              type="checkbox"
+              value="sterling silver"
+              name="ring_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="silver icon" /></span
+              >sterling silver</i
+            >
+          </label>
+          <label for="ring_metal_type">
+            <input type="checkbox" value="platinum" name="ring_metal_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="platinum icon" /></span
+              >platinum</i
+            >
+          </label>
+          <label for="ring_metal_type">
+            <input
+              type="checkbox"
+              value="stainless_steel"
+              name="ring_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="stainless steel icon" /></span
+              >stainless steel</i
+            >
+          </label>
+          <label for="ring_metal_type">
+            <input type="checkbox" value="titanium" name="ring_metal_type" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="titanium icon" /></span
+              >titanium</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#ringAccordion"
+            href="#ringmetalcolor"
+            aria-expanded="false"
+            aria-controls="ringmetalcolor"
+          >
+            metal color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="ringmetalcolor"
+        class="panel-collapse collapse ring_collapse"
+        role="tabpanel"
+        aria-labelledby="ring_metal_color"
+      >
+        <div class="panel-body">
+          <label for="ring_metal_color">
+            <input type="checkbox" value="white" name="ring_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="ring_metal_color">
+            <input type="checkbox" value="gold" name="ring_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="ring_metal_color">
+            <input type="checkbox" value="rose" name="ring_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/rosecolor.png"
+                  alt="rose icon" /></span
+              >rose</i
+            >
+          </label>
+          <label for="ring_metal_color">
+            <input type="checkbox" value="black" name="ring_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/blackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="ring_metal_color">
+            <input type="checkbox" value="gray" name="ring_metal_color" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="gray icon" /></span
+              >gray</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+  </div>
+  <!-- end of #accordion -->
+
+  <!-- end of wrap -->
+</div>
+<!-- end of rings filter bar -->
+<!-- chains filter bar -->
+<div class="container filter_bar item cat_chains" id="chains_bar">
+  <div class="d-flex justify-content-between mt-4">
+    <span class="title">Refine Search</span>
+    <button class="refine_btn">Refine</button>
+  </div>
+  <div
+    class="panel-group wrap"
+    id="chainAccordion"
+    role="tablist"
+    aria-multiselectable="true"
+  >
+    <button
+      type="button"
+      class="btn_collapse"
+      id="chainExpand"
+      onclick="expand()"
+    >
+      Expand All
+    </button>
+    <button
+      type="button"
+      class="btn_collapse"
+      onclick="collapse()"
+      id="chainCollapse"
+    >
+      Collapse All
+    </button>
+    <!-- gender panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            role="button"
+            data-toggle="collapse"
+            data-parent="#chainAccordion"
+            href="#chain_gender"
+            aria-expanded="false"
+            aria-controls="chain_gender"
+          >
+            gender
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="chain_gender"
+        class="panel-collapse collapse chain_collapse in"
+        role="tabpanel"
+        aria-labelledby="chain_gender"
+      >
+        <div class="panel-body">
+          <label for="chain_gender">
+            <input type="checkbox" value="ladies" name="chain_gender" />
+            <i>Ladies</i>
+          </label>
+          <label for="chain_gender">
+            <input type="checkbox" value="men" name="chain_gender" />
+            <i>Men</i>
+          </label>
+          <label for="chain_gender">
+            <input type="checkbox" value="unisex" name="chain_gender" />
+            <i>Unisex</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- starting price panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#chainAccordion"
+            href="#chainprice"
+            aria-expanded="false"
+            aria-controls="chainprice"
+          >
+            starting price
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="chainprice"
+        class="panel-collapse collapse chain_collapse"
+        role="tabpanel"
+        aria-labelledby="chain_price"
+      >
+        <div class="panel-body">
+          <input
+            class="form-control form_design"
+            type="number"
+            name="chain_price_low"
+            id=""
+            placeholder="Low"
+          />
+          <input
+            class="form-control form_design"
+            type="number"
+            name="chain_price_high"
+            id=""
+            placeholder="High"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- chain style panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#chainAccordion"
+            href="#chainstyle"
+            aria-expanded="false"
+            aria-controls="chainstyle"
+          >
+            Chain Style
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="chainstyle"
+        class="panel-collapse collapse chain_collapse"
+        role="tabpanel"
+        aria-labelledby="chain_style"
+      >
+        <div class="panel-body">
+          <label for="chain_style">
+            <input type="checkbox" value="Herringbone" name="chain_style" />
+            <i>Herring bone</i>
+          </label>
+
+          <label for="chain_style">
+            <input type="checkbox" value="cuban" name="chain_style" />
+            <i>cuban</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="box" name="chain_style" />
+            <i>box</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="rope" name="chain_style" />
+            <i>rope</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="figaro" name="chain_style" />
+            <i>figaro</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="mariner" name="chain_style" />
+            <i>mariner</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="PuffedMariner" name="chain_style" />
+            <i>Puffed Mariner</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="ball" name="chain_style" />
+            <i>ball</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="three stone" name="chain_style" />
+            <i>three stone</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="Byzantine" name="chain_style" />
+            <i>Byzantine</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="franco" name="chain_style" />
+            <i>franco</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="rolo" name="chain_style" />
+            <i>rolo</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="singapore" name="chain_style" />
+            <i>singapore</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="anchor" name="chain_style" />
+            <i>anchor</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="wheat" name="chain_style" />
+            <i>wheat</i>
+          </label>
+          <label for="chain_style">
+            <input type="checkbox" value="snake" name="chain_style" />
+            <i>snake</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#chainAccordion"
+            href="#chainstonetype"
+            aria-expanded="false"
+            aria-controls="chainstonetype"
+          >
+            stone type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="chainstonetype"
+        class="panel-collapse collapse chain_collapse"
+        role="tabpanel"
+        aria-labelledby="chain_stone_type"
+      >
+        <div class="panel-body">
+          <label for="chain_stone_type">
+            <input type="checkbox" value="diamond" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="diamond icon" /></span
+              >Diamond</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="morganite" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemorganite.png"
+                  alt="Morganite icon" /></span
+              >Morganite</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="emrald" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="Emrald icon" /></span
+              >Emrald</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="sapphire" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="Sapphire icon" /></span
+              >Sapphire</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="amethyst" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="Sapphire icon" /></span
+              >Amethyst</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="ruby" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="Ruby icon" /></span
+              >Ruby</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="aquamarine" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneaquamarine.png"
+                  alt="aquamarine icon" /></span
+              >aquamarine</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="peridot" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneperidot.png"
+                  alt="peridot icon" /></span
+              >peridot</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="garnet" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="garnet icon" /></span
+              >garnet</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" name="chain_stone_type" value="citrine" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="citrine icon" /></span
+              >citrine</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input
+              type="checkbox"
+              value="alexandrite"
+              name="chain_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonealexandrite.png"
+                  alt="alexandrite icon" /></span
+              >alexandrite</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="opal" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneopal.png"
+                  alt="opal icon" /></span
+              >opal</i
+            >
+          </label>
+          <label for="chain_stone_type">
+            <input type="checkbox" value="quartz" name="chain_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonequartz.png"
+                  alt="quartz icon" /></span
+              >quartz</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#chainAccordion"
+            href="#chainstonecolor"
+            aria-expanded="false"
+            aria-controls="chainstonecolor"
+          >
+            stone color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="chainstonecolor"
+        class="panel-collapse collapse chain_collapse"
+        role="tabpanel"
+        aria-labelledby="chain_stone_color"
+      >
+        <div class="panel-body">
+          <label for="chain_stone_color">
+            <input type="checkbox" value="white" name="chain_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="chain_stone_color">
+            <input type="checkbox" value="blue" name="chain_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="blue icon" /></span
+              >blue</i
+            >
+          </label>
+          <label for="chain_stone_color">
+            <input type="checkbox" value="green" name="chain_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="green icon" /></span
+              >green</i
+            >
+          </label>
+          <label for="chain_stone_color">
+            <input type="checkbox" value="red" name="chain_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="red icon" /></span
+              >red</i
+            >
+          </label>
+          <label for="chain_stone_color">
+            <input type="checkbox" value="purple" name="chain_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="purple icon" /></span
+              >purple</i
+            >
+          </label>
+          <label for="chain_stone_color">
+            <input type="checkbox" value="black" name="chain_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneblackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="chain_stone_color">
+            <input type="checkbox" value="yellow" name="chain_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneyellow.png"
+                  alt="yellow icon" /></span
+              >yellow</i
+            >
+          </label>
+          <label for="chain_stone_color">
+            <input type="checkbox" value="brown" name="chain_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="Ruby icon" /></span
+              >brown</i
+            >
+          </label>
+          <label for="chain_stone_color">
+            <input type="checkbox" value="orange" name="chain_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="Ruby icon" /></span
+              >orange</i
+            >
+          </label>
+          <label for="chain_stone_color">
+            <input
+              type="checkbox"
+              value="multicolor"
+              name="chain_stone_color"
+            />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemulticolor.png"
+                  alt="multicolor icon" /></span
+              >multicolor</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone shape panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#chainAccordion"
+            href="#chainstoneshape"
+            aria-expanded="false"
+            aria-controls="chainstoneshape"
+          >
+            stone shape
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="chainstoneshape"
+        class="panel-collapse collapse chain_collapse"
+        role="tabpanel"
+        aria-labelledby="chain_stone_shape"
+      >
+        <div class="panel-body">
+          <label for="chain_stone_shape">
+            <input type="checkbox" value="round" name="chain_stone_shape" />
+            <i>round</i>
+          </label>
+          <label for="chain_stone_shape">
+            <input type="checkbox" value="square" name="chain_stone_shape" />
+            <i>square</i>
+          </label>
+
+          <label for="chain_stone_shape">
+            <input type="checkbox" value="oval" name="chain_stone_shape" />
+            <i>oval</i>
+          </label>
+          <label for="chain_stone_shape">
+            <input type="checkbox" value="cushion" name="chain_stone_shape" />
+            <i>cushion</i>
+          </label>
+          <label for="chain_stone_shape">
+            <input type="checkbox" value="baguette" name="chain_stone_shape" />
+            <i>baguette</i>
+          </label>
+          <label for="chain_stone_shape">
+            <input type="checkbox" value="emerald" name="chain_stone_shape" />
+            <i>emerald</i>
+          </label>
+          <label for="chain_stone_shape">
+            <input type="checkbox" value="pear" name="chain_stone_shape" />
+            <i>pear</i>
+          </label>
+          <label for="chain_stone_shape">
+            <input type="checkbox" value="rectangle" name="chain_stone_shape" />
+            <i>Rectangle</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#chainAccordion"
+            href="#chainmetaltype"
+            aria-expanded="false"
+            aria-controls="chainmetaltype"
+          >
+            metal type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="chainmetaltype"
+        class="panel-collapse collapse chain_collapse"
+        role="tabpanel"
+        aria-labelledby="chain_metal_type"
+      >
+        <div class="panel-body">
+          <label for="chain_metal_type">
+            <input type="checkbox" value="gold" name="chain_metal_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="chain_metal_type">
+            <input
+              type="checkbox"
+              value="sterling silver"
+              name="chain_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="silver icon" /></span
+              >sterling silver</i
+            >
+          </label>
+          <label for="chain_metal_type">
+            <input type="checkbox" value="platinum" name="chain_metal_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="platinum icon" /></span
+              >platinum</i
+            >
+          </label>
+          <label for="chain_metal_type">
+            <input
+              type="checkbox"
+              value="stainless_steel"
+              name="chain_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="stainless steel icon" /></span
+              >stainless steel</i
+            >
+          </label>
+          <label for="chain_metal_type">
+            <input type="checkbox" value="titanium" name="chain_metal_type" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="titanium icon" /></span
+              >titanium</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#chainAccordion"
+            href="#chainmetalcolor"
+            aria-expanded="false"
+            aria-controls="ringmetalcolor"
+          >
+            metal color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="chainmetalcolor"
+        class="panel-collapse collapse chain_collapse"
+        role="tabpanel"
+        aria-labelledby="chain_metal_color"
+      >
+        <div class="panel-body">
+          <label for="chain_metal_color">
+            <input type="checkbox" value="white" name="chain_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="chain_metal_color">
+            <input type="checkbox" value="gold" name="chain_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="chain_metal_color">
+            <input type="checkbox" value="rose" name="chain_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/rosecolor.png"
+                  alt="rose icon" /></span
+              >rose</i
+            >
+          </label>
+          <label for="chain_metal_color">
+            <input type="checkbox" value="black" name="chain_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/blackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="chain_metal_color">
+            <input type="checkbox" value="gray" name="chain_metal_color" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="gray icon" /></span
+              >gray</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+  </div>
+  <!-- end of #accordion -->
+
+  <!-- end of wrap -->
+</div>
+<!-- end of chains filterbar -->
+<!-- earings filterbar -->
+<div class="container filter_bar item cat_earings" id="earings_bar">
+  <div class="d-flex justify-content-between mt-4">
+    <span class="title">Refine Search</span>
+    <button class="refine_btn">Refine</button>
+  </div>
+  <div
+    class="panel-group wrap"
+    id="earingAccordion"
+    role="tablist"
+    aria-multiselectable="true"
+  >
+    <button
+      type="button"
+      class="btn_collapse"
+      id="earingExpand"
+      onclick="expand()"
+    >
+      Expand All
+    </button>
+    <button
+      type="button"
+      class="btn_collapse"
+      onclick="collapse()"
+      id="earingCollapse"
+    >
+      Collapse All
+    </button>
+    <!-- gender panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            role="button"
+            data-toggle="collapse"
+            data-parent="#earingAccordion"
+            href="#earing_gender"
+            aria-expanded="false"
+            aria-controls="earing_gender"
+          >
+            gender
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="earing_gender"
+        class="panel-collapse collapse earing_collapse in"
+        role="tabpanel"
+        aria-labelledby="earing_gender"
+      >
+        <div class="panel-body">
+          <label for="earing_gender">
+            <input type="checkbox" value="ladies" name="earing_gender" />
+            <i>Ladies</i>
+          </label>
+          <label for="earing_gender">
+            <input type="checkbox" value="men" name="earing_gender" />
+            <i>Men</i>
+          </label>
+          <label for="earing_gender">
+            <input type="checkbox" value="unisex" name="earing_gender" />
+            <i>Unisex</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- starting price panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#earingAccordion"
+            href="#earingprice"
+            aria-expanded="false"
+            aria-controls="earingprice"
+          >
+            starting price
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="earingprice"
+        class="panel-collapse collapse earing_collapse"
+        role="tabpanel"
+        aria-labelledby="earing_price"
+      >
+        <div class="panel-body">
+          <input
+            class="form-control form_design"
+            type="number"
+            name="earing_price_low"
+            id=""
+            placeholder="Low"
+          />
+          <input
+            class="form-control form_design"
+            type="number"
+            name="earing_price_high"
+            id=""
+            placeholder="High"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- earing style panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#earingAccordion"
+            href="#earingstyle"
+            aria-expanded="false"
+            aria-controls="earingstyle"
+          >
+            earing Style
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="earingstyle"
+        class="panel-collapse collapse earing_collapse"
+        role="tabpanel"
+        aria-labelledby="earing_style"
+      >
+        <div class="panel-body">
+          <label for="earing_style">
+            <input
+              type="checkbox"
+              value="solitaire_studs"
+              name="earing_style"
+            />
+            <i>solitaire studs</i>
+          </label>
+
+          <label for="earing_style">
+            <input type="checkbox" value="fashion_studs" name="earing_style" />
+            <i>fashion studs</i>
+          </label>
+          <label for="earing_style">
+            <input type="checkbox" value="hoop" name="earing_style" />
+            <i>hoop</i>
+          </label>
+          <label for="earing_style">
+            <input type="checkbox" value="drop" name="earing_style" />
+            <i>drop</i>
+          </label>
+          <label for="earing_style">
+            <input type="checkbox" value="crawler" name="earing_style" />
+            <i>crawler</i>
+          </label>
+          <label for="earing_style">
+            <input type="checkbox" value="threader" name="earing_style" />
+            <i>threader</i>
+          </label>
+          <label for="earing_style">
+            <input type="checkbox" value="front/back" name="earing_style" />
+            <i>front/back</i>
+          </label>
+          <label for="earing_style">
+            <input type="checkbox" value="earing jackets" name="earing_style" />
+            <i>earing jackets</i>
+          </label>
+          <label for="earing_style">
+            <input type="checkbox" value="three stone" name="earing_style" />
+            <i>three stone</i>
+          </label>
+          <label for="earing_style">
+            <input type="checkbox" value="cuff" name="earing_style" />
+            <i>cuff</i>
+          </label>
+          <label for="earing_style">
+            <input type="checkbox" value="couples" name="earing_style" />
+            <i>couples</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#earingAccordion"
+            href="#earingstonetype"
+            aria-expanded="false"
+            aria-controls="earingstonetype"
+          >
+            stone type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="earingstonetype"
+        class="panel-collapse collapse earing_collapse"
+        role="tabpanel"
+        aria-labelledby="earing_stone_type"
+      >
+        <div class="panel-body">
+          <label for="earing_stone_type">
+            <input type="checkbox" value="diamond" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="diamond icon" /></span
+              >Diamond</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" value="morganite" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemorganite.png"
+                  alt="Morganite icon" /></span
+              >Morganite</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" value="emrald" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="Emrald icon" /></span
+              >Emrald</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" value="sapphire" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="Sapphire icon" /></span
+              >Sapphire</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" value="amethyst" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="Sapphire icon" /></span
+              >Amethyst</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" value="ruby" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="Ruby icon" /></span
+              >Ruby</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input
+              type="checkbox"
+              value="aquamarine"
+              name="earing_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneaquamarine.png"
+                  alt="aquamarine icon" /></span
+              >aquamarine</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" value="peridot" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneperidot.png"
+                  alt="peridot icon" /></span
+              >peridot</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" value="garnet" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="garnet icon" /></span
+              >garnet</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" name="earing_stone_type" value="citrine" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="citrine icon" /></span
+              >citrine</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input
+              type="checkbox"
+              value="alexandrite"
+              name="earing_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonealexandrite.png"
+                  alt="alexandrite icon" /></span
+              >alexandrite</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" value="opal" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneopal.png"
+                  alt="opal icon" /></span
+              >opal</i
+            >
+          </label>
+          <label for="earing_stone_type">
+            <input type="checkbox" value="quartz" name="earing_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonequartz.png"
+                  alt="quartz icon" /></span
+              >quartz</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#earingAccordion"
+            href="#earingstonecolor"
+            aria-expanded="false"
+            aria-controls="earingstonecolor"
+          >
+            stone color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="earingstonecolor"
+        class="panel-collapse collapse earing_collapse"
+        role="tabpanel"
+        aria-labelledby="earing_stone_color"
+      >
+        <div class="panel-body">
+          <label for="earing_stone_color">
+            <input type="checkbox" value="white" name="earing_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="earing_stone_color">
+            <input type="checkbox" value="blue" name="earing_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="blue icon" /></span
+              >blue</i
+            >
+          </label>
+          <label for="earing_stone_color">
+            <input type="checkbox" value="green" name="earing_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="green icon" /></span
+              >green</i
+            >
+          </label>
+          <label for="earing_stone_color">
+            <input type="checkbox" value="red" name="earing_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="red icon" /></span
+              >red</i
+            >
+          </label>
+          <label for="earing_stone_color">
+            <input type="checkbox" value="purple" name="earing_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="purple icon" /></span
+              >purple</i
+            >
+          </label>
+          <label for="earing_stone_color">
+            <input type="checkbox" value="black" name="earing_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneblackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="earing_stone_color">
+            <input type="checkbox" value="yellow" name="earing_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneyellow.png"
+                  alt="yellow icon" /></span
+              >yellow</i
+            >
+          </label>
+          <label for="earing_stone_color">
+            <input type="checkbox" value="brown" name="earing_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="Ruby icon" /></span
+              >brown</i
+            >
+          </label>
+          <label for="earing_stone_color">
+            <input type="checkbox" value="orange" name="earing_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="Ruby icon" /></span
+              >orange</i
+            >
+          </label>
+          <label for="earing_stone_color">
+            <input
+              type="checkbox"
+              value="multicolor"
+              name="earing_stone_color"
+            />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemulticolor.png"
+                  alt="multicolor icon" /></span
+              >multicolor</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone shape panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#earingAccordion"
+            href="#earingstoneshape"
+            aria-expanded="false"
+            aria-controls="earingstoneshape"
+          >
+            stone shape
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="earingstoneshape"
+        class="panel-collapse collapse earing_collapse"
+        role="tabpanel"
+        aria-labelledby="earing_stone_shape"
+      >
+        <div class="panel-body">
+          <label for="earing_stone_shape">
+            <input type="checkbox" value="round" name="earing_stone_shape" />
+            <i>round</i>
+          </label>
+          <label for="earing_stone_shape">
+            <input type="checkbox" value="square" name="earing_stone_shape" />
+            <i>square</i>
+          </label>
+
+          <label for="earing_stone_shape">
+            <input type="checkbox" value="oval" name="earing_stone_shape" />
+            <i>oval</i>
+          </label>
+          <label for="earing_stone_shape">
+            <input type="checkbox" value="cushion" name="earing_stone_shape" />
+            <i>cushion</i>
+          </label>
+          <label for="earing_stone_shape">
+            <input type="checkbox" value="baguette" name="earing_stone_shape" />
+            <i>baguette</i>
+          </label>
+          <label for="earing_stone_shape">
+            <input type="checkbox" value="emerald" name="earing_stone_shape" />
+            <i>emerald</i>
+          </label>
+          <label for="earing_stone_shape">
+            <input type="checkbox" value="pear" name="earing_stone_shape" />
+            <i>pear</i>
+          </label>
+          <label for="earing_stone_shape">
+            <input
+              type="checkbox"
+              value="rectangle"
+              name="earing_stone_shape"
+            />
+            <i>Rectangle</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#earingAccordion"
+            href="#earingmetaltype"
+            aria-expanded="false"
+            aria-controls="earingmetaltype"
+          >
+            metal type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="earingmetaltype"
+        class="panel-collapse collapse earing_collapse"
+        role="tabpanel"
+        aria-labelledby="earing_metal_type"
+      >
+        <div class="panel-body">
+          <label for="earing_metal_type">
+            <input type="checkbox" value="gold" name="earing_metal_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="earing_metal_type">
+            <input
+              type="checkbox"
+              value="sterling silver"
+              name="earing_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="silver icon" /></span
+              >sterling silver</i
+            >
+          </label>
+          <label for="earing_metal_type">
+            <input type="checkbox" value="platinum" name="earing_metal_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="platinum icon" /></span
+              >platinum</i
+            >
+          </label>
+          <label for="earing_metal_type">
+            <input
+              type="checkbox"
+              value="stainless_steel"
+              name="earing_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="stainless steel icon" /></span
+              >stainless steel</i
+            >
+          </label>
+          <label for="earing_metal_type">
+            <input type="checkbox" value="titanium" name="earing_metal_type" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="titanium icon" /></span
+              >titanium</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#earingAccordion"
+            href="#earingmetalcolor"
+            aria-expanded="false"
+            aria-controls="earingmetalcolor"
+          >
+            metal color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="earingmetalcolor"
+        class="panel-collapse collapse earing_collapse"
+        role="tabpanel"
+        aria-labelledby="earing_metal_color"
+      >
+        <div class="panel-body">
+          <label for="earing_metal_color">
+            <input type="checkbox" value="white" name="earing_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="earing_metal_color">
+            <input type="checkbox" value="gold" name="earing_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="earing_metal_color">
+            <input type="checkbox" value="rose" name="earing_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/rosecolor.png"
+                  alt="rose icon" /></span
+              >rose</i
+            >
+          </label>
+          <label for="earing_metal_color">
+            <input type="checkbox" value="black" name="earing_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/blackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="earing_metal_color">
+            <input type="checkbox" value="gray" name="earing_metal_color" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="gray icon" /></span
+              >gray</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+  </div>
+  <!-- end of #accordion -->
+
+  <!-- end of wrap -->
+</div>
+<!-- end of earings filter bar -->
+<!-- pendants filter bar -->
+<div class="container filter_bar item cat_pendants" id="pendants_bar">
+  <div class="d-flex justify-content-between mt-4">
+    <span class="title">Refine Search</span>
+    <button class="refine_btn">Refine</button>
+  </div>
+  <div
+    class="panel-group wrap"
+    id="pendantAccordion"
+    role="tablist"
+    aria-multiselectable="true"
+  >
+    <button
+      type="button"
+      class="btn_collapse"
+      id="pendantExpand"
+      onclick="expand()"
+    >
+      Expand All
+    </button>
+    <button
+      type="button"
+      class="btn_collapse"
+      onclick="collapse()"
+      id="pendantCollapse"
+    >
+      Collapse All
+    </button>
+    <!-- gender panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            role="button"
+            data-toggle="collapse"
+            data-parent="#pendantAccordion"
+            href="#pendant_gender"
+            aria-expanded="false"
+            aria-controls="pendant_gender"
+          >
+            gender
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="pendant_gender"
+        class="panel-collapse collapse pendant_collapse in"
+        role="tabpanel"
+        aria-labelledby="pendant_gender"
+      >
+        <div class="panel-body">
+          <label for="pendant_gender">
+            <input type="checkbox" value="ladies" name="pendant_gender" />
+            <i>Ladies</i>
+          </label>
+          <label for="pendant_gender">
+            <input type="checkbox" value="men" name="pendant_gender" />
+            <i>Men</i>
+          </label>
+          <label for="pendant_gender">
+            <input type="checkbox" value="unisex" name="pendant_gender" />
+            <i>Unisex</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- starting price panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#pendantAccordion"
+            href="#pendantprice"
+            aria-expanded="false"
+            aria-controls="pendantprice"
+          >
+            starting price
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="pendantprice"
+        class="panel-collapse collapse pendant_collapse"
+        role="tabpanel"
+        aria-labelledby="pendant_price"
+      >
+        <div class="panel-body">
+          <input
+            class="form-control form_design"
+            type="number"
+            name="pendant_price_low"
+            id=""
+            placeholder="Low"
+          />
+          <input
+            class="form-control form_design"
+            type="number"
+            name="pendant_price_high"
+            id=""
+            placeholder="High"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#pendantAccordion"
+            href="#pendantstonetype"
+            aria-expanded="false"
+            aria-controls="pendantstonetype"
+          >
+            stone type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="pendantstonetype"
+        class="panel-collapse collapse pendant_collapse"
+        role="tabpanel"
+        aria-labelledby="pendant_stone_type"
+      >
+        <div class="panel-body">
+          <label for="pendant_stone_type">
+            <input type="checkbox" value="diamond" name="pendant_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="diamond icon" /></span
+              >Diamond</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input
+              type="checkbox"
+              value="morganite"
+              name="pendant_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemorganite.png"
+                  alt="Morganite icon" /></span
+              >Morganite</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input type="checkbox" value="emrald" name="pendant_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="Emrald icon" /></span
+              >Emrald</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input type="checkbox" value="sapphire" name="pendant_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="Sapphire icon" /></span
+              >Sapphire</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input type="checkbox" value="amethyst" name="pendant_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="Sapphire icon" /></span
+              >Amethyst</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input type="checkbox" value="ruby" name="pendant_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="Ruby icon" /></span
+              >Ruby</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input
+              type="checkbox"
+              value="aquamarine"
+              name="pendant_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneaquamarine.png"
+                  alt="aquamarine icon" /></span
+              >aquamarine</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input type="checkbox" value="peridot" name="pendant_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneperidot.png"
+                  alt="peridot icon" /></span
+              >peridot</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input type="checkbox" value="garnet" name="pendant_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="garnet icon" /></span
+              >garnet</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input type="checkbox" name="pendant_stone_type" value="citrine" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="citrine icon" /></span
+              >citrine</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input
+              type="checkbox"
+              value="alexandrite"
+              name="pendant_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonealexandrite.png"
+                  alt="alexandrite icon" /></span
+              >alexandrite</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input type="checkbox" value="opal" name="pendant_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneopal.png"
+                  alt="opal icon" /></span
+              >opal</i
+            >
+          </label>
+          <label for="pendant_stone_type">
+            <input type="checkbox" value="quartz" name="pendant_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonequartz.png"
+                  alt="quartz icon" /></span
+              >quartz</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#pendantAccordion"
+            href="#pendantstonecolor"
+            aria-expanded="false"
+            aria-controls="pendantstonecolor"
+          >
+            stone color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="pendantstonecolor"
+        class="panel-collapse collapse pendant_collapse"
+        role="tabpanel"
+        aria-labelledby="pendant_stone_color"
+      >
+        <div class="panel-body">
+          <label for="pendant_stone_color">
+            <input type="checkbox" value="white" name="pendant_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="pendant_stone_color">
+            <input type="checkbox" value="blue" name="pendant_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="blue icon" /></span
+              >blue</i
+            >
+          </label>
+          <label for="pendant_stone_color">
+            <input type="checkbox" value="green" name="pendant_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="green icon" /></span
+              >green</i
+            >
+          </label>
+          <label for="pendant_stone_color">
+            <input type="checkbox" value="red" name="pendant_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="red icon" /></span
+              >red</i
+            >
+          </label>
+          <label for="pendant_stone_color">
+            <input type="checkbox" value="purple" name="pendant_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="purple icon" /></span
+              >purple</i
+            >
+          </label>
+          <label for="pendant_stone_color">
+            <input type="checkbox" value="black" name="pendant_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneblackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="pendant_stone_color">
+            <input type="checkbox" value="yellow" name="pendant_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneyellow.png"
+                  alt="yellow icon" /></span
+              >yellow</i
+            >
+          </label>
+          <label for="pendant_stone_color">
+            <input type="checkbox" value="brown" name="pendant_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="Ruby icon" /></span
+              >brown</i
+            >
+          </label>
+          <label for="pendant_stone_color">
+            <input type="checkbox" value="orange" name="pendant_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="Ruby icon" /></span
+              >orange</i
+            >
+          </label>
+          <label for="pendant_stone_color">
+            <input
+              type="checkbox"
+              value="multicolor"
+              name="pendant_stone_color"
+            />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemulticolor.png"
+                  alt="multicolor icon" /></span
+              >multicolor</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone shape panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#pendantAccordion"
+            href="#pendantstoneshape"
+            aria-expanded="false"
+            aria-controls="pendantstoneshape"
+          >
+            stone shape
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="pendantstoneshape"
+        class="panel-collapse collapse pendant_collapse"
+        role="tabpanel"
+        aria-labelledby="pendant_stone_shape"
+      >
+        <div class="panel-body">
+          <label for="pendant_stone_shape">
+            <input type="checkbox" value="round" name="pendant_stone_shape" />
+            <i>round</i>
+          </label>
+          <label for="pendant_stone_shape">
+            <input type="checkbox" value="square" name="pendant_stone_shape" />
+            <i>square</i>
+          </label>
+
+          <label for="pendant_stone_shape">
+            <input type="checkbox" value="oval" name="pendant_stone_shape" />
+            <i>oval</i>
+          </label>
+          <label for="pendant_stone_shape">
+            <input type="checkbox" value="cushion" name="pendant_stone_shape" />
+            <i>cushion</i>
+          </label>
+          <label for="pendant_stone_shape">
+            <input
+              type="checkbox"
+              value="baguette"
+              name="pendant_stone_shape"
+            />
+            <i>baguette</i>
+          </label>
+          <label for="pendant_stone_shape">
+            <input type="checkbox" value="emerald" name="pendant_stone_shape" />
+            <i>emerald</i>
+          </label>
+          <label for="pendant_stone_shape">
+            <input type="checkbox" value="pear" name="pendant_stone_shape" />
+            <i>pear</i>
+          </label>
+          <label for="pendant_stone_shape">
+            <input
+              type="checkbox"
+              value="rectangle"
+              name="pendant_stone_shape"
+            />
+            <i>Rectangle</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#pendantAccordion"
+            href="#pendantmetaltype"
+            aria-expanded="false"
+            aria-controls="pendantmetaltype"
+          >
+            metal type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="pendantmetaltype"
+        class="panel-collapse collapse pendant_collapse"
+        role="tabpanel"
+        aria-labelledby="pendant_metal_type"
+      >
+        <div class="panel-body">
+          <label for="pendant_metal_type">
+            <input type="checkbox" value="gold" name="pendant_metal_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="pendant_metal_type">
+            <input
+              type="checkbox"
+              value="sterling silver"
+              name="pendant_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="silver icon" /></span
+              >sterling silver</i
+            >
+          </label>
+          <label for="pendant_metal_type">
+            <input type="checkbox" value="platinum" name="pendant_metal_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="platinum icon" /></span
+              >platinum</i
+            >
+          </label>
+          <label for="pendant_metal_type">
+            <input
+              type="checkbox"
+              value="stainless_steel"
+              name="pendant_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="stainless steel icon" /></span
+              >stainless steel</i
+            >
+          </label>
+          <label for="pendant_metal_type">
+            <input type="checkbox" value="titanium" name="pendant_metal_type" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="titanium icon" /></span
+              >titanium</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#pendantAccordion"
+            href="#pendantmetalcolor"
+            aria-expanded="false"
+            aria-controls="pendantmetalcolor"
+          >
+            metal color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="pendantmetalcolor"
+        class="panel-collapse collapse pendant_collapse"
+        role="tabpanel"
+        aria-labelledby="pendant_metal_color"
+      >
+        <div class="panel-body">
+          <label for="pendant_metal_color">
+            <input type="checkbox" value="white" name="pendant_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="pendant_metal_color">
+            <input type="checkbox" value="gold" name="pendant_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="pendant_metal_color">
+            <input type="checkbox" value="rose" name="pendant_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/rosecolor.png"
+                  alt="rose icon" /></span
+              >rose</i
+            >
+          </label>
+          <label for="pendant_metal_color">
+            <input type="checkbox" value="black" name="pendant_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/blackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="pendant_metal_color">
+            <input type="checkbox" value="gray" name="pendant_metal_color" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="gray icon" /></span
+              >gray</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+  </div>
+  <!-- end of #accordion -->
+
+  <!-- end of wrap -->
+</div>
+<!-- end of pendant filter bar -->
+<!-- bracelets filterbar -->
+<div class="container filter_bar item cat_bracelets" id="bracelets_bar">
+  <div class="d-flex justify-content-between mt-4">
+    <span class="title">Refine Search</span>
+    <button class="refine_btn">Refine</button>
+  </div>
+  <div
+    class="panel-group wrap"
+    id="braceletAccordion"
+    role="tablist"
+    aria-multiselectable="true"
+  >
+    <button type="button" class="btn_collapse" id="braceletExpand">
+      Expand All
+    </button>
+    <button type="button" class="btn_collapse" id="braceletCollapse">
+      Collapse All
+    </button>
+    <!-- gender panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            role="button"
+            data-toggle="collapse"
+            data-parent="#braceletAccordion"
+            href="#bracelet_gender"
+            aria-expanded="false"
+            aria-controls="bracelet_gender"
+          >
+            gender
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="bracelet_gender"
+        class="panel-collapse collapse bracelet_collapse in"
+        role="tabpanel"
+        aria-labelledby="bracelet_gender"
+      >
+        <div class="panel-body">
+          <label for="bracelet_gender">
+            <input type="checkbox" value="ladies" name="bracelet_gender" />
+            <i>Ladies</i>
+          </label>
+          <label for="bracelet_gender">
+            <input type="checkbox" value="men" name="bracelet_gender" />
+            <i>Men</i>
+          </label>
+          <label for="bracelet_gender">
+            <input type="checkbox" value="unisex" name="bracelet_gender" />
+            <i>Unisex</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- starting price panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#braceletAccordion"
+            href="#braceletprice"
+            aria-expanded="false"
+            aria-controls="braceletprice"
+          >
+            starting price
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="braceletprice"
+        class="panel-collapse collapse bracelet_collapse"
+        role="tabpanel"
+        aria-labelledby="bracelet_price"
+      >
+        <div class="panel-body">
+          <input
+            class="form-control form_design"
+            type="number"
+            name="bracelet_price_low"
+            id=""
+            placeholder="Low"
+          />
+          <input
+            class="form-control form_design"
+            type="number"
+            name="bracelet_price_high"
+            id=""
+            placeholder="High"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- earing style panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#braceletAccordion"
+            href="#braceletstyle"
+            aria-expanded="false"
+            aria-controls="braceletstyle"
+          >
+            bracelet Style
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="braceletstyle"
+        class="panel-collapse collapse bracelet_collapse"
+        role="tabpanel"
+        aria-labelledby="bracelet_style"
+      >
+        <div class="panel-body">
+          <label for="bracelet_style">
+            <input
+              type="checkbox"
+              value="solitaire_studs"
+              name="bracelet_style"
+            />
+            <i>solitaire studs</i>
+          </label>
+
+          <label for="bracelet_style">
+            <input
+              type="checkbox"
+              value="fashion_studs"
+              name="bracelet_style"
+            />
+            <i>fashion studs</i>
+          </label>
+          <label for="bracelet_style">
+            <input type="checkbox" value="hoop" name="bracelet_style" />
+            <i>hoop</i>
+          </label>
+          <label for="bracelet_style">
+            <input type="checkbox" value="drop" name="bracelet_style" />
+            <i>drop</i>
+          </label>
+          <label for="bracelet_style">
+            <input type="checkbox" value="crawler" name="bracelet_style" />
+            <i>crawler</i>
+          </label>
+          <label for="bracelet_style">
+            <input type="checkbox" value="threader" name="bracelet_style" />
+            <i>threader</i>
+          </label>
+          <label for="bracelet_style">
+            <input type="checkbox" value="front/back" name="bracelet_style" />
+            <i>front/back</i>
+          </label>
+          <label for="bracelet_style">
+            <input
+              type="checkbox"
+              value="earing jackets"
+              name="bracelet_style"
+            />
+            <i>earing jackets</i>
+          </label>
+          <label for="bracelet_style">
+            <input type="checkbox" value="three stone" name="bracelet_style" />
+            <i>three stone</i>
+          </label>
+          <label for="bracelet_style">
+            <input type="checkbox" value="cuff" name="bracelet_style" />
+            <i>cuff</i>
+          </label>
+          <label for="bracelet_style">
+            <input type="checkbox" value="couples" name="bracelet_style" />
+            <i>couples</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#braceletAccordion"
+            href="#braceletstonetype"
+            aria-expanded="false"
+            aria-controls="braceletstonetype"
+          >
+            stone type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="braceletstonetype"
+        class="panel-collapse collapse bracelet_collapse"
+        role="tabpanel"
+        aria-labelledby="bracelet_stone_type"
+      >
+        <div class="panel-body">
+          <label for="bracelet_stone_type">
+            <input type="checkbox" value="diamond" name="bracelet_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="diamond icon" /></span
+              >Diamond</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input
+              type="checkbox"
+              value="morganite"
+              name="bracelet_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemorganite.png"
+                  alt="Morganite icon" /></span
+              >Morganite</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input type="checkbox" value="emrald" name="bracelet_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="Emrald icon" /></span
+              >Emrald</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input
+              type="checkbox"
+              value="sapphire"
+              name="bracelet_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="Sapphire icon" /></span
+              >Sapphire</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input
+              type="checkbox"
+              value="amethyst"
+              name="bracelet_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="Sapphire icon" /></span
+              >Amethyst</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input type="checkbox" value="ruby" name="bracelet_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="Ruby icon" /></span
+              >Ruby</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input
+              type="checkbox"
+              value="aquamarine"
+              name="bracelet_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneaquamarine.png"
+                  alt="aquamarine icon" /></span
+              >aquamarine</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input type="checkbox" value="peridot" name="bracelet_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneperidot.png"
+                  alt="peridot icon" /></span
+              >peridot</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input type="checkbox" value="garnet" name="bracelet_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="garnet icon" /></span
+              >garnet</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input type="checkbox" name="bracelet_stone_type" value="citrine" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="citrine icon" /></span
+              >citrine</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input
+              type="checkbox"
+              value="alexandrite"
+              name="bracelet_stone_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonealexandrite.png"
+                  alt="alexandrite icon" /></span
+              >alexandrite</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input type="checkbox" value="opal" name="bracelet_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneopal.png"
+                  alt="opal icon" /></span
+              >opal</i
+            >
+          </label>
+          <label for="bracelet_stone_type">
+            <input type="checkbox" value="quartz" name="bracelet_stone_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonequartz.png"
+                  alt="quartz icon" /></span
+              >quartz</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#braceletAccordion"
+            href="#braceletstonecolor"
+            aria-expanded="false"
+            aria-controls="braceletstonecolor"
+          >
+            stone color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="braceletstonecolor"
+        class="panel-collapse collapse bracelet_collapse"
+        role="tabpanel"
+        aria-labelledby="bracelet_stone_color"
+      >
+        <div class="panel-body">
+          <label for="bracelet_stone_color">
+            <input type="checkbox" value="white" name="bracelet_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonediamond.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="bracelet_stone_color">
+            <input type="checkbox" value="blue" name="bracelet_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonesapphire.png"
+                  alt="blue icon" /></span
+              >blue</i
+            >
+          </label>
+          <label for="bracelet_stone_color">
+            <input type="checkbox" value="green" name="bracelet_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneemrald.png"
+                  alt="green icon" /></span
+              >green</i
+            >
+          </label>
+          <label for="bracelet_stone_color">
+            <input type="checkbox" value="red" name="bracelet_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneruby.png"
+                  alt="red icon" /></span
+              >red</i
+            >
+          </label>
+          <label for="bracelet_stone_color">
+            <input type="checkbox" value="purple" name="bracelet_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneamethyst.png"
+                  alt="purple icon" /></span
+              >purple</i
+            >
+          </label>
+          <label for="bracelet_stone_color">
+            <input type="checkbox" value="black" name="bracelet_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneblackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="bracelet_stone_color">
+            <input type="checkbox" value="yellow" name="bracelet_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstoneyellow.png"
+                  alt="yellow icon" /></span
+              >yellow</i
+            >
+          </label>
+          <label for="bracelet_stone_color">
+            <input type="checkbox" value="brown" name="bracelet_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonegarnet.png"
+                  alt="Ruby icon" /></span
+              >brown</i
+            >
+          </label>
+          <label for="bracelet_stone_color">
+            <input type="checkbox" value="orange" name="bracelet_stone_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonecitrine.png"
+                  alt="Ruby icon" /></span
+              >orange</i
+            >
+          </label>
+          <label for="bracelet_stone_color">
+            <input
+              type="checkbox"
+              value="multicolor"
+              name="bracelet_stone_color"
+            />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/ringstonemulticolor.png"
+                  alt="multicolor icon" /></span
+              >multicolor</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- stone shape panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#braceletAccordion"
+            href="#braceletstoneshape"
+            aria-expanded="false"
+            aria-controls="braceletstoneshape"
+          >
+            stone shape
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="braceletstoneshape"
+        class="panel-collapse collapse bracelet_collapse"
+        role="tabpanel"
+        aria-labelledby="bracelet_stone_shape"
+      >
+        <div class="panel-body">
+          <label for="bracelet_stone_shape">
+            <input type="checkbox" value="round" name="bracelet_stone_shape" />
+            <i>round</i>
+          </label>
+          <label for="bracelet_stone_shape">
+            <input type="checkbox" value="square" name="bracelet_stone_shape" />
+            <i>square</i>
+          </label>
+
+          <label for="bracelet_stone_shape">
+            <input type="checkbox" value="oval" name="bracelet_stone_shape" />
+            <i>oval</i>
+          </label>
+          <label for="bracelet_stone_shape">
+            <input
+              type="checkbox"
+              value="cushion"
+              name="bracelet_stone_shape"
+            />
+            <i>cushion</i>
+          </label>
+          <label for="bracelet_stone_shape">
+            <input
+              type="checkbox"
+              value="baguette"
+              name="bracelet_stone_shape"
+            />
+            <i>baguette</i>
+          </label>
+          <label for="bracelet_stone_shape">
+            <input
+              type="checkbox"
+              value="emerald"
+              name="bracelet_stone_shape"
+            />
+            <i>emerald</i>
+          </label>
+          <label for="bracelet_stone_shape">
+            <input type="checkbox" value="pear" name="bracelet_stone_shape" />
+            <i>pear</i>
+          </label>
+          <label for="bracelet_stone_shape">
+            <input
+              type="checkbox"
+              value="rectangle"
+              name="bracelet_stone_shape"
+            />
+            <i>Rectangle</i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal type panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#braceletAccordion"
+            href="#braceletmetaltype"
+            aria-expanded="false"
+            aria-controls="braceletmetaltype"
+          >
+            metal type
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="braceletmetaltype"
+        class="panel-collapse collapse bracelet_collapse"
+        role="tabpanel"
+        aria-labelledby="bracelet_metal_type"
+      >
+        <div class="panel-body">
+          <label for="bracelet_metal_type">
+            <input type="checkbox" value="gold" name="bracelet_metal_type" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="bracelet_metal_type">
+            <input
+              type="checkbox"
+              value="sterling silver"
+              name="bracelet_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="silver icon" /></span
+              >sterling silver</i
+            >
+          </label>
+          <label for="bracelet_metal_type">
+            <input
+              type="checkbox"
+              value="platinum"
+              name="bracelet_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="platinum icon" /></span
+              >platinum</i
+            >
+          </label>
+          <label for="bracelet_metal_type">
+            <input
+              type="checkbox"
+              value="stainless_steel"
+              name="bracelet_metal_type"
+            />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="stainless steel icon" /></span
+              >stainless steel</i
+            >
+          </label>
+          <label for="bracelet_metal_type">
+            <input
+              type="checkbox"
+              value="titanium"
+              name="bracelet_metal_type"
+            />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="titanium icon" /></span
+              >titanium</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <!-- metal color panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+          <a
+            class="collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-parent="#braceletAccordion"
+            href="#braceletmetalcolor"
+            aria-expanded="false"
+            aria-controls="braceletmetalcolor"
+          >
+            metal color
+          </a>
+        </h4>
+        <span class="chev"
+          ><img src="./assets/icons/cheveron.svg" alt="cheveron icon"
+        /></span>
+      </div>
+      <div
+        id="braceletmetalcolor"
+        class="panel-collapse collapse bracelet_collapse"
+        role="tabpanel"
+        aria-labelledby="bracelet_metal_color"
+      >
+        <div class="panel-body">
+          <label for="bracelet_metal_color">
+            <input type="checkbox" value="white" name="bracelet_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/whitecolor.png"
+                  alt="white icon" /></span
+              >white</i
+            >
+          </label>
+          <label for="bracelet_metal_color">
+            <input type="checkbox" value="gold" name="bracelet_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/goldcolor.png"
+                  alt="gold icon" /></span
+              >gold</i
+            >
+          </label>
+          <label for="bracelet_metal_color">
+            <input type="checkbox" value="rose" name="bracelet_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/rosecolor.png"
+                  alt="rose icon" /></span
+              >rose</i
+            >
+          </label>
+          <label for="bracelet_metal_color">
+            <input type="checkbox" value="black" name="bracelet_metal_color" />
+
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/blackcolor.png"
+                  alt="black icon" /></span
+              >black</i
+            >
+          </label>
+          <label for="bracelet_metal_color">
+            <input type="checkbox" value="gray" name="bracelet_metal_color" />
+            <i>
+              <span
+                ><img
+                  class="pl-1 pr-3 pb-1"
+                  src="./assets/images/grayandplatniumcolor.png"
+                  alt="gray icon" /></span
+              >gray</i
+            >
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+  </div>
+  <!-- end of #accordion -->
+
+  <!-- end of wrap -->
+</div>
+<!-- end of bracelets filter bar -->

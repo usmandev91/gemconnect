@@ -1011,7 +1011,7 @@
                               <input
                                 class="jRadioDropdown"
                                 type="radio"
-                                value="5"
+                                value="rectangle"
                                 name="ring_stone_shape"
                               />
                               <i>Rectangle</i>
@@ -1498,117 +1498,113 @@
                 <!-- 9th select ring metal type -->
                 <div class="col-md-3">
                   <div class="form-group">
-                    <form action="">
-                      <div class="gc_custom_select gc_custom_select_no_head">
-                        <label
-                          class="select_label p-0 pl-1"
-                          for="ring_metal_color"
-                          >Metal Color
-                          <span class="p-0"
-                            ><img
-                              src="./assets/icons/carret.svg"
-                              alt="carret icon" /></span
-                        ></label>
-                        <div class="dropdown">
-                          <button
-                            type="button"
-                            class="btn select_btn dropdown-toggle"
-                            data-toggle="dropdown"
-                            aria-labelledby="select menu"
-                          >
-                            <ins class="selcted_display">white</ins>
-                          </button>
-                          <div class="dropdown-menu select_menu">
-                            <label class="dropdown-item dropdown-item-1 pt-2">
-                              <input
-                                class="jRadioDropdown"
-                                type="radio"
-                                value="white"
-                                name="ring_metal_color"
-                              />
+                    <div class="gc_custom_select gc_custom_select_no_head">
+                      <label
+                        class="select_label p-0 pl-1"
+                        for="ring_metal_color"
+                        >Metal Color
+                        <span class="p-0"
+                          ><img
+                            src="./assets/icons/carret.svg"
+                            alt="carret icon" /></span
+                      ></label>
+                      <div class="dropdown">
+                        <button
+                          type="button"
+                          class="btn select_btn dropdown-toggle"
+                          data-toggle="dropdown"
+                          aria-labelledby="select menu"
+                        >
+                          <ins class="selcted_display">white</ins>
+                        </button>
+                        <div class="dropdown-menu select_menu">
+                          <label class="dropdown-item dropdown-item-1 pt-2">
+                            <input
+                              class="jRadioDropdown"
+                              type="radio"
+                              value="white"
+                              name="ring_metal_color"
+                            />
 
-                              <i>
-                                <span
-                                  ><img
-                                    class="pl-1 pr-3 pb-1"
-                                    src="./assets/images/whitecolor.png"
-                                    alt="white icon" /></span
-                                >white</i
-                              >
-                            </label>
-                            <label class="dropdown-item dropdown">
-                              <input
-                                class="jRadioDropdown"
-                                type="radio"
-                                value="gold"
-                                name="ring_metal_color"
-                              />
-
-                              <i>
-                                <span
-                                  ><img
-                                    class="pl-1 pr-3 pb-1"
-                                    src="./assets/images/goldcolor.png"
-                                    alt="gold icon" /></span
-                                >gold</i
-                              >
-                            </label>
-                            <label class="dropdown-item">
-                              <input
-                                class="jRadioDropdown"
-                                type="radio"
-                                value="rose"
-                                name="ring_metal_color"
-                              />
-
-                              <i>
-                                <span
-                                  ><img
-                                    class="pl-1 pr-3 pb-1"
-                                    src="./assets/images/rosecolor.png"
-                                    alt="rose icon" /></span
-                                >rose</i
-                              >
-                            </label>
-                            <label class="dropdown-item">
-                              <input
-                                class="jRadioDropdown"
-                                type="radio"
-                                value="black"
-                                name="ring_metal_color"
-                              />
-
-                              <i>
-                                <span
-                                  ><img
-                                    class="pl-1 pr-3 pb-1"
-                                    src="./assets/images/blackcolor.png"
-                                    alt="black icon" /></span
-                                >black</i
-                              >
-                            </label>
-                            <label
-                              class="dropdown-item dropdown-item-last mb-0"
+                            <i>
+                              <span
+                                ><img
+                                  class="pl-1 pr-3 pb-1"
+                                  src="./assets/images/whitecolor.png"
+                                  alt="white icon" /></span
+                              >white</i
                             >
-                              <input
-                                class="jRadioDropdown"
-                                type="radio"
-                                value="gray"
-                                name="ring_metal_color"
-                              />
-                              <i>
-                                <span
-                                  ><img
-                                    class="pl-1 pr-3 pb-1"
-                                    src="./assets/images/grayandplatniumcolor.png"
-                                    alt="gray icon" /></span
-                                >gray</i
-                              >
-                            </label>
-                          </div>
+                          </label>
+                          <label class="dropdown-item dropdown">
+                            <input
+                              class="jRadioDropdown"
+                              type="radio"
+                              value="gold"
+                              name="ring_metal_color"
+                            />
+
+                            <i>
+                              <span
+                                ><img
+                                  class="pl-1 pr-3 pb-1"
+                                  src="./assets/images/goldcolor.png"
+                                  alt="gold icon" /></span
+                              >gold</i
+                            >
+                          </label>
+                          <label class="dropdown-item">
+                            <input
+                              class="jRadioDropdown"
+                              type="radio"
+                              value="rose"
+                              name="ring_metal_color"
+                            />
+
+                            <i>
+                              <span
+                                ><img
+                                  class="pl-1 pr-3 pb-1"
+                                  src="./assets/images/rosecolor.png"
+                                  alt="rose icon" /></span
+                              >rose</i
+                            >
+                          </label>
+                          <label class="dropdown-item">
+                            <input
+                              class="jRadioDropdown"
+                              type="radio"
+                              value="black"
+                              name="ring_metal_color"
+                            />
+
+                            <i>
+                              <span
+                                ><img
+                                  class="pl-1 pr-3 pb-1"
+                                  src="./assets/images/blackcolor.png"
+                                  alt="black icon" /></span
+                              >black</i
+                            >
+                          </label>
+                          <label class="dropdown-item dropdown-item-last mb-0">
+                            <input
+                              class="jRadioDropdown"
+                              type="radio"
+                              value="gray"
+                              name="ring_metal_color"
+                            />
+                            <i>
+                              <span
+                                ><img
+                                  class="pl-1 pr-3 pb-1"
+                                  src="./assets/images/grayandplatniumcolor.png"
+                                  alt="gray icon" /></span
+                              >gray</i
+                            >
+                          </label>
                         </div>
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2937,7 +2933,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- 2nd select menu earing_style -->
+                <!-- 2nd select menu chain_style -->
                 <div class="col-md-3">
                   <div class="gc_custom_select gc_custom_select_no_head">
                     <label class="select_label pl-1 pr-1" for="chain_style"
@@ -4554,10 +4550,10 @@
                           <input
                             class="jRadioDropdown"
                             type="radio"
-                            value="rolax"
+                            value="rolex"
                             name="watch_brand"
                           />
-                          <i>rolax</i>
+                          <i>rolex</i>
                         </label>
                         <label class="dropdown-item">
                           <input
@@ -4662,7 +4658,7 @@
                             name="watch_movement"
                           />
 
-                          <i>microcontroller</i>
+                          <i>micro controller</i>
                         </label>
                         <label class="dropdown-item">
                           <input
@@ -6350,7 +6346,7 @@
                 <div class="col-md-3">
                   <div class="gc_custom_select gc_custom_select_no_head">
                     <label class="select_label pl-1 pr-1" for="earing_style"
-                      >Chain Length
+                      >Earing style
                       <span class="px-0"
                         ><img
                           src="./assets/icons/carret.svg"

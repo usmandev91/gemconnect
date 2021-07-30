@@ -1176,7 +1176,7 @@ input[type="text"] {
           height: 15px;
         }
       }
-      .hot-label {
+      .hot_label {
         position: absolute !important;
         top: 8%;
         left: 8%;
@@ -1669,14 +1669,16 @@ input[type="text"] {
 .listing_container {
   background-color: $theme_bgcolor;
   max-width: 1460px;
-  .filbar_grid {
+  .filterbar_grid {
     margin-top: 2.1rem;
-    max-width: 313px;
+    max-width: 355px;
+    transition: all 0.4s ease-in;
   }
   .filter_bar {
     background-color: $cards-bg-color;
-    padding: 2rem 2.5rem;
+    padding: 2rem 3.5rem 2rem 3.5rem;
     border-radius: 25px;
+    transition: all 0.4s ease-in;
     .refine_btn {
       border: none;
       background-color: $cards-bg-color;
@@ -1692,10 +1694,57 @@ input[type="text"] {
       color: #002f33;
       font-weight: 600;
     }
+    .btn_collapse {
+      border: none;
+      margin-top: 1rem;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: $cards-bg-color;
+      padding: 0;
+      text-decoration: underline;
+      color: #3bc0cb;
+    }
+    .panel {
+      margin: 1rem 0;
+      a {
+        font-size: 16px;
+        color: $text-color;
+        font-weight: 600;
+      }
+    }
+    .panel-title {
+      margin-bottom: 0;
+    }
+    .panel-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chev {
+      transform: rotate(0deg);
+      transition: all 0.5s;
+    }
+    .panel-heading.active .chev {
+      transform: rotate(-180deg);
+      transition: all 0.5s;
+    }
+    .panel-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 1rem 1rem 1rem;
+      white-space: nowrap;
+      label {
+        i {
+          margin-left: 10px;
+          font-style: normal;
+        }
+      }
+    }
   }
   @media (min-width: 1600px) {
     .cards_grid {
-      margin-left: 52px;
+      margin-left: 7px;
       .cards_row {
         .item {
           display: flex;
@@ -1725,10 +1774,9 @@ input[type="text"] {
       max-width: 313px;
       overflow: hidden;
       text-align: center;
-      .listing-img {
-        max-height: 250px;
-        max-width: 313px;
-        border-radius: 13%;
+      .img-fluid {
+        min-height: 240px;
+        min-width: 313px;
       }
       .staff-label {
         position: absolute !important;
@@ -1840,6 +1888,10 @@ input[type="text"] {
       max-width: 280px;
       .listing_rating {
         font-size: 0.7rem;
+      }
+      .rating_score {
+        font-size: 14px;
+        font-weight: 600;
       }
     }
   }

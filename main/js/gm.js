@@ -1,5 +1,6 @@
 $(document).ready(function () {
   // hide the counters and filters at start
+  $("#collapseRing").hide();
   $("#rings_counter").hide();
   $("#chains_counter").hide();
   $("#pendants_counter").hide();
@@ -36,4 +37,108 @@ $(document).ready(function () {
       $(".item").show();
     }
   });
+  // cheveron animation
+  $(
+    "#ringAccordion, #chainAccordion, #pendantAccordion, #watchAccordion, #braceletAccordion, #earingAccordion, #bs-collapse"
+  )
+    .on("show.bs.collapse", function (a) {
+      $(a.target).prev(".panel-heading").addClass("active");
+    })
+    .on("hide.bs.collapse", function (a) {
+      $(a.target).prev(".panel-heading").removeClass("active");
+    });
+  //Collapse and expand individual accordion buttons rings
+  $("#ringCollapse").hide();
+  $("#ringExpand").click(function () {
+    $(this).hide();
+    $(".ring_collapse").collapse("show");
+    $("#ringCollapse").show();
+  });
+  $("#ringCollapse").click(function () {
+    $(this).hide();
+    $(".ring_collapse").collapse("hide");
+    $("#ringExpand").show();
+  });
 });
+//Collapse and expand individual accordion buttons chains
+$("#chainCollapse").hide();
+$("#chainExpand").click(function () {
+  $(this).hide();
+  $(".chain_collapse").collapse("show");
+  $("#chainCollapse").show();
+});
+$("#chainCollapse").click(function () {
+  $(this).hide();
+  $(".chain_collapse").collapse("hide");
+  $("#chainExpand").show();
+});
+//Collapse and expand individual accordion buttons pendants
+$("#pendantCollapse").hide();
+$("#pendantExpand").click(function () {
+  $(this).hide();
+  $(".pendant_collapse").collapse("show");
+  $("#pendantCollapse").show();
+});
+$("#pendantCollapse").click(function () {
+  $(this).hide();
+  $(".pendant_collapse").collapse("hide");
+  $("#pendantExpand").show();
+});
+//Collapse and expand individual accordion buttons watch
+$("#watchCollapse").hide();
+$("#watchExpand").click(function () {
+  $(this).hide();
+  $(".watch_collapse").collapse("show");
+  $("#watchCollapse").show();
+});
+$("#watchCollapse").click(function () {
+  $(this).hide();
+  $(".watch_collapse").collapse("hide");
+  $("#watchExpand").show();
+});
+//Collapse and expand individual accordion buttons bracelets
+$("#braceletCollapse").hide();
+$("#braceletExpand").click(function () {
+  $(this).hide();
+  $(".bracelet_collapse").collapse("show");
+  $("#braceletCollapse").show();
+});
+$("#braceletCollapse").click(function () {
+  $(this).hide();
+  $(".bracelet_collapse").collapse("hide");
+  $("#braceletExpand").show();
+});
+//Collapse and expand individual accordion buttons earings
+$("#earingCollapse").hide();
+$("#earingExpand").click(function () {
+  $(this).hide();
+  $(".earing_collapse").collapse("show");
+  $("#earingCollapse").show();
+});
+$("#earingCollapse").click(function () {
+  $(this).hide();
+  $(".earing_collapse").collapse("hide");
+  $("#earingExpand").show();
+});
+//Collapse and expand individual accordion function chains
+// function expand() {
+//   $(".chain_collapse").collapse("show");
+// }
+// function collapse() {
+//   $(".chain_collapse").collapse("hide");
+// }
+//Collapse and expand individual accordion function pendants
+// function expand() {
+//   $(".pendant_collapse").collapse("show");
+// }
+// function collapse() {
+//   $(".pendant_collapse").collapse("hide");
+// }
+//Collapse and expand individual accordion function bracelets
+//Collapse and expand individual accordion function earings
+// function expand() {
+//   $(".earing_collapse").collapse("show");
+// }
+// function collapse() {
+//   $(".earing_collapse").collapse("hide");
+// }

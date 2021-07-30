@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.828" height="7.414" viewBox="0 0 12.828 7.414">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3bc0cb;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="Path_G" data-name="Path G" class="cls-1" d="M5,10,0,5,5,0" transform="translate(1.414 6.414) rotate(-90)"/>
+</svg>
