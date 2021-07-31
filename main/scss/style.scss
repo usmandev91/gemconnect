@@ -1417,30 +1417,7 @@ input[type="text"] {
 #login {
   max-width: 520px;
 }
-.splitter {
-  border-right: 1px solid #b4b4b4;
-  min-height: 260px;
-}
-#signup {
-  .social_login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
 
-    .social_btn {
-      display: inline-flex;
-      justify-content: space-evenly;
-      align-items: center;
-      box-shadow: $search_shadow;
-      width: 300px;
-      border-radius: 10px;
-      height: 59px;
-      margin-bottom: 15px;
-      padding: 0.5rem;
-    }
-  }
-}
 .check_label {
   padding-left: 5px;
   a {
@@ -2790,198 +2767,116 @@ input[type="text"] {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
   }
 }
-// for progressbars
-//     background-color: $theme_color;
-//     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-// statistics page
 .stats_row {
-  margin-top: 40px;
-  .sales_tile {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 35px;
-    min-width: 229px;
-    min-height: 229px;
-    max-width: 229px;
-    max-height: 229px;
-    background-color: #3bc0cb;
-    color: $theme_bgcolor;
-    .head {
-      font-size: 1rem;
-      color: #ffffff;
-      font-weight: 600;
-      margin-bottom: 2rem;
-    }
-    .result {
-      margin: 0 auto;
-      align-self: center;
-      font-size: 50px;
-      font-weight: bold;
-      margin-bottom: 38px;
-    }
-  }
-  .head {
-    color: #b4b4b4;
-    font-size: 1rem;
-    font-weight: 600;
-  }
+  margin: 7rem 0;
   .tile {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    border-radius: 30px;
-    min-width: 235px;
-    min-height: 150px;
-    max-width: 235px;
-    max-height: 150px;
     background-color: $cards-bg-color;
-    margin-top: 50px;
+    max-width: 229px;
+    min-height: 200px;
+    border-radius: 24px;
+    .head {
+      color: #b4b4b4;
+      font-weight: 600;
+      padding-top: 20px;
+      padding-left: 10px;
+      margin-bottom: 0;
+      align-self: flex-start;
+    }
     .result {
       align-self: center;
+      margin-top: 40px;
       color: $text-color;
       font-size: 30px;
       font-weight: bold;
-      margin-bottom: 25px;
+      text-align: center;
     }
   }
-  .funds_tile {
+  .withdraw_container {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    border-radius: 30px;
-    min-width: 235px;
-    min-height: 150px;
-    max-width: 235px;
-    max-height: 150px;
-    background-color: $text-color;
-    margin-top: 50px;
-    .head {
-      color: #707070;
-      font-size: 1rem;
-      font-weight: 600;
-      padding-left: 10px;
-      margin-top: 1em;
-    }
-    .result {
-      align-self: center;
-      color: $theme_bgcolor;
-      font-size: 30px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .btn_withdraw {
-      font-weight: bold;
-      font-size: 12px;
-      color: white;
-      background-color: $theme_color;
-      margin: 0 0 18px 0;
-      padding: 5px 0px;
-      border-radius: 0.9rem;
-    }
-  }
-
-  .chart_container {
-    background-color: $cards-bg-color;
-    border-radius: 35px;
-    min-height: 229px;
-    max-width: 800px;
-    .head {
-      padding-left: 27px;
-      padding-top: 23px;
-      font-size: 17px;
-      font-weight: 600;
-      color: #b4b4b4;
-      margin-bottom: 0;
-    }
-  }
-  .statement_container {
-    min-height: 697px;
-    margin-top: 2.2rem;
-    border-radius: 50px;
-    background-color: $cards-bg-color;
-    .transaction_cell {
-      background-color: white !important;
-    }
-    .btn_default {
-      margin-top: 8px;
-    }
-  }
-  .side-bar {
-    background-color: $cards-bg-color;
-    border-radius: 35px;
-    max-width: 370px;
-    min-height: 974.5px;
-    padding: 2rem 1rem;
-  }
-  .title {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #b4b4b4;
-  }
-  .sales_value {
-    font-size: 16px;
-    font-weight: 600;
-    color: $text-color;
-    margin-bottom: 0;
-    margin-top: 10px;
-  }
-  .card-flyer {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background: $cards-bg-color;
-    max-width: 300px;
-    padding: 0.4em;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    .listing-image-box {
-      padding-right: 10px;
-      width: 120px;
-      border-radius: 20px;
-      img {
-        border-radius: 20px;
-      }
-    }
-    .text-box {
+    justify-content: space-evenly;
+    background-color: $text-color;
+    height: 200px;
+    border-radius: 24px;
+    .text_container {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      max-width: 230px;
+      min-height: 200px;
+      border-right: dashed 1px white;
       padding: 0;
-      .text-container {
-        max-width: 120px !important;
-        .listing_name {
-          font-size: 14px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-          color: $text-color;
-          margin: 0;
-        }
-        .listing_price {
-          margin: 0;
-          font-size: 1rem;
-          font-weight: bold;
-          color: $text-color;
-          padding: 0;
-        }
+      margin-left: 0;
+      .head {
+        align-self: flex-start;
+        color: $theme_bgcolor;
+        font-weight: 600;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-left: 10px;
+      }
+      .result {
+        align-self: center;
+        color: $theme_bgcolor;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 40px;
       }
     }
-    .listing_rating_container {
-      padding: 0;
-    }
-    .listing_rating {
-      font-size: 0.4rem;
-      padding: 0;
-    }
-    .rating_score {
-      font-size: 13px;
+
+    .btn_withdraw {
+      background-color: $theme_color;
+      min-height: 140px;
+      width: 155px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 24px;
+      margin-right: 12px;
+      img {
+        margin-bottom: 20px;
+      }
+      color: $theme_bgcolor;
+      font-size: 20px;
+      font-weight: 600;
     }
   }
+}
+.statement_container {
+  min-height: 697px;
+  margin-top: 2.2rem;
+  border-radius: 50px;
+  background-color: $cards-bg-color;
+  .transaction_cell {
+    background-color: white !important;
+  }
+  .btn_default {
+    margin-top: 8px;
+  }
+}
+.side-bar {
+  background-color: $cards-bg-color;
+  border-radius: 35px;
+  max-width: 370px;
+  min-height: 974.5px;
+  padding: 2rem 1rem;
+}
+.title {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #b4b4b4;
+}
+.sales_value {
+  font-size: 16px;
+  font-weight: 600;
+  color: $text-color;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 // post new listing page
 .post_new {
