@@ -1611,6 +1611,11 @@ input[type="text"] {
         position: absolute;
         top: 8%;
         left: 8%; }
+      .listing_container .card-flyer .listing-image-box .auction_label {
+        white-space: nowrap;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        padding: 0.2rem 1rem; }
       .listing_container .card-flyer .listing-image-box .discount-label {
         position: absolute !important;
         top: 0%;
@@ -1665,6 +1670,26 @@ input[type="text"] {
           font-size: 1.2rem;
           font-weight: 700;
           color: #002f33; }
+      .listing_container .card-flyer .text-box .auction_price_container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-left: 17px; }
+        .listing_container .card-flyer .text-box .auction_price_container .user_bid {
+          padding-right: 5px;
+          margin-bottom: 0; }
+        .listing_container .card-flyer .text-box .auction_price_container .listing_minimum_bid,
+        .listing_container .card-flyer .text-box .auction_price_container .listing_highest_bid {
+          margin: 0;
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: #002f33; }
+        .listing_container .card-flyer .text-box .auction_price_container .auction_bid {
+          margin-bottom: 0; }
+        .listing_container .card-flyer .text-box .auction_price_container .no_bid {
+          font-weight: normal;
+          color: #ff7272;
+          text-transform: none; }
       .listing_container .card-flyer .text-box .order_success {
         margin-top: 0.2rem;
         margin-bottom: 0;

@@ -1871,6 +1871,12 @@ input[type="text"] {
         top: 8%;
         left: 8%;
       }
+      .auction_label {
+        white-space: nowrap;
+        background-color: $cards-bg-color;
+        border-radius: 10px;
+        padding: 0.2rem 1rem;
+      }
       .discount-label {
         position: absolute !important;
         top: 0%;
@@ -1935,7 +1941,31 @@ input[type="text"] {
           color: $text-color;
         }
       }
-
+      .auction_price_container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-left: 17px;
+        .user_bid {
+          padding-right: 5px;
+          margin-bottom: 0;
+        }
+        .listing_minimum_bid,
+        .listing_highest_bid {
+          margin: 0;
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: $text-color;
+        }
+        .auction_bid {
+          margin-bottom: 0;
+        }
+        .no_bid {
+          font-weight: normal;
+          color: #ff7272;
+          text-transform: none;
+        }
+      }
       .order_success {
         margin-top: 0.2rem;
         margin-bottom: 0;

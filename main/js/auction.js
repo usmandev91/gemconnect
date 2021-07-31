@@ -17,9 +17,9 @@ $(document).ready(function () {
     var attr = $(this).attr("data-li");
     $(".filter_btn").removeClass("active");
     $(this).addClass("active");
-    $("#gm_count").hide();
-    $("#gm_counter").removeClass("std-title");
-    $("#gm_counter").removeClass("tab-text");
+    $("#auction_count").hide();
+    $("#auction_counter").removeClass("std-title");
+    $("#auction_counter").removeClass("tab-text");
     $(".item").hide();
     if (attr == "cat_rings") {
       $("." + attr).show();
