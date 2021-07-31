@@ -2943,40 +2943,7 @@ input[type="text"] {
     }
   }
 }
-.statement_container {
-  min-height: 697px;
-  margin-top: 2.2rem;
-  border-radius: 50px;
-  background-color: $cards-bg-color;
-  .transaction_cell {
-    background-color: white !important;
-  }
-  .btn_default {
-    margin-top: 8px;
-  }
-}
-.side-bar {
-  background-color: $cards-bg-color;
-  border-radius: 35px;
-  max-width: 370px;
-  min-height: 974.5px;
-  padding: 2rem 1rem;
-}
-.title {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #b4b4b4;
-}
-.sales_value {
-  font-size: 16px;
-  font-weight: 600;
-  color: $text-color;
-  margin-bottom: 0;
-  margin-top: 10px;
-}
+
 // post new listing page
 .post_new {
   .side_nav {

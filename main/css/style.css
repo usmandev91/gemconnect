@@ -2507,38 +2507,6 @@ input[type="text"] {
       .stats_row .withdraw_container .btn_withdraw img {
         margin-bottom: 20px; }
 
-.statement_container {
-  min-height: 697px;
-  margin-top: 2.2rem;
-  border-radius: 50px;
-  background-color: #f6f6f6; }
-  .statement_container .transaction_cell {
-    background-color: white !important; }
-  .statement_container .btn_default {
-    margin-top: 8px; }
-
-.side-bar {
-  background-color: #f6f6f6;
-  border-radius: 35px;
-  max-width: 370px;
-  min-height: 974.5px;
-  padding: 2rem 1rem; }
-
-.title {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #b4b4b4; }
-
-.sales_value {
-  font-size: 16px;
-  font-weight: 600;
-  color: #002f33;
-  margin-bottom: 0;
-  margin-top: 10px; }
-
 .post_new .side_nav {
   display: flex;
   flex-direction: column;
