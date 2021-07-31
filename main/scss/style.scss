@@ -325,7 +325,8 @@ input[type="number"] {
 #addtoCart,
 #logsuccess,
 #invalidModal,
-#widthdrawSuccess {
+#widthdrawSuccess,
+#promoSuccess {
   .modal-content {
     border-radius: 36px;
     padding: 2rem 2rem;
@@ -345,9 +346,9 @@ input[type="number"] {
   .modal-body {
     padding: 0;
     .verified {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 15px;
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
     }
     .title {
       text-align: center;
@@ -355,6 +356,7 @@ input[type="number"] {
       font-weight: 600;
       color: $text-color;
       margin-bottom: 0;
+      padding-bottom: 10px;
     }
     .title2 {
       text-align: center;
@@ -612,7 +614,102 @@ input[type="number"] {
     outline: none;
   }
 }
-// widthdrawSuccess Modal
+// promo Modal
+#promoModal {
+  .modal-content {
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    .badge {
+      width: 40px;
+      height: 40px;
+      background-color: $cards-bg-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      border-radius: 8px;
+    }
+  }
+  .modal-header {
+    border: none;
+    outline: none;
+    padding: 0;
+    .title {
+      color: #002f33;
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: none;
+      margin-top: 4rem;
+      padding-right: 3rem;
+    }
+    .about_container {
+      max-width: 290px;
+      .head {
+        text-transform: none;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+  .modal-body {
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    .well {
+      display: flex;
+      flex-direction: column;
+      background-color: $cards-bg-color;
+      border-radius: 22px;
+      padding: 2rem 2rem;
+      padding-bottom: 1rem;
+      margin-bottom: 20px;
+      .head {
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+    }
+    label {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .days {
+      font-weight: 600;
+      padding-left: 5px;
+    }
+    .dottedlines {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      padding: 0rem 0.8rem;
+    }
+    .dottedlines::before {
+      content: "";
+      flex: 1;
+      border-bottom: 2px #b4b4b4 dashed;
+    }
+    .dottedlines::after {
+      content: "";
+      flex: 1;
+      border-bottom: 2px #b4b4b4 dashed;
+    }
+    .price {
+      font-weight: bold;
+    }
+  }
+  .modal-footer {
+    border: none;
+    outline: none;
+    .btn_default {
+      padding: 0.5rem 5rem !important;
+    }
+  }
+}
 
 // order Modal
 #publishModal,
@@ -1999,12 +2096,19 @@ input[type="text"] {
   }
 }
 
-.live {
+.featured {
   margin-top: 12px;
   margin-bottom: 0;
   color: $theme_color;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
+}
+.not_featured {
+  font-size: 18px;
+  color: #002f33;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 0;
 }
 .instock,
 .sold {
@@ -2021,26 +2125,14 @@ input[type="text"] {
   font-weight: 700;
   color: #b4b4b4;
 }
-.deactivated {
-  margin-top: 12px;
-  margin-bottom: 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffb31c;
-}
-.deleted {
-  margin-top: 12px;
-  margin-bottom: 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #ff0000;
-}
+
 .time_remaining {
   margin-top: 12px;
   margin-bottom: 0;
   font-size: 18px;
   font-weight: 700;
   color: $text-color;
+  padding-left: 5px;
 }
 .total_bid {
   margin-top: 12px;
@@ -2048,6 +2140,7 @@ input[type="text"] {
   font-size: 18px;
   font-weight: 700;
   color: $text-color;
+  padding-left: 5px;
 }
 .no_bid {
   margin-top: 12px;
@@ -2055,6 +2148,7 @@ input[type="text"] {
   font-size: 18px;
   font-weight: 700;
   color: #ff7272;
+  padding-left: 5px;
 }
 .highest_bid {
   margin-top: 12px;
@@ -2062,6 +2156,7 @@ input[type="text"] {
   font-size: 18px;
   font-weight: 700;
   color: $text-color;
+  padding-left: 5px;
 }
 .button_container {
   border-top-right-radius: 14px;
@@ -2073,6 +2168,10 @@ input[type="text"] {
       margin-top: 2.4rem;
     }
   }
+}
+.product_status_highest_bid {
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
 }
 // fundspage
 .transaction_row {

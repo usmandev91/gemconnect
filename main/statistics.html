@@ -309,7 +309,7 @@
                     href="#"
                     class="btn btn_withdraw"
                     data-toggle="modal"
-                    data-target="#withdrawModal"
+                    data-target="#widthdrawSuccess"
                   >
                     <img
                       src="./assets/icons/incomeicon.svg"
@@ -323,118 +323,6 @@
           </div>
         </div>
       </section>
-      <!-- withdraw modal -->
-      <div class="container">
-        <div
-          id="withdrawModal"
-          class="modal fade"
-          tabindex="-1"
-          role="dialog"
-          aria-hidden="true"
-        >
-          <div class="modal-xs modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div
-                class="
-                  modal-header
-                  flex-column
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <p class="title mt-5 pt-lg-2">Select Payment Method</p>
-                <div class="container well">
-                  <div
-                    class="
-                      container
-                      d-flex
-                      justify-content-between
-                      align-items-center
-                    "
-                  >
-                    <p class="head">Funds availabe for widthdraw</p>
-                    <!-- result of input (user_offer) price from previous modal -->
-                    <p class="funds_available">$6670</p>
-                  </div>
-                </div>
-                <div
-                  class="
-                    container
-                    d-flex
-                    justify-content-end
-                    align-items-center
-                    mt-2
-                  "
-                >
-                  <a class="new_card" href="#">Add a new card</a>
-                </div>
-              </div>
-              <div class="modal-body">
-                <div class="container-sm mt-2 pl-lg-0">
-                  <div class="row card_form">
-                    <div class="col-md-12">
-                      <input type="checkbox" name="payment" value="visa" />
-                      <label class="image-checkbox" title="visa" name="payment">
-                        <img
-                          src="./assets/icons/visalogo.svg"
-                          alt="visa logo"
-                        />
-                        <span class="4_digit">Visa 2391</span>
-                        <!-- last 4 digits of the card number to be shown here -->
-                      </label>
-                    </div>
-                    <div class="col-md-12">
-                      <input type="checkbox" name="payment" value="applepay" />
-                      <label
-                        class="image-checkbox"
-                        title="applepay"
-                        name="payment"
-                      >
-                        <img
-                          class="applelogo"
-                          src="./assets/icons/applepay.svg"
-                          alt="apple logo"
-                        />
-                        Apple Pay
-                      </label>
-                    </div>
-                    <div class="col-md-12">
-                      <input type="checkbox" name="payment" value="paypal" />
-                      <label
-                        class="image-checkbox"
-                        title="paypal"
-                        name="payment"
-                      >
-                        <img
-                          class="paypallogo"
-                          src="./assets/icons/paypallogo.svg"
-                          alt="paypal logo"
-                        />
-                        Paypal
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer justify-content-center p-lg-4">
-                <a
-                  type="sumbit"
-                  class="
-                    btn btn_default
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                    offer_btn
-                  "
-                  data-bm-close="#withdrawModal"
-                  data-bm-open="#widthdrawSuccess"
-                  >Withdraw</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- end of modal -->
       <!-- withdraw sucess -->
       <div class="container">
@@ -463,9 +351,6 @@
                 </div>
                 <div>
                   <p class="title">Amount has been withdrawn succesfully</p>
-                </div>
-                <div>
-                  <p class="title2 mt-2">Check email for further details</p>
                 </div>
               </div>
             </div>
