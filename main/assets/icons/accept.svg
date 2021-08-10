@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="116" height="54" viewBox="0 0 116 54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #002f33;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 16px;
+        font-family: Raleway-Bold, Raleway;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        filter: url(#Rectangle_1);
+      }
+    </style>
+    <filter id="Rectangle_1" x="0" y="0" width="116" height="54" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_12817" data-name="Group 12817" transform="translate(7.5 7.5)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -7.5, -7.5)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" class="cls-1" width="101" height="39" rx="10" transform="translate(7.5 7.5)"/>
+    </g>
+    <text id="Accept" class="cls-2" transform="translate(51 25)"><tspan x="-27.088" y="0">Accept</tspan></text>
+  </g>
+</svg>

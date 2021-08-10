@@ -2203,78 +2203,7 @@ input[type="text"] {
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
 }
-// fundspage
-.transaction_row {
-  .trn_time {
-    margin-bottom: 0;
-    padding: 0;
-    color: #002f33;
-    margin-bottom: 0;
-    text-align: center;
-    white-space: nowrap;
-    padding: 0 1rem;
-  }
-  .dottedlines {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem 0.2rem;
-    margin-top: 1rem;
-  }
-  .dottedlines::before {
-    content: "";
-    flex: 1;
-    border-bottom: 2px #b4b4b4 dashed;
-  }
-  .dottedlines::after {
-    content: "";
-    flex: 1;
-    border-bottom: 2px #b4b4b4 dashed;
-  }
-  .transaction_cell {
-    border-radius: 16px;
-    background-color: $cards-bg-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.6rem;
-    margin-top: 20px;
-    .icon_box {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .card_nmbr {
-        padding: 0 10px;
-        font-weight: bold;
-        font-size: 16px;
-        margin-bottom: 0;
-      }
-    }
-    .amt_box {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .drawn {
-        color: #ff7272;
-        font-size: 16px;
-        margin-bottom: 0;
-      }
-      .deposit {
-        color: #3bc0cb;
-        font-size: 16px;
-        margin-bottom: 0;
-        white-space: nowrap;
-      }
-      .amt {
-        font-size: 16px;
-        font-weight: 600;
-        color: $text-color;
-        margin-bottom: 0;
-      }
-    }
-  }
-}
+
 // ordertable
 .order_table {
   .product_status {
@@ -3178,6 +3107,13 @@ input[type="text"] {
   transition: all 0.5s ease-in-out;
   background-position: center;
 }
+
+.accept_uncheck {
+  background-image: url(../assets/icons/accept.svg);
+}
+.reject_uncheck {
+  background-image: url(../assets/icons/reject.svg);
+}
 .blog_like {
   background-image: url(../assets/icons/bloglike.svg);
 }
@@ -3212,6 +3148,14 @@ input[type="text"] {
 }
 .market_uncheck {
   background-image: url("../assets/images/marketunchecked.png");
+}
+.customized_radio label > input[type="radio"]:checked ~ span.accept_uncheck {
+  width: 210px;
+  background-image: url("../assets/icons/accepted.svg");
+}
+.customized_radio label > input[type="radio"]:checked ~ span.reject_uncheck {
+  width: 210px;
+  background-image: url("../assets/icons/rejected.svg");
 }
 .customized_radio label > input[type="radio"]:checked ~ span.ring_check_img {
   background-image: url("../assets/icons/ringschecked.svg");
@@ -3572,5 +3516,367 @@ input[type="text"] {
     padding-left: 10px;
     margin-bottom: 10px;
     color: #b4b4b4;
+  }
+}
+@media (min-width: 1000px) {
+  .pagination {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    .prev_page {
+      background-image: url(../assets/icons/paginationprevious.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: white;
+      &:hover {
+        background-color: $theme_bgcolor !important;
+      }
+    }
+    .next_page {
+      background-image: url(../assets/icons/paginationprevious.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: white;
+      transform: rotate(180deg);
+      &:hover {
+        background-color: $theme_bgcolor !important;
+      }
+    }
+    .page-link {
+      color: $text-color;
+      border: none;
+      font-size: 28px;
+      font-weight: bold;
+      padding: 0.25rem 0.5rem;
+      height: 45px;
+      width: 50px;
+      text-align: center;
+      margin: 0 1.8rem;
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+      &.active {
+        background-color: #002f33;
+        color: white;
+        border-color: $theme_color !important;
+        box-shadow: 0 0 4px 0px $theme_color !important;
+      }
+      &:hover {
+        background-color: #002f33;
+        color: $theme_bgcolor;
+      }
+      &:focus {
+        border-color: $theme_color !important;
+        box-shadow: 0 0 4px 0px $theme_color !important;
+      }
+    }
+
+    .dots {
+      font-size: 25px;
+      font-weight: bold;
+      margin: 0 1rem;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .pagination {
+    align-items: center;
+    flex-direction: column;
+    .prev_page {
+      background-image: url(../assets/icons/paginationprevious.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: white;
+      &:hover {
+        background-color: $theme_bgcolor !important;
+      }
+    }
+    .next_page {
+      background-image: url(../assets/icons/paginationprevious.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: white;
+      transform: rotate(180deg);
+      &:hover {
+        background-color: $theme_bgcolor !important;
+      }
+    }
+    .page-link {
+      color: $text-color;
+      border: none;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 10px;
+      margin: 10px 0px;
+      transition: all 0.2s ease-in-out;
+      &.active {
+        background-color: #002f33;
+        color: white;
+        border-color: $theme_color !important;
+        box-shadow: 0 0 4px 0px $theme_color !important;
+      }
+      &:hover {
+        background-color: #002f33;
+        color: $theme_bgcolor;
+      }
+      &:focus {
+        border-color: $theme_color !important;
+        box-shadow: 0 0 4px 0px $theme_color !important;
+      }
+    }
+
+    .dots {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+.brands_container {
+  @media (min-width: 1300px) {
+    .col-lg-2 {
+      flex: 1 0 19.66667%;
+      max-width: 20.66667%;
+      padding: 0;
+    }
+  }
+  .brand_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0.54rem;
+    max-width: 19.8125rem;
+    max-height: 19.8125rem;
+    border-radius: 3.188rem;
+    img {
+      padding: 2rem !important;
+    }
+  }
+}
+// binding Offers
+.binding-tabs {
+  display: flex;
+  border: none !important;
+  .tab-text {
+    font-weight: 600;
+    font-size: 20px;
+    color: #b4b4b4;
+  }
+  a {
+    text-decoration: none;
+  }
+  a.active {
+    color: #002f33;
+    box-shadow: 0 6px 0px -4px $theme_color;
+  }
+}
+.binding_container {
+  padding-top: 1rem;
+  background-color: $cards-bg-color;
+  border-radius: 15px;
+  .img_box {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    img {
+      min-width: 39px;
+      min-height: 39px;
+    }
+  }
+  .user_name {
+    font-weight: 600;
+    margin-left: 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .offers_text {
+    text-transform: capitalize;
+    .user_name {
+      font-style: normal;
+      color: $theme_color;
+      margin: 0px 6px;
+    }
+  }
+  .binding_date {
+    color: #b4b4b4;
+  }
+  .offer_close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: $theme_color;
+  }
+  .card_container {
+    border-left: 2px solid $theme_color;
+    padding-left: 10px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    .card-flyer {
+      display: flex;
+      background: #f6f6f6;
+      max-width: 260px;
+      min-height: 62px;
+      border-radius: 10px;
+      .listing-image-box {
+        min-width: 85px;
+        min-height: 62px;
+        border-radius: 10px;
+        overflow: hidden !important;
+        img {
+          min-width: 85px;
+          min-height: 62px;
+        }
+      }
+      .text-box {
+        max-width: 154px;
+        padding-left: 10px;
+        .text-container {
+          .listing_name {
+            font-size: 14px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            color: $text-color;
+            margin: 0;
+          }
+          .listing_price {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: $text-color;
+            padding: 0;
+          }
+        }
+      }
+      .listing_rating {
+        font-size: 0.4rem;
+      }
+      .rating_score {
+        font-size: 12px;
+      }
+    }
+    .offer_list {
+      margin-top: 10px;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+      .listing_price {
+        padding: 0 5px;
+      }
+      .offer_viable {
+        font-weight: normal;
+      }
+      li {
+        width: fit-content;
+        padding: 0.2rem 1rem;
+        margin-top: 10px;
+        border-radius: 5px;
+        background-color: #002f33;
+        font-weight: bold;
+        text-align: center;
+        font-size: 14px;
+        color: #b4b4b486;
+        @media (min-width: 1600px) {
+          white-space: nowrap;
+        }
+      }
+
+      li:last-child {
+        margin-bottom: 0 !important;
+      }
+      li.active {
+        color: $theme_bgcolor;
+        margin-bottom: 0;
+        &::after {
+          content: "(offer viable for 7 days)";
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  .message_container {
+    background-color: $theme_bgcolor;
+    min-height: 125px;
+    border-radius: 15px;
+    padding-top: 1rem;
+  }
+  .customized_radio label > input[type="radio"] ~ span {
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 0;
+  }
+  .customized_radio label > input[type="radio"] ~ .accept_uncheck {
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    background-position: center;
+    margin-bottom: 0;
+  }
+  .customized_radio label > input[type="radio"] ~ .reject_uncheck {
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    background-repeat: no-repeat;
+    transition: all 0.8s ease-in-out;
+    background-position: center;
+    margin-bottom: 0;
+  }
+  .counter_head {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 2px;
+  }
+  .counter_nmbr {
+    border: #002f33 1px solid;
+    border-radius: 10px;
+  }
+  .btn_default {
+    position: absolute;
+    right: 1%;
+    top: 42%;
+    background-color: $theme_bgcolor;
+    color: $theme_color;
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+  }
+  .counter_offer_verify {
+    display: flex;
+    justify-content: space-between;
+    background-color: #002f33;
+    color: $theme_bgcolor;
+    border-radius: 10px;
+    max-width: 205px;
+    margin: 0;
+    padding: 0.45rem 0.8rem;
   }
 }

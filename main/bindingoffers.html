@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GemConnect | Binding Offers</title>
+    <link rel="stylesheet" href="./jquery.raty.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid-xl container_outer">
+      <header class="container-fluid sticky-top default_nav pt-2 px-0">
+        <nav class="navbar navbar-expand-lg navbar-expand-xl">
+          <a class="navbar-brand pl-lg-5" href="index.html">
+            <img
+              class="gc_nav_logo"
+              src="./assets/icons/gc_nav_logo.svg"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="row nav_row pl-lg-2">
+              <div class="col-lg-1 col-md-12 d-flex justify-content-center">
+                <a
+                  class="nav-link navbtn"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Browse
+                </a>
+                <div
+                  class="dropdown-menu browse_dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a
+                    class="dropdown-item browse_item dropdown-item-1 pl-3 py-2"
+                    href="./generalmarket.html"
+                    >General market
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                  <a
+                    class="
+                      dropdown-item
+                      browse_item
+                      pl-3
+                      py-2
+                      dropdown-item-last
+                    "
+                    href="./auctionmarket.html"
+                    >Auction
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-lg-1 d-flex justify-content-center col-md-12">
+                <a class="nav-link navbtn" href="#">Sell</a>
+              </div>
+              <div class="col-lg-1 d-flex justify-content-center">
+                <a class="nav-link navbtn" href="./blog.html">blog</a>
+              </div>
+              <div class="col-lg-1 col-md-12 d-flex justify-content-center">
+                <a class="nav-link navbtn" href="#">About</a>
+              </div>
+              <div class="col-lg-5 px-lg-5 col-md-12">
+                <label class="nav_search_label" for="search_bar">
+                  <input
+                    type="text"
+                    id="nav_search_bar"
+                    name="search_bar"
+                    class="form-control nav-search-bar"
+                    placeholder="Search..."
+                  />
+                  <button
+                    type="submit"
+                    class="btn inline-search-btn"
+                    title="search button"
+                  >
+                    <img
+                      class="inline-search-btn-img"
+                      src="./assets/icons/search.svg"
+                      alt=""
+                    />
+                  </button>
+                </label>
+              </div>
+              <!-- main menu in header/user logged in menu -->
+              <div class="col-lg-2 col-md-12 pl-lg-0">
+                <div class="container d-flex">
+                  <div>
+                    <a
+                      href="cart.html"
+                      class="
+                        btn
+                        main_menu_btn
+                        pb-1
+                        d-flex
+                        justify-content-evenly
+                      "
+                      title="cart button"
+                    >
+                      <img class="carty mr-1" src="./assets/icons/cart.svg" />
+                      Cart
+                      <span class="badge carty_text" id="">2</span>
+                    </a>
+                  </div>
+                  <div class="dropdown pr-5">
+                    <button
+                      class="btn dropdown-toggle main_menu_btn"
+                      type="button"
+                      id="dropdownMenu"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      title="drop down button"
+                    >
+                      <img
+                        src="./assets/icons/menuIcons/Menu Icon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div
+                      class="dropdown-menu dropdown-menu-right mainmenu"
+                      aria-labelledby="dropdownMenu"
+                    >
+                      <a
+                        class="
+                          dropdown-item
+                          menu_link
+                          dropdown-item-1
+                          pl-3
+                          py-2
+                        "
+                        href="myprofile.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/profile.svg"
+                            alt="profile icon"
+                        /></span>
+                        Profile
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="messages.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/mail.svg"
+                            alt="mail icon"
+                        /></span>
+                        messages
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="wishlist.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/wishlist.svg"
+                            alt="wishlist icon"
+                        /></span>
+                        wishlist
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="orders.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/order.svg"
+                            alt="orders icon"
+                        /></span>
+                        orders
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="yourlistings.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/list.svg"
+                            alt="list icon"
+                        /></span>
+                        your listings
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="statistics.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/statistics.svg"
+                            alt="stats icon"
+                        /></span>
+                        statistics
+                      </a>
+                      <a
+                        class="dropdown-item menu_link pl-3 py-2"
+                        href="settings.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/settings.svg"
+                            alt="settings icon"
+                        /></span>
+                        Settings
+                      </a>
+                      <a
+                        class="
+                          dropdown-item
+                          menu_link
+                          dropdown-item-last
+                          pl-3
+                          py-2
+                        "
+                        href="index.html"
+                      >
+                        <span>
+                          <img
+                            class="menu_icon"
+                            src="./assets/icons/menuIcons/logout.svg"
+                            alt="logout icon"
+                        /></span>
+                        logout
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- end of navbar -->
+      <section class="listings my-5 container-fluid p-0">
+        <div
+          class="
+            container container-width
+            d-flex
+            justify-content-lg-between
+            align-items-center
+            justify-content-center
+            p-0
+            mb-5
+          "
+        >
+          <h2 class="section-title-start text-start std-title">
+            binding offers
+          </h2>
+        </div>
+        <div
+          class="
+            container container-width
+            d-flex
+            justify-content-lg-start justify-content-center
+            p-0
+          "
+        >
+          <ul
+            class="
+              nav nav-tabs
+              justify-content-center
+              flex-lg-row flex-column
+              align-items-center
+              p-lg-0
+              binding-tabs
+            "
+          >
+            <li class="tab-active mb-lg-0 mb-3">
+              <a class="tab-text" data-toggle="tab" href="#Incoming"
+                >Incoming</a
+              >
+            </li>
+            <li class="ml-lg-5">
+              <a class="tab-text" data-toggle="tab" href="#Outgoing"
+                >Outgoing</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container-fluid container-width p-lg-0">
+        <div class="tab-content">
+          <!-- offer we have recieved on our products from product page make an offer button -->
+          <div id="Incoming" class="tab-pane fade in active">
+            <!-- 1st message  showing full functionality -->
+            <div class="container container-width binding_container my-5">
+              <!-- 1st row with username , what offer he sent and date of binding offer -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12">
+                  <div class="container p-0 d-flex align-items-center">
+                    <div class="img_box">
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/josh.png"
+                        alt="josh pic"
+                      />
+                    </div>
+                    <span class="user_name">Josh</span>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 d-flex align-items-center">
+                  <div class="offers_text">
+                    <div class="offers_text">
+                      <!-- this i tag will update when counter offer is made -->
+                      <i id="counter_offer_text">sent a counter offer</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-xs-12 pr-0"></div>
+                <div
+                  class="col-lg-1 col-xs-12 p-lg-0 d-flex align-items-center"
+                >
+                  <span class="binding_date">June 16,2021</span>
+                </div>
+              </div>
+              <!-- 2nd row -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12">
+                  <span class="offer_close" id="prod_1_close">Closed</span>
+                </div>
+                <div class="col-lg-3 col-xs-12 p-lg-0">
+                  <div class="card_container">
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="./generalmarketringpage.html">
+                        <div class="listing-image-box">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/userprofile/goldenwatch.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div
+                        class="
+                          text-box
+                          container
+                          d-flex
+                          flex-column
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="text-container container p-0">
+                          <p class="listing_name">
+                            PIET HEIN EEK Golden Watch available exclusively on
+                            gc
+                          </p>
+                          <p class="listing_price">$1550</p>
+                        </div>
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div
+                          class="
+                            container
+                            listing_rating_container
+                            d-flex
+                            justify-content-start
+                            align-items-center
+                            p-lg-0
+                          "
+                        >
+                          <div class="listing_rating" data-score="4.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.5
+                          </div>
+                        </div>
+                        <!-- end of rating -->
+                      </div>
+                    </div>
+                    <!-- these will be generated from product page make an offer button & counter offer button -->
+                    <ul class="offer_list">
+                      <li>
+                        <span
+                          >Buyers Offer:
+                          <!-- this is result of input from general market page / make an offer modal / input id = user_offer -->
+                          <span id="" class="listing_price">$1400</span>
+                        </span>
+                      </li>
+                      <li>
+                        <!-- this is result of counter offer input availabe in binding container -->
+                        Counter Offer by you:
+                        <!-- whatever value was placed in input above to be shown here in this span -->
+                        <span class="listing_price">$1500</span>
+                      </li>
+                      <!-- this is result of counter offer input availabe in binding container outgoing-->
+                      <li class="active">
+                        <span
+                          >Counter Offer:
+                          <span class="listing_price">$1450</span>
+                        </span>
+                      </li>
+                      <li id="prod_1_counter_by_you">
+                        <!-- this is result of counter offer input availabe in binding container -->
+                        Counter Offer by you:
+                        <!-- whatever value was placed in input above to be shown here in this span -->
+                        <span id="prod_1_value"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xs-12">
+                  <div class="container message_container">
+                    <!-- binding offer message coming from general market product page make an offer modal -->
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium, quidem?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-xs-12">
+                  <div class="d-flex flex-column m-lg-0 my-3">
+                    <div class="container p-0 d-flex justify-content-between">
+                      <div
+                        class="customized_radio"
+                        id="prod_1_accept_binding_offer"
+                      >
+                        <label
+                          class="custom_label mb-lg-0"
+                          for="accept_binding_offer"
+                        >
+                          <input
+                            type="radio"
+                            name="prod_1_binding_offer"
+                            value="accept"
+                            id="accept_binding_offer"
+                          />
+                          <span class="accept_uncheck"></span>
+                        </label>
+                      </div>
+                      <div
+                        class="customized_radio"
+                        id="prod_1_reject_binding_offer"
+                      >
+                        <label
+                          class="custom_label mb-lg-0"
+                          for="reject_binding_offer"
+                        >
+                          <input
+                            type="radio"
+                            name="prod_1_binding_offer"
+                            value="reject"
+                            id="reject_binding_offer"
+                          />
+                          <span class="reject_uncheck"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="container p-0" id="prod_1_counter_container">
+                      <label
+                        for="prod_1_counter_offer"
+                        name="user_counter_offer"
+                        class="counter_head"
+                        >Counter offer
+                        <input
+                          type="number"
+                          id="prod_1_counter_offer"
+                          name="user_counter_offer"
+                          class="form-control counter_nmbr"
+                          placeholder="$"
+                        />
+                        <span
+                          ><button
+                            id="prod_1_counter"
+                            type="submit"
+                            class="btn btn_default"
+                          >
+                            Send
+                          </button></span
+                        ></label
+                      >
+                    </div>
+                    <div class="container p-0" id="prod_1_offer_verified">
+                      <span class="counter_head">counter offer sent</span>
+                      <div class="container counter_offer_verify">
+                        <!-- whatever value was placed in input above to be shown here in this span -->
+                        <span id="prod_1_counter_value"></span>
+                        <span
+                          ><img
+                            src="./assets/icons/counterofferverify.svg"
+                            alt="verify icon"
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd message 2nd state "rejected"-->
+            <div class="container container-width binding_container my-5">
+              <!-- 1st row with username , what offer he sent and date of binding offer -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12">
+                  <div class="container p-0 d-flex align-items-center">
+                    <div class="img_box">
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/joey.png"
+                        alt="joey pic"
+                      />
+                    </div>
+                    <span class="user_name">Joey</span>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 d-flex align-items-center">
+                  <div class="offers_text">
+                    <!-- this i tag will update when counter offer is made -->
+                    <i id="binding_offer_text">sent a binding offer</i>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-xs-12 pr-0"></div>
+                <div
+                  class="col-lg-1 col-xs-12 p-lg-0 d-flex align-items-center"
+                >
+                  <span class="binding_date">April 01,2021</span>
+                </div>
+              </div>
+              <!-- 2nd row -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12">
+                  <span class="offer_close" id="prod_2_close">Closed</span>
+                </div>
+                <div class="col-lg-3 col-xs-12 p-lg-0">
+                  <div class="card_container">
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="./generalmarketringpage.html">
+                        <div class="listing-image-box">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/userprofile/goldenwatch.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div
+                        class="
+                          text-box
+                          container
+                          d-flex
+                          flex-column
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="text-container container p-0">
+                          <p class="listing_name">
+                            PIET HEIN EEK Golden Watch available exclusively on
+                            gc
+                          </p>
+                          <p class="listing_price">$1550</p>
+                        </div>
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div
+                          class="
+                            container
+                            listing_rating_container
+                            d-flex
+                            justify-content-start
+                            align-items-center
+                            p-lg-0
+                          "
+                        >
+                          <div class="listing_rating" data-score="4.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.5
+                          </div>
+                        </div>
+                        <!-- end of rating -->
+                      </div>
+                    </div>
+                    <!-- these will be generated from product page make an offer button & counter offer button -->
+                    <ul class="offer_list">
+                      <li class="active">
+                        <span
+                          >Buyers Offer:
+                          <!-- this is result of input from general market page / make an offer modal / input id = user_offer -->
+                          <span id="" class="listing_price">$1400</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xs-12">
+                  <div class="container message_container">
+                    <!-- binding offer message coming from general market product page make an offer modal -->
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium, quidem?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-xs-12">
+                  <div class="d-flex flex-column m-lg-0 my-3">
+                    <div class="container p-0 d-flex justify-content-between">
+                      <div
+                        class="customized_radio"
+                        id="prod_2_accept_binding_offer"
+                      >
+                        <label
+                          class="custom_label mb-lg-0"
+                          for="accept_binding_offer_2"
+                        >
+                          <input
+                            type="radio"
+                            name="prod_2_binding_offer"
+                            value="accept"
+                            id="accept_binding_offer_2"
+                          />
+                          <span class="accept_uncheck"></span>
+                        </label>
+                      </div>
+                      <div
+                        class="customized_radio"
+                        id="prod_2_reject_binding_offer"
+                      >
+                        <label
+                          class="custom_label mb-lg-0"
+                          for="reject_binding_offer_2"
+                        >
+                          <input
+                            type="radio"
+                            name="prod_2_binding_offer"
+                            value="reject"
+                            id="reject_binding_offer_2"
+                            checked="checked"
+                          />
+                          <span class="reject_uncheck"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="container p-0" id="prod_2_counter_container">
+                      <label
+                        for="prod_2_counter_offer"
+                        name="user_counter_offer"
+                        class="counter_head"
+                        >Counter offer
+                        <input
+                          type="number"
+                          id="prod_2_counter_offer"
+                          name="user_counter_offer"
+                          class="form-control counter_nmbr"
+                          placeholder="$"
+                        />
+                        <span
+                          ><button
+                            id="prod_2_counter"
+                            type="submit"
+                            class="btn btn_default"
+                          >
+                            Send
+                          </button></span
+                        ></label
+                      >
+                    </div>
+                    <div class="container p-0" id="prod_2_offer_verified">
+                      <span class="counter_head">counter offer sent</span>
+                      <div class="container counter_offer_verify">
+                        <!-- whatever value was placed in input above to be shown here in this span -->
+                        <span id="prod_2_counter_value"></span>
+                        <span
+                          ><img
+                            src="./assets/icons/counterofferverify.svg"
+                            alt="verify icon"
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3rd message -->
+            <!-- counter offer sent state -->
+            <div class="container container-width binding_container my-5">
+              <!-- 1st row with username , what offer he sent and date of binding offer -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12">
+                  <div class="container p-0 d-flex align-items-center">
+                    <div class="img_box">
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/carla.png"
+                        alt="carla pic"
+                      />
+                    </div>
+                    <span class="user_name">Carla</span>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 d-flex align-items-center">
+                  <!-- this i tag will update when counter offer is made -->
+                  <i id="binding_offer_text">sent a binding offer</i>
+                </div>
+                <div class="col-lg-7 col-xs-12 pr-0"></div>
+                <div
+                  class="col-lg-1 col-xs-12 p-lg-0 d-flex align-items-center"
+                >
+                  <span class="binding_date">July 26,2021</span>
+                </div>
+              </div>
+              <!-- 2nd row -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12"></div>
+                <div class="col-lg-3 col-xs-12 p-lg-0">
+                  <div class="card_container">
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="./generalmarketringpage.html">
+                        <div class="listing-image-box">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/diamondaccentmilgrainanan.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div
+                        class="
+                          text-box
+                          container
+                          d-flex
+                          flex-column
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="text-container container p-0">
+                          <p class="listing_name">diamon accent milgrain</p>
+                          <p class="listing_price">$420</p>
+                        </div>
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div
+                          class="
+                            container
+                            listing_rating_container
+                            d-flex
+                            justify-content-start
+                            align-items-center
+                            p-lg-0
+                          "
+                        >
+                          <div class="listing_rating" data-score="4.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.5
+                          </div>
+                        </div>
+                        <!-- end of rating -->
+                      </div>
+                    </div>
+                    <!-- these will be generated from product page make an offer button & counter offer button -->
+                    <ul class="offer_list">
+                      <li>
+                        <span
+                          >Buyers Offer:
+                          <!-- this is result of input from general market page / make an offer modal / input id = user_offer -->
+                          <span id="" class="listing_price">$350</span>
+                        </span>
+                      </li>
+                      <li class="active">
+                        <!-- this is result of counter offer input availabe in binding container -->
+                        Counter Offer by you:
+                        <!-- whatever value was placed in input above to be shown here in this span -->
+                        <span class="listing_price">$370</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xs-12">
+                  <div class="container message_container">
+                    <!-- binding offer message coming from general market product page make an offer modal -->
+                    <p>Please consider my offer</p>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-xs-12">
+                  <div class="d-flex flex-column m-lg-0 my-3">
+                    <div class="container p-0" id="prod_3_offer_verified">
+                      <span class="counter_head">counter offer sent</span>
+                      <div class="container counter_offer_verify">
+                        <!-- whatever value was placed in input above to be shown here in this span -->
+                        <span id="prod_3_counter_value">$370</span>
+                        <span
+                          ><img
+                            src="./assets/icons/counterofferverify.svg"
+                            alt="verify icon"
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Outgoing" class="tab-pane fade in">
+            <!-- 1st message showing when you make an offer to someone  -->
+            <div class="container container-width binding_container my-5">
+              <!-- 1st row with our username , what offer we sent and date of binding offer -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12">
+                  <div class="container p-0 d-flex align-items-center">
+                    <div class="img_box">
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/seller/handmade.jpg"
+                        alt="handmade pic"
+                      />
+                    </div>
+                    <span class="user_name">hand made jewellery</span>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 d-flex align-items-center">
+                  <div class="offers_text">
+                    <!-- this i tag will update when counter offer is made -->
+                    <i id="binding_offer_text"
+                      >sent a binding offer to
+                      <span class="user_name">Josh</span></i
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-7 col-xs-12 pr-0"></div>
+                <div
+                  class="col-lg-1 col-xs-12 p-lg-0 d-flex align-items-center"
+                >
+                  <span class="binding_date">June 16,2021</span>
+                </div>
+              </div>
+              <!-- 2nd row -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12">
+                  <!-- <span class="offer_close" id="prod_1_close">Closed</span> -->
+                </div>
+                <div class="col-lg-3 col-xs-12 p-lg-0">
+                  <div class="card_container">
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="./generalmarketringpage.html">
+                        <div class="listing-image-box">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/diamondaccent.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div
+                        class="
+                          text-box
+                          container
+                          d-flex
+                          flex-column
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="text-container container p-0">
+                          <p class="listing_name">
+                            diamond accent milgrain available exclusively on gc
+                          </p>
+                          <p class="listing_price">$800</p>
+                        </div>
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div
+                          class="
+                            container
+                            listing_rating_container
+                            d-flex
+                            justify-content-start
+                            align-items-center
+                            p-lg-0
+                          "
+                        >
+                          <div class="listing_rating" data-score="4.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.5
+                          </div>
+                        </div>
+                        <!-- end of rating -->
+                      </div>
+                    </div>
+                    <!-- these will be generated from product page make an offer button & counter offer button -->
+                    <ul class="offer_list">
+                      <li class="active">
+                        <span
+                          >Your Offer:
+                          <!-- this is result of input from general market page / make an offer modal / input id = user_offer -->
+                          <span id="" class="listing_price">$700</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xs-12">
+                  <div class="container message_container">
+                    <!-- binding offer message coming from general market product page make an offer modal -->
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium, quidem?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-xs-12"></div>
+              </div>
+            </div>
+            <!-- 2nd message  showing full functionality -->
+            <div class="container container-width binding_container my-5">
+              <!-- 1st row with username , what offer he sent and date of binding offer -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12">
+                  <div class="container p-0 d-flex align-items-center">
+                    <div class="img_box">
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/seller/handmade.jpg"
+                        alt="handmade pic"
+                      />
+                    </div>
+                    <span class="user_name">hand made jewellery</span>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 d-flex align-items-center">
+                  <div class="offers_text">
+                    <div class="offers_text">
+                      <!-- this i tag will update when counter offer is made -->
+                      <i id="prod_4_counter_offer_text"
+                        ><span class="user_name">Julia</span> sent a counter
+                        offer</i
+                      >
+                      <i id="prod_4_counter_by_you_text"
+                        >sent a counter offer to
+                        <span class="user_name">Julia</span></i
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-xs-12 pr-0"></div>
+                <div
+                  class="col-lg-1 col-xs-12 p-lg-0 d-flex align-items-center"
+                >
+                  <span class="binding_date">June 16,2021</span>
+                </div>
+              </div>
+              <!-- 2nd row -->
+              <div class="row">
+                <div class="col-lg-1 col-xs-12">
+                  <span class="offer_close" id="prod_4_close">Closed</span>
+                </div>
+                <div class="col-lg-3 col-xs-12 p-lg-0">
+                  <div class="card_container">
+                    <div class="card-flyer">
+                      <!-- anchor for clicking the whole box except rating -->
+                      <a href="./generalmarketringpage.html">
+                        <div class="listing-image-box">
+                          <img
+                            class="img-fluid"
+                            src="./assets/images/danhenrychronographywaterproof.png"
+                            alt="danhenrychrono"
+                          />
+                        </div>
+                      </a>
+                      <!-- end of anchor -->
+                      <div
+                        class="
+                          text-box
+                          container
+                          d-flex
+                          flex-column
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="text-container container p-0">
+                          <p class="listing_name">
+                            dan henry chronography water proof watch gc
+                          </p>
+                          <p class="listing_price">$1550</p>
+                        </div>
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div
+                          class="
+                            container
+                            listing_rating_container
+                            d-flex
+                            justify-content-start
+                            align-items-center
+                            p-lg-0
+                          "
+                        >
+                          <div class="listing_rating" data-score="4.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.5
+                          </div>
+                        </div>
+                        <!-- end of rating -->
+                      </div>
+                    </div>
+                    <!-- these will be generated from product page make an offer button & counter offer button -->
+                    <ul class="offer_list">
+                      <li>
+                        <span
+                          >Your Offer:
+                          <!-- this is result of input from general market page / make an offer modal / input id = user_offer -->
+                          <span id="" class="listing_price">$1400</span>
+                        </span>
+                      </li>
+                      <!-- this is result of counter offer input availabe in binding container outgoing-->
+                      <li class="active">
+                        <span
+                          >Counter Offer:
+                          <span class="listing_price">$1450</span>
+                        </span>
+                      </li>
+                      <li id="prod_4_counter_by_you">
+                        <!-- this is result of counter offer input availabe in binding container -->
+                        Counter Offer by you:
+                        <!-- whatever value was placed in input above to be shown here in this span -->
+                        <span id="prod_4_value"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xs-12">
+                  <div class="container message_container">
+                    <!-- binding offer message coming from general market product page make an offer modal -->
+                    <p>Really love the watch and wanna buy</p>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-xs-12">
+                  <div class="d-flex flex-column m-lg-0 my-3">
+                    <div class="container p-0 d-flex justify-content-between">
+                      <div
+                        class="customized_radio"
+                        id="prod_4_accept_binding_offer"
+                      >
+                        <label
+                          class="custom_label mb-lg-0"
+                          for="accept_binding_offer_4"
+                        >
+                          <input
+                            type="radio"
+                            name="prod_4_binding_offer"
+                            value="accept"
+                            id="accept_binding_offer_4"
+                          />
+                          <span class="accept_uncheck"></span>
+                        </label>
+                      </div>
+                      <div
+                        class="customized_radio"
+                        id="prod_4_reject_binding_offer"
+                      >
+                        <label
+                          class="custom_label mb-lg-0"
+                          for="reject_binding_offer_4"
+                        >
+                          <input
+                            type="radio"
+                            name="prod_4_binding_offer"
+                            value="reject"
+                            id="reject_binding_offer_4"
+                          />
+                          <span class="reject_uncheck"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="container p-0" id="prod_4_counter_container">
+                      <label
+                        for="prod_4_counter_offer"
+                        name="user_counter_offer"
+                        class="counter_head"
+                        >Counter offer
+                        <input
+                          type="number"
+                          id="prod_4_counter_offer"
+                          name="user_counter_offer"
+                          class="form-control counter_nmbr"
+                          placeholder="$"
+                        />
+                        <span
+                          ><button
+                            id="prod_4_counter"
+                            type="submit"
+                            class="btn btn_default"
+                          >
+                            Send
+                          </button></span
+                        ></label
+                      >
+                    </div>
+                    <div class="container p-0" id="prod_4_offer_verified">
+                      <span class="counter_head">counter offer sent</span>
+                      <div class="container counter_offer_verify">
+                        <!-- whatever value was placed in input above to be shown here in this span -->
+                        <span id="prod_4_counter_value"></span>
+                        <span
+                          ><img
+                            src="./assets/icons/counterofferverify.svg"
+                            alt="verify icon"
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/rating.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/userprofile.js"></script>
+      <script src="./js/bindingoffers.js"></script>
+    </div>
+  </body>
+</html>

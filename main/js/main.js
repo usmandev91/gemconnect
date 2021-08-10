@@ -203,6 +203,7 @@ $(".custom_label").click(function () {
 $('.nav-tabs a[href="#signup"]').tab("show");
 $('.nav-tabs a[href="#profile"]').tab("show");
 $('.nav-tabs a[href="#gmtab"]').tab("show");
+$('.nav-tabs a[href="#Incoming"]').tab("show");
 //seller carousel
 $(".seller_carousel").owlCarousel({
   items: 5,
