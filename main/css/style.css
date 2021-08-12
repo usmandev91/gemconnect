@@ -2572,14 +2572,18 @@ input[type="text"] {
 .post_new .custom_card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 596px;
   background-color: #f6f6f6;
   border-radius: 51px;
-  padding: 1rem 1.8rem;
-  max-width: 400px; }
+  padding: 1rem 2rem;
+  max-width: 429px;
+  padding-bottom: 0 !important; }
+  .post_new .custom_card .txt-box p {
+    line-height: 2rem; }
   .post_new .custom_card .title {
+    margin-top: 36px;
     font-size: 30px;
     font-weight: bold; }
   .post_new .custom_card a {
