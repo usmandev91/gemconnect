@@ -35,6 +35,8 @@ body {
 }
 .container-width {
   max-width: 1460px;
+  justify-content: center;
+  align-items: center;
 }
 .contianer-title {
   max-width: 1282px;
@@ -105,7 +107,16 @@ input[type="number"] {
   margin-right: 1.4rem;
   padding-bottom: 2px;
 }
-
+.main_menu_container {
+  padding: 0;
+  margin-left: 0;
+  max-width: 275px;
+}
+.main_menu {
+  @media (min-width: 1600px) {
+    padding-right: 3.2rem;
+  }
+}
 .menu_link:hover {
   .menu_icon {
     filter: none;
@@ -187,7 +198,10 @@ input[type="number"] {
   background-color: $theme_bgcolor !important;
   .navbar-brand {
     margin: 0;
-    padding-right: 2.7rem !important;
+    @media (min-width: 1600px) {
+      padding-right: 3rem;
+      padding-left: 2.6rem;
+    }
   }
   .navbar-toggler-icon {
     background-image: url(/assets/icons/sliderbutton.svg);
@@ -255,6 +269,7 @@ input[type="number"] {
   display: flex;
   align-items: center;
   width: 100%;
+  padding-left: 3px;
   margin: 0;
 }
 .nav_search_label {
@@ -712,6 +727,7 @@ input[type="number"] {
 }
 
 // order Modal
+// publish Modal
 #publishModal,
 #orderModal {
   .modal-xs {
@@ -1540,12 +1556,10 @@ input[type="text"] {
   }
 }
 // user-profile page
-
 .user_container {
-  max-width: 1460px;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  padding: 0rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
   background-color: $cards-bg-color;
   border-radius: 3rem !important;
   .user_img_box {
@@ -1555,17 +1569,35 @@ input[type="text"] {
     border-radius: 100%;
     padding: 0.5rem;
   }
-
   .user_pic {
     border-radius: 100%;
     width: 100%;
   }
-
-  .user_name {
-    font-size: 1.875rem;
-    font-weight: 800 !important;
-    color: $text-color;
-    padding: 0;
+  .text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .user_name {
+      font-size: 1.875rem;
+      font-weight: 800 !important;
+      padding: 0;
+    }
+    .rating_container {
+      display: flex;
+      align-items: center;
+    }
+    .user_info {
+      margin-top: 40px;
+      text-align: start;
+    }
+    .user_rating {
+      font-size: 16px;
+    }
+    .rating_score {
+      font-size: 16px;
+      font-weight: 600;
+      font-family: "raleway";
+    }
   }
 }
 .user_setting {
@@ -1573,9 +1605,6 @@ input[type="text"] {
   color: #002f33;
   text-align: start;
   padding: 0.8em 0.65em 0.8em 1em;
-}
-.user_setting:last-child {
-  color: #ff0000;
 }
 .user_setting:hover {
   color: #3bc0cb;
@@ -1596,29 +1625,7 @@ input[type="text"] {
   font-family: "raleway";
   white-space: wrap;
 }
-.user_info {
-  padding-left: 0 !important;
-  color: $text-color;
-  font-weight: 400;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.atbt-badge {
-  width: 16px;
-  height: 18px;
-}
 
-.user_attributes_container {
-  background-color: $theme_bgcolor;
-  max-height: 200px;
-  max-width: 360px;
-  padding: 1.5rem;
-  border-radius: 1.3rem;
-  font-size: 18px;
-  line-height: 1.6;
-  color: $text-color;
-  text-transform: none;
-}
 // select menu
 
 .gc_custom_select {
@@ -1678,6 +1685,20 @@ input[type="text"] {
   border: none;
   box-shadow: $search_shadow;
   width: 278px;
+  max-height: 240px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 12px;
+    background-color: $cards-bg-color;
+    border-radius: 20px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $theme_color;
+    border-radius: 20px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  }
   input {
     visibility: hidden;
     position: absolute;
@@ -2001,20 +2022,14 @@ input[type="text"] {
   }
 }
 
-@media (max-width: 768px) {
-  .listing_container {
-    padding: 2rem 2rem;
-  }
-}
-
-@media (min-width: 1800px) {
-  .side_button_container {
-    position: absolute !important;
-    top: 180px;
-    right: 20%;
-    white-space: nowrap;
-  }
-}
+// @media (min-width: 1800px) {
+//   .side_button_container {
+//     position: absolute !important;
+//     top: 180px;
+//     right: 20%;
+//     white-space: nowrap;
+//   }
+// }
 // review section
 .review_container {
   max-width: 1460px;
@@ -2046,23 +2061,30 @@ input[type="text"] {
 
   // review section card
   .card-flyer {
-    @media (min-width: 992px) {
+    @media (min-width: 1400px) {
       display: flex;
     }
     background: #f6f6f6;
     max-width: 460px;
-    border-radius: 20px;
+    border-radius: 14px;
     padding: 1.2rem;
     .listing-image-box {
       max-width: 280px;
-      border-radius: 20px;
+      border-radius: 14px;
       overflow: hidden !important;
+      img {
+        min-width: 180px;
+        min-height: 140px;
+      }
     }
     .text-box {
       padding-left: 6px !important;
       .text-container {
-        max-width: 250px !important;
-        max-height: 250px !important;
+        max-width: 265px;
+        @media (min-width: 1600px) {
+          max-width: 250px !important;
+          max-height: 250px !important;
+        }
         .listing_name {
           font-size: 1rem;
           text-overflow: ellipsis;
@@ -2117,8 +2139,12 @@ input[type="text"] {
   width: 580px;
   .card-flyer {
     padding: 0;
+    padding-left: 3px;
     .listing_rating_container {
-      padding-left: 17px;
+      padding: 0;
+      @media (min-width: 1600px) {
+        padding-left: 12px;
+      }
       .listing_rating {
         padding: 0;
       }
@@ -2209,7 +2235,9 @@ input[type="text"] {
   .product_status {
     width: 250px;
     margin-top: 0.8px;
-    padding-right: 90px;
+    @media (min-width: 1600px) {
+      padding-right: 90px;
+    }
     padding-top: 20px;
     .order_price {
       margin-top: 12px;
@@ -2704,22 +2732,16 @@ input[type="text"] {
   }
 }
 .ring_form {
-  @media (min-width: 768px) {
-    .col-md-3 {
-      flex: 0 0 10%;
-      max-width: 10%;
-    }
-    .col-md-2 {
-      flex: 0 0 16.66667%;
-      max-width: 13.66667%;
-    }
-    .col-md-1 {
-      flex: 0 0 8.6%;
-      max-width: 8.6%;
+  @media (min-width: 1200px) {
+    .col-auto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2px 4px;
     }
   }
   .image-checkbox {
-    opacity: 0.5;
+    opacity: 0.2;
     cursor: pointer;
     box-sizing: border-box;
     outline: 0;
@@ -2731,6 +2753,7 @@ input[type="text"] {
 
   .image-checkbox-checked {
     opacity: 1;
+    fill: #002f33;
   }
 }
 
@@ -2893,6 +2916,7 @@ input[type="text"] {
       align-items: center;
       border-radius: 24px;
       margin-right: 12px;
+      margin-left: 12px;
       img {
         margin-bottom: 20px;
       }
@@ -3024,6 +3048,7 @@ input[type="text"] {
     background-color: $cards-bg-color;
     border-radius: 51px;
     padding: 1rem 1.8rem;
+    max-width: 400px;
     .title {
       font-size: 30px;
       font-weight: bold;
@@ -3045,6 +3070,38 @@ input[type="text"] {
   .form_design {
     border-radius: 20px;
     margin-bottom: 0 !important;
+    max-width: 275px;
+  }
+  .bid_container {
+    .form_design {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 991px) {
+    .col-md-12 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  @media (min-width: 576px) {
+    .col-sm-1 {
+      flex: 0 0 4.33333%;
+      max-width: 4.33333%;
+    }
+  }
+  @media (min-width: 1600px) {
+    .col-sm-1 {
+      flex: 0 0 0%;
+      max-width: 0%;
+    }
+  }
+  @media (min-width: 1000px) {
+    .col-lg-10 {
+      padding-left: 4rem;
+      padding-right: 0;
+    }
   }
 }
 
@@ -3068,7 +3125,7 @@ input[type="text"] {
 }
 .customized_radio label > input[type="radio"] ~ .newbtn {
   cursor: pointer;
-  width: 170px;
+  width: 162px;
   height: 50px;
   display: inline-block;
   background-repeat: no-repeat;
@@ -3076,7 +3133,7 @@ input[type="text"] {
 }
 .customized_radio label > input[type="radio"] ~ .usedbtn {
   cursor: pointer;
-  width: 170px;
+  width: 162px;
   height: 50px;
   display: inline-block;
   background-repeat: no-repeat;
@@ -3121,10 +3178,10 @@ input[type="text"] {
   background-image: url(../assets/icons/addtofavicon.svg);
 }
 .newbtn {
-  background-image: url(../assets/images/newbtn.png);
+  background-image: url(../assets/images/newbtn.svg);
 }
 .usedbtn {
-  background-image: url(../assets/images/usedbtn.png);
+  background-image: url(../assets/images/usedbtn.svg);
 }
 .ring_check_img {
   background-image: url("../assets/icons/ringsunchecked.svg");
@@ -3147,7 +3204,7 @@ input[type="text"] {
   background-image: url("../assets/icons/chainsunchecked.svg");
 }
 .market_uncheck {
-  background-image: url("../assets/images/marketunchecked.png");
+  background-image: url("../assets/images/marketunchecked.svg");
 }
 .customized_radio label > input[type="radio"]:checked ~ span.accept_uncheck {
   width: 210px;
@@ -3182,12 +3239,12 @@ input[type="text"] {
   background-image: url("../assets/icons/chainschecked.svg");
 }
 .customized_radio label > input[type="radio"]:checked ~ span.newbtn {
-  background-image: url("../assets/images/newbtnchecked.png");
+  background-image: url("../assets/images/newbtnchecked.svg");
   box-shadow: 0 0 5px 1px $theme_color !important;
   border-radius: 12px;
 }
 .customized_radio label > input[type="radio"]:checked ~ span.usedbtn {
-  background-image: url("../assets/images/usedbtnchecked.png");
+  background-image: url("../assets/images/usedbtnchecked.svg");
   box-shadow: 0 0 5px 1px $theme_color !important;
   border-radius: 12px;
 }
@@ -3197,7 +3254,7 @@ input[type="text"] {
   align-items: center;
 }
 .customized_radio label > input[type="radio"]:checked ~ span.market_uncheck {
-  background-image: url("../assets/images/marketchecked.png");
+  background-image: url("../assets/images/marketchecked.svg");
 }
 .customized_radio label > input[type="radio"]:checked ~ span.wishlist_check {
   background-image: url("../assets/icons/addedtofavicon.svg");
@@ -3285,11 +3342,20 @@ input[type="text"] {
     box-shadow: $search_shadow;
   }
 }
-.range_label {
-  text-align: center;
-  font-size: 12px;
-  color: #002f33;
-  max-width: 80px;
+datalist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+  option {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: #002f33;
+    max-width: 32px;
+    white-space: pre-line;
+    margin-right: 10px;
+  }
 }
 // settings page
 .settings {

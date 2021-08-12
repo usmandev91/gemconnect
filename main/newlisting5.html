@@ -345,6 +345,7 @@
                 </div>
               </div>
             </div>
+            <div class="col-lg-1 p-0"></div>
             <div class="col-lg-7">
               <!-- product image upload buttons -->
               <div class="row">
@@ -381,19 +382,27 @@
             </div>
             <!-- end of side navigation -->
           </div>
-          <div class="container container-width d-flex justify-content-center">
+          <div
+            class="
+              container container-width
+              d-flex
+              justify-content-center
+              mb-5
+              mt-lg-0 mt-5
+            "
+          >
             <a
               type="button"
               data-toggle="modal"
               data-target="#publishModal"
-              class="btn btn_default mb-0 mt-4 px-5"
+              class="btn btn_default px-5"
               >publish</a
             >
           </div>
           <!-- ajax call for next html content button -->
         </div>
       </section>
-      <!-- ordermodal -->
+      <!-- publish Modal -->
       <div class="container">
         <div
           id="publishModal"
@@ -403,21 +412,39 @@
           aria-hidden="true"
         >
           <div class="modal-xs modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="">
+            <div class="modal-content container">
+              <div class="modal-body row">
+                <div class="col-xl-1 p-0"></div>
+                <div
+                  class="
+                    col-xl-2 col-lg-12
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
                   <img
                     src="./assets/icons/Verifiedseller.svg"
                     alt=""
                     class="verified img-fluid"
                   />
                 </div>
-                <div class="text-box">
+                <div
+                  class="
+                    text-box
+                    col-xl-7 col-lg-12
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    flex-column
+                  "
+                >
                   <p class="title">Your listing has been published</p>
                   <p class="title2 mt-2">
                     You'll be notified once it goes live.
                   </p>
                 </div>
+                <div class="col-xl-2"></div>
               </div>
             </div>
           </div>

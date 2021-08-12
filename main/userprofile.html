@@ -14,7 +14,7 @@
       <!-- default navbar -->
       <header class="container-fluid sticky-top default_nav pt-2 px-0">
         <nav class="navbar navbar-expand-lg navbar-expand-xl">
-          <a class="navbar-brand pl-lg-5" href="index.html">
+          <a class="navbar-brand" href="index.html">
             <img
               class="gc_nav_logo"
               src="./assets/icons/gc_nav_logo.svg"
@@ -32,7 +32,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="row nav_row pl-lg-2">
+            <div class="row nav_row">
               <div class="col-lg-1 col-md-12 d-flex justify-content-center">
                 <a
                   class="nav-link navbtn"
@@ -107,8 +107,8 @@
                 </label>
               </div>
               <!-- main menu in header/user logged in menu -->
-              <div class="col-lg-2 col-md-12 pl-lg-0">
-                <div class="container d-flex">
+              <div class="col-lg-3 col-md-12 pl-lg-0">
+                <div class="container main_menu_container">
                   <div>
                     <a
                       href="cart.html"
@@ -121,12 +121,16 @@
                       "
                       title="cart button"
                     >
-                      <img class="carty mr-1" src="./assets/icons/cart.svg" />
+                      <img
+                        class="carty mr-1"
+                        src="./assets/icons/cart.svg"
+                        alt="cart icon"
+                      />
                       Cart
                       <span class="badge carty_text" id="">2</span>
                     </a>
                   </div>
-                  <div class="dropdown pr-5">
+                  <div class="dropdown main_menu">
                     <button
                       class="btn dropdown-toggle main_menu_btn"
                       type="button"
@@ -420,43 +424,11 @@
       <!-- userprofile -->
       <section class="user-profile">
         <div class="container user_container container-width">
-          <div
-            class="
-              container container-width
-              d-flex
-              align-items-center
-              justify-content-end
-              btn-group
-              dropleft
-            "
-          >
-            <button
-              type="button"
-              class="user_setting_btn mt-4 mr-3"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <img
-                class="img-fluid"
-                src="./assets/userprofile/optionicon.svg"
-                alt=""
-              />
-            </button>
-            <div class="dropdown-menu user_setting_menu text-center">
-              <a class="dropdown-item user_setting dropdown-item-1" href="#"
-                >Edit Profile</a
-              >
-              <a class="dropdown-item user_setting dropdown-item-last" href="#"
-                >action</a
-              >
-            </div>
-          </div>
           <div class="container container-width">
             <div class="row">
               <div
                 class="
-                  col-xs-12 col-sm-12 col-md-6 col-lg-4
+                  col-lg-4 col-md-12
                   d-flex
                   justify-content-center
                   align-items-center
@@ -470,161 +442,33 @@
                   />
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                <div
-                  class="
-                    text-container
-                    container
-                    p-0
-                    m-0
-                    d-xs-flex
-                    justify-content-xs-center
-                    align-items-xs-center
-                  "
-                >
+              <div class="col-lg-4 col-md-12">
+                <div class="text_container">
                   <!-- User's name -->
-                  <p class="user_name pl-lg-0 m-0">
-                    HandMade jewelry<span
-                      class="badge pb-0 pl-2"
-                      id="verifed_seller"
+                  <p class="user_name">
+                    HandMade jewelry<span class="badge" id="verifed_seller"
                       ><img
                         class="pb-1"
                         src="./assets/icons/Verifiedseller.svg"
                         alt=""
                     /></span>
                   </p>
-
-                  <div class="container-sm d-flex justify-content-start p-0">
-                    <a
-                      href="#"
-                      class="
-                        btn btn_default
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        pr-3
-                        pl-3
-                      "
-                    >
-                      <img
-                        class="img-fluid pr-1"
-                        src="./assets/icons/chaticon.svg"
-                        alt=""
-                      />CHAT</a
-                    >
-                    <a
-                      href="#"
-                      class="
-                        btn btn_default
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        ml-2
-                        pr-4
-                        pl-4
-                      "
-                    >
-                      <img
-                        class="img-fluid pr-2 pb-1"
-                        src="./assets/icons/useradmin.svg"
-                        alt=""
-                      />Follow</a
-                    >
-                  </div>
-
                   <!-- User's Average Rating Based On Number of Reviews (readOnly=true,) this is a dummy rating-->
-                  <div
-                    class="
-                      container
-                      rating_container
-                      d-flex
-                      justify-content-start
-                      align-items-center
-                      pl-lg-0
-                      pt-1
-                    "
-                  >
-                    <div class="user_rating pl-1"></div>
+                  <div class="rating_container">
+                    <div class="user_rating"></div>
                     <!-- targeted using raty -->
-                    <div class="rating_score px-3 pb-2" id="hint"></div>
-                    <span class="reviews_counter pb-1" id="user_reviews"
+                    <div class="rating_score px-3" id="hint"></div>
+                    <span class="reviews_counter" id="user_reviews"
                       >(127 reviews)</span
                     >
                   </div>
                   <!-- end of rating -->
-                  <!--To azhar: watch this tutorial https://www.youtube.com/watch?v=AMai9EZesXY&t=166s on how to build review system using rails and bootstrap and raty plugin -->
                   <!-- User's info -->
-                  <p class="mt-3 text-start user_info">
+                  <p class="mt-3 user_info">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolore dolor laudantium repudiandae nemo temporibus dicta,
                     praesentium asperiores illum ipsum dignissimos!
                   </p>
-                </div>
-              </div>
-              <!-- user's badges based on different things he has done registering account = verified host , verifying email = verified email etc -->
-              <div
-                class="
-                  col-xs-12 col-sm-6 col-md-6 col-lg-3
-                  d-flex
-                  justify-content-center
-                "
-              >
-                <div
-                  class="container user_attributes_container mt-md-4"
-                  id="user_attributes"
-                >
-                  <div id="verified_host">
-                    <p
-                      class="mb-2 d-flex align-items-center"
-                      id="verified_host_text"
-                    >
-                      <span class="badge pb-0" id="verified_host_badge"
-                        ><img
-                          class="atbt-badge img-fluid"
-                          src="./assets/userprofile/shieldicon.svg"
-                          alt="" /></span
-                      >Verified Host
-                    </p>
-                  </div>
-                  <div id="verified_email">
-                    <p
-                      class="my-2 d-flex align-items-center"
-                      id="verified_email_text"
-                    >
-                      <span class="badge pb-0" id="verifed_email_badge"
-                        ><img
-                          class="atbt-badge img-fluid"
-                          src="./assets/userprofile/emailicon.svg"
-                          alt="" /></span
-                      >e-mail verified
-                    </p>
-                  </div>
-                  <div id="duration_at_gc">
-                    <p
-                      class="my-2 d-flex align-items-center"
-                      id="duration_at_gc_text"
-                    >
-                      <span class="badge pb-0" id="duration_badge"
-                        ><img
-                          class="atbt-badge img-fluid"
-                          src="./assets/userprofile/badgeicon.svg"
-                          alt="" /></span
-                      >2 years with GemConnects
-                    </p>
-                  </div>
-                  <div id="user_followers">
-                    <p
-                      class="mb-2 d-flex align-items-center"
-                      id="user_follower_count"
-                    >
-                      <span class="badge pb-0" id="follower_badge"
-                        ><img
-                          class="atbt-badge img-fluid"
-                          src="./assets/userprofile/profile.svg"
-                          alt="" /></span
-                      >1007 followers
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>

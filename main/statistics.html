@@ -14,7 +14,7 @@
       <!-- default navbar -->
       <header class="container-fluid sticky-top default_nav pt-2 px-0">
         <nav class="navbar navbar-expand-lg navbar-expand-xl">
-          <a class="navbar-brand pl-lg-5" href="index.html">
+          <a class="navbar-brand" href="index.html">
             <img
               class="gc_nav_logo"
               src="./assets/icons/gc_nav_logo.svg"
@@ -32,7 +32,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="row nav_row pl-lg-2">
+            <div class="row nav_row">
               <div class="col-lg-1 col-md-12 d-flex justify-content-center">
                 <a
                   class="nav-link navbtn"
@@ -107,8 +107,8 @@
                 </label>
               </div>
               <!-- main menu in header/user logged in menu -->
-              <div class="col-lg-2 col-md-12 pl-lg-0">
-                <div class="container d-flex">
+              <div class="col-lg-3 col-md-12 pl-lg-0">
+                <div class="container main_menu_container">
                   <div>
                     <a
                       href="cart.html"
@@ -121,12 +121,16 @@
                       "
                       title="cart button"
                     >
-                      <img class="carty mr-1" src="./assets/icons/cart.svg" />
+                      <img
+                        class="carty mr-1"
+                        src="./assets/icons/cart.svg"
+                        alt="cart icon"
+                      />
                       Cart
                       <span class="badge carty_text" id="">2</span>
                     </a>
                   </div>
-                  <div class="dropdown pr-5">
+                  <div class="dropdown main_menu">
                     <button
                       class="btn dropdown-toggle main_menu_btn"
                       type="button"
@@ -280,8 +284,8 @@
         <div class="container-fluid container-width p-lg-0">
           <div class="row stats_row">
             <div class="col-lg-2 p-0 my-lg-0 my-5">
-              <div class="container tile">
-                <p class="head">Total Sales</p>
+              <div class="container p-lg-0 m-lg-0 tile">
+                <p class="head ml-3">Total Sales</p>
                 <p class="result">397</p>
               </div>
             </div>
@@ -291,13 +295,14 @@
                 <p class="result">$25732</p>
               </div>
             </div>
-            <div class="col-lg-2 p-0 my-lg-0 my-5 mr-lg-5">
+            <div class="col-lg-2 p-0 my-lg-0">
               <div class="container tile">
                 <p class="head">In Process</p>
                 <p class="result">$5700</p>
               </div>
             </div>
-            <div class="col-lg-4 p-0 ml-lg-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4 p-0">
               <div class="container withdraw_container pr-lg-4 pr-0">
                 <div class="container text_container">
                   <p class="head">Funds Available</p>
