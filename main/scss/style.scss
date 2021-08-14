@@ -26,7 +26,12 @@ body {
   font-family: "raleway", sans-serif;
   text-transform: capitalize;
   color: $text-color !important;
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
 }
+
 // .container_outer {
 //   overflow: hidden !important;
 // }
@@ -65,9 +70,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 // main-menu and cart
-.menu-container {
-  max-width: 450px;
-}
+
 .btn-top {
   font-weight: 500;
   white-space: nowrap;
@@ -89,10 +92,11 @@ input[type="number"] {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .mainmenu,
 .user_setting_menu {
   padding: 0;
-  border-radius: 20px;
+  border-radius: 18px;
   border: none;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
@@ -102,20 +106,8 @@ input[type="number"] {
 }
 .menu_icon {
   filter: grayscale(90%);
-  width: 18px;
-  height: 18px;
   margin-right: 1.4rem;
   padding-bottom: 2px;
-}
-.main_menu_container {
-  padding: 0;
-  margin-left: 0;
-  max-width: 275px;
-}
-.main_menu {
-  @media (min-width: 1600px) {
-    padding-right: 3.2rem;
-  }
 }
 .menu_link:hover {
   .menu_icon {
@@ -179,15 +171,32 @@ input[type="number"] {
 }
 
 // navbars
-
+.navbar-toggler-icon {
+  background-image: url(../assets/icons/navtogglerlogo.svg);
+}
+.navbar-toggler.active {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+  background-image: url(../assets/icons/toggleractive.svg);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-size: auto;
+  background-position: center;
+  .navbar-toggler-icon {
+    opacity: 0;
+  }
+}
+.navbar-toggler.collapsed {
+  transform: rotate(-360deg);
+  transition: all 0.5s ease-in-out;
+}
 .browse_dropdown {
-  width: 195px;
-  top: 90%;
-  left: 15px;
+  width: 204px;
   padding: 0;
-  border-radius: 20px;
+  border-radius: 18px;
   border: none;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  left: 25%;
 }
 
 .drop-item {
@@ -196,16 +205,6 @@ input[type="number"] {
 .navbar {
   padding: 0;
   background-color: $theme_bgcolor !important;
-  .navbar-brand {
-    margin: 0;
-    @media (min-width: 1600px) {
-      padding-right: 3rem;
-      padding-left: 2.6rem;
-    }
-  }
-  .navbar-toggler-icon {
-    background-image: url(/assets/icons/sliderbutton.svg);
-  }
 }
 .nav-link {
   padding: 0 1rem;
@@ -220,8 +219,6 @@ input[type="number"] {
   align-items: center;
   .pointer {
     filter: grayscale(100%);
-    width: 15px;
-    height: 15px;
     margin-left: auto;
   }
 }
@@ -231,12 +228,12 @@ input[type="number"] {
   }
 }
 .dropdown-item-1:hover {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 .dropdown-item-last {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
 }
 .dropdown-item.active {
   background-color: transparent;
@@ -257,64 +254,76 @@ input[type="number"] {
 .default_nav {
   background-color: $theme_bgcolor !important;
   box-shadow: $div-shadow;
-}
-.gc_nav_logo {
-  width: 90px;
-  height: 53px;
-}
-.form_container {
-  max-width: 603px;
-}
-.nav_row {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding-left: 3px;
-  margin: 0;
-}
-.nav_search_label {
-  position: relative !important;
-  width: 100%;
-}
-.nav-search-bar {
-  height: 40px;
-  border-radius: 11px;
-  min-width: 150px;
-  border: none;
-  border-top-left-radius: 11px !important;
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
-  &::placeholder {
-    font-size: 16px;
-    font-family: "raleway", sans-serif;
-    text-overflow: ellipsis;
+  .navbar-brand {
+    margin: 0;
   }
-}
-
-.inline-search-btn {
-  position: absolute !important;
-  right: 2%;
-  top: 0;
-  height: 40px;
-  width: 49px;
-  border-radius: 11px;
-  background-color: white;
-  &:hover {
-    .inline-search-btn-img {
-      filter: none;
+  .nav_container {
+    max-width: 1920px;
+  }
+  .form_container {
+    max-width: 603px;
+  }
+  .nav_row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    @media (min-width: 1300px) {
+      padding-left: 48.5px;
     }
   }
-  &:focus {
-    background-color: transparent !important;
-    box-shadow: none !important;
+  .nav_search_label {
+    position: relative !important;
+    width: 100%;
+  }
+  .nav-search-bar {
+    height: 40px;
+    border-radius: 11px;
+    min-width: 150px;
+    border: none;
+    border-top-left-radius: 11px !important;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+    &::placeholder {
+      font-size: 16px;
+      font-family: "raleway", sans-serif;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .inline-search-btn {
+    position: absolute !important;
+    right: 2%;
+    top: 0;
+    height: 40px;
+    width: 49px;
+    border-radius: 11px;
+    background-color: white;
+    &:hover {
+      .inline-search-btn-img {
+        filter: none;
+      }
+    }
+    &:focus {
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .inline-search-btn-img {
+    filter: grayscale(100%);
+    width: 150%;
+  }
+  @media (min-width: 1800px) {
+    .navbar-brand {
+      padding-left: 49.5px;
+    }
+    .col-lg-3 {
+      flex: 0 0 12.9%;
+      max-width: 12.9%;
+    }
   }
 }
-
-.inline-search-btn-img {
-  filter: grayscale(100%);
-  width: 150%;
-}
 // transitions
-
 .navbtn::after {
   content: "";
   display: block;
@@ -2308,7 +2317,7 @@ input[type="text"] {
 .cart_container {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  background-color: #f6f6f6;
+  background-color: $cards-bg-color;
   max-width: 1460px;
   min-height: 600px;
   border-radius: 3rem !important;
@@ -2318,7 +2327,7 @@ input[type="text"] {
       display: flex;
       align-items: center;
     }
-    background: #f6f6f6;
+    background-color: $cards-bg-color;
     max-width: 820px;
     border-radius: 20px;
     padding: 2em;
@@ -2327,6 +2336,7 @@ input[type="text"] {
       max-height: 228px;
       border-radius: 20px;
       overflow: hidden !important;
+      object-fit: cover;
     }
     .text-container {
       padding-left: 20px;

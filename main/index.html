@@ -14,7 +14,7 @@
   <body>
     <div class="container-fluid-xl container_outer">
       <!-- sticky top header including logo and navbar -->
-      <header class="container-fluid sticky-top gc_sticky pt-1 pt-lg-3">
+      <header class="container-fluid sticky-top gc_sticky pt-1 py-lg-3">
         <div class="row">
           <div class="col-sm-3 col-lg-4 col-md-1"></div>
           <div class="col-sm-6 col-lg-4 col-md-10">
@@ -55,7 +55,8 @@
               "
             >
               <a href="cart.html" class="btn mr-5 main_menu_btn pb-1">
-                <img class="carty" src="./assets/icons/cart.svg" /> Cart
+                <img class="carty" alt="cart" src="./assets/icons/cart.svg" />
+                Cart
                 <span class="badge carty_text" id="">2</span>
               </a>
               <div class="dropdown">
@@ -176,83 +177,87 @@
         </div>
 
         <!--Homepage Nav-bar -->
-        <nav class="navbar navbar-expand-lg navbar-expand-md home-nav">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-center"
-              id="navbarSupportedContent"
-            >
-              <ul class="navbar-nav justify-content-center align-items-center">
-                <li class="nav-item dropdown px-lg-4">
+        <nav
+          class="
+            navbar navbar-expand-lg navbar-expand-md
+            home-nav
+            justify-content-center
+            align-items-center
+          "
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="
+              collapse
+              navbar-collapse
+              justify-content-center
+              align-items-center
+            "
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown px-lg-4">
+                <a
+                  class="nav-link navbtn px-lg-5"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Browse
+                </a>
+                <div
+                  class="dropdown-menu browse_dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
                   <a
-                    class="nav-link navbtn px-lg-5"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Browse
-                  </a>
-                  <div
-                    class="dropdown-menu browse_dropdown"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <a
-                      class="
-                        dropdown-item
-                        browse_item
-                        dropdown-item-1
-                        pl-3
-                        py-2
-                      "
-                      href="./generalmarket.html"
-                      >General market
-                      <img
-                        class="pointer"
-                        src="./assets/icons/menuIcons/pointer.svg"
-                        alt="menu pointer"
-                    /></a>
-                    <a
-                      class="
-                        dropdown-item
-                        browse_item
-                        pl-3
-                        py-2
-                        dropdown-item-last
-                      "
-                      href="./auctionmarket.html"
-                      >Auction
-                      <img
-                        class="pointer"
-                        src="./assets/icons/menuIcons/pointer.svg"
-                        alt="menu pointer"
-                    /></a>
-                  </div>
-                </li>
-                <li class="nav-item px-lg-5">
-                  <a class="nav-link navbtn" href="#">Sell</a>
-                </li>
-                <li class="nav-item px-lg-5">
-                  <a class="nav-link navbtn" href="./blog.html">Blog</a>
-                </li>
-                <li class="nav-item px-lg-5">
-                  <a class="nav-link navbtn" href="#">About</a>
-                </li>
-              </ul>
-            </div>
+                    class="dropdown-item browse_item dropdown-item-1 pl-3 py-2"
+                    href="./generalmarket.html"
+                    >General market
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                  <a
+                    class="
+                      dropdown-item
+                      browse_item
+                      pl-3
+                      py-2
+                      dropdown-item-last
+                    "
+                    href="./auctionmarket.html"
+                    >Auction
+                    <img
+                      class="pointer"
+                      src="./assets/icons/menuIcons/pointer.svg"
+                      alt="menu pointer"
+                  /></a>
+                </div>
+              </li>
+              <li class="nav-item px-lg-5">
+                <a class="nav-link navbtn" href="#">Sell</a>
+              </li>
+              <li class="nav-item px-lg-5">
+                <a class="nav-link navbtn" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item px-lg-5">
+                <a class="nav-link navbtn" href="#">About</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </header>

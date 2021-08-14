@@ -13,123 +13,128 @@
     <div class="container-fluid-xl container_outer">
       <!-- default navbar -->
       <header class="container-fluid sticky-top default_nav pt-2 px-0">
-        <nav class="navbar navbar-expand-lg navbar-expand-xl">
-          <a class="navbar-brand" href="index.html">
-            <img
-              class="gc_nav_logo"
-              src="./assets/icons/gc_nav_logo.svg"
-              alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="row nav_row">
-              <div class="col-lg-1 col-md-12 d-flex justify-content-center">
-                <a
-                  class="nav-link navbtn"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Browse
-                </a>
-                <div
-                  class="dropdown-menu browse_dropdown"
-                  aria-labelledby="navbarDropdown"
-                >
+        <div class="container nav_container">
+          <nav class="navbar navbar-expand-lg navbar-expand-xl">
+            <a class="navbar-brand" href="index.html">
+              <img
+                class="gc_nav_logo"
+                src="./assets/icons/gc_nav_logo.svg"
+                alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="row nav_row">
+                <div class="col-lg-1 col-md-12 d-flex justify-content-center">
                   <a
-                    class="dropdown-item browse_item dropdown-item-1 pl-3 py-2"
-                    href="./generalmarket.html"
-                    >General market
-                    <img
-                      class="pointer"
-                      src="./assets/icons/menuIcons/pointer.svg"
-                      alt="menu pointer"
-                  /></a>
-                  <a
-                    class="
-                      dropdown-item
-                      browse_item
-                      pl-3
-                      py-2
-                      dropdown-item-last
-                    "
-                    href="./auctionmarket.html"
-                    >Auction
-                    <img
-                      class="pointer"
-                      src="./assets/icons/menuIcons/pointer.svg"
-                      alt="menu pointer"
-                  /></a>
-                </div>
-              </div>
-              <div class="col-lg-1 d-flex justify-content-center col-md-12">
-                <a class="nav-link navbtn" href="#">Sell</a>
-              </div>
-              <div class="col-lg-1 d-flex justify-content-center">
-                <a class="nav-link navbtn" href="./blog.html">blog</a>
-              </div>
-              <div class="col-lg-1 col-md-12 d-flex justify-content-center">
-                <a class="nav-link navbtn" href="#">About</a>
-              </div>
-              <div class="col-lg-5 px-lg-5 col-md-12">
-                <label class="nav_search_label" for="search_bar">
-                  <input
-                    type="text"
-                    id="nav_search_bar"
-                    name="search_bar"
-                    class="form-control nav-search-bar"
-                    placeholder="Search..."
-                  />
-                  <button
-                    type="submit"
-                    class="btn inline-search-btn"
-                    title="search button"
+                    class="nav-link navbtn"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
                   >
-                    <img
-                      class="inline-search-btn-img"
-                      src="./assets/icons/search.svg"
-                      alt=""
-                    />
-                  </button>
-                </label>
-              </div>
-              <!-- main menu in header/user logged in menu -->
-              <div class="col-lg-3 col-md-12 pl-lg-0">
-                <div class="container main_menu_container">
-                  <div>
+                    Browse
+                  </a>
+                  <div
+                    class="dropdown-menu browse_dropdown"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <a
-                      href="cart.html"
                       class="
-                        btn
-                        main_menu_btn
-                        pb-1
-                        d-flex
-                        justify-content-evenly
+                        dropdown-item
+                        browse_item
+                        dropdown-item-1
+                        pl-3
+                        py-2
                       "
-                      title="cart button"
+                      href="./generalmarket.html"
+                      >General market
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                    <a
+                      class="
+                        dropdown-item
+                        browse_item
+                        pl-3
+                        py-2
+                        dropdown-item-last
+                      "
+                      href="./auctionmarket.html"
+                      >Auction
+                      <img
+                        class="pointer"
+                        src="./assets/icons/menuIcons/pointer.svg"
+                        alt="menu pointer"
+                    /></a>
+                  </div>
+                </div>
+                <div class="col-lg-1 d-flex justify-content-center col-md-12">
+                  <a class="nav-link navbtn" href="./newlisting.html">Sell</a>
+                </div>
+                <div class="col-lg-1 d-flex justify-content-center">
+                  <a class="nav-link navbtn" href="./blog.html">blog</a>
+                </div>
+                <div class="col-lg-1 col-md-12 d-flex justify-content-center">
+                  <a class="nav-link navbtn" href="./about.html">About</a>
+                </div>
+                <div class="col-lg-5 px-lg-5 col-md-12">
+                  <label class="nav_search_label" for="search_bar">
+                    <input
+                      type="text"
+                      id="nav_search_bar"
+                      name="search_bar"
+                      class="form-control nav-search-bar"
+                      placeholder="Search..."
+                    />
+                    <button
+                      type="submit"
+                      class="btn inline-search-btn"
+                      title="search button"
                     >
                       <img
-                        class="carty mr-1"
-                        src="./assets/icons/cart.svg"
-                        alt="cart icon"
+                        class="inline-search-btn-img"
+                        src="./assets/icons/search.svg"
+                        alt=""
                       />
-                      Cart
-                      <span class="badge carty_text" id="">2</span>
-                    </a>
-                  </div>
+                    </button>
+                  </label>
+                </div>
+                <!-- main menu in header/user logged in menu -->
+                <div
+                  class="
+                    col-lg-3 col-md-12
+                    d-flex
+                    justify-content-between
+                    p-xl-0
+                  "
+                >
+                  <a
+                    href="cart.html"
+                    class="btn main_menu_btn pb-1 d-flex justify-content-evenly"
+                    title="cart button"
+                  >
+                    <img
+                      class="carty mr-1"
+                      src="./assets/icons/cart.svg"
+                      alt="cart icon"
+                    />
+                    Cart
+                    <span class="badge carty_text" id="">2</span>
+                  </a>
                   <div class="dropdown main_menu">
                     <button
                       class="btn dropdown-toggle main_menu_btn"
@@ -157,7 +162,7 @@
                           pl-3
                           py-2
                         "
-                        href="myprofile.html"
+                        href="./myprofile.html"
                       >
                         <span>
                           <img
@@ -169,7 +174,7 @@
                       </a>
                       <a
                         class="dropdown-item menu_link pl-3 py-2"
-                        href="messages.html"
+                        href="./bindingoffers.html"
                       >
                         <span>
                           <img
@@ -177,11 +182,11 @@
                             src="./assets/icons/menuIcons/mail.svg"
                             alt="mail icon"
                         /></span>
-                        messages
+                        Binding Offers
                       </a>
                       <a
                         class="dropdown-item menu_link pl-3 py-2"
-                        href="wishlist.html"
+                        href="./wishlist.html"
                       >
                         <span>
                           <img
@@ -193,7 +198,7 @@
                       </a>
                       <a
                         class="dropdown-item menu_link pl-3 py-2"
-                        href="orders.html"
+                        href="./orders.html"
                       >
                         <span>
                           <img
@@ -205,7 +210,7 @@
                       </a>
                       <a
                         class="dropdown-item menu_link pl-3 py-2"
-                        href="yourlistings.html"
+                        href="./yourlistings.html"
                       >
                         <span>
                           <img
@@ -217,7 +222,7 @@
                       </a>
                       <a
                         class="dropdown-item menu_link pl-3 py-2"
-                        href="statistics.html"
+                        href="./statistics.html"
                       >
                         <span>
                           <img
@@ -229,7 +234,7 @@
                       </a>
                       <a
                         class="dropdown-item menu_link pl-3 py-2"
-                        href="settings.html"
+                        href="./settings.html"
                       >
                         <span>
                           <img
@@ -247,7 +252,7 @@
                           pl-3
                           py-2
                         "
-                        href="index.html"
+                        href="./index.html"
                       >
                         <span>
                           <img
@@ -262,8 +267,8 @@
                 </div>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </header>
       <!-- end of navbar -->
       <section class="favorite_listings my-5 container-fluid">
