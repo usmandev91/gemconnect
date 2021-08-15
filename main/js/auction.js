@@ -61,6 +61,7 @@ $(document).ready(function () {
     $("#ringExpand").show();
   });
 });
+
 //Collapse and expand individual accordion buttons chains
 $("#chainCollapse").hide();
 $("#chainExpand").click(function () {
@@ -120,4 +121,7 @@ $("#earingCollapse").click(function () {
   $(this).hide();
   $(".earing_collapse").collapse("hide");
   $("#earingExpand").show();
+});
+$(".navbar-toggler").click(function () {
+  $(this).toggleClass("active");
 });

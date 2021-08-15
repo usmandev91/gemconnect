@@ -1421,7 +1421,11 @@ input[type="text"] {
 .gm_market_listings .listing_count {
   color: #b4b4b4;
   font-size: 20px;
-  font-weight: 600; }
+  font-weight: 600;
+  white-space: nowrap; }
+  @media (max-width: 700px) {
+    .gm_market_listings .listing_count {
+      font-size: 14px; } }
 
 .gm_market_listings .cat_tabs {
   max-width: 770px;

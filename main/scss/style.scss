@@ -1661,6 +1661,10 @@ input[type="text"] {
     color: #b4b4b4;
     font-size: 20px;
     font-weight: 600;
+    white-space: nowrap;
+    @media (max-width: 700px) {
+      font-size: 14px;
+    }
   }
   .cat_tabs {
     max-width: 770px;
