@@ -20,6 +20,7 @@ $(document).ready(function () {
     $("#gm_count").hide();
     $("#gm_counter").removeClass("std-title");
     $("#gm_counter").removeClass("tab-text");
+    $("#gm_counter").addClass("gm_counter_deactive");
     $(".item").hide();
     if (attr == "cat_rings") {
       $("." + attr).show();

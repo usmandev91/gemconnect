@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GemConnect | My Profile</title>
+    <title>GemConnect | HandMadejewelry</title>
     <link rel="stylesheet" href="./jquery.raty.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -427,108 +427,109 @@
         </div>
       </div>
       <!-- userprofile -->
-      <section class="user-profile">
-        <div class="container user_container container-width">
-          <div class="container container-width">
-            <div class="row">
-              <div
-                class="
-                  col-lg-4 col-md-12
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <div class="user_img_box">
-                  <img
-                    class="user_pic img-fluid img-circle"
-                    src="./assets/images/seller/handmade.jpg"
-                    alt=""
-                  />
-                </div>
+      <section class="container container-width p-xl-0">
+        <div class="user_container">
+          <div class="row m-xl-0">
+            <div
+              class="
+                col-lg-4 col-md-12
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <div class="user_img_box">
+                <img
+                  class="user_pic img-fluid img-circle"
+                  src="./assets/images/seller/handmade.jpg"
+                  alt=""
+                />
               </div>
-              <div class="col-lg-4 col-md-12">
-                <div class="text_container">
-                  <!-- User's name -->
-                  <p class="user_name">
-                    HandMade jewelry<span class="badge" id="verifed_seller"
-                      ><img
-                        class="pb-1"
-                        src="./assets/icons/Verifiedseller.svg"
-                        alt=""
-                    /></span>
-                  </p>
-                  <!-- User's Average Rating Based On Number of Reviews (readOnly=true,) this is a dummy rating-->
-                  <div class="rating_container">
-                    <div class="user_rating"></div>
-                    <!-- targeted using raty -->
-                    <div class="rating_score px-3" id="hint"></div>
-                    <span class="reviews_counter" id="user_reviews"
-                      >(127 reviews)</span
-                    >
-                  </div>
-                  <!-- end of rating -->
-                  <!-- User's info -->
-                  <p class="mt-3 user_info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore dolor laudantium repudiandae nemo temporibus dicta,
-                    praesentium asperiores illum ipsum dignissimos!
-                  </p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="text_container">
+                <!-- User's name -->
+                <p class="user_name mt-lg-0 mb-lg-0 mt-3 mb-2">
+                  HandMade jewelry<span class="badge" id="verifed_seller"
+                    ><img
+                      class="pb-1"
+                      src="./assets/icons/Verifiedseller.svg"
+                      alt=""
+                  /></span>
+                </p>
+                <!-- User's Average Rating Based On Number of Reviews (readOnly=true,) this is a dummy rating-->
+                <div class="rating_container">
+                  <div class="user_rating"></div>
+                  <!-- targeted using raty -->
+                  <div class="rating_score px-3" id="hint"></div>
+                  <span class="reviews_counter" id="user_reviews"
+                    >(127 reviews)</span
+                  >
                 </div>
+                <!-- end of rating -->
+                <!-- User's info -->
+                <p class="mt-3 user_info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore dolor laudantium repudiandae nemo temporibus dicta,
+                  praesentium asperiores illum ipsum dignissimos!
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="favorite_listings my-5 container-fluid">
+      <!-- top listings cards -->
+      <section class="my-5 container-fluid">
         <div
           class="
             container container-width
             d-flex
             justify-content-lg-start justify-content-center
             align-items-center
-            p-0
-            pb-3
+            p-xl-0
           "
         >
-          <h2 class="section-title-start text-start your-listing-title">
-            Top listings
-          </h2>
+          <h6 class="section-title-start std-title">Top listings</h6>
         </div>
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8 col-xs-12 col-sm-12 col-md-12">
-            <div
-              class="
-                cotnainer
-                d-lg-none d-flex
-                justify-content-center
-                align-items-center
-              "
-            >
-              <a href="#" class="btn flexible_button">view all</a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div
-              class="
-                container
-                side_button_container
-                d-none d-xl-flex
-                justify-content-end
-                align-items-center
-              "
-            >
-              <a href="./userlistings.html" class="btn flexible_button"
-                >view all</a
+        <!-- side viewall button -->
+        <div class="container side_btn_grid p-0">
+          <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 col-xs-12 col-sm-12 col-md-12">
+              <div
+                class="
+                  cotnainer
+                  d-xl-none d-flex
+                  justify-content-center
+                  align-items-center
+                "
               >
+                <a href="./userlistings.html" class="btn flexible_button"
+                  >view all</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-2 side_btn_clm">
+              <div
+                class="
+                  container
+                  side_btn_container
+                  d-none d-xl-flex
+                  justify-content-end
+                  align-items-center
+                "
+              >
+                <a href="./userlistings.html" class="btn flexible_button"
+                  >view all</a
+                >
+              </div>
             </div>
           </div>
         </div>
         <!-- items container and grid layout -->
         <div class="container listing_container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="row cards4_grid">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 item">
               <!-- start of item card give each product unique id to target-->
               <div class="card-flyer">
                 <div class="listing-image-box">
@@ -556,35 +557,25 @@
                     <p class="listing_name m-0 pt-2">
                       Golden Ring with little stones available on gc
                     </p>
-                    <p class="listing_price m-0 pt-0">$550</p>
+                    <div class="container price_container">
+                      <p class="listing_price_after m-0 pt-0">$550</p>
+                    </div>
                   </div>
-                </div>
-
-                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                <div
-                  class="
-                    container
-                    listing_rating_container
-                    justify-content-xl-start
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                    pl-lg-0
-                    p-lg-0
-                  "
-                >
-                  <div class="listing_rating" data-score="4.5"></div>
-                  <!-- target this div via raty for score dont write anything inside -->
-                  <div class="rating_score px-3 mb-1" id="listing_score">
-                    4.5
+                  <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                  <div class="container listing_rating_container">
+                    <div class="listing_rating" data-score="4.5"></div>
+                    <!-- target this div via raty for score dont write anything inside -->
+                    <div class="rating_score px-3 mb-1" id="listing_score">
+                      4.5
+                    </div>
                   </div>
+                  <!-- end of rating -->
                 </div>
-                <!-- end of rating -->
               </div>
               <!-- end of card -->
             </div>
             <!-- end of container -->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 item">
               <div class="card-flyer">
                 <div class="listing-image-box">
                   <!-- wishlist radio button -->
@@ -610,31 +601,23 @@
                     <p class="listing_name m-0 pt-2">
                       Engangememt golden rounds available exclusively on gc
                     </p>
-                    <p class="listing_price m-0 pt-0">$650</p>
+                    <div class="container price_container">
+                      <p class="listing_price_after m-0 pt-0">$650</p>
+                    </div>
                   </div>
-                </div>
-                <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-                <div
-                  class="
-                    container
-                    listing_rating_container
-                    d-flex
-                    justify-content-xl-start justify-content-center
-                    align-items-center
-                    pl-lg-0
-                    p-lg-0
-                  "
-                >
-                  <div class="listing_rating" data-score="4"></div>
-                  <!-- target this div via raty for score dont write anything inside -->
-                  <div class="rating_score px-3 mb-1" id="listing_score">
-                    4.0
+                  <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                  <div class="container listing_rating_container">
+                    <div class="listing_rating" data-score="4"></div>
+                    <!-- target this div via raty for score dont write anything inside -->
+                    <div class="rating_score px-3 mb-1" id="listing_score">
+                      4.0
+                    </div>
                   </div>
+                  <!-- rating end -->
                 </div>
-                <!-- rating end -->
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 item">
               <div class="card-flyer">
                 <div class="listing-image-box">
                   <!-- wishlist radio button -->
@@ -661,31 +644,23 @@
                     <p class="listing_name m-0 pt-2">
                       PIET HEIN EEK Golden Watch available exclusively on gc
                     </p>
-                    <p class="listing_price m-0 pt-0">$1550</p>
+                    <div class="container price_container">
+                      <p class="listing_price_after m-0 pt-0">$1550</p>
+                    </div>
                   </div>
-                </div>
-                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                <div
-                  class="
-                    container
-                    listing_rating_container
-                    d-flex
-                    justify-content-xl-start justify-content-center
-                    align-items-center
-                    pl-lg-0
-                    p-lg-0
-                  "
-                >
-                  <div class="listing_rating" data-score="3.5"></div>
-                  <!-- target this div via raty for score dont write anything inside -->
-                  <div class="rating_score px-3 mb-1" id="listing_score">
-                    3.5
+                  <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                  <div class="container listing_rating_container">
+                    <div class="listing_rating" data-score="3.5"></div>
+                    <!-- target this div via raty for score dont write anything inside -->
+                    <div class="rating_score px-3 mb-1" id="listing_score">
+                      3.5
+                    </div>
                   </div>
+                  <!-- rating end -->
                 </div>
-                <!-- rating end -->
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 item">
               <div class="card-flyer">
                 <div class="listing-image-box">
                   <!-- wishlist radio button -->
@@ -711,37 +686,29 @@
                     <p class="listing_name m-0 pt-2">
                       Rado watch available exclusively on gc
                     </p>
-                    <p class="listing_price m-0 pt-0">$550</p>
+                    <div class="container price_container">
+                      <p class="listing_price_after m-0 pt-0">$550</p>
+                    </div>
                   </div>
-                </div>
-                <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                <div
-                  class="
-                    container
-                    listing_rating_container
-                    d-flex
-                    justify-content-xl-start justify-content-center
-                    align-items-center
-                    pl-lg-0
-                    p-lg-0
-                  "
-                >
-                  <div class="listing_rating" data-score="5"></div>
-                  <!-- target this div via raty for score dont write anything inside -->
-                  <div class="rating_score px-3 mb-1" id="listing_score">
-                    5.0
+                  <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                  <div class="container listing_rating_container">
+                    <div class="listing_rating" data-score="5"></div>
+                    <!-- target this div via raty for score dont write anything inside -->
+                    <div class="rating_score px-3 mb-1" id="listing_score">
+                      5.0
+                    </div>
                   </div>
+                  <!-- rating end -->
                 </div>
-                <!-- rating end -->
               </div>
               <!-- end of card -->
             </div>
             <!-- end of container -->
           </div>
-          <!-- end of row -->
         </div>
         <!-- end of listing_container -->
       </section>
+      <!-- user reviews same as listing/product reviews only recent 5 to be shown -->
       <section class="reviews my-5 container-fluid">
         <div
           class="
@@ -749,25 +716,17 @@
             d-flex
             justify-content-lg-start justify-content-center
             align-items-center
-            p-0
+            p-xl-0
           "
         >
-          <h2 class="section-title-start sold-title my-5">Reviews</h2>
+          <h6 class="section-title-start std-title my-5">Reviews</h6>
         </div>
         <!-- product reviews -->
         <!-- review 1 -->
-        <div class="container-fluid review_container pt-3">
+        <div class="container review_container">
           <div class="row">
             <div class="col-lg-7 p-lg-0 col-xs-12 col-sm-12 col-md-12">
-              <div
-                class="
-                  container
-                  d-flex
-                  flex-lg-row flex-column
-                  justify-content-lg-start
-                  align-items-lg-center
-                "
-              >
+              <div class="user_review_container container">
                 <div class="user_pic">
                   <img
                     class="img-fluid img-circle"
@@ -775,15 +734,8 @@
                     alt=""
                   />
                 </div>
-                <div class="user_name px-lg-3">Annie</div>
-                <div
-                  class="
-                    listing_rating_container
-                    d-flex
-                    justify-content-lg-center justify-content-start
-                    align-items-center
-                  "
-                >
+                <div class="px-lg-3"><span class="user_name">Annie</span></div>
+                <div class="listing_rating_container">
                   <div class="listing_rating" data-score="4"></div>
                   <!-- target this div via raty for score dont write anything inside -->
                   <div class="rating_score px-3 mb-1" id="listing_score">
@@ -792,23 +744,21 @@
                 </div>
                 <div class="review_date">April 4th,2021</div>
               </div>
-              <div class="container pt-3">
-                <p class="user_review">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, praesentium, dignissimos assumenda doloremque unde eos
-                  modi necessitatibus illo quibusdam minima sequi tempore porro
-                  incidunt? Incidunt facilis consectetur excepturi sed quia.
-                </p>
-              </div>
+              <p class="user_review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                praesentium, dignissimos assumenda doloremque unde eos modi
+                necessitatibus illo quibusdam minima sequi tempore porro
+                incidunt? Incidunt facilis consectetur excepturi sed quia.
+              </p>
             </div>
             <div
               class="
                 col-lg-5
                 d-flex
-                justify-content-lg-end
                 align-items-center
-                justify-content-center
+                justify-content-center justify-content-lg-end
                 col-xs-12 col-sm-12 col-md-12
+                p-0
               "
             >
               <div class="card-flyer">
@@ -823,34 +773,15 @@
                   </div>
                 </a>
                 <!-- end of anchor -->
-                <div
-                  class="
-                    text-box
-                    container
-                    d-flex
-                    flex-column
-                    justify-content-center
-                    align-items-center
-                    p-0
-                    m-0
-                  "
-                >
-                  <div class="text-container container p-0">
+                <div class="text-box">
+                  <div class="text-container container">
                     <p class="listing_name">
                       Golden Ring with little stones available on gc
                     </p>
                     <p class="listing_price">$550</p>
                   </div>
                   <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                  <div
-                    class="
-                      container
-                      listing_rating_container
-                      d-flex
-                      justify-content-start
-                      align-items-center
-                    "
-                  >
+                  <div class="container listing_rating_container">
                     <div class="listing_rating" data-score="4.5"></div>
                     <!-- target this div via raty for score dont write anything inside -->
                     <div class="rating_score px-3 mb-1" id="listing_score">
@@ -862,21 +793,13 @@
               </div>
             </div>
           </div>
-          <hr />
+          <hr class="my-4" />
         </div>
         <!-- review 2 -->
-        <div class="container-fluid review_container pt-3">
+        <div class="container review_container">
           <div class="row">
             <div class="col-lg-7 p-lg-0">
-              <div
-                class="
-                  container
-                  d-flex
-                  flex-lg-row flex-column
-                  justify-content-lg-start
-                  align-items-lg-center
-                "
-              >
+              <div class="user_review_container container">
                 <div class="user_pic">
                   <img
                     class="img-fluid img-circle"
@@ -885,14 +808,7 @@
                   />
                 </div>
                 <div class="user_name px-lg-3">julia stephen</div>
-                <div
-                  class="
-                    listing_rating_container
-                    d-flex
-                    justify-content-lg-center justify-content-start
-                    align-items-center
-                  "
-                >
+                <div class="listing_rating_container">
                   <div class="listing_rating" data-score="4"></div>
                   <!-- target this div via raty for score dont write anything inside -->
                   <div class="rating_score px-3 mb-1" id="listing_score">
@@ -901,14 +817,13 @@
                 </div>
                 <div class="review_date">May 21th,2021</div>
               </div>
-              <div class="container pt-3">
-                <p class="user_review">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, praesentium, dignissimos assumenda doloremque unde eos
-                  modi necessitatibus illo quibusdam minima sequi tempore porro
-                  incidunt? Incidunt facilis consectetur excepturi sed quia.
-                </p>
-              </div>
+
+              <p class="user_review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                praesentium, dignissimos assumenda doloremque unde eos modi
+                necessitatibus illo quibusdam minima sequi tempore porro
+                incidunt? Incidunt facilis consectetur excepturi sed quia.
+              </p>
             </div>
             <div
               class="
@@ -917,6 +832,7 @@
                 justify-content-lg-end
                 align-items-center
                 justify-content-center
+                p-0
               "
             >
               <div class="card-flyer">
@@ -931,34 +847,15 @@
                   </div>
                 </a>
                 <!-- end of anchor -->
-                <div
-                  class="
-                    text-box
-                    container
-                    d-flex
-                    flex-column
-                    justify-content-center
-                    align-items-center
-                    p-0
-                    m-0
-                  "
-                >
-                  <div class="text-container container p-0">
+                <div class="text-box">
+                  <div class="text-container container">
                     <p class="listing_name">
                       PIET HEIN EEK Golden Watch available exclusively on gc
                     </p>
                     <p class="listing_price">$1550</p>
                   </div>
                   <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                  <div
-                    class="
-                      container
-                      listing_rating_container
-                      d-flex
-                      justify-content-start
-                      align-items-center
-                    "
-                  >
+                  <div class="container listing_rating_container">
                     <div class="listing_rating" data-score="4.5"></div>
                     <!-- target this div via raty for score dont write anything inside -->
                     <div class="rating_score px-3 mb-1" id="listing_score">
@@ -970,21 +867,13 @@
               </div>
             </div>
           </div>
-          <hr />
+          <hr class="my-4" />
         </div>
         <!-- review 3 -->
-        <div class="container-fluid review_container pt-3">
+        <div class="container review_container">
           <div class="row">
             <div class="col-lg-7 p-lg-0">
-              <div
-                class="
-                  container
-                  d-flex
-                  flex-lg-row flex-column
-                  justify-content-lg-start
-                  align-items-lg-center
-                "
-              >
+              <div class="user_review_container container">
                 <div class="user_pic">
                   <img
                     class="img-fluid img-circle"
@@ -993,14 +882,7 @@
                   />
                 </div>
                 <div class="user_name px-lg-3">carla west</div>
-                <div
-                  class="
-                    listing_rating_container
-                    d-flex
-                    justify-content-lg-center justify-content-start
-                    align-items-center
-                  "
-                >
+                <div class="listing_rating_container">
                   <div class="listing_rating" data-score="3"></div>
                   <!-- target this div via raty for score dont write anything inside -->
                   <div class="rating_score px-3 mb-1" id="listing_score">
@@ -1009,14 +891,12 @@
                 </div>
                 <div class="review_date">April 4th,2021</div>
               </div>
-              <div class="container pt-3">
-                <p class="user_review">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, praesentium, dignissimos assumenda doloremque unde eos
-                  modi necessitatibus illo quibusdam minima sequi tempore porro
-                  incidunt? Incidunt facilis consectetur excepturi sed quia.
-                </p>
-              </div>
+              <p class="user_review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                praesentium, dignissimos assumenda doloremque unde eos modi
+                necessitatibus illo quibusdam minima sequi tempore porro
+                incidunt? Incidunt facilis consectetur excepturi sed quia.
+              </p>
             </div>
             <div
               class="
@@ -1025,6 +905,7 @@
                 justify-content-lg-end
                 align-items-center
                 justify-content-center
+                p-0
               "
             >
               <div class="card-flyer">
@@ -1039,34 +920,15 @@
                   </div>
                 </a>
                 <!-- end of anchor -->
-                <div
-                  class="
-                    text-box
-                    container
-                    d-flex
-                    flex-column
-                    justify-content-center
-                    align-items-center
-                    p-0
-                    m-0
-                  "
-                >
-                  <div class="text-container container p-0">
+                <div class="text-box">
+                  <div class="text-container container">
                     <p class="listing_name">
                       Engangememt golden rounds available exclusively on gc
                     </p>
                     <p class="listing_price">$650</p>
                   </div>
                   <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                  <div
-                    class="
-                      container
-                      listing_rating_container
-                      d-flex
-                      justify-content-start
-                      align-items-center
-                    "
-                  >
+                  <div class="container listing_rating_container">
                     <div class="listing_rating" data-score="4.5"></div>
                     <!-- target this div via raty for score dont write anything inside -->
                     <div class="rating_score px-3 mb-1" id="listing_score">
@@ -1078,21 +940,13 @@
               </div>
             </div>
           </div>
-          <hr />
+          <hr class="my-4" />
         </div>
         <!-- review 4 -->
-        <div class="container-fluid review_container pt-3">
+        <div class="container review_container">
           <div class="row">
             <div class="col-lg-7 p-lg-0">
-              <div
-                class="
-                  container
-                  d-flex
-                  flex-lg-row flex-column
-                  justify-content-lg-start
-                  align-items-lg-center
-                "
-              >
+              <div class="user_review_container container">
                 <div class="user_pic">
                   <img
                     class="img-fluid img-circle"
@@ -1101,14 +955,7 @@
                   />
                 </div>
                 <div class="user_name px-lg-3">anna paul</div>
-                <div
-                  class="
-                    listing_rating_container
-                    d-flex
-                    justify-content-lg-center justify-content-start
-                    align-items-center
-                  "
-                >
+                <div class="listing_rating_container">
                   <div class="listing_rating" data-score="1"></div>
                   <!-- target this div via raty for score dont write anything inside -->
                   <div class="rating_score px-3 mb-1" id="listing_score">
@@ -1117,14 +964,12 @@
                 </div>
                 <div class="review_date">April 4th,2021</div>
               </div>
-              <div class="container pt-3">
-                <p class="user_review">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, praesentium, dignissimos assumenda doloremque unde eos
-                  modi necessitatibus illo quibusdam minima sequi tempore porro
-                  incidunt? Incidunt facilis consectetur excepturi sed quia.
-                </p>
-              </div>
+              <p class="user_review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                praesentium, dignissimos assumenda doloremque unde eos modi
+                necessitatibus illo quibusdam minima sequi tempore porro
+                incidunt? Incidunt facilis consectetur excepturi sed quia.
+              </p>
             </div>
             <div
               class="
@@ -1133,6 +978,7 @@
                 justify-content-lg-end
                 align-items-center
                 justify-content-center
+                p-0
               "
             >
               <div class="card-flyer">
@@ -1147,19 +993,8 @@
                   </div>
                 </a>
                 <!-- end of anchor -->
-                <div
-                  class="
-                    text-box
-                    container
-                    d-flex
-                    flex-column
-                    justify-content-center
-                    align-items-center
-                    p-0
-                    m-0
-                  "
-                >
-                  <div class="text-container container p-0">
+                <div class="text-box">
+                  <div class="text-container container">
                     <p class="listing_name">
                       Rado watch available exclusively on gc
                     </p>
@@ -1186,21 +1021,13 @@
               </div>
             </div>
           </div>
-          <hr />
+          <hr class="my-4" />
         </div>
         <!-- review 5 -->
-        <div class="container-fluid review_container pt-3">
+        <div class="container review_container">
           <div class="row">
             <div class="col-lg-7 p-lg-0">
-              <div
-                class="
-                  container
-                  d-flex
-                  flex-lg-row flex-column
-                  justify-content-lg-start
-                  align-items-lg-center
-                "
-              >
+              <div class="user_review_container container">
                 <div class="user_pic">
                   <img
                     class="img-fluid img-circle"
@@ -1209,14 +1036,7 @@
                   />
                 </div>
                 <div class="user_name px-lg-3">Big Shaq</div>
-                <div
-                  class="
-                    listing_rating_container
-                    d-flex
-                    justify-content-lg-center justify-content-start
-                    align-items-center
-                  "
-                >
+                <div class="listing_rating_container">
                   <div class="listing_rating" data-score="2.5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
                   <div class="rating_score px-3 mb-1" id="listing_score">
@@ -1225,14 +1045,12 @@
                 </div>
                 <div class="review_date">April 4th,2021</div>
               </div>
-              <div class="container pt-3">
-                <p class="user_review">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, praesentium, dignissimos assumenda doloremque unde eos
-                  modi necessitatibus illo quibusdam minima sequi tempore porro
-                  incidunt? Incidunt facilis consectetur excepturi sed quia.
-                </p>
-              </div>
+              <p class="user_review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                praesentium, dignissimos assumenda doloremque unde eos modi
+                necessitatibus illo quibusdam minima sequi tempore porro
+                incidunt? Incidunt facilis consectetur excepturi sed quia.
+              </p>
             </div>
             <div
               class="
@@ -1241,6 +1059,7 @@
                 justify-content-lg-end
                 align-items-center
                 justify-content-center
+                p-0
               "
             >
               <div class="card-flyer">
@@ -1255,19 +1074,8 @@
                   </div>
                 </a>
                 <!-- end of anchor -->
-                <div
-                  class="
-                    text-box
-                    container
-                    d-flex
-                    flex-column
-                    justify-content-center
-                    align-items-center
-                    p-0
-                    m-0
-                  "
-                >
-                  <div class="text-container container p-0">
+                <div class="text-box">
+                  <div class="text-container container">
                     <p class="listing_name">
                       Rado watch available exclusively on gc
                     </p>
@@ -1294,21 +1102,13 @@
               </div>
             </div>
           </div>
-          <hr />
+          <hr class="my-4" />
         </div>
         <!-- review 5 -->
-        <div class="container-fluid review_container pt-3">
+        <div class="container review_container">
           <div class="row">
             <div class="col-lg-7 p-lg-0">
-              <div
-                class="
-                  container
-                  d-flex
-                  flex-lg-row flex-column
-                  justify-content-lg-start
-                  align-items-lg-center
-                "
-              >
+              <div class="user_review_container container">
                 <div class="user_pic">
                   <img
                     class="img-fluid img-circle"
@@ -1317,14 +1117,7 @@
                   />
                 </div>
                 <div class="user_name px-lg-3">dave chappel</div>
-                <div
-                  class="
-                    listing_rating_container
-                    d-flex
-                    justify-content-lg-center justify-content-start
-                    align-items-center
-                  "
-                >
+                <div class="listing_rating_container">
                   <div class="listing_rating" data-score="3.5"></div>
                   <!-- target this div via raty for score dont write anything inside -->
                   <div class="rating_score px-3 mb-1" id="listing_score">
@@ -1333,14 +1126,12 @@
                 </div>
                 <div class="review_date">september 24th,2021</div>
               </div>
-              <div class="container pt-3">
-                <p class="user_review">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, praesentium, dignissimos assumenda doloremque unde eos
-                  modi necessitatibus illo quibusdam minima sequi tempore porro
-                  incidunt? Incidunt facilis consectetur excepturi sed quia.
-                </p>
-              </div>
+              <p class="user_review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                praesentium, dignissimos assumenda doloremque unde eos modi
+                necessitatibus illo quibusdam minima sequi tempore porro
+                incidunt? Incidunt facilis consectetur excepturi sed quia.
+              </p>
             </div>
             <div
               class="
@@ -1349,6 +1140,7 @@
                 justify-content-lg-end
                 align-items-center
                 justify-content-center
+                p-0
               "
             >
               <div class="card-flyer">
@@ -1363,25 +1155,13 @@
                   </div>
                 </a>
                 <!-- end of anchor -->
-                <div
-                  class="
-                    text-box
-                    container
-                    d-flex
-                    flex-column
-                    justify-content-center
-                    align-items-center
-                    p-0
-                    m-0
-                  "
-                >
-                  <div class="text-container container p-0">
+                <div class="text-box">
+                  <div class="text-container container">
                     <p class="listing_name">
                       Rado watch available exclusively on gc
                     </p>
                     <p class="listing_price">$550</p>
                   </div>
-                  <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
                   <div
                     class="
                       container
@@ -1402,9 +1182,10 @@
               </div>
             </div>
           </div>
-          <hr />
+          <hr class="my-4" />
         </div>
       </section>
+      <!-- end of reviews -->
       <!-- footer -->
       <footer class="footer">
         <div class="container">

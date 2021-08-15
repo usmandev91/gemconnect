@@ -270,8 +270,8 @@
         </div>
       </header>
       <!-- end of navbar -->
-      <section class="container-fluid my-5 gm_market_listings">
-        <div class="container container-width p-lg-0">
+      <section class="container-fluid my-5 gm_market_listings p-0">
+        <div class="container container-width">
           <div class="row">
             <!-- general market heading with counter of listings on gm -->
             <div
@@ -353,6 +353,7 @@
                 justify-content-center justify-content-lg-end
                 m-lg-0
                 my-5
+                select_container
               "
             >
               <div class="gc_custom_select">
@@ -5776,12 +5777,16 @@
               </div>
               <!-- cards grid -->
               <!-- 8 rows of cards made up of 3 cards per row , 24 cards in total to be shown per page-->
-              <div class="col-lg-9 cards_grid">
+              <div class="col-lg-9 cards3_grid">
                 <div class="row cards_row">
                   <!-- start of item card give each product unique id to target for rating-->
                   <!-- ring card -->
                   <div
-                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_rings"
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
+                      item
+                      cat_rings
+                    "
                   >
                     <div class="card-flyer">
                       <div class="listing-image-box">
@@ -5839,23 +5844,16 @@
                             <p class="listing_price_after m-0 pt-0">$1499</p>
                           </div>
                         </div>
-                      </div>
-
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          justify-content-xl-start
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.5
+                          </div>
                         </div>
                       </div>
                       <!-- end of rating -->
@@ -5864,7 +5862,11 @@
                   <!-- end of card -->
                   <!-- chain card -->
                   <div
-                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_chains"
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
+                      item
+                      cat_chains
+                    "
                   >
                     <div class="card-flyer">
                       <div class="listing-image-box">
@@ -5905,30 +5907,25 @@
                             <p class="listing_price_after m-0 pt-0">$340</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.2"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.2
+                        <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.2"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.2
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- pendant card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_pendants
                     "
@@ -5973,30 +5970,25 @@
                             <p class="listing_price_after m-0 pt-0">$559</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="3.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          3.5
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="3.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            3.5
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- watch card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_watches
                     "
@@ -6040,31 +6032,26 @@
                             <p class="listing_price_after m-0 pt-0">$1499</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          5.0
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            5.0
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                     <!-- end of card -->
                   </div>
                   <!-- bracelet card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_bracelets
                     "
@@ -6124,32 +6111,25 @@
                             <p class="listing_price_after m-0 pt-0">$180</p>
                           </div>
                         </div>
-                      </div>
-
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          justify-content-xl-start
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.8"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.8
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.8"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.8
+                          </div>
                         </div>
+                        <!-- end of rating -->
                       </div>
-                      <!-- end of rating -->
                     </div>
                   </div>
                   <!-- earing card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_earings
                     "
@@ -6183,30 +6163,29 @@
                             <p class="listing_price_after m-0 pt-0">$68</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.4"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.4
+                        <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.4"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.4
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- ring card -->
                   <div
-                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_rings"
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
+                      item
+                      cat_rings
+                    "
                   >
                     <div class="card-flyer">
                       <div class="listing-image-box">
@@ -6249,33 +6228,26 @@
                             <p class="listing_price_after m-0 pt-0">$180</p>
                           </div>
                         </div>
-                      </div>
-
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          justify-content-xl-start
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.5
+                          </div>
                         </div>
+                        <!-- end of rating -->
                       </div>
-                      <!-- end of rating -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- watch card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_watches
                     "
@@ -6321,24 +6293,19 @@
                             <p class="listing_price_after m-0 pt-0">$545</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          5.0
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            5.0
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                     <!-- end of card -->
                   </div>
@@ -6346,7 +6313,7 @@
                   <!-- pendant card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_pendants
                     "
@@ -6391,31 +6358,26 @@
                             <p class="listing_price_after m-0 pt-0">$790</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.8"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.8
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.8"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.8
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- earing card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_earings
                     "
@@ -6449,31 +6411,26 @@
                             <p class="listing_price_after m-0 pt-0">$259</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.4"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.4
+                        <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.4"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.4
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- bracelet card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_bracelets
                     "
@@ -6526,31 +6483,28 @@
                             <p class="listing_price_after m-0 pt-0">$59</p>
                           </div>
                         </div>
-                      </div>
-
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          justify-content-xl-start
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.8"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.8
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.8"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.8
+                          </div>
                         </div>
+                        <!-- end of rating -->
                       </div>
-                      <!-- end of rating -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <div
-                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_chains"
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
+                      item
+                      cat_chains
+                    "
                   >
                     <div class="card-flyer">
                       <div class="listing-image-box">
@@ -6589,30 +6543,29 @@
                             <p class="listing_price_after m-0 pt-0">$340</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.2"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.2
+                        <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.2"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.2
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- ring card -->
                   <div
-                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_rings"
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
+                      item
+                      cat_rings
+                    "
                   >
                     <div class="card-flyer">
                       <div class="listing-image-box">
@@ -6645,32 +6598,29 @@
                             <p class="listing_price_after m-0 pt-0">$790</p>
                           </div>
                         </div>
-                      </div>
-
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          justify-content-xl-start
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.5
+                          </div>
                         </div>
+                        <!-- end of rating -->
                       </div>
-                      <!-- end of rating -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- chain card -->
                   <div
-                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_chains"
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
+                      item
+                      cat_chains
+                    "
                   >
                     <div class="card-flyer">
                       <div class="listing-image-box">
@@ -6711,31 +6661,26 @@
                             <p class="listing_price_after m-0 pt-0">$2790</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.8"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.8
+                        <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.8"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.8
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- watch card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_watches
                     "
@@ -6779,31 +6724,26 @@
                             <p class="listing_price_after m-0 pt-0">$340</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          5.0
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            5.0
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                     <!-- end of card -->
                   </div>
                   <!-- pendant card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_pendants
                     "
@@ -6839,31 +6779,26 @@
                             <p class="listing_price_after m-0 pt-0">$580</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.8"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.8
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.8"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.8
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- earing card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_earings
                     "
@@ -6897,31 +6832,26 @@
                             <p class="listing_price_after m-0 pt-0">$180</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.4"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.4
+                        <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.4"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.4
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- bracelet card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_bracelets
                     "
@@ -6974,33 +6904,26 @@
                             <p class="listing_price_after m-0 pt-0">$1100</p>
                           </div>
                         </div>
-                      </div>
-
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          justify-content-xl-start
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.8"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.8
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.8"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.8
+                          </div>
                         </div>
+                        <!-- end of rating -->
                       </div>
-                      <!-- end of rating -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- watch card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_watches
                     "
@@ -7044,31 +6967,30 @@
                             <p class="listing_price_after m-0 pt-0">$559</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.7"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.7
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.7"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.7
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                     <!-- end of card -->
                   </div>
                   <!-- end of card -->
                   <!-- ring card -->
                   <div
-                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_rings"
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
+                      item
+                      cat_rings
+                    "
                   >
                     <div class="card-flyer">
                       <div class="listing-image-box">
@@ -7118,33 +7040,26 @@
                             <p class="listing_price_after m-0 pt-0">$580</p>
                           </div>
                         </div>
-                      </div>
-
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          justify-content-xl-start
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.5"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.5
+                          </div>
                         </div>
+                        <!-- end of rating -->
                       </div>
-                      <!-- end of rating -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- bracelet card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_bracelets
                     "
@@ -7179,33 +7094,26 @@
                             <p class="listing_price_after m-0 pt-0">$68</p>
                           </div>
                         </div>
-                      </div>
-
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          justify-content-xl-start
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.8"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.8
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  MAKE IT FUNCTION MR.BACKEND-->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.8"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.8
+                          </div>
                         </div>
+                        <!-- end of rating -->
                       </div>
-                      <!-- end of rating -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- earing card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_earings
                     "
@@ -7239,31 +7147,26 @@
                             <p class="listing_price_after m-0 pt-0">$140</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.2"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.2
+                        <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.2"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.2
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- pendant card -->
                   <div
                     class="
-                      col-xs-12 col-sm-6 col-md-6 col-lg-4
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
                       item
                       cat_pendants
                     "
@@ -7308,29 +7211,28 @@
                             <p class="listing_price_after m-0 pt-0">$340</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.2"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.2
+                        <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.2"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.2
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- chain card -->
                   <div
-                    class="col-xs-12 col-sm-6 col-md-6 col-lg-4 item cat_chains"
+                    class="
+                      col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4
+                      item
+                      cat_chains
+                    "
                   >
                     <div class="card-flyer">
                       <div class="listing-image-box">
@@ -7371,32 +7273,27 @@
                             <p class="listing_price_after m-0 pt-0">$999</p>
                           </div>
                         </div>
-                      </div>
-                      <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
-                      <div
-                        class="
-                          container
-                          listing_rating_container
-                          d-flex
-                          justify-content-xl-start justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <div class="listing_rating" data-score="4.7"></div>
-                        <!-- target this div via raty for score dont write anything inside -->
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.7
+                        <!-- item rating based on reviews (readOnly=true,data score function) this is a dummy rating  -->
+                        <div class="container listing_rating_container">
+                          <div class="listing_rating" data-score="4.7"></div>
+                          <!-- target this div via raty for score dont write anything inside -->
+                          <div
+                            class="rating_score px-3 mb-1"
+                            id="listing_score"
+                          >
+                            4.7
+                          </div>
                         </div>
+                        <!-- rating end -->
                       </div>
-                      <!-- rating end -->
                     </div>
                   </div>
                   <!-- end of card -->
                   <!-- end of cards grid -->
-                  <div class="col-lg-12">
+                  <div class="col-lg-12 p-0">
                     <!-- pagination -->
                     <nav aria-label="Page navigation">
-                      <ul class="pagination justify-content-lg-start">
+                      <ul class="pagination">
                         <li class="page-item">
                           <a
                             class="page-link prev_page"
@@ -7414,7 +7311,7 @@
                         <li class="page-item">
                           <a class="page-link" href="#">3</a>
                         </li>
-                        <li class="page-item dots">. . . .</li>
+                        <li class="page-item dots">...</li>
                         <li class="page-item">
                           <a class="page-link" href="#">11</a>
                         </li>
