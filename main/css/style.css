@@ -923,10 +923,10 @@ input[type="text"] {
   position: relative;
   font-weight: 600;
   font-size: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1;
   white-space: nowrap; }
-  @media (min-width: 1440px) {
-    .std-title {
-      margin-left: 4px; } }
 
 .std-title::after {
   content: "";
@@ -1452,9 +1452,13 @@ input[type="text"] {
     margin-top: 2.1rem; }
   .listing_container .filter_bar {
     background-color: #f6f6f6;
-    padding: 2rem 3.5rem 2rem 3.5rem;
+    padding: 2rem 3.5rem;
     border-radius: 25px;
     transition: all 0.4s ease-in; }
+    @media (max-width: 575px) {
+      .listing_container .filter_bar {
+        max-width: 313px;
+        padding: 2rem 2rem; } }
     .listing_container .filter_bar .refine_btn {
       border: none;
       background-color: #f6f6f6;
@@ -1507,7 +1511,7 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     align-items: center; }
-  @media (min-width: 1440px) {
+  @media (min-width: 970px) {
     .listing_container .cards3_grid {
       padding: 0px 3px; }
       .listing_container .cards3_grid .cards_row .item {
@@ -1521,7 +1525,7 @@ input[type="text"] {
       .listing_container .cards3_grid .cards_row .item {
         display: flex;
         justify-content: center;
-        padding: 0; } }
+        padding: 0px 12px; } }
   .listing_container a {
     text-decoration: none;
     outline: none; }

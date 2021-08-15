@@ -1062,16 +1062,15 @@ input[type="text"] {
     box-shadow: 0 0 4px 0px $theme_color !important;
   }
 }
-
 // section underline:
 .std-title {
   position: relative;
   font-weight: 600;
   font-size: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1;
   white-space: nowrap;
-  @media (min-width: 1440px) {
-    margin-left: 4px;
-  }
 }
 .std-title::after {
   content: "";
@@ -1698,8 +1697,12 @@ input[type="text"] {
     margin-top: 2.1rem;
   }
   .filter_bar {
+    @media (max-width: 575px) {
+      max-width: 313px;
+      padding: 2rem 2rem;
+    }
     background-color: $cards-bg-color;
-    padding: 2rem 3.5rem 2rem 3.5rem;
+    padding: 2rem 3.5rem;
     border-radius: 25px;
     transition: all 0.4s ease-in;
     .refine_btn {
@@ -1772,7 +1775,7 @@ input[type="text"] {
       align-items: center;
     }
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 970px) {
     .cards3_grid {
       padding: 0px 3px;
       .cards_row {
@@ -1796,7 +1799,7 @@ input[type="text"] {
         .item {
           display: flex;
           justify-content: center;
-          padding: 0;
+          padding: 0px 12px;
         }
       }
     }
