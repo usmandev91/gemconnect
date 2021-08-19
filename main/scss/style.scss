@@ -164,6 +164,8 @@ input[type="number"] {
 // navbars
 .navbar-toggler-icon {
   background-image: url(../assets/icons/navtogglerlogo.svg);
+  background-position: center;
+  margin-left: 20px;
 }
 .navbar-toggler.active {
   transition: all 0.5s ease-in-out;
@@ -173,6 +175,7 @@ input[type="number"] {
   vertical-align: middle;
   background-size: auto;
   background-position: center;
+  margin-left: 20px;
   .navbar-toggler-icon {
     opacity: 0;
   }
@@ -187,7 +190,7 @@ input[type="number"] {
   border-radius: 18px;
   border: none;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  left: 25%;
+  left: 15%;
 }
 
 .drop-item {
@@ -198,7 +201,7 @@ input[type="number"] {
   background-color: $theme_bgcolor !important;
 }
 .nav-link {
-  padding: 0 1rem;
+  padding: 0;
   font-size: 20px;
   font-weight: 600;
   color: $text-color !important;
@@ -247,10 +250,52 @@ input[type="number"] {
   box-shadow: $div-shadow;
   .navbar-brand {
     margin: 0;
-    padding-left: 10px;
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
   .nav_container {
-    max-width: 1920px;
+    max-width: 1885px;
+    .mobile_main_menu {
+      display: none;
+      @media (max-width: 991px) {
+        display: inline-flex;
+      }
+    }
+    .mobile_cart {
+      display: none;
+      @media (max-width: 991px) {
+        display: inline-flex;
+      }
+      .carty_icon {
+        width: 25px;
+        padding: 3px;
+      }
+    }
+    .m_home_btn {
+      display: none;
+      @media (max-width: 991px) {
+        display: inline-flex;
+        margin-top: 0.5rem;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .desktop_btns {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      @media (min-width: 1665px) {
+        flex: 0 0 14.5%;
+        max-width: 14.5%;
+      }
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+    .navbar-toggler {
+      font-size: 1.25em;
+    }
   }
   .form_container {
     max-width: 603px;
@@ -260,9 +305,6 @@ input[type="number"] {
     align-items: center;
     width: 100%;
     margin: 0;
-    @media (min-width: 1300px) {
-      padding-left: 48.5px;
-    }
   }
   .nav_search_label {
     position: relative !important;
@@ -304,15 +346,6 @@ input[type="number"] {
   .inline-search-btn-img {
     filter: grayscale(100%);
     width: 150%;
-  }
-  @media (min-width: 1800px) {
-    .navbar-brand {
-      padding-left: 49.5px;
-    }
-    .col-lg-3 {
-      flex: 0 0 12.9%;
-      max-width: 12.9%;
-    }
   }
 }
 // transitions
@@ -1669,6 +1702,8 @@ input[type="text"] {
   .cat_tabs {
     max-width: 770px;
     border: none;
+    justify-content: space-between;
+    align-items: center;
     .filter_btn {
       padding: 0.5rem 1.1rem;
       border: none;
@@ -1680,6 +1715,9 @@ input[type="text"] {
       color: $text-color;
       cursor: pointer;
       transition: all 0.4s ease-in-out;
+      @media (max-width: 575px) {
+        margin-right: 10px;
+      }
       &.active {
         background-color: $text-color;
         color: white;
@@ -1773,10 +1811,27 @@ input[type="text"] {
     }
   }
   .cards4_grid {
+    @media (max-width: 575px) {
+      .item {
+        width: 50% !important;
+      }
+    }
     .item {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  .cards3_grid {
+    padding: 0px;
+    .cards_row {
+      @media (max-width: 575px) {
+        .col-sm-6 {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
     }
   }
   @media (min-width: 970px) {
@@ -1816,7 +1871,7 @@ input[type="text"] {
   .card-flyer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 35px;
     background: #f6f6f6;
@@ -1832,6 +1887,9 @@ input[type="text"] {
       width: 100%;
       overflow: hidden;
       text-align: center;
+      @media (max-width: 575px) {
+        height: auto;
+      }
       img {
         border-radius: 35px;
       }
@@ -1853,28 +1911,22 @@ input[type="text"] {
         position: absolute;
         top: 8%;
         left: 8%;
+        img {
+          border-radius: 0 !important;
+        }
       }
       .auction_label {
         white-space: nowrap;
         background-color: $cards-bg-color;
         border-radius: 10px;
         padding: 0.2rem 1rem;
-      }
-      .discount-label {
-        position: absolute !important;
-        top: 0%;
-        left: 0%;
-        right: 0;
-        z-index: 1000;
-        .discount-badge {
-          background-color: #fd4e4e;
-          padding-top: 10px;
-          color: #fff;
-          text-align: center;
-          width: 90px;
-          height: 30px;
+        @media (max-width: 575px) {
+          padding: 0.3rem 0.4rem;
+          font-size: 0.7rem;
+          border-radius: 5px;
         }
       }
+
       .wishlist_btn_container {
         position: absolute !important;
         top: 8%;
@@ -1893,9 +1945,54 @@ input[type="text"] {
         }
       }
     }
+    .discount-label {
+      position: absolute !important;
+      top: 5.5%;
+      z-index: 10;
+      @media (max-width: 575px) {
+        top: 8.5%;
+      }
+      .discount-badge {
+        background-color: #fd4e4e;
+        color: #fff;
+        text-align: center;
+        width: 90px;
+        height: 30px;
+        position: relative;
+        border-radius: 0 !important;
+        @media (max-width: 575px) {
+          width: 50px;
+          height: 26px;
+        }
+        p {
+          margin-top: 5px;
+          margin-bottom: 0;
+          @media (max-width: 575px) {
+            font-size: 0.6rem;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0%;
+          right: -13%;
+          border-bottom: 12px solid #fd4e4e;
+          border-right: 12px solid transparent;
+          width: 0;
+          height: 0;
+          @media (max-width: 575px) {
+            top: 0.53%;
+            right: -24%;
+          }
+        }
+      }
+    }
     .text-box {
       width: 100%;
       padding: 0.125px 15px;
+      @media (max-width: 575px) {
+        padding: 0 !important;
+      }
       .listing_name {
         font-size: 1rem;
         text-overflow: ellipsis;
@@ -1904,6 +2001,9 @@ input[type="text"] {
         white-space: nowrap;
         color: $text-color;
         margin: 0;
+        @media (max-width: 575px) {
+          font-size: 0.8rem;
+        }
       }
       .price_container {
         display: flex;
@@ -1918,12 +2018,18 @@ input[type="text"] {
           font-weight: 700;
           color: #b4b4b4;
           text-decoration: line-through;
+          @media (max-width: 575px) {
+            font-size: 0.8rem;
+          }
         }
         .listing_price_after {
           margin: 0;
           font-size: 1.2rem;
           font-weight: 700;
           color: $text-color;
+          @media (max-width: 575px) {
+            font-size: 0.8rem;
+          }
         }
       }
       .auction_price_container {
@@ -1931,8 +2037,14 @@ input[type="text"] {
         flex-direction: column;
         margin: 0;
         padding-left: 17px;
+        @media (max-width: 575px) {
+          padding-left: 13px;
+        }
         .user_bid {
           margin-bottom: 0;
+          @media (max-width: 575px) {
+            font-size: 0.8rem;
+          }
         }
         .listing_minimum_bid,
         .listing_highest_bid {
@@ -1940,14 +2052,23 @@ input[type="text"] {
           font-size: 1.2rem;
           font-weight: 700;
           color: $text-color;
+          @media (max-width: 575px) {
+            font-size: 0.8rem;
+          }
         }
         .auction_bid {
           margin-bottom: 0;
+          @media (max-width: 575px) {
+            font-size: 0.8rem;
+          }
         }
         .no_bid {
           font-weight: normal;
           color: #ff7272;
           text-transform: none;
+          @media (max-width: 575px) {
+            font-size: 0.8rem;
+          }
         }
       }
       .order_success {
@@ -1965,12 +2086,21 @@ input[type="text"] {
       justify-content: flex-start;
       align-items: center;
       padding-left: 13px;
+      @media (max-width: 575px) {
+        padding-left: 15px;
+      }
       .listing_rating {
         font-size: 0.7rem;
+        @media (max-width: 575px) {
+          font-size: 0.4rem;
+        }
       }
       .rating_score {
         font-size: 14px;
         font-weight: 600;
+        @media (max-width: 575px) {
+          font-size: 11px;
+        }
       }
     }
   }
@@ -2912,6 +3042,9 @@ input[type="text"] {
 }
 .stats_row {
   margin: 7rem 0;
+  .container-width {
+    max-width: 1485px;
+  }
   .tile {
     display: flex;
     flex-direction: column;
@@ -2942,11 +3075,12 @@ input[type="text"] {
     justify-content: space-evenly;
     background-color: $text-color;
     height: 200px;
+    max-width: 485px;
     border-radius: 24px;
     .text_container {
       display: flex;
       flex-direction: column;
-      max-width: 230px;
+      max-width: 50%;
       min-height: 200px;
       border-right: dashed 1px white;
       padding: 0;
@@ -2967,11 +3101,16 @@ input[type="text"] {
         margin-top: 40px;
       }
     }
-
+    .widthraw_btn_container {
+      max-width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .btn_withdraw {
       background-color: $theme_color;
       min-height: 140px;
-      width: 155px;
+      width: 170px;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -2979,6 +3118,11 @@ input[type="text"] {
       border-radius: 24px;
       margin-right: 12px;
       margin-left: 12px;
+      @media (max-width: 700px) {
+        width: 100px;
+        font-size: 16px;
+        min-height: 100px;
+      }
       img {
         margin-bottom: 20px;
       }
@@ -3146,7 +3290,7 @@ input[type="text"] {
       max-width: 100%;
     }
   }
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     .col-md-12 {
       display: flex;
       justify-content: center;
@@ -3222,7 +3366,14 @@ input[type="text"] {
   height: 32px;
   display: inline-block;
   background-repeat: no-repeat;
+  background-position: center;
+
   transition: all 0.5s ease-in-out;
+  @media (max-width: 575px) {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+  }
 }
 .customized_radio label > input[type="radio"] ~ .blog_like {
   cursor: pointer;

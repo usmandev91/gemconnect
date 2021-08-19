@@ -33,7 +33,9 @@ $(".listing_rating").raty({
   // round: { down: 0.25, full: 0.5 },
 });
 //
-
+$(".navbar-toggler").click(function () {
+  $(this).toggleClass("active");
+});
 // active for general market tab
 $('.nav-tabs a[href="#gm"]').tab("show");
 

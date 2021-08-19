@@ -198,7 +198,9 @@ $(".custom_label").click(function () {
 //     $dropdown.off("mouseenter mouseleave");
 //   }
 // });
-
+$(".navbar-toggler").click(function () {
+  $(this).toggleClass("active");
+});
 // active for registration
 $('.nav-tabs a[href="#signup"]').tab("show");
 $('.nav-tabs a[href="#profile"]').tab("show");
