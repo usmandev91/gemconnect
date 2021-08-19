@@ -121,6 +121,6 @@ $("#earingCollapse").click(function () {
   $(".earing_collapse").collapse("hide");
   $("#earingExpand").show();
 });
-$(".navbar-toggler").click(function () {
-  $(this).toggleClass("active");
-});
+// $(".navbar-toggler").click(function () {
+//   $(this).toggleClass("active");
+// });

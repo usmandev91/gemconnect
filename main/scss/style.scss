@@ -2086,9 +2086,15 @@ input[type="text"] {
         margin-top: 0.2rem;
         margin-bottom: 0;
         font-size: 1rem;
+        @media (max-width: 575px) {
+          font-size: 0.8rem;
+        }
         .order_badge_img {
           width: 16px;
           padding-bottom: 0.3rem;
+          @media (max-width: 575px) {
+            width: 12px;
+          }
         }
       }
     }
@@ -2121,6 +2127,9 @@ input[type="text"] {
     margin-top: 3rem;
     margin-bottom: 3rem;
     justify-content: space-around;
+    @media (max-width: 575px) {
+      padding: 0 10px;
+    }
     .prev_page {
       background-image: url(../assets/icons/paginationprevious.svg);
       background-position: center;
