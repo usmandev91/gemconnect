@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-  <g id="arrow" transform="translate(-1640 -1241)">
-    <rect id="Rectangle_3110" data-name="Rectangle 3110" width="48" height="48" rx="15" transform="translate(1640 1241)" fill="#f6f6f6"/>
-    <path id="Arrow_Icon" data-name="Arrow Icon" d="M20.712,11.509a.914.914,0,0,0-.007,1.287l4.251,4.258H8.777a.909.909,0,0,0,0,1.818H24.949L20.7,23.129a.92.92,0,0,0,.007,1.287.905.905,0,0,0,1.28-.007l5.761-5.8h0a1.021,1.021,0,0,0,.189-.287.868.868,0,0,0,.07-.35.911.911,0,0,0-.259-.636l-5.761-5.8A.891.891,0,0,0,20.712,11.509Z" transform="translate(1646.275 1246.549)" fill="#3bc0cb"/>
-  </g>
-</svg>

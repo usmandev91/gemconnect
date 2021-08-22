@@ -216,7 +216,10 @@ $(".seller_carousel").owlCarousel({
   loop: false,
   navRewind: false,
   lazyLoad: true,
-  navText: ["<img src='prev.svg'>", "<img src='next.svg'>"],
+  navText: [
+    "<div class='nav-btn prev-slide'></div>",
+    "<div class='nav-btn next-slide'></div>",
+  ],
   responsiveClass: true,
   responsive: {
     0: {
@@ -259,7 +262,10 @@ $(".brand_carousel").owlCarousel({
   lazyLoad: true,
   loop: false,
   navRewind: false,
-  navText: ["<img src='prev.svg'>", "<img src='next.svg'>"],
+  navText: [
+    "<div class='nav-btn prev-slide'></div>",
+    "<div class='nav-btn next-slide'></div>",
+  ],
   responsiveClass: true,
   responsive: {
     0: {
@@ -290,7 +296,7 @@ $(".brand_carousel").owlCarousel({
 
 $(".deal_carousel").owlCarousel({
   items: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   nav: false,
   dots: true,

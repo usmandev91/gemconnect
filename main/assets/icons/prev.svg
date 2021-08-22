@@ -1,0 +1,15 @@
+<svg id="Group_12829" data-name="Group 12829" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f6f6f6;
+      }
+
+      .cls-2 {
+        fill: #3bc0cb;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_3110" data-name="Rectangle 3110" class="cls-1" width="30" height="30" rx="10"/>
+  <path id="Arrow_Icon" data-name="Arrow Icon" class="cls-2" d="M17.524,11.471a.853.853,0,0,0-.005,1.1l3.2,3.625H8.553a.781.781,0,0,0,0,1.548H20.708l-3.2,3.625a.859.859,0,0,0,.005,1.1.626.626,0,0,0,.962-.006l4.33-4.941h0a.887.887,0,0,0,.142-.244.824.824,0,0,0,.053-.3.833.833,0,0,0-.194-.542l-4.33-4.941A.616.616,0,0,0,17.524,11.471Z" transform="translate(30.441 31.967) rotate(180)"/>
+</svg>
