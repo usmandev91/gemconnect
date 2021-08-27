@@ -62,6 +62,10 @@ body {
   background-color: $theme_bgcolor;
   color: $text-color !important;
   box-shadow: $div-shadow;
+  .container-width {
+    max-width: 1840px;
+    padding: 0;
+  }
   .logo_cont {
     @media (max-width: 767px) {
       display: none;
@@ -319,10 +323,19 @@ input[type="number"] {
       display: none;
     }
   }
+  // nav container media queries
   .nav_container {
-    max-width: 1440px;
-    @media (min-width: 1600px) {
+    @media (min-width: 992px) {
+      max-width: 1200px;
+      padding: 0px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1440px;
+      padding: 0px 10px;
+    }
+    @media (min-width: 1700px) {
       max-width: 1885px;
+      padding: 0px 15px;
     }
     .mobile_main_menu {
       display: none;
@@ -352,13 +365,18 @@ input[type="number"] {
     .desktop_btns {
       display: flex;
       justify-content: space-between;
-      padding: 0px 15px;
-      max-width: 16.3%;
-      @media (min-width: 1920px) {
-        max-width: 15.2%;
+      max-width: fit-content;
+      @media (min-width: 1700px) {
+        max-width: 15.3%;
       }
       @media (max-width: 991px) {
         display: none;
+      }
+      .btn_dp_cart {
+        margin-left: 10px;
+        @media (min-width: 992px) {
+          padding-right: 3rem;
+        }
       }
     }
     .navbar-toggler {
@@ -1647,10 +1665,14 @@ input[type="text"] {
   border-radius: 3rem !important;
   .user_img_box {
     border: $text-color 1px solid;
-    height: 259px;
-    width: 259px;
+    max-height: 259px;
+    max-width: 259px;
     border-radius: 100%;
     padding: 0.5rem;
+    @media (max-width: 575px) {
+      max-height: 200px;
+      max-width: 200px;
+    }
   }
   .user_pic {
     border-radius: 100%;
@@ -1878,7 +1900,7 @@ input[type="text"] {
 // listing container and cards
 .listing_container {
   padding: 0;
-  @media (min-width: 1200px) {
+  @media (min-width: 1700px) {
     max-width: 1502px;
   }
   .filterbar_grid {
@@ -1982,7 +2004,8 @@ input[type="text"] {
   }
   @media (min-width: 970px) {
     .cards3_grid {
-      padding: 0px 3px;
+      padding-left: 15px;
+      padding-right: 3px;
       .cards_row {
         .item {
           display: flex;
@@ -2250,8 +2273,7 @@ input[type="text"] {
         }
       }
       .rating_score {
-        font-size: 14px;
-        font-weight: 600;
+        padding-left: 10px !important;
         @media (max-width: 575px) {
           font-size: 11px;
         }
@@ -2346,7 +2368,7 @@ input[type="text"] {
 
 // review section
 .review_container {
-  @media (min-width: 1200px) {
+  @media (min-width: 1700px) {
     max-width: 1465px;
   }
   .user_review_container {
@@ -2656,33 +2678,39 @@ input[type="text"] {
 
 // cart page
 .cart_container {
+  @media (min-width: 992px) {
+    padding: 4rem;
+  }
+  padding: 2rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
   background-color: $cards-bg-color;
-  max-width: 1460px;
   min-height: 600px;
   border-radius: 3rem !important;
-  padding: 1em;
+
   .card-flyer {
+    height: 100%;
+    width: 100%;
     @media (min-width: 992px) {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }
     background-color: $cards-bg-color;
-    max-width: 820px;
-    border-radius: 20px;
-    padding: 2em;
     .listing-image-box {
-      max-width: 320px;
-      max-height: 228px;
+      border: red 1px solid;
+      min-width: 50%;
       border-radius: 20px;
       overflow: hidden !important;
-      object-fit: cover;
+      height: auto;
     }
     .text-container {
-      padding-left: 20px;
-      max-width: 460px;
-      line-height: 2;
+      @media (min-width: 1700px) {
+        line-height: 2;
+      }
+      padding-left: 1rem !important;
+      border: yellow 1px solid;
+      min-width: 50%;
+      height: 100%;
       .title {
         margin-bottom: 4px;
       }
@@ -2695,7 +2723,6 @@ input[type="text"] {
     }
   }
   .del_address {
-    margin-top: 40px;
     max-width: 500px;
     background-color: $theme_bgcolor;
     border-radius: 20px;
@@ -3083,6 +3110,11 @@ input[type="text"] {
   }
 }
 .ring_form {
+  @media (max-width: 575px) {
+    .col-auto {
+      flex: 0 0 33%;
+    }
+  }
   @media (min-width: 1200px) {
     .col-auto {
       display: flex;
@@ -3293,7 +3325,9 @@ input[type="text"] {
 }
 
 // post new listing page
+
 .post_new {
+  margin-bottom: 2rem;
   .side_nav {
     display: flex;
     flex-direction: column;
@@ -3446,8 +3480,20 @@ input[type="text"] {
     max-width: 275px;
   }
   .bid_container {
+    @media (min-width: 1200px) and (max-width: 1700px) {
+      margin-bottom: 20px;
+    }
     .form_design {
       max-width: 100%;
+    }
+    @media (min-width: 1200px) and (max-width: 1700px) {
+      .col-xl-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 65%;
+        max-width: 65%;
+      }
     }
   }
   @media (max-width: 992px) {
@@ -3458,8 +3504,7 @@ input[type="text"] {
       flex-direction: column;
     }
   }
-
-  @media (min-width: 1800px) {
+  @media (min-width: 1700px) {
     .col-sm-1 {
       flex: 0 0 0%;
       max-width: 0%;
@@ -3743,8 +3788,12 @@ datalist {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   option {
+    @media (max-width: 320px) {
+      font-size: 8px;
+    }
     text-align: center;
     font-size: 10px;
     font-weight: bold;
