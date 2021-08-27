@@ -17,7 +17,7 @@
       <header class="container-fluid sticky-top gc_sticky pt-2">
         <div class="row">
           <div class="col-sm-3 col-lg-4 col-md-1"></div>
-          <div class="col-sm-6 col-lg-4 col-md-10">
+          <div class="col-sm-6 col-lg-4 col-md-10 logo_cont">
             <!-- logo -->
             <div class="container d-flex justify-content-center">
               <a href="#">
@@ -62,6 +62,7 @@
             >
               <a href="cart.html" class="btn main_menu_btn mr-lg-5 pb-1">
                 <img class="carty" alt="cart" src="./assets/icons/cart.svg" />
+                <span class="cart_text">Cart</span>
                 <span class="badge carty_text" id="">2</span>
               </a>
               <button
@@ -104,7 +105,7 @@
                   </a>
                   <a
                     class="dropdown-item menu_link pl-3 py-2"
-                    href="messages.html"
+                    href="./bindingoffers.html"
                   >
                     <span>
                       <img
@@ -112,7 +113,7 @@
                         src="./assets/icons/menuIcons/mail.svg"
                         alt="mail icon"
                     /></span>
-                    messages
+                    Binding offers
                   </a>
                   <a
                     class="dropdown-item menu_link pl-3 py-2"
@@ -191,7 +192,6 @@
             </div>
           </div>
         </div>
-
         <!--Homepage Nav-bar -->
         <nav
           class="
@@ -254,7 +254,7 @@
                 </div>
               </li>
               <li class="nav-item px-5">
-                <a class="nav-link navbtn" href="#">Sell</a>
+                <a class="nav-link navbtn" href="./newlisting.html">Sell</a>
               </li>
               <li class="nav-item px-5">
                 <a class="nav-link navbtn" href="./blog.html">Blog</a>
@@ -318,7 +318,13 @@
                         required
                         aria-required="true"
                       />
-                      <div class="d-flex justify-content-between">
+                      <div
+                        class="
+                          d-flex
+                          flex-lg-row flex-column
+                          justify-content-between
+                        "
+                      >
                         <div class="logged_in">
                           <input type="checkbox" name="remember" />
                           <label for="checkbox" class="logged_in" name=""
@@ -331,7 +337,6 @@
                           >
                         </div>
                       </div>
-
                       <button
                         type="submit"
                         data-bm-close="#loginModal"
@@ -462,15 +467,7 @@
         <div class="container container-width">
           <div class="seller_carousel owl-carousel owl-theme">
             <div class="item seller_card">
-              <a
-                class="
-                  d-flex
-                  flex-column
-                  align-items-center
-                  justify-content-center
-                "
-                href="userprofile.html"
-              >
+              <a href="userprofile.html">
                 <div class="seller_img_box mb-3">
                   <img
                     class="seller_pic img-thumbnail"
@@ -478,29 +475,21 @@
                     alt="handmade"
                   />
                 </div>
-                <div class="text-container text-center">
-                  <h6 class="seller_name">
-                    HandMade<span class="badge pb-0" class="verifed_seller"
-                      ><img
-                        class="verifiedseller img-fluid"
-                        src="./assets/icons/Verifiedseller.svg"
-                        alt="verifiedseller"
-                    /></span>
-                  </h6>
-                  <p class="seller_about">Lorem ipsum dolor sit.</p>
-                </div>
               </a>
+              <div class="text-container text-center">
+                <h6 class="seller_name">
+                  HandMade<span class="badge pb-0" class="verifed_seller"
+                    ><img
+                      class="verifiedseller img-fluid"
+                      src="./assets/icons/Verifiedseller.svg"
+                      alt="verifiedseller"
+                  /></span>
+                </h6>
+                <p class="seller_about">Lorem ipsum dolor sit.</p>
+              </div>
             </div>
             <div class="item seller_card">
-              <a
-                class="
-                  d-flex
-                  flex-column
-                  align-items-center
-                  justify-content-center
-                "
-                href="#"
-              >
+              <a href="#">
                 <div class="seller_img_box mb-3">
                   <img
                     class="seller_pic img-thumbnail"
@@ -508,31 +497,23 @@
                     alt="Davechappel"
                   />
                 </div>
-                <div class="text-container text-center">
-                  <h6 class="seller_name">
-                    Dave Chappel<span class="badge pb-0" class="verifed_seller"
-                      ><img
-                        class="verifiedseller"
-                        src="./assets/icons/Verifiedseller.svg"
-                        alt=""
-                    /></span>
-                  </h6>
-                  <p class="seller_about">
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                  </p>
-                </div>
               </a>
+              <div class="text-container text-center">
+                <h6 class="seller_name">
+                  Dave Chappel<span class="badge pb-0" class="verifed_seller"
+                    ><img
+                      class="verifiedseller"
+                      src="./assets/icons/Verifiedseller.svg"
+                      alt=""
+                  /></span>
+                </h6>
+                <p class="seller_about">
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                </p>
+              </div>
             </div>
             <div class="item seller_card">
-              <a
-                class="
-                  d-flex
-                  flex-column
-                  align-items-center
-                  justify-content-center
-                "
-                href=""
-              >
+              <a href="#">
                 <div class="seller_img_box mb-3">
                   <img
                     class="seller_pic img-thumbnail"
@@ -540,31 +521,23 @@
                     alt=""
                   />
                 </div>
-                <div class="text-container text-center">
-                  <h6 class="seller_name">
-                    EW Jewellery<span class="badge pb-0" class="verifed_seller"
-                      ><img
-                        class="verifiedseller"
-                        src="./assets/icons/Verifiedseller.svg"
-                        alt=""
-                    /></span>
-                  </h6>
-                  <p class="seller_about">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
               </a>
+              <div class="text-container text-center">
+                <h6 class="seller_name">
+                  EW Jewellery<span class="badge pb-0" class="verifed_seller"
+                    ><img
+                      class="verifiedseller"
+                      src="./assets/icons/Verifiedseller.svg"
+                      alt=""
+                  /></span>
+                </h6>
+                <p class="seller_about">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
             </div>
             <div class="item seller_card">
-              <a
-                class="
-                  d-flex
-                  flex-column
-                  align-items-center
-                  justify-content-center
-                "
-                href=""
-              >
+              <a href="#">
                 <div class="seller_img_box mb-3">
                   <img
                     class="seller_pic img-thumbnail"
@@ -572,31 +545,23 @@
                     alt=""
                   />
                 </div>
-                <div class="text-container text-center">
-                  <h6 class="seller_name">
-                    Howard JR<span class="badge pb-0" class="verifed_seller"
-                      ><img
-                        class="verifiedseller"
-                        src="./assets/icons/Verifiedseller.svg"
-                        alt=""
-                    /></span>
-                  </h6>
-                  <p class="seller_about">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
               </a>
+              <div class="text-container text-center">
+                <h6 class="seller_name">
+                  Howard JR<span class="badge pb-0" class="verifed_seller"
+                    ><img
+                      class="verifiedseller"
+                      src="./assets/icons/Verifiedseller.svg"
+                      alt=""
+                  /></span>
+                </h6>
+                <p class="seller_about">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
             </div>
             <div class="item seller_card">
-              <a
-                class="
-                  d-flex
-                  flex-column
-                  align-items-center
-                  justify-content-center
-                "
-                href=""
-              >
+              <a href="#">
                 <div class="seller_img_box mb-3">
                   <img
                     class="seller_pic img-thumbnail"
@@ -604,31 +569,23 @@
                     alt=""
                   />
                 </div>
-                <div class="text-container text-center">
-                  <h6 class="seller_name">
-                    Ken Shawn<span class="badge pb-0" class="verifed_seller"
-                      ><img
-                        class="verifiedseller"
-                        src="./assets/icons/Verifiedseller.svg"
-                        alt=""
-                    /></span>
-                  </h6>
-                  <p class="seller_about">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                </div>
               </a>
+              <div class="text-container text-center">
+                <h6 class="seller_name">
+                  Ken Shawn<span class="badge pb-0" class="verifed_seller"
+                    ><img
+                      class="verifiedseller"
+                      src="./assets/icons/Verifiedseller.svg"
+                      alt=""
+                  /></span>
+                </h6>
+                <p class="seller_about">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
             </div>
             <div class="item seller_card">
-              <a
-                class="
-                  d-flex
-                  flex-column
-                  align-items-center
-                  justify-content-center
-                "
-                href=""
-              >
+              <a href="#">
                 <div class="seller_img_box mb-3">
                   <img
                     class="seller_pic img-thumbnail"
@@ -636,18 +593,18 @@
                     alt=""
                   />
                 </div>
-                <div class="text-container text-center">
-                  <h6 class="seller_name">
-                    Big Shaq<span class="badge pb-0" class="verifed_seller"
-                      ><img
-                        class="verifiedseller"
-                        src="./assets/icons/Verifiedseller.svg"
-                        alt=""
-                    /></span>
-                  </h6>
-                  <p class="seller_about">Lorem ipsum dolor sit.</p>
-                </div>
               </a>
+              <div class="text-container text-center">
+                <h6 class="seller_name">
+                  Big Shaq<span class="badge pb-0" class="verifed_seller"
+                    ><img
+                      class="verifiedseller"
+                      src="./assets/icons/Verifiedseller.svg"
+                      alt=""
+                  /></span>
+                </h6>
+                <p class="seller_about">Lorem ipsum dolor sit.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -669,13 +626,13 @@
                       alt="ring img"
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="txt-container">
-                      <h6>rings</h6>
-                      <p class="listings" id="">200+ listings</p>
-                    </div>
-                  </div>
                 </a>
+                <div class="text-box">
+                  <div class="txt-container">
+                    <h6>rings</h6>
+                    <p class="listings" id="">200+ listings</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-4">
@@ -688,13 +645,13 @@
                       alt="chains"
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="txt-container">
-                      <h6>Chains</h6>
-                      <p class="listings" id="">150+ listings</p>
-                    </div>
-                  </div>
                 </a>
+                <div class="text-box">
+                  <div class="txt-container">
+                    <h6>Chains</h6>
+                    <p class="listings" id="">150+ listings</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-4">
@@ -707,13 +664,13 @@
                       alt="pendants"
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="txt-container">
-                      <h6>Pendants</h6>
-                      <p class="listings" id="">300+ listings</p>
-                    </div>
-                  </div>
                 </a>
+                <div class="text-box">
+                  <div class="txt-container">
+                    <h6>Pendants</h6>
+                    <p class="listings" id="">300+ listings</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-4">
@@ -726,13 +683,13 @@
                       alt="watches"
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="txt-container">
-                      <h6>Watches</h6>
-                      <p class="listings" id="">500+ listings</p>
-                    </div>
-                  </div>
                 </a>
+                <div class="text-box">
+                  <div class="txt-container">
+                    <h6>Watches</h6>
+                    <p class="listings" id="">500+ listings</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-4">
@@ -740,18 +697,18 @@
                 <a href="#">
                   <div class="image-box">
                     <img
-                      class="img-fluid bracelet"
+                      class="img-fluid"
                       src="./assets/images/bracelet.png"
                       alt="bracelets"
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="txt-container">
-                      <h6>Bracelets</h6>
-                      <p class="listings" id="">450+ listings</p>
-                    </div>
-                  </div>
                 </a>
+                <div class="text-box">
+                  <div class="txt-container">
+                    <h6>Bracelets</h6>
+                    <p class="listings" id="">450+ listings</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-4">
@@ -764,835 +721,802 @@
                       alt="earings"
                     />
                   </div>
-                  <div class="text-box">
-                    <div class="txt-container">
-                      <h6>earings</h6>
-                      <p class="listings" id="">250+ listings</p>
-                    </div>
-                  </div>
                 </a>
+                <div class="text-box">
+                  <div class="txt-container">
+                    <h6>earings</h6>
+                    <p class="listings" id="">250+ listings</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Brands -->
-      <section class="container-fluid brands container-width my-5">
-        <div class="row">
-          <div class="col-lg-4"></div>
-          <div class="col-lg-4">
-            <div
-              class="container d-flex justify-content-center align-items-center"
-            >
-              <p class="section-title-center home-title my-5">
-                Browse by Brands
-              </p>
+      <section class="container-fluid brands my-5">
+        <div class="container container-width">
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+              <div
+                class="
+                  container
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <p class="section-title-center home-title my-5">
+                  Browse by Brands
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- side viewall button -->
-          <div
-            class="
-              col-lg-4
-              d-flex
-              justify-content-lg-end justify-content-center
-              align-items-center
-            "
-          >
-            <a href="./brands.html" class="btn flexible_button mt-3 mt-lg-0"
-              >view all</a
+            <!-- side viewall button -->
+            <div
+              class="
+                col-lg-4
+                d-flex
+                justify-content-lg-end justify-content-center
+                align-items-center
+              "
             >
+              <a href="./brands.html" class="btn flexible_button mt-3 mt-lg-0"
+                >view all</a
+              >
+            </div>
           </div>
         </div>
-
         <div class="container container-width my-5">
           <div class="brand_carousel owl-carousel owl-theme">
-            <div
-              class="
-                item
-                brand_card
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-              "
-            >
-              <a href="">
-                <img
-                  class="brand_pic img-thumbnail"
-                  src="./assets/images/brands/rolex.png"
-                  alt="rolex logo"
-                />
-              </a>
+            <div class="item">
+              <div class="brand_card">
+                <a href="#">
+                  <img
+                    class="brand_pic img-thumbnail"
+                    src="./assets/images/brands/rolex.png"
+                    alt="rolex logo"
+                  />
+                </a>
+              </div>
             </div>
-            <div
-              class="
-                item
-                brand_card
-                d-flex
-                justify-content-center
-                align-items-center
-              "
-            >
-              <a href="">
-                <img
-                  class="brand_pic img-thumbnail"
-                  src="./assets/images/brands/cartier.png"
-                  alt="cartier logo"
-                />
-              </a>
+            <div class="item">
+              <div class="brand_card">
+                <a href="#">
+                  <img
+                    class="brand_pic img-thumbnail"
+                    src="./assets/images/brands/cartier.png"
+                    alt="cartier logo"
+                  />
+                </a>
+              </div>
             </div>
-            <div
-              class="
-                item
-                brand_card
-                d-flex
-                justify-content-center
-                align-items-center
-              "
-            >
-              <a href="">
-                <img
-                  class="brand_pic img-thumbnail"
-                  src="./assets/images/brands/tiffany.png"
-                  alt="tiffand and co. logo"
-                />
-              </a>
+            <div class="item">
+              <div class="brand_card">
+                <a href="">
+                  <img
+                    class="brand_pic img-thumbnail"
+                    src="./assets/images/brands/tiffany.png"
+                    alt="tiffand and co. logo"
+                  />
+                </a>
+              </div>
             </div>
-            <div
-              class="
-                item
-                brand_card
-                d-flex
-                justify-content-center
-                align-items-center
-              "
-            >
-              <a href="">
-                <img
-                  class="brand_pic img-thumbnail"
-                  src="./assets/images/brands/bvlgari.png"
-                  alt="bvlgari logo"
-                />
-              </a>
+            <div class="item">
+              <div class="brand_card">
+                <a href="">
+                  <img
+                    class="brand_pic img-thumbnail"
+                    src="./assets/images/brands/bvlgari.png"
+                    alt="bvlgari logo"
+                  />
+                </a>
+              </div>
             </div>
-            <div
-              class="
-                item
-                brand_card
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-              "
-            >
-              <a href="">
-                <img
-                  class="brand_pic img-thumbnail"
-                  src="./assets/images/brands/chrome.png"
-                  alt="chrome hearts logo"
-                />
-              </a>
+            <div class="item">
+              <div class="brand_card">
+                <a href="">
+                  <img
+                    class="brand_pic img-thumbnail"
+                    src="./assets/images/brands/chrome.png"
+                    alt="chrome hearts logo"
+                  />
+                </a>
+              </div>
             </div>
-            <div
-              class="
-                item
-                brand_card
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-              "
-            >
-              <a href="">
-                <img
-                  class="brand_pic img-thumbnail"
-                  src="./assets/images/brands/hermes.png"
-                  alt="hermes logo"
-                />
-              </a>
+            <div class="item">
+              <div class="brand_card">
+                <a href="">
+                  <img
+                    class="brand_pic img-thumbnail"
+                    src="./assets/images/brands/hermes.png"
+                    alt="hermes logo"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- deals carousel  -->
       <section class="deal container-fluid">
-        <div class="container my-5 deal_outer_container">
-          <div class="deal_carousel owl-carousel owl-theme">
-            <!-- item-1 -->
-            <div class="item container-fluid pt-3">
-              <div class="row deal_container authenticity_warranty">
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                  <div class="container deal-img-box">
-                    <img
-                      class="img-fluid"
-                      src="./assets/images/ringandearing.jpg"
-                      alt=""
-                    />
-                  </div>
+        <div
+          class="
+            deal_carousel
+            container container-width
+            p-0
+            owl-carousel owl-theme
+          "
+        >
+          <!-- item-1 -->
+          <div class="item">
+            <div class="row deal_container">
+              <div class="col-xl-4 col-md-12">
+                <div class="deal-img-box">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/ringandearing.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                  <div class="deal_text_container">
-                    <p class="text-center pt-3 heading_top">Buy & Sell</p>
-                    <p class="text-center mb-0 py-1">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Pariatur ratione voluptate earum. Aliquid rerum corrupti
-                      nemo perferendis eius. Doloremque, esse.
-                    </p>
-                    <div
-                      class="
-                        container
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        py-2
-                      "
+              </div>
+              <div class="col-xl-4 col-md-12 col-sm-12">
+                <div class="deal_text_container">
+                  <p class="text-center pt-3 heading_top">Buy & Sell</p>
+                  <p class="text-center mb-0 py-1">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Pariatur ratione voluptate earum. Aliquid rerum corrupti
+                    nemo perferendis eius. Doloremque, esse.
+                  </p>
+                  <div
+                    class="
+                      container
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      py-2
+                    "
+                  >
+                    <a class="btn btn-submit btn_default my-3" href="#"
+                      >read more</a
                     >
-                      <a class="btn btn-submit btn_default my-3" href="#"
-                        >read more</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                  <div class="container deal-img-box">
-                    <img
-                      class="img-fluid"
-                      src="./assets/images/topdeals/topdeals.png"
-                      alt=""
-                    />
                   </div>
                 </div>
               </div>
+              <div class="col-xl-4 col-md-12 col-sm-12">
+                <div class="deal-img-box">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/topdeals/topdeals.png"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-            <!-- end of item -->
-            <!-- item-2 staff picks -->
-            <div class="item container container-width">
-              <div class="row deal_container">
-                <div
-                  class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pl-xl-5 pt-xl-2"
-                >
-                  <div class="deal_text_container pt-lg-3 pl-lg-2">
-                    <div
-                      class="
-                        d-flex
-                        justify-content-lg-start justify-content-center
-                        align-items-center
-                      "
+          </div>
+          <!-- end of item -->
+          <!-- item-2 staff picks -->
+          <div class="item container container-width p-0">
+            <div class="row deal_container">
+              <div class="col-xl-4 col-md-12 col-sm-12">
+                <div class="deal_text_container">
+                  <div
+                    class="
+                      d-flex
+                      justify-content-lg-start justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <p class="text-left pt-3 heading_top pr-2">Staff Picks</p>
+                    <span class="badge" class="staff_verified"
+                      ><img
+                        class="staff_verified"
+                        src="./assets/icons/Verifiedseller.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <p class="text-lg-left text-center mb-0 py-0">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Pariatur ratione voluptate earum. Aliquid rerum corrupti
+                  </p>
+                  <div
+                    class="
+                      container
+                      d-flex
+                      justify-content-lg-start justify-content-center
+                      align-items-center
+                      p-0
+                      pb-4
+                    "
+                  >
+                    <a class="btn btn-submit btn_default mt-3" href="#"
+                      >View All</a
                     >
-                      <p class="text-left pt-3 heading_top pr-2">Staff Picks</p>
-                      <span class="badge" class="staff_verified"
-                        ><img
-                          class="staff_verified"
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1"></div>
+              <!-- item container start -->
+              <div class="col-xl-2 col-md-12 col-sm-12">
+                <!-- 1st item -->
+                <div class="card-flyer">
+                  <!-- anchor for clicking the whole box except rating -->
+                  <a href="">
+                    <div class="listing-image-box">
+                      <div class="staff-label">
+                        <img
+                          class="staff_label_img"
                           src="./assets/icons/Verifiedseller.svg"
                           alt=""
-                      /></span>
-                    </div>
-                    <p class="text-lg-left text-center mb-0 py-0">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Pariatur ratione voluptate earum. Aliquid rerum corrupti
-                    </p>
-                    <div
-                      class="
-                        container
-                        d-flex
-                        justify-content-lg-start justify-content-center
-                        align-items-center
-                        p-0
-                        pb-4
-                      "
-                    >
-                      <a class="btn btn-submit btn_default mt-3" href="#"
-                        >View All</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <!-- item container start -->
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <!-- 1st item -->
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <div class="staff-label">
-                          <img
-                            class="staff_label_img"
-                            src="./assets/icons/Verifiedseller.svg"
-                            alt=""
-                          />
-                        </div>
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/topdeals/rolex2021.png"
-                          alt=""
                         />
                       </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div class="text-box">
-                      <div class="text-container m-0">
-                        <p class="listing_name m-0 pt-2">
-                          Rolex New Model 2021 oyster
-                        </p>
-                        <p class="listing_price m-0 pt-0">$1450</p>
-                      </div>
-                      <div class="container listing_rating_container">
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
-                        </div>
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/topdeals/rolex2021.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <!-- end of anchor -->
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        Rolex New Model 2021 oyster
+                      </p>
+                      <p class="listing_price m-0 pt-0">$1450</p>
+                    </div>
+                    <div class="container listing_rating_container">
+                      <div class="listing_rating" data-score="4.5"></div>
+                      <div class="rating_score px-3 mb-1" id="listing_score">
+                        4.5
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <div class="staff-label">
-                          <img
-                            class="staff_label_img"
-                            src="./assets/icons/Verifiedseller.svg"
-                            alt=""
-                          />
-                        </div>
+              </div>
+              <div class="col-xl-2 col-md-12 col-sm-12">
+                <div class="card-flyer">
+                  <!-- anchor for clicking the whole box except rating -->
+                  <a href="">
+                    <div class="listing-image-box">
+                      <div class="staff-label">
                         <img
-                          class="img-fluid"
-                          src="./assets/images/topdeals/redrubyring.png"
+                          class="staff_label_img"
+                          src="./assets/icons/Verifiedseller.svg"
                           alt=""
                         />
                       </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div class="text-box">
-                      <div class="text-container m-0">
-                        <p class="listing_name m-0 pt-2">Pearl Ruby Earings</p>
-                        <p class="listing_price m-0 pt-0">$359</p>
-                      </div>
-                      <div class="container listing_rating_container">
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
-                        </div>
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/topdeals/redrubyring.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <!-- end of anchor -->
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">Pearl Ruby Earings</p>
+                      <p class="listing_price m-0 pt-0">$359</p>
+                    </div>
+                    <div class="container listing_rating_container">
+                      <div class="listing_rating" data-score="4.5"></div>
+                      <div class="rating_score px-3 mb-1" id="listing_score">
+                        4.5
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <div class="staff-label">
-                          <img
-                            class="staff_label_img"
-                            src="./assets/icons/Verifiedseller.svg"
-                            alt=""
-                          />
-                        </div>
+              </div>
+              <div class="col-xl-2 col-md-12 col-sm-12">
+                <div class="card-flyer">
+                  <!-- anchor for clicking the whole box except rating -->
+                  <a href="">
+                    <div class="listing-image-box">
+                      <div class="staff-label">
                         <img
-                          class="img-fluid"
-                          src="./assets/images/topdeals/disneyring.png"
+                          class="staff_label_img"
+                          src="./assets/icons/Verifiedseller.svg"
                           alt=""
                         />
                       </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div class="text-box">
-                      <div class="text-container m-0">
-                        <p class="listing_name m-0 pt-2">Wedding Golden Ring</p>
-                        <p class="listing_price m-0 pt-0">$420</p>
-                      </div>
-                      <div class="container listing_rating_container">
-                        <div class="listing_rating" data-score="4.5"></div>
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/topdeals/disneyring.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <!-- end of anchor -->
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">Wedding Golden Ring</p>
+                      <p class="listing_price m-0 pt-0">$420</p>
+                    </div>
+                    <div class="container listing_rating_container">
+                      <div class="listing_rating" data-score="4.5"></div>
 
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
-                        </div>
+                      <div class="rating_score px-3 mb-1" id="listing_score">
+                        4.5
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- end of item -->
-            <!-- item-2 staff picks -->
-            <div class="item container-fluid">
-              <div class="row deal_container">
-                <div
-                  class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pl-xl-5 pt-xl-2"
-                >
-                  <div class="deal_text_container pt-lg-3 pl-lg-2">
-                    <div
-                      class="
-                        d-flex
-                        justify-content-lg-start justify-content-center
-                        align-items-center
-                      "
+          </div>
+          <!-- end of item -->
+          <!-- item-3 staff picks -->
+          <div class="item container-width container p-0">
+            <div class="row deal_container">
+              <div class="col-xl-4 col-md-12 col-sm-12">
+                <div class="deal_text_container">
+                  <div
+                    class="
+                      d-flex
+                      justify-content-lg-start justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <p class="text-left pt-3 heading_top pr-2">Hot Selling</p>
+                    <span class="badge" class="hot_selling"
+                      ><img
+                        class="hot_selling"
+                        src="./assets/images/topdeals/fire.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <p class="text-lg-left text-center mb-0 py-0">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Pariatur ratione voluptate earum. Aliquid rerum corrupti
+                  </p>
+                  <div
+                    class="
+                      container
+                      d-flex
+                      justify-content-lg-start justify-content-center
+                      align-items-center
+                      p-0
+                      pb-4
+                    "
+                  >
+                    <a class="btn btn-submit btn_default mt-2" href="#"
+                      >View All</a
                     >
-                      <p class="text-left pt-3 heading_top pr-2">Hot Selling</p>
-                      <span class="badge" class="hot_selling"
-                        ><img
-                          class="hot_selling"
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1"></div>
+              <!-- item container start -->
+              <div class="col-xl-2 col-md-12 col-sm-12">
+                <!-- 1st item -->
+                <div class="card-flyer">
+                  <!-- anchor for clicking the whole box except rating -->
+                  <a href="">
+                    <div class="listing-image-box">
+                      <div class="hot-label">
+                        <img
+                          class="hot_label_img"
                           src="./assets/images/topdeals/fire.svg"
                           alt=""
-                      /></span>
-                    </div>
-                    <p class="text-lg-left text-center mb-0 py-0">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Pariatur ratione voluptate earum. Aliquid rerum corrupti
-                    </p>
-                    <div
-                      class="
-                        container
-                        d-flex
-                        justify-content-lg-start justify-content-center
-                        align-items-center
-                        p-0
-                        pb-4
-                      "
-                    >
-                      <a class="btn btn-submit btn_default mt-2" href="#"
-                        >View All</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <!-- item container start -->
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <!-- 1st item -->
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <div class="hot-label">
-                          <img
-                            class="hot_label_img"
-                            src="./assets/images/topdeals/fire.svg"
-                            alt=""
-                          />
-                        </div>
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/topdeals/rolex2021.png"
-                          alt=""
                         />
                       </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div class="text-box">
-                      <div class="text-container m-0">
-                        <p class="listing_name m-0 pt-2">
-                          Rolex New Model 2021 oyster
-                        </p>
-                        <p class="listing_price m-0 pt-0">$1450</p>
-                      </div>
-                      <div class="container listing_rating_container">
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
-                        </div>
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/topdeals/rolex2021.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <!-- end of anchor -->
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        Rolex New Model 2021 oyster
+                      </p>
+                      <p class="listing_price m-0 pt-0">$1450</p>
+                    </div>
+                    <div class="container listing_rating_container">
+                      <div class="listing_rating" data-score="4.5"></div>
+                      <div class="rating_score px-3 mb-1" id="listing_score">
+                        4.5
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <div class="hot-label">
-                          <img
-                            class="hot_label_img"
-                            src="./assets/images/topdeals/fire.svg"
-                            alt=""
-                          />
-                        </div>
+              </div>
+              <div class="col-xl-2 col-md-12 col-sm-12">
+                <div class="card-flyer">
+                  <!-- anchor for clicking the whole box except rating -->
+                  <a href="">
+                    <div class="listing-image-box">
+                      <div class="hot-label">
                         <img
-                          class="img-fluid"
-                          src="./assets/images/topdeals/redrubyring.png"
+                          class="hot_label_img"
+                          src="./assets/images/topdeals/fire.svg"
                           alt=""
                         />
                       </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div class="text-box">
-                      <div class="text-container m-0">
-                        <p class="listing_name m-0 pt-2">Pearl Ruby Earings</p>
-                        <p class="listing_price m-0 pt-0">$359</p>
-                      </div>
-                      <div class="container listing_rating_container">
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
-                        </div>
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/topdeals/redrubyring.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <!-- end of anchor -->
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">Pearl Ruby Earings</p>
+                      <p class="listing_price m-0 pt-0">$359</p>
+                    </div>
+                    <div class="container listing_rating_container">
+                      <div class="listing_rating" data-score="4.5"></div>
+                      <div class="rating_score px-3 mb-1" id="listing_score">
+                        4.5
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <div class="card-flyer">
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <div class="hot-label">
-                          <img
-                            class="hot_label_img"
-                            src="./assets/images/topdeals/fire.svg"
-                            alt=""
-                          />
-                        </div>
+              </div>
+              <div class="col-xl-2 col-md-12 col-sm-12">
+                <div class="card-flyer">
+                  <!-- anchor for clicking the whole box except rating -->
+                  <a href="#">
+                    <div class="listing-image-box">
+                      <div class="hot-label">
                         <img
-                          class="img-fluid"
-                          src="./assets/images/topdeals/disneyring.png"
+                          class="hot_label_img"
+                          src="./assets/images/topdeals/fire.svg"
                           alt=""
                         />
                       </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div class="text-box">
-                      <div class="text-container m-0">
-                        <p class="listing_name m-0 pt-2">Wedding Golden Ring</p>
-                        <p class="listing_price m-0 pt-0">$420</p>
-                      </div>
-                      <div class="container listing_rating_container">
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
-                        </div>
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/topdeals/disneyring.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <!-- end of anchor -->
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">Wedding Golden Ring</p>
+                      <p class="listing_price m-0 pt-0">$420</p>
+                    </div>
+                    <div class="container listing_rating_container">
+                      <div class="listing_rating" data-score="4.5"></div>
+                      <div class="rating_score px-3 mb-1" id="listing_score">
+                        4.5
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- end of item -->
-            <!-- item-2 staff picks -->
-            <div class="item container-fluid">
-              <div class="row deal_container">
-                <div
-                  class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pl-xl-5 pt-xl-2"
-                >
-                  <div class="deal_text_container pt-lg-3 pl-lg-2">
-                    <div
-                      class="
-                        d-flex
-                        justify-content-lg-start justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <p class="text-left pt-3 heading_top pr-2">Top Deals</p>
-                      <span class="badge" class="staff_verified"
-                        ><img
-                          class="staff_verified"
-                          src="./assets/images/topdeals/toprated.svg"
-                          alt=""
-                      /></span>
-                    </div>
-                    <p class="text-lg-left text-center mb-0 py-0">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Pariatur ratione voluptate earum. Aliquid rerum corrupti
-                    </p>
-                    <div
-                      class="
-                        container
-                        d-flex
-                        justify-content-lg-start justify-content-center
-                        align-items-center
-                        p-0
-                        pb-4
-                      "
-                    >
-                      <a class="btn btn-submit btn_default mt-2" href="#"
-                        >View All</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <!-- item container start -->
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <!-- 1st item -->
-                  <div class="card-flyer">
-                    <div class="discount-label">
-                      <span class="badge discount-badge">
-                        <p class="text-center">33% off</p></span
-                      >
-                    </div>
-                    <a href="#">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/topdeals/rolex2021.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div class="text-box">
-                      <div class="text-container m-0">
-                        <p class="listing_name m-0 pt-2">
-                          Rolex New Model 2021 oyster
-                        </p>
-                        <div
-                          class="
-                            container
-                            d-flex
-                            justify-content-start
-                            align-items-center
-                            p-0
-                          "
-                        >
-                          <!-- full price of the product -->
-                          <p class="listing_price_full m-0 pt-1">$1450</p>
-                          <!-- after discount price -->
-                          <p class="listing_price_after m-0 pt-0">1299</p>
-                        </div>
-                      </div>
-                      <div class="container listing_rating_container">
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <div class="card-flyer">
-                    <div class="discount-label">
-                      <span class="badge discount-badge">
-                        <p class="text-center">33% off</p></span
-                      >
-                    </div>
-                    <a href="#">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/topdeals/redrubyring.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div class="text-box">
-                      <div class="text-container m-0">
-                        <p class="listing_name m-0 pt-2">Pearl Ruby Earings</p>
-                        <div
-                          class="
-                            container
-                            d-flex
-                            justify-content-start
-                            align-items-center
-                            p-0
-                          "
-                        >
-                          <p class="listing_price_full m-0 pt-1">359</p>
-                          <p class="listing_price_after m-0 pt-0">229</p>
-                        </div>
-                        <div class="container listing_rating_container">
-                          <div class="listing_rating" data-score="4.5"></div>
-                          <!-- target this div via raty for score dont write anything inside -->
-                          <div
-                            class="rating_score px-3 mb-1"
-                            id="listing_score"
-                          >
-                            4.5
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <div class="card-flyer">
-                    <div class="discount-label">
-                      <span class="badge discount-badge">
-                        <p class="text-center">33% off</p></span
-                      >
-                    </div>
-                    <!-- anchor for clicking the whole box except rating -->
-                    <a href="">
-                      <div class="listing-image-box">
-                        <img
-                          class="img-fluid"
-                          src="./assets/images/topdeals/disneyring.png"
-                          alt=""
-                        />
-                      </div>
-                    </a>
-                    <!-- end of anchor -->
-                    <div class="text-box">
-                      <div class="text-container m-0">
-                        <p class="listing_name m-0 pt-2">Wedding Golden Ring</p>
-                        <div
-                          class="
-                            container
-                            d-flex
-                            justify-content-start
-                            align-items-center
-                            p-0
-                          "
-                        >
-                          <p class="listing_price_full m-0 pt-1">$420</p>
-                          <p class="listing_price_after m-0 pt-0">$399</p>
-                        </div>
-                      </div>
-                      <div class="container listing_rating_container">
-                        <div class="listing_rating" data-score="4.5"></div>
-                        <div class="rating_score px-3 mb-1" id="listing_score">
-                          4.5
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end of item -->
           </div>
+          <!-- end of item -->
+          <!-- item-4 staff picks -->
+          <div class="item container-width container p-0">
+            <div class="row deal_container">
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="deal_text_container">
+                  <div
+                    class="
+                      d-flex
+                      justify-content-lg-start justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <p class="text-left pt-3 heading_top pr-2">Top Deals</p>
+                    <span class="badge" class="staff_verified"
+                      ><img
+                        class="staff_verified"
+                        src="./assets/images/topdeals/toprated.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <p class="text-lg-left text-center mb-0 py-0">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Pariatur ratione voluptate earum. Aliquid rerum corrupti
+                  </p>
+                  <div
+                    class="
+                      container
+                      d-flex
+                      justify-content-lg-start justify-content-center
+                      align-items-center
+                      p-0
+                      pb-4
+                    "
+                  >
+                    <a class="btn btn-submit btn_default mt-2" href="#"
+                      >View All</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1"></div>
+              <!-- item container start -->
+              <div class="col-xl-2 col-md-12 col-sm-12">
+                <!-- 1st item -->
+                <div class="card-flyer">
+                  <div class="discount-label">
+                    <span class="badge discount-badge">
+                      <p class="text-center">33% off</p></span
+                    >
+                  </div>
+                  <a href="#">
+                    <div class="listing-image-box">
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/topdeals/rolex2021.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <!-- end of anchor -->
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">
+                        Rolex New Model 2021 oyster
+                      </p>
+                      <div
+                        class="
+                          container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                          p-0
+                        "
+                      >
+                        <!-- full price of the product -->
+                        <p class="listing_price_full m-0 pt-1">$1450</p>
+                        <!-- after discount price -->
+                        <p class="listing_price_after m-0 pt-0">1299</p>
+                      </div>
+                    </div>
+                    <div class="container listing_rating_container">
+                      <div class="listing_rating" data-score="4.5"></div>
+                      <div class="rating_score px-3 mb-1" id="listing_score">
+                        4.5
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-md-12 col-sm-12">
+                <div class="card-flyer">
+                  <div class="discount-label">
+                    <span class="badge discount-badge">
+                      <p class="text-center">33% off</p></span
+                    >
+                  </div>
+                  <a href="#">
+                    <div class="listing-image-box">
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/topdeals/redrubyring.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <!-- end of anchor -->
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">Pearl Ruby Earings</p>
+                      <div
+                        class="
+                          container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                          p-0
+                        "
+                      >
+                        <p class="listing_price_full m-0 pt-1">359</p>
+                        <p class="listing_price_after m-0 pt-0">229</p>
+                      </div>
+                      <div class="container listing_rating_container">
+                        <div class="listing_rating" data-score="4.5"></div>
+                        <!-- target this div via raty for score dont write anything inside -->
+                        <div class="rating_score px-3 mb-1" id="listing_score">
+                          4.5
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-md-12 col-sm-12">
+                <div class="card-flyer">
+                  <div class="discount-label">
+                    <span class="badge discount-badge">
+                      <p class="text-center">33% off</p></span
+                    >
+                  </div>
+                  <!-- anchor for clicking the whole box except rating -->
+                  <a href="">
+                    <div class="listing-image-box">
+                      <img
+                        class="img-fluid"
+                        src="./assets/images/topdeals/disneyring.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <!-- end of anchor -->
+                  <div class="text-box">
+                    <div class="text-container m-0">
+                      <p class="listing_name m-0 pt-2">Wedding Golden Ring</p>
+                      <div
+                        class="
+                          container
+                          d-flex
+                          justify-content-start
+                          align-items-center
+                          p-0
+                        "
+                      >
+                        <p class="listing_price_full m-0 pt-1">$420</p>
+                        <p class="listing_price_after m-0 pt-0">$399</p>
+                      </div>
+                    </div>
+                    <div class="container listing_rating_container">
+                      <div class="listing_rating" data-score="4.5"></div>
+                      <div class="rating_score px-3 mb-1" id="listing_score">
+                        4.5
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of item -->
         </div>
       </section>
       <!-- about -->
-      <section class="about_section">
-        <div class="container about container-width">
-          <div class="title-wrap d-flex justify-content-start">
-            <p class="section-title-start std-title">How it Works</p>
-          </div>
-          <p class="section-sub-title my-5">
-            See more info in our
-            <a href="#" class="termcond">terms and conditions</a>
-          </p>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div
-                  class="
-                    col-md-4 col-sm-6
-                    feature-item
-                    item
-                    mb-3 mb-3
-                    text-center
-                  "
-                >
-                  <div class="card card_about">
-                    <div class="step">
-                      <p>step-1</p>
-                    </div>
-                    <div class="step-about">
-                      <p>List a product for sell</p>
-                    </div>
-                    <div class="mt-3 mb-4">
-                      <img
-                        class="howitworksimg img-fluid"
-                        src="./assets/icons/pricetagicon.svg"
-                        alt="pricing"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
-                >
-                  <div class="card card_about">
-                    <div class="step">
-                      <p>step-2</p>
-                    </div>
-                    <div class="step-about">
-                      <p>sell it to the highest bidder</p>
-                    </div>
-                    <div class="mt-3 mb-4">
-                      <img
-                        class="howitworksimg"
-                        src="./assets/icons/doneicon.svg"
-                        alt="done"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
-                >
-                  <div class="card card_about">
-                    <div class="step">
-                      <p>step-3</p>
-                    </div>
-                    <div class="step-about">
-                      <p>ship item within two days</p>
-                    </div>
-                    <div class="mt-3 mb-4">
-                      <img
-                        class="howitworksimg img-fluid"
-                        src="./assets/icons/truckicon.svg"
-                        alt="shiping"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
-                >
-                  <div class="card card_about">
-                    <div class="step">
-                      <p>step-4</p>
-                    </div>
-                    <div class="step-about">
-                      <p>We authenticate the item</p>
-                    </div>
-                    <div class="mt-3 mb-4">
-                      <img
-                        class="howitworksimg img-fluid"
-                        src="./assets/icons/authenticicon.svg"
-                        alt="authentic"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
-                >
-                  <div class="card card_about">
-                    <div class="step">
-                      <p>step-5</p>
-                    </div>
-                    <div class="step-about">
-                      <p>Then we ship it to the buyer</p>
-                    </div>
-                    <div class="mt-3 mb-4">
-                      <img
-                        class="howitworksimg img-fluid"
-                        src="./assets/icons/truckicon.svg"
-                        alt="shiping"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
-                >
-                  <div class="card card_about">
-                    <div class="step">
-                      <p>step-6</p>
-                    </div>
-                    <div class="step-about">
-                      <p>We relase the funds to you</p>
-                    </div>
-                    <div class="mt-3 mb-4">
-                      <img
-                        class="howitworksimg img-fluid"
-                        src="./assets/icons/moneybagicon.svg"
-                        alt="funds"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="container d-flex justify-content-center">
-                  <a class="btn btn-submit btn_default" href="registration.html"
-                    >Post a new listing</a
+      <section class="about_section container-fluid my-5">
+        <div class="container container-width">
+          <div class="about">
+            <div class="title-wrap d-flex justify-content-start">
+              <p class="section-title-start std-title">How it Works</p>
+            </div>
+            <p class="section-sub-title my-5">
+              See more info in our
+              <a href="#" class="termcond">terms and conditions</a>
+            </p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div
+                    class="
+                      col-md-4 col-sm-6
+                      feature-item
+                      item
+                      mb-3 mb-3
+                      text-center
+                    "
                   >
+                    <div class="card card_about">
+                      <div class="step">
+                        <p>step-1</p>
+                      </div>
+                      <div class="step-about">
+                        <p>List a product for sell</p>
+                      </div>
+                      <div class="mt-3 mb-4">
+                        <img
+                          class="howitworksimg img-fluid"
+                          src="./assets/icons/pricetagicon.svg"
+                          alt="pricing"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
+                  >
+                    <div class="card card_about">
+                      <div class="step">
+                        <p>step-2</p>
+                      </div>
+                      <div class="step-about">
+                        <p>sell it to the highest bidder</p>
+                      </div>
+                      <div class="mt-3 mb-4">
+                        <img
+                          class="howitworksimg"
+                          src="./assets/icons/doneicon.svg"
+                          alt="done"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
+                  >
+                    <div class="card card_about">
+                      <div class="step">
+                        <p>step-3</p>
+                      </div>
+                      <div class="step-about">
+                        <p>ship item within two days</p>
+                      </div>
+                      <div class="mt-3 mb-4">
+                        <img
+                          class="howitworksimg img-fluid"
+                          src="./assets/icons/truckicon.svg"
+                          alt="shiping"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
+                  >
+                    <div class="card card_about">
+                      <div class="step">
+                        <p>step-4</p>
+                      </div>
+                      <div class="step-about">
+                        <p>We authenticate the item</p>
+                      </div>
+                      <div class="mt-3 mb-4">
+                        <img
+                          class="howitworksimg img-fluid"
+                          src="./assets/icons/authenticicon.svg"
+                          alt="authentic"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
+                  >
+                    <div class="card card_about">
+                      <div class="step">
+                        <p>step-5</p>
+                      </div>
+                      <div class="step-about">
+                        <p>Then we ship it to the buyer</p>
+                      </div>
+                      <div class="mt-3 mb-4">
+                        <img
+                          class="howitworksimg img-fluid"
+                          src="./assets/icons/truckicon.svg"
+                          alt="shiping"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 col-sm-6 feature-item item mb-3 text-center"
+                  >
+                    <div class="card card_about">
+                      <div class="step">
+                        <p>step-6</p>
+                      </div>
+                      <div class="step-about">
+                        <p>We relase the funds to you</p>
+                      </div>
+                      <div class="mt-3 mb-4">
+                        <img
+                          class="howitworksimg img-fluid"
+                          src="./assets/icons/moneybagicon.svg"
+                          alt="funds"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container d-flex justify-content-center">
+                    <a
+                      class="btn btn-submit btn_default"
+                      href="registration.html"
+                      >Post a new listing</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
