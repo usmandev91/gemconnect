@@ -27,7 +27,7 @@
               </div>
             </div>
             <!-- login/signup buttons -->
-            <div class="col-lg-4 col-sm-12 col-lg-2 col-md-12 d-none">
+            <div class="col-lg-4 col-sm-12 col-lg-2 col-md-12">
               <div
                 class="
                   container
@@ -41,9 +41,9 @@
                   type="button"
                   class="btn btn-top mr-lg-5"
                   data-toggle="modal"
-                  data-target="#loginModal"
+                  data-target=".login_modal"
                 >
-                  Login
+                  Log in
                 </button>
                 <a class="btn btn-top btn-top2" href="./registration.html"
                   >Sign up</a
@@ -276,7 +276,7 @@
       <!--loginModal-->
       <div class="container">
         <div
-          class="modal fade"
+          class="modal fade login_modal"
           id="loginModal"
           tabindex="-1"
           role="dialog"
@@ -346,8 +346,8 @@
                       </div>
                       <button
                         type="submit"
-                        data-bm-close="#loginModal"
-                        data-bm-open="#logsuccess"
+                        data-bm-close=".login_modal"
+                        data-bm-open=".log_success"
                         class="btn btn_form"
                       >
                         Login
@@ -373,10 +373,11 @@
       <div class="container">
         <div
           id="invalidModal"
-          class="modal fade"
+          class="modal fade invalid_modal modal-auto-clear"
           tabindex="-1"
           role="alert"
           aria-hidden="true"
+          data-backdrop="false"
         >
           <div class="modal-xs modal-dialog">
             <div class="modal-content">
@@ -401,14 +402,15 @@
           </div>
         </div>
       </div>
-      <!-- sucessfully login alert design -->
+      <!-- sucessfully login alert-->
       <div class="container">
         <div
           id="logsuccess"
-          class="modal fade"
+          class="modal fade log_success modal-auto-clear"
           tabindex="-1"
           role="alert"
           aria-hidden="true"
+          data-backdrop="false"
         >
           <div class="modal-xs modal-dialog">
             <div class="modal-content">

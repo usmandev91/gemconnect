@@ -1,14 +1,3 @@
-// // modal timeouts
-// setTimeout(function () {
-//   $("#widthdrawSuccess").modal("hide");
-// }, 3000);
-// setTimeout(function () {
-//   $("#addtoCart").modal("hide");
-// }, 3000);
-// setTimeout(function () {
-//   $("#submitModal").modal("hide");
-// }, 3000);
-// modal switching fix
 $(document).ready(function () {
   $("button").on("click", function () {
     $(this).toggleClass("active");
@@ -24,6 +13,14 @@ $(function () {
       })
       .modal("hide");
   });
+});
+// alert/modal time out
+$(".modal-auto-clear").on("shown.bs.modal", function () {
+  $(this)
+    .delay(3000)
+    .fadeOut(300, function () {
+      $(this).modal("hide");
+    });
 });
 // Change the button text & add active class on input radio
 $(".jRadioDropdown").change(function () {
