@@ -1,5 +1,4 @@
 // this js is to be used on every page which has a table namely yourlisting soldlisting orders and statistics
-// wishlist button toggle
 
 // raty plugin
 $(".user_rating").raty({
@@ -32,13 +31,24 @@ $(".listing_rating").raty({
   targetKeep: true,
   // round: { down: 0.25, full: 0.5 },
 });
-//
-$(".navbar-toggler").click(function () {
-  $(this).toggleClass("active");
+$(".xyz_product_rating").raty({
+  starType: "i",
+  half: true,
+  precision: true,
+  // change target type and make a review item function
+  readOnly: false,
+  score: function () {
+    return $(this).attr("data-score");
+  },
+  readOnly: false,
+  // score: 5,
+  number: 5,
+  space: 1,
+  target: "#xyz_listing_score",
+  targetType: "score",
+  targetKeep: true,
+  // round: { down: 0.25, full: 0.5 },
 });
-// active for general market tab
-$('.nav-tabs a[href="#gm"]').tab("show");
-
 // table into card on mobile
 if (!String.prototype.format) {
   String.prototype.format = function () {
@@ -277,3 +287,9 @@ function tableToCards() {
 
 $(window).resize(tableToCards);
 $(window).ready(tableToCards);
+//
+$(".navbar-toggler").click(function () {
+  $(this).toggleClass("active");
+});
+// active for general market tab
+$('.nav-tabs a[href="#gm"]').tab("show");
