@@ -1136,6 +1136,9 @@ input[type="text"] {
   padding-bottom: 0;
   line-height: 1;
   white-space: nowrap; }
+  @media (max-width: 575px) {
+    .std-title {
+      white-space: normal; } }
 
 .std-title::after {
   content: "";
@@ -1700,7 +1703,7 @@ input[type="text"] {
     transition: all 0.4s ease-in-out; }
     @media (max-width: 575px) {
       .gm_market_listings .cat_tabs .filter_btn {
-        margin-right: 10px; } }
+        width: 121px; } }
     .gm_market_listings .cat_tabs .filter_btn.active {
       background-color: #002f33;
       color: white; }
@@ -1722,7 +1725,6 @@ input[type="text"] {
     transition: all 0.4s ease-in; }
     @media (max-width: 575px) {
       .listing_container .filter_bar {
-        max-width: 313px;
         padding: 2rem 2rem; } }
     .listing_container .filter_bar .refine_btn {
       border: none;
@@ -1780,7 +1782,7 @@ input[type="text"] {
     justify-content: center;
     align-items: center; }
   .listing_container .cards3_grid {
-    padding: 0px; }
+    padding: 0px 5px; }
     @media (max-width: 575px) {
       .listing_container .cards3_grid .cards_row .col-sm-6 {
         flex: 0 0 50%;
@@ -1816,8 +1818,10 @@ input[type="text"] {
     padding-bottom: 16px; }
     @media (max-width: 575px) {
       .listing_container .card-flyer {
-        border-radius: 25px;
         padding-bottom: 8px; } }
+    @media (max-width: 400px) {
+      .listing_container .card-flyer {
+        border-radius: 28px; } }
     .listing_container .card-flyer .listing-image-box {
       position: relative !important;
       border-radius: 35px;
@@ -1827,8 +1831,10 @@ input[type="text"] {
       text-align: center; }
       @media (max-width: 575px) {
         .listing_container .card-flyer .listing-image-box {
-          border-radius: 25px;
           height: auto; } }
+      @media (max-width: 400px) {
+        .listing_container .card-flyer .listing-image-box {
+          border-radius: 28px; } }
       .listing_container .card-flyer .listing-image-box .staff-label {
         position: absolute !important;
         top: 8%;

@@ -1325,6 +1325,9 @@ input[type="text"] {
   padding-bottom: 0;
   line-height: 1;
   white-space: nowrap;
+  @media (max-width: 575px) {
+    white-space: normal;
+  }
 }
 .std-title::after {
   content: "";
@@ -1998,7 +2001,7 @@ input[type="text"] {
       cursor: pointer;
       transition: all 0.4s ease-in-out;
       @media (max-width: 575px) {
-        margin-right: 10px;
+        width: 121px;
       }
       &.active {
         background-color: $text-color;
@@ -2023,7 +2026,6 @@ input[type="text"] {
   }
   .filter_bar {
     @media (max-width: 575px) {
-      max-width: 313px;
       padding: 2rem 2rem;
     }
     background-color: $cards-bg-color;
@@ -2107,7 +2109,7 @@ input[type="text"] {
   }
 
   .cards3_grid {
-    padding: 0px;
+    padding: 0px 5px;
     .cards_row {
       @media (max-width: 575px) {
         .col-sm-6 {
@@ -2160,8 +2162,10 @@ input[type="text"] {
     max-width: 313px;
     padding-bottom: 16px;
     @media (max-width: 575px) {
-      border-radius: 25px;
       padding-bottom: 8px;
+    }
+    @media (max-width: 400px) {
+      border-radius: 28px;
     }
     .listing-image-box {
       position: relative !important;
@@ -2171,10 +2175,11 @@ input[type="text"] {
       overflow: hidden;
       text-align: center;
       @media (max-width: 575px) {
-        border-radius: 25px;
         height: auto;
       }
-
+      @media (max-width: 400px) {
+        border-radius: 28px;
+      }
       .staff-label {
         position: absolute !important;
         top: 8%;

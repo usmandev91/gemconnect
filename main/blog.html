@@ -403,7 +403,7 @@
       <!--loginModal-->
       <div class="container">
         <div
-          class="modal fade"
+          class="modal fade login_modal"
           id="loginModal"
           tabindex="-1"
           role="dialog"
@@ -452,7 +452,13 @@
                         required
                         aria-required="true"
                       />
-                      <div class="d-flex justify-content-between">
+                      <div
+                        class="
+                          d-flex
+                          flex-lg-row flex-column
+                          justify-content-between
+                        "
+                      >
                         <div class="logged_in">
                           <input type="checkbox" name="remember" />
                           <label for="checkbox" class="logged_in" name=""
@@ -465,11 +471,10 @@
                           >
                         </div>
                       </div>
-
                       <button
                         type="submit"
-                        data-bm-close="#loginModal"
-                        data-bm-open="#logsuccess"
+                        data-bm-close=".login_modal"
+                        data-bm-open=".log_success"
                         class="btn btn_form"
                       >
                         Login
@@ -495,10 +500,11 @@
       <div class="container">
         <div
           id="invalidModal"
-          class="modal fade"
+          class="modal fade invalid_modal modal-auto-clear"
           tabindex="-1"
           role="alert"
           aria-hidden="true"
+          data-backdrop="false"
         >
           <div class="modal-xs modal-dialog">
             <div class="modal-content">
@@ -523,14 +529,15 @@
           </div>
         </div>
       </div>
-      <!-- sucessfully login alert design -->
+      <!-- sucessfully login alert-->
       <div class="container">
         <div
           id="logsuccess"
-          class="modal fade"
+          class="modal fade log_success modal-auto-clear"
           tabindex="-1"
           role="alert"
           aria-hidden="true"
+          data-backdrop="false"
         >
           <div class="modal-xs modal-dialog">
             <div class="modal-content">
@@ -588,7 +595,7 @@
                 <div class="row">
                   <div
                     class="
-                      col-md-1
+                      col-lg-1 col-md-12
                       d-flex
                       flex-lg-column
                       justify-content-lg-start justify-content-between
@@ -626,7 +633,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-11 mt-3">
+                  <div class="col-lg-11 col-md-12 mt-3">
                     <h4 class="text-center mb-5 pr-lg-5">
                       Lorem ipsum dolor sit amet, consectetur adipiscing
                     </h4>
@@ -684,7 +691,7 @@
                         <i class="like_count">25 likes</i>
                       </label>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-lg-1 col-md-122">
                       <div class="line_break"></div>
                     </div>
                   </div>
@@ -722,7 +729,7 @@
                 <div class="row">
                   <div
                     class="
-                      col-md-1
+                      col-lg-1 col-md-12
                       d-flex
                       flex-lg-column
                       justify-content-lg-start justify-content-between
@@ -760,7 +767,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-11 mt-3">
+                  <div class="col-lg-11 col-md-12 mt-3">
                     <h4 class="text-center mb-5 pr-lg-5">
                       Lorem ipsum dolor sit amet, consectetur adipiscing
                     </h4>
@@ -818,7 +825,7 @@
                         <i class="like_count">25 likes</i>
                       </label>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-lg-12 col-md-12">
                       <div class="line_break"></div>
                     </div>
                   </div>
@@ -856,7 +863,7 @@
                 <div class="row">
                   <div
                     class="
-                      col-md-1
+                      col-lg-1 col-md-12
                       d-flex
                       flex-lg-column
                       justify-content-lg-start justify-content-between
@@ -894,7 +901,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-11 mt-3">
+                  <div class="col-lg-11 col-md-12 mt-3">
                     <h4 class="text-center mb-5 pr-lg-5">
                       Lorem ipsum dolor sit amet, consectetur adipiscing
                     </h4>
@@ -952,7 +959,7 @@
                         <i class="like_count">25 likes</i>
                       </label>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-lg-12 col-md-12">
                       <div class="line_break"></div>
                     </div>
                   </div>
