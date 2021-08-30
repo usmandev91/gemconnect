@@ -81,6 +81,7 @@ $("#after_reset").hide();
 // add email filled condition
 $(document).ready(function () {
   $("#btn_reset").on("click", function () {
+    $("#pass_reset_head").hide();
     $("#before_reset").hide();
     $("#after_reset").fadeIn(800);
   });

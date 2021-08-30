@@ -880,28 +880,44 @@ input[type="number"] {
 // order Modal
 // publish Modal
 #publishModal,
-#orderModal {
+.order_modal {
+  padding: 0 30px;
   .modal-xs {
     max-width: 800px;
     border: none;
   }
   .modal-content {
     border-radius: 50px;
-    padding: 5rem 0rem;
+    padding: 7rem 1.5rem;
+    @media (max-width: 992px) {
+      padding: 3rem 4rem;
+    }
     border: none;
+    .m_verified {
+      display: none;
+      @media (max-width: 992px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 60px;
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
   .modal-body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
-    .text-box {
-      padding-right: 20px;
+    .d_verified {
+      @media (max-width: 992px) {
+        display: none;
+      }
     }
     .verified {
       width: 110px;
-      height: 175px;
-      margin-bottom: 20px;
     }
     .title {
       text-align: center;
@@ -1224,7 +1240,7 @@ input[type="text"] {
     min-height: 300px;
     margin: 2rem 0rem;
     @media (max-width: 575px) {
-      min-height: fit-content;
+      min-height: max-content;
     }
     .image-box {
       display: flex;
@@ -1644,6 +1660,11 @@ input[type="text"] {
   box-shadow: $div-shadow;
 }
 .reg_container {
+  // .signup_container {
+  //   @media (min-width: 992px) {
+  //     max-width: 720px;
+  //   }
+  // }
   .welcome_head {
     font-size: 30px;
     font-weight: bold;
@@ -1711,7 +1732,8 @@ input[type="text"] {
     text-decoration: none;
   }
 }
-#login {
+#login,
+#signup {
   max-width: 520px;
 }
 
@@ -1728,6 +1750,10 @@ input[type="text"] {
 
 // password reset page
 .pass_container {
+  .splitter {
+    border-left: #b4b4b4 2px solid !important;
+    height: 100%;
+  }
   .ft_head {
     text-align: center;
     font-size: 20px;
@@ -1735,7 +1761,7 @@ input[type="text"] {
     border-bottom: 2px solid $theme_color;
   }
   #btn_reset {
-    width: fit-content !important;
+    width: 350px;
     font-size: 0.9rem;
   }
 }
@@ -2728,7 +2754,6 @@ input[type="text"] {
     color: $text-color;
     padding-left: 5px;
   }
-
   .button_container {
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
@@ -2770,12 +2795,12 @@ input[type="text"] {
     height: 90px;
   }
   .table_product_container {
-    width: 600px;
+    width: 400px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
   }
   .product_price_cell {
-    width: 100px;
+    width: 200px;
     .product_price {
       display: block;
       margin-bottom: 0;
@@ -2808,7 +2833,7 @@ input[type="text"] {
       }
     }
     .add_review {
-      width: fit-content;
+      width: inherit;
       box-shadow: none;
     }
   }
@@ -2893,11 +2918,66 @@ input[type="text"] {
       margin-bottom: 0;
     }
   }
+  .featured {
+    margin-bottom: 0;
+    color: $theme_color;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .not_featured {
+    font-size: 18px;
+    color: #002f33;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .instock,
+  .sold {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-color;
+  }
+  .soldout {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #b4b4b4;
+  }
+
+  .time_remaining {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-color;
+    padding-left: 5px;
+  }
+  .total_bid {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-color;
+    padding-left: 5px;
+  }
+  .no_bid {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff7272;
+    padding-left: 5px;
+  }
+  .highest_bid {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-color;
+    padding-left: 5px;
+  }
 }
 // cart page
 .cart_container {
-  @media (min-width: 992px) {
-    padding: 4rem;
+  @media (max-width: 992px) {
+    padding: 0;
+    padding-bottom: 1rem;
   }
   padding: 2rem;
   margin-top: 5rem;
@@ -2905,7 +2985,12 @@ input[type="text"] {
   background-color: $cards-bg-color;
   min-height: 600px;
   border-radius: 3rem !important;
-
+  .prod_row {
+    padding: 2rem;
+    @media (min-width: 575px) and (max-width: 992px) {
+      padding: 4rem;
+    }
+  }
   .card-flyer {
     height: 100%;
     width: 100%;
@@ -2915,18 +3000,22 @@ input[type="text"] {
     }
     background-color: $cards-bg-color;
     .listing-image-box {
-      border: red 1px solid;
       min-width: 50%;
+      box-shadow: $search_shadow;
       border-radius: 20px;
       overflow: hidden !important;
       height: auto;
     }
     .text-container {
+      @media (max-width: 992px) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 0 !important;
+      }
       @media (min-width: 1700px) {
         line-height: 2;
       }
       padding-left: 1rem !important;
-      border: yellow 1px solid;
       min-width: 50%;
       height: 100%;
       .title {
@@ -2936,18 +3025,18 @@ input[type="text"] {
         font-size: 1rem;
         font-weight: 600;
         color: $text-color;
-        margin: 2px;
       }
     }
   }
   .del_address {
     max-width: 500px;
+    margin-right: 0;
     background-color: $theme_bgcolor;
     border-radius: 20px;
     padding: 1em 2em;
-    .del_add_edit {
-      color: $theme_color;
-      text-decoration: underline;
+    @media (max-width: 992px) {
+      max-width: 100%;
+      padding: 1em 1em;
     }
     .title {
       margin-bottom: 4px;
@@ -2956,15 +3045,17 @@ input[type="text"] {
       font-size: 1rem;
       font-weight: 600;
       color: $text-color;
-      margin: 2px;
     }
   }
   .btn_container {
     display: flex;
     justify-content: flex-end;
-    max-width: 500px;
     padding: 0;
     margin-top: 75px;
+    @media (max-width: 992px) {
+      margin-top: 50px;
+      justify-content: center;
+    }
     .btn_delete {
       background-color: #ff7272;
       padding: 0.2rem 1.2rem;
@@ -2980,6 +3071,9 @@ input[type="text"] {
       font-size: 30px;
       font-weight: bold;
       margin-bottom: 50px;
+      @media (max-width: 992px) {
+        margin-bottom: 20px;
+      }
     }
 
     .listing_name {

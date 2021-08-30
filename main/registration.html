@@ -28,79 +28,73 @@
           <a class="btn tab_btn" data-toggle="tab" href="#login">Login</a>
         </li>
       </ul>
-
       <div class="tab-content">
-        <div id="signup" class="tab-pane active">
-          <div class="container-width">
-            <div class="row">
-              <div class="col-md-4"></div>
-              <div class="col-md-4 p-0">
-                <form action="" method="" class="reg-from">
-                  <div
-                    class="
-                      form-group
-                      mt-5
-                      d-flex
-                      flex-column
-                      justify-content-center
-                      p-lg-1
-                      px-5
-                    "
-                  >
-                    <input
-                      type="text"
-                      class="form-control form_design"
-                      name=""
-                      placeholder="Full Name (Example:  John Doe)"
-                      required="required"
-                    />
+        <div id="signup" class="container tab-pane active">
+          <form action="" method="">
+            <div
+              class="
+                form-group
+                mt-5
+                container-fluid
+                d-flex
+                flex-column
+                text-center
+                justify-content-center
+              "
+            >
+              <input
+                type="text"
+                class="form-control form_design"
+                name=""
+                placeholder="Full Name (Example:  John Doe)"
+                required="required"
+              />
 
-                    <input
-                      type="email"
-                      class="form-control form_design"
-                      name=""
-                      required="required"
-                      placeholder="Email (Example : johndoe@gmail.com)"
-                    />
+              <input
+                type="email"
+                class="form-control form_design"
+                name=""
+                required="required"
+                placeholder="Email (Example : johndoe@gmail.com)"
+              />
 
-                    <input
-                      type="password"
-                      class="form-control form_design"
-                      name=""
-                      required="required"
-                      placeholder="Password"
-                    />
-                    <input
-                      type="password"
-                      class="form-control form_design"
-                      name="confirm_password"
-                      required="required"
-                      placeholder="Confirm Password"
-                    />
-                    <div class="check">
-                      <input type="checkbox" name="" />
-                      <label for="checkbox" name="" class="check_label"
-                        >Agree to
-                        <a href="#" class="txt">Terms and Conditions</a></label
-                      >
-                    </div>
-                  </div>
-                  <div
-                    class="
-                      form-group
-                      d-flex
-                      justify-content-center
-                      align-items-center
-                    "
-                  >
-                    <button type="submit" class="btn btn_form mt-lg-5">
-                      Sign Up
-                    </button>
-                  </div>
-                </form>
+              <input
+                type="password"
+                class="form-control form_design"
+                name=""
+                required="required"
+                placeholder="Password"
+              />
+              <input
+                type="password"
+                class="form-control form_design"
+                name="confirm_password"
+                required="required"
+                placeholder="Confirm Password"
+              />
+              <div class="check">
+                <input type="checkbox" name="" />
+                <label for="checkbox" name="" class="check_label"
+                  >Agree to
+                  <a href="./termsandconditions.html" class="txt"
+                    >Terms and Conditions</a
+                  ></label
+                >
               </div>
             </div>
-          </div>
+            <div
+              class="
+                form-group
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <button type="submit" class="btn btn_form mt-lg-5">
+                Sign Up
+              </button>
+            </div>
+          </form>
         </div>
         <div id="login" class="container tab-pane fade">
           <form action="">
@@ -108,7 +102,7 @@
               class="
                 form-group
                 mt-5
-                container-fluid
+                container
                 d-flex
                 flex-column
                 text-center
@@ -167,46 +161,15 @@
         </div>
       </div>
     </div>
-    <!-- sucessfully login alert design -->
-    <div class="container">
-      <div
-        id="logsuccess"
-        class="modal fade"
-        tabindex="-1"
-        role="alert"
-        aria-hidden="true"
-      >
-        <div class="modal-xs modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">
-                <img src="./assets/icons/cross.svg" alt="close icon" />
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center align-items-center">
-                <img
-                  src="./assets/icons/Verifiedseller.svg"
-                  alt=""
-                  class="verified"
-                />
-              </div>
-              <div>
-                <p class="title">successfully Logged in!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- invalid Email or pass alert -->
     <div class="container">
       <div
         id="invalidModal"
-        class="modal fade"
+        class="modal fade invalid_modal modal-auto-clear"
         tabindex="-1"
         role="alert"
         aria-hidden="true"
+        data-backdrop="false"
       >
         <div class="modal-xs modal-dialog">
           <div class="modal-content">
@@ -225,6 +188,39 @@
               </div>
               <div>
                 <p class="title">Invalid Email or Password</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sucessfully login alert-->
+    <div class="container">
+      <div
+        id="logsuccess"
+        class="modal fade log_success modal-auto-clear"
+        tabindex="-1"
+        role="alert"
+        aria-hidden="true"
+        data-backdrop="false"
+      >
+        <div class="modal-xs modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <img src="./assets/icons/cross.svg" alt="close icon" />
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/icons/Verifiedseller.svg"
+                  alt=""
+                  class="verified"
+                />
+              </div>
+              <div>
+                <p class="title">successfully Logged in!</p>
               </div>
             </div>
           </div>
