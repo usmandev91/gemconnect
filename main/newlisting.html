@@ -8142,64 +8142,106 @@
             <!-- image upload and product description message box -->
             <div class="col-lg-7 pr-lg-5">
               <!-- product image upload buttons -->
-              <div class="row">
-                <div class="col-xl-3 col-lg-5 m-xl-0 my-3">
-                  <div class="customized_upload">
-                    <label class="upload_btn" for="prod_img_1">
-                      <input
-                        type="file"
-                        name="prod_img_1"
-                        id="prod_img_1"
-                        accept="image/png, image/jpeg"
-                      />
-                      <span class="upload_btn_img"></span>
-                      <i>upload image</i>
+              <!-- new changes for img upload buttons -->
+              <div class="row img_upload_row">
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                  <div class="image-upload">
+                    <label for="file-input">
+                      <div class="upload-icon">
+                        <img
+                          class="icon img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="upload button"
+                          data-type="editable"
+                        />
+                        <img
+                          class="prev img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="preview image"
+                        />
+                      </div>
                     </label>
+                    <input
+                      id="file-input"
+                      type="file"
+                      accept="image/png, image/jpeg"
+                    />
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-5 m-xl-0 my-3">
-                  <div class="customized_upload">
-                    <label class="upload_btn" for="prod_img_2">
-                      <input
-                        type="file"
-                        name="prod_img_2"
-                        id="prod_img_2"
-                        accept="image/png, image/jpeg"
-                      />
-                      <span class="upload_btn_img"></span>
-                      <i>upload image</i>
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                  <div class="image-upload">
+                    <label for="file-input2">
+                      <div class="upload-icon">
+                        <img
+                          class="icon img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="upload button"
+                          data-type="editable"
+                        />
+                        <img
+                          class="prev img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="preview image"
+                        />
+                      </div>
                     </label>
+                    <input
+                      id="file-input2"
+                      type="file"
+                      accept="image/png, image/jpeg"
+                    />
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-5 m-xl-0 my-3">
-                  <div class="customized_upload">
-                    <label class="upload_btn" for="prod_img_3">
-                      <input
-                        type="file"
-                        name="prod_img_3"
-                        id="prod_img_3"
-                        accept="image/png, image/jpeg"
-                      />
-                      <span class="upload_btn_img"></span>
-                      <i>upload image</i>
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                  <div class="image-upload">
+                    <label for="file-input3">
+                      <div class="upload-icon">
+                        <img
+                          class="icon img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="upload button"
+                          data-type="editable"
+                        />
+                        <img
+                          class="prev img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="preview image"
+                        />
+                      </div>
                     </label>
+                    <input
+                      id="file-input3"
+                      type="file"
+                      accept="image/png, image/jpeg"
+                    />
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-5 m-xl-0 my-3">
-                  <div class="customized_upload">
-                    <label class="upload_btn" for="prod_img_4">
-                      <input
-                        type="file"
-                        name="prod_img_4"
-                        id="prod_img_4"
-                        accept="image/png, image/jpeg"
-                      />
-                      <span class="upload_btn_img"></span>
-                      <i>upload image</i>
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                  <div class="image-upload">
+                    <label for="file-input4">
+                      <div class="upload-icon">
+                        <img
+                          class="icon img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="upload button"
+                          data-type="editable"
+                        />
+                        <img
+                          class="prev img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="preview image"
+                        />
+                      </div>
                     </label>
+                    <input
+                      id="file-input4"
+                      type="file"
+                      accept="image/png, image/jpeg"
+                    />
                   </div>
                 </div>
               </div>
+              <!-- end of change -->
               <!-- product description -->
               <div class="row mt-4">
                 <div class="col-md-12">
@@ -8287,7 +8329,7 @@
                     >
                     <div class="container">
                       <div class="row ring_form">
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="3"
@@ -8297,7 +8339,7 @@
                             <input type="checkbox" name="ring-size" value="3" />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="3.5"
@@ -8311,7 +8353,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="4"
@@ -8321,7 +8363,7 @@
                             <input type="checkbox" name="ring-size" value="4" />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="4.5"
@@ -8335,7 +8377,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="5"
@@ -8345,7 +8387,7 @@
                             <input type="checkbox" name="ring-size" value="5" />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="5.5"
@@ -8359,7 +8401,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="6"
@@ -8369,7 +8411,7 @@
                             <input type="checkbox" name="ring-size" value="6" />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label class="image-checkbox" title="6.5
                           name="ring-size"">
                           <img src="./assets/images/6.5checked.png" />
@@ -8380,7 +8422,7 @@
                             checked="checked"
                           />
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="7"
@@ -8390,7 +8432,7 @@
                             <input type="checkbox" name="ring-size" value="7" />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="7.5"
@@ -8404,7 +8446,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="8"
@@ -8414,7 +8456,7 @@
                             <input type="checkbox" name="ring-size" value="8" />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="8.5"
@@ -8428,7 +8470,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="9"
@@ -8438,7 +8480,7 @@
                             <input type="checkbox" name="ring-size" value="9" />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="9.5"
@@ -8452,7 +8494,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="10"
@@ -8466,7 +8508,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="10.5"
@@ -8480,7 +8522,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="11"
@@ -8494,7 +8536,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="11.5"
@@ -8508,7 +8550,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="12"
@@ -8522,7 +8564,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="12.5"
@@ -8536,7 +8578,7 @@
                             />
                           </label>
                         </div>
-                        <div class="col-auto col-xs-2">
+                        <div class="col-auto">
                           <label
                             class="image-checkbox"
                             title="13"
@@ -8588,7 +8630,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-12 p-xl-0" id="range_slider">
+                  <!-- new changes remove datalist -->
+                  <div class="col-md-12 p-0" id="range_slider">
                     <label for="used_listing_condition" class=""></label>
                     <input
                       type="range"
@@ -8598,13 +8641,13 @@
                       step="1"
                       id="used_listing_condition"
                     />
-                    <datalist id="tickmarks">
-                      <option value="0" label="Rough condition"></option>
-                      <option value="1" label="Heavily Used"></option>
-                      <option value="2" label="Moderately used"></option>
-                      <option value="3" label="Slightly Used"></option>
-                      <option value="4" label="Perfect Condition"></option>
-                    </datalist>
+                    <ul class="range_label">
+                      <li>Rough condition</li>
+                      <li>Heavily Used</li>
+                      <li>Moderately used</li>
+                      <li>Slightly Used</li>
+                      <li>Perfect Condition</li>
+                    </ul>
                   </div>
                 </div>
               </div>

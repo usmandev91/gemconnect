@@ -414,83 +414,113 @@
             Edit listing
           </h1>
         </div>
-        <div class="container container-width mt-5 post_new">
+        <div class="container container-width mt-5 post_new edit_listing">
           <div class="row edit_listing_row">
             <!-- image upload and product description message box -->
             <div class="col-lg-7 p-xl-0">
               <!-- product image upload buttons -->
-              <div class="row">
-                <div class="col-md-3 m-lg-0 my-3">
-                  <div class="customized_upload">
-                    <label class="upload_btn" for="prod_img_1">
-                      <input
-                        type="file"
-                        name="prod_img_1"
-                        id="prod_img_1"
-                        accept="image/png, image/jpeg"
-                      />
-                      <img
-                        src="./assets/images/disneyengangmentring.jpg"
-                        class="img-fluid"
-                        alt="disney ring"
-                      />
+              <!-- new changes for img upload buttons -->
+              <div class="row img_upload_row">
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                  <div class="image-upload">
+                    <label for="file-input">
+                      <div class="upload-icon">
+                        <img
+                          class="icon img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="upload button"
+                          data-type="editable"
+                        />
+                        <img
+                          class="prev img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="preview image"
+                        />
+                      </div>
                     </label>
+                    <input
+                      id="file-input"
+                      type="file"
+                      accept="image/png, image/gif, image/jpeg"
+                    />
                   </div>
                 </div>
-                <div class="col-md-3 m-lg-0 my-3">
-                  <div class="customized_upload">
-                    <label class="upload_btn" for="prod_img_2">
-                      <input
-                        type="file"
-                        name="prod_img_2"
-                        id="prod_img_2"
-                        accept="image/png, image/jpeg"
-                      />
-                      <img
-                        class="img-fluid"
-                        src="./assets/images/squarediamondring.jpg"
-                        alt="diamond ring"
-                      />
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                  <div class="image-upload">
+                    <label for="file-input2">
+                      <div class="upload-icon">
+                        <img
+                          class="icon img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="upload button"
+                          data-type="editable"
+                        />
+                        <img
+                          class="prev img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="preview image"
+                        />
+                      </div>
                     </label>
+                    <input
+                      id="file-input2"
+                      type="file"
+                      accept="image/png, image/gif, image/jpeg"
+                    />
                   </div>
                 </div>
-                <div class="col-md-3 m-lg-0 my-3">
-                  <div class="customized_upload">
-                    <label class="upload_btn" for="prod_img_3">
-                      <input
-                        type="file"
-                        name="prod_img_3"
-                        id="prod_img_3"
-                        accept="image/png, image/jpeg"
-                      />
-                      <img
-                        class="img-fluid"
-                        src="./assets/images/rolexexplorer2.png"
-                        alt="rolex"
-                      />
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                  <div class="image-upload">
+                    <label for="file-input3">
+                      <div class="upload-icon">
+                        <img
+                          class="icon img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="upload button"
+                          data-type="editable"
+                        />
+                        <img
+                          class="prev img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="preview image"
+                        />
+                      </div>
                     </label>
+                    <input
+                      id="file-input3"
+                      type="file"
+                      accept="image/png, image/gif, image/jpeg"
+                    />
                   </div>
                 </div>
-                <div class="col-md-3 m-lg-0 my-3">
-                  <div class="customized_upload">
-                    <label class="upload_btn" for="prod_img_4">
-                      <input
-                        type="file"
-                        name="prod_img_4"
-                        id="prod_img_4"
-                        accept="image/png, image/jpeg"
-                      />
-                      <img
-                        class="img-fluid"
-                        src="./assets/images/rolexexplorer1.png"
-                        alt="rolex"
-                      />
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                  <div class="image-upload">
+                    <label for="file-input4">
+                      <div class="upload-icon">
+                        <img
+                          class="icon img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="upload button"
+                          data-type="editable"
+                        />
+                        <img
+                          class="prev img-fluid"
+                          src="./assets/icons/uploadimg.svg"
+                          alt="preview image"
+                        />
+                      </div>
                     </label>
+                    <input
+                      id="file-input4"
+                      type="file"
+                      accept="image/png, image/gif, image/jpeg"
+                    />
                   </div>
                 </div>
               </div>
+              <!-- end of change -->
               <!-- product description -->
-              <div class="row mt-5">
+              <div class="row mt-4">
                 <div class="col-md-12">
                   <textarea
                     name="prod_desc"
@@ -505,7 +535,7 @@
             <div class="col-lg-1 p-0"></div>
             <!-- price/bid inputs -->
             <!-- if radio general market was selected on 1st tab these inputs will be shown -->
-            <div class="col-lg-4 pl-xl-0">
+            <div class="col-lg-4">
               <div class="row">
                 <div
                   class="
@@ -864,13 +894,13 @@
                     step="1"
                     id="used_listing_condition"
                   />
-                  <datalist id="tickmarks">
-                    <option value="0" label="Rough condition"></option>
-                    <option value="1" label="Heavily Used"></option>
-                    <option value="2" label="Moderately used"></option>
-                    <option value="3" label="Slightly Used"></option>
-                    <option value="4" label="Perfect Condition"></option>
-                  </datalist>
+                  <ul class="range_label">
+                    <li>Rough condition</li>
+                    <li>Heavily Used</li>
+                    <li>Moderately used</li>
+                    <li>Slightly Used</li>
+                    <li>Perfect Condition</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -883,7 +913,7 @@
               my-lg-0 my-3
             "
           >
-            <a type="submit" class="btn btn_default mb-0 mt-4 px-5">Save</a>
+            <a type="submit" class="btn btn_default mb-0 mt-4">Save</a>
           </div>
         </div>
       </section>

@@ -61,15 +61,14 @@ body {
   @media (max-width: 768px) {
     .gc_sticky .cart_text {
       display: none; } }
+  .gc_sticky .menu_container {
+    max-width: 540px; }
+    @media (max-width: 768px) {
+      .gc_sticky .menu_container {
+        flex-direction: row-reverse; } }
   @media (min-width: 768px) {
     .gc_sticky .navbar-toggler {
       display: none; } }
-  .gc_sticky .navbar-toggler .navbar-toggler-icon {
-    margin-left: 0;
-    margin-right: 20px; }
-  .gc_sticky .navbar-toggler.active {
-    margin-left: 0;
-    margin-right: 15px; }
   .gc_sticky .home-nav {
     padding: 5px 0; }
   .gc_sticky .navbar-nav {
@@ -884,7 +883,7 @@ input[type="number"] {
       display: flex;
       align-items: center;
       margin-top: 0.5rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 1rem; }
       @media (max-width: 992px) {
         .product_review_modal .modal-content .modal-body .listing_rating_container {
           justify-content: center; } }
@@ -896,8 +895,13 @@ input[type="number"] {
           font-size: 22px; } }
       .product_review_modal .modal-content .modal-body .listing_rating_container .rating_score {
         padding-left: 10px; }
+    .product_review_modal .modal-content .modal-body .img_upload_row .col-xl-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .product_review_modal .modal-content .modal-body .review_container {
-      padding: 0px 25px; }
+      padding-left: 40px;
+      padding-right: 33px; }
     .product_review_modal .modal-content .modal-body .btn_default {
       margin-top: 25px;
       padding: 0.5rem 3rem; }
@@ -1204,6 +1208,9 @@ input[type="text"] {
 .brand_pic {
   width: 100%;
   border-radius: 3.188rem; }
+  @media (max-width: 991px) {
+    .brand_pic {
+      border-radius: 2px; } }
   .brand_pic:hover {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4); }
 
@@ -2906,7 +2913,11 @@ input[type="text"] {
 
 @media (max-width: 575px) {
   .ring_form .col-auto {
-    flex: 0 0 33%; } }
+    flex: 1 0 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0; } }
 
 @media (min-width: 1200px) {
   .ring_form .col-auto {
@@ -3238,6 +3249,9 @@ input[type="text"] {
       align-items: center;
       padding: 2px 11px; } }
 
+.edit_listing .btn_default {
+  padding: 0.5rem 4rem; }
+
 .customized_radio {
   display: flex;
   justify-content: center;
@@ -3383,53 +3397,41 @@ label
   box-shadow: 0 0 5px 1px #3bc0cb !important;
   border-radius: 12px; }
 
-.customized_upload {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .customized_radio label > input[type="radio"]:checked ~ span.market_uncheck {
   background-image: url("../assets/images/marketchecked.svg"); }
 
 .customized_radio label > input[type="radio"]:checked ~ span.wishlist_check {
   background-image: url("../assets/icons/addedtofavicon.svg"); }
 
-.customized_upload label > input[type="file"] {
-  visibility: hidden;
-  position: absolute;
-  max-width: 100px; }
+.image-upload > input {
+  display: none; }
 
-.customized_upload label > input[type="file"] ~ span {
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  background-repeat: no-repeat; }
+@media (max-width: 992px) {
+  .img_upload_row {
+    margin-top: 10px; } }
 
-.upload_btn_img {
-  background-image: url(../assets/icons/fileuploadimg.svg);
-  margin-top: 40px; }
+@media (max-width: 1700px) and (min-width: 992px) {
+  .img_upload_row .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center; } }
 
-.upload_btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  width: 195px;
-  height: 170px;
-  background-color: #f6f6f6;
-  margin-bottom: 0;
-  cursor: pointer; }
-  .upload_btn i {
-    color: #3bc0cb;
-    text-decoration: underline;
-    font-size: 16px;
-    font-style: normal;
-    margin-top: 40px; }
-  .upload_btn img {
-    width: 100%;
-    height: 170px;
-    border-radius: 30px; }
+.img_upload_row .col-md-12 {
+  margin: 1rem 0; }
+
+.upload-icon .icon {
+  cursor: pointer;
+  width: 185px;
+  height: 185px;
+  border-radius: 10px; }
+
+.upload-icon .prev {
+  display: none;
+  width: 185px;
+  height: 185px;
+  border-radius: 30px; }
 
 .text_design {
   width: 100%;
@@ -3466,23 +3468,25 @@ label
     cursor: pointer;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1); }
 
-datalist {
+.range_label {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+  list-style: none;
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-  datalist option {
+  margin-top: 5px;
+  padding: 0; }
+  .range_label li {
+    display: inline-block;
     text-align: center;
     font-size: 10px;
     font-weight: bold;
-    color: #002f33;
-    max-width: 32px;
-    white-space: pre-line;
-    margin-right: 10px; }
-    @media (max-width: 320px) {
-      datalist option {
-        font-size: 8px; } }
+    width: 55px;
+    overflow-wrap: break-word; }
+    .range_label li:first-child {
+      text-align: start; }
+    .range_label li:last-child {
+      text-align: end; }
 
 .settings .settings_tab {
   border: none; }
@@ -3552,24 +3556,6 @@ datalist {
   width: 280px;
   height: 280px;
   padding: 1rem; }
-
-.settings .upload_btn {
-  flex-direction: row;
-  background-color: white;
-  justify-content: space-evenly;
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
-  height: 50px;
-  width: 185px;
-  margin-bottom: 12px;
-  border-radius: 14px; }
-  .settings .upload_btn .upload_btn_img {
-    margin-top: 0; }
-  .settings .upload_btn i {
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #002f33;
-    margin-top: 0; }
 
 .settings .add_container {
   width: 100%;
@@ -3688,6 +3674,12 @@ datalist {
     max-width: 20.66667%;
     padding: 0; } }
 
+@media (max-width: 575px) {
+  .brands_container .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 10px 0px; } }
+
 .brands_container .brand_card {
   display: flex;
   justify-content: center;
@@ -3697,6 +3689,11 @@ datalist {
   max-width: 19.8125rem;
   max-height: 19.8125rem;
   border-radius: 35px; }
+  @media (max-width: 991px) {
+    .brands_container .brand_card {
+      overflow: hidden;
+      padding: 0;
+      border-radius: 30px; } }
 
 .binding-tabs {
   display: flex;

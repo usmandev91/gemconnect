@@ -33,6 +33,28 @@ $(".jRadioDropdown").change(function () {
     dropdown.find("ins").html(thislabel.text());
   }
 });
+// for upload image
+function readURL(input) {
+  var id = $(input).attr("id");
+
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      $('label[for="' + id + '"] .upload-icon').css("border", "none");
+      $('label[for="' + id + '"] .icon').hide();
+      $('label[for="' + id + '"] .prev')
+        .attr("src", e.target.result)
+        .show();
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("input[id^='file-input']").change(function () {
+  readURL(this);
+});
 
 //Add tabindex on labels
 $("label.dropdown-item").each(function (index, value) {

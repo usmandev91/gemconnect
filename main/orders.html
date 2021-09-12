@@ -938,66 +938,110 @@
                   <!-- image upload and product description message box -->
                   <div class="col-md-12 p-0">
                     <!-- product image upload buttons -->
-                    <div class="row">
-                      <div class="col-xl-3 col-lg-5 m-xl-0 my-3">
-                        <div class="customized_upload">
-                          <label class="upload_btn" for="prod_img_1">
-                            <input
-                              type="file"
-                              name="prod_img_1"
-                              id="prod_img_1"
-                              accept="image/png, image/jpeg"
-                            />
-                            <span class="upload_btn_img"></span>
-                            <i>upload image</i>
+                    <!-- product image upload buttons -->
+                    <!-- new changes for img upload buttons -->
+                    <div class="row img_upload_row">
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                        <div class="image-upload">
+                          <label for="file-input">
+                            <div class="upload-icon">
+                              <img
+                                class="icon img-fluid"
+                                src="./assets/icons/uploadimg.svg"
+                                alt="upload button"
+                                data-type="editable"
+                              />
+                              <img
+                                class="prev img-fluid"
+                                src="./assets/icons/uploadimg.svg"
+                                alt="preview image"
+                              />
+                            </div>
                           </label>
+                          <input
+                            id="file-input"
+                            type="file"
+                            accept="image/png, image/gif, image/jpeg"
+                          />
                         </div>
                       </div>
-                      <div class="col-xl-3 col-lg-5 m-xl-0 my-3">
-                        <div class="customized_upload">
-                          <label class="upload_btn" for="prod_img_2">
-                            <input
-                              type="file"
-                              name="prod_img_2"
-                              id="prod_img_2"
-                              accept="image/png, image/jpeg"
-                            />
-                            <span class="upload_btn_img"></span>
-                            <i>upload image</i>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                        <div class="image-upload">
+                          <label for="file-input2">
+                            <div class="upload-icon">
+                              <img
+                                class="icon img-fluid"
+                                src="./assets/icons/uploadimg.svg"
+                                alt="upload button"
+                                data-type="editable"
+                              />
+                              <img
+                                class="prev img-fluid"
+                                src="./assets/icons/uploadimg.svg"
+                                alt="preview image"
+                              />
+                            </div>
                           </label>
+                          <input
+                            id="file-input2"
+                            type="file"
+                            accept="image/png, image/gif, image/jpeg"
+                          />
                         </div>
                       </div>
-                      <div class="col-xl-3 col-lg-5 m-xl-0 my-3">
-                        <div class="customized_upload">
-                          <label class="upload_btn" for="prod_img_3">
-                            <input
-                              type="file"
-                              name="prod_img_3"
-                              id="prod_img_3"
-                              accept="image/png, image/jpeg"
-                            />
-                            <span class="upload_btn_img"></span>
-                            <i>upload image</i>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                        <div class="image-upload">
+                          <label for="file-input3">
+                            <div class="upload-icon">
+                              <img
+                                class="icon img-fluid"
+                                src="./assets/icons/uploadimg.svg"
+                                alt="upload button"
+                                data-type="editable"
+                              />
+                              <img
+                                class="prev img-fluid"
+                                src="./assets/icons/uploadimg.svg"
+                                alt="preview image"
+                              />
+                            </div>
                           </label>
+                          <input
+                            id="file-input3"
+                            type="file"
+                            accept="image/png, image/gif, image/jpeg"
+                          />
                         </div>
                       </div>
-                      <div class="col-xl-3 col-lg-5 m-xl-0 my-3">
-                        <div class="customized_upload">
-                          <label class="upload_btn" for="prod_img_4">
-                            <input
-                              type="file"
-                              name="prod_img_4"
-                              id="prod_img_4"
-                              accept="image/png, image/jpeg"
-                            />
-                            <span class="upload_btn_img"></span>
-                            <i>upload image</i>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                        <div class="image-upload">
+                          <label for="file-input4">
+                            <div class="upload-icon">
+                              <img
+                                class="icon img-fluid"
+                                src="./assets/icons/uploadimg.svg"
+                                alt="upload button"
+                                data-type="editable"
+                              />
+                              <img
+                                class="prev img-fluid"
+                                src="./assets/icons/uploadimg.svg"
+                                alt="preview image"
+                              />
+                            </div>
                           </label>
+                          <input
+                            id="file-input4"
+                            type="file"
+                            accept="image/png, image/gif, image/jpeg"
+                          />
                         </div>
                       </div>
                     </div>
+                    <!-- end of change -->
+                    <!-- product description -->
                     <!-- product review -->
-                    <div class="col-md-12 mt-5 review_container">
+                    <div class="col-md-12 mt-4 review_container">
                       <textarea
                         name="user_review"
                         class="text_design textarea-autosize"
@@ -1025,6 +1069,7 @@
       <script src="./js/popper.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
       <script src="./js/userprofile.js"></script>
+      <script src="./js/main.js"></script>
     </div>
   </body>
 </html>
