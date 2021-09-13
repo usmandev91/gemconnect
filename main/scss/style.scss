@@ -476,7 +476,8 @@ input[type="number"] {
 .log_success,
 .invalid_modal,
 .ammt_sucess,
-.promo_sucess {
+.promo_sucess,
+.submit_modal {
   .modal-content {
     border-radius: 36px;
     padding: 2rem 2rem;
@@ -528,14 +529,18 @@ input[type="number"] {
     outline: none;
   }
 }
+// product pages modal
 // bidding modal
-#biddingModal {
+.bidding_modal {
   .modal-content {
     border-radius: 50px;
     padding: 1rem 2.5rem;
     border: none;
     outline: none;
     width: 100%;
+    @media (max-width: 575px) {
+      padding: 1rem;
+    }
   }
   .modal-header {
     border: none;
@@ -544,11 +549,17 @@ input[type="number"] {
       font-size: 30px;
       font-weight: bold;
       text-transform: none;
+      @media (min-width: 1900px) {
+        margin: 1rem 0rem;
+      }
     }
     .well {
       background-color: $cards-bg-color;
       border-radius: 22px;
-      padding: 1.6rem 0.1rem;
+      padding: 0.6rem 0.1rem;
+      @media (min-width: 1900px) {
+        padding: 1.6rem 0.1rem;
+      }
       .head {
         font-size: 16px;
         font-weight: 600;
@@ -563,16 +574,23 @@ input[type="number"] {
     }
   }
   .modal-body {
+    padding: 0.5rem 1rem;
     .form_head {
       font-size: 18px;
       font-weight: 600;
       text-align: start;
       margin: 0;
       text-transform: none;
+      margin-bottom: 12px;
+      margin-top: 2px;
+      @media (max-width: 320px) {
+        font-size: 14px;
+      }
     }
     .well {
       background-color: $cards-bg-color;
       padding: 0.8rem 2rem;
+      padding-left: 1rem;
       border-radius: 10px;
     }
     .listing_price {
@@ -600,31 +618,61 @@ input[type="number"] {
   }
 }
 // payment modal
-#paymentModal {
+.payment_modal {
   .modal-content {
     border-radius: 50px;
     padding: 1rem 2.5rem;
     border: none;
+    @media (max-width: 575px) {
+      padding: 1rem;
+    }
   }
   .modal-header {
     border: none;
     outline: none;
+
     .title {
       font-size: 30px;
       font-weight: bold;
       text-transform: none;
+      @media (min-width: 1900px) {
+        margin: 1rem 0rem;
+      }
+      @media (max-width: 575px) {
+        font-size: 24px;
+        margin: 1rem 0;
+      }
+      @media (max-width: 320px) {
+        font-size: 20px;
+        margin: 0;
+      }
     }
     .well {
       background-color: $cards-bg-color;
       border-radius: 20px;
       padding: 0.8rem;
+      margin-top: 2rem;
       .head {
         font-size: 20px;
         font-weight: 600;
+        margin-bottom: 0;
+        @media (max-width: 575px) {
+          font-size: 16px;
+        }
+        @media (max-width: 320px) {
+          font-size: 14px;
+        }
       }
       .user_offer {
         font-size: 30px;
         font-weight: bold;
+        @media (max-width: 575px) {
+          font-size: 24px;
+          margin: 0.5rem 0;
+        }
+        @media (max-width: 320px) {
+          font-size: 18px;
+        }
       }
       .desc {
         font-size: 14px;
@@ -638,12 +686,14 @@ input[type="number"] {
     .image-checkbox {
       font-size: 18px;
       font-weight: bold;
-    }
-    .applelogo {
-      padding: 1.6rem;
-    }
-    .paypallogo {
-      padding: 1.6rem;
+      @media (max-width: 320px) {
+        font-size: 14px;
+      }
+      img {
+        @media (max-width: 320px) {
+          width: 80px;
+        }
+      }
     }
   }
   .modal-footer {
@@ -714,55 +764,6 @@ input[type="number"] {
     .btn_default {
       text-transform: uppercase;
     }
-  }
-}
-// submit Modal
-#submitModal {
-  .modal-content {
-    border-radius: 42px;
-    padding: 3rem 2rem;
-    border: none;
-  }
-  .modal-header {
-    padding: 0px;
-    border: none;
-    outline: none;
-    .close {
-      font-size: 1.6rem;
-      background-color: $cards-bg-color;
-      padding: 0.4rem 0.8rem;
-      border-radius: 5px;
-      margin: -1rem 0.5rem -1rem auto;
-    }
-  }
-  .modal-body {
-    padding: 0;
-    .verified {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 15px;
-    }
-    .title {
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: $text-color;
-      margin-bottom: 0;
-    }
-    .title2 {
-      text-align: center;
-      font-size: 14px;
-      color: $text-color;
-      margin-bottom: 0;
-      a {
-        color: #3bc0cb;
-        text-decoration: underline;
-      }
-    }
-  }
-  .modal-footer {
-    border: none;
-    outline: none;
   }
 }
 // promo Modal
@@ -874,7 +875,6 @@ input[type="number"] {
     }
   }
 }
-
 // order Modal
 // publish Modal
 #publishModal,
@@ -1112,10 +1112,6 @@ input[type="text"] {
   }
 }
 // similar listing and general carousel prev and next buttons
-.owl-item + .owl-item .card-flyer {
-  margin-left: 1em;
-  margin-right: 1em;
-}
 
 .owl-carousel .owl-nav {
   background: transparent !important;
@@ -2525,9 +2521,17 @@ input[type="text"] {
       display: flex;
       align-items: center;
       justify-content: center;
+      @media (max-width: 992px) {
+        padding-left: 12px;
+      }
       .listing_rating {
         font-size: 0.5rem;
         color: $text-color;
+      }
+      .rating_score {
+        @media (max-width: 992px) {
+          padding-left: 8px !important;
+        }
       }
     }
     .review_date {
@@ -3161,20 +3165,22 @@ input[type="text"] {
   #productCarousel {
     margin-top: 1rem;
     .carousel-inner {
-      max-height: 650px;
+      position: relative !important;
+      max-height: 630px;
       max-width: 950px;
       border-radius: 2.5rem !important;
+      @media (max-width: 575px) {
+        max-height: 250px;
+      }
+      @media (min-width: 767px) and (max-width: 991px) {
+        max-height: 480px;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        max-height: 360px;
+      }
       img {
         width: 100%;
       }
-    }
-  }
-  .carousel-inner .carousel-item img {
-    border-radius: 2.5rem !important;
-  }
-  .carousel-inner {
-    position: relative;
-    .carousel-item {
       .wishlist_btn_container {
         position: absolute !important;
         top: 35px;
@@ -3214,11 +3220,16 @@ input[type="text"] {
       }
     }
   }
+  .carousel-inner .carousel-item img {
+    border-radius: 2.5rem !important;
+  }
   #productCarousel .carousel-indicators {
     position: static;
-    margin-top: 1.2rem;
+    margin-top: 2.2rem;
     margin-left: 0 !important;
     justify-content: start;
+    margin-right: 0;
+    width: 100%;
   }
 
   #productCarousel .carousel-indicators > li {
@@ -3233,6 +3244,11 @@ input[type="text"] {
     width: 149px;
     height: 119px;
     border-radius: 1.3rem !important;
+    @media (max-width: 575px) {
+      margin-top: 10px;
+      width: 105px;
+      height: 100px;
+    }
   }
 
   #productCarousel .carousel-indicators li.active img {
@@ -3243,7 +3259,6 @@ input[type="text"] {
     opacity: 0.75;
   }
   .text-container {
-    max-width: 478px;
     .listing_name {
       font-size: 1.2rem;
       font-weight: 600;
@@ -3266,10 +3281,13 @@ input[type="text"] {
     .prod_badge {
       background-color: $cards-bg-color;
       border-radius: 0.5rem;
-      margin-right: 5px;
+      margin-right: 10px;
+      padding: 0;
+      line-height: 2;
+      width: 30px;
+      height: 30px;
       img {
-        width: 26px;
-        height: 26px;
+        height: 18px;
       }
     }
     .discount-badge {
@@ -3285,10 +3303,17 @@ input[type="text"] {
         color: #fff;
         padding: 0.25rem 0.5rem;
         margin: 0;
+        @media (max-width: 370px) {
+          font-size: 0.7rem;
+          padding: 0.1rem 0.2rem;
+        }
       }
     }
   }
   .listing_rating_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     .listing_rating {
       font-size: 8px;
     }
@@ -3309,7 +3334,8 @@ input[type="text"] {
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
     max-width: 146px;
-    max-height: 40px;
+    width: 100%;
+    max-height: 50px;
     color: #707070;
     font-size: 1.2rem;
     font-weight: 500;
@@ -3341,9 +3367,15 @@ input[type="text"] {
       border: $text-color 2px solid !important;
     }
   }
+  .btn-number:focus {
+    border-radius: 10px;
+    border-color: #3bc0cb !important;
+    box-shadow: 0 0 4px 1px $theme_color !important;
+    outline: none !important;
+  }
   .btn-plus {
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 65px;
     width: 39px;
     height: 38px;
@@ -3353,7 +3385,7 @@ input[type="text"] {
   }
   .btn-minus {
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 106px;
     width: 39px;
     height: 38px;
@@ -3370,10 +3402,14 @@ input[type="text"] {
     color: #3bc0cb;
   }
   .btn_container {
-    max-width: 472px;
-    @media (min-width: 1200px) {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media (min-width: 1600px) {
       .btn_default {
-        padding: 0.6rem 3rem;
+        padding: 0.4rem 2.5rem;
       }
     }
   }
@@ -3385,10 +3421,10 @@ input[type="text"] {
   }
   .delivery_container {
     margin: 0;
-    max-width: 472px;
     margin-top: 10px;
     border: #3bc0cb 1px solid;
     border-radius: 0.8rem;
+
     .del_head {
       padding: 0.5rem 0rem;
       font-size: 1.2rem;
@@ -3400,19 +3436,18 @@ input[type="text"] {
       position: relative;
       display: inline-block;
       border: 2px solid $text-color;
-      border-radius: 75%;
-      width: 1.3em;
-      height: 1.3em;
-      margin-right: 0.5em;
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
       color: #3bc0cb;
+      margin-right: 10px;
     }
-
     .radio .cr .cr-icon {
       position: absolute;
       font-size: 0.8em;
       line-height: 0;
-      top: 55%;
-      left: 18%;
+      top: 50%;
+      left: 16%;
     }
 
     .radio label input[type="radio"] {
@@ -3484,8 +3519,7 @@ input[type="text"] {
     color: $text-color;
   }
   .seller_box {
-    padding: 1rem;
-    max-width: 472px;
+    padding: 2rem;
     margin-top: 10px;
     border-radius: 1.4rem;
     background-color: $cards-bg-color;
@@ -3500,6 +3534,14 @@ input[type="text"] {
       border-radius: 100%;
       width: 100%;
     }
+    .text-container {
+      @media (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
     .user_name {
       white-space: nowrap;
       font-size: 1.2rem;
@@ -3507,6 +3549,11 @@ input[type="text"] {
       color: $text-color;
       padding: 0;
       margin-bottom: 0;
+    }
+    .rating_container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
     }
     .user_rating {
       font-size: 10px;
@@ -3523,7 +3570,6 @@ input[type="text"] {
     }
   }
   .return_container {
-    max-width: 472px;
     border: 2px solid #b4b4b4;
     border-radius: 1.4rem;
     padding: 1.5rem 2rem;
@@ -3546,9 +3592,127 @@ input[type="text"] {
 }
 .product_reviews {
   position: relative;
-  height: 44vh;
+  height: 60vh;
   overflow-y: scroll;
+  max-width: 849px;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $cards-bg-color;
+    border-radius: 60px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $theme_color;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+  }
 }
+.product_carousel_container {
+  .listing_container {
+    @media (min-width: 1700px) {
+      max-width: 1550px;
+    }
+  }
+}
+// product carousel / similar listings
+.product_carousel {
+  margin-top: 2rem;
+
+  .prev-slide {
+    left: -35px;
+  }
+  .next-slide {
+    right: -35px;
+  }
+  .owl-nav .owl-prev.disabled,
+  .owl-nav .owl-next.disabled {
+    display: none !important;
+  }
+  .owl-carousel .owl-nav {
+    overflow: hidden;
+    height: 0px;
+  }
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .card-flyer {
+    min-height: 310px;
+    max-width: 300px;
+    box-shadow: $search_shadow;
+    .listing-image-box {
+      max-height: 200px;
+    }
+    @media (max-width: 575px) {
+      padding-bottom: 16px;
+      max-height: 290px;
+      min-height: 290px;
+      .text-box {
+        .listing_name {
+          font-size: 1.2rem;
+        }
+        .price_container {
+          .listing_price_full {
+            font-size: 1.2rem;
+          }
+          .listing_price_after {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .listing_rating_container {
+        .listing_rating {
+          @media (max-width: 575px) {
+            font-size: 0.7rem;
+          }
+        }
+        .rating_score {
+          padding-left: 10px !important;
+          @media (max-width: 575px) {
+            font-size: 16px;
+          }
+        }
+      }
+      .discount-label {
+        position: absolute !important;
+        top: 20px;
+        z-index: 1000;
+        @media (max-width: 575px) {
+        }
+        .discount-badge {
+          background-color: #fd4e4e;
+          color: #fff;
+          text-align: center;
+          width: 90px;
+          height: 30px;
+          position: relative;
+          border-radius: 0 !important;
+          p {
+            margin-top: 5px;
+            margin-bottom: 0;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0%;
+            right: -13%;
+            border-bottom: 12px solid #fd4e4e;
+            border-right: 12px solid transparent;
+            width: 0;
+            height: 0;
+          }
+        }
+      }
+    }
+  }
+}
+// stats page
 .stats_row {
   margin: 7rem 0;
   .container-width {

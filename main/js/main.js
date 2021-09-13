@@ -33,7 +33,7 @@ $(".jRadioDropdown").change(function () {
     dropdown.find("ins").html(thislabel.text());
   }
 });
-// for upload image
+// for upload image inputs
 function readURL(input) {
   var id = $(input).attr("id");
 
@@ -55,7 +55,16 @@ function readURL(input) {
 $("input[id^='file-input']").change(function () {
   readURL(this);
 });
+// share button on product pages
+var $temp = $("<input>");
+var $url = $(location).attr("href");
 
+$(".clipboard").on("click", function () {
+  $("body").append($temp);
+  $temp.val($url).select();
+  document.execCommand("copy");
+  $temp.remove();
+});
 //Add tabindex on labels
 $("label.dropdown-item").each(function (index, value) {
   $(this).attr("tabindex", 0);
@@ -327,12 +336,16 @@ $(".deal_carousel").owlCarousel({
 });
 
 // Ring carousel
-$(".ring_carousel").owlCarousel({
+$(".product_carousel").owlCarousel({
   items: 4,
   nav: false,
   dots: true,
   touchDrag: true,
   lazyLoad: true,
+  navText: [
+    "<div class='nav-btn prev-slide'></div>",
+    "<div class='nav-btn next-slide'></div>",
+  ],
   loop: false,
   navRewind: false,
   responsiveClass: true,
@@ -353,6 +366,20 @@ $(".ring_carousel").owlCarousel({
       lazyLoad: true,
     },
     1000: {
+      items: 3,
+      nav: false,
+      loop: false,
+      navRewind: false,
+      lazyLoad: true,
+    },
+    1200: {
+      items: 4,
+      nav: false,
+      loop: false,
+      navRewind: false,
+      lazyLoad: true,
+    },
+    1920: {
       items: 4,
       nav: true,
       loop: false,
