@@ -2697,7 +2697,7 @@ input[type="text"] {
     border-radius: 2.5rem !important; }
     @media (max-width: 575px) {
       .product_showcase #productCarousel .carousel-inner {
-        max-height: 250px; } }
+        max-height: 230px; } }
     @media (min-width: 767px) and (max-width: 991px) {
       .product_showcase #productCarousel .carousel-inner {
         max-height: 480px; } }
