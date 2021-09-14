@@ -2695,15 +2695,15 @@ input[type="text"] {
     max-height: 630px;
     max-width: 950px;
     border-radius: 2.5rem !important; }
-    @media (max-width: 575px) {
+    @media (max-width: 375px) {
       .product_showcase #productCarousel .carousel-inner {
         max-height: 230px; } }
+    @media (min-width: 376px) and (max-width: 766px) {
+      .product_showcase #productCarousel .carousel-inner {
+        max-height: 360px; } }
     @media (min-width: 767px) and (max-width: 991px) {
       .product_showcase #productCarousel .carousel-inner {
         max-height: 480px; } }
-    @media (min-width: 576px) and (max-width: 767px) {
-      .product_showcase #productCarousel .carousel-inner {
-        max-height: 360px; } }
     .product_showcase #productCarousel .carousel-inner img {
       width: 100%; }
     .product_showcase #productCarousel .carousel-inner .wishlist_btn_container {
@@ -2921,6 +2921,9 @@ input[type="text"] {
   background-color: #3bc0cb; }
   .product_showcase .offer_btn:hover {
     color: white; }
+
+.product_showcase .btn_bid {
+  width: 225px; }
 
 .product_showcase .delivery_container {
   margin: 0;

@@ -406,6 +406,464 @@
         </div>
       </header>
       <!-- end of navbar -->
+      <!-- product show case -->
+      <section class="container-fluid my-4">
+        <div class="container product_showcase container-width p-0">
+          <div class="row">
+            <!-- product images carousel -->
+            <div class="col-xl-8 col-lg-12">
+              <div id="productCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/disneyengangmentring.jpg"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/squarediamondring.jpg"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/stonering.jpg"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <ol class="carousel-indicators">
+                  <li class="list-inline-item active">
+                    <a
+                      id="carousel-selector-0"
+                      class="selected"
+                      data-slide-to="0"
+                      data-target="#productCarousel"
+                    >
+                      <img
+                        src="./assets//images/disneyengangmentring.jpg"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      id="carousel-selector-1"
+                      data-slide-to="1"
+                      data-target="#productCarousel"
+                    >
+                      <img
+                        src="./assets/images/squarediamondring.jpg"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      id="carousel-selector-2"
+                      data-slide-to="2"
+                      data-target="#productCarousel"
+                    >
+                      <img
+                        src="./assets/images/stonering.jpg"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <!-- product description -->
+            <div class="col-xl-4 col-lg-12">
+              <div class="text-container mt-3">
+                <p class="listing_name m-0 pt-2">
+                  Enchanted Disney Aurora 3/4 CT. T.W. Princess-Cut Diamond
+                  Frame Ring in 14K White Gold
+                </p>
+                <div
+                  class="
+                    container
+                    d-flex
+                    justify-content-start
+                    align-items-center
+                    p-0
+                  "
+                >
+                  <!-- minimum bid posted by user in post a new listing page -->
+                  <p class="minimum_bid mb-0">
+                    Starting price
+                    <span class="listing_price_after">1499.99</span>
+                  </p>
+                  <!--no badges to be included in auction listings -->
+                </div>
+              </div>
+              <div class="listing_rating_container">
+                <div class="listing_rating" data-score="3.5"></div>
+                <div class="rating_score px-3 mb-1" id="listing_score">3.5</div>
+              </div>
+              <!-- time left and highest bid on listing to be shown here -->
+              <div class="container-sm my-3 p-0">
+                <div
+                  class="
+                    listing_time_left
+                    d-flex
+                    align-items-center
+                    justify-content-lg-start
+                  "
+                >
+                  <img
+                    src="./assets/icons/timeleft.svg"
+                    alt=""
+                    class="pr-2 pt-1"
+                  />
+                  <span class="form_head">5 days left</span>
+                </div>
+                <div
+                  class="
+                    listing_highest_bid
+                    d-flex
+                    align-items-center
+                    my-4
+                    justify-content-lg-start
+                  "
+                >
+                  <img
+                    src="./assets/icons/highestbid.svg"
+                    alt=""
+                    class="pr-2 pt-1"
+                  />
+                  <span class="form_head">$1550</span>
+                  <p class="qty_stock_head mb-0 pl-3">Highest Bid placed</p>
+                </div>
+              </div>
+              <div class="container-sm mb-4 p-0">
+                <p class="form_head mb-2">Ring size</p>
+                <div class="row ring_form">
+                  <div class="col-md-2 text-xs-center">
+                    <label class="image-checkbox" title="6.5 name="ring-size"">
+                    <img src="./assets/images/6.5checked.png" />
+                    <input
+                      type="checkbox"
+                      name="ring-size"
+                      value="6.5"
+                      checked="checked"
+                    />
+                  </div>
+                  <div class="col-md-6 text-xs-center">
+                    <p class="qty_stock_head pt-2">Standard U.S ring sizes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-sm p-0 my-2">
+                <p class="form_head mb-1">Authenticity Verification</p>
+                <p class="auth_ver mb-5">100% authentic by XYZ</p>
+              </div>
+              <div class="container-sm d-flex p-0">
+                <div class="condition d-flex flex-column">
+                  <p class="form_head mb-1">Condition</p>
+                  <p class="condition">New</p>
+                </div>
+                <div class="warranty d-flex flex-column">
+                  <p class="ml-5 form_head mb-1">Warranty</p>
+                  <p class="ml-5">1 year</p>
+                </div>
+              </div>
+              <div class="container d-flex flex-column p-0 mt-4">
+                <label for="user_offer" name="user_offer" class="bid_head"
+                  >Your offer</label
+                >
+              </div>
+              <div class="mb-4 btn_container">
+                <!-- this input to be shown in modal binding offer -->
+                <input
+                  type="number"
+                  id="user_offer"
+                  name="user_offer"
+                  min="1550"
+                  max=""
+                  class="form-control input-number-bid"
+                  placeholder="$"
+                />
+                <!-- bidding modal button -->
+                <button
+                  type="button"
+                  href="#"
+                  class="
+                    btn btn_default
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    ml-2
+                    mb-0
+                    btn_bid
+                  "
+                  data-toggle="modal"
+                  data-target=".payment_modal"
+                >
+                  <img
+                    class="img-fluid pr-2 pb-1"
+                    src="./assets/icons/placebidbuttonicon.svg"
+                    alt=""
+                  />place bid
+                </button>
+              </div>
+              <div class="container p-0 mt-1">
+                <div class="container-sm delivery_container">
+                  <p class="del_head">Delivery</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="radio">
+                        <label class="d-flex">
+                          <input
+                            type="radio"
+                            name="shipmentcharges"
+                            value="0"
+                          />
+                          <span class="cr"
+                            ><i class="cr-icon fa fa-circle-o"></i
+                          ></span>
+                          <label for="shipmentcharges"
+                            >Standard shipment charges: $5
+                            <span class="qty_stock_head pl-2"
+                              >(approx 10 Days)</span
+                            >
+                          </label>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="radio">
+                        <label class="d-flex">
+                          <input
+                            type="radio"
+                            name="shipmentcharges"
+                            value="1"
+                          />
+                          <span class="cr"
+                            ><i class="cr-icon fa fa-circle-o"></i
+                          ></span>
+                          <label for="shipmentcharges"
+                            >Fast Delivery: $25
+                            <span class="qty_stock_head pl-2"
+                              >(approx 2 Days)</span
+                            >
+                          </label>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product description -->
+      <section class="container-fluid">
+        <div class="container container-width product_description p-0">
+          <div class="row">
+            <div class="col-xl-8 col-lg-12">
+              <div
+                class="
+                  container container-width
+                  d-flex
+                  justify-content-center justify-content-lg-start
+                  align-items-center
+                  p-0
+                  my-lg-4
+                "
+              >
+                <h2 class="section-title-start std-title my-2">Description</h2>
+              </div>
+              <!-- coming from post a new listing page -->
+              <div class="desc_container">
+                <p class="prod_desc my-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  odit officiis voluptates quos perferendis maxime iusto!
+                  Reiciendis voluptatum maiores veritatis ut veniam? Iure sed
+                  fuga sapiente quis fugiat soluta necessitatibus mollitia
+                  inventore sunt accusamus velit, optio minima aspernatur,
+                  deserunt delectus reiciendis sint ad. Distinctio, nobis culpa
+                  recusandae obcaecati molestias voluptatibus numquam eum nihil
+                  id fuga ea illum error facere dolorum maiores! Harum tempora
+                  iusto, repellat nam laborum aperiam cumque magnam recusandae
+                  doloribus et neque excepturi at corrupti sequi nulla corporis
+                  numquam hic. Harum natus ut atque earum aliquam velit, sit,
+                  fugiat incidunt adipisci tempore voluptatibus vel? Similique
+                  soluta nisi ut illo
+                </p>
+              </div>
+              <!-- product details result of checkboxes from post a new listing page -->
+              <div
+                class="
+                  container container-width
+                  d-flex
+                  justify-content-center justify-content-lg-start
+                  align-items-center
+                  p-lg-0
+                  my-5
+                "
+              >
+                <h2 class="section-title-start std-title my-2">
+                  Product details
+                </h2>
+              </div>
+              <div
+                class="
+                  prod_detail
+                  container container-width
+                  d-flex
+                  justify-content-start
+                  align-items-center
+                "
+              >
+                <ul class="p-0">
+                  <li>
+                    <p class="ring_desc_stone">
+                      Stone: <span class="stone_type list_title">Diamond</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="ring_desc_stone_color">
+                      Stone color:
+                      <span class="stone_color list_title">White</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="ring_desc_stone_shape">
+                      Stone shape:
+                      <span class="stone_shape list_title">Round/Princess</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="ring_desc_metal">
+                      Metal type:
+                      <span class="metal_type list_title">14k Gold</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="ring_desc_metal_color">
+                      metal color:
+                      <span class="metal_color list_title"> White</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="ring_desc_style">
+                      Ring style:
+                      <span class="ring_style list_title">Halo/framed</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="ring_gender">
+                      gender: <span class="ring_gender list_title">Ladies</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="ring_desc_accent">
+                      Accent Stones:
+                      <span class="accent_type list_title">Quartz</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-12">
+              <div class="title pl-lg-1 mb-2 mt-4">Seller</div>
+              <div class="container seller_box m-0">
+                <div class="row">
+                  <div
+                    class="
+                      col-md-12 col-xl-12
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      p-0
+                    "
+                  >
+                    <div class="user_img_box">
+                      <a href="userprofile.html">
+                        <img
+                          class="user_pic img-fluid img-circle"
+                          src="./assets/images/seller/handmade.jpg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      col-md-12 col-xl-12
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      p-0
+                    "
+                  >
+                    <div
+                      class="
+                        text-container
+                        container
+                        flex-column
+                        p-0
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <!-- User's name -->
+                      <p class="user_name pl-lg-0 mt-1">
+                        HandMade jewelry<span
+                          class="badge pb-0 pl-2"
+                          id="verifed_seller"
+                          ><img
+                            class="pb-1"
+                            src="./assets/icons/Verifiedseller.svg"
+                            alt=""
+                        /></span>
+                      </p>
+                      <div class="rating_container">
+                        <div class="user_rating p-0"></div>
+                        <!-- targeted using raty -->
+                        <div class="rating_score px-3" id="hint"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container my-5 p-0">
+                <div class="container return_container">
+                  <p class="title">Return</p>
+                  <p class="title mb-4">Guest Return and Exchange Policy</p>
+                  <p class="desc mb-4">
+                    Your online purchase may be returned to any of our stores or
+                    returned by mail to our distribution center.
+                  </p>
+                  <p class="desc mb-2">
+                    Returns are allowed within 30 days from the purchase
+                    (shipment) date and exchanges within 60 days of the purchase
+                    (shipment) date for jewelry, and within 30 days from the
+                    purchase (shipment) date for watches. Jewelry must be in
+                    good condition with all original certificates and
+                    accessories. Watches must be unworn, unaltered and in
+                    original condition to be accepted for return or exchange.
+                  </p>
+                  <a class="rtrn_inst" href="#">Return Instructions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of section line break -->
+      <section class="container-fluid my-3">
+        <div class="container container-width p-0">
+          <div class="row">
+            <div class="col-12">
+              <div class="border-top my-5"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--loginModal-->
       <div class="container">
         <div
@@ -473,7 +931,7 @@
                       </div>
 
                       <button
-                        type="button"
+                        type="submit"
                         data-bm-close="#loginModal"
                         data-bm-open="#logsuccess"
                         class="btn btn_form"
@@ -561,275 +1019,10 @@
           </div>
         </div>
       </div>
-      <section class="container-fluid product_showcase container-width my-2">
-        <div class="row">
-          <div class="col-lg-8 p-lg-0">
-            <div id="productCarousel" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/images/disneyengangmentring.jpg"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/squarediamondring.jpg"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img src="./assets/images/stonering.jpg" class="img-fluid" />
-                </div>
-              </div>
-              <ol class="carousel-indicators">
-                <li class="list-inline-item active">
-                  <a
-                    id="carousel-selector-0"
-                    class="selected"
-                    data-slide-to="0"
-                    data-target="#productCarousel"
-                  >
-                    <img
-                      src="./assets//images/disneyengangmentring.jpg"
-                      class="img-fluid"
-                    />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    id="carousel-selector-1"
-                    data-slide-to="1"
-                    data-target="#productCarousel"
-                  >
-                    <img
-                      src="./assets/images/squarediamondring.jpg"
-                      class="img-fluid"
-                    />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    id="carousel-selector-2"
-                    data-slide-to="2"
-                    data-target="#productCarousel"
-                  >
-                    <img
-                      src="./assets/images/stonering.jpg"
-                      class="img-fluid"
-                    />
-                  </a>
-                </li>
-              </ol>
-            </div>
-          </div>
-
-          <div class="col-lg-4 pl-lg-0">
-            <div class="text-container mt-3">
-              <p class="listing_name m-0 pt-2">
-                Enchanted Disney Aurora 3/4 CT. T.W. Princess-Cut Diamond Frame
-                Ring in 14K White Gold
-              </p>
-              <div
-                class="
-                  container
-                  d-flex
-                  justify-content-start
-                  align-items-center
-                  pl-lg-0
-                "
-              >
-                <!-- minimum bid posted by user in post a new listing page -->
-                <p class="minimum_bid">
-                  Starting price
-                  <span class="listing_price_after">1499.99</span>
-                </p>
-                <!--no badges to be included in auction listings -->
-              </div>
-            </div>
-            <!-- item rating based on reviews (readOnly=true,) this is a dummy rating  -->
-            <div
-              class="
-                container
-                listing_rating_container
-                d-flex
-                justify-content-start
-                align-items-center
-                pl-lg-0
-              "
-            >
-              <div class="listing_rating" data-score="3.5"></div>
-              <!-- target this div via raty for score dont write anything inside -->
-              <div class="rating_score px-3 mb-1" id="listing_score">3.5</div>
-            </div>
-            <!-- time left and highest bid on listing to be shown here -->
-            <div class="container-sm mt-5 mb-4 pl-lg-0">
-              <div
-                class="
-                  listing_time_left
-                  d-flex
-                  align-items-center
-                  justify-content-lg-start
-                "
-              >
-                <img
-                  src="./assets/icons/timeleft.svg"
-                  alt=""
-                  class="pr-2 pt-1"
-                />
-                <span class="form_head">5 days left</span>
-              </div>
-              <div
-                class="
-                  listing_highest_bid
-                  d-flex
-                  align-items-center
-                  my-2
-                  justify-content-lg-start
-                "
-              >
-                <img
-                  src="./assets/icons/highestbid.svg"
-                  alt=""
-                  class="pr-2 pt-1"
-                />
-                <span class="form_head">$1550</span>
-                <p class="qty_stock_head mb-0 pl-3">Highest Bid placed</p>
-              </div>
-            </div>
-            <div class="container-sm mb-5 pl-lg-0">
-              <p class="form_head mb-2">Ring size</p>
-              <div class="row ring_form">
-                <div class="col-md-3 text-xs-center">
-                  <label class="image-checkbox" title="6.5 name="ring-size"">
-                  <img src="./assets/images/6.5checked.png" />
-                  <input
-                    type="checkbox"
-                    name="ring-size"
-                    value="6.5"
-                    checked="checked"
-                  />
-                </div>
-                <div class="col-md-6 text-xs-center">
-                  <p class="qty_stock_head pl-3 pt-2">
-                    Standard U.S ring sizes
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="container-sm pl-lg-0 my-2">
-              <p class="form_head mb-1">Authenticity Verification</p>
-              <p class="auth_ver mb-5">100% authentic by XYZ</p>
-            </div>
-            <div class="container-sm d-flex pl-lg-0">
-              <div class="condition d-flex flex-column">
-                <p class="form_head mb-1">Condition</p>
-                <p class="condition">New</p>
-              </div>
-              <div class="warranty d-flex flex-column">
-                <p class="ml-5 form_head mb-1">Warranty</p>
-                <p class="ml-5">1 year</p>
-              </div>
-            </div>
-            <div class="container d-flex flex-column p-lg-0 mt-4">
-              <label for="user_offer" name="user_offer" class="bid_head"
-                >Your offer</label
-              >
-            </div>
-            <div
-              class="
-                container-sm
-                btn_container
-                d-flex
-                justify-content-between
-                mt-0
-                pl-lg-0
-              "
-            >
-              <div class="container d-flex flex-column p-lg-0">
-                <form action="">
-                  <div class="form-group mb-0">
-                    <!-- this input to be shown in modal binding offer -->
-                    <input
-                      type="number"
-                      id="user_offer"
-                      name="user_offer"
-                      min="1550"
-                      max=""
-                      class="form-control input-number-bid"
-                      placeholder="$"
-                    />
-                  </div>
-                </form>
-              </div>
-              <!-- bidding modal button -->
-              <button
-                type="button"
-                href="#"
-                class="
-                  btn btn_default btn_bid
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                  ml-2
-                "
-                data-toggle="modal"
-                data-target="#paymentModal"
-              >
-                <img
-                  class="img-fluid pr-2 pb-1"
-                  src="./assets/icons/placebidbuttonicon.svg"
-                  alt=""
-                />place bid
-              </button>
-            </div>
-            <div class="container pl-lg-0 mt-1">
-              <div class="container-sm delivery_container">
-                <p class="del_head">Delivery</p>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="radio">
-                      <label class="d-flex">
-                        <input type="radio" name="shipmentcharges" value="0" />
-                        <span class="cr"
-                          ><i class="cr-icon fa fa-circle-o"></i
-                        ></span>
-                        <label for="shipmentcharges"
-                          >Standard shipment charges: $5
-                          <span class="qty_stock_head pl-2"
-                            >(approx 10 Days)</span
-                          >
-                        </label>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="radio">
-                      <label class="d-flex">
-                        <input type="radio" name="shipmentcharges" value="1" />
-                        <span class="cr"
-                          ><i class="cr-icon fa fa-circle-o"></i
-                        ></span>
-                        <label for="shipmentcharges"
-                          >Fast Delivery: $25
-                          <span class="qty_stock_head pl-2"
-                            >(approx 2 Days)</span
-                          >
-                        </label>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- payment modal -->
       <div class="container">
         <div
-          id="paymentModal"
-          class="modal fade"
+          class="modal fade payment_modal"
           tabindex="-1"
           role="dialog"
           aria-hidden="true"
@@ -844,7 +1037,7 @@
                   align-items-center
                 "
               >
-                <p class="title mb-lg-5 pt-lg-2">Select Payment Method</p>
+                <p class="title pt-lg-2">Select Payment Method</p>
                 <div class="container well">
                   <div
                     class="
@@ -856,7 +1049,7 @@
                   >
                     <p class="head">Your binding offer</p>
                     <!-- result of input (user_offer) price from previous modal -->
-                    <p class="user_offer">$1600</p>
+                    <p class="user_offer">$1300</p>
                   </div>
                   <p class="desc">
                     *If your offer is accepted by the seller within viable days
@@ -866,7 +1059,7 @@
                 </div>
               </div>
               <div class="modal-body">
-                <div class="container-sm my-5 pl-lg-0">
+                <div class="container-sm pl-lg-0">
                   <div class="row card_form">
                     <div class="col-md-12">
                       <input type="checkbox" name="payment" value="visa" />
@@ -875,38 +1068,8 @@
                           src="./assets/icons/visalogo.svg"
                           alt="visa logo"
                         />
-                        <span class="4_digit">Visa 2391</span>
+                        <span class="4_digit">Visa*****2391</span>
                         <!-- last 4 digits of the card number to be shown here -->
-                      </label>
-                    </div>
-                    <div class="col-md-12">
-                      <input type="checkbox" name="payment" value="applepay" />
-                      <label
-                        class="image-checkbox"
-                        title="applepay"
-                        name="payment"
-                      >
-                        <img
-                          class="applelogo"
-                          src="./assets/icons/applepay.svg"
-                          alt="apple logo"
-                        />
-                        Apple Pay
-                      </label>
-                    </div>
-                    <div class="col-md-12">
-                      <input type="checkbox" name="payment" value="paypal" />
-                      <label
-                        class="image-checkbox"
-                        title="paypal"
-                        name="payment"
-                      >
-                        <img
-                          class="paypallogo"
-                          src="./assets/icons/paypallogo.svg"
-                          alt="paypal logo"
-                        />
-                        Paypal
                       </label>
                     </div>
                   </div>
@@ -922,8 +1085,8 @@
                     align-items-center
                     offer_btn
                   "
-                  data-bm-close="#paymentModal"
-                  data-bm-open="#submitModal"
+                  data-bm-close=".payment_modal"
+                  data-bm-open=".submit_modal"
                   >submit offer</a
                 >
               </div>
@@ -935,8 +1098,7 @@
       <!-- submit modal -->
       <div class="container">
         <div
-          id="submitModal"
-          class="modal fade"
+          class="modal fade submit_modal"
           tabindex="-1"
           role="dialog"
           aria-hidden="true"
@@ -971,249 +1133,6 @@
         </div>
       </div>
       <!-- end of modal  -->
-      <section class="product_description container-fluid container-width my-5">
-        <div class="row">
-          <div class="col-lg-8 pl-lg-0">
-            <div
-              class="
-                container container-width
-                d-flex
-                justify-content-center justify-content-lg-start
-                align-items-center
-                p-0
-                my-lg-4
-              "
-            >
-              <h2 class="section-title-start text-start your-listing-title">
-                Description
-              </h2>
-            </div>
-            <!-- coming from post a new listing page -->
-            <div class="desc_container">
-              <p class="prod_desc my-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                odit officiis voluptates quos perferendis maxime iusto!
-                Reiciendis voluptatum maiores veritatis ut veniam? Iure sed fuga
-                sapiente quis fugiat soluta necessitatibus mollitia inventore
-                sunt accusamus velit, optio minima aspernatur, deserunt delectus
-                reiciendis sint ad. Distinctio, nobis culpa recusandae obcaecati
-                molestias voluptatibus numquam eum nihil id fuga ea illum error
-                facere dolorum maiores! Harum tempora iusto, repellat nam
-                laborum aperiam cumque magnam recusandae doloribus et neque
-                excepturi at corrupti sequi nulla corporis numquam hic. Harum
-                natus ut atque earum aliquam velit, sit, fugiat incidunt
-                adipisci tempore voluptatibus vel? Similique soluta nisi ut illo
-              </p>
-            </div>
-            <!-- product details result of checkboxes from post a new listing page -->
-            <div
-              class="
-                container container-width
-                d-flex
-                justify-content-center justify-content-lg-start
-                align-items-center
-                p-lg-0
-                my-5
-              "
-            >
-              <h2 class="section-title-start text-start your-listing-title">
-                Product details
-              </h2>
-            </div>
-            <div
-              class="
-                prod_detail
-                container container-width
-                d-flex
-                justify-content-center justify-content-lg-start
-                align-items-center
-              "
-            >
-              <ul class="p-0">
-                <li>
-                  <p class="ring_desc_stone">
-                    Stone: <span class="stone_type list_title">Diamond</span>
-                  </p>
-                </li>
-                <li>
-                  <p class="ring_desc_stone_color">
-                    Stone color:
-                    <span class="stone_color list_title">White</span>
-                  </p>
-                </li>
-                <li>
-                  <p class="ring_desc_stone_shape">
-                    Stone shape:
-                    <span class="stone_shape list_title">Round/Princess</span>
-                  </p>
-                </li>
-                <li>
-                  <p class="ring_desc_metal">
-                    Metal type:
-                    <span class="metal_type list_title">14k Gold</span>
-                  </p>
-                </li>
-                <li>
-                  <p class="ring_desc_metal_color">
-                    metal color:
-                    <span class="metal_color list_title"> White</span>
-                  </p>
-                </li>
-                <li>
-                  <p class="ring_desc_style">
-                    Ring style:
-                    <span class="ring_style list_title">Halo/framed</span>
-                  </p>
-                </li>
-                <li>
-                  <p class="ring_gender">
-                    gender: <span class="ring_gender list_title">Ladies</span>
-                  </p>
-                </li>
-                <li>
-                  <p class="ring_desc_accent">
-                    Accent Stones:
-                    <span class="accent_type list_title">Quartz</span>
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 pl-lg-0">
-            <div class="title pl-lg-1 mb-2 mt-4">Seller</div>
-            <div class="container seller_box m-0">
-              <div class="row">
-                <div
-                  class="
-                    col-xs-12 col-sm-12 col-md-6 col-lg-5
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                    p-lg-0
-                  "
-                >
-                  <div class="user_img_box">
-                    <img
-                      class="user_pic img-fluid img-circle"
-                      src="./assets/images/seller/handmade.jpg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7 pl-lg-0">
-                  <div
-                    class="
-                      text-container
-                      container
-                      p-0
-                      justify-content-center
-                      align-items-center
-                    "
-                  >
-                    <!-- User's name -->
-                    <p class="user_name pl-lg-0 mt-1">
-                      HandMade jewelry<span
-                        class="badge pb-0 pl-2"
-                        id="verifed_seller"
-                        ><img
-                          class="pb-1"
-                          src="./assets/icons/Verifiedseller.svg"
-                          alt=""
-                      /></span>
-                    </p>
-                    <!-- User's Average Rating Based On Number of Reviews (readOnly=true,) this is a dummy rating-->
-                    <div
-                      class="
-                        container
-                        rating_container
-                        d-flex
-                        justify-content-start
-                        align-items-center
-                        pl-lg-0
-                        pt-1
-                      "
-                    >
-                      <div class="user_rating p-0"></div>
-                      <!-- targeted using raty -->
-                      <div class="rating_score px-3 pb-2" id="hint"></div>
-                    </div>
-                    <!-- end of rating -->
-                    <div
-                      class="container-sm d-flex justify-content-start p-0 mt-2"
-                    >
-                      <a
-                        href="#"
-                        class="
-                          btn btn_default
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                          pr-3
-                          pl-3
-                          mr-3
-                        "
-                      >
-                        <img
-                          class="img-fluid pr-1"
-                          src="./assets/icons/chaticon.svg"
-                          alt=""
-                        />CHAT</a
-                      >
-                      <a
-                        href="#"
-                        class="
-                          btn btn_default
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                          ml-2
-                          pr-3
-                          pl-3
-                        "
-                      >
-                        <img
-                          class="img-fluid pr-2 pb-1"
-                          src="./assets/icons/useradmin.svg"
-                          alt=""
-                        />Follow</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container my-5 p-0">
-              <div class="container return_container">
-                <p class="title">Return</p>
-                <p class="title mb-4">Guest Return and Exchange Policy</p>
-                <p class="desc mb-4">
-                  Your online purchase may be returned to any of our stores or
-                  returned by mail to our distribution center.
-                </p>
-                <p class="desc mb-2">
-                  Returns are allowed within 30 days from the purchase
-                  (shipment) date and exchanges within 60 days of the purchase
-                  (shipment) date for jewelry, and within 30 days from the
-                  purchase (shipment) date for watches. Jewelry must be in good
-                  condition with all original certificates and accessories.
-                  Watches must be unworn, unaltered and in original condition to
-                  be accepted for return or exchange.
-                </p>
-                <a class="rtrn_inst" href="#">Return Instructions</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="container-fluid p-0 my-5">
-        <div class="container-fluid container-width p-0">
-          <div class="row">
-            <div class="col-12">
-              <div class="border-top my-5"></div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- footer -->
       <footer class="footer">
         <div class="container">

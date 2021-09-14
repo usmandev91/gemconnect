@@ -3169,15 +3169,16 @@ input[type="text"] {
       max-height: 630px;
       max-width: 950px;
       border-radius: 2.5rem !important;
-      @media (max-width: 575px) {
+      @media (max-width: 375px) {
         max-height: 230px;
+      }
+      @media (min-width: 376px) and (max-width: 766px) {
+        max-height: 360px;
       }
       @media (min-width: 767px) and (max-width: 991px) {
         max-height: 480px;
       }
-      @media (min-width: 576px) and (max-width: 767px) {
-        max-height: 360px;
-      }
+
       img {
         width: 100%;
       }
@@ -3418,6 +3419,9 @@ input[type="text"] {
     &:hover {
       color: $theme_bgcolor;
     }
+  }
+  .btn_bid {
+    width: 225px;
   }
   .delivery_container {
     margin: 0;
