@@ -3963,7 +3963,6 @@ input[type="text"] {
   .form_design {
     border-radius: 20px;
     margin-bottom: 0 !important;
-    max-width: 275px;
   }
   .bid_container {
     @media (min-width: 1200px) and (max-width: 1700px) {
@@ -4293,7 +4292,11 @@ input[type="text"] {
 // settings page
 .settings {
   .settings_tab {
+    display: flex;
+    flex-direction: column;
+
     border: none;
+    width: 100%;
     li {
       height: 80px;
     }
@@ -4303,6 +4306,7 @@ input[type="text"] {
       padding: 1.2rem 1.1rem;
       border-radius: 16px;
       background-color: white;
+      white-space: nowrap;
       text-align: start;
       color: $text-color;
       cursor: pointer;
@@ -4362,12 +4366,28 @@ input[type="text"] {
   .text_design::placeholder {
     color: #002f33;
   }
+  .profile_pic_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
   .user_img_box {
-    border: black 1px solid;
+    border: black 1px solid !important;
     border-radius: 50%;
     width: 280px;
     height: 280px;
     padding: 1rem;
+    .icon {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .prev {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
   }
 
   .add_container {
