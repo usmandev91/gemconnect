@@ -321,6 +321,9 @@ input[type="number"] {
       @media (min-width: 992px) {
         .default_nav .nav_container .desktop_btns .btn_dp_cart {
           padding-right: 3rem; } }
+      .default_nav .nav_container .desktop_btns .btn_dp_cart:focus {
+        border-color: #3bc0cb !important;
+        box-shadow: 0 0 6px 0px #3bc0cb !important; }
   .default_nav .nav_container .navbar-toggler {
     font-size: 1.25em; }
   .default_nav .form_container {
@@ -3569,13 +3572,13 @@ label
 .upload-icon .icon {
   cursor: pointer;
   width: 185px;
-  height: 185px;
+  height: 175px;
   border-radius: 10px; }
 
 .upload-icon .prev {
   display: none;
   width: 185px;
-  height: 185px;
+  height: 175px;
   border-radius: 30px; }
 
 .text_design {
